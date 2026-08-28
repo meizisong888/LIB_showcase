@@ -1,5 +1,9 @@
 # AI Workbench for VT
 
+## Live Website
+
+**[Open AI Workbench for VT →](https://meizisong888.github.io/LIB_showcase/)**
+
 A task-first, evidence-aware Capstone MVP for Virginia Tech students, faculty, staff, and researchers. It helps a user choose an AI product for a specific task, adopt a repeatable workflow skill, understand when not to use it, and verify the result.
 
 > Independent capstone project. Not an official Virginia Tech service.
