@@ -1,6 +1,7 @@
 import { Accessibility, ArrowRight, BookOpenCheck, Check, CircleHelp, DatabaseZap, ExternalLink, FileWarning, GraduationCap, ScanSearch, ShieldAlert, UserCheck } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { PageHeader, SafetyCallout, SourceLinks } from '../components/Shared'
+import { DataDecisionTree } from '../components/DataDecisionTree'
 import { ui } from '../i18n/en'
 
 const safetyTopics = [
@@ -17,6 +18,7 @@ export function SafetyPage() {
   return (
     <>
       <PageHeader {...ui.pageHeaders.safety} />
+      <section className="container section"><DataDecisionTree /></section>
       <section className="container data-class-section">
         <div className="section-heading split-heading"><div><p className="eyebrow">Plain-language triage</p><h2>What kind of information are you handling?</h2></div><p>These three cards are a usability layer. Virginia Tech’s authoritative standard uses Low, Moderate, and High Risk; classify mixed data at the highest applicable level.</p></div>
         <div className="data-class-grid">

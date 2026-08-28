@@ -21,4 +21,10 @@ describe('content validation', () => {
     const installable = skills.find((skill) => skill.type === 'installable')!
     expect(validateSkill({ ...installable, installable: undefined }).errors).toContain('Installable metadata is required.')
   })
+
+  it('ships four complete educational workflow examples', () => {
+    const examples = skills.filter((skill) => skill.example)
+    expect(examples).toHaveLength(4)
+    expect(examples.every((skill) => skill.provenance === 'project-curated')).toBe(true)
+  })
 })

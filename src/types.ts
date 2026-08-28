@@ -3,6 +3,10 @@ export type SourceTier = 'official' | 'curated' | 'community'
 export type RiskLevel = 'low' | 'medium' | 'high'
 export type DataSensitivity = 'public' | 'internal' | 'restricted' | 'unknown'
 export type Ecosystem = 'none' | 'microsoft' | 'google' | 'github'
+export type FitLevel = 'strong' | 'capable' | 'conditional' | 'not-focused'
+export type ToolFamily = 'general' | 'research' | 'office' | 'coding'
+export type CollaborationMode = 'individual' | 'shared-workspace' | 'document-coauthoring' | 'repository-collaboration' | 'organization-account'
+export type SkillProvenance = 'project-curated' | 'publisher-official' | 'community-discovered'
 
 export interface Source {
   id: string
@@ -19,14 +23,14 @@ export interface Tool {
   slug: string
   name: string
   provider: string
-  category: string
+  family: ToolFamily
   summary: string
   bestFor: string[]
   strengths: string[]
   limitations: string[]
   inputTypes: string[]
   outputTypes: string[]
-  taskIds: string[]
+  taskFit: Record<string, FitLevel>
   webAccess: boolean
   citations: 'strong' | 'available' | 'limited'
   longDocuments: 'strong' | 'capable' | 'limited'
@@ -34,7 +38,7 @@ export interface Tool {
   fileEditingRequiresPaid: boolean
   coding: 'strong' | 'capable' | 'limited'
   multimodal: 'strong' | 'capable' | 'limited'
-  collaboration: boolean
+  collaborationModes: CollaborationMode[]
   ecosystems: Ecosystem[]
   access: string
   accessKinds: ('free' | 'vt' | 'paid')[]
@@ -55,7 +59,18 @@ export interface Task {
   summary: string
   icon: string
   defaultOutput: string
-  recommendedSkillSlug: string
+}
+
+export interface SkillExample {
+  context: string
+  sampleInput: string
+  outputSections: Array<{
+    label: string
+    content: string
+    status?: 'acceptable' | 'verify' | 'revise'
+  }>
+  likelyFailure: string
+  humanRevision: string
 }
 
 export interface InstallableDetails {
@@ -101,6 +116,8 @@ export interface Skill {
   sourceTier: SourceTier
   verifiedAt: string
   status: VerificationStatus
+  provenance: SkillProvenance
+  example?: SkillExample
   installable?: InstallableDetails
 }
 
@@ -113,7 +130,7 @@ export interface FinderAnswers {
   citations: boolean
   editFiles: boolean
   coding: boolean
-  collaboration: boolean
+  collaborationMode: CollaborationMode
   ecosystem: Ecosystem
   sensitivity: DataSensitivity
   access: 'free' | 'vt' | 'paid' | 'any'
@@ -130,6 +147,7 @@ export interface ScoredTool {
   score: number
   reasons: ScoreReason[]
   exclusions: string[]
+  fit: Exclude<FitLevel, 'not-focused'>
 }
 
 export interface RecommendationResult {
@@ -137,8 +155,26 @@ export interface RecommendationResult {
   safetyMessage: string
   primary?: ScoredTool
   alternatives: ScoredTool[]
+  excludedTools: ScoredTool[]
   closeCall: boolean
   workflowSkill?: Skill
+  workflowReasons: string[]
   installableSkill?: Skill
   humanChecklist: string[]
+  roleGuidance: string
+  mustDoManually: string[]
+}
+
+export interface Scenario {
+  id: string
+  role: 'student' | 'faculty' | 'staff' | 'researcher'
+  title: string
+  situation: string
+  sensitivity: DataSensitivity
+  targetOutput: string
+  toolFamily: ToolFamily
+  skillSlug: string
+  biggestRisk: string
+  humanChecks: string[]
+  answers: FinderAnswers
 }

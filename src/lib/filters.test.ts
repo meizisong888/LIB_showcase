@@ -5,13 +5,13 @@ import { filterSkills, filterTools, toggleComparison } from './filters'
 
 describe('tool filters and comparison', () => {
   it('searches across provider and documented strengths', () => {
-    expect(filterTools(tools, { search: 'source-grounded', category: '', capability: '' }).map((tool) => tool.id)).toContain('notebooklm-vt')
-    expect(filterTools(tools, { search: 'Anthropic', category: '', capability: '' }).map((tool) => tool.id)).toEqual(['claude'])
+    expect(filterTools(tools, { search: 'source-grounded', family: '', capability: '' }).map((tool) => tool.id)).toContain('notebooklm-vt')
+    expect(filterTools(tools, { search: 'Anthropic', family: '', capability: '' }).map((tool) => tool.id)).toEqual(['claude'])
   })
 
-  it('combines category and capability filters', () => {
-    const result = filterTools(tools, { search: '', category: 'Research and answer engine', capability: 'citations' })
-    expect(result.map((tool) => tool.id)).toEqual(['perplexity'])
+  it('combines stable family and capability filters', () => {
+    const result = filterTools(tools, { search: '', family: 'research', capability: 'citations' })
+    expect(result.map((tool) => tool.id).sort()).toEqual(['notebooklm-vt', 'perplexity'])
   })
 
   it('enforces a three-tool comparison limit and supports removal', () => {
@@ -23,12 +23,12 @@ describe('tool filters and comparison', () => {
 
 describe('skill filters', () => {
   it('finds high-risk installable skills that execute code', () => {
-    const result = filterSkills(skills, { search: '', category: '', role: '', tool: '', type: 'installable', inputType: '', risk: 'high', web: '', permission: 'code' })
+    const result = filterSkills(skills, { search: '', category: '', role: '', tool: '', type: 'installable', inputType: '', risk: 'high', web: '', auth: '', code: 'true' })
     expect(result.map((skill) => skill.slug).sort()).toEqual(['claude-code-agent', 'github-copilot-agent-mode'])
   })
 
   it('filters by role, compatible tool, and internet need', () => {
-    const result = filterSkills(skills, { search: '', category: '', role: 'faculty', tool: 'notebooklm-vt', type: '', inputType: '', risk: '', web: 'false', permission: '' })
+    const result = filterSkills(skills, { search: '', category: '', role: 'faculty', tool: 'notebooklm-vt', type: '', inputType: '', risk: '', web: 'false', auth: '', code: '' })
     expect(result.map((skill) => skill.slug)).toContain('document-grounded-summary')
   })
 })

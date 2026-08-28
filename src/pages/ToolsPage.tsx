@@ -2,21 +2,23 @@ import { Check, ChevronRight, Search, X } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { EmptyState, PageHeader, SourceLinks, StatusBadge } from '../components/Shared'
+import { TaskToolMatrix } from '../components/TaskToolMatrix'
 import { tools } from '../data/tools'
 import { ui } from '../i18n/en'
 import { filterTools, toggleComparison } from '../lib/filters'
 import { displayStatus, validateTool } from '../lib/validation'
+import { familyLabels } from '../lib/toolFit'
 
 const boolLabel = (value: boolean) => value ? 'Yes' : 'No / not verified'
-const categories = [...new Set(tools.map((tool) => tool.category))]
+const families = [...new Set(tools.map((tool) => tool.family))]
 
 export function ToolsPage() {
   const [search, setSearch] = useState('')
-  const [category, setCategory] = useState('')
+  const [family, setFamily] = useState('')
   const [capability, setCapability] = useState('')
   const [selected, setSelected] = useState<string[]>([])
   const [limitMessage, setLimitMessage] = useState('')
-  const visible = useMemo(() => filterTools(tools, { search, category, capability }), [search, category, capability])
+  const visible = useMemo(() => filterTools(tools, { search, family, capability }), [search, family, capability])
   const compared = selected.map((id) => tools.find((tool) => tool.id === id)).filter(Boolean) as typeof tools
 
   const toggle = (id: string) => {
@@ -28,12 +30,13 @@ export function ToolsPage() {
   return (
     <>
       <PageHeader {...ui.pageHeaders.tools} />
+      <section className="container"><TaskToolMatrix /></section>
       <section className="container tools-workspace">
         <div className="filter-bar" aria-label="Tool filters">
           <label className="search-field"><span className="sr-only">Search tools</span><Search size={18} /><input type="search" placeholder="Search tools, providers, or strengths" value={search} onChange={(event) => setSearch(event.target.value)} /></label>
-          <label><span className="sr-only">Category</span><select value={category} onChange={(event) => setCategory(event.target.value)}><option value="">All categories</option>{categories.map((item) => <option key={item}>{item}</option>)}</select></label>
+          <label><span className="sr-only">Product family</span><select value={family} onChange={(event) => setFamily(event.target.value)}><option value="">All product families</option>{families.map((item) => <option key={item} value={item}>{familyLabels[item]}</option>)}</select></label>
           <label><span className="sr-only">Capability</span><select value={capability} onChange={(event) => setCapability(event.target.value)}><option value="">All capabilities</option><option value="web">Live web</option><option value="citations">Sources / citations</option><option value="files">File editing</option><option value="coding">Coding</option><option value="collaboration">Collaboration</option></select></label>
-          {(search || category || capability) && <button type="button" className="clear-button" onClick={() => { setSearch(''); setCategory(''); setCapability('') }}><X size={16} />Clear</button>}
+          {(search || family || capability) && <button type="button" className="clear-button" onClick={() => { setSearch(''); setFamily(''); setCapability('') }}><X size={16} />Clear</button>}
         </div>
 
         <div className="compare-tray" aria-live="polite">
@@ -49,12 +52,12 @@ export function ToolsPage() {
               const status = displayStatus(tool.status, validateTool(tool))
               return (
                 <article className={isSelected ? 'tool-card selected' : 'tool-card'} key={tool.id}>
-                  <div className="tool-card-top"><div><p className="card-eyebrow">{tool.category}</p><h2>{tool.name}</h2><span className="provider">by {tool.provider}</span></div><StatusBadge status={status} /></div>
+                  <div className="tool-card-top"><div><p className="card-eyebrow">{familyLabels[tool.family]}</p><h2>{tool.name}</h2><span className="provider">by {tool.provider}</span></div><StatusBadge status={status} /></div>
                   <p>{tool.summary}</p>
                   <div className="tag-row">{tool.bestFor.slice(0, 2).map((item) => <span key={item}>{item}</span>)}</div>
                   <dl className="quick-specs"><div><dt>Sources</dt><dd>{tool.citations}</dd></div><div><dt>Files</dt><dd>{tool.fileEditing ? tool.fileEditingRequiresPaid ? 'Edit · licensed' : 'Edit' : 'Analyze / draft'}</dd></div><div><dt>Coding</dt><dd>{tool.coding}</dd></div><div><dt>Access</dt><dd>{tool.accessKinds.join(' / ')}</dd></div></dl>
                   <div className="vt-note"><strong>VT boundary</strong><p>{tool.vtStatus}</p></div>
-                  <SourceLinks sourceIds={tool.sourceIds} compact />
+                  <details className="card-sources"><summary>{tool.sourceIds.length} sources · checked {tool.verifiedAt}</summary><SourceLinks sourceIds={tool.sourceIds} compact /></details>
                   <button className="compare-button" type="button" aria-pressed={isSelected} onClick={() => toggle(tool.id)}>{isSelected ? <><Check size={17} />Selected for comparison</> : 'Add to comparison'}</button>
                 </article>
               )
@@ -81,7 +84,7 @@ export function ToolsPage() {
                   <tr><th scope="row">File editing</th>{compared.map((tool) => <td key={tool.id}>{tool.fileEditing && tool.fileEditingRequiresPaid ? 'Yes — paid or separately licensed tier' : boolLabel(tool.fileEditing)}</td>)}</tr>
                   <tr><th scope="row">Coding</th>{compared.map((tool) => <td key={tool.id}>{tool.coding}</td>)}</tr>
                   <tr><th scope="row">Multimodal</th>{compared.map((tool) => <td key={tool.id}>{tool.multimodal}</td>)}</tr>
-                  <tr><th scope="row">Collaboration & ecosystem</th>{compared.map((tool) => <td key={tool.id}>{tool.collaboration ? 'Collaboration supported' : 'Individual-first'} · {tool.ecosystems.join(', ')}</td>)}</tr>
+                  <tr><th scope="row">Collaboration & ecosystem</th>{compared.map((tool) => <td key={tool.id}>{tool.collaborationModes.map((mode) => mode.replaceAll('-', ' ')).join(', ')} · {tool.ecosystems.join(', ')}</td>)}</tr>
                   <tr><th scope="row">Cost & access</th>{compared.map((tool) => <td key={tool.id}>{tool.access}</td>)}</tr>
                   <tr><th scope="row">Data & privacy</th>{compared.map((tool) => <td key={tool.id}>{tool.privacy}</td>)}</tr>
                   <tr><th scope="row">VT status</th>{compared.map((tool) => <td key={tool.id}>{tool.vtStatus}</td>)}</tr>

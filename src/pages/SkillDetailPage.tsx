@@ -2,8 +2,11 @@ import { AlertTriangle, ArrowLeft, Check, Clipboard, Copy, ExternalLink, FileKey
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { RiskBadge, SourceLinks, StatusBadge } from '../components/Shared'
+import { SkillExampleArtifact } from '../components/SkillExampleArtifact'
 import { skillBySlug } from '../data/skills'
+import { taskById } from '../data/tasks'
 import { toolById } from '../data/tools'
+import { familyLabels } from '../lib/toolFit'
 import { displayStatus, validateSkill } from '../lib/validation'
 import { NotFoundPage } from './NotFoundPage'
 
@@ -47,9 +50,9 @@ export function SkillDetailPage() {
           <div className="skill-detail-title">
             <div>
               <div className="skill-meta"><span className={`type-badge type-${skill.type}`}>{skill.type === 'workflow' ? 'Workflow skill' : 'Installable skill / plugin'}</span><RiskBadge risk={skill.risk} /><StatusBadge status={status} /></div>
-              <p className="eyebrow">{skill.category}</p><h1>{skill.name}</h1><p>{skill.summary}</p>
+              <p className="eyebrow">{taskById[skill.category]?.name ?? 'Cross-task workflow'}</p><h1>{skill.name}</h1><p>{skill.summary}</p>
             </div>
-            <dl><div><dt>Last verified</dt><dd>{skill.verifiedAt}</dd></div><div><dt>Source tier</dt><dd>{skill.sourceTier}</dd></div><div><dt>Skill ID</dt><dd>{skill.id}</dd></div></dl>
+            <dl><div><dt>Last verified</dt><dd>{skill.verifiedAt}</dd></div><div><dt>Source tier</dt><dd>{skill.sourceTier}</dd></div><div><dt>Provenance</dt><dd>{skill.provenance === 'project-curated' ? 'Project-curated workflow' : skill.provenance === 'publisher-official' ? 'Publisher-official integration' : 'Community-discovered lead'}</dd></div></dl>
           </div>
         </div>
       </header>
@@ -64,6 +67,7 @@ export function SkillDetailPage() {
           <section><p className="section-label">Run the workflow</p><h2>Standard steps</h2><ol className="number-list">{skill.steps.map((item, index) => <li key={item}><span>{String(index + 1).padStart(2, '0')}</span><div><strong>{item}</strong></div></li>)}</ol></section>
           <section className="prompt-section"><div className="prompt-heading"><div><p className="section-label">Reusable template</p><h2>Copy the prompt</h2></div><button type="button" className={copied ? 'copy-button copied' : 'copy-button'} onClick={handleCopy}>{copied ? <Check size={17} /> : <Copy size={17} />}{copied ? 'Copied' : 'Copy prompt'}</button></div><pre><code>{skill.prompt}</code></pre><p className="copy-feedback" role="status" aria-live="polite">{copied ? 'Prompt copied to your clipboard.' : 'Replace bracketed fields and remove information the tool does not need.'}</p></section>
           <section><p className="section-label">Expected result</p><h2>What good output looks like</h2><p className="large-copy">{skill.expectedOutput}</p></section>
+          {skill.example && <SkillExampleArtifact example={skill.example} />}
           <section><p className="section-label">Failure awareness</p><h2>Common ways this goes wrong</h2><ul className="failure-list">{skill.failureModes.map((item, index) => <li key={item}><span>{index + 1}</span><p>{item}</p></li>)}</ul></section>
           <section className="verification-section"><p className="section-label">Human verification</p><h2>Before you use the output</h2><ul>{skill.checklist.map((item) => <li key={item}><span><Check size={15} /></span>{item}</li>)}</ul></section>
           {skill.installable && (
@@ -86,7 +90,7 @@ export function SkillDetailPage() {
         </main>
         <aside className="skill-detail-aside">
           <div><h2>At a glance</h2><dl><div><dt>Internet</dt><dd>{skill.requiresWeb ? 'Required' : 'Not required'}</dd></div><div><dt>Authorization</dt><dd>{skill.requiresAuth ? 'Required' : 'No'}</dd></div><div><dt>Code execution</dt><dd>{skill.executesCode ? 'Possible' : 'No'}</dd></div><div><dt>Inputs</dt><dd>{skill.inputTypes.join(', ')}</dd></div><div><dt>Outputs</dt><dd>{skill.outputTypes.join(', ')}</dd></div></dl></div>
-          <div><h2>Recommended AI</h2><ul className="aside-tool-list">{skill.compatibleTools.map((id) => toolById[id]).filter(Boolean).map((tool) => <li key={tool.id}><strong>{tool.name}</strong><span>{tool.category}</span></li>)}</ul><Link to="/tools">Compare these tools</Link></div>
+          <div><h2>Compatible products</h2><ul className="aside-tool-list">{skill.compatibleTools.map((id) => toolById[id]).filter(Boolean).map((tool) => <li key={tool.id}><strong>{tool.name}</strong><span>{familyLabels[tool.family]}</span></li>)}</ul><Link to="/tools">Compare documented capabilities</Link></div>
           <div className="aside-safety"><ShieldAlert /><h2>Data & permissions</h2><p>{skill.safety}</p><Link to="/safety">Review responsible AI guidance</Link></div>
           <div><h2>Related skills</h2>{skill.alternatives.map((item) => skillBySlug[item]).filter(Boolean).map((item) => <Link className="related-skill" key={item.slug} to={`/skills/${item.slug}`}><Clipboard size={16} /><span><strong>{item.name}</strong><small>{item.type}</small></span></Link>)}</div>
           {skill.executesCode && <div className="command-warning"><Terminal /><p>Inspect every command before execution. A generated command can be syntactically valid and still be unsafe.</p></div>}

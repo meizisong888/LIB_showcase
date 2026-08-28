@@ -1,7 +1,10 @@
 import type { DataSensitivity } from '../types'
 
 export const scoringWeights = {
-  taskMatch: 6,
+  taskStrong: 8,
+  taskCapable: 5,
+  taskConditional: 1,
+  taskNotFocused: -6,
   inputMatch: 2,
   outputMatch: 2,
   webRequired: 4,
@@ -10,7 +13,7 @@ export const scoringWeights = {
   fileEditing: 4,
   codingStrong: 6,
   codingCapable: 3,
-  collaboration: 2,
+  collaborationMatch: 4,
   ecosystem: 5,
   accessMatch: 2,
   easyStart: 1,
@@ -30,3 +33,10 @@ export const defaultHumanChecklist = [
   'Remove sensitive data that is not necessary for the task.',
   'Keep a human accountable for decisions, publication, sending, merging, or grading.',
 ]
+
+export const roleHumanChecks: Record<string, string[]> = {
+  student: ['Follow the instructor’s assignment-specific AI and disclosure rules.', 'Keep the reasoning and final submission demonstrably your own work.'],
+  faculty: ['Confirm alignment with the learning objective, rubric, and student-facing AI expectations.', 'Do not automate grading or consequential student decisions without appropriate human review.'],
+  staff: ['Confirm policy claims, commitments, recipients, owners, and approval authority before sending.', 'Keep the accountable office or decision owner in the final review.'],
+  researcher: ['Confirm PI, IRB, contract, export-control, data-use, and reproducibility requirements where applicable.', 'Separate generated hypotheses from validated research findings.'],
+}

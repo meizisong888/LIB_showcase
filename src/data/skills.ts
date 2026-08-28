@@ -23,7 +23,18 @@ export const skills: Skill[] = [
     failureModes: ['Citations point to search summaries rather than source pages.', 'Multiple citations repeat the same underlying report.', 'A linked page is real but does not support the claim.'],
     checklist: [...commonHumanChecklist, 'Open every citation and verify claim-level support.', 'Check whether sources are genuinely independent.'],
     safety: 'Do not submit confidential research questions, unpublished findings, or participant data to a non-approved service.',
-    alternatives: ['citation-verification', 'document-grounded-summary'], sourceIds: ['vt-research-ai', 'vt-ai-principles', 'perplexity-citations'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified',
+    alternatives: ['citation-verification', 'document-grounded-summary'], sourceIds: ['vt-research-ai', 'vt-ai-principles', 'perplexity-citations'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified', provenance: 'project-curated',
+    example: {
+      context: 'A student is mapping public evidence about whether campus heat plans have changed since 2022.',
+      sampleInput: 'Question: What operational changes are universities making for extreme heat? Prefer current policy pages and primary guidance.',
+      outputSections: [
+        { label: 'Claim', content: 'Several institutions now pair heat thresholds with schedule and outdoor-work changes.', status: 'verify' },
+        { label: 'Evidence map', content: 'University policy page → stated threshold; public-health guidance → risk rationale; date and scope recorded.', status: 'acceptable' },
+        { label: 'Open gap', content: 'The sample does not establish how consistently the policies are implemented.', status: 'revise' },
+      ],
+      likelyFailure: 'The assistant cites multiple articles that all repeat one press release.',
+      humanRevision: 'Open each source, replace summaries with primary documents, and qualify any claim that lacks independent support.',
+    },
   },
   {
     id: 'lesson-design-review', slug: 'lesson-design-review', name: 'Lesson design + integrity review', type: 'workflow', category: 'teaching',
@@ -40,7 +51,18 @@ export const skills: Skill[] = [
     failureModes: ['Activities are engaging but not tied to the objective.', 'Generic AI policy language creates enforcement ambiguity.', 'Accessibility is reduced to an afterthought.'],
     checklist: [...commonHumanChecklist, 'Verify the rubric measures the stated objective.', 'Have a student or colleague test the AI-use instructions for ambiguity.'],
     safety: 'Do not include identifiable student records, disability information, or private submissions unless the chosen VT service is approved for that data and access is appropriate.',
-    alternatives: ['accessibility-pass', 'presentation-storyboard'], sourceIds: ['vt-teaching-ai', 'vt-ai-principles', 'vt-ferpa'], sourceTier: 'official', verifiedAt: REVIEW_DATE, status: 'verified',
+    alternatives: ['accessibility-pass', 'presentation-storyboard'], sourceIds: ['vt-teaching-ai', 'vt-ai-principles', 'vt-ferpa'], sourceTier: 'official', verifiedAt: REVIEW_DATE, status: 'verified', provenance: 'project-curated',
+    example: {
+      context: 'An instructor is revising a 25-minute evidence-comparison activity for an introductory course.',
+      sampleInput: 'Objective: distinguish a claim from supporting evidence. AI may help locate sources but may not write the submitted comparison.',
+      outputSections: [
+        { label: 'Activity', content: 'Pairs annotate two short sources, then defend which one provides stronger direct support.', status: 'acceptable' },
+        { label: 'AI boundary', content: 'Students record search prompts and submit their own annotations and rationale.', status: 'acceptable' },
+        { label: 'Accessibility check', content: 'Provide structured text versions and avoid a color-only evidence key.', status: 'verify' },
+      ],
+      likelyFailure: 'The activity is engaging but the rubric rewards polished prose instead of evidence evaluation.',
+      humanRevision: 'Reweight the rubric toward claim-evidence alignment and test the directions with a student before use.',
+    },
   },
   {
     id: 'administrative-draft', slug: 'administrative-draft', name: 'Administrative draft with decision log', type: 'workflow', category: 'admin-writing',
@@ -57,7 +79,7 @@ export const skills: Skill[] = [
     failureModes: ['A fluent sentence turns a proposal into an approved decision.', 'Names or deadlines are inferred.', 'The draft quotes or cites a nonexistent policy.'],
     checklist: [...commonHumanChecklist, 'Confirm every commitment with the named owner.', 'Verify that the final audience is authorized to receive the information.'],
     safety: 'Use a VT-approved environment for nonpublic university information. Human owners must make consequential decisions.',
-    alternatives: ['meeting-action-log', 'document-grounded-summary'], sourceIds: ['vt-ai-principles', 'vt-risk'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified',
+    alternatives: ['meeting-action-log', 'document-grounded-summary'], sourceIds: ['vt-ai-principles', 'vt-risk'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified', provenance: 'project-curated',
   },
   {
     id: 'document-grounded-summary', slug: 'document-grounded-summary', name: 'Document-grounded summary', type: 'workflow', category: 'documents',
@@ -74,7 +96,7 @@ export const skills: Skill[] = [
     failureModes: ['Page numbers refer to viewer pages rather than printed pages.', 'Tables and footnotes are omitted.', 'The model relies on outside knowledge despite source-only instructions.'],
     checklist: [...commonHumanChecklist, 'Spot-check at least one claim per section against the original.', 'Review tables, footnotes, and appendices separately.'],
     safety: 'Classify the most sensitive document in the set and use that level for the whole workflow.',
-    alternatives: ['source-triangulation', 'citation-verification'], sourceIds: ['notebooklm-sources', 'vt-risk', 'vt-research-ai'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified',
+    alternatives: ['source-triangulation', 'citation-verification'], sourceIds: ['notebooklm-sources', 'vt-risk', 'vt-research-ai'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified', provenance: 'project-curated',
   },
   {
     id: 'presentation-storyboard', slug: 'presentation-storyboard', name: 'Evidence-to-slide storyboard', type: 'workflow', category: 'presentations',
@@ -91,7 +113,7 @@ export const skills: Skill[] = [
     failureModes: ['Slides become paragraph containers.', 'Suggested visuals imply precision not present in the data.', 'Speaker notes introduce unsourced claims.'],
     checklist: [...commonHumanChecklist, 'Confirm color is not the only information channel.', 'Rehearse with the allotted time and a keyboard-only path.'],
     safety: 'Remove private speaker notes and hidden slides before external distribution.',
-    alternatives: ['accessibility-pass', 'source-triangulation'], sourceIds: ['vt-ai-principles'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified',
+    alternatives: ['accessibility-pass', 'source-triangulation'], sourceIds: ['vt-ai-principles'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified', provenance: 'project-curated',
   },
   {
     id: 'data-analysis-audit', slug: 'data-analysis-audit', name: 'Reproducible data-analysis audit', type: 'workflow', category: 'data-analysis',
@@ -108,7 +130,18 @@ export const skills: Skill[] = [
     failureModes: ['Sensitive columns are uploaded before classification.', 'A correlation is described causally.', 'Generated code runs but silently drops data or changes types.'],
     checklist: [...commonHumanChecklist, 'Re-run from a clean environment.', 'Check row counts and missingness after every transformation.', 'Have a qualified analyst review consequential interpretations.'],
     safety: 'Use de-identified or synthetic data where possible. Human-subject, regulated, or restricted data can require PI, IRB, contract, PRDP, or export-control review even in an approved tool.',
-    alternatives: ['code-change-loop', 'document-grounded-summary'], sourceIds: ['vt-research-ai', 'vt-risk', 'vt-ai-principles'], sourceTier: 'official', verifiedAt: REVIEW_DATE, status: 'verified',
+    alternatives: ['code-change-loop', 'document-grounded-summary'], sourceIds: ['vt-research-ai', 'vt-risk', 'vt-ai-principles'], sourceTier: 'official', verifiedAt: REVIEW_DATE, status: 'verified', provenance: 'project-curated',
+    example: {
+      context: 'A research team is checking a synthetic version of a survey export before touching restricted data.',
+      sampleInput: 'Profile missingness, duplicates, category drift, and possible outcome leakage. Return a plan before code.',
+      outputSections: [
+        { label: 'Preflight', content: 'Confirm row unit, expected ranges, identifiers, and fields unavailable at prediction time.', status: 'acceptable' },
+        { label: 'Proposed checks', content: 'Type validation, missingness by group, duplicate keys, and before/after row counts.', status: 'acceptable' },
+        { label: 'Interpretation limit', content: 'Observed differences are descriptive until the design and assumptions are reviewed.', status: 'verify' },
+      ],
+      likelyFailure: 'Generated cleaning code silently drops records with missing outcomes.',
+      humanRevision: 'Require explicit assertions and row-count logs, then rerun from a clean environment with a qualified analyst.',
+    },
   },
   {
     id: 'code-change-loop', slug: 'code-change-loop', name: 'Bounded code-change loop', type: 'workflow', category: 'coding',
@@ -125,7 +158,18 @@ export const skills: Skill[] = [
     failureModes: ['The agent rewrites unrelated code.', 'A passing unit test masks a failed build or accessibility regression.', 'Secrets appear in prompts, logs, or generated fixtures.'],
     checklist: [...commonHumanChecklist, 'Inspect the full diff and dependency changes.', 'Run security-sensitive and end-to-end paths manually.', 'Confirm rollback and ownership before deployment.'],
     safety: 'Treat repository access, terminal commands, MCP servers, and deployment tokens as distinct permissions. Grant the minimum required scope.',
-    alternatives: ['github-copilot-agent-mode', 'claude-code-agent'], sourceIds: ['github-copilot', 'claude-code', 'vt-ai-principles'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified',
+    alternatives: ['github-copilot-agent-mode', 'claude-code-agent'], sourceIds: ['github-copilot', 'claude-code', 'vt-ai-principles'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified', provenance: 'project-curated',
+    example: {
+      context: 'A developer needs one accessible empty state added to an existing filtered list.',
+      sampleInput: 'Acceptance: announce “No matches,” retain the clear-filter action, add a component test. Do not change routing or dependencies.',
+      outputSections: [
+        { label: 'Scope', content: 'One list component, one test file, and existing styles only.', status: 'acceptable' },
+        { label: 'Verification', content: 'Focused test, full typecheck, lint, and production build.', status: 'verify' },
+        { label: 'Handoff', content: 'Review the diff and keyboard/screen-reader behavior before merge.', status: 'acceptable' },
+      ],
+      likelyFailure: 'The agent refactors the entire filter system while implementing the empty state.',
+      humanRevision: 'Reject unrelated changes, inspect the complete diff, and verify the stated non-goals and rollback path.',
+    },
   },
   {
     id: 'meeting-action-log', slug: 'meeting-action-log', name: 'Meeting decision & action log', type: 'workflow', category: 'meetings',
@@ -142,7 +186,7 @@ export const skills: Skill[] = [
     failureModes: ['Discussion is promoted to a decision.', 'Tasks are assigned to people without explicit agreement.', 'Sensitive side conversations appear in a broad follow-up.'],
     checklist: [...commonHumanChecklist, 'Have the meeting owner confirm decisions and assignments.', 'Check the recipient list and remove unnecessary sensitive detail.'],
     safety: 'Consent, records retention, and access rules apply before transcription—not after the summary is generated.',
-    alternatives: ['administrative-draft', 'document-grounded-summary'], sourceIds: ['vt-risk', 'vt-ai-principles'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified',
+    alternatives: ['administrative-draft', 'document-grounded-summary'], sourceIds: ['vt-risk', 'vt-ai-principles'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified', provenance: 'project-curated',
   },
   {
     id: 'citation-verification', slug: 'citation-verification', name: 'Citation verification pass', type: 'workflow', category: 'research',
@@ -159,7 +203,7 @@ export const skills: Skill[] = [
     failureModes: ['The model validates a citation from metadata alone.', 'A source supports the topic but not the claim.', 'Old guidance is cited after a policy update.'],
     checklist: [...commonHumanChecklist, 'Open the canonical source rather than a search snippet.', 'Check version, corrections, retractions, and last-updated dates.'],
     safety: 'Do not upload unpublished manuscripts or peer-review materials to an unapproved external service.',
-    alternatives: ['source-triangulation', 'document-grounded-summary'], sourceIds: ['vt-research-ai', 'vt-teaching-ai'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified',
+    alternatives: ['source-triangulation', 'document-grounded-summary'], sourceIds: ['vt-research-ai', 'vt-teaching-ai'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified', provenance: 'project-curated',
   },
   {
     id: 'accessibility-pass', slug: 'accessibility-pass', name: 'Accessibility and fairness pass', type: 'workflow', category: 'teaching',
@@ -176,7 +220,7 @@ export const skills: Skill[] = [
     failureModes: ['The output declares WCAG compliance from text alone.', 'Alt text describes appearance without purpose.', 'Bias review uses a generic checklist with no audience context.'],
     checklist: [...commonHumanChecklist, 'Test keyboard, zoom/reflow, screen reader, contrast, and reduced motion in the final artifact.', 'Include people affected by the design in evaluation.'],
     safety: 'Do not enter individual accommodation or disability records into an unsuitable tool.',
-    alternatives: ['lesson-design-review', 'presentation-storyboard'], sourceIds: ['vt-ai-principles', 'vt-ferpa'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified',
+    alternatives: ['lesson-design-review', 'presentation-storyboard'], sourceIds: ['vt-ai-principles', 'vt-ferpa'], sourceTier: 'curated', verifiedAt: REVIEW_DATE, status: 'verified', provenance: 'project-curated',
   },
   {
     id: 'github-copilot-agent-mode', slug: 'github-copilot-agent-mode', name: 'GitHub Copilot agent mode', type: 'installable', category: 'coding',
@@ -192,7 +236,7 @@ export const skills: Skill[] = [
     failureModes: ['A third-party extension imitates the official publisher.', 'MCP or terminal permissions expand beyond the task.', 'Generated changes are merged because tests pass without reviewing behavior.'],
     checklist: [...commonHumanChecklist, 'Verify extension publisher and requested permission changes.', 'Inspect the complete diff and every workflow/dependency edit.', 'Revoke unused tokens and integrations after testing.'],
     safety: 'This project recommends and explains the integration; it does not install it. Treat repo, terminal, network, and MCP access as separate grants.',
-    alternatives: ['code-change-loop', 'claude-code-agent'], sourceIds: ['github-copilot', 'vt-approved-tools'], sourceTier: 'official', verifiedAt: REVIEW_DATE, status: 'verified',
+    alternatives: ['code-change-loop', 'claude-code-agent'], sourceIds: ['github-copilot', 'vt-approved-tools'], sourceTier: 'official', verifiedAt: REVIEW_DATE, status: 'verified', provenance: 'publisher-official',
     installable: {
       publisher: 'GitHub / Microsoft', repositoryUrl: 'https://github.com/features/copilot', license: 'Proprietary service; editor extensions are subject to marketplace terms',
       platforms: ['GitHub', 'Visual Studio Code', 'Visual Studio', 'JetBrains IDEs', 'CLI'],
@@ -215,7 +259,7 @@ export const skills: Skill[] = [
     failureModes: ['Installation instructions come from an unofficial package or copied post.', 'Broad folder access exposes unrelated files or credentials.', 'A convenient command has irreversible external effects.'],
     checklist: [...commonHumanChecklist, 'Verify the package source and current checksums/signing guidance.', 'Review shell commands before approval.', 'Inspect git diff, dependency lockfile, and outbound connections.'],
     safety: 'This site never installs it. Start with public code and an isolated environment; expand permissions only after a successful bounded test.',
-    alternatives: ['code-change-loop', 'github-copilot-agent-mode'], sourceIds: ['claude-code', 'anthropic-privacy', 'vt-approved-tools'], sourceTier: 'official', verifiedAt: REVIEW_DATE, status: 'verified',
+    alternatives: ['code-change-loop', 'github-copilot-agent-mode'], sourceIds: ['claude-code', 'anthropic-privacy', 'vt-approved-tools'], sourceTier: 'official', verifiedAt: REVIEW_DATE, status: 'verified', provenance: 'publisher-official',
     installable: {
       publisher: 'Anthropic', repositoryUrl: 'https://docs.anthropic.com/en/docs/claude-code/overview', license: 'Proprietary service and software terms',
       platforms: ['macOS', 'Linux', 'Windows via supported environments', 'Terminal and selected IDEs'],

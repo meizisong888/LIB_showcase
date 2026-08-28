@@ -7,6 +7,7 @@ Use this guide when a product, skill, price, capability, account term, VT policy
 - Products: `src/data/tools.ts`
 - Skills: `src/data/skills.ts`
 - Tasks: `src/data/tasks.ts`
+- Scenarios: `src/data/scenarios.ts`
 - Sources: `src/data/sources.ts`
 - Safety and points: `src/data/recommendationRules.ts`
 
@@ -35,6 +36,11 @@ Update what the tool does **and** what conditions or limitations changed. Keep t
 - personal versus VT/institutional account;
 - included versus separately licensed feature;
 - vendor statement versus this project’s evidence-based judgment.
+- documented capability fit versus empirical quality or benchmark performance;
+- general, research, office, and coding product families;
+- individual, shared-workspace, document-coauthoring, repository-collaboration, and organization-account modes.
+
+Every product must keep a `taskFit` value for all eight tasks. Every skill must keep an explicit provenance label: project-curated, publisher-official, or community-discovered. Do not expose internal IDs as user-facing labels.
 
 Never infer VT approval. Use the current official approved-tools page and exact data/account language.
 
