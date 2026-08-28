@@ -1,0 +1,66 @@
+name: Submit a Tool or Skill
+description: Propose an evidence-backed addition to the workbench.
+title: "[Submission]: "
+labels: ["content", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing. Do not include confidential, student, research-participant, security, or proprietary information.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Submission type
+      options: [AI tool or product, Workflow skill, Installable skill or plugin]
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Product or skill name
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Task and problem solved
+      description: State the expected output, intended roles, and why this belongs in the MVP.
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Applicability and non-use boundaries
+      description: Include account, plan, platform, data, and task conditions.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Authoritative sources
+      description: One URL per line with the claim each URL directly supports.
+    validations:
+      required: true
+  - type: input
+    id: verified
+    attributes:
+      label: Verification date
+      description: Date you opened and checked the canonical sources (YYYY-MM-DD).
+      placeholder: "2026-08-28"
+    validations:
+      required: true
+  - type: textarea
+    id: permissions
+    attributes:
+      label: Publisher, license, maintenance, and permissions
+      description: Required for installable items. Include file, network, command, account, secret, and transitive access.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Submission checks
+      options:
+        - label: I opened each source and did not rely on a search snippet.
+          required: true
+        - label: I did not include sensitive or restricted information.
+          required: true
