@@ -14,7 +14,7 @@ Do not infer student access from a consumer free tier, personal registration, ed
 
 1. Open the live VT AI Tools page and any linked VT or ARC documentation.
 2. Resolve audience or status conflicts in favor of the newest, clearest official source.
-3. Update `src/data/tools.ts`, including source scope and `lastVerified`.
+3. Update `src/data/tools.ts`, including source scope and `lastVerified`; bind every capability and task fit to resolvable official source IDs.
 4. Keep the institutional account distinct from personal or separately licensed editions.
 5. Update recommendation and validation tests.
 6. Run:
@@ -31,9 +31,10 @@ For UI changes, also check keyboard operation, focus visibility, small-screen re
 ## Pull request checklist
 
 - [ ] Current official VT/ARC evidence verifies general student access or an explicit ARC-account condition.
-- [ ] Every capability and limit has a matching official claim scope.
+- [ ] Every capability and task fit has specific, resolvable official source IDs and an evidence summary.
 - [ ] Institutional and personal account contexts are clearly separated.
 - [ ] Export-controlled data and CUI remain a complete stop.
 - [ ] Employee-only and limited-pilot records cannot enter ordinary student results.
+- [ ] Coding/API, image input/generation, and all ARC prerequisites remain independent hard conditions.
 - [ ] Existing unrelated work is preserved.
 - [ ] Lint, typecheck, tests, and production build pass.

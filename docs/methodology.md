@@ -8,11 +8,12 @@ The guide recommends the best documented fit for a student’s task among curren
 
 ## Ordered decision pipeline
 
-1. **Student access hard filter.** Keep only active services officially available to all VT students. ARC Open OnDemand is retained only when the student confirms an ARC account. Employee-only, limited-pilot, not-approved, and unverified account contexts fail here.
-2. **Data-use hard filter.** The selected data category must appear in the service’s current approval record. Export-controlled data and CUI always stop with no recommendation.
-3. **Required-capability hard filter.** Source grounding, file upload, coding, API, and multimodal needs are checked against capabilities explicitly documented by VT or ARC.
-4. **Task-fit evaluation.** Only tools that passed all hard filters are evaluated for the selected task. Strong and supported labels organize documented alignment; they do not claim measured output quality.
-5. **Result.** Return one primary recommendation and no more than two eligible alternatives. Explain every other catalog tool’s earlier exclusion or lower task fit.
+1. **Verified VT student access hard filter.** Keep only records that pass catalog validation and represent an active service for all VT students or the explicitly conditional ARC option. Employee-only, limited-pilot, not-approved, externally evidenced, and unverified account contexts fail here.
+2. **ARC-condition hard filter.** ARC Open OnDemand requires all three confirmations: an ARC account, an active allocation, and VT network or VPN access. An account without an allocation does not pass. The ARC LLM Gateway web interface does not require a separate ARC account.
+3. **Data-use hard filter.** The selected data category must appear in the service’s current approval record. Export-controlled data and CUI always stop with no recommendation.
+4. **Every required capability hard filter.** File upload, source grounding, current web search, citations, coding, API access, multimodal input, image generation, and dedicated instances are independent requirements checked against capabilities explicitly documented by VT or ARC. No `OR` shortcut lets one capability substitute for another.
+5. **Task-fit evaluation.** Only tools that passed every hard filter are evaluated for the selected task. Strong and supported labels organize documented alignment; they do not claim measured output quality.
+6. **Result.** A unique highest fit receives the `Primary recommendation` label. A shared highest fit returns every tied tool alphabetically under `Equally suitable verified matches`; catalog array order never breaks a tie. Up to two lower-fit eligible alternatives may follow.
 
 The implementation is deterministic in `src/lib/recommend.ts`. It runs locally without a model call or user-data upload.
 
@@ -37,6 +38,6 @@ The engine never relaxes a hard requirement to force a recommendation. When noth
 
 ## Verification and limitations
 
-Automated validation requires complete source arrays, ISO verification dates, approved evidence domains, explicit CUI/export-control prohibitions, capabilities, tasks, and account conditions. Regression tests cover student eligibility, pilot/employee exclusions, ARC conditions, data stops, capability filtering, alternatives, and source completeness.
+Automated validation requires complete source arrays, ISO verification dates, approved evidence domains, explicit CUI/export-control prohibitions, complete ARC conditions, and resolvable source IDs plus evidence summaries for every capability and task fit. Regression tests cover deterministic catalog reordering, ties, student eligibility, pilot/employee exclusions, all ARC prerequisites, data stops, independent capability filtering, exact access links, and source resolution.
 
 The guide cannot inspect the user’s files, account configuration, allocation, license, course policy, contract, research protocol, or data-use agreement. Official live sources and responsible human owners remain authoritative.

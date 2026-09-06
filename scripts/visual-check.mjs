@@ -31,7 +31,7 @@ const results = []
 for (const viewport of [{ width: 1440, height: 1000 }, { width: 390, height: 844 }]) {
   const size = viewport.width > 1000 ? 'desktop' : 'mobile'
   results.push(await inspect(`home ${size}`, './', viewport))
-  results.push(await inspect(`recommender ${size}`, './recommend?taskId=source-questions&requiresProvidedSources=1&needsFileUpload=1&sensitivity=internal', viewport, submit))
+  results.push(await inspect(`recommender ${size}`, './recommend?goal=questions-provided-sources&sensitivity=internal', viewport, submit))
   results.push(await inspect(`tools ${size}`, './tools', viewport))
   results.push(await inspect(`responsible ${size}`, './responsible-use', viewport))
 }
@@ -44,7 +44,6 @@ await interaction.getByRole('button', { name: 'Open menu' }).click()
 if (!(await interaction.getByRole('navigation', { name: 'Primary navigation' }).isVisible())) problems.push('Mobile navigation did not open')
 await interaction.getByRole('navigation', { name: 'Primary navigation' }).getByRole('link', { name: 'Task Recommender' }).click()
 await interaction.getByRole('radio', { name: /Export-controlled data or CUI/i }).check()
-await interaction.getByRole('button', { name: 'Show verified matches' }).click()
 if (!(await interaction.getByRole('heading', { name: 'Do not use an AI tool for this data' }).isVisible())) problems.push('Controlled-data stop did not render')
 await interaction.close()
 await browser.close()

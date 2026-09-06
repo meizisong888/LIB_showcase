@@ -18,7 +18,7 @@ Core tools available to all VT students:
 4. Microsoft Copilot Chat through Virginia Tech
 5. ARC LLM Gateway
 
-ARC Open OnDemand LLMs are a conditional option. They enter the eligible set only when the student confirms an existing ARC account; an ARC allocation and VT network or VPN access are also required.
+ARC Open OnDemand LLMs are a conditional option. They enter the eligible set only when the student confirms all three documented prerequisites: an ARC account, an active ARC allocation, and VT network or VPN access.
 
 All tool information was re-verified on **2026-09-06**. The VT AI Tools page reports that it was last updated on **September 2, 2026**.
 
@@ -45,17 +45,37 @@ ChatGPT Edu is also excluded from all recommendation results. The current VT pag
 
 ## Recommendation algorithm
 
+The form builds a `TaskProfile` from a precise goal and separate mandatory-feature choices. Its ten goals are:
+
+1. brainstorm ideas or create a first draft;
+2. revise or improve existing writing;
+3. summarize uploaded readings or documents;
+4. ask questions using only provided sources;
+5. research current information with web sources or citations;
+6. write, explain, or debug code;
+7. build an API-based or automated research workflow;
+8. understand an image, diagram, screenshot, or voice input;
+9. generate or edit an image;
+10. ask a quick general question.
+
+File upload, source grounding, web search, citations, coding, API access, multimodal input, image generation, and a dedicated instance are independent Boolean requirements. Coding never implies API access, and image generation never implies that a tool can understand image input.
+
 The deterministic engine runs in this order:
 
 ```text
-student access eligibility hard filter
+verified VT student access hard filter
+→ ARC account/allocation/network hard filter
 → data-use restriction hard filter
-→ required-capability match
-→ documented task-fit score
-→ one primary recommendation and up to two eligible alternatives
+→ every mandatory capability hard filter
+→ documented task-fit classification
+→ recommendation result
 ```
 
-Scoring never runs for a tool that failed an earlier stage. Required source grounding, file upload, coding/API, and multimodal capabilities are pass/fail constraints. ARC Open OnDemand fails the first stage without a confirmed ARC account.
+Task-fit classification never runs for a tool that failed an earlier stage. Every selected function is a pass/fail constraint. ARC Open OnDemand fails unless account, active allocation, and network/VPN access are all confirmed; the ARC LLM Gateway web interface does not require a separate ARC account.
+
+If one eligible tool has the highest documented fit, the result labels it `Primary recommendation`. If two or more tools share that fit, the interface labels the group `Equally suitable verified matches`, shows every tied tool alphabetically, and does not claim that the first item is better. Catalog array order is never a tiebreaker. In both cases the interface states:
+
+> This project’s documented-fit classification based on official VT capabilities, not a Virginia Tech ranking or performance benchmark.
 
 Export-controlled data and Controlled Unclassified Information (CUI) stop the process with no recommendation. Virginia Tech explicitly states that these categories are not authorized for use with any AI tool. If no tool passes every selected requirement, the interface displays:
 
@@ -80,7 +100,7 @@ Where an older knowledge article and the dated VT Tools page differ, the project
 
 ## Data model and maintenance
 
-All recommendation records and their source objects are centralized in [`src/data/tools.ts`](src/data/tools.ts). Every tool includes:
+All recommendation records and their source objects are centralized in [`src/data/tools.ts`](src/data/tools.ts). Every capability and task-fit record names the exact source IDs supporting it; a tool-level source list alone is not sufficient. Every tool includes:
 
 ```ts
 {
@@ -91,12 +111,14 @@ All recommendation records and their source objects are centralized in [`src/dat
   eligibility,
   requiredAccount,
   accessUrl,
+  accessCta,
   costOrLimits,
   verifiedCapabilities,
   supportedTasks,
   dataRiskApproval,
   prohibitedData,
   conditionalRequirements,
+  notSuitableWhen,
   officialSources,
   lastVerified
 }
@@ -106,11 +128,12 @@ To update or add a tool:
 
 1. Re-open the current VT AI Tools page and the linked VT/ARC documentation.
 2. Confirm that the exact service is explicitly available to students; otherwise do not add it as recommendable.
-3. Record only capabilities directly supported by those official pages.
+3. Record only capabilities directly supported by those official pages, and add `sourceIds` plus an `evidenceSummary` to every capability record.
 4. Separate institutional, employee, pilot, paid, and personal account contexts.
-5. Update source claim scopes and `lastVerified` together.
-6. Add or update regression tests for eligibility, data restrictions, required capabilities, and conditional accounts.
-7. Run every validation command below.
+5. Bind every task-fit record—especially every `strong` fit—to specific official source IDs.
+6. Update source claim scopes and `lastVerified` together.
+7. Add or update regression tests for eligibility, data restrictions, independent capabilities, deterministic ties, and all ARC prerequisites.
+8. Run every validation command below.
 
 See [the content update guide](docs/content-update-guide.md) and [contribution rules](CONTRIBUTING.md).
 

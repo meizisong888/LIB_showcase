@@ -1,14 +1,16 @@
 export type DataSensitivity = 'public' | 'internal' | 'sensitive' | 'controlled'
 
-export type TaskId =
-  | 'brainstorming-writing'
-  | 'revising-writing'
-  | 'summarizing-readings'
-  | 'source-questions'
+export type TaskGoal =
+  | 'brainstorm-first-draft'
+  | 'revise-writing'
+  | 'summarize-uploaded'
+  | 'questions-provided-sources'
+  | 'research-web-citations'
   | 'coding-debugging'
-  | 'research-api'
-  | 'image-multimodal'
-  | 'quick-questions'
+  | 'api-research-workflow'
+  | 'multimodal-understanding'
+  | 'image-generation'
+  | 'quick-question'
 
 export type VerifiedCapability =
   | 'general-chat'
@@ -20,8 +22,21 @@ export type VerifiedCapability =
   | 'coding'
   | 'api-access'
   | 'web-search'
+  | 'citations'
   | 'multimodal-input'
   | 'image-generation'
+  | 'dedicated-instance'
+
+export type ProfileFeatureKey =
+  | 'needsFileUpload'
+  | 'needsSourceGrounding'
+  | 'needsWebSearch'
+  | 'needsCitations'
+  | 'needsCoding'
+  | 'needsApiAccess'
+  | 'needsMultimodalInput'
+  | 'needsImageGeneration'
+  | 'needsDedicatedInstance'
 
 export type ToolStatus = 'active-service' | 'conditional-access' | 'employee-only' | 'limited-pilot' | 'not-approved'
 export type StudentAvailability = 'all-vt-students' | 'arc-account-required' | 'employee-only' | 'limited-pilot' | 'not-eligible'
@@ -35,10 +50,18 @@ export interface OfficialSource {
   lastChecked: string
 }
 
+export interface VerifiedCapabilityRecord {
+  capability: VerifiedCapability
+  sourceIds: string[]
+  evidenceSummary: string
+}
+
 export interface TaskSupport {
-  taskId: TaskId
+  goal: TaskGoal
   fit: TaskFit
   reason: string
+  sourceIds: string[]
+  evidenceSummary: string
 }
 
 export interface Tool {
@@ -51,48 +74,75 @@ export interface Tool {
   eligibility: string
   requiredAccount: string
   accessUrl: string
+  accessCta: string
+  institutionalAccountReminder?: string
   costOrLimits: string
-  verifiedCapabilities: VerifiedCapability[]
+  verifiedCapabilities: VerifiedCapabilityRecord[]
   supportedTasks: TaskSupport[]
   dataRiskApproval: Exclude<DataSensitivity, 'controlled'>[]
   prohibitedData: string[]
   conditionalRequirements: string[]
+  notSuitableWhen: string[]
   officialSources: OfficialSource[]
   lastVerified: string
   usageSteps: string[]
 }
 
 export interface Task {
-  id: TaskId
+  id: TaskGoal
   name: string
   shortName: string
   summary: string
+  profileLabel: string
+  requiredFeatures: ProfileFeatureKey[]
+  optionalFeatures: ProfileFeatureKey[]
 }
 
-export interface FinderAnswers {
-  taskId: TaskId
-  requiresProvidedSources: boolean
+export interface TaskProfile {
+  goal: TaskGoal
   needsFileUpload: boolean
-  needsProgrammingOrApi: boolean
+  needsSourceGrounding: boolean
+  needsWebSearch: boolean
+  needsCitations: boolean
+  needsCoding: boolean
+  needsApiAccess: boolean
+  needsMultimodalInput: boolean
+  needsImageGeneration: boolean
+  needsDedicatedInstance: boolean
   sensitivity: DataSensitivity
   hasArcAccount: boolean
+  hasArcAllocation: boolean
+  canUseVtNetworkOrVpn: boolean
 }
 
-export type ExclusionStage = 'student-access' | 'data-use' | 'required-capability' | 'task-fit'
+export type ExclusionStage = 'student-access' | 'arc-conditions' | 'data-use' | 'required-capability' | 'task-fit'
+
+export interface CapabilityRequirement {
+  capability: VerifiedCapability
+  label: string
+  reason: string
+}
 
 export interface ToolEvaluation {
   tool: Tool
   score: number
   matchReasons: string[]
+  matchedCapabilities: VerifiedCapabilityRecord[]
+  taskSupport?: TaskSupport
   exclusionStage?: ExclusionStage
   exclusionReason?: string
 }
 
+export type RecommendationKind = 'unique' | 'tie' | 'none'
+
 export interface RecommendationResult {
   halted: boolean
+  kind: RecommendationKind
   message: string
   safetyMessage: string
-  primary?: ToolEvaluation
+  profileLabel: string
+  requirements: CapabilityRequirement[]
+  topMatches: ToolEvaluation[]
   alternatives: ToolEvaluation[]
   notSelected: ToolEvaluation[]
 }

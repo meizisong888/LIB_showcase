@@ -9,13 +9,13 @@ export const ui = {
   home: {
     eyebrow: 'Verified for Virginia Tech students',
     title: 'Start with your task. Stay inside the VT-supported boundary.',
-    description: 'Get one primary recommendation and up to two alternatives drawn only from AI services Virginia Tech currently provides or approves for student use.',
+    description: 'Get a top documented fit—or every equally suitable top match—drawn only from AI services Virginia Tech currently provides or approves for student use.',
   },
   pageHeaders: {
     recommend: {
       eyebrow: 'Student eligibility and safety first',
       title: 'Find a VT-supported AI tool for your task',
-      description: 'Answer six questions. The recommender checks student access, data restrictions, and required capabilities before it evaluates task fit.',
+      description: 'Build a precise task profile. The recommender checks student access, ARC conditions, data restrictions, and every required capability before it evaluates documented task fit.',
     },
     tools: {
       eyebrow: 'Official-source verified',

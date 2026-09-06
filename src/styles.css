@@ -157,7 +157,12 @@ select:focus, input:focus, button:focus-visible, a:focus-visible, [tabindex='0']
 .toggle-card input:checked + .fake-checkbox { border-color: var(--maroon-800); background: var(--maroon-800); color: white; }
 .toggle-card strong, .toggle-card small { display: block; }
 .toggle-card strong { font-size: 0.92rem; }
+.toggle-card strong em { display: inline-block; margin-left: 0.45rem; padding: 0.12rem 0.38rem; border-radius: 99px; background: var(--maroon-800); color: white; font-size: 0.6rem; font-style: normal; letter-spacing: 0.04em; text-transform: uppercase; }
 .toggle-card small { margin-top: 0.2rem; color: var(--muted); line-height: 1.4; }
+.toggle-card.required-toggle { cursor: default; }
+.selection-summary { display: flex; flex-wrap: wrap; gap: 0.35rem 0.7rem; margin: 1rem 0 0; padding: 0.75rem 0.9rem; border-left: 3px solid var(--green); border-radius: 0 7px 7px 0; background: var(--green-soft); font-size: 0.8rem; }
+.selection-summary strong { color: #105238; }
+.selection-summary span { color: #315e4d; }
 .sensitivity-fieldset { margin: 1.7rem 0 0; padding: 0; border: 0; }
 .sensitivity-fieldset legend { font-weight: 700; }
 .sensitivity-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
@@ -166,6 +171,8 @@ select:focus, input:focus, button:focus-visible, a:focus-visible, [tabindex='0']
 .sensitivity-options input { min-height: auto; accent-color: var(--maroon-800); }
 .sensitivity-options strong, .sensitivity-options small { display: block; }
 .sensitivity-options small { color: var(--muted); line-height: 1.35; }
+.binary-fieldset { margin: 1.2rem 0 0; padding: 0; border: 0; }
+.binary-fieldset legend { margin-bottom: 0.55rem; font-size: 0.88rem; font-weight: 700; }
 .form-submit { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
 .form-submit p { display: flex; align-items: center; gap: 0.5rem; margin: 0; font-size: 0.83rem; }
 .form-submit p svg { color: var(--green); flex: none; }
@@ -185,6 +192,7 @@ select:focus, input:focus, button:focus-visible, a:focus-visible, [tabindex='0']
 .safety-callout p { margin: 0; color: #5b4438; }
 .safety-callout a { display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 0.7rem; font-weight: 700; }
 .result-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; align-items: start; }
+.result-grid.tied-results { grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
 .result-card { padding: 1.4rem; border: 1px solid var(--line); border-radius: var(--radius); background: white; }
 .primary-result { border: 2px solid var(--maroon-700); box-shadow: var(--shadow-small); }
 .result-label { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 1rem; color: var(--orange-700); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
@@ -195,6 +203,15 @@ select:focus, input:focus, button:focus-visible, a:focus-visible, [tabindex='0']
 .result-card h4 { margin: 0 0 0.65rem; font-size: 0.82rem; }
 .reason-list > div { display: grid; grid-template-columns: auto 1fr auto; gap: 0.45rem; margin: 0.55rem 0; font-size: 0.76rem; line-height: 1.45; }
 .reason-list svg { margin-top: 0.12rem; color: var(--green); }
+.matched-list, .limit-list { padding-top: 1rem; margin-top: 1rem; border-top: 1px solid var(--line); }
+.matched-list ul, .limit-list ul { margin: 0; padding-left: 1rem; }
+.matched-list li, .limit-list li { margin: 0.45rem 0; color: var(--muted); font-size: 0.76rem; line-height: 1.45; }
+.matched-list li strong, .matched-list li span { display: block; }
+.matched-list li strong { color: var(--ink); }
+.matched-list p { margin: 0; font-size: 0.76rem; }
+.tie-heading { max-width: 760px; margin: 0 0 1.2rem; padding: 1rem 1.2rem; border-left: 4px solid var(--maroon-700); background: white; }
+.tie-heading h3 { margin-bottom: 0.25rem; }
+.tie-heading p { margin: 0; font-size: 0.86rem; }
 .source-links h2 { font-size: 1.8rem; }
 .source-links ul { padding: 0; list-style: none; }
 .source-links li { padding: 0.8rem 0; border-bottom: 1px solid var(--line); }
@@ -245,7 +262,7 @@ select:focus, input:focus, button:focus-visible, a:focus-visible, [tabindex='0']
 .workflow-map { margin: 0; padding: 2.5rem; border: 1px solid var(--line); border-radius: 24px; background: white; box-shadow: var(--shadow-small); }
 .workflow-map figcaption { max-width: 740px; margin-bottom: 2.2rem; }
 .workflow-map figcaption h2 { margin-bottom: 0.7rem; }
-.workflow-map ol { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; }
+.workflow-map ol { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; }
 .workflow-map li { position: relative; min-width: 0; display: flex; align-items: center; }
 .workflow-map li > div { min-width: 0; width: 100%; min-height: 150px; padding: 1.1rem; border: 1px solid var(--line); border-radius: 13px; background: var(--surface-soft); }
 .workflow-map li strong, .workflow-map li small { display: block; }
@@ -256,7 +273,7 @@ select:focus, input:focus, button:focus-visible, a:focus-visible, [tabindex='0']
 
 .answer-summary { padding: 1.4rem; border: 1px solid var(--line); border-radius: var(--radius); background: white; }
 .answer-summary h3 { margin-bottom: 1rem; }
-.answer-summary dl { display: grid; grid-template-columns: repeat(5, 1fr); margin: 0; }
+.answer-summary dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin: 0; }
 .answer-summary dl div { min-width: 0; padding: 0 1rem; border-left: 1px solid var(--line); }
 .answer-summary dl div:first-child { padding-left: 0; border: 0; }
 .answer-summary dt { color: var(--muted); font-size: 0.68rem; font-weight: 700; text-transform: uppercase; }
@@ -308,7 +325,6 @@ select:focus, input:focus, button:focus-visible, a:focus-visible, [tabindex='0']
 .binary-options span { display: block; min-height: 46px; padding: 0.65rem 1rem; border: 1px solid var(--line-dark); border-radius: 9px; background: white; font-weight: 700; }
 .binary-options input:checked + span { border-color: var(--maroon-700); background: var(--maroon-800); color: white; }
 .binary-options input:focus-visible + span { outline: 3px solid #e6814c; outline-offset: 3px; }
-.answer-summary dl { grid-template-columns: repeat(6, 1fr); }
 .tool-identity { display: flex; align-items: start; gap: 0.8rem; }
 .tool-initials { width: 44px; height: 44px; flex: none; display: grid; place-items: center; border-radius: 11px; background: var(--maroon-800); color: white; font-family: 'Newsreader', serif; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.04em; }
 .tool-identity h2, .tool-identity h3 { margin-bottom: 0.45rem; }
@@ -327,6 +343,11 @@ select:focus, input:focus, button:focus-visible, a:focus-visible, [tabindex='0']
 .usage-steps summary { color: var(--maroon-700); font-size: 0.8rem; font-weight: 700; cursor: pointer; }
 .usage-steps ol { margin-bottom: 0; color: var(--muted); font-size: 0.78rem; }
 .access-link { width: 100%; margin-top: 0.4rem; }
+.account-reminder { display: flex; gap: 0.45rem; align-items: start; padding: 0.7rem; border-radius: 8px; background: var(--yellow-soft); color: #684600; font-size: 0.74rem; line-height: 1.45; }
+.account-reminder svg { flex: none; margin-top: 0.15rem; }
+.evidence-details { margin-top: 0.8rem; padding: 0.75rem; border: 1px solid var(--line); border-radius: 8px; }
+.evidence-details summary { color: var(--maroon-700); font-size: 0.78rem; font-weight: 700; cursor: pointer; }
+.evidence-details .source-links.compact { margin-top: 0.5rem; padding-top: 0.4rem; }
 .verified-date { margin: 0.9rem 0 0; color: var(--muted); font-size: 0.7rem; }
 .why-not-others { margin-top: 2rem; }
 .why-not-others > ul { margin-bottom: 0; padding: 0; list-style: none; }
@@ -354,6 +375,7 @@ select:focus, input:focus, button:focus-visible, a:focus-visible, [tabindex='0']
   .task-grid { grid-template-columns: repeat(2, 1fr); }
   .result-grid { grid-template-columns: repeat(2, 1fr); }
   .primary-result { grid-column: 1 / -1; }
+  .tied-results .primary-result { grid-column: auto; }
   .workflow-map ol { grid-template-columns: 1fr; }
   .workflow-map li { align-items: stretch; flex-direction: column; }
   .workflow-map li > div { min-height: auto; }

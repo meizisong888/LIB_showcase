@@ -1,33 +1,42 @@
-import type { DataSensitivity, FinderAnswers, TaskId } from '../types'
+import { normalizeTaskProfile, profileForGoal, tasks } from '../data/tasks'
+import type { DataSensitivity, TaskGoal, TaskProfile } from '../types'
 
-export const defaultFinderAnswers: FinderAnswers = {
-  taskId: 'brainstorming-writing',
-  requiresProvidedSources: false,
-  needsFileUpload: false,
-  needsProgrammingOrApi: false,
-  sensitivity: 'public',
-  hasArcAccount: false,
-}
+export const defaultTaskProfile: TaskProfile = profileForGoal('brainstorm-first-draft')
 
-const taskIds: TaskId[] = ['brainstorming-writing', 'revising-writing', 'summarizing-readings', 'source-questions', 'coding-debugging', 'research-api', 'image-multimodal', 'quick-questions']
+const goals = tasks.map((task) => task.id)
 const sensitivities: DataSensitivity[] = ['public', 'internal', 'sensitive', 'controlled']
+const booleanKeys: Array<keyof Pick<TaskProfile,
+  | 'needsFileUpload'
+  | 'needsSourceGrounding'
+  | 'needsWebSearch'
+  | 'needsCitations'
+  | 'needsCoding'
+  | 'needsApiAccess'
+  | 'needsMultimodalInput'
+  | 'needsImageGeneration'
+  | 'needsDedicatedInstance'
+  | 'hasArcAccount'
+  | 'hasArcAllocation'
+  | 'canUseVtNetworkOrVpn'
+>> = [
+  'needsFileUpload', 'needsSourceGrounding', 'needsWebSearch', 'needsCitations', 'needsCoding',
+  'needsApiAccess', 'needsMultimodalInput', 'needsImageGeneration', 'needsDedicatedInstance',
+  'hasArcAccount', 'hasArcAllocation', 'canUseVtNetworkOrVpn',
+]
+
 const boolValue = (value: string | null, fallback: boolean) => value === '1' ? true : value === '0' ? false : fallback
 
-export function finderAnswersToSearchParams(answers: FinderAnswers): URLSearchParams {
+export function taskProfileToSearchParams(profile: TaskProfile): URLSearchParams {
   const params = new URLSearchParams()
-  Object.entries(answers).forEach(([key, value]) => params.set(key, typeof value === 'boolean' ? (value ? '1' : '0') : value))
+  Object.entries(normalizeTaskProfile(profile)).forEach(([key, value]) => params.set(key, typeof value === 'boolean' ? (value ? '1' : '0') : value))
   return params
 }
 
-export function finderAnswersFromSearchParams(params: URLSearchParams): FinderAnswers {
-  const taskId = params.get('taskId') as TaskId | null
-  const sensitivity = params.get('sensitivity') as DataSensitivity | null
-  return {
-    taskId: taskId && taskIds.includes(taskId) ? taskId : defaultFinderAnswers.taskId,
-    requiresProvidedSources: boolValue(params.get('requiresProvidedSources'), defaultFinderAnswers.requiresProvidedSources),
-    needsFileUpload: boolValue(params.get('needsFileUpload'), defaultFinderAnswers.needsFileUpload),
-    needsProgrammingOrApi: boolValue(params.get('needsProgrammingOrApi'), defaultFinderAnswers.needsProgrammingOrApi),
-    sensitivity: sensitivity && sensitivities.includes(sensitivity) ? sensitivity : defaultFinderAnswers.sensitivity,
-    hasArcAccount: boolValue(params.get('hasArcAccount'), defaultFinderAnswers.hasArcAccount),
-  }
+export function taskProfileFromSearchParams(params: URLSearchParams): TaskProfile {
+  const rawGoal = params.get('goal')
+  const goal = rawGoal && goals.includes(rawGoal as TaskGoal) ? rawGoal as TaskGoal : defaultTaskProfile.goal
+  const sensitivityValue = params.get('sensitivity') as DataSensitivity | null
+  const profile = profileForGoal(goal, sensitivityValue && sensitivities.includes(sensitivityValue) ? sensitivityValue : defaultTaskProfile.sensitivity)
+  booleanKeys.forEach((key) => { profile[key] = boolValue(params.get(key), profile[key]) })
+  return normalizeTaskProfile(profile)
 }

@@ -22,13 +22,14 @@ If general student access is not explicit, do not mark the tool recommendable.
 
 ## 3. Update the centralized record
 
-Edit `src/data/tools.ts`. Update the affected tool, its `officialSources` claim scopes, and `lastVerified` together. Add only capabilities the reviewed official page explicitly states.
+Edit `src/data/tools.ts`. Update the affected tool, its `officialSources` claim scopes, and `lastVerified` together. Add only capabilities the reviewed official page explicitly states. Every `VerifiedCapabilityRecord` and task-fit record must include nonempty `sourceIds` that resolve within that tool’s official sources, plus a concise `evidenceSummary`.
 
 Keep these distinctions visible:
 
 - VT institutional account versus personal account;
 - included student service versus employee purchase or pilot;
 - ARC Gateway versus ARC Open OnDemand;
+- coding versus API access, and multimodal input versus image generation;
 - high-risk approval versus permission for a specific regulated dataset;
 - documented task fit versus measured AI quality.
 
@@ -36,7 +37,7 @@ Never add export-controlled data or CUI to `dataRiskApproval`.
 
 ## 4. Review the engine effect
 
-Update tests whenever access, data approval, capability, task support, or ARC conditions change. Confirm the ordered filters still run before task scoring and that no-match remains possible.
+Update tests whenever access, data approval, capability, task support, or ARC conditions change. Confirm that array order cannot change the highest-match set, every tie is displayed, all three Open OnDemand prerequisites are enforced, the ordered filters still run before task-fit classification, and no-match remains possible.
 
 ## 5. Validate
 
