@@ -162,7 +162,7 @@ npm test
 npm run build
 ```
 
-For a built preview, start `npm run preview -- --host 127.0.0.1` and run `npm run check:visual` in another terminal. The production build creates `dist/index.html` and `dist/404.html` for GitHub Pages client-side routes.
+For a built preview, start `npm run preview -- --host 127.0.0.1` and run `npm run check:visual` in another terminal. Production uses hash-based routing so every GitHub Pages route starts from a successful root-document request; the build also creates `dist/404.html` as a fallback.
 
 ## Current limits
 

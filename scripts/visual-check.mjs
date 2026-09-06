@@ -30,10 +30,10 @@ const submit = async (page) => page.getByRole('button', { name: 'Show verified m
 const results = []
 for (const viewport of [{ width: 1440, height: 1000 }, { width: 390, height: 844 }]) {
   const size = viewport.width > 1000 ? 'desktop' : 'mobile'
-  results.push(await inspect(`home ${size}`, './', viewport))
-  results.push(await inspect(`recommender ${size}`, './recommend?goal=questions-provided-sources&sensitivity=internal', viewport, submit))
-  results.push(await inspect(`tools ${size}`, './tools', viewport))
-  results.push(await inspect(`responsible ${size}`, './responsible-use', viewport))
+  results.push(await inspect(`home ${size}`, './#/', viewport))
+  results.push(await inspect(`recommender ${size}`, './#/recommend?goal=questions-provided-sources&sensitivity=internal', viewport, submit))
+  results.push(await inspect(`tools ${size}`, './#/tools', viewport))
+  results.push(await inspect(`responsible ${size}`, './#/responsible-use', viewport))
 }
 
 const interaction = await browser.newPage({ viewport: { width: 390, height: 844 } })
