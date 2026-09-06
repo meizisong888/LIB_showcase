@@ -1,20 +1,18 @@
-import { ArrowRight, Bot, CheckCircle2, ClipboardList, SlidersHorizontal, Sparkles } from 'lucide-react'
+import { ArrowRight, BadgeCheck, ClipboardCheck, ListChecks, ShieldCheck, SlidersHorizontal } from 'lucide-react'
 
 const steps = [
-  { label: 'Task', note: 'What outcome do you need?', icon: ClipboardList },
-  { label: 'Constraints', note: 'Data, account, files, evidence', icon: SlidersHorizontal },
-  { label: 'AI product', note: 'Documented capability fit', icon: Bot },
-  { label: 'Workflow skill', note: 'Repeatable steps and prompt', icon: Sparkles },
-  { label: 'Human check', note: 'Verify, decide, approve', icon: CheckCircle2 },
+  { label: 'Student access', note: 'Remove employee-only, pilot, and unavailable account contexts.', icon: BadgeCheck },
+  { label: 'Data limits', note: 'Stop prohibited data and enforce the approved data boundary.', icon: ShieldCheck },
+  { label: 'Required features', note: 'Confirm sources, files, coding, API, or multimodal support.', icon: SlidersHorizontal },
+  { label: 'Task fit', note: 'Evaluate only the tools that passed every hard filter.', icon: ListChecks },
+  { label: 'Recommendation', note: 'Return one primary fit and no more than two alternatives.', icon: ClipboardCheck },
 ]
 
-export function WorkflowMap() {
+export function WorkflowMap({ compact = false }: { compact?: boolean }) {
   return (
-    <figure className="workflow-map" aria-labelledby="workflow-map-title">
-      <figcaption><p className="eyebrow">A better decision model</p><h2 id="workflow-map-title">The product is one step—not the workflow</h2><p>Start with the job and its boundary. Then pair a capable product with a repeatable skill and accountable human review.</p></figcaption>
-      <ol>
-        {steps.map(({ label, note, icon: Icon }, index) => <li key={label}><div><span className="workflow-icon"><Icon aria-hidden="true" /></span><strong>{label}</strong><small>{note}</small></div>{index < steps.length - 1 && <ArrowRight className="workflow-arrow" aria-hidden="true" />}</li>)}
-      </ol>
+    <figure className={compact ? 'workflow-map workflow-map-compact' : 'workflow-map'} aria-labelledby="workflow-map-title">
+      <figcaption><p className="eyebrow">Recommendation sequence</p><h2 id="workflow-map-title">Eligibility comes before fit</h2><p>A tool cannot score its way past missing student access, a data prohibition, or a required capability.</p></figcaption>
+      <ol>{steps.map(({ label, note, icon: Icon }, index) => <li key={label}><div><span className="workflow-icon"><Icon aria-hidden="true" /></span><strong>{label}</strong><small>{note}</small></div>{index < steps.length - 1 && <ArrowRight className="workflow-arrow" aria-hidden="true" />}</li>)}</ol>
     </figure>
   )
 }

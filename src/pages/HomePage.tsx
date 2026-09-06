@@ -1,27 +1,19 @@
 import { ArrowRight, ShieldAlert, Sparkles } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { ScenarioExplorer } from '../components/ScenarioExplorer'
 import { WorkflowMap } from '../components/WorkflowMap'
+import { tasks } from '../data/tasks'
 import { ui } from '../i18n/en'
-
-const concepts = [
-  { term: 'AI product', description: 'The application or service you open. Its account instance and documented features define the boundary.' },
-  { term: 'Capability fit', description: 'Strong, capable, conditional, or not focused for a task—never a universal quality score.' },
-  { term: 'Workflow skill', description: 'Repeatable steps, a prompt, expected output, failure modes, and human checks.' },
-  { term: 'Installable integration', description: 'Software that adds file, account, network, repository, or command permissions.' },
-]
 
 export function HomePage() {
   return <>
-    <section className="hero"><div className="container hero-grid"><div className="hero-copy"><p className="eyebrow"><Sparkles size={16} aria-hidden="true" />{ui.home.eyebrow}</p><h1>{ui.home.title}</h1><p>{ui.home.description}</p><div className="hero-actions"><Link to="/recommend" className="button">Build a recommendation <ArrowRight size={18} /></Link><Link to="/tools" className="text-link">View the capability matrix <ArrowRight size={16} /></Link></div><div className="trust-row" aria-label="Project qualities"><span>8 researched products</span><span>12 reusable skills</span><span>Documented fit—not a ranking</span></div></div><aside className="hero-panel"><p className="panel-kicker">A recommendation answers five questions</p><ol className="hero-question-list"><li>What is the task?</li><li>What constraints apply?</li><li>Which product has the documented capabilities?</li><li>Which skill makes the work repeatable?</li><li>What must a human verify?</li></ol><Link className="panel-footer-link" to="/methodology">Read the transparent method <ArrowRight size={16} /></Link></aside></div></section>
+    <section className="hero"><div className="container hero-grid"><div className="hero-copy"><p className="eyebrow"><Sparkles size={16} aria-hidden="true" />{ui.home.eyebrow}</p><h1>{ui.home.title}</h1><p>{ui.home.description}</p><div className="hero-actions"><Link to="/recommend" className="button">Build a recommendation <ArrowRight size={18} /></Link><Link to="/tools" className="text-link">Review verified tools <ArrowRight size={16} /></Link></div><div className="trust-row" aria-label="Project scope"><span>5 core student tools</span><span>1 ARC-account option</span><span>VT sources only</span></div></div><aside className="hero-panel"><p className="panel-kicker">What this guide will—and will not—do</p><h2>Verified VT access is the entry ticket.</h2><p>Popularity, a consumer free tier, or independent student registration is never enough for inclusion.</p><ul className="boundary-list"><li>Student eligibility is checked first.</li><li>Export-controlled data and CUI always stop.</li><li>No match means no external fallback.</li></ul><Link className="panel-footer-link" to="/responsible-use">See the evidence boundary <ArrowRight size={16} /></Link></aside></div></section>
+
+    <section className="section container"><div className="section-heading"><p className="eyebrow">Choose a starting task</p><h2>What do you need to do?</h2><p>Opening a task preselects it in the recommender. You will confirm source, file, programming, data, and ARC requirements next.</p></div><div className="task-grid">{tasks.map((task, index) => <Link className="task-card" key={task.id} to={`/recommend?taskId=${task.id}`}><span className="task-number">{String(index + 1).padStart(2, '0')}</span><h3>{task.shortName}</h3><p>{task.summary}</p><span className="card-link">Check VT-supported fits <ArrowRight size={15} /></span></Link>)}</div></section>
 
     <section className="section container"><WorkflowMap /></section>
-    <section className="section container"><ScenarioExplorer /></section>
 
-    <section className="section container concept-section"><div className="section-heading split-heading"><div><p className="eyebrow">Use precise language</p><h2>Four layers, four different decisions</h2></div><p>A capable product still needs a safe account, a task-specific workflow, and accountable human judgment.</p></div><dl className="concept-grid">{concepts.map((concept, index) => <div key={concept.term}><dt><span>0{index + 1}</span>{concept.term}</dt><dd>{concept.description}</dd></div>)}</dl></section>
+    <section className="container home-safety"><ShieldAlert aria-hidden="true" /><div><p className="eyebrow">A firm stop rule</p><h2>Never enter export-controlled data or CUI into an AI tool.</h2><p>Virginia Tech states that these categories are not authorized for any AI tool, including tools otherwise approved for high-risk data.</p></div><Link to="/responsible-use" className="button button-light">Review responsible use <ArrowRight size={18} /></Link></section>
 
-    <section className="container home-safety"><ShieldAlert aria-hidden="true" /><div><p className="eyebrow">Data safety comes first</p><h2>If you cannot classify it, do not upload it.</h2><p>FERPA records, personal information, unpublished research, human-subject data, contracts, and export-controlled material can require protections beyond an ordinary account.</p></div><Link to="/safety" className="button button-light">Use the data decision tree <ArrowRight size={18} /></Link></section>
-
-    <section className="section container review-strip"><div><span className="status-dot" />Content reviewed <strong>{ui.dates.currentReview}</strong></div><p>Capabilities, access, and policies change. Each profile links to the evidence used for this review.</p><Link to="/methodology">Review sources <ArrowRight size={16} /></Link></section>
+    <section className="section container review-strip"><div><span className="status-dot" />Official information checked <strong>{ui.dates.currentReview}</strong></div><p>Access and policy can change. Every tool card links directly to the VT or ARC evidence used.</p><a href="https://ai.vt.edu/tools.html" target="_blank" rel="noreferrer">Open VT source <ArrowRight size={16} /></a></section>
   </>
 }

@@ -1,119 +1,150 @@
-import { skills } from '../data/skills'
-import { defaultHumanChecklist, roleHumanChecks, safetyMessages, scoringWeights } from '../data/recommendationRules'
 import { tools } from '../data/tools'
-import type { FinderAnswers, FitLevel, RecommendationResult, ScoreReason, ScoredTool, Tool } from '../types'
-import { selectWorkflowSkill } from './selectWorkflowSkill'
+import type { FinderAnswers, RecommendationResult, Tool, ToolEvaluation, VerifiedCapability } from '../types'
 
-const taskPoints: Record<FitLevel, number> = {
-  strong: scoringWeights.taskStrong,
-  capable: scoringWeights.taskCapable,
-  conditional: scoringWeights.taskConditional,
-  'not-focused': scoringWeights.taskNotFocused,
+const NO_MATCH = 'No verified Virginia Tech student AI tool currently matches all of these requirements.'
+
+const sensitivityMessages: Record<FinderAnswers['sensitivity'], string> = {
+  public: 'Public data may be used, but provide only what the task needs and verify the output.',
+  internal: 'Use the correct VT institutional account. A personal account does not automatically receive Virginia Tech data protection.',
+  sensitive: 'VT lists these institutional services as approved for high-risk data, but contracts, research protocols, and other rules can still require additional review.',
+  controlled: 'Virginia Tech states that export-controlled data and Controlled Unclassified Information (CUI) are not authorized for use with any AI tool. Do not upload or enter this data.',
 }
 
-const taskDetails: Record<FitLevel, string> = {
-  strong: 'Documented features directly support this task.',
-  capable: 'Documented features support the task with some manual assembly or checking.',
-  conditional: 'Useful for a narrower part of the task or under specific workflow conditions.',
-  'not-focused': 'This task is outside the product’s documented focus in this guide.',
+export function isStudentAccessible(tool: Tool, hasArcAccount: boolean): boolean {
+  if (tool.status !== 'active-service' && tool.status !== 'conditional-access') return false
+  if (tool.studentAvailability === 'all-vt-students') return true
+  return tool.studentAvailability === 'arc-account-required' && hasArcAccount
 }
 
-function recommendationFit(taskFit: FitLevel, score: number): ScoredTool['fit'] {
-  if (taskFit === 'strong' && score >= 15) return 'strong'
-  if ((taskFit === 'strong' || taskFit === 'capable') && score >= 6) return 'capable'
-  return 'conditional'
+function accessExclusion(tool: Tool, hasArcAccount: boolean): string {
+  if (tool.studentAvailability === 'employee-only' || tool.status === 'employee-only') return 'Employee-only access is not eligible for a student recommendation.'
+  if (tool.studentAvailability === 'limited-pilot' || tool.status === 'limited-pilot') return 'Limited-pilot access is not available to the general VT student population.'
+  if (tool.studentAvailability === 'arc-account-required' && !hasArcAccount) return 'Requires an ARC account; the student indicated they do not have one.'
+  return 'No current VT source verifies general student eligibility for this tool.'
 }
 
-function scoreTool(tool: Tool, answers: FinderAnswers): ScoredTool {
-  const reasons: ScoreReason[] = []
-  const exclusions: string[] = []
-  const add = (label: string, points: number, detail: string) => reasons.push({ label, points, detail })
-
-  if (!tool.dataLevels.includes(answers.sensitivity)) exclusions.push(`Not eligible for ${answers.sensitivity} data under this guide’s current VT evidence boundary.`)
-
-  const taskFit = tool.taskFit[answers.taskId] ?? 'not-focused'
-  add('Task capability', taskPoints[taskFit], taskDetails[taskFit])
-
-  const inputMatch = tool.inputTypes.some((item) => item.toLowerCase().includes(answers.inputType.toLowerCase()))
-  add('Input', inputMatch ? scoringWeights.inputMatch : -2, inputMatch ? `Supports ${answers.inputType} inputs.` : `The ${answers.inputType} input may need manual conversion.`)
-
-  const outputTerms: Record<string, string[]> = {
-    brief: ['text', 'answers', 'summaries', 'analysis'], document: ['text', 'office content', 'artifacts'],
-    presentation: ['office content', 'slide drafts', 'artifacts'], analysis: ['analysis', 'research reports', 'summaries'],
-    code: ['code', 'code changes', 'pull requests'], 'action-log': ['text', 'summaries', 'office content'],
-  }
-  const requestedOutputs = outputTerms[answers.outputType] ?? [answers.outputType]
-  const outputMatch = tool.outputTypes.some((item) => requestedOutputs.some((term) => item.toLowerCase().includes(term)))
-  add('Output', outputMatch ? scoringWeights.outputMatch : -2, outputMatch ? `Can produce the requested ${answers.outputType} format or its building blocks.` : `The ${answers.outputType} output needs manual transfer or restructuring.`)
-
-  if (answers.needsWeb) add('Current web', tool.webAccess ? scoringWeights.webRequired : -5, tool.webAccess ? 'Has a documented live-web capability.' : 'No verified live-web capability in this profile.')
-  if (answers.citations) {
-    const points = tool.citations === 'strong' ? scoringWeights.citationsStrong : tool.citations === 'available' ? scoringWeights.citationsAvailable : -4
-    add('Source trail', points, tool.citations === 'strong' ? 'Designed to expose source links or source-grounded citations.' : tool.citations === 'available' ? 'Can provide sources, but coverage varies and needs close checking.' : 'Not designed around traceable citations.')
-  }
-  if (answers.editFiles) {
-    const lacksEditingTier = tool.fileEditingRequiresPaid && (answers.access === 'free' || answers.access === 'vt')
-    const points = !tool.fileEditing ? -4 : lacksEditingTier ? -1 : scoringWeights.fileEditing
-    add('File handoff', points, !tool.fileEditing ? 'Drafts or analyzes rather than directly editing source files.' : lacksEditingTier ? 'Direct editing requires a separately licensed tier.' : 'Can edit or create files in an eligible workflow.')
-  }
-  if (answers.coding) {
-    const points = tool.coding === 'strong' ? scoringWeights.codingStrong : tool.coding === 'capable' ? scoringWeights.codingCapable : -6
-    add('Code work', points, `${tool.coding[0].toUpperCase()}${tool.coding.slice(1)} documented coding profile.`)
-  }
-  if (answers.collaborationMode !== 'individual') {
-    const match = tool.collaborationModes.includes(answers.collaborationMode)
-    add('Work setting', match ? scoringWeights.collaborationMatch : -3, match ? `Supports ${answers.collaborationMode.replaceAll('-', ' ')}.` : `Does not directly support ${answers.collaborationMode.replaceAll('-', ' ')} in this profile.`)
-  }
-  if (answers.ecosystem !== 'none') {
-    const match = tool.ecosystems.includes(answers.ecosystem)
-    add('Ecosystem', match ? scoringWeights.ecosystem : -2, match ? `Matches the ${answers.ecosystem} ecosystem.` : `Does not directly match the ${answers.ecosystem} ecosystem.`)
-  }
-  const accessMatches = answers.access === 'any'
-    || (answers.access === 'free' && (tool.accessKinds.includes('free') || tool.accessKinds.includes('vt')))
-    || tool.accessKinds.includes(answers.access)
-  add('Account access', accessMatches ? scoringWeights.accessMatch : -3, accessMatches ? 'Fits the stated access constraint.' : 'May require a different account or paid license.')
-  if (tool.learningCurve === 'low') add('Start-up effort', scoringWeights.easyStart, 'Low documented setup and learning overhead.')
-
-  const score = reasons.reduce((total, reason) => total + reason.points, 0)
-  return { tool, score, reasons, exclusions, fit: recommendationFit(taskFit, score) }
+type CapabilityRequirement = {
+  options: VerifiedCapability[]
+  reason: string
 }
 
-function buildHumanHandoff(answers: FinderAnswers) {
-  const checks = [...defaultHumanChecklist, ...(roleHumanChecks[answers.role] ?? [])]
-  const manual: string[] = ['Make the final consequential decision and approve anything sent, published, graded, or merged.']
-  if (answers.citations) manual.push('Open the original sources and verify sentence-level support.')
-  if (answers.editFiles) manual.push('Inspect the final file, sharing permissions, formatting, and accessibility in its destination application.')
-  if (answers.coding) manual.push('Review the full diff, run tests in a controlled environment, and approve any merge or deployment.')
-  if (answers.collaborationMode !== 'individual') manual.push('Confirm recipients, permissions, retention, and the accountable owner of the shared work.')
-  if (answers.sensitivity !== 'public') manual.push('Verify the signed-in institutional account, data classification, and least-privilege access before upload.')
-  return { checks: [...new Set(checks)], manual: [...new Set(manual)] }
+function requiredCapabilities(answers: FinderAnswers): CapabilityRequirement[] {
+  const requirements: CapabilityRequirement[] = []
+
+  if (answers.taskId === 'source-questions') {
+    requirements.push({ options: ['source-grounding'], reason: 'The selected task requires answers based on supplied sources.' })
+    requirements.push({ options: ['file-upload'], reason: 'The selected task explicitly uses uploaded sources.' })
+  }
+  if (answers.taskId === 'coding-debugging') requirements.push({ options: ['coding'], reason: 'The selected task requires a verified coding capability.' })
+  if (answers.taskId === 'image-multimodal') requirements.push({ options: ['multimodal-input', 'image-generation'], reason: 'The selected task requires a verified multimodal or image capability.' })
+  if (answers.requiresProvidedSources) requirements.push({ options: ['source-grounding'], reason: 'The answer must be grounded in material supplied by the student.' })
+  if (answers.needsFileUpload) requirements.push({ options: ['file-upload'], reason: 'The workflow requires a verified file-upload capability.' })
+  if (answers.needsProgrammingOrApi) {
+    if (answers.taskId === 'research-api') requirements.push({ options: ['api-access'], reason: 'This research/API workflow requires verified API access.' })
+    else if (answers.taskId !== 'coding-debugging') requirements.push({ options: ['coding', 'api-access'], reason: 'The workflow requires a verified programming or API capability.' })
+  }
+
+  return requirements.filter((requirement, index, all) => all.findIndex((item) => item.options.join('|') === requirement.options.join('|')) === index)
 }
 
-export function recommendTools(answers: FinderAnswers): RecommendationResult {
-  const safetyMessage = safetyMessages[answers.sensitivity]
-  const handoff = buildHumanHandoff(answers)
-  const roleGuidance = roleHumanChecks[answers.role]?.[0] ?? 'Keep an accountable human in the final review.'
+function missingRequirements(tool: Tool, requirements: CapabilityRequirement[]): CapabilityRequirement[] {
+  return requirements.filter((requirement) => !requirement.options.some((capability) => tool.verifiedCapabilities.includes(capability)))
+}
 
-  if (answers.sensitivity === 'unknown') {
-    return { halted: true, safetyMessage, alternatives: [], excludedTools: [], closeCall: false, workflowReasons: [], humanChecklist: handoff.checks, roleGuidance, mustDoManually: handoff.manual }
+function scoreTool(tool: Tool, answers: FinderAnswers, requirements: CapabilityRequirement[]): ToolEvaluation {
+  const taskSupport = tool.supportedTasks.find((support) => support.taskId === answers.taskId)
+  let score = taskSupport?.fit === 'strong' ? 4 : taskSupport?.fit === 'supported' ? 2 : 0
+  if (tool.studentAvailability === 'all-vt-students') score += 1
+  if (answers.requiresProvidedSources && tool.verifiedCapabilities.includes('source-grounding')) score += 1
+  if (answers.needsFileUpload && tool.verifiedCapabilities.includes('file-upload')) score += 1
+
+  const matchReasons = [
+    taskSupport?.reason ?? 'The required capability is verified, but VT does not identify this as a primary task for the tool.',
+    ...requirements.map((requirement) => requirement.reason),
+    `${tool.name} is approved for the selected ${answers.sensitivity} data category when used in the stated VT account context.`,
+  ]
+
+  return { tool, score, matchReasons: [...new Set(matchReasons)] }
+}
+
+export function recommendTools(answers: FinderAnswers, catalog: Tool[] = tools): RecommendationResult {
+  const evaluations = new Map<string, ToolEvaluation>()
+
+  // 1. Student access eligibility hard filter.
+  const accessEligible = catalog.filter((tool) => {
+    const eligible = isStudentAccessible(tool, answers.hasArcAccount)
+    if (!eligible) evaluations.set(tool.id, { tool, score: 0, matchReasons: [], exclusionStage: 'student-access', exclusionReason: accessExclusion(tool, answers.hasArcAccount) })
+    return eligible
+  })
+
+  // 2. Data-use hard filter. CUI and export-controlled data stop here for every tool.
+  const dataEligible = accessEligible.filter((tool) => {
+    const eligible = answers.sensitivity !== 'controlled' && tool.dataRiskApproval.includes(answers.sensitivity)
+    if (!eligible) evaluations.set(tool.id, {
+      tool,
+      score: 0,
+      matchReasons: [],
+      exclusionStage: 'data-use',
+      exclusionReason: answers.sensitivity === 'controlled'
+        ? 'VT prohibits export-controlled data and CUI in every AI tool.'
+        : `The official evidence does not approve this tool for ${answers.sensitivity} university data.`,
+    })
+    return eligible
+  })
+
+  // 3. Required-capability hard filter.
+  const requirements = requiredCapabilities(answers)
+  const capabilityEligible = dataEligible.filter((tool) => {
+    const missing = missingRequirements(tool, requirements)
+    if (missing.length) evaluations.set(tool.id, {
+      tool,
+      score: 0,
+      matchReasons: [],
+      exclusionStage: 'required-capability',
+      exclusionReason: missing.map((requirement) => requirement.reason).join(' '),
+    })
+    return missing.length === 0
+  })
+
+  // 4. Task-fit scoring only happens after all hard filters pass.
+  const taskEligible = capabilityEligible.filter((tool) => {
+    const supported = tool.supportedTasks.some((task) => task.taskId === answers.taskId)
+    if (!supported) evaluations.set(tool.id, {
+      tool,
+      score: 0,
+      matchReasons: [],
+      exclusionStage: 'task-fit',
+      exclusionReason: 'The reviewed VT sources do not explicitly support this selected task for the tool.',
+    })
+    return supported
+  })
+  const scored = taskEligible
+    .map((tool) => scoreTool(tool, answers, requirements))
+    .sort((a, b) => b.score - a.score || catalog.indexOf(a.tool) - catalog.indexOf(b.tool))
+  scored.forEach((evaluation) => evaluations.set(evaluation.tool.id, evaluation))
+
+  const primary = scored[0]
+  const notSelected = catalog
+    .filter((tool) => tool.id !== primary?.tool.id)
+    .map((tool) => evaluations.get(tool.id)!)
+    .filter(Boolean)
+
+  if (!primary) {
+    return {
+      halted: true,
+      message: NO_MATCH,
+      safetyMessage: sensitivityMessages[answers.sensitivity],
+      alternatives: [],
+      notSelected,
+    }
   }
-
-  const allScored = tools.map((tool) => scoreTool(tool, answers))
-  const eligible = allScored.filter((item) => item.exclusions.length === 0).sort((a, b) => b.score - a.score || a.tool.name.localeCompare(b.tool.name))
-  const excludedTools = allScored.filter((item) => item.exclusions.length > 0).sort((a, b) => b.score - a.score)
-  if (eligible.length === 0) {
-    return { halted: true, safetyMessage: `${safetyMessage} No eligible product remains under the selected boundary. Use a human-only or locally approved workflow.`, alternatives: [], excludedTools, closeCall: false, workflowReasons: [], humanChecklist: handoff.checks, roleGuidance, mustDoManually: handoff.manual }
-  }
-
-  const selection = selectWorkflowSkill(answers, eligible[0].tool.id)
-  const installableSkill = answers.coding && answers.sensitivity === 'public'
-    ? skills.find((skill) => skill.slug === (answers.ecosystem === 'github' ? 'github-copilot-agent-mode' : 'claude-code-agent'))
-    : undefined
 
   return {
-    halted: false, safetyMessage, primary: eligible[0], alternatives: eligible.slice(1, 3), excludedTools,
-    closeCall: eligible.length > 1 && eligible[0].score - eligible[1].score <= 2,
-    workflowSkill: selection.skill, workflowReasons: selection.reasons, installableSkill,
-    humanChecklist: handoff.checks, roleGuidance, mustDoManually: handoff.manual,
+    halted: false,
+    message: 'Best fit among currently verified VT-supported student tools.',
+    safetyMessage: sensitivityMessages[answers.sensitivity],
+    primary,
+    alternatives: scored.slice(1, 3),
+    notSelected,
   }
 }

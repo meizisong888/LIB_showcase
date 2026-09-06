@@ -1,32 +1,16 @@
-import type { CollaborationMode, DataSensitivity, Ecosystem, FinderAnswers } from '../types'
+import type { DataSensitivity, FinderAnswers, TaskId } from '../types'
 
 export const defaultFinderAnswers: FinderAnswers = {
-  role: 'student',
-  taskId: 'research',
-  inputType: 'text',
-  outputType: 'brief',
-  needsWeb: true,
-  citations: true,
-  editFiles: false,
-  coding: false,
-  collaborationMode: 'individual',
-  ecosystem: 'none',
+  taskId: 'brainstorming-writing',
+  requiresProvidedSources: false,
+  needsFileUpload: false,
+  needsProgrammingOrApi: false,
   sensitivity: 'public',
-  access: 'any',
+  hasArcAccount: false,
 }
 
-const allowed = {
-  role: ['student', 'faculty', 'staff', 'researcher'],
-  taskId: ['research', 'teaching', 'admin-writing', 'documents', 'presentations', 'data-analysis', 'coding', 'meetings'],
-  inputType: ['text', 'documents', 'spreadsheets', 'images', 'audio', 'code'],
-  outputType: ['brief', 'document', 'presentation', 'analysis', 'code', 'action-log'],
-  collaborationMode: ['individual', 'shared-workspace', 'document-coauthoring', 'repository-collaboration', 'organization-account'],
-  ecosystem: ['none', 'microsoft', 'google', 'github'],
-  sensitivity: ['public', 'internal', 'restricted', 'unknown'],
-  access: ['free', 'vt', 'paid', 'any'],
-} as const
-
-const isAllowed = (key: keyof typeof allowed, value: string | null) => Boolean(value && (allowed[key] as readonly string[]).includes(value))
+const taskIds: TaskId[] = ['brainstorming-writing', 'revising-writing', 'summarizing-readings', 'source-questions', 'coding-debugging', 'research-api', 'image-multimodal', 'quick-questions']
+const sensitivities: DataSensitivity[] = ['public', 'internal', 'sensitive', 'controlled']
 const boolValue = (value: string | null, fallback: boolean) => value === '1' ? true : value === '0' ? false : fallback
 
 export function finderAnswersToSearchParams(answers: FinderAnswers): URLSearchParams {
@@ -36,19 +20,14 @@ export function finderAnswersToSearchParams(answers: FinderAnswers): URLSearchPa
 }
 
 export function finderAnswersFromSearchParams(params: URLSearchParams): FinderAnswers {
-  const value = <K extends keyof typeof allowed>(key: K) => isAllowed(key, params.get(key)) ? params.get(key)! : defaultFinderAnswers[key]
+  const taskId = params.get('taskId') as TaskId | null
+  const sensitivity = params.get('sensitivity') as DataSensitivity | null
   return {
-    role: value('role'),
-    taskId: value('taskId'),
-    inputType: value('inputType'),
-    outputType: value('outputType'),
-    needsWeb: boolValue(params.get('needsWeb'), defaultFinderAnswers.needsWeb),
-    citations: boolValue(params.get('citations'), defaultFinderAnswers.citations),
-    editFiles: boolValue(params.get('editFiles'), defaultFinderAnswers.editFiles),
-    coding: boolValue(params.get('coding'), defaultFinderAnswers.coding),
-    collaborationMode: value('collaborationMode') as CollaborationMode,
-    ecosystem: value('ecosystem') as Ecosystem,
-    sensitivity: value('sensitivity') as DataSensitivity,
-    access: value('access') as FinderAnswers['access'],
+    taskId: taskId && taskIds.includes(taskId) ? taskId : defaultFinderAnswers.taskId,
+    requiresProvidedSources: boolValue(params.get('requiresProvidedSources'), defaultFinderAnswers.requiresProvidedSources),
+    needsFileUpload: boolValue(params.get('needsFileUpload'), defaultFinderAnswers.needsFileUpload),
+    needsProgrammingOrApi: boolValue(params.get('needsProgrammingOrApi'), defaultFinderAnswers.needsProgrammingOrApi),
+    sensitivity: sensitivity && sensitivities.includes(sensitivity) ? sensitivity : defaultFinderAnswers.sensitivity,
+    hasArcAccount: boolValue(params.get('hasArcAccount'), defaultFinderAnswers.hasArcAccount),
   }
 }

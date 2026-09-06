@@ -1,14 +1,14 @@
 import { describe, expect, it } from 'vitest'
-import { scenarios } from '../data/scenarios'
 import { defaultFinderAnswers, finderAnswersFromSearchParams, finderAnswersToSearchParams } from './finderParams'
 
-describe('finder query parameters', () => {
-  it('round-trips every scenario answer without internal state loss', () => {
-    scenarios.forEach((scenario) => expect(finderAnswersFromSearchParams(finderAnswersToSearchParams(scenario.answers))).toEqual(scenario.answers))
+describe('recommender query parameters', () => {
+  it('round-trips all six answers', () => {
+    const answers = { ...defaultFinderAnswers, taskId: 'research-api' as const, requiresProvidedSources: true, needsFileUpload: true, needsProgrammingOrApi: true, sensitivity: 'sensitive' as const, hasArcAccount: true }
+    expect(finderAnswersFromSearchParams(finderAnswersToSearchParams(answers))).toEqual(answers)
   })
 
   it('rejects malformed enum and boolean values', () => {
-    const params = new URLSearchParams('role=robot&sensitivity=secret&needsWeb=maybe')
+    const params = new URLSearchParams('taskId=unknown&sensitivity=secret&hasArcAccount=maybe')
     expect(finderAnswersFromSearchParams(params)).toEqual(defaultFinderAnswers)
   })
 })

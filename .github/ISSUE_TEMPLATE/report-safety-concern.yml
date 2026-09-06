@@ -11,7 +11,7 @@ body:
     id: category
     attributes:
       label: Concern type
-      options: [Data handling, Misleading approval claim, Plugin or permission risk, Harmful or inequitable guidance, Accessibility barrier, Other]
+      options: [Data handling, Misleading approval claim, Student eligibility error, Harmful or inequitable guidance, Accessibility barrier, Other]
     validations:
       required: true
   - type: input

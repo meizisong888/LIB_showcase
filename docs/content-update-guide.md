@@ -1,56 +1,44 @@
 # Content update guide
 
-Use this guide when a product, skill, price, capability, account term, VT policy, or source changes.
+Use this guide whenever VT changes a service, audience, account requirement, capability, data approval, quota, or access page.
 
-## 1. Locate the record and claim
+## 1. Re-open the official evidence
 
-- Products: `src/data/tools.ts`
-- Skills: `src/data/skills.ts`
-- Tasks: `src/data/tasks.ts`
-- Scenarios: `src/data/scenarios.ts`
-- Sources: `src/data/sources.ts`
-- Safety and points: `src/data/recommendationRules.ts`
+Start at `https://ai.vt.edu/tools.html`. Follow its HokieAI, 4Help, or ARC documentation links. For the eligibility and capability catalog, accept only `ai.vt.edu`, `4help.vt.edu`, and `docs.arc.vt.edu` evidence.
 
-Record the exact field and visible sentence affected. Avoid broad “refresh everything” edits that make review harder.
+Record the page title, URL, supported claim scope, and the date you checked it. A search snippet is not evidence.
 
-## 2. Verify the canonical source
+## 2. Confirm the exact account context
 
-Prefer, in order:
+Answer these before editing:
 
-1. Current Virginia Tech policy or guidance for VT availability, approval, data, academic, research, or security claims.
-2. The product publisher’s current documentation for capabilities, access, pricing conditions, permissions, privacy, and compatibility.
-3. A formal primary paper when a research claim—not a product claim—is needed.
+- Is the service available to all students, only students with an ARC account, employees, or a limited pilot?
+- Which VT institutional account or protection indicator is required?
+- Is a named capability part of included student access or a separate paid/license tier?
+- Which data categories are approved, and what additional rules remain?
+- Did the direct access URL or usage limit change?
 
-Open the page. Check its publisher, date, applicable plan/account/platform, and the exact supporting passage. Never use a search summary as final evidence.
+If general student access is not explicit, do not mark the tool recommendable.
 
-## 3. Update source scope
+## 3. Update the centralized record
 
-If the URL is new, add a unique source ID, clear title, publisher, canonical URL, source tier, supported claim scope, and `verifiedAt` date to `sources.ts`. Reuse a source only when its scope covers the new claim.
+Edit `src/data/tools.ts`. Update the affected tool, its `officialSources` claim scopes, and `lastVerified` together. Add only capabilities the reviewed official page explicitly states.
 
-## 4. Preserve boundaries
+Keep these distinctions visible:
 
-Update what the tool does **and** what conditions or limitations changed. Keep these distinctions explicit:
+- VT institutional account versus personal account;
+- included student service versus employee purchase or pilot;
+- ARC Gateway versus ARC Open OnDemand;
+- high-risk approval versus permission for a specific regulated dataset;
+- documented task fit versus measured AI quality.
 
-- product versus model;
-- capability versus workflow;
-- personal versus VT/institutional account;
-- included versus separately licensed feature;
-- vendor statement versus this project’s evidence-based judgment.
-- documented capability fit versus empirical quality or benchmark performance;
-- general, research, office, and coding product families;
-- individual, shared-workspace, document-coauthoring, repository-collaboration, and organization-account modes.
+Never add export-controlled data or CUI to `dataRiskApproval`.
 
-Every product must keep a `taskFit` value for all eight tasks. Every skill must keep an explicit provenance label: project-curated, publisher-official, or community-discovered. Do not expose internal IDs as user-facing labels.
+## 4. Review the engine effect
 
-Never infer VT approval. Use the current official approved-tools page and exact data/account language.
+Update tests whenever access, data approval, capability, task support, or ARC conditions change. Confirm the ordered filters still run before task scoring and that no-match remains possible.
 
-## 5. Review safety effects
-
-If a product’s VT data-risk status changes, update `dataLevels`, `vtStatus`, `privacy`, `sourceIds`, recommendation tests, and visible safety content together. Use Needs review while evidence is ambiguous.
-
-For installable items, re-check publisher ownership, source URL, license, platforms, requested permissions, network/file/command access, maintenance, transitive dependencies, and security notes.
-
-## 6. Validate
+## 5. Validate
 
 ```bash
 npm run lint
@@ -59,4 +47,4 @@ npm test
 npm run build
 ```
 
-Then manually check the affected route, source links, keyboard focus, small-screen reflow, empty states, and browser console. Open a structured outdated-information issue when provenance or review discussion is useful.
+Then review the changed page at desktop and mobile widths, with keyboard navigation and an accessibility scan. Check every official source and access link.

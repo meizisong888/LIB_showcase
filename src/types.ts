@@ -1,180 +1,98 @@
-export type VerificationStatus = 'verified' | 'needs-review' | 'outdated'
-export type SourceTier = 'official' | 'curated' | 'community'
-export type RiskLevel = 'low' | 'medium' | 'high'
-export type DataSensitivity = 'public' | 'internal' | 'restricted' | 'unknown'
-export type Ecosystem = 'none' | 'microsoft' | 'google' | 'github'
-export type FitLevel = 'strong' | 'capable' | 'conditional' | 'not-focused'
-export type ToolFamily = 'general' | 'research' | 'office' | 'coding'
-export type CollaborationMode = 'individual' | 'shared-workspace' | 'document-coauthoring' | 'repository-collaboration' | 'organization-account'
-export type SkillProvenance = 'project-curated' | 'publisher-official' | 'community-discovered'
+export type DataSensitivity = 'public' | 'internal' | 'sensitive' | 'controlled'
 
-export interface Source {
+export type TaskId =
+  | 'brainstorming-writing'
+  | 'revising-writing'
+  | 'summarizing-readings'
+  | 'source-questions'
+  | 'coding-debugging'
+  | 'research-api'
+  | 'image-multimodal'
+  | 'quick-questions'
+
+export type VerifiedCapability =
+  | 'general-chat'
+  | 'drafting'
+  | 'revising'
+  | 'summarization'
+  | 'source-grounding'
+  | 'file-upload'
+  | 'coding'
+  | 'api-access'
+  | 'web-search'
+  | 'multimodal-input'
+  | 'image-generation'
+
+export type ToolStatus = 'active-service' | 'conditional-access' | 'employee-only' | 'limited-pilot' | 'not-approved'
+export type StudentAvailability = 'all-vt-students' | 'arc-account-required' | 'employee-only' | 'limited-pilot' | 'not-eligible'
+export type TaskFit = 'strong' | 'supported'
+
+export interface OfficialSource {
   id: string
   title: string
-  publisher: string
   url: string
-  tier: SourceTier
   claimScope: string
-  verifiedAt: string
+  lastChecked: string
+}
+
+export interface TaskSupport {
+  taskId: TaskId
+  fit: TaskFit
+  reason: string
 }
 
 export interface Tool {
   id: string
-  slug: string
   name: string
-  provider: string
-  family: ToolFamily
+  initials: string
   summary: string
-  bestFor: string[]
-  strengths: string[]
-  limitations: string[]
-  inputTypes: string[]
-  outputTypes: string[]
-  taskFit: Record<string, FitLevel>
-  webAccess: boolean
-  citations: 'strong' | 'available' | 'limited'
-  longDocuments: 'strong' | 'capable' | 'limited'
-  fileEditing: boolean
-  fileEditingRequiresPaid: boolean
-  coding: 'strong' | 'capable' | 'limited'
-  multimodal: 'strong' | 'capable' | 'limited'
-  collaborationModes: CollaborationMode[]
-  ecosystems: Ecosystem[]
-  access: string
-  accessKinds: ('free' | 'vt' | 'paid')[]
-  dataLevels: DataSensitivity[]
-  privacy: string
-  vtStatus: string
-  learningCurve: 'low' | 'medium' | 'high'
-  sourceIds: string[]
-  verifiedAt: string
-  status: VerificationStatus
+  status: ToolStatus
+  studentAvailability: StudentAvailability
+  eligibility: string
+  requiredAccount: string
+  accessUrl: string
+  costOrLimits: string
+  verifiedCapabilities: VerifiedCapability[]
+  supportedTasks: TaskSupport[]
+  dataRiskApproval: Exclude<DataSensitivity, 'controlled'>[]
+  prohibitedData: string[]
+  conditionalRequirements: string[]
+  officialSources: OfficialSource[]
+  lastVerified: string
+  usageSteps: string[]
 }
 
 export interface Task {
-  id: string
-  slug: string
+  id: TaskId
   name: string
-  eyebrow: string
+  shortName: string
   summary: string
-  icon: string
-  defaultOutput: string
-}
-
-export interface SkillExample {
-  context: string
-  sampleInput: string
-  outputSections: Array<{
-    label: string
-    content: string
-    status?: 'acceptable' | 'verify' | 'revise'
-  }>
-  likelyFailure: string
-  humanRevision: string
-}
-
-export interface InstallableDetails {
-  publisher: string
-  repositoryUrl: string
-  license: string
-  platforms: string[]
-  permissions: string[]
-  networkAccess: boolean
-  fileAccess: boolean
-  commandAccess: boolean
-  maintenanceStatus: string
-  securityNotes: string
-}
-
-export interface Skill {
-  id: string
-  slug: string
-  name: string
-  type: 'workflow' | 'installable'
-  category: string
-  summary: string
-  problem: string
-  roles: string[]
-  compatibleTools: string[]
-  inputTypes: string[]
-  outputTypes: string[]
-  risk: RiskLevel
-  requiresWeb: boolean
-  requiresAuth: boolean
-  executesCode: boolean
-  useWhen: string[]
-  avoidWhen: string[]
-  inputs: string[]
-  steps: string[]
-  prompt: string
-  expectedOutput: string
-  failureModes: string[]
-  checklist: string[]
-  safety: string
-  alternatives: string[]
-  sourceIds: string[]
-  sourceTier: SourceTier
-  verifiedAt: string
-  status: VerificationStatus
-  provenance: SkillProvenance
-  example?: SkillExample
-  installable?: InstallableDetails
 }
 
 export interface FinderAnswers {
-  role: string
-  taskId: string
-  inputType: string
-  outputType: string
-  needsWeb: boolean
-  citations: boolean
-  editFiles: boolean
-  coding: boolean
-  collaborationMode: CollaborationMode
-  ecosystem: Ecosystem
+  taskId: TaskId
+  requiresProvidedSources: boolean
+  needsFileUpload: boolean
+  needsProgrammingOrApi: boolean
   sensitivity: DataSensitivity
-  access: 'free' | 'vt' | 'paid' | 'any'
+  hasArcAccount: boolean
 }
 
-export interface ScoreReason {
-  label: string
-  points: number
-  detail: string
-}
+export type ExclusionStage = 'student-access' | 'data-use' | 'required-capability' | 'task-fit'
 
-export interface ScoredTool {
+export interface ToolEvaluation {
   tool: Tool
   score: number
-  reasons: ScoreReason[]
-  exclusions: string[]
-  fit: Exclude<FitLevel, 'not-focused'>
+  matchReasons: string[]
+  exclusionStage?: ExclusionStage
+  exclusionReason?: string
 }
 
 export interface RecommendationResult {
   halted: boolean
+  message: string
   safetyMessage: string
-  primary?: ScoredTool
-  alternatives: ScoredTool[]
-  excludedTools: ScoredTool[]
-  closeCall: boolean
-  workflowSkill?: Skill
-  workflowReasons: string[]
-  installableSkill?: Skill
-  humanChecklist: string[]
-  roleGuidance: string
-  mustDoManually: string[]
-}
-
-export interface Scenario {
-  id: string
-  role: 'student' | 'faculty' | 'staff' | 'researcher'
-  title: string
-  situation: string
-  sensitivity: DataSensitivity
-  targetOutput: string
-  toolFamily: ToolFamily
-  skillSlug: string
-  biggestRisk: string
-  humanChecks: string[]
-  answers: FinderAnswers
+  primary?: ToolEvaluation
+  alternatives: ToolEvaluation[]
+  notSelected: ToolEvaluation[]
 }

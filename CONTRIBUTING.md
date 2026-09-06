@@ -1,74 +1,39 @@
 # Contributing
 
-Contributions should make the workbench more accurate, bounded, and useful—not simply larger.
+Contributions should keep this project accurate, small, and explicitly limited to Virginia Tech students.
 
-Do not include FERPA records, personal information, credentials, unpublished research, participant data, proprietary material, security incident details, or other nonpublic data in an issue or pull request.
-
-## Start with an Issue Form
-
-Use one of the repository’s structured forms:
-
-- **Submit a Tool or Skill** for a scoped addition.
-- **Report Outdated Information** for a fact that changed.
-- **Report a Safety Concern** for unsafe guidance, omitted permissions, misleading approval language, inequity, or an accessibility barrier.
-
-Sensitive security or privacy reports belong in the relevant private Virginia Tech or vendor reporting channel, not a public GitHub issue.
+Do not put credentials, student records, participant data, export-controlled information, CUI, unpublished research, proprietary material, or other nonpublic data in an issue, fixture, screenshot, or pull request.
 
 ## Evidence required
 
-Every factual contribution must include:
+A recommendable tool must have current official evidence from `ai.vt.edu`, `4help.vt.edu`, or `docs.arc.vt.edu` that directly supports student eligibility and the recorded account boundary. Each changed claim must include its supporting URL, claim scope, and the date the page was opened.
 
-1. A canonical first-party source: Virginia Tech policy/guidance, the product publisher’s documentation, or a formal primary research source.
-2. The exact claim the source directly supports.
-3. The date the source was opened and checked, formatted `YYYY-MM-DD`.
-4. The applicable product, account, plan, platform, audience, task, and data boundary.
-5. Known limitations, non-use conditions, and uncertainty.
+Do not infer student access from a consumer free tier, personal registration, educational discount, employee license, pilot, or product popularity. Do not infer a capability that the reviewed official pages do not state.
 
-Search snippets, vendor comparison tables about competitors, ordinary blogs, social posts, GitHub stars, and generated answers are not sufficient evidence for a decision-relevant claim.
+## Update workflow
 
-## Additional requirements for installable skills
-
-Record all of the following:
-
-- publisher and official source/repository URL;
-- license and compatible platforms/versions;
-- maintenance status and last relevant release;
-- file read/write/delete scope;
-- network endpoints and telemetry;
-- command or code execution;
-- OAuth/account scopes, tokens, environment variables, and secrets;
-- transitive plugins, packages, MCP servers, and update channels;
-- a safe stop, revocation, rollback, and human handoff path.
-
-This project does not automatically install or authorize contributed skills.
-
-## Content rules
-
-- Distinguish products, capabilities, workflow skills, and installable integrations.
-- Do not state that a product is “VT approved” unless a current official VT source says so for the exact account and data level.
-- Do not convert a vendor claim into an independent finding.
-- Use conditional descriptions, not universal winners or unsupported scores.
-- A source link must support the nearby claim, not merely discuss the same topic.
-- Use plain, professional English and write UI content so it can later be localized.
-
-## Development workflow
+1. Open the live VT AI Tools page and any linked VT or ARC documentation.
+2. Resolve audience or status conflicts in favor of the newest, clearest official source.
+3. Update `src/data/tools.ts`, including source scope and `lastVerified`.
+4. Keep the institutional account distinct from personal or separately licensed editions.
+5. Update recommendation and validation tests.
+6. Run:
 
 ```bash
-npm install
 npm run lint
 npm run typecheck
 npm test
 npm run build
 ```
 
-Add or update tests when changing recommendation rules, data eligibility, filters, comparison selection, or validation. For a UI change, check keyboard operation, focus visibility, 200% zoom/reflow, mobile layout, reduced motion, empty states, and console errors.
+For UI changes, also check keyboard operation, focus visibility, small-screen reflow, screen-reader names, color contrast, reduced motion, and browser console errors.
 
 ## Pull request checklist
 
-- [ ] The change has an issue or a concise evidence-backed rationale.
-- [ ] Sources, claim scope, and verification dates are complete.
-- [ ] Applicability and non-use boundaries are explicit.
-- [ ] Installable permission fields are complete when relevant.
+- [ ] Current official VT/ARC evidence verifies general student access or an explicit ARC-account condition.
+- [ ] Every capability and limit has a matching official claim scope.
+- [ ] Institutional and personal account contexts are clearly separated.
+- [ ] Export-controlled data and CUI remain a complete stop.
+- [ ] Employee-only and limited-pilot records cannot enter ordinary student results.
 - [ ] Existing unrelated work is preserved.
 - [ ] Lint, typecheck, tests, and production build pass.
-- [ ] No secret or sensitive data is present in code, fixtures, logs, issues, or screenshots.

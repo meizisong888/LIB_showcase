@@ -1,28 +1,56 @@
-import { ArrowRight, Check, CircleAlert, Minus, ShieldX } from 'lucide-react'
-import { Link } from 'react-router-dom'
-import type { RecommendationResult, ScoredTool } from '../types'
-import { familyLabels, fitLabels } from '../lib/toolFit'
+import { Check, CircleAlert, ExternalLink, Minus, ShieldX } from 'lucide-react'
+import { AccessBadge, SourceLinks } from './Shared'
+import type { RecommendationResult, ToolEvaluation, VerifiedCapability } from '../types'
 
-function ProductChoice({ item, primary = false }: { item: ScoredTool; primary?: boolean }) {
-  const positives = item.reasons.filter((reason) => reason.points > 0).sort((a, b) => b.points - a.points)
-  const tradeoff = item.reasons.find((reason) => reason.points < 0)?.detail ?? item.tool.limitations[0]
-  return <article className={primary ? 'result-card primary-result' : 'result-card'}><div className="result-label">{primary ? 'Primary product' : 'Alternative product'}</div><div className="result-title-row"><div><p>{familyLabels[item.tool.family]}</p><h3>{item.tool.name}</h3></div><span className={`fit-badge fit-${item.fit}`}>{fitLabels[item.fit]} fit</span></div><p>{item.tool.summary}</p><div className="reason-list"><h4>Why it fits</h4>{positives.slice(0, 4).map((reason) => <div key={reason.label}><Check size={16} /><span><strong>{reason.label}</strong> · {reason.detail}</span></div>)}</div><div className="tradeoff-box"><h4>Key limitation</h4><p><Minus size={15} />{tradeoff}</p></div><details className="score-details"><summary>Show transparent fit calculation</summary><ul>{item.reasons.map((reason) => <li key={reason.label}><span>{reason.label}: {reason.detail}</span><strong>{reason.points > 0 ? '+' : ''}{reason.points}</strong></li>)}</ul><p>Total: {item.score} points. Points organize this answer; they are not a quality benchmark.</p></details></article>
+const capabilityLabels: Record<VerifiedCapability, string> = {
+  'general-chat': 'General chat',
+  drafting: 'Drafting',
+  revising: 'Writing revision',
+  summarization: 'Summarization',
+  'source-grounding': 'Answers from supplied sources',
+  'file-upload': 'File upload',
+  coding: 'Coding',
+  'api-access': 'API access',
+  'web-search': 'Web search',
+  'multimodal-input': 'Multimodal input',
+  'image-generation': 'Image generation',
+}
+
+function ToolChoice({ item, primary = false }: { item: ToolEvaluation; primary?: boolean }) {
+  const tool = item.tool
+  const directAccess = tool.studentAvailability === 'all-vt-students'
+    ? 'Yes. Sign in with the required VT institutional account.'
+    : 'Conditional. The student must already have the required ARC account and allocation.'
+  return <article className={primary ? 'result-card primary-result' : 'result-card'}>
+    <div className="result-label">{primary ? 'Primary recommendation' : 'Eligible alternative'}</div>
+    <div className="result-title-row"><div className="tool-identity"><span className="tool-initials" aria-hidden="true">{tool.initials}</span><div><h3>{tool.name}</h3><AccessBadge availability={tool.studentAvailability} /></div></div></div>
+    <p>{tool.summary}</p>
+    <section className="reason-list" aria-label={`Why ${tool.name} fits`}><h4>Why it fits this task</h4>{item.matchReasons.slice(0, 4).map((reason) => <div key={reason}><Check size={16} aria-hidden="true" /><span>{reason}</span></div>)}</section>
+    <dl className="result-facts">
+      <div><dt>Can a student use it directly?</dt><dd>{directAccess}</dd></div>
+      <div><dt>Required account</dt><dd>{tool.requiredAccount}</dd></div>
+      <div><dt>Known cost or limits</dt><dd>{tool.costOrLimits}</dd></div>
+      <div><dt>Approved data in this guide</dt><dd>Public, internal, and sensitive/high-risk university information, subject to additional rules.</dd></div>
+      <div className="prohibited-fact"><dt>Never upload</dt><dd><ul>{tool.prohibitedData.map((item) => <li key={item}>{item}</li>)}</ul></dd></div>
+    </dl>
+    <div className="tag-row" aria-label="Verified capabilities">{tool.verifiedCapabilities.map((capability) => <span key={capability}>{capabilityLabels[capability]}</span>)}</div>
+    <details className="usage-steps"><summary>Suggested use steps</summary><ol>{tool.usageSteps.map((step) => <li key={step}>{step}</li>)}</ol></details>
+    <a className="button button-small access-link" href={tool.accessUrl} target="_blank" rel="noreferrer">Open official access point <ExternalLink size={15} aria-hidden="true" /></a>
+    <SourceLinks sources={tool.officialSources} compact />
+    <p className="verified-date">Last verified: <time dateTime={tool.lastVerified}>{tool.lastVerified}</time></p>
+  </article>
 }
 
 export function RecommendationBreakdown({ result }: { result: RecommendationResult }) {
-  const whyNot = result.primary ? result.alternatives.map((alternative) => {
-    const difference = result.primary!.reasons.find((primaryReason) => {
-      const alternativeReason = alternative.reasons.find((reason) => reason.label === primaryReason.label)
-      return alternativeReason && alternativeReason.points < primaryReason.points
-    })
-    const alternativeReason = difference ? alternative.reasons.find((reason) => reason.label === difference.label) : alternative.reasons.find((reason) => reason.points < 0)
-    return { name: alternative.tool.name, detail: alternativeReason?.detail ?? alternative.tool.limitations[0] }
-  }) : []
+  const alternativeIds = new Set(result.alternatives.map((item) => item.tool.id))
   return <>
-    {result.primary && <div className="result-grid"><ProductChoice item={result.primary} primary />{result.alternatives.map((item) => <ProductChoice item={item} key={item.tool.id} />)}</div>}
-    {whyNot.length > 0 && <section className="why-not-others"><h3>Why not the others?</h3><p>The alternatives remain viable; these are the clearest differences for this brief.</p><ul>{whyNot.map((item) => <li key={item.name}><strong>{item.name}:</strong> {item.detail}</li>)}</ul></section>}
-    {result.excludedTools.length > 0 && <details className="excluded-tools"><summary><ShieldX size={17} />Safety-excluded products ({result.excludedTools.length})</summary><ul>{result.excludedTools.map((item) => <li key={item.tool.id}><strong>{item.tool.name}</strong><span>{item.exclusions.join(' ')}</span></li>)}</ul></details>}
-    {result.workflowSkill && <div className="recommendation-next-grid"><article className="next-card"><p className="eyebrow">Selected workflow skill</p><h3>{result.workflowSkill.name}</h3><p>{result.workflowSkill.summary}</p><ul>{result.workflowReasons.map((reason) => <li key={reason}>{reason}</li>)}</ul><Link to={`/skills/${result.workflowSkill.slug}`}>Open steps, prompt, and example <ArrowRight size={16} /></Link></article>{result.installableSkill && <article className="next-card permission-card"><p className="eyebrow">Optional installable integration</p><h3>{result.installableSkill.name}</h3><p>{result.installableSkill.summary}</p><p><strong>No automatic install.</strong> Review the publisher and permissions first.</p><Link to={`/skills/${result.installableSkill.slug}`}>Review permissions <ArrowRight size={16} /></Link></article>}<article className="next-card checklist-card"><p className="eyebrow">Human handoff</p><h3>Must be done manually</h3><p>{result.roleGuidance}</p><ul>{result.mustDoManually.map((item) => <li key={item}><Check size={16} />{item}</li>)}</ul></article></div>}
-    {result.halted && <div className="halt-card"><CircleAlert /><div><h3>Use a human-only path for now</h3><p>Classify or remove the data, consult the responsible data steward or policy owner, and only then return to the finder.</p><Link to="/safety" className="button button-small">Review safety guidance</Link></div></div>}
+    {result.primary && <div className="result-grid"><ToolChoice item={result.primary} primary />{result.alternatives.map((item) => <ToolChoice item={item} key={item.tool.id} />)}</div>}
+
+    <section className="why-not-others" aria-labelledby="why-not-title"><h3 id="why-not-title">Why other tools were not selected</h3><p>Every tool below was evaluated in the required order. An access, data, or capability failure cannot be offset by task fit.</p>{result.notSelected.length ? <ul>{result.notSelected.map((item) => <li key={item.tool.id}><strong>{item.tool.name}</strong><span>{item.exclusionReason ?? (alternativeIds.has(item.tool.id) ? 'Eligible and shown above as an alternative; the primary has at least as direct a documented fit for this brief.' : 'It passed the hard filters, but its documented task fit was less direct than the options shown.')}</span></li>)}</ul> : <p>No additional verified VT student tools are in the current catalog.</p>}</section>
+
+    {result.halted && <div className="halt-card"><CircleAlert aria-hidden="true" /><div><h3>{result.message}</h3><p>Do not substitute an unverified consumer or paid product just to force a result. Change the requirements only if the real task and data allow it.</p></div></div>}
+
+    {!result.halted && result.notSelected.some((item) => item.exclusionStage === 'data-use') && <div className="excluded-note"><ShieldX size={18} aria-hidden="true" /><p>At least one catalog option was removed at the data-use stage. Review the reason above before changing your answers.</p></div>}
+    {!result.halted && result.primary && <div className="result-reminder"><Minus size={18} aria-hidden="true" /><p>This is a documented-fit recommendation, not a claim that the tool is the industry’s highest-quality AI. Follow course rules and verify the output yourself.</p></div>}
   </>
 }

@@ -1,0 +1,48 @@
+name: Submit or Update a VT Student Tool
+description: Propose a source-backed change to the verified VT student catalog.
+title: "[VT tool]: "
+labels: ["content", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, student records, export-controlled information, CUI, unpublished research, or other nonpublic data.
+  - type: input
+    id: name
+    attributes:
+      label: Exact service name
+      placeholder: Include the institutional edition or account context
+    validations:
+      required: true
+  - type: textarea
+    id: student_access
+    attributes:
+      label: Official student-access evidence
+      description: Link the current ai.vt.edu, 4help.vt.edu, or docs.arc.vt.edu page and quote only the minimum relevant claim.
+    validations:
+      required: true
+  - type: textarea
+    id: claims
+    attributes:
+      label: Capabilities, data boundary, and limits
+      description: Pair every proposed claim with its official VT or ARC source.
+    validations:
+      required: true
+  - type: input
+    id: verified
+    attributes:
+      label: Verification date
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Submission checks
+      options:
+        - label: I opened every source and did not rely on a search snippet or product popularity.
+          required: true
+        - label: I kept institutional, personal, employee, pilot, and paid account contexts separate.
+          required: true
+        - label: This public report contains no sensitive or restricted information.
+          required: true

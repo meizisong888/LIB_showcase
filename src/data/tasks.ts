@@ -1,14 +1,14 @@
 import type { Task } from '../types'
 
 export const tasks: Task[] = [
-  { id: 'research', slug: 'research', name: 'Research', eyebrow: 'Discover & verify', summary: 'Find evidence, map claims, and keep a traceable source trail.', icon: 'Search', defaultOutput: 'Evidence brief' },
-  { id: 'teaching', slug: 'teaching', name: 'Teaching', eyebrow: 'Design for learning', summary: 'Build activities, rubrics, and accessible course materials.', icon: 'BookOpen', defaultOutput: 'Teaching asset' },
-  { id: 'admin-writing', slug: 'admin-writing', name: 'Administrative writing', eyebrow: 'Draft with context', summary: 'Turn notes and requirements into review-ready professional writing.', icon: 'PenLine', defaultOutput: 'Reviewed draft' },
-  { id: 'documents', slug: 'documents', name: 'Document processing', eyebrow: 'Extract & transform', summary: 'Summarize, compare, or restructure long source documents.', icon: 'Files', defaultOutput: 'Structured document' },
-  { id: 'presentations', slug: 'presentations', name: 'Presentations', eyebrow: 'Shape the story', summary: 'Create an evidence-backed narrative and accessible slide plan.', icon: 'Presentation', defaultOutput: 'Slide outline' },
-  { id: 'data-analysis', slug: 'data-analysis', name: 'Data analysis', eyebrow: 'Inspect & explain', summary: 'Profile data, test assumptions, and document reproducible findings.', icon: 'ChartNoAxesCombined', defaultOutput: 'Analysis memo' },
-  { id: 'coding', slug: 'coding', name: 'Programming', eyebrow: 'Plan, change, verify', summary: 'Work through a bounded code change with tests and human review.', icon: 'Code2', defaultOutput: 'Tested code change' },
-  { id: 'meetings', slug: 'meetings', name: 'Meeting follow-up', eyebrow: 'Capture decisions', summary: 'Convert approved notes or transcripts into actions and decisions.', icon: 'MessagesSquare', defaultOutput: 'Decision and action log' },
+  { id: 'brainstorming-writing', shortName: 'Brainstorm & write', name: 'Brainstorming / general writing', summary: 'Generate ideas, outlines, or a first draft.' },
+  { id: 'revising-writing', shortName: 'Revise writing', name: 'Revising or improving writing', summary: 'Improve clarity, organization, grammar, or style.' },
+  { id: 'summarizing-readings', shortName: 'Summarize readings', name: 'Summarizing course readings', summary: 'Condense assigned material while preserving key ideas.' },
+  { id: 'source-questions', shortName: 'Ask about sources', name: 'Asking questions based on uploaded sources', summary: 'Get answers grounded in material you provide.' },
+  { id: 'coding-debugging', shortName: 'Code & debug', name: 'Coding and debugging', summary: 'Explain, draft, or troubleshoot code.' },
+  { id: 'research-api', shortName: 'Research & API', name: 'Research or API experimentation', summary: 'Explore a research question or build an API-based experiment.' },
+  { id: 'image-multimodal', shortName: 'Image & multimodal', name: 'Image or multimodal work', summary: 'Work with images, voice, vision, or image generation.' },
+  { id: 'quick-questions', shortName: 'Quick questions', name: 'Quick general questions', summary: 'Get concise help with an everyday question.' },
 ]
 
-export const taskById = Object.fromEntries(tasks.map((task) => [task.id, task]))
+export const taskById = Object.fromEntries(tasks.map((task) => [task.id, task])) as Record<string, Task>

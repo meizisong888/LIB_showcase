@@ -8,44 +8,55 @@ import { tasks } from '../data/tasks'
 import { ui } from '../i18n/en'
 import { defaultFinderAnswers, finderAnswersFromSearchParams } from '../lib/finderParams'
 import { recommendTools } from '../lib/recommend'
-import type { CollaborationMode, Ecosystem, FinderAnswers } from '../types'
+import type { FinderAnswers } from '../types'
 
-const yesNoFields = [
-  { key: 'needsWeb', label: 'Need current web research?', help: 'The task depends on current external information.' },
-  { key: 'citations', label: 'Need a traceable source trail?', help: 'Readers need to inspect evidence behind factual claims.' },
-  { key: 'editFiles', label: 'Need to edit or create files?', help: 'A document, slide, sheet, or repository must change.' },
-  { key: 'coding', label: 'Does the task involve programming?', help: 'Code generation, repository work, or executable analysis.' },
+const requirementFields = [
+  { key: 'requiresProvidedSources', label: 'Must the answer be based on material you provide?', help: 'This becomes a hard requirement for a verified source-grounded workflow.' },
+  { key: 'needsFileUpload', label: 'Do you need to upload a file?', help: 'Tools without an explicitly verified upload capability are removed.' },
+  { key: 'needsProgrammingOrApi', label: 'Do you need programming or API access?', help: 'The selected task determines whether coding or API support is required.' },
 ] as const
+
+const dataOptions: Array<{ value: FinderAnswers['sensitivity']; label: string; help: string }> = [
+  { value: 'public', label: 'Public', help: 'Published or intentionally public information.' },
+  { value: 'internal', label: 'Internal university information', help: 'Nonpublic information used within Virginia Tech.' },
+  { value: 'sensitive', label: 'Sensitive or high-risk university information', help: 'Regulated or high-risk data, subject to any additional rules.' },
+  { value: 'controlled', label: 'Export-controlled data or CUI', help: 'VT prohibits this data in every AI tool.' },
+]
 
 export function RecommendPage() {
   const [searchParams] = useSearchParams()
-  const initialAnswers = useMemo(() => {
-    if (searchParams.has('task') && !searchParams.has('taskId')) {
-      const taskId = searchParams.get('task')
-      return { ...defaultFinderAnswers, taskId: tasks.some((task) => task.id === taskId) ? taskId! : defaultFinderAnswers.taskId }
-    }
-    return finderAnswersFromSearchParams(searchParams)
-  }, [searchParams])
+  const initialAnswers = useMemo(() => searchParams.size ? finderAnswersFromSearchParams(searchParams) : defaultFinderAnswers, [searchParams])
   const [answers, setAnswers] = useState<FinderAnswers>(initialAnswers)
   const [submitted, setSubmitted] = useState(false)
   const result = useMemo(() => submitted ? recommendTools(answers) : null, [answers, submitted])
 
-  const update = <K extends keyof FinderAnswers>(key: K, value: FinderAnswers[K]) => { setAnswers((current) => ({ ...current, [key]: value })); setSubmitted(false) }
-  const submit = (event: FormEvent) => { event.preventDefault(); setSubmitted(true); window.setTimeout(() => document.getElementById('recommendation-results')?.focus(), 0) }
+  const update = <K extends keyof FinderAnswers>(key: K, value: FinderAnswers[K]) => {
+    setAnswers((current) => ({ ...current, [key]: value }))
+    setSubmitted(false)
+  }
+  const submit = (event: FormEvent) => {
+    event.preventDefault()
+    setSubmitted(true)
+    window.setTimeout(() => document.getElementById('recommendation-results')?.focus(), 0)
+  }
 
   return <>
     <PageHeader {...ui.pageHeaders.recommend} />
-    <div className="container finder-layout"><form className="finder-form" onSubmit={submit}>
-      <section className="form-section" aria-labelledby="context-heading"><div className="form-section-title"><span>01</span><div><h2 id="context-heading">Task context</h2><p>Define the job and output before choosing a product.</p></div></div><div className="form-grid two-col"><label><span>Your role</span><select value={answers.role} onChange={(event) => update('role', event.target.value)}><option value="student">Student</option><option value="faculty">Faculty</option><option value="staff">Staff</option><option value="researcher">Researcher</option></select></label><label><span>Task type</span><select value={answers.taskId} onChange={(event) => update('taskId', event.target.value)}>{tasks.map((task) => <option key={task.id} value={task.id}>{task.name}</option>)}</select></label><label><span>Primary input</span><select value={answers.inputType} onChange={(event) => update('inputType', event.target.value)}><option value="text">Text or notes</option><option value="documents">Documents / PDFs</option><option value="spreadsheets">Spreadsheet / data</option><option value="images">Images / media</option><option value="code">Code / repository</option><option value="audio">Audio / meeting</option></select></label><label><span>Expected output</span><select value={answers.outputType} onChange={(event) => update('outputType', event.target.value)}><option value="brief">Brief or answer</option><option value="document">Edited document</option><option value="presentation">Presentation</option><option value="analysis">Data analysis</option><option value="code">Code change</option><option value="action-log">Action log</option></select></label></div></section>
+    <div className="container finder-layout">
+      <form className="finder-form" onSubmit={submit}>
+        <section className="form-section" aria-labelledby="task-heading"><div className="form-section-title"><span>01</span><div><h2 id="task-heading">What are you trying to do?</h2><p>Choose the closest task. This is used only after every hard filter passes.</p></div></div><fieldset className="task-fieldset"><legend className="sr-only">Task</legend><div className="task-options">{tasks.map((task) => <label key={task.id}><input type="radio" name="task" value={task.id} checked={answers.taskId === task.id} onChange={() => update('taskId', task.id)} /><span><strong>{task.name}</strong><small>{task.summary}</small></span></label>)}</div></fieldset></section>
 
-      <section className="form-section" aria-labelledby="requirements-heading"><div className="form-section-title"><span>02</span><div><h2 id="requirements-heading">Capabilities</h2><p>Select every condition the workflow must support.</p></div></div><div className="toggle-grid">{yesNoFields.map((field) => <label className="toggle-card" key={field.key}><input type="checkbox" checked={answers[field.key]} onChange={(event) => update(field.key, event.target.checked)} /><span className="fake-checkbox"><Check size={15} /></span><span><strong>{field.label}</strong><small>{field.help}</small></span></label>)}</div></section>
+        <section className="form-section" aria-labelledby="requirements-heading"><div className="form-section-title"><span>02</span><div><h2 id="requirements-heading">What must the tool support?</h2><p>These answers are pass/fail requirements, not preferences.</p></div></div><div className="toggle-grid">{requirementFields.map((field) => <label className="toggle-card" key={field.key}><input type="checkbox" checked={answers[field.key]} onChange={(event) => update(field.key, event.target.checked)} /><span className="fake-checkbox"><Check size={15} aria-hidden="true" /></span><span><strong>{field.label}</strong><small>{field.help}</small></span></label>)}</div></section>
 
-      <section className="form-section" aria-labelledby="constraints-heading"><div className="form-section-title"><span>03</span><div><h2 id="constraints-heading">Environment & data boundary</h2><p>Account context changes both capability and protection.</p></div></div><div className="form-grid two-col"><label><span>Where will work continue?</span><select value={answers.collaborationMode} onChange={(event) => update('collaborationMode', event.target.value as CollaborationMode)}><option value="individual">Individual work</option><option value="shared-workspace">Shared AI workspace</option><option value="document-coauthoring">Document coauthoring</option><option value="repository-collaboration">Repository collaboration</option><option value="organization-account">Organization-managed workspace</option></select></label><label><span>Preferred ecosystem</span><select value={answers.ecosystem} onChange={(event) => update('ecosystem', event.target.value as Ecosystem)}><option value="none">No preference</option><option value="microsoft">Microsoft 365</option><option value="google">Google Workspace</option><option value="github">GitHub</option></select></label><label><span>Cost / access</span><select value={answers.access} onChange={(event) => update('access', event.target.value as FinderAnswers['access'])}><option value="any">Any available option</option><option value="free">No additional paid license</option><option value="vt">VT-provided account</option><option value="paid">Paid plan available</option></select></label></div><fieldset className="sensitivity-fieldset"><legend>Data sensitivity</legend><p className="field-help">These choices route to VT’s authoritative standard; they do not replace formal classification.</p><div className="sensitivity-options">{[
-        { value: 'public', label: 'Public', help: 'Published or intentionally public.' }, { value: 'internal', label: 'Internal', help: 'Nonpublic operational, student, or research material.' }, { value: 'restricted', label: 'Restricted', help: 'High-risk, regulated, contractual, or sensitive material.' }, { value: 'unknown', label: 'I’m not sure', help: 'Classification or upload permission is unclear.' },
-      ].map((option) => <label key={option.value}><input type="radio" name="sensitivity" value={option.value} checked={answers.sensitivity === option.value} onChange={() => update('sensitivity', option.value as FinderAnswers['sensitivity'])} /><span><strong>{option.label}</strong><small>{option.help}</small></span></label>)}</div></fieldset></section>
-      <div className="form-submit"><p><ShieldCheck size={18} />The recommender runs locally; these selections are not uploaded.</p><button className="button" type="submit">Build my recommendation <ArrowRight size={18} /></button></div>
-    </form><aside className="finder-aside"><p className="eyebrow">How matching works</p><h2>Safety, then capability fit</h2><ol><li><span>1</span><div><strong>Hard safety boundary</strong><p>Exclude account contexts outside the selected data level.</p></div></li><li><span>2</span><div><strong>Documented fit</strong><p>Strong, capable, or conditional—not a product-quality ranking.</p></div></li><li><span>3</span><div><strong>Workflow handoff</strong><p>Select a skill and identify what a human must do.</p></div></li></ol><Link to="/methodology">Read full methodology <ArrowRight size={15} /></Link></aside></div>
+        <section className="form-section" aria-labelledby="data-heading"><div className="form-section-title"><span>03</span><div><h2 id="data-heading">What data will you use?</h2><p>Choose the highest applicable category. When unsure, pause and ask the responsible data owner.</p></div></div><fieldset className="sensitivity-fieldset"><legend className="sr-only">Data sensitivity</legend><div className="sensitivity-options">{dataOptions.map((option) => <label key={option.value}><input type="radio" name="sensitivity" value={option.value} checked={answers.sensitivity === option.value} onChange={() => update('sensitivity', option.value)} /><span><strong>{option.label}</strong><small>{option.help}</small></span></label>)}</div></fieldset></section>
 
-    {result && <section id="recommendation-results" className="results-section" tabIndex={-1} aria-live="polite"><div className="container"><div className="section-heading"><p className="eyebrow">Your recommendation</p><h2>{result.halted ? 'Pause: resolve the data boundary first' : 'A product, a workflow, and a human handoff'}</h2></div><FinderAnswerSummary answers={answers} /><SafetyCallout title={result.halted ? 'Do not upload yet' : 'Data boundary'}><p>{result.safetyMessage}</p></SafetyCallout>{result.closeCall && <div className="close-call"><strong>Close capability fit:</strong> the top options differ mainly by your account, ecosystem, and handoff needs—not universal quality.</div>}<RecommendationBreakdown result={result} />{!result.halted && <details className="human-checklist-details"><summary>Full human verification checklist ({result.humanChecklist.length})</summary><ul>{result.humanChecklist.map((item) => <li key={item}>{item}</li>)}</ul></details>}</div></section>}
+        <section className="form-section" aria-labelledby="arc-heading"><div className="form-section-title"><span>04</span><div><h2 id="arc-heading">Do you already have an ARC account?</h2><p>This affects only the conditional Open OnDemand option; the ARC LLM Gateway web interface does not require a separate ARC account.</p></div></div><div className="binary-options" role="radiogroup" aria-label="ARC account"><label><input type="radio" name="arc-account" checked={!answers.hasArcAccount} onChange={() => update('hasArcAccount', false)} /><span>No</span></label><label><input type="radio" name="arc-account" checked={answers.hasArcAccount} onChange={() => update('hasArcAccount', true)} /><span>Yes, I have an ARC account</span></label></div></section>
+
+        <div className="form-submit"><p><ShieldCheck size={18} aria-hidden="true" />Selections stay in this browser and are not uploaded.</p><button className="button" type="submit">Show verified matches <ArrowRight size={18} /></button></div>
+      </form>
+      <aside className="finder-aside"><p className="eyebrow">Hard filters first</p><h2>How matching works</h2><ol><li><span>1</span><div><strong>Student access</strong><p>Remove employee-only, pilot, or unmet ARC access.</p></div></li><li><span>2</span><div><strong>Data use</strong><p>Enforce VT restrictions before considering capabilities.</p></div></li><li><span>3</span><div><strong>Required features</strong><p>Remove tools missing a must-have function.</p></div></li><li><span>4</span><div><strong>Task fit</strong><p>Evaluate the documented task fit of the remaining tools.</p></div></li></ol><Link to="/responsible-use">Read the method and sources <ArrowRight size={15} /></Link></aside>
+    </div>
+
+    {result && <section id="recommendation-results" className="results-section" tabIndex={-1} aria-live="polite"><div className="container"><div className="section-heading"><p className="eyebrow">Recommendation result</p><h2>{result.halted ? result.message : result.message}</h2></div><FinderAnswerSummary answers={answers} /><SafetyCallout title={answers.sensitivity === 'controlled' ? 'Do not use an AI tool for this data' : 'Data boundary'}><p>{result.safetyMessage}</p>{answers.sensitivity === 'controlled' && <a href="https://ai.vt.edu/tools.html" target="_blank" rel="noreferrer">Read the VT restriction ↗</a>}</SafetyCallout><RecommendationBreakdown result={result} /></div></section>}
   </>
 }
