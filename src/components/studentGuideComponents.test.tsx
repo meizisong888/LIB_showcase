@@ -3,17 +3,9 @@ import { MemoryRouter } from 'react-router-dom'
 import { describe, expect, it } from 'vitest'
 import { RecommendPage } from '../pages/RecommendPage'
 import { ToolsPage } from '../pages/ToolsPage'
-import { WorkflowMap } from './WorkflowMap'
+import { tools } from '../data/tools'
 
 describe('student guide UI', () => {
-  it('renders the complete access-first recommendation flow', () => {
-    render(<WorkflowMap />)
-    const figure = screen.getByRole('figure', { name: /eligibility comes before fit/i })
-    expect(within(figure).getAllByRole('listitem')).toHaveLength(6)
-    expect(within(figure).getByText('VT student access')).toBeInTheDocument()
-    expect(within(figure).getByText('ARC conditions')).toBeInTheDocument()
-  })
-
   it('shows ten distinct task goals and only relevant capability questions', () => {
     render(<MemoryRouter><RecommendPage /></MemoryRouter>)
     expect(screen.getByRole('radio', { name: /Brainstorm ideas or create a first draft/i })).toBeInTheDocument()
@@ -69,5 +61,27 @@ describe('student guide UI', () => {
     expect(screen.getByText('Requires ARC account')).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'HokieAI' })).toBeInTheDocument()
     expect(screen.getAllByText(/personal Google account does not inherit VT protections/i)).toHaveLength(2)
+  })
+
+  it('keeps all official sources and verification dates on their tool cards', () => {
+    render(<ToolsPage />)
+    tools.forEach((tool) => {
+      const card = screen.getByRole('heading', { name: tool.name }).closest('article')!
+      const sources = within(card).getByRole('list', { name: 'Official sources' })
+      expect(within(sources).getAllByRole('link').map((link) => link.getAttribute('href')))
+        .toEqual(tool.officialSources.map((source) => source.url))
+      expect(card.querySelector('time')).toHaveAttribute('datetime', tool.lastVerified)
+    })
+  })
+
+  it('keeps task-fit and capability evidence on the primary result', () => {
+    render(<MemoryRouter initialEntries={['/recommend?goal=questions-provided-sources&sensitivity=internal']}><RecommendPage /></MemoryRouter>)
+    fireEvent.click(screen.getByRole('button', { name: /Show verified matches/i }))
+    const card = screen.getByText('Primary recommendation').closest('article')!
+    expect(within(card).getByRole('heading', { name: 'Google NotebookLM through Virginia Tech' })).toBeInTheDocument()
+    expect(within(card).getByRole('link', { name: /Open NotebookLM with your VT account/ })).toHaveAttribute('href', 'https://notebooklm.google.com/')
+    expect(within(card).getByRole('list', { name: 'Official sources' })).not.toBeEmptyDOMElement()
+    expect(within(card).getByRole('region', { name: /Mandatory features satisfied/ })).toHaveTextContent('File upload')
+    expect(card.querySelector('time')).toHaveAttribute('datetime', '2026-09-06')
   })
 })

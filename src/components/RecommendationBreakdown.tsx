@@ -37,7 +37,7 @@ function ToolChoice({ item, label, emphasized = false }: { item: ToolEvaluation;
     </dl>
     {tool.institutionalAccountReminder && <p className="account-reminder"><ShieldX size={16} aria-hidden="true" />{tool.institutionalAccountReminder}</p>}
     <a className="button button-small access-link" href={tool.accessUrl} target="_blank" rel="noopener noreferrer">{tool.accessCta} <ExternalLink size={15} aria-hidden="true" /></a>
-    <details className="evidence-details"><summary>View official VT evidence</summary><SourceLinks sources={evidence} compact /></details>
+    <details className="evidence-details"><summary>View official VT evidence</summary><SourceLinks sources={evidence} /></details>
     <p className="verified-date">Last verified: <time dateTime={tool.lastVerified}>{tool.lastVerified}</time></p>
   </article>
 }
@@ -55,6 +55,6 @@ export function RecommendationBreakdown({ result }: { result: RecommendationResu
     <section className="why-not-others" aria-labelledby="why-not-title"><h3 id="why-not-title">Why other tools were not selected</h3><p>Every tool was evaluated in the required order. An access, ARC, data, or capability failure cannot be offset by task fit.</p>{result.notSelected.length ? <ul>{result.notSelected.map((item) => <li key={item.tool.id}><strong>{item.tool.name}</strong><span>{item.exclusionReason ?? 'It passed the hard filters, but its documented task fit was lower than the matches shown.'}</span></li>)}</ul> : <p>No additional verified VT student tools remain outside the matches shown.</p>}</section>
 
     {!result.halted && result.notSelected.some((item) => item.exclusionStage === 'data-use') && <div className="excluded-note"><ShieldX size={18} aria-hidden="true" /><p>At least one catalog option was removed at the data-use stage. Review the reason above before changing your selections.</p></div>}
-    {!result.halted && <div className="result-reminder"><Minus size={18} aria-hidden="true" /><p>{FIT_DISCLAIMER} Follow course rules and verify the output yourself.</p></div>}
+    {!result.halted && <div className="result-reminder"><Minus size={18} aria-hidden="true" /><p>{FIT_DISCLAIMER}</p></div>}
   </>
 }

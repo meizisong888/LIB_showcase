@@ -19,7 +19,7 @@ function ToolCard({ tool }: { tool: (typeof tools)[number] }) {
     {tool.conditionalRequirements.length > 0 && <div className="vt-note"><strong>Conditions</strong><ul>{tool.conditionalRequirements.map((condition) => <li key={condition}>{condition}</li>)}</ul></div>}
     {tool.institutionalAccountReminder && <p className="account-reminder">{tool.institutionalAccountReminder}</p>}
     <a className="button button-small access-link" href={tool.accessUrl} target="_blank" rel="noopener noreferrer">{tool.accessCta} <ExternalLink size={15} aria-hidden="true" /></a>
-    <SourceLinks sources={tool.officialSources} compact />
+    <SourceLinks sources={tool.officialSources} />
     <p className="verified-date">Last verified: <time dateTime={tool.lastVerified}>{tool.lastVerified}</time></p>
   </article>
 }

@@ -66,17 +66,6 @@ const arcOpenOnDemand: OfficialSource = {
   lastChecked: REVIEW_DATE,
 }
 
-export const officialSources: OfficialSource[] = [
-  vtTools,
-  hokieAiOverview,
-  hokieAiForInstructors,
-  googleAiAtVt,
-  copilotAtVt,
-  copilotEditions,
-  arcGateway,
-  arcOpenOnDemand,
-]
-
 const approvedData = ['public', 'internal', 'sensitive'] as const
 const prohibitedData = [
   'Export-controlled data, including data governed by ITAR or DFARS',

@@ -1,52 +1,151 @@
+import assert from 'node:assert/strict'
 import { chromium } from 'playwright'
 import AxeBuilder from '@axe-core/playwright'
 
 const baseUrl = process.env.PREVIEW_URL ?? 'http://127.0.0.1:4173/LIB_showcase/'
 const browser = await chromium.launch({ headless: true })
 const problems = []
+const results = []
+const toolUrls = [
+  'https://hokie.ai.vt.edu/', 'https://gemini.google.com/', 'https://notebooklm.google.com/',
+  'https://copilot.microsoft.com/', 'https://llm.arc.vt.edu/', 'https://ood.arc.vt.edu/',
+]
+const sourceUrls = [
+  'https://ai.vt.edu/tools.html', 'https://ai.vt.edu/tools/hokieai.html',
+  ...['KB0016456', 'KB0016244', 'KB0014762', 'KB0015697'].map(id => `https://4help.vt.edu/sp?id=kb_article&sysparm_article=${id}`),
+  'https://docs.arc.vt.edu/ai/010_llm_arc_vt_edu.html', 'https://docs.arc.vt.edu/ai/020_ood_arc_vt_edu.html',
+]
+const submit = async page => {
+  await page.getByRole('button', { name: 'Show verified matches' }).click()
+  await page.locator('#recommendation-results').waitFor({ state: 'visible' })
+}
+
+function watchErrors(page, name) {
+  page.on('console', message => { if (message.type() === 'error') problems.push(`${name} console: ${message.text()}`) })
+  page.on('pageerror', error => problems.push(`${name} page: ${error.message}`))
+}
+
+async function checkLayout(page) {
+  assert.equal(await page.locator('h1').count(), 1)
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth + 1), false, 'Horizontal overflow')
+  assert.doesNotMatch(await page.locator('body').innerText(), /Responsible Use|Academic integrity|Citation ethics|AI may make mistakes/i)
+  assert.equal(await page.locator('a[href*="responsible-use"]').count(), 0)
+}
+
+async function checkResultLinks(page) {
+  for (const card of await page.locator('.result-card').all()) {
+    assert.ok(toolUrls.includes(await card.locator('.access-link').getAttribute('href')))
+    assert.match(await card.locator('time').getAttribute('datetime'), /^\d{4}-\d{2}-\d{2}$/)
+    await card.locator('summary').click()
+    assert.ok(await card.getByRole('list', { name: 'Official sources' }).isVisible())
+    const links = await card.locator('.source-links a').evaluateAll(nodes => nodes.map(node => node.href))
+    assert.ok(links.length > 0)
+    assert.ok(links.every(url => sourceUrls.includes(url)))
+  }
+}
 
 async function inspect(name, path, viewport, prepare) {
   const context = await browser.newContext({ viewport })
   const page = await context.newPage()
-  page.on('console', (message) => { if (message.type() === 'error') problems.push(`${name} console: ${message.text()}`) })
-  page.on('pageerror', (error) => problems.push(`${name} page: ${error.message}`))
-  const response = await page.goto(new URL(path, baseUrl).href, { waitUntil: 'networkidle' })
-  if (!response?.ok()) problems.push(`${name} HTTP ${response?.status()}`)
-  if (prepare) await prepare(page)
-  const metrics = await page.evaluate(() => ({
-    h1: document.querySelector('h1')?.textContent?.trim(),
-    horizontalOverflow: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1,
-  }))
-  if (!metrics.h1) problems.push(`${name} has no h1`)
-  if (metrics.horizontalOverflow) problems.push(`${name} has horizontal overflow at ${viewport.width}px`)
-  const accessibility = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze()
-  accessibility.violations.forEach((violation) => problems.push(`${name} accessibility ${violation.id}: ${violation.nodes.map((node) => node.target.join(' ')).join(', ')}`))
-  await page.screenshot({ path: `/tmp/vt-student-ai-${name.replaceAll(' ', '-')}.png`, fullPage: true })
-  await context.close()
-  return metrics
+  watchErrors(page, name)
+  try {
+    const response = await page.goto(new URL(path, baseUrl).href, { waitUntil: 'networkidle' })
+    assert.equal(response?.status(), 200)
+    const reload = await page.reload({ waitUntil: 'networkidle' })
+    assert.equal(reload?.status(), 200, 'Hash route refresh must return HTTP 200')
+    const nav = page.getByRole('navigation', { name: 'Primary navigation', includeHidden: true })
+    assert.deepEqual(await nav.locator('a').allTextContents(), ['Task Recommender', 'VT AI Tools'])
+    if (prepare) await prepare(page)
+    await checkLayout(page)
+    const accessibility = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze()
+    accessibility.violations.forEach(violation => problems.push(`${name} accessibility ${violation.id}: ${violation.nodes.map(node => node.target.join(' ')).join(', ')}`))
+    await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }))
+    await page.screenshot({ path: `/tmp/vt-student-ai-${name.replaceAll(' ', '-')}.png`, fullPage: true })
+    results.push({ name, url: page.url(), h1: await page.locator('h1').innerText(), refreshStatus: reload.status() })
+    console.log(`PASS ${name}`)
+  } catch (error) {
+    problems.push(`${name}: ${error.message}`)
+    console.error(`FAIL ${name}: ${error.message}`)
+  } finally {
+    await context.close()
+  }
 }
 
-const submit = async (page) => page.getByRole('button', { name: 'Show verified matches' }).click()
-const results = []
-for (const viewport of [{ width: 1440, height: 1000 }, { width: 390, height: 844 }]) {
-  const size = viewport.width > 1000 ? 'desktop' : 'mobile'
-  results.push(await inspect(`home ${size}`, './#/', viewport))
-  results.push(await inspect(`recommender ${size}`, './#/recommend?goal=questions-provided-sources&sensitivity=internal', viewport, submit))
-  results.push(await inspect(`tools ${size}`, './#/tools', viewport))
-  results.push(await inspect(`responsible ${size}`, './#/responsible-use', viewport))
+async function questionnaire(page) {
+  const nav = page.getByRole('navigation', { name: 'Primary navigation', includeHidden: true })
+  for (const label of ['VT AI Tools', 'Task Recommender']) {
+    const menu = page.getByRole('button', { name: 'Open menu' })
+    if (await menu.isVisible()) await menu.click()
+    assert.ok(await nav.isVisible())
+    await nav.getByRole('link', { name: label, exact: true }).click()
+    await page.waitForURL(url => url.hash === (label === 'VT AI Tools' ? '#/tools' : '#/recommend'))
+    await nav.locator('a[aria-current="page"]').filter({ hasText: label }).waitFor({ state: 'attached' })
+    if (await menu.isVisible()) assert.equal(await menu.getAttribute('aria-expanded'), 'false')
+  }
+  await page.getByRole('link', { name: 'Skip to main content' }).focus()
+  await page.keyboard.press('Enter')
+  assert.equal(new URL(page.url()).hash, '#/recommend')
+  assert.equal(await page.evaluate(() => document.activeElement?.id), 'main-content')
+  const goals = await page.locator('input[name="goal"]').evaluateAll(nodes => nodes.map(node => node.value))
+  assert.equal(goals.length, 10)
+  for (const goal of goals) {
+    await page.locator(`input[name="goal"][value="${goal}"]`).check()
+    await submit(page)
+    assert.ok(await page.locator('.result-card').count() > 0, `${goal} must return verified matches`)
+    await checkResultLinks(page)
+    await checkLayout(page)
+    if (goal === 'brainstorm-first-draft') assert.equal(await page.getByText('Equally suitable verified match', { exact: true }).count(), 3)
+    if (goal === 'questions-provided-sources') {
+      assert.match(await page.locator('.primary-result h3').innerText(), /NotebookLM/)
+      assert.ok(await page.getByText('Eligible alternative', { exact: true }).count() > 0)
+    }
+  }
+  await page.locator('input[name="goal"][value="api-research-workflow"]').check()
+  await page.getByRole('checkbox', { name: /Dedicated or high-throughput instance/ }).check()
+  const confirmations = [
+    'Do you already have an ARC account?',
+    'Do you have an active ARC allocation with service units?',
+    'Can you connect through the VT network or VPN?',
+  ]
+  for (const question of confirmations) {
+    await submit(page)
+    assert.equal(await page.locator('.result-card').count(), 0, `Open OnDemand must be excluded before: ${question}`)
+    assert.ok(await page.locator('.halt-card').isVisible())
+    await page.getByRole('group', { name: question, exact: true }).getByRole('radio', { name: 'Yes', exact: true }).check()
+  }
+  await submit(page)
+  assert.equal(await page.locator('.primary-result .access-link').getAttribute('href'), 'https://ood.arc.vt.edu/')
+  await page.getByRole('radio', { name: /Export-controlled data or CUI/i }).check()
+  assert.ok(await page.getByRole('heading', { name: 'Do not use an AI tool for this data' }).isVisible())
+  assert.equal(await page.locator('.result-card').count(), 0)
+  assert.equal(await page.getByRole('link', { name: /Read the VT restriction/ }).getAttribute('href'), 'https://ai.vt.edu/tools.html')
+  await checkLayout(page)
 }
 
-const interaction = await browser.newPage({ viewport: { width: 390, height: 844 } })
-interaction.on('console', (message) => { if (message.type() === 'error') problems.push(`interaction console: ${message.text()}`) })
-interaction.on('pageerror', (error) => problems.push(`interaction page: ${error.message}`))
-await interaction.goto(baseUrl, { waitUntil: 'networkidle' })
-await interaction.getByRole('button', { name: 'Open menu' }).click()
-if (!(await interaction.getByRole('navigation', { name: 'Primary navigation' }).isVisible())) problems.push('Mobile navigation did not open')
-await interaction.getByRole('navigation', { name: 'Primary navigation' }).getByRole('link', { name: 'Task Recommender' }).click()
-await interaction.getByRole('radio', { name: /Export-controlled data or CUI/i }).check()
-if (!(await interaction.getByRole('heading', { name: 'Do not use an AI tool for this data' }).isVisible())) problems.push('Controlled-data stop did not render')
-await interaction.close()
-await browser.close()
-
+try {
+  for (const viewport of [{ width: 1440, height: 1000 }, { width: 390, height: 844 }, { width: 320, height: 800 }]) {
+    const size = `${viewport.width}px`
+    await inspect(`recommender ${size}`, './#/recommend', viewport)
+    await inspect(`results ${size}`, './#/recommend?goal=questions-provided-sources&sensitivity=internal', viewport, async page => {
+      await submit(page)
+      await checkResultLinks(page)
+    })
+    await inspect(`tools ${size}`, './#/tools', viewport, async page => {
+      assert.deepEqual(await page.locator('.tool-card .access-link').evaluateAll(nodes => nodes.map(node => node.href)), toolUrls)
+      const sources = await page.locator('.tool-card .source-links a').evaluateAll(nodes => [...new Set(nodes.map(node => node.href))])
+      assert.deepEqual(sources.sort(), [...sourceUrls].sort())
+      assert.equal(await page.locator('.tool-card time').count(), 6)
+    })
+    await inspect(`questionnaire ${size}`, './#/', viewport, questionnaire)
+    for (const path of ['/', '/responsible-use', '/safety', '/methodology']) {
+      await inspect(`redirect ${path.slice(1) || 'root'} ${size}`, `./#${path}`, viewport, async page => {
+        await page.waitForURL(url => url.hash === '#/recommend')
+        assert.ok(await page.getByRole('button', { name: 'Show verified matches' }).isVisible())
+      })
+    }
+  }
+} finally {
+  await browser.close()
+}
 console.log(JSON.stringify({ baseUrl, results, problems }, null, 2))
 if (problems.length) process.exitCode = 1

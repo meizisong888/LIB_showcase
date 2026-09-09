@@ -2,7 +2,9 @@
 
 **[Open the live guide](https://meizisong888.github.io/LIB_showcase/)**
 
-VT Student AI Guide is a task-first recommender for Virginia Tech students. It recommends only AI services that a current Virginia Tech or ARC source explicitly says students can access. It does not compare the wider AI industry, rank model quality, or fill gaps with products a student can buy or register for independently.
+Choose a task and required features to find verified AI tools available to Virginia Tech students.
+
+The site has two pages: **Task Recommender** and **VT AI Tools**. The root URL opens the recommender. The retired `#/responsible-use`, `#/safety`, and `#/methodology` addresses redirect to `#/recommend`. Official sources remain on the corresponding tool cards and recommendation results; the full recommendation rules remain in [the methodology](docs/methodology.md).
 
 > Independent student project. It is not an official Virginia Tech service. Official pages remain authoritative.
 
@@ -160,6 +162,7 @@ npm run lint
 npm run typecheck
 npm test
 npm run build
+git diff --check
 ```
 
 For a built preview, start `npm run preview -- --host 127.0.0.1` and run `npm run check:visual` in another terminal. Production uses hash-based routing so every GitHub Pages route starts from a successful root-document request; the build also creates `dist/404.html` as a fallback.

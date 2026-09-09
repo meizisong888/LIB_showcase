@@ -11,8 +11,8 @@ export function AccessBadge({ availability }: { availability: StudentAvailabilit
   return <span className={`access-badge access-${availability}`}>{label}</span>
 }
 
-export function SourceLinks({ sources, heading = 'Official sources', compact = false }: { sources: OfficialSource[]; heading?: string; compact?: boolean }) {
-  return <div className={compact ? 'source-links compact' : 'source-links'}>{!compact && <h2>{heading}</h2>}<ul>{sources.map((source) => <li key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer"><span>{source.title}</span><ArrowUpRight size={15} aria-hidden="true" /></a>{!compact && <small>{source.claimScope} · checked {source.lastChecked}</small>}</li>)}</ul></div>
+export function SourceLinks({ sources }: { sources: OfficialSource[] }) {
+  return <div className="source-links"><ul aria-label="Official sources">{sources.map((source) => <li key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer"><span>{source.title}</span><ArrowUpRight size={15} aria-hidden="true" /></a></li>)}</ul></div>
 }
 
 export function SafetyCallout({ children, title = 'Check the data before you upload' }: { children: ReactNode; title?: string }) {

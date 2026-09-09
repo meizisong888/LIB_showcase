@@ -64,11 +64,11 @@ export function RecommendPage() {
   const selectedFeatures = featureKeys.filter((key) => profile[key]).map((key) => featureLabels[key])
 
   return <>
-    <PageHeader {...ui.pageHeaders.recommend} />
+    <PageHeader {...ui.pageHeaders.recommend} description={ui.description} />
     <div className="container finder-layout">
       <form className="finder-form" onSubmit={submit}>
         <section className="form-section" aria-labelledby="task-heading">
-          <div className="form-section-title"><span>01</span><div><h2 id="task-heading">What are you trying to do?</h2><p>Choose one precise goal. Similar-looking workflows remain separate so capabilities are not assumed.</p></div></div>
+          <div className="form-section-title"><span>01</span><div><h2 id="task-heading">What are you trying to do?</h2><p>Choose the goal that best describes your task.</p></div></div>
           <fieldset className="task-fieldset"><legend className="sr-only">Task goal</legend><div className="task-options">{tasks.map((option) => <label key={option.id}><input type="radio" name="goal" value={option.id} checked={profile.goal === option.id} onChange={() => changeGoal(option.id)} /><span><strong>{option.name}</strong><small>{option.summary}</small></span></label>)}</div></fieldset>
           <SelectionSummary label="Selected goal">{task.name}</SelectionSummary>
         </section>
@@ -102,7 +102,7 @@ export function RecommendPage() {
 
         <div className="form-submit"><p><ShieldCheck size={18} aria-hidden="true" />Selections stay in this browser and are not uploaded.</p><button className="button" type="submit">{profile.sensitivity === 'controlled' ? 'Show official restriction' : 'Show verified matches'} <ArrowRight size={18} /></button></div>
       </form>
-      <aside className="finder-aside"><p className="eyebrow">Hard filters first</p><h2>How matching works</h2><ol><li><span>1</span><div><strong>VT student access</strong><p>Reject employee-only, pilot, and unverified records.</p></div></li><li><span>2</span><div><strong>ARC conditions</strong><p>Check account, allocation, and network when relevant.</p></div></li><li><span>3</span><div><strong>Data use</strong><p>Enforce the VT restriction before capabilities.</p></div></li><li><span>4</span><div><strong>Every required feature</strong><p>Remove tools missing even one mandatory function.</p></div></li><li><span>5</span><div><strong>Documented task fit</strong><p>Compare only the eligible tools that remain.</p></div></li></ol><Link to="/responsible-use">Read the method and sources <ArrowRight size={15} /></Link></aside>
+      <aside className="finder-aside"><h2>How matching works</h2><p>Matches must meet your access, data, and required-feature conditions. Eligible tools are compared using official task-fit evidence.</p><Link to="/tools">View tools and official sources <ArrowRight size={15} /></Link></aside>
     </div>
 
     {result && <section id="recommendation-results" className="results-section" tabIndex={-1} aria-live="polite"><div className="container"><div className="section-heading"><p className="eyebrow">Recommendation result</p><h2>{result.message}</h2></div><FinderAnswerSummary profile={profile} profileLabel={result.profileLabel} requirements={result.requirements} showArc={showArc} /><SafetyCallout title={profile.sensitivity === 'controlled' ? 'Do not use an AI tool for this data' : 'Data boundary'}><p>{result.safetyMessage}</p>{profile.sensitivity === 'controlled' && <a href="https://ai.vt.edu/tools.html" target="_blank" rel="noopener noreferrer">Read the VT restriction ↗</a>}</SafetyCallout><RecommendationBreakdown result={result} /></div></section>}
