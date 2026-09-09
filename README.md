@@ -4,7 +4,7 @@
 
 Choose a task and required features to find verified AI tools available to Virginia Tech students.
 
-The site has two pages: **Task Recommender** and **VT AI Tools**. The root URL opens the recommender. The retired `#/responsible-use`, `#/safety`, and `#/methodology` addresses redirect to `#/recommend`. Official sources remain on the corresponding tool cards and recommendation results; the full recommendation rules remain in [the methodology](docs/methodology.md).
+The navigation contains **Task Recommender** and **VT AI Tools**. VT AI Tools opens [Virginia Tech’s official tools page](https://ai.vt.edu/tools.html) directly in the same tab; the former `#/tools` address also redirects there. The root URL opens the recommender. The retired `#/responsible-use`, `#/safety`, and `#/methodology` addresses redirect to `#/recommend`. Official evidence, tool access links, and verification dates remain in recommendation results; the full recommendation rules remain in [the methodology](docs/methodology.md).
 
 > Independent student project. It is not an official Virginia Tech service. Official pages remain authoritative.
 

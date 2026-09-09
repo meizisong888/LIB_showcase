@@ -1,11 +1,12 @@
 import { ArrowRight, Check, ShieldCheck } from 'lucide-react'
 import { type FormEvent, useMemo, useState } from 'react'
-import { Link, useSearchParams } from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 import { FinderAnswerSummary } from '../components/FinderAnswerSummary'
 import { RecommendationBreakdown } from '../components/RecommendationBreakdown'
 import { PageHeader, SafetyCallout } from '../components/Shared'
 import { featureHelp, featureLabels, normalizeTaskProfile, profileForGoal, taskById, tasks } from '../data/tasks'
 import { ui } from '../i18n/en'
+import { VT_TOOLS_URL } from '../config'
 import { defaultTaskProfile, taskProfileFromSearchParams } from '../lib/finderParams'
 import { recommendTools, shouldAskArcQuestions } from '../lib/recommend'
 import type { ProfileFeatureKey, TaskGoal, TaskProfile } from '../types'
@@ -102,7 +103,7 @@ export function RecommendPage() {
 
         <div className="form-submit"><p><ShieldCheck size={18} aria-hidden="true" />Selections stay in this browser and are not uploaded.</p><button className="button" type="submit">{profile.sensitivity === 'controlled' ? 'Show official restriction' : 'Show verified matches'} <ArrowRight size={18} /></button></div>
       </form>
-      <aside className="finder-aside"><h2>How matching works</h2><p>Matches must meet your access, data, and required-feature conditions. Eligible tools are compared using official task-fit evidence.</p><Link to="/tools">View tools and official sources <ArrowRight size={15} /></Link></aside>
+      <aside className="finder-aside"><h2>How matching works</h2><p>Matches must meet your access, data, and required-feature conditions. Eligible tools are compared using official task-fit evidence.</p><a href={VT_TOOLS_URL}>View official VT tools <ArrowRight size={15} /></a></aside>
     </div>
 
     {result && <section id="recommendation-results" className="results-section" tabIndex={-1} aria-live="polite"><div className="container"><div className="section-heading"><p className="eyebrow">Recommendation result</p><h2>{result.message}</h2></div><FinderAnswerSummary profile={profile} profileLabel={result.profileLabel} requirements={result.requirements} showArc={showArc} /><SafetyCallout title={profile.sensitivity === 'controlled' ? 'Do not use an AI tool for this data' : 'Data boundary'}><p>{result.safetyMessage}</p>{profile.sensitivity === 'controlled' && <a href="https://ai.vt.edu/tools.html" target="_blank" rel="noopener noreferrer">Read the VT restriction ↗</a>}</SafetyCallout><RecommendationBreakdown result={result} /></div></section>}

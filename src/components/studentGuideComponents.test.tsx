@@ -2,8 +2,10 @@ import { fireEvent, render, screen, within } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import { describe, expect, it } from 'vitest'
 import { RecommendPage } from '../pages/RecommendPage'
-import { ToolsPage } from '../pages/ToolsPage'
 import { tools } from '../data/tools'
+import { profileForGoal } from '../data/tasks'
+import { recommendTools } from '../lib/recommend'
+import { RecommendationBreakdown } from './RecommendationBreakdown'
 
 describe('student guide UI', () => {
   it('shows ten distinct task goals and only relevant capability questions', () => {
@@ -38,7 +40,10 @@ describe('student guide UI', () => {
   })
 
   it('renders exact direct-access buttons for all six verified tools', () => {
-    render(<ToolsPage />)
+    tools.forEach((tool) => {
+      const profile = { ...profileForGoal(tool.supportedTasks[0].goal), hasArcAccount: true, hasArcAllocation: true, canUseVtNetworkOrVpn: true }
+      render(<RecommendationBreakdown result={recommendTools(profile, [tool])} />)
+    })
     const expected = [
       ['Open HokieAI', 'https://hokie.ai.vt.edu/'],
       ['Open Gemini with your VT account', 'https://gemini.google.com/'],
@@ -52,25 +57,6 @@ describe('student guide UI', () => {
       expect(link).toHaveAttribute('href', href)
       expect(link).toHaveAttribute('target', '_blank')
       expect(link).toHaveAttribute('rel', 'noopener noreferrer')
-    })
-  })
-
-  it('renders only verified VT student tool cards and account reminders', () => {
-    render(<ToolsPage />)
-    expect(screen.getAllByText('Available to all VT students')).toHaveLength(5)
-    expect(screen.getByText('Requires ARC account')).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: 'HokieAI' })).toBeInTheDocument()
-    expect(screen.getAllByText(/personal Google account does not inherit VT protections/i)).toHaveLength(2)
-  })
-
-  it('keeps all official sources and verification dates on their tool cards', () => {
-    render(<ToolsPage />)
-    tools.forEach((tool) => {
-      const card = screen.getByRole('heading', { name: tool.name }).closest('article')!
-      const sources = within(card).getByRole('list', { name: 'Official sources' })
-      expect(within(sources).getAllByRole('link').map((link) => link.getAttribute('href')))
-        .toEqual(tool.officialSources.map((source) => source.url))
-      expect(card.querySelector('time')).toHaveAttribute('datetime', tool.lastVerified)
     })
   })
 

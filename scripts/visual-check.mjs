@@ -4,6 +4,7 @@ import AxeBuilder from '@axe-core/playwright'
 
 const baseUrl = process.env.PREVIEW_URL ?? 'http://127.0.0.1:4173/LIB_showcase/'
 const browser = await chromium.launch({ headless: true })
+const officialToolsUrl = 'https://ai.vt.edu/tools.html'
 const problems = []
 const results = []
 const toolUrls = [
@@ -73,15 +74,13 @@ async function inspect(name, path, viewport, prepare) {
 
 async function questionnaire(page) {
   const nav = page.getByRole('navigation', { name: 'Primary navigation', includeHidden: true })
-  for (const label of ['VT AI Tools', 'Task Recommender']) {
-    const menu = page.getByRole('button', { name: 'Open menu' })
-    if (await menu.isVisible()) await menu.click()
-    assert.ok(await nav.isVisible())
-    await nav.getByRole('link', { name: label, exact: true }).click()
-    await page.waitForURL(url => url.hash === (label === 'VT AI Tools' ? '#/tools' : '#/recommend'))
-    await nav.locator('a[aria-current="page"]').filter({ hasText: label }).waitFor({ state: 'attached' })
-    if (await menu.isVisible()) assert.equal(await menu.getAttribute('aria-expanded'), 'false')
-  }
+  const menu = page.getByRole('button', { name: 'Open menu' })
+  if (await menu.isVisible()) await menu.click()
+  assert.ok(await nav.isVisible())
+  assert.equal(await nav.getByRole('link', { name: 'VT AI Tools', exact: true }).getAttribute('href'), officialToolsUrl)
+  await nav.getByRole('link', { name: 'Task Recommender', exact: true }).click()
+  await nav.locator('a[aria-current="page"]').waitFor({ state: 'attached' })
+  if (await menu.isVisible()) assert.equal(await menu.getAttribute('aria-expanded'), 'false')
   await page.getByRole('link', { name: 'Skip to main content' }).focus()
   await page.keyboard.press('Enter')
   assert.equal(new URL(page.url()).hash, '#/recommend')
@@ -122,6 +121,37 @@ async function questionnaire(page) {
   await checkLayout(page)
 }
 
+async function inspectOfficialTools(viewport, legacy) {
+  const name = `official tools ${legacy ? 'legacy redirect' : 'navigation'} ${viewport.width}px`
+  const context = await browser.newContext({ viewport })
+  const page = await context.newPage()
+  try {
+    await page.goto(new URL('./#/recommend', baseUrl).href, { waitUntil: 'networkidle' })
+    if (legacy) {
+      await page.goto(new URL('./#/tools', baseUrl).href, { waitUntil: 'domcontentloaded' })
+    } else {
+      const menu = page.getByRole('button', { name: 'Open menu' })
+      if (await menu.isVisible()) await menu.click()
+      await page.getByRole('navigation').getByRole('link', { name: 'VT AI Tools', exact: true }).click()
+    }
+    await page.waitForURL(officialToolsUrl, { waitUntil: 'domcontentloaded' })
+    await page.getByRole('heading', { name: 'AI Tools & Access at Virginia Tech', exact: true }).waitFor()
+    assert.equal(context.pages().length, 1, 'Tools should open in the same tab')
+    const response = await page.reload({ waitUntil: 'domcontentloaded' })
+    assert.equal(response?.status(), 200)
+    await page.goBack({ waitUntil: 'domcontentloaded' })
+    await page.waitForURL(url => url.hash === '#/recommend')
+    await page.getByRole('heading', { name: 'Find a VT-supported AI tool for your task', exact: true }).waitFor()
+    results.push({ name, destination: officialToolsUrl, refreshStatus: response.status(), backToRecommender: true })
+    console.log(`PASS ${name}`)
+  } catch (error) {
+    problems.push(`${name}: ${error.message}`)
+    console.error(`FAIL ${name}: ${error.message}`)
+  } finally {
+    await context.close()
+  }
+}
+
 try {
   for (const viewport of [{ width: 1440, height: 1000 }, { width: 390, height: 844 }, { width: 320, height: 800 }]) {
     const size = `${viewport.width}px`
@@ -130,12 +160,8 @@ try {
       await submit(page)
       await checkResultLinks(page)
     })
-    await inspect(`tools ${size}`, './#/tools', viewport, async page => {
-      assert.deepEqual(await page.locator('.tool-card .access-link').evaluateAll(nodes => nodes.map(node => node.href)), toolUrls)
-      const sources = await page.locator('.tool-card .source-links a').evaluateAll(nodes => [...new Set(nodes.map(node => node.href))])
-      assert.deepEqual(sources.sort(), [...sourceUrls].sort())
-      assert.equal(await page.locator('.tool-card time').count(), 6)
-    })
+    await inspectOfficialTools(viewport, false)
+    await inspectOfficialTools(viewport, true)
     await inspect(`questionnaire ${size}`, './#/', viewport, questionnaire)
     for (const path of ['/', '/responsible-use', '/safety', '/methodology']) {
       await inspect(`redirect ${path.slice(1) || 'root'} ${size}`, `./#${path}`, viewport, async page => {

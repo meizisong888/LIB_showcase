@@ -9,26 +9,32 @@ function HistoryControls() {
   return <><output aria-label="Current route">{location.pathname}</output><button onClick={() => navigate(-1)}>Back</button></>
 }
 
-describe('two-page navigation', () => {
+describe('recommender and official tools navigation', () => {
   beforeEach(() => vi.spyOn(window, 'scrollTo').mockImplementation(() => {}))
 
   it.each(['/', '/responsible-use', '/safety', '/methodology'])('replaces %s with the recommender and preserves back navigation', async (path) => {
-    render(<MemoryRouter initialEntries={['/tools', path]} initialIndex={1}><App /><HistoryControls /></MemoryRouter>)
+    render(<MemoryRouter initialEntries={['/previous-page', path]} initialIndex={1}><App /><HistoryControls /></MemoryRouter>)
     expect(await screen.findByRole('heading', { level: 1, name: 'Find a VT-supported AI tool for your task' })).toBeInTheDocument()
     expect(screen.getByLabelText('Current route')).toHaveTextContent('/recommend')
     fireEvent.click(screen.getByRole('button', { name: 'Back' }))
-    expect(await screen.findByRole('heading', { level: 1, name: 'Virginia Tech AI tools for students' })).toBeInTheDocument()
+    expect(await screen.findByRole('heading', { level: 1, name: 'This page could not be found.' })).toBeInTheDocument()
+    expect(screen.getByLabelText('Current route')).toHaveTextContent('/previous-page')
   })
 
-  it('offers only the two pages in the menu and closes it after navigation', () => {
+  it('links directly to official VT tools and closes the menu after internal navigation', () => {
     render(<MemoryRouter initialEntries={['/recommend']}><App /></MemoryRouter>)
     const nav = screen.getByRole('navigation', { name: 'Primary navigation' })
     expect(within(nav).getAllByRole('link').map((link) => link.textContent)).toEqual(['Task Recommender', 'VT AI Tools'])
     fireEvent.click(screen.getByRole('button', { name: 'Open menu' }))
     expect(screen.getByRole('button', { name: 'Close menu' })).toHaveAttribute('aria-expanded', 'true')
-    fireEvent.click(within(nav).getByRole('link', { name: 'VT AI Tools' }))
+    screen.getAllByRole('link', { name: 'VT AI Tools' }).forEach((link) => {
+      expect(link).toHaveAttribute('href', 'https://ai.vt.edu/tools.html')
+      expect(link).not.toHaveAttribute('target')
+    })
+    expect(screen.getByRole('link', { name: /View official VT tools/ })).toHaveAttribute('href', 'https://ai.vt.edu/tools.html')
+    fireEvent.click(within(nav).getByRole('link', { name: 'Task Recommender' }))
     expect(screen.getByRole('button', { name: 'Open menu' })).toHaveAttribute('aria-expanded', 'false')
-    expect(within(nav).getByRole('link', { name: 'VT AI Tools' })).toHaveAttribute('aria-current', 'page')
+    expect(within(nav).getByRole('link', { name: 'Task Recommender' })).toHaveAttribute('aria-current', 'page')
     expect(screen.queryByText(/Responsible Use/i)).not.toBeInTheDocument()
     expect(document.querySelector('a[href*="responsible-use"]')).toBeNull()
   })
