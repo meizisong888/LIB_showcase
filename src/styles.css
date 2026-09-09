@@ -187,7 +187,6 @@ select:focus, input:focus, button:focus-visible, a:focus-visible, [tabindex='0']
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 5rem; padding-bottom: 3rem; }
 .footer-brand { color: white; }
 .footer-grid > div:first-child > p { max-width: 430px; color: #c5b6bd; }
-.fine-print { font-size: 0.72rem; }
 .footer-grid h2 { margin-bottom: 1rem; color: #c3afb8; font-family: inherit; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; }
 .footer-grid > div:not(:first-child) { display: flex; flex-direction: column; gap: 0.55rem; }
 .footer-grid a:not(.brand) { color: #f2e6ec; font-size: 0.85rem; text-decoration: none; }

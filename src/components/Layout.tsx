@@ -35,7 +35,7 @@ export function Layout() {
       <main id="main-content" tabIndex={-1}><Outlet /></main>
       <footer className="site-footer">
         <div className="footer-grid">
-          <div><Link to="/recommend" className="brand footer-brand"><span className="brand-mark" aria-hidden="true">VT</span><span>{ui.projectName}</span></Link><p>{ui.description}</p><p className="fine-print">{ui.disclaimer}</p></div>
+          <div><Link to="/recommend" className="brand footer-brand"><span className="brand-mark" aria-hidden="true">VT</span><span>{ui.projectName}</span></Link><p>{ui.description}</p></div>
           <div><h2>Use the guide</h2><Link to="/recommend">Task Recommender</Link><Link to="/tools">VT AI Tools</Link></div>
           <div><h2>Official information</h2><a href="https://ai.vt.edu/tools.html" target="_blank" rel="noreferrer">VT AI Tools ↗</a><a href="https://ai.vt.edu/tools/hokieai.html" target="_blank" rel="noreferrer">HokieAI ↗</a><a href="https://docs.arc.vt.edu/ai/010_llm_arc_vt_edu.html" target="_blank" rel="noreferrer">ARC LLM docs ↗</a></div>
         </div>

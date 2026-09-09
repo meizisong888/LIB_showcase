@@ -1,7 +1,6 @@
 export const ui = {
   projectName: 'VT Student AI Guide',
   description: 'Choose a task and required features to find verified AI tools available to Virginia Tech students.',
-  disclaimer: 'Independent student project; not an official Virginia Tech service.',
   nav: {
     recommend: 'Task Recommender',
     tools: 'VT AI Tools',
