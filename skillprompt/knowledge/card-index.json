@@ -1,0 +1,265 @@
+{
+  "derived_from": "SkillPrompt_Academic_Knowledge_v1.txt",
+  "notes": "Mechanically extracted convenience index. The original TXT is authoritative and is the file uploaded to HokieAI.",
+  "cards": [
+    {
+      "id": "SK01",
+      "title": "Research direction exploration / 科研选题",
+      "fields": {
+        "Category": "C1 — Research framing / 科研选题与问题定义",
+        "Matching terms": "选题, 研究方向, idea, research gap, brainstorming, feasibility, novelty",
+        "Use when": "The user wants candidate research directions or to narrow a broad topic.",
+        "Distinguish from / avoid": "Do not treat an unverified gap as proof of novelty. For an already specified hypothesis, prefer SK02.",
+        "Useful inputs": "Topic, known observations or papers, available resources, scope, and timeframe.",
+        "Prompt-building method": "Separate idea generation from comparison. Suggest distinct candidate questions; expose assumptions, possible counterevidence, and resource needs. Compare candidates using criteria appropriate to the user, such as relevance, information value, and feasibility. Mark literature-dependent novelty as unverified unless checked. Preserve alternatives instead of silently choosing the project for the user.",
+        "Desired downstream output": "A small set of candidate questions with rationale, uncertainty, and a feasible next investigation; use a table only if useful to the user.",
+        "Execution / evidence limits": "Ideation from supplied context is possible; an up-to-date novelty assessment requires current literature access.",
+        "Source": "K-Dense-AI/scientific-agent-skills / skills/scientific-brainstorming/SKILL.md",
+        "Pinned source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/49c6e97775eaa18ba791bebe23162a70ae601c18/skills/scientific-brainstorming/SKILL.md"
+      }
+    },
+    {
+      "id": "SK02",
+      "title": "Research questions and hypotheses / 研究问题与假设",
+      "fields": {
+        "Category": "C1 — Research framing / 科研选题与问题定义",
+        "Matching terms": "研究问题, 假设, hypothesis, prediction, mechanism, causal, operational definition",
+        "Use when": "The user needs to turn an observation into a specific question or testable explanation.",
+        "Distinguish from / avoid": "Do not force an intervention template onto qualitative, theoretical, or descriptive research.",
+        "Useful inputs": "Observation, system or population, outcome of interest, existing evidence, and study constraints.",
+        "Prompt-building method": "Distinguish the observation from its interpretation. Specify the question, candidate explanation, plausible rivals, and observations that could distinguish them. Define the relevant constructs and how they would be measured. Identify whether the intended claim is descriptive, associational, predictive, or causal. Label assumptions and unexplained observations explicitly.",
+        "Desired downstream output": "A refined question, candidate hypotheses or propositions, distinguishing predictions, and missing information.",
+        "Execution / evidence limits": "This produces proposed questions and tests, not validated findings or a universal sample-size requirement.",
+        "Source": "K-Dense-AI/scientific-agent-skills / skills/hypothesis-generation/SKILL.md",
+        "Pinned source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/49c6e97775eaa18ba791bebe23162a70ae601c18/skills/hypothesis-generation/SKILL.md"
+      }
+    },
+    {
+      "id": "SK03",
+      "title": "Literature search planning / 文献检索设计",
+      "fields": {
+        "Category": "C2 — Literature / 文献检索与综合",
+        "Matching terms": "找论文, 检索式, 搜索文献, literature search, keywords, Boolean, screening, systematic review",
+        "Use when": "The user wants to find papers or define a reproducible search and screening plan.",
+        "Distinguish from / avoid": "If the papers are already supplied and the goal is comparison or synthesis, prefer SK04.",
+        "Useful inputs": "Question, discipline, source types, time/language boundaries, and desired review depth.",
+        "Prompt-building method": "Translate the question into concept groups, synonyms, and database-appropriate search expressions. Propose suitable databases with reasons. Specify inclusion/exclusion criteria, duplicate handling, and screening stages when relevant. Request a log of search dates, queries, and selection decisions. Distinguish a quick exploratory search from a systematic review; do not silently expand one into the other.",
+        "Desired downstream output": "A search strategy and screening plan, with unresolved scope choices marked for the user.",
+        "Execution / evidence limits": "With internet and API tools unavailable, provide a plan only; do not claim to have retrieved recent papers or report invented screening counts.",
+        "Source": "K-Dense-AI/scientific-agent-skills / skills/literature-review/SKILL.md",
+        "Pinned source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/49c6e97775eaa18ba791bebe23162a70ae601c18/skills/literature-review/SKILL.md"
+      }
+    },
+    {
+      "id": "SK04",
+      "title": "Evidence synthesis and related work / 文献综合与相关工作",
+      "fields": {
+        "Category": "C2 — Literature / 文献检索与综合",
+        "Matching terms": "文献综述, 比较论文, 相关工作, synthesize, literature review, related work, thematic synthesis",
+        "Use when": "The user has papers or notes and wants an integrated account of findings, methods, or gaps.",
+        "Distinguish from / avoid": "A few uploaded papers do not establish exhaustive field coverage or a completed systematic review.",
+        "Useful inputs": "Available papers or extracts, review question, desired depth, and intended section or audience.",
+        "Prompt-building method": "For each available study, capture its question, context, method, findings, and limitations. Group evidence around themes or methodological differences. Compare agreements and contradictions, noting differences in settings or design. Link important statements to identifiable supplied sources. Distinguish a quick section draft from a corpus-based review and keep missing evidence visible.",
+        "Desired downstream output": "A thematic synthesis or comparison, with traceable supporting studies and bounded gaps.",
+        "Execution / evidence limits": "Base claims on accessible material. Abstract-only evidence must be identified; do not imply unseen full texts were read.",
+        "Source": "neuromechanist/research-skills / plugins/manuscript/skills/lit-review/SKILL.md",
+        "Pinned source": "https://github.com/neuromechanist/research-skills/blob/f0219bde233abb44d8a0c5d73f41ea27073e1493/plugins/manuscript/skills/lit-review/SKILL.md"
+      }
+    },
+    {
+      "id": "SK05",
+      "title": "Study and experimental design / 研究与实验设计",
+      "fields": {
+        "Category": "C3 — Study design and analysis / 研究设计与分析",
+        "Matching terms": "实验设计, 对照组, 随机化, 问卷实验, study design, controls, randomization, replication",
+        "Use when": "The user is planning data collection or how to assign units to conditions.",
+        "Distinguish from / avoid": "For already collected data, use SK06; do not describe a retrospective choice as preregistered.",
+        "Useful inputs": "Question, target outcome, experimental or observational units, factors, resources, and known nuisance variation.",
+        "Prompt-building method": "Identify the independent unit and distinguish it from repeated measurements. Match a candidate design to the question. Address controls, allocation, masking, and nuisance factors where relevant. Make replication, exclusion decisions, and the relationship between the design and analysis explicit. Treat sample-size planning as requiring assumptions and justification; do not invent a required number.",
+        "Desired downstream output": "A design brief with candidate choices, rationale, measurement plan, and decisions still needed.",
+        "Execution / evidence limits": "The uploaded card does not generate allocation schedules or run power calculations. Specialized study designs need domain-specific methods.",
+        "Source": "K-Dense-AI/scientific-agent-skills / skills/experimental-design/SKILL.md",
+        "Pinned source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/49c6e97775eaa18ba791bebe23162a70ae601c18/skills/experimental-design/SKILL.md"
+      }
+    },
+    {
+      "id": "SK06",
+      "title": "Statistical analysis planning / 统计分析方案",
+      "fields": {
+        "Category": "C3 — Study design and analysis / 研究设计与分析",
+        "Matching terms": "统计分析, 组间差异, 回归, statistical analysis, test selection, effect size, confidence interval",
+        "Use when": "The user needs an analysis plan, interpretation framework, or better request for analyzing research data.",
+        "Distinguish from / avoid": "Do not choose a method from the phrase \"two groups\" alone or assume the goal is statistical significance.",
+        "Useful inputs": "Question, outcome and predictor types, independent/paired/clustered design, data availability, and missingness.",
+        "Prompt-building method": "Request design-aware data inspection before method selection. Specify candidate analyses with their assumptions, diagnostics, and justified alternatives. Include effect estimates and appropriate uncertainty, with multiplicity or missing-data handling when relevant. Separate exploratory choices from prespecified analyses. Ask for reporting that connects results to the question and acknowledges limitations.",
+        "Desired downstream output": "An analysis plan or analysis prompt; numerical findings only when supported by actual data and computation.",
+        "Execution / evidence limits": "No code execution or statistical calculation capability is installed by this file. Do not fabricate p-values, effects, or confidence intervals.",
+        "Source": "K-Dense-AI/scientific-agent-skills / skills/statistical-analysis/SKILL.md",
+        "Pinned source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/49c6e97775eaa18ba791bebe23162a70ae601c18/skills/statistical-analysis/SKILL.md"
+      }
+    },
+    {
+      "id": "SK07",
+      "title": "Scientific figure planning / 科研图表设计",
+      "fields": {
+        "Category": "C3 — Study design and analysis / 研究设计与分析",
+        "Matching terms": "科研绘图, 图表, 可视化, figure, chart, plot, uncertainty, caption",
+        "Use when": "The user wants an informative scientific figure or a clearer specification for creating one.",
+        "Distinguish from / avoid": "Do not substitute illustrative generated images for measured data or force a chart when prose is sufficient.",
+        "Useful inputs": "Available data, variable meanings and units, main comparison, uncertainty definition, audience, and destination.",
+        "Prompt-building method": "Match the visual encoding to the comparison or relationship. Specify axes, units, raw observations where useful, and the meaning of uncertainty. Keep missing values and transformations visible. Use redundant labels or patterns when color alone is insufficient. Include a caption describing what is shown and how it was obtained. Treat publisher export requirements as needing the actual venue guidance.",
+        "Desired downstream output": "A figure specification covering message, encoding, labels, uncertainty, caption, and export needs.",
+        "Execution / evidence limits": "Rendering requires appropriate charting tools; this card supports planning without claiming a figure file exists.",
+        "Source": "K-Dense-AI/scientific-agent-skills / skills/scientific-visualization/SKILL.md",
+        "Pinned source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/49c6e97775eaa18ba791bebe23162a70ae601c18/skills/scientific-visualization/SKILL.md"
+      }
+    },
+    {
+      "id": "SK08",
+      "title": "Academic drafting and revision / 学术写作与修改",
+      "fields": {
+        "Category": "C4 — Writing and references / 学术写作与引用",
+        "Matching terms": "论文写作, 摘要, 引言, 润色, manuscript, abstract, methods, discussion, academic writing",
+        "Use when": "The user wants to draft, restructure, or improve a research manuscript or section.",
+        "Distinguish from / avoid": "Do not turn a request for language edits into new claims, methods, results, or additional experiments.",
+        "Useful inputs": "Target section, supplied draft or evidence, intended audience, desired change, and any venue instructions.",
+        "Prompt-building method": "Determine the purpose of the requested section and make an evidence-based outline when needed. Preserve factual meaning, numbers, and uncertainty. Separate performed methods and observed results from interpretation. Match structure to the article type; IMRAD is an option, not a universal requirement. Check that repeated facts and claims remain consistent. Flag absent evidence instead of filling it with plausible prose.",
+        "Desired downstream output": "A section-specific drafting or editing prompt with explicit scope and preservation requirements.",
+        "Execution / evidence limits": "The card does not verify unavailable sources or current journal rules. Unknown venue requirements remain unresolved.",
+        "Source": "K-Dense-AI/scientific-agent-skills / skills/scientific-writing/SKILL.md",
+        "Pinned source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/49c6e97775eaa18ba791bebe23162a70ae601c18/skills/scientific-writing/SKILL.md"
+      }
+    },
+    {
+      "id": "SK09",
+      "title": "Citation and reference checking / 引用与参考文献核对",
+      "fields": {
+        "Category": "C4 — Writing and references / 学术写作与引用",
+        "Matching terms": "引用, DOI, 参考文献, citation, bibliography, BibTeX, metadata, reference checking",
+        "Use when": "The user needs reference cleanup, metadata checks, or a prompt for verifying citations.",
+        "Distinguish from / avoid": "A reference that exists does not necessarily support the sentence citing it.",
+        "Useful inputs": "Reference list or identifiers, target citation style, and cited passages if claim support is in scope.",
+        "Prompt-building method": "Identify duplicate and incomplete records. Compare metadata against authoritative records when accessible, then format consistently. Keep unresolved author, title, year, or identifier fields visibly unresolved. For support checks, compare the cited claim with the actual source content separately from bibliographic existence. Report which checks were completed and which need external access.",
+        "Desired downstream output": "A reference-checking plan or corrected list with per-item unresolved issues and verification status.",
+        "Execution / evidence limits": "Without source access, limit the work to supplied records and internal consistency. Do not create convincing-looking references from memory.",
+        "Source": "K-Dense-AI/scientific-agent-skills / skills/citation-management/SKILL.md",
+        "Pinned source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/49c6e97775eaa18ba791bebe23162a70ae601c18/skills/citation-management/SKILL.md"
+      }
+    },
+    {
+      "id": "SK10",
+      "title": "Critical appraisal of evidence / 科学证据评价",
+      "fields": {
+        "Category": "C5 — Appraisal and review / 证据评价、审阅与返修",
+        "Matching terms": "批判性阅读, 证据质量, 偏差, confounding, critical appraisal, causation, scientific claim",
+        "Use when": "The user asks whether a study or specific claim is supported by its evidence.",
+        "Distinguish from / avoid": "For a complete manuscript review report, prefer SK11; do not mistake publication status for validity.",
+        "Useful inputs": "Claim or passage, supporting study material, relevant design details, and desired review depth.",
+        "Prompt-building method": "Compare the claim to what was measured and what the design permits. Examine confounding, selection, measurement, statistical interpretation, and alternative explanations where relevant. Distinguish correlation from causation and practical importance from a statistical threshold. Identify strengths alongside weaknesses. Anchor concerns to the available material and explain their consequences proportionately.",
+        "Desired downstream output": "A bounded assessment of support, main limitations, and information or changes that would resolve uncertainty.",
+        "Execution / evidence limits": "Use only appraisal frameworks appropriate to the study type. Missing information is not proof a procedure was absent.",
+        "Source": "K-Dense-AI/scientific-agent-skills / skills/scientific-critical-thinking/SKILL.md",
+        "Pinned source": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/49c6e97775eaa18ba791bebe23162a70ae601c18/skills/scientific-critical-thinking/SKILL.md"
+      }
+    },
+    {
+      "id": "SK11",
+      "title": "Structured manuscript review / 结构化论文审阅",
+      "fields": {
+        "Category": "C5 — Appraisal and review / 证据评价、审阅与返修",
+        "Matching terms": "审稿, 论文评价, peer review, manuscript review, reviewer feedback, major concerns",
+        "Use when": "The user wants organized feedback on a whole manuscript or a supplied subset.",
+        "Distinguish from / avoid": "Do not claim an independent reviewer panel was run merely because this card was matched.",
+        "Useful inputs": "Manuscript or available sections, review purpose, article type, and target venue if relevant.",
+        "Prompt-building method": "State the scope of available material. Examine whether the question, methods, results, and conclusions connect. Cover methodological soundness, statistics, reproducibility, figures, and clarity as applicable. Organize concerns by their consequences for the work. For each material concern, identify a real section or passage, explain the issue, and propose an actionable improvement. Include strengths and unresolved questions.",
+        "Desired downstream output": "A synopsis with prioritized concerns and revision suggestions; identify partial reviews explicitly.",
+        "Execution / evidence limits": "Do not invent page/line numbers or review unseen figures. No separate reviewer agents are installed by this file.",
+        "Source": "neuromechanist/research-skills / plugins/manuscript/skills/paper-review/references/review-procedure.md",
+        "Pinned source": "https://github.com/neuromechanist/research-skills/blob/f0219bde233abb44d8a0c5d73f41ea27073e1493/plugins/manuscript/skills/paper-review/references/review-procedure.md"
+      }
+    },
+    {
+      "id": "SK12",
+      "title": "Reviewer response and revision plan / 审稿回复与返修",
+      "fields": {
+        "Category": "C5 — Appraisal and review / 证据评价、审阅与返修",
+        "Matching terms": "返修, 回复审稿人, rebuttal, response letter, revise and resubmit, reviewer comments",
+        "Use when": "The user has reviewer comments and wants a response or revision plan.",
+        "Distinguish from / avoid": "Do not write that an experiment or revision has been completed unless the user supplies evidence of completion.",
+        "Useful inputs": "Reviewer comments, submitted text, completed or planned changes, and supplied response-format limits.",
+        "Prompt-building method": "Break comments into identifiable points. For each point, determine the concern, proposed response, supporting evidence, and required manuscript change. Anchor responses to actual sections, tables, or results. Distinguish clarification, supported disagreement, completed revision, and future work. Check point coverage and the given length constraints while keeping the tone specific and constructive.",
+        "Desired downstream output": "A point-by-point response draft or plan with evidence anchors and a revision checklist.",
+        "Execution / evidence limits": "Current venue rules must come from accessible current instructions. This workflow does not post or submit responses.",
+        "Source": "ShaishavMaisuria/research-paper-lifecycle-skills / skills/write-rebuttal/SKILL.md",
+        "Pinned source": "https://github.com/ShaishavMaisuria/research-paper-lifecycle-skills/blob/f9a0ed8f0f1770fb0321c5b022d55ed34c939927/skills/write-rebuttal/SKILL.md"
+      }
+    },
+    {
+      "id": "SK13",
+      "title": "Research proposal and grant planning / 研究计划与基金申请",
+      "fields": {
+        "Category": "C6 — Proposals and communication / 研究计划与科研传播",
+        "Matching terms": "基金申请, 研究计划, grant, proposal, specific aims, project summary, milestones",
+        "Use when": "The user wants a proposal outline, research aims, or a stronger grant-writing request.",
+        "Distinguish from / avoid": "Do not assume a particular funder, program, eligibility condition, budget, or page limit.",
+        "Useful inputs": "Research objective, evidence to date, intended funding call if any, resources, timeline, and required section.",
+        "Prompt-building method": "Extract relevant requirements from the supplied call before applying a template. Connect the problem and evidence gap to aims, approach, expected contributions, milestones, and alternatives. Separate preliminary evidence from planned outcomes. Allocate emphasis according to the actual evaluation criteria. Mark missing project or application details as questions rather than invented facts.",
+        "Desired downstream output": "A proposal-writing prompt or outline linking aims, rationale, methods, deliverables, and unresolved requirements.",
+        "Execution / evidence limits": "A static skill cannot establish current application rules or eligibility; supplied or newly checked official instructions are needed.",
+        "Source": "neuromechanist/research-skills / plugins/grant/skills/grant-writing/SKILL.md",
+        "Pinned source": "https://github.com/neuromechanist/research-skills/blob/f0219bde233abb44d8a0c5d73f41ea27073e1493/plugins/grant/skills/grant-writing/SKILL.md"
+      }
+    },
+    {
+      "id": "SK14",
+      "title": "Research talk and slide planning / 科研汇报与幻灯片规划",
+      "fields": {
+        "Category": "C6 — Proposals and communication / 研究计划与科研传播",
+        "Matching terms": "组会, 学术汇报, 答辩, research talk, conference talk, slides, presentation, speaker notes",
+        "Use when": "The user needs a talk plan, slide outline, or speaker notes grounded in research material.",
+        "Distinguish from / avoid": "Do not impose a fixed slide count when the user has supplied one, or invent results to create a stronger story.",
+        "Useful inputs": "Paper or research notes, audience, duration, central takeaway, required format, and available figures.",
+        "Prompt-building method": "Choose the depth appropriate to the audience and available time. Build a narrative from the problem and insight to methods, evidence, and limitations. Give each planned slide one main message and identify the supporting figure or material. Include timing, speaker notes, and transitions where requested. Move optional detail to backup material instead of overcrowding the main talk.",
+        "Desired downstream output": "A timed slide outline or speaker-note specification, with explicit source material and missing inputs.",
+        "Execution / evidence limits": "PPTX/PDF generation needs separate enabled tools; an outline must not be described as a generated deck.",
+        "Source": "Orchestra-Research/AI-Research-SKILLs / 20-ml-paper-writing/presenting-conference-talks/SKILL.md",
+        "Pinned source": "https://github.com/Orchestra-Research/AI-Research-SKILLs/blob/773a52944ba4747a18bd4ae9ade53fff041adcbc/20-ml-paper-writing/presenting-conference-talks/SKILL.md"
+      }
+    },
+    {
+      "id": "SK15",
+      "title": "ML paper contribution and experiment reporting / 机器学习论文贡献与实验表述",
+      "fields": {
+        "Category": "C7 — Computational research / 计算研究与复现",
+        "Matching terms": "机器学习论文, ML paper, ablation, baseline, benchmark, experiment section, contribution",
+        "Use when": "The user is framing a machine-learning paper or describing how experiments support its contribution.",
+        "Distinguish from / avoid": "This is not a training launcher, model-selection service, or proof of state-of-the-art performance.",
+        "Useful inputs": "Research goal, available code or results, contribution candidate, baselines, metrics, and experiment settings.",
+        "Prompt-building method": "Connect each proposed contribution to an explicit empirical question and available evidence. For experiment reporting, request relevant baselines and settings, uncertainty definitions, seeds, hyperparameter search information, and compute context. Separate completed experiments from proposed additions. Describe limitations and unresolved comparisons without claiming a stronger result than the materials support.",
+        "Desired downstream output": "An evidence-linked contribution outline or experiment-section prompt with missing reporting details.",
+        "Execution / evidence limits": "Code, data, and a configured runtime are needed to execute training or evaluation. This adaptation focuses on paper framing and reporting.",
+        "Source": "Orchestra-Research/AI-Research-SKILLs / 20-ml-paper-writing/ml-paper-writing/SKILL.md",
+        "Pinned source": "https://github.com/Orchestra-Research/AI-Research-SKILLs/blob/773a52944ba4747a18bd4ae9ade53fff041adcbc/20-ml-paper-writing/ml-paper-writing/SKILL.md"
+      }
+    },
+    {
+      "id": "SK16",
+      "title": "Reproducibility package planning / 科研复现材料整理",
+      "fields": {
+        "Category": "C7 — Computational research / 计算研究与复现",
+        "Matching terms": "复现, 代码整理, reproducibility, artifact, README, dependencies, reproduce results",
+        "Use when": "The user wants to organize code, data, or instructions so another researcher can inspect or reproduce the work.",
+        "Distinguish from / avoid": "A complete README or file checklist does not prove results have been reproduced.",
+        "Useful inputs": "Available repository or file descriptions, key results, dependencies, data access needs, and intended sharing context.",
+        "Prompt-building method": "Map each reported result to required data, configuration, execution steps, and expected outputs. Specify environment and hardware information, runtime expectations, and comparison criteria. Identify missing resources and access restrictions. Use the actual venue requirements when artifact evaluation is intended. Separate package preparation, successful execution, and independently confirmed reproduction.",
+        "Desired downstream output": "A packaging plan and README outline with result-to-procedure mapping and unresolved items.",
+        "Execution / evidence limits": "This file does not run experiments, create archival identifiers, upload repositories, or certify reproducibility.",
+        "Source": "ShaishavMaisuria/research-paper-lifecycle-skills / skills/prepare-artifacts/SKILL.md",
+        "Pinned source": "https://github.com/ShaishavMaisuria/research-paper-lifecycle-skills/blob/f9a0ed8f0f1770fb0321c5b022d55ed34c939927/skills/prepare-artifacts/SKILL.md",
+        "Adaptation": "SkillPrompt Academic Knowledge v1.0; curated 2026-09-22.",
+        "Upstream notices": "K-Dense Inc. (MIT); Orchestra Research (MIT);",
+        "research-paper-lifecycle-skills": "Copyright 2026 Shaishav Maisuria."
+      }
+    }
+  ]
+}

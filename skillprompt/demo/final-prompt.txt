@@ -1,0 +1,22 @@
+Task: Write an approximately 500-word comparative literature review for an interdisciplinary research group meeting. Topic: generative AI for research writing. Base all statements only on the five supplied papers.
+
+When the papers are uploaded:
+- Assign short labels [P1]–[P5] and display a mapping “[P#] — full title (venue, year)” before writing. Use these labels for all inline attributions.
+
+Audience and tone:
+- Clear, accessible English; minimize jargon. Briefly define necessary terms in plain language if it aids understanding.
+
+Scope and evidence boundaries:
+- Do not imply exhaustive field coverage or recency beyond the five papers.
+- Attach bracketed labels to key claims (e.g., “… improves outline quality [P2, P4]”; if a point relies on one paper, indicate it, e.g., “[P3] only”).
+
+Comparative focus:
+- Organize the review around 2–3 cross-cutting themes (e.g., writing stage targeted, model/workflow integration, human-in-the-loop).
+- Compare each theme’s approaches and limitations; highlight agreements and contradictions and note context differences only when essential.
+- Do not provide exhaustive evaluation methods or metrics; include such details only if they are crucial to the comparison.
+
+Limitations and uncertainty:
+- Preserve authors’ caveats (e.g., small samples, domain limits) and avoid inventing results or claims.
+
+Deliverable:
+- Brief opening to orient the shared problem, thematic comparison centered on approaches and limitations, and a short closing on practical implications or open questions. Paragraphing at your discretion.

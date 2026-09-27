@@ -4,3 +4,5 @@ dist
 coverage
 *.local
 .DS_Store
+SkillPrompt_Codex_Handoff_*.zip
+SkillPrompt_Codex_Handoff_*/

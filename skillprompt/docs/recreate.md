@@ -1,0 +1,15 @@
+# Recreate SkillPrompt
+
+This reproduces the documented September 27, 2026 configuration as far as the supplied evidence allows. It does not import a native export or promise identical responses.
+
+1. [Open HokieAI](https://hokie.ai.vt.edu/) with an eligible account and create a **Personal Agent** named **SkillPrompt**. The general portal does not start the owner’s configured agent. See the [official overview](https://ai.vt.edu/tools/hokieai.html) and [recorded access notes](access-and-sharing.md).
+2. Open [specific-instructions.txt](../agent/specific-instructions.txt), copy the entire English text, and paste it into **Specific** instructions. Preserve the supplied wording. Do not substitute instructions from the earlier Chinese upload guide.
+3. The live **Short Description was blank**. Leave it blank to match the record. Any description written for this showcase is website copy. The **Platform** tab was not collected: do not invent or present any text as an observed setting. If the platform requires choices not documented here, record them as reproduction differences.
+4. Upload **only** [SkillPrompt_Academic_Knowledge_v1.txt](../knowledge/SkillPrompt_Academic_Knowledge_v1.txt) as the agent knowledge source. The supplied interface shows interpreter **File Search**. Do not upload the demo, guide, settings JSON, or source notices as extra knowledge sources. Keep the [full notices](../sources/SkillPrompt_Sources_and_Licenses_v1.md) with any redistributed collection.
+5. Select the displayed model **OpenAI (gpt-5)** if available. If unavailable, record the substitute model label and date. Enable **Add Files & Images**. Disable **Image Creation**, **Search the Internet**, and **Generate Artifacts**. Compare with the [original screenshot](../evidence/runtime-settings.png) and [settings record](../agent/settings.json); JSON is not a native import format.
+6. Save the personal agent. Start a new conversation and send the three **user** messages from the [canonical conversation](../demo/conversation.json), in order, waiting for each actual response. The same inputs are readable in the [transcript](../demo/transcript.md). Do not paste the recorded assistant responses as if they were new output.
+7. This scenario asks only for prompt refinement before a planned five-paper upload. Do not supply an invented paper corpus or claim a literature review was run. Record new responses faithfully, including errors and differences from the example.
+
+Review whether the agent chooses appropriate cards, preserves accepted constraints, removes rejected additions, quotes the knowledge accurately, attributes changes correctly, and finalizes after acceptance. The original [evaluation](evaluation.md) is a guide to what to inspect, not a score for a fresh run. Citation accuracy does not prove an internal retrieval operation occurred.
+
+No publicly verified SkillPrompt agent-start link is available. A later sharing claim requires testing that another allowed account can start its own conversation with the agent; a link that merely displays an old chat is insufficient. Do not submit an official-agent request as part of this reproduction.

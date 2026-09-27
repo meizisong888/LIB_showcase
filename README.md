@@ -10,6 +10,10 @@ The navigation contains **Task Recommender** and **VT AI Tools**. VT AI Tools op
 
 The site is static and runs entirely in the browser. Form selections are not uploaded, no account is created, and no model API is called.
 
+## SkillPrompt showcase
+
+[Open the recorded SkillPrompt walkthrough](https://meizisong888.github.io/LIB_showcase/skillprompt/) or read the [SkillPrompt documentation](skillprompt/README.md). This separate section documents a HokieAI personal agent, its curated academic method cards, configuration, and a supplied three-turn prompt-refinement demo. The public walkthrough makes no live model calls; sharing the native agent remains unverified. The VT Student AI Guide and its routes continue at the root site.
+
 ## Current recommendation catalog
 
 Core tools available to all VT students:

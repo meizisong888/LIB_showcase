@@ -1,0 +1,24 @@
+{
+  "agent_name": "SkillPrompt",
+  "short_description": "",
+  "configuration_observed_on": "2026-09-27",
+  "evidence": "User-pasted Specific Instructions and screenshots of the HokieAI edit interface.",
+  "model_label_as_displayed": "OpenAI (gpt-5)",
+  "knowledge_sources": [
+    {
+      "filename": "SkillPrompt_Academic_Knowledge_v1.txt",
+      "displayed_interpreter": "File Search"
+    }
+  ],
+  "capabilities": {
+    "Image Creation": false,
+    "Add Files & Images": true,
+    "Search the Internet": false,
+    "Generate Artifacts": false
+  },
+  "platform_tab_instructions": null,
+  "platform_tab_status": "Not collected; do not invent its contents.",
+  "agent_share_url": null,
+  "sharing_status": "Not verified. Reviewed edit and sidebar menus did not expose Share; no second-account access test was supplied.",
+  "notes": "This records the user-visible configuration. It is not a native HokieAI import/export schema or proof of backend model routing."
+}
