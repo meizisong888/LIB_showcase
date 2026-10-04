@@ -1,0 +1,306 @@
+[
+  {
+    "id": "R001",
+    "source_locator": "data/raw/catalog-v2.jsonl#L1",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R002",
+    "source_locator": "data/raw/catalog-v2.jsonl#L2",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R003",
+    "source_locator": "data/raw/catalog-v2.jsonl#L3",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R006",
+    "source_locator": "data/raw/catalog-v2.jsonl#L5",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R007",
+    "source_locator": "data/raw/catalog-v2.jsonl#L6",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R008",
+    "source_locator": "data/raw/catalog-v2.jsonl#L7",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R009",
+    "source_locator": "data/raw/catalog-v2.jsonl#L8",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R010",
+    "source_locator": "data/raw/catalog-v2.jsonl#L9",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R011",
+    "source_locator": "data/raw/catalog-v2.jsonl#L10",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R012",
+    "source_locator": "data/raw/catalog-v2.jsonl#L11",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R013",
+    "source_locator": "data/raw/catalog-v2.jsonl#L12",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R014",
+    "source_locator": "data/raw/catalog-v2.jsonl#L13",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R015",
+    "source_locator": "data/raw/catalog-v2.jsonl#L14",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R016",
+    "source_locator": "data/raw/catalog-v2.jsonl#L15",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R017",
+    "source_locator": "data/raw/catalog-v2.jsonl#L16",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R018",
+    "source_locator": "data/raw/catalog-v2.jsonl#L17",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R019",
+    "source_locator": "data/raw/catalog-v2.jsonl#L18",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R020",
+    "source_locator": "data/raw/catalog-v2.jsonl#L19",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R021",
+    "source_locator": "data/raw/catalog-v2.jsonl#L20",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R022",
+    "source_locator": "data/raw/catalog-v2.jsonl#L21",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R023",
+    "source_locator": "data/raw/catalog-v2.jsonl#L22",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R024",
+    "source_locator": "data/raw/catalog-v2.jsonl#L23",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R025",
+    "source_locator": "data/raw/catalog-v2.jsonl#L24",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R026",
+    "source_locator": "data/raw/catalog-v2.jsonl#L25",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R027",
+    "source_locator": "data/raw/catalog-v2.jsonl#L26",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R028",
+    "source_locator": "data/raw/catalog-v2.jsonl#L27",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R029",
+    "source_locator": "data/raw/catalog-v2.jsonl#L28",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R030",
+    "source_locator": "data/raw/catalog-v2.jsonl#L29",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R031",
+    "source_locator": "data/raw/catalog-v2.jsonl#L30",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R032",
+    "source_locator": "data/raw/catalog-v2.jsonl#L31",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R033",
+    "source_locator": "data/raw/catalog-v2.jsonl#L32",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R034",
+    "source_locator": "data/raw/catalog-v2.jsonl#L33",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R035",
+    "source_locator": "data/raw/catalog-v2.jsonl#L34",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R036",
+    "source_locator": "data/raw/catalog-v2.jsonl#L35",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R037",
+    "source_locator": "data/raw/catalog-v2.jsonl#L36",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R038",
+    "source_locator": "data/raw/catalog-v2.jsonl#L37",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R039",
+    "source_locator": "data/raw/catalog-v2.jsonl#L38",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R040",
+    "source_locator": "data/raw/catalog-v2.jsonl#L39",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R041",
+    "source_locator": "data/raw/catalog-v2.jsonl#L40",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R042",
+    "source_locator": "data/raw/catalog-v2.jsonl#L41",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R043",
+    "source_locator": "data/raw/catalog-v2.jsonl#L42",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R044",
+    "source_locator": "data/raw/catalog-v2.jsonl#L43",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R045",
+    "source_locator": "data/raw/catalog-v2.jsonl#L44",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R046",
+    "source_locator": "data/raw/catalog-v2.jsonl#L45",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R047",
+    "source_locator": "data/raw/catalog-v2.jsonl#L46",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R048",
+    "source_locator": "data/raw/catalog-v2.jsonl#L47",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R049",
+    "source_locator": "data/raw/catalog-v2.jsonl#L48",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R050",
+    "source_locator": "data/raw/catalog-v2.jsonl#L49",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R051",
+    "source_locator": "data/raw/catalog-v2.jsonl#L50",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R052",
+    "source_locator": "data/raw/catalog-v2.jsonl#L51",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R053",
+    "source_locator": "data/raw/catalog-v2.jsonl#L52",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R054",
+    "source_locator": "data/raw/catalog-v2.jsonl#L53",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R055",
+    "source_locator": "data/raw/catalog-v2.jsonl#L54",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R056",
+    "source_locator": "data/raw/catalog-v2.jsonl#L55",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R057",
+    "source_locator": "data/raw/catalog-v2.jsonl#L56",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R058",
+    "source_locator": "data/raw/catalog-v2.jsonl#L57",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R059",
+    "source_locator": "data/raw/catalog-v2.jsonl#L58",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R060",
+    "source_locator": "data/raw/catalog-v2.jsonl#L59",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R061",
+    "source_locator": "data/raw/catalog-v2.jsonl#L60",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R062",
+    "source_locator": "data/raw/catalog-v2.jsonl#L61",
+    "state": "dependency_changed"
+  },
+  {
+    "id": "R005",
+    "state": "inactive"
+  }
+]

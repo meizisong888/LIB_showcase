@@ -1,0 +1,31 @@
+{
+  "evidence_preserved": 5,
+  "evidence_total": 12,
+  "hit_ids": [
+    "R001",
+    "R002",
+    "R016",
+    "R059",
+    "R060"
+  ],
+  "missed_ids": [
+    "R003",
+    "R004",
+    "R005",
+    "R010",
+    "R013",
+    "R015",
+    "R017"
+  ],
+  "nonrelevant_or_insufficient_selected": [],
+  "recall": 0.4166666666666667,
+  "relevant_retained": 5,
+  "relevant_total": 12,
+  "selected_ids": [
+    "R001",
+    "R016",
+    "R059",
+    "R002",
+    "R060"
+  ]
+}

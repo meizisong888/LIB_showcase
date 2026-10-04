@@ -1,0 +1,511 @@
+{
+  "provenance": "Codex-assisted synthetic-fixture authoring and per-record inspection; not librarian annotation or an independent expert judgment.",
+  "fixed_before_first_retrieval_run": true,
+  "criterion": "Description supplies evidence of lived experience or community response to river flooding in Appalachia. The two export duplicates count as separate source records. Insufficient descriptions are not positives.",
+  "records": [
+    {
+      "id": "R001",
+      "relevant": true,
+      "assessment": "relevant",
+      "rationale": "Residents describe a flood and collective recovery in Appalachia.",
+      "evidence": [
+        "Residents of an Appalachian community describe the river flood of 1977. They organized boat rescues, shared meals and repaired the school after the water receded."
+      ],
+      "reviewed_text": "Residents of an Appalachian community describe the river flood of 1977. They organized boat rescues, shared meals and repaired the school after the water receded."
+    },
+    {
+      "id": "R002",
+      "relevant": true,
+      "assessment": "relevant",
+      "rationale": "Captions document residents' experience and relief work.",
+      "evidence": [
+        "Photographs show an Appalachian community during a river flood. Captions identify families moving furniture upstairs and volunteers distributing clean water."
+      ],
+      "reviewed_text": "Photographs show an Appalachian community during a river flood. Captions identify families moving furniture upstairs and volunteers distributing clean water."
+    },
+    {
+      "id": "R003",
+      "relevant": true,
+      "assessment": "relevant",
+      "rationale": "Blue Ridge is the regional clue; inundation and shared shelter establish the topic without the query words.",
+      "evidence": [
+        "Families in a Blue Ridge settlement recall the 1940 inundation. Neighbors shared shelter and rebuilt footbridges after water overtopped the banks."
+      ],
+      "reviewed_text": "Families in a Blue Ridge settlement recall the 1940 inundation. Neighbors shared shelter and rebuilt footbridges after water overtopped the banks."
+    },
+    {
+      "id": "R004",
+      "relevant": true,
+      "assessment": "relevant",
+      "rationale": "Region and flood response are in different paragraphs; both are needed.",
+      "evidence": [
+        "These notebooks were kept in an Appalachian village.\n\nThe final entries describe homes submerged when the river left its banks, followed by neighbors organizing shared shelter."
+      ],
+      "reviewed_text": "These notebooks were kept in an Appalachian village.\n\nThe final entries describe homes submerged when the river left its banks, followed by neighbors organizing shared shelter."
+    },
+    {
+      "id": "R005",
+      "relevant": true,
+      "assessment": "relevant",
+      "rationale": "A shelter and kitchen demonstrate community response; access conditions must remain attached.",
+      "evidence": [
+        "A register describes the Appalachian community response to a river flood: a school became a shelter and a kitchen served displaced households. The description summarizes activities only; no personal entries are included."
+      ],
+      "reviewed_text": "A register describes the Appalachian community response to a river flood: a school became a shelter and a kitchen served displaced households. The description summarizes activities only; no personal entries are included."
+    },
+    {
+      "id": "R006",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "Explicitly excludes real experiences and responses; lexical decoy.",
+      "evidence": [],
+      "reviewed_text": "A classroom simulation uses the words Appalachian community, flood and river in an imaginary exercise. It explicitly excludes historical events, residents' experiences and community response evidence."
+    },
+    {
+      "id": "R007",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "Gardening description with deliberately wrong Astronomy subject; unrelated to floods.",
+      "evidence": [],
+      "reviewed_text": "A practical book describes bean seed drying, germination tests and storage jars. Its contents concern garden cultivation and contain no astronomical observations."
+    },
+    {
+      "id": "R008",
+      "relevant": false,
+      "assessment": "insufficient",
+      "rationale": "Abstract missing: cannot establish relevance from available evidence.",
+      "evidence": [],
+      "reviewed_text": ""
+    },
+    {
+      "id": "R009",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "Flood is a metaphor for donations; explicitly no water disaster.",
+      "evidence": [],
+      "reviewed_text": "The museum newsletter calls a donation campaign a flood of gifts. Its Appalachian community river exhibit concerns boat construction; there is no water disaster or recovery account."
+    },
+    {
+      "id": "R010",
+      "relevant": true,
+      "assessment": "relevant",
+      "rationale": "Relief supplies and rebuilding follow an actual event within the fictional collection.",
+      "evidence": [
+        "An Appalachian community recorded flood relief supplies after the river overflowed. Ledger headings distinguish temporary shelter, bridge repair and distribution of drinking water."
+      ],
+      "reviewed_text": "An Appalachian community recorded flood relief supplies after the river overflowed. Ledger headings distinguish temporary shelter, bridge repair and distribution of drinking water."
+    },
+    {
+      "id": "R011",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "Coastal location explicitly excludes Appalachia.",
+      "evidence": [],
+      "reviewed_text": "This collection describes a coastal community in the Florida Keys responding to a river flood. The geographic scope excludes Appalachia."
+    },
+    {
+      "id": "R012",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "Forecast grids explicitly exclude lived experience and response.",
+      "evidence": [],
+      "reviewed_text": "Numerical grids estimate river flood probabilities in Appalachian watersheds. No accounts of community experience, local action or past relief work are present."
+    },
+    {
+      "id": "R013",
+      "relevant": true,
+      "assessment": "relevant",
+      "rationale": "Recollections describe evacuation and neighborhood recovery.",
+      "evidence": [
+        "An Appalachian community exhibit remembers the river flood. Recorded recollections describe evacuation routes and a neighborhood fund used to replace damaged household stoves."
+      ],
+      "reviewed_text": "An Appalachian community exhibit remembers the river flood. Recorded recollections describe evacuation routes and a neighborhood fund used to replace damaged household stoves."
+    },
+    {
+      "id": "R014",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "Bibliography explicitly lacks relevant evidence in its description.",
+      "evidence": [],
+      "reviewed_text": "A bibliography lists titles about river engineering and flood models for an Appalachian community planning course. It contains no collection descriptions or evidence of residents experiencing or responding to floods."
+    },
+    {
+      "id": "R015",
+      "relevant": true,
+      "assessment": "relevant",
+      "rationale": "Revised edition changes the evidence and must not be grouped with the earlier edition.",
+      "evidence": [
+        "Residents of an Appalachian community describe the river flood of 1977. This revised edition adds an interview about households excluded from the first relief distribution."
+      ],
+      "reviewed_text": "Residents of an Appalachian community describe the river flood of 1977. This revised edition adds an interview about households excluded from the first relief distribution."
+    },
+    {
+      "id": "R016",
+      "relevant": true,
+      "assessment": "relevant",
+      "rationale": "Another copy retains the response account but has different copy and access information.",
+      "evidence": [
+        "Residents of an Appalachian community describe the river flood of 1977. They organized boat rescues, shared meals and repaired the school after the water receded."
+      ],
+      "reviewed_text": "Residents of an Appalachian community describe the river flood of 1977. They organized boat rescues, shared meals and repaired the school after the water receded."
+    },
+    {
+      "id": "R017",
+      "relevant": true,
+      "assessment": "relevant",
+      "rationale": "Spanish description locates the event in the Appalachian mountains and describes collective shelter and bridge repair.",
+      "evidence": [
+        "En una aldea de las montañas Apalaches, el agua salió del cauce e inundó las casas. Las familias organizaron refugios y repararon el puente juntas."
+      ],
+      "reviewed_text": "En una aldea de las montañas Apalaches, el agua salió del cauce e inundó las casas. Las familias organizaron refugios y repararon el puente juntas."
+    },
+    {
+      "id": "R018",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns county bridge inspection checklist, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Inspectors list masonry joints, deck wear and routine maintenance priorities. No disaster event or community response is described."
+    },
+    {
+      "id": "R019",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns workshop dye sample sheets, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Fabric samples compare indigo baths and wool preparation in a textile workshop."
+    },
+    {
+      "id": "R020",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns mountain strata field guide, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "A field guide illustrates rock layers and mineral identification along walking routes. One plate is withheld from the public scan under the demonstration access condition."
+    },
+    {
+      "id": "R021",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns orchard pruning demonstration, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Photographs document seasonal apple pruning, tool care and grafting demonstrations."
+    },
+    {
+      "id": "R022",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns depot platform survey, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Measured drawings describe a railway platform, shelter columns and ticket window dimensions."
+    },
+    {
+      "id": "R023",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns school reading room inventory, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "An inventory lists desks, reading lamps and shelves purchased for a school reading room."
+    },
+    {
+      "id": "R024",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns fiddle workshop recordings, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Audio tracks demonstrate bowing patterns and tuning for a fiddle workshop."
+    },
+    {
+      "id": "R025",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns observatory lens maintenance, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Technicians record cleaning procedures and alignment measurements for a telescope lens."
+    },
+    {
+      "id": "R026",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns quilt pattern notebook, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "A notebook contains block diagrams, fabric measurements and stitching instructions."
+    },
+    {
+      "id": "R027",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns clinic building plans, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Floor plans show waiting rooms, ventilation routes and the placement of examination rooms."
+    },
+    {
+      "id": "R028",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns portrait studio negatives, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Studio portraits illustrate backdrops, lighting arrangements and camera equipment."
+    },
+    {
+      "id": "R029",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns factory shift rules, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "A handbook explains shift changes, tool checkout and wage categories at a small factory."
+    },
+    {
+      "id": "R030",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns trail marker atlas, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Maps locate trail junctions, elevation contours and designated camping areas."
+    },
+    {
+      "id": "R031",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns herbarium storage study, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "A study compares cabinets and humidity control for dried plant specimens."
+    },
+    {
+      "id": "R032",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns town clock repair diary, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "A repairer records gear replacements, pendulum adjustments and winding routines."
+    },
+    {
+      "id": "R033",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns preserving peaches booklet, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Recipes give preparation steps for jars, fruit syrups and pantry storage."
+    },
+    {
+      "id": "R034",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns reservoir valve specifications, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Engineering sheets specify valve sizes, operating pressures and inspection intervals."
+    },
+    {
+      "id": "R035",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns market stall permit register, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "A register records stall dimensions and permitted produce categories at a market."
+    },
+    {
+      "id": "R036",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns bookmobile route map, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "A map marks regular bookmobile stops at schools and community centers."
+    },
+    {
+      "id": "R037",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns theater seating renovation, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Architectural drawings document aisle widths, balcony supports and replacement seats."
+    },
+    {
+      "id": "R038",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns choral rehearsal schedule, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Programs list rehearsal pieces, voice sections and performance dates."
+    },
+    {
+      "id": "R039",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns lunar eclipse observing log, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Observers record eclipse timings, cloud cover and telescope magnification."
+    },
+    {
+      "id": "R040",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns spinning wheel repair notes, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Instructions explain spindle alignment, drive bands and wood treatment."
+    },
+    {
+      "id": "R041",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns dental outreach equipment, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "A report inventories portable chairs, lights and sterilization equipment."
+    },
+    {
+      "id": "R042",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns darkroom chemistry cards, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Cards compare developer dilutions, exposure times and print washing procedures."
+    },
+    {
+      "id": "R043",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns carpenters apprenticeship handbook, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Training chapters cover measuring, joints, tool maintenance and workshop safety."
+    },
+    {
+      "id": "R044",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns campus tree survey, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "A dataset records tree species, trunk diameter and planted location."
+    },
+    {
+      "id": "R045",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns bakery oven ledger, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "A baker records oven temperatures, flour deliveries and daily bread batches."
+    },
+    {
+      "id": "R046",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns bus shelter photographs, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Images document shelter roof designs, seating and route signs."
+    },
+    {
+      "id": "R047",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns library binding specifications, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Specifications describe cloth covers, sewing methods and paper grain for bindings."
+    },
+    {
+      "id": "R048",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns pottery kiln firing notes, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Workshop notes record temperatures, glaze combinations and firing durations."
+    },
+    {
+      "id": "R049",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns bee pasture planting guide, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "A guide compares flowering periods and soil needs of plants used by beekeepers."
+    },
+    {
+      "id": "R050",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns weather station calibration, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Technicians compare thermometer readings and calibrate rain gauges before installation."
+    },
+    {
+      "id": "R051",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns canal lock mechanism drawings, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Drawings show gears, gate hinges and mechanical clearances at a canal lock."
+    },
+    {
+      "id": "R052",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns museum display case catalog, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "A catalog lists case dimensions, glazing options and lighting fixtures."
+    },
+    {
+      "id": "R053",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns language classroom recordings, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Audio exercises practice pronunciation and short dialogues about shopping and travel."
+    },
+    {
+      "id": "R054",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns brass band instrument register, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "An inventory identifies instrument types, repair dates and storage lockers."
+    },
+    {
+      "id": "R055",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns star chart printing plates, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Printing plates show constellation outlines and reference coordinates."
+    },
+    {
+      "id": "R056",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns weaving loom dimensions, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "Technical drawings specify frame dimensions and treadle connections for a hand loom."
+    },
+    {
+      "id": "R057",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns walking route accessibility survey, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "A survey records pavement condition, gradients and bench spacing along a walking route."
+    },
+    {
+      "id": "R058",
+      "relevant": false,
+      "assessment": "not_relevant",
+      "rationale": "The complete description concerns canning club recipe exchange, with no Appalachian flood experience or response evidence.",
+      "evidence": [],
+      "reviewed_text": "A booklet collects vegetable preservation recipes and seasonal ingredient substitutions."
+    },
+    {
+      "id": "R059",
+      "relevant": true,
+      "assessment": "relevant",
+      "rationale": "Duplicate task content from a separate export row; same evidence, separate source mapping.",
+      "evidence": [
+        "Residents of an Appalachian community describe the river flood of 1977. They organized boat rescues, shared meals and repaired the school after the water receded."
+      ],
+      "reviewed_text": "Residents of an Appalachian community describe the river flood of 1977. They organized boat rescues, shared meals and repaired the school after the water receded."
+    },
+    {
+      "id": "R060",
+      "relevant": true,
+      "assessment": "relevant",
+      "rationale": "Duplicate task content from a separate export row; same evidence, separate source mapping.",
+      "evidence": [
+        "Photographs show an Appalachian community during a river flood. Captions identify families moving furniture upstairs and volunteers distributing clean water."
+      ],
+      "reviewed_text": "Photographs show an Appalachian community during a river flood. Captions identify families moving furniture upstairs and volunteers distributing clean water."
+    }
+  ]
+}

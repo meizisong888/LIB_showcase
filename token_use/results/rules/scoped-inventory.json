@@ -1,0 +1,499 @@
+{
+  "records": [
+    {
+      "date": "1991-06-15",
+      "id": "R001",
+      "material_type": "oral history",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L1",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1992-06-15",
+      "id": "R002",
+      "material_type": "photographs",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L2",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1993-06-15",
+      "id": "R003",
+      "material_type": "oral history",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L3",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1994-06-15",
+      "id": "R004",
+      "material_type": "diary",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L4",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1995-06-15",
+      "id": "R005",
+      "material_type": "finding aid",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L5",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1996-06-15",
+      "id": "R006",
+      "material_type": "report",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L6",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1997-06-15",
+      "id": "R007",
+      "material_type": "book",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L7",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1998-06-15",
+      "id": "R008",
+      "material_type": "audio",
+      "rule_issues": [
+        "missing:abstract"
+      ],
+      "source_locator": "data/raw/catalog-v1.jsonl#L8",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1999-06-15",
+      "id": "R009",
+      "material_type": "newspaper",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L9",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2000-06-15",
+      "id": "R010",
+      "material_type": "report",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L10",
+      "status": "included"
+    },
+    {
+      "date": "2001-06-15",
+      "id": "R011",
+      "material_type": "oral history",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L11",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2002-06-15",
+      "id": "R012",
+      "material_type": "dataset",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L12",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2003-06-15",
+      "id": "R013",
+      "material_type": "finding aid",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L13",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2004-06-15",
+      "id": "R014",
+      "material_type": "book",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L14",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2005-06-15",
+      "id": "R015",
+      "material_type": "oral history",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L15",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2006-06-15",
+      "id": "R016",
+      "material_type": "oral history",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L16",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2007-06-15",
+      "id": "R017",
+      "material_type": "oral history",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L17",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2021-02-30",
+      "id": "R018",
+      "material_type": "report",
+      "rule_issues": [
+        "invalid:date"
+      ],
+      "source_locator": "data/raw/catalog-v1.jsonl#L18",
+      "status": "exception_needs_review"
+    },
+    {
+      "date": "2009-06-15",
+      "id": "R019",
+      "material_type": "photocopy",
+      "rule_issues": [
+        "not_allowed:material_type"
+      ],
+      "source_locator": "data/raw/catalog-v1.jsonl#L19",
+      "status": "exception_needs_review"
+    },
+    {
+      "date": "2010-06-15",
+      "id": "R020",
+      "material_type": "book",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L20",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2011-06-15",
+      "id": "R021",
+      "material_type": "photographs",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L21",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2012-06-15",
+      "id": "R022",
+      "material_type": "map",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L22",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2013-06-15",
+      "id": "R023",
+      "material_type": "report",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L23",
+      "status": "included"
+    },
+    {
+      "date": "2014-06-15",
+      "id": "R024",
+      "material_type": "audio",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L24",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2015-06-15",
+      "id": "R025",
+      "material_type": "report",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L25",
+      "status": "included"
+    },
+    {
+      "date": "2016-06-15",
+      "id": "R026",
+      "material_type": "diary",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L26",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2017-06-15",
+      "id": "R027",
+      "material_type": "map",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L27",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2018-06-15",
+      "id": "R028",
+      "material_type": "photographs",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L28",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2019-06-15",
+      "id": "R029",
+      "material_type": "book",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L29",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2020-06-15",
+      "id": "R030",
+      "material_type": "map",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L30",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2021-06-15",
+      "id": "R031",
+      "material_type": "report",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L31",
+      "status": "included"
+    },
+    {
+      "date": "2022-06-15",
+      "id": "R032",
+      "material_type": "diary",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L32",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2023-06-15",
+      "id": "R033",
+      "material_type": "book",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L33",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2024-06-15",
+      "id": "R034",
+      "material_type": "report",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L34",
+      "status": "included"
+    },
+    {
+      "date": "1990-06-15",
+      "id": "R035",
+      "material_type": "finding aid",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L35",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1991-06-15",
+      "id": "R036",
+      "material_type": "map",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L36",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1992-06-15",
+      "id": "R037",
+      "material_type": "map",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L37",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1993-06-15",
+      "id": "R038",
+      "material_type": "finding aid",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L38",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1994-06-15",
+      "id": "R039",
+      "material_type": "diary",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L39",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1995-06-15",
+      "id": "R040",
+      "material_type": "book",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L40",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1996-06-15",
+      "id": "R041",
+      "material_type": "report",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L41",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1997-06-15",
+      "id": "R042",
+      "material_type": "finding aid",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L42",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1998-06-15",
+      "id": "R043",
+      "material_type": "book",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L43",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1999-06-15",
+      "id": "R044",
+      "material_type": "dataset",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L44",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2000-06-15",
+      "id": "R045",
+      "material_type": "diary",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L45",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2001-06-15",
+      "id": "R046",
+      "material_type": "photographs",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L46",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2002-06-15",
+      "id": "R047",
+      "material_type": "report",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L47",
+      "status": "included"
+    },
+    {
+      "date": "2003-06-15",
+      "id": "R048",
+      "material_type": "diary",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L48",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2004-06-15",
+      "id": "R049",
+      "material_type": "book",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L49",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2005-06-15",
+      "id": "R050",
+      "material_type": "report",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L50",
+      "status": "included"
+    },
+    {
+      "date": "2006-06-15",
+      "id": "R051",
+      "material_type": "map",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L51",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2007-06-15",
+      "id": "R052",
+      "material_type": "book",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L52",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2008-06-15",
+      "id": "R053",
+      "material_type": "audio",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L53",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2009-06-15",
+      "id": "R054",
+      "material_type": "finding aid",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L54",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2010-06-15",
+      "id": "R055",
+      "material_type": "photographs",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L55",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2011-06-15",
+      "id": "R056",
+      "material_type": "map",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L56",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "2012-06-15",
+      "id": "R057",
+      "material_type": "report",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L57",
+      "status": "included"
+    },
+    {
+      "date": "2013-06-15",
+      "id": "R058",
+      "material_type": "book",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L58",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1991-06-15",
+      "id": "R059",
+      "material_type": "oral history",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L59",
+      "status": "outside_explicit_scope"
+    },
+    {
+      "date": "1992-06-15",
+      "id": "R060",
+      "material_type": "photographs",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L60",
+      "status": "outside_explicit_scope"
+    }
+  ],
+  "scope": {
+    "material_types": [
+      "report"
+    ],
+    "purpose": "Inventory reports explicitly dated 2000 through 2025; exceptions need staff review.",
+    "task_id": "reports-dated-2000-through-2025",
+    "year_max": 2025,
+    "year_min": 2000
+  }
+}

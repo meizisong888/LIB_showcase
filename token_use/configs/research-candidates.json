@@ -1,0 +1,13 @@
+{
+  "task_id": "appalachian-flood-candidates-v1",
+  "template": "templates/research-candidates.txt",
+  "query": "Appalachian community flood river",
+  "top_k": 5,
+  "expanded_k": 15,
+  "search_fields": ["title", "abstract", "subjects"],
+  "fields": ["title", "abstract", "subjects", "language", "edition", "copy", "date", "material_type", "collection", "restrictions"],
+  "token_pattern": "[a-z0-9]+",
+  "stopwords": ["a", "an", "and", "are", "as", "at", "be", "by", "for", "from", "in", "is", "it", "of", "on", "or", "that", "the", "their", "this", "to", "was", "were", "with"],
+  "year_filter": null,
+  "type_filter": null
+}

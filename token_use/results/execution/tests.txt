@@ -1,0 +1,15 @@
+test_corrupt_preparation_is_not_reused (test_invariants.Invariants.test_corrupt_preparation_is_not_reused) ... ok
+test_deleted_inactive_modified_and_relocated_sources (test_invariants.Invariants.test_deleted_inactive_modified_and_relocated_sources) ... ok
+test_dependency_contents_invalidate_without_version_bump (test_invariants.Invariants.test_dependency_contents_invalidate_without_version_bump) ... ok
+test_mapping_restrictions_and_copy_edition_survive (test_invariants.Invariants.test_mapping_restrictions_and_copy_edition_survive) ... ok
+test_missing_tokenizer_fails_without_network_fallback (test_invariants.Invariants.test_missing_tokenizer_fails_without_network_fallback) ... ok
+test_ranking_misses_synonyms_and_full_scope_recovers_evidence (test_invariants.Invariants.test_ranking_misses_synonyms_and_full_scope_recovers_evidence) ... ok
+test_required_field_cannot_be_projected_away (test_invariants.Invariants.test_required_field_cannot_be_projected_away) ... ok
+test_scope_exceptions_are_not_silently_excluded (test_invariants.Invariants.test_scope_exceptions_are_not_silently_excluded) ... ok
+test_unknown_status_cannot_silently_remove_a_record (test_invariants.Invariants.test_unknown_status_cannot_silently_remove_a_record) ... ok
+test_valid_format_mismatch_and_missing_abstract_remain (test_invariants.Invariants.test_valid_format_mismatch_and_missing_abstract_remain) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.228s
+
+OK

@@ -1,0 +1,123 @@
+{
+  "codex_development_usage": "not measured",
+  "comparisons": [
+    {
+      "baseline_file": "case1/baseline.txt",
+      "baseline_tokens": 15231,
+      "boundary": "R007 passes format rules but still needs semantic review; R008 has insufficient material.",
+      "case": "1 · Subject review",
+      "evidence": "60/60 IDs; 58 items; all 12 configured original fields unchanged",
+      "input_records": 60,
+      "prepared_file": "case1/prepared.txt",
+      "prepared_tokens": 13865,
+      "reduction": 0.08968550981550782,
+      "retained_or_pending_records": 60
+    },
+    {
+      "baseline_file": "case2/baseline.txt",
+      "baseline_tokens": 15212,
+      "boundary": "Missed: R003, R004, R005, R010, R013, R015, R017; lexical decoys may remain.",
+      "case": "2 · Candidates top5",
+      "evidence": "Recall 5/12; evidence 5/12",
+      "input_records": 60,
+      "prepared_file": "case2/top5.txt",
+      "prepared_tokens": 1279,
+      "reduction": 0.9159216408098869,
+      "retained_or_pending_records": 5
+    },
+    {
+      "baseline_file": "case2/baseline.txt",
+      "baseline_tokens": 15212,
+      "boundary": "Missed: R003, R017; lexical decoys may remain.",
+      "case": "2 · Candidates top15",
+      "evidence": "Recall 10/12; evidence 10/12",
+      "input_records": 60,
+      "prepared_file": "case2/top15.txt",
+      "prepared_tokens": 3421,
+      "reduction": 0.7751117538785169,
+      "retained_or_pending_records": 15
+    },
+    {
+      "baseline_file": "case2/baseline.txt",
+      "baseline_tokens": 15212,
+      "boundary": "Complete fixture supplied; relevance judgment still required. Not exhaustive outside this fixture.",
+      "case": "2 · Full source fallback",
+      "evidence": "Recall 12/12; evidence 12/12",
+      "input_records": 60,
+      "prepared_file": "case2/baseline.txt",
+      "prepared_tokens": 15212,
+      "reduction": 0.0,
+      "retained_or_pending_records": 60
+    },
+    {
+      "baseline_file": "case3/first/baseline.txt",
+      "baseline_tokens": 13865,
+      "boundary": "Prepared material cache only; no completed AI review cached.",
+      "case": "3 · first",
+      "evidence": "60 pending; 0 reused; all active IDs accounted for",
+      "input_records": 60,
+      "prepared_file": "case3/first/pending.txt",
+      "prepared_tokens": 13865,
+      "reduction": 0.0,
+      "retained_or_pending_records": 60
+    },
+    {
+      "baseline_file": "case3/second/baseline.txt",
+      "baseline_tokens": 13812,
+      "boundary": "Prepared material cache only; no completed AI review cached.",
+      "case": "3 · second",
+      "evidence": "4 pending; 56 reused; all active IDs accounted for",
+      "input_records": 60,
+      "prepared_file": "case3/second/pending.txt",
+      "prepared_tokens": 1076,
+      "reduction": 0.9220967274833478,
+      "retained_or_pending_records": 4
+    },
+    {
+      "baseline_file": "case3/task-change/baseline.txt",
+      "baseline_tokens": 14856,
+      "boundary": "Prepared material cache only; no completed AI review cached.",
+      "case": "3 · task-change",
+      "evidence": "60 pending; 0 reused; all active IDs accounted for",
+      "input_records": 60,
+      "prepared_file": "case3/task-change/pending.txt",
+      "prepared_tokens": 14856,
+      "reduction": 0.0,
+      "retained_or_pending_records": 60
+    },
+    {
+      "baseline_file": "case3/vocabulary-change/baseline.txt",
+      "baseline_tokens": 13844,
+      "boundary": "Prepared material cache only; no completed AI review cached.",
+      "case": "3 · vocabulary-change",
+      "evidence": "60 pending; 0 reused; all active IDs accounted for",
+      "input_records": 60,
+      "prepared_file": "case3/vocabulary-change/pending.txt",
+      "prepared_tokens": 13844,
+      "reduction": 0.0,
+      "retained_or_pending_records": 60
+    },
+    {
+      "baseline_file": "case3/rules-change/baseline.txt",
+      "baseline_tokens": 13801,
+      "boundary": "Prepared material cache only; no completed AI review cached.",
+      "case": "3 · rules-change",
+      "evidence": "60 pending; 0 reused; all active IDs accounted for",
+      "input_records": 60,
+      "prepared_file": "case3/rules-change/pending.txt",
+      "prepared_tokens": 13801,
+      "reduction": 0.0,
+      "retained_or_pending_records": 60
+    }
+  ],
+  "hokieai_allocation": "not measured",
+  "independent_model_evaluation": "not run",
+  "model_calls_in_preprocessing": 0,
+  "tokenizer": {
+    "count_rule": "UTF-8 full file; encode with disallowed_special=(); no chat wrapper, output tokens or service-side attachments measured",
+    "encoding": "cl100k_base",
+    "library": "tiktoken",
+    "resource_sha256": "223921b76ee99bde995b7ff738513eef100fb51d18c93597a113bcffe865b2a7",
+    "version": "0.12.0"
+  }
+}

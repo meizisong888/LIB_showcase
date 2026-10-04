@@ -1,0 +1,99 @@
+{
+  "config": {
+    "active_status": "active",
+    "fields": [
+      "title",
+      "abstract",
+      "subjects",
+      "language",
+      "edition",
+      "copy",
+      "date",
+      "material_type",
+      "collection",
+      "restrictions",
+      "export_note"
+    ],
+    "required_for_review": [
+      "title",
+      "abstract",
+      "subjects",
+      "language",
+      "edition",
+      "copy",
+      "date",
+      "material_type",
+      "collection",
+      "restrictions",
+      "id",
+      "source_locator",
+      "export_note"
+    ],
+    "rules_file": "configs/rules.json",
+    "task_id": "subject-review-v2-with-export-note",
+    "template": "templates/subject-review.txt",
+    "vocabulary_file": "configs/vocabulary.json"
+  },
+  "context": "ad00d5e413ab28c9c235bb92e45d12fad4dc6bcf284e3fa9963733d2604c762e",
+  "rules": {
+    "allowed_languages": [
+      "en",
+      "es",
+      "en-es"
+    ],
+    "allowed_types": [
+      "oral history",
+      "photographs",
+      "report",
+      "map",
+      "finding aid",
+      "book",
+      "diary",
+      "newspaper",
+      "audio",
+      "dataset"
+    ],
+    "date_format": "YYYY-MM-DD",
+    "required": [
+      "title",
+      "abstract",
+      "subjects",
+      "date",
+      "material_type",
+      "language",
+      "edition",
+      "copy",
+      "collection",
+      "restrictions",
+      "id",
+      "source_locator"
+    ],
+    "version": "rules-v1"
+  },
+  "vocabulary": {
+    "scope": "Synthetic local demonstration terms, not Library of Congress Subject Headings",
+    "terms": [
+      "Floods",
+      "Appalachia",
+      "Community life",
+      "Oral history",
+      "Weather",
+      "Agriculture",
+      "Transportation",
+      "Architecture",
+      "Education",
+      "Music",
+      "Astronomy",
+      "Textiles",
+      "Health",
+      "Photography",
+      "Labor",
+      "Maps",
+      "Conservation",
+      "Local history",
+      "Cooking",
+      "Water management"
+    ],
+    "version": "vocabulary-v1"
+  }
+}

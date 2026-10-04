@@ -1,0 +1,27 @@
+{
+  "mismatch_id": "R007",
+  "missing_abstract_id": "R008",
+  "separate_edition": [
+    "R001",
+    "R015"
+  ],
+  "separate_copy": [
+    "R001",
+    "R016"
+  ],
+  "restriction_ids": [
+    "R005",
+    "R016",
+    "R020"
+  ],
+  "exact_groups": [
+    [
+      "R001",
+      "R059"
+    ],
+    [
+      "R002",
+      "R060"
+    ]
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "files": {
+    "case1/baseline.txt": "12adbc667409aae080d0120be69183af77a5efcf1d50b349f05b2f18d92aa35b",
+    "case1/prepared.txt": "79b5a7450fdb9f10ce03a97ab1c2caa38c57b53d5420ad477dfeaea33824ce1d",
+    "case1/retention.json": "355eb8855635a60dce2b334e0c8726091ad9b35d9967978b93e4cd983d0b352a",
+    "case1/rule-results.json": "7d681268a278ac20f4ed4459a1efc63b5b1181d73df2911ce6f45833207f5895",
+    "case2/baseline.txt": "e413a5d8136fea4767514835bd17117f5e3e7458e457ffd919e6e191fe84101f",
+    "case2/full-evaluation.json": "7d2c5959ad099327a4bb417c71dac3a82d5b689ed8c51065e0d968c4e93f2ff0",
+    "case2/ranking.json": "cfd0cc4132189cd849eecfa9492a90912f330950e946b643f6601964d2897c50",
+    "case2/top15-evaluation.json": "5122078c54e4b7163864cb4284cec22839de105f2b2f8b6eb9f219e34f03329a",
+    "case2/top15.txt": "f8de638ba8334f723900e718fec5b0d7ea3adaffa39ae4f2eae350fdd3c7c1e6",
+    "case2/top5-evaluation.json": "1b2d7b38a580860b2a3248921fadead1da56a4418be15c3d1ad0787ba5331d05",
+    "case2/top5.txt": "0d0e0a1ab18a5db95d85d5f49c50a2e7e3522528a07b510184ca58e95d382f15",
+    "case3/first/baseline.txt": "79b5a7450fdb9f10ce03a97ab1c2caa38c57b53d5420ad477dfeaea33824ce1d",
+    "case3/first/cache.json": "0b4c33711aa80bacb236ba0a759c28946ca1ec0cc8c24340064eccd33b0c08a5",
+    "case3/first/pending.txt": "79b5a7450fdb9f10ce03a97ab1c2caa38c57b53d5420ad477dfeaea33824ce1d",
+    "case3/first/status.json": "db2d29286b1615b875388fc6bd8673fab9c7f8a6b19fdd90e77849c7e03d86ac",
+    "case3/rules-change/baseline.txt": "0b705d24f3b86487b4c1205f0893a4b9939119b8943a05559892a271b145d447",
+    "case3/rules-change/cache.json": "7db11895080a6c92f25aca1c2367a1cd0a3076e861a854a2db1ebd60fcc597d4",
+    "case3/rules-change/dependency-change.json": "0ac929f1897411c976274e370558c6c6021579ec7eee0136a4dbaf34358fb891",
+    "case3/rules-change/pending.txt": "0b705d24f3b86487b4c1205f0893a4b9939119b8943a05559892a271b145d447",
+    "case3/rules-change/status.json": "f00224a5df2ad03a0ca8574ec41a8a56b2fab054d3e62986547d8c52b19ca3e5",
+    "case3/second/baseline.txt": "6d86d3d65432dfde6e36ae25cf47ebd4cf1baef662c72307736efb15c21327b6",
+    "case3/second/cache.json": "397c5a0a1e38fb7017931a77293e2a46ff93e47b4212c2b89ebfa1ffdb478a48",
+    "case3/second/pending.txt": "217f5acc9c40cea68fa975ec3ae126c9194f2e00f1f44ec3ae8b5df3067c61a6",
+    "case3/second/status.json": "d021d8b66318e2f12bea650ab2738bb01d0adff2e7dfb78a0f0340fb179f7d59",
+    "case3/summary.json": "cfffdc51e3aeea7d1a90214cb7c3c7d817e2efc88f19736b50d69190e30b631e",
+    "case3/task-change/baseline.txt": "1debe66cc601fd496532beb6a0f7c87fc50d94e8e590847f33e9768fc31db29b",
+    "case3/task-change/cache.json": "0e5f91c8e1f306ca4f454949c540a7957253161a8583bb32ea8b66d9f765e699",
+    "case3/task-change/dependency-change.json": "bc691e7dc03b448680646ae5b67f2186e151ae5dce181696b4e69e763f8e7a5a",
+    "case3/task-change/pending.txt": "1debe66cc601fd496532beb6a0f7c87fc50d94e8e590847f33e9768fc31db29b",
+    "case3/task-change/status.json": "f00224a5df2ad03a0ca8574ec41a8a56b2fab054d3e62986547d8c52b19ca3e5",
+    "case3/vocabulary-change/baseline.txt": "0c8786cd198cfcd27ad81ad04b4fc5d3bd8bae406b38b17f3cf662a04380ea21",
+    "case3/vocabulary-change/cache.json": "d9fe6cc93068931f93719a571e4024b4bb19f77a3d5dbeabc9bbddc2dfd0c95c",
+    "case3/vocabulary-change/dependency-change.json": "3aaf2e5fb4a9641c6b31693f029b6ff2af44d7e45145a08c2974ab9727496553",
+    "case3/vocabulary-change/pending.txt": "0c8786cd198cfcd27ad81ad04b4fc5d3bd8bae406b38b17f3cf662a04380ea21",
+    "case3/vocabulary-change/status.json": "f00224a5df2ad03a0ca8574ec41a8a56b2fab054d3e62986547d8c52b19ca3e5",
+    "metrics.json": "d0094a5b48757573b95eac9e64936a406bf7b5dc4cb364c2d9f449bc4266e4c4",
+    "rules/scoped-inventory.json": "304bbcb7aaaad9d7a03bc33fdc50f595ce436e34a4f9820fa8fb1d2aa607ae58",
+    "summary.md": "911a15010104b1cdd95a4e00f539a1f267daaa869c1c0c029537ed5c72d55f40"
+  },
+  "fixture_lock": {
+    "files": {
+      "data/raw/catalog-v1.jsonl": "1b8a276fb7ef8209f8f3b6509696a643b8eaa61dbfc3254d295fd46b815b838f",
+      "data/raw/catalog-v2.jsonl": "911e6737daf409aa6cba84fb5950e0b0ce88a87968919add1b21eae742343775",
+      "data/retrieval-gold.json": "2359efb82fe79c5cf54a5cfa25989bee657eabff443a0ea5c56d8bd684842fb5",
+      "data/subject-boundaries.json": "a9cd8f88e7f50e254aa0842c67fced4f93e2b9704178cc0d0c5701aa559c59d9"
+    },
+    "stage": "Authored and fixed before implementing retrieval; hashes checked on each demo run."
+  },
+  "tokenizer": {
+    "count_rule": "UTF-8 full file; encode with disallowed_special=(); no chat wrapper, output tokens or service-side attachments measured",
+    "encoding": "cl100k_base",
+    "library": "tiktoken",
+    "resource_sha256": "223921b76ee99bde995b7ff738513eef100fb51d18c93597a113bcffe865b2a7",
+    "version": "0.12.0"
+  }
+}

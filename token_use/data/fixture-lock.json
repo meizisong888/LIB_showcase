@@ -1,0 +1,9 @@
+{
+  "stage": "Authored and fixed before implementing retrieval; hashes checked on each demo run.",
+  "files": {
+    "data/raw/catalog-v1.jsonl": "1b8a276fb7ef8209f8f3b6509696a643b8eaa61dbfc3254d295fd46b815b838f",
+    "data/raw/catalog-v2.jsonl": "911e6737daf409aa6cba84fb5950e0b0ce88a87968919add1b21eae742343775",
+    "data/retrieval-gold.json": "2359efb82fe79c5cf54a5cfa25989bee657eabff443a0ea5c56d8bd684842fb5",
+    "data/subject-boundaries.json": "a9cd8f88e7f50e254aa0842c67fced4f93e2b9704178cc0d0c5701aa559c59d9"
+  }
+}

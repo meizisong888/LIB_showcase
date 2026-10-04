@@ -1,0 +1,310 @@
+[
+  {
+    "id": "R001",
+    "source_locator": "data/raw/catalog-v2.jsonl#L1",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R002",
+    "source_locator": "data/raw/catalog-v2.jsonl#L2",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R003",
+    "source_locator": "data/raw/catalog-v2.jsonl#L3",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R006",
+    "source_locator": "data/raw/catalog-v2.jsonl#L5",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R007",
+    "source_locator": "data/raw/catalog-v2.jsonl#L6",
+    "state": "modified_or_cache_invalid"
+  },
+  {
+    "id": "R008",
+    "source_locator": "data/raw/catalog-v2.jsonl#L7",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R009",
+    "source_locator": "data/raw/catalog-v2.jsonl#L8",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R010",
+    "source_locator": "data/raw/catalog-v2.jsonl#L9",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R011",
+    "source_locator": "data/raw/catalog-v2.jsonl#L10",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R012",
+    "source_locator": "data/raw/catalog-v2.jsonl#L11",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R013",
+    "source_locator": "data/raw/catalog-v2.jsonl#L12",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R014",
+    "source_locator": "data/raw/catalog-v2.jsonl#L13",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R015",
+    "source_locator": "data/raw/catalog-v2.jsonl#L14",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R016",
+    "source_locator": "data/raw/catalog-v2.jsonl#L15",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R017",
+    "source_locator": "data/raw/catalog-v2.jsonl#L16",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R018",
+    "source_locator": "data/raw/catalog-v2.jsonl#L17",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R019",
+    "source_locator": "data/raw/catalog-v2.jsonl#L18",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R020",
+    "source_locator": "data/raw/catalog-v2.jsonl#L19",
+    "state": "modified_or_cache_invalid"
+  },
+  {
+    "id": "R021",
+    "source_locator": "data/raw/catalog-v2.jsonl#L20",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R022",
+    "source_locator": "data/raw/catalog-v2.jsonl#L21",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R023",
+    "source_locator": "data/raw/catalog-v2.jsonl#L22",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R024",
+    "source_locator": "data/raw/catalog-v2.jsonl#L23",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R025",
+    "source_locator": "data/raw/catalog-v2.jsonl#L24",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R026",
+    "source_locator": "data/raw/catalog-v2.jsonl#L25",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R027",
+    "source_locator": "data/raw/catalog-v2.jsonl#L26",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R028",
+    "source_locator": "data/raw/catalog-v2.jsonl#L27",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R029",
+    "source_locator": "data/raw/catalog-v2.jsonl#L28",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R030",
+    "source_locator": "data/raw/catalog-v2.jsonl#L29",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R031",
+    "source_locator": "data/raw/catalog-v2.jsonl#L30",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R032",
+    "source_locator": "data/raw/catalog-v2.jsonl#L31",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R033",
+    "source_locator": "data/raw/catalog-v2.jsonl#L32",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R034",
+    "source_locator": "data/raw/catalog-v2.jsonl#L33",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R035",
+    "source_locator": "data/raw/catalog-v2.jsonl#L34",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R036",
+    "source_locator": "data/raw/catalog-v2.jsonl#L35",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R037",
+    "source_locator": "data/raw/catalog-v2.jsonl#L36",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R038",
+    "source_locator": "data/raw/catalog-v2.jsonl#L37",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R039",
+    "source_locator": "data/raw/catalog-v2.jsonl#L38",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R040",
+    "source_locator": "data/raw/catalog-v2.jsonl#L39",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R041",
+    "source_locator": "data/raw/catalog-v2.jsonl#L40",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R042",
+    "source_locator": "data/raw/catalog-v2.jsonl#L41",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R043",
+    "source_locator": "data/raw/catalog-v2.jsonl#L42",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R044",
+    "source_locator": "data/raw/catalog-v2.jsonl#L43",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R045",
+    "source_locator": "data/raw/catalog-v2.jsonl#L44",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R046",
+    "source_locator": "data/raw/catalog-v2.jsonl#L45",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R047",
+    "source_locator": "data/raw/catalog-v2.jsonl#L46",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R048",
+    "source_locator": "data/raw/catalog-v2.jsonl#L47",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R049",
+    "source_locator": "data/raw/catalog-v2.jsonl#L48",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R050",
+    "source_locator": "data/raw/catalog-v2.jsonl#L49",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R051",
+    "source_locator": "data/raw/catalog-v2.jsonl#L50",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R052",
+    "source_locator": "data/raw/catalog-v2.jsonl#L51",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R053",
+    "source_locator": "data/raw/catalog-v2.jsonl#L52",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R054",
+    "source_locator": "data/raw/catalog-v2.jsonl#L53",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R055",
+    "source_locator": "data/raw/catalog-v2.jsonl#L54",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R056",
+    "source_locator": "data/raw/catalog-v2.jsonl#L55",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R057",
+    "source_locator": "data/raw/catalog-v2.jsonl#L56",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R058",
+    "source_locator": "data/raw/catalog-v2.jsonl#L57",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R059",
+    "source_locator": "data/raw/catalog-v2.jsonl#L58",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R060",
+    "source_locator": "data/raw/catalog-v2.jsonl#L59",
+    "state": "reused_preparation"
+  },
+  {
+    "id": "R061",
+    "source_locator": "data/raw/catalog-v2.jsonl#L60",
+    "state": "new"
+  },
+  {
+    "id": "R062",
+    "source_locator": "data/raw/catalog-v2.jsonl#L61",
+    "state": "new"
+  },
+  {
+    "id": "R004",
+    "state": "deleted"
+  },
+  {
+    "id": "R005",
+    "state": "inactive"
+  }
+]

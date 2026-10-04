@@ -1,0 +1,7 @@
+{
+  "task_id": "reports-dated-2000-through-2025",
+  "purpose": "Inventory reports explicitly dated 2000 through 2025; exceptions need staff review.",
+  "year_min": 2000,
+  "year_max": 2025,
+  "material_types": ["report"]
+}

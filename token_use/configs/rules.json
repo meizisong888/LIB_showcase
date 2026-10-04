@@ -1,0 +1,7 @@
+{
+  "version": "rules-v1",
+  "date_format": "YYYY-MM-DD",
+  "allowed_types": ["oral history", "photographs", "report", "map", "finding aid", "book", "diary", "newspaper", "audio", "dataset"],
+  "allowed_languages": ["en", "es", "en-es"],
+  "required": ["title", "abstract", "subjects", "date", "material_type", "language", "edition", "copy", "collection", "restrictions", "id", "source_locator"]
+}

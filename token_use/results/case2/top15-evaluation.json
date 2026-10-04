@@ -1,0 +1,47 @@
+{
+  "evidence_preserved": 10,
+  "evidence_total": 12,
+  "hit_ids": [
+    "R001",
+    "R002",
+    "R004",
+    "R005",
+    "R010",
+    "R013",
+    "R015",
+    "R016",
+    "R059",
+    "R060"
+  ],
+  "missed_ids": [
+    "R003",
+    "R017"
+  ],
+  "nonrelevant_or_insufficient_selected": [
+    "R006",
+    "R009",
+    "R011",
+    "R012",
+    "R014"
+  ],
+  "recall": 0.8333333333333334,
+  "relevant_retained": 10,
+  "relevant_total": 12,
+  "selected_ids": [
+    "R001",
+    "R016",
+    "R059",
+    "R002",
+    "R060",
+    "R015",
+    "R006",
+    "R010",
+    "R009",
+    "R012",
+    "R013",
+    "R011",
+    "R005",
+    "R014",
+    "R004"
+  ]
+}

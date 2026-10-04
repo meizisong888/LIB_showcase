@@ -1,0 +1,426 @@
+{
+  "boundary_checks": {
+    "exact_groups": [
+      [
+        "R001",
+        "R059"
+      ],
+      [
+        "R002",
+        "R060"
+      ]
+    ],
+    "mismatch_id": "R007",
+    "missing_abstract_id": "R008",
+    "restriction_ids": [
+      "R005",
+      "R016",
+      "R020"
+    ],
+    "separate_copy": [
+      "R001",
+      "R016"
+    ],
+    "separate_edition": [
+      "R001",
+      "R015"
+    ]
+  },
+  "exact_duplicate_computations_avoided": 2,
+  "field_value_equality_checked_for_all_rows": true,
+  "input_field_count": 18,
+  "input_rows": 60,
+  "mapping": {
+    "R001": {
+      "item_id": "item-6b0cd886d7fb82c37b28e787826e0a5d340bc3bff7efc2a1bc7eb55b48ae5848",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L1",
+      "status": "ready_for_review"
+    },
+    "R002": {
+      "item_id": "item-62126744ef7a6df08f2c211d638aa087c46653f17b45970d7347b6c56d6d9b83",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L2",
+      "status": "ready_for_review"
+    },
+    "R003": {
+      "item_id": "item-76c4d1d81c809061c01a66e7fce8b8e123ba508f78330d6e50db3a5094581607",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L3",
+      "status": "ready_for_review"
+    },
+    "R004": {
+      "item_id": "item-3761a8577b071e0caec987c026665a44a4bb03d61050c230400e3ff309dc27ee",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L4",
+      "status": "ready_for_review"
+    },
+    "R005": {
+      "item_id": "item-56e4ef0db86d51d96216f713197002432a075c169e6ff64d975c4e519d409b51",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L5",
+      "status": "ready_for_review"
+    },
+    "R006": {
+      "item_id": "item-f525066587a3828c712d88485561e2ef9d5890785489f8e24fe671bb883a5111",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L6",
+      "status": "ready_for_review"
+    },
+    "R007": {
+      "item_id": "item-915c6d85a8091d4088665c2f67774ae66ded6094f12094ae8ad0f84af96b047b",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L7",
+      "status": "ready_for_review"
+    },
+    "R008": {
+      "item_id": "item-5af541f2824ecb46b847f7d7219ceb760ed957721a6389bf00ab446c7c9cca6a",
+      "rule_issues": [
+        "missing:abstract"
+      ],
+      "source_locator": "data/raw/catalog-v1.jsonl#L8",
+      "status": "insufficient_material"
+    },
+    "R009": {
+      "item_id": "item-61ef391f9c16d6a9c666559f000af39aeb59f147721d3dbb4cb94a87441d84c6",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L9",
+      "status": "ready_for_review"
+    },
+    "R010": {
+      "item_id": "item-29003c3b6e5efd0a678fb4ccaa04d7a6c59eb35d7c84dd6bcb8ec720793bf601",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L10",
+      "status": "ready_for_review"
+    },
+    "R011": {
+      "item_id": "item-39acccb85313bb1390b5695b995a455df362fde11574ddf1179e06c781ce9737",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L11",
+      "status": "ready_for_review"
+    },
+    "R012": {
+      "item_id": "item-537170ffb5f0ea451eb2c8fe7f698cdb4ed5f35678543ac889924407b6c7ef26",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L12",
+      "status": "ready_for_review"
+    },
+    "R013": {
+      "item_id": "item-254e90196e8d49e712febabc99ffc6b2662edbb152cb7d5ad366d84a1209198f",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L13",
+      "status": "ready_for_review"
+    },
+    "R014": {
+      "item_id": "item-b75e71f391dd76e9d58f24da96eb682e6c21021c4db83723dcc410722f7c73e2",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L14",
+      "status": "ready_for_review"
+    },
+    "R015": {
+      "item_id": "item-6d4d94790512a9ebc7d22fab09b3155ba8261c56d9c610ac63bf50bfad69da7c",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L15",
+      "status": "ready_for_review"
+    },
+    "R016": {
+      "item_id": "item-7079411d03f52d365061c2159f7f3c77fca150f4db261639a2df185a8a41088c",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L16",
+      "status": "ready_for_review"
+    },
+    "R017": {
+      "item_id": "item-c34046b32f939a377573afbbebf6477b364ffbb1a8758765667ee7f94c2413a1",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L17",
+      "status": "ready_for_review"
+    },
+    "R018": {
+      "item_id": "item-8922a195740c6eda6fd9cc87cd0538f47ee1bb227c0c18a88427ee27abc69e70",
+      "rule_issues": [
+        "invalid:date"
+      ],
+      "source_locator": "data/raw/catalog-v1.jsonl#L18",
+      "status": "ready_for_review"
+    },
+    "R019": {
+      "item_id": "item-70d021410e6dd484bf142d86888e190c8d647b24a42d31390d0d80f8fc290ecb",
+      "rule_issues": [
+        "not_allowed:material_type"
+      ],
+      "source_locator": "data/raw/catalog-v1.jsonl#L19",
+      "status": "ready_for_review"
+    },
+    "R020": {
+      "item_id": "item-3bbce3d452cbd7c31b1aaaf551bfc8ffb49a4efad1ea34cf698cdaa19f4d97a2",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L20",
+      "status": "ready_for_review"
+    },
+    "R021": {
+      "item_id": "item-f5cd0a1f3cfa6e97eb9a94464210f23e9b9a1d235197d276d068eb51b70008a1",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L21",
+      "status": "ready_for_review"
+    },
+    "R022": {
+      "item_id": "item-c416df6d64f36c5d2b3ea09e15e4bee399396fae6b31b94511f02a305ec9bde0",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L22",
+      "status": "ready_for_review"
+    },
+    "R023": {
+      "item_id": "item-bdc445b4a51a5bb65be05b32df603cc274f2d6edf646a4feea073f14a52ecce2",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L23",
+      "status": "ready_for_review"
+    },
+    "R024": {
+      "item_id": "item-64cee815d60e390fc36dda2af849814c886373834f47d7a6e45187675473c477",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L24",
+      "status": "ready_for_review"
+    },
+    "R025": {
+      "item_id": "item-700a4c717818c848333b2f6a649efec205f1c42b1cd27b450d7c650379683adc",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L25",
+      "status": "ready_for_review"
+    },
+    "R026": {
+      "item_id": "item-7b8d268cb8b36cfd230f68fd1585603c36d424d057fcb5cdce2c70c17e811903",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L26",
+      "status": "ready_for_review"
+    },
+    "R027": {
+      "item_id": "item-1f3a975a9250f0a1e1ada6511513623c2b0f6855569d50a00863dd0c1b491f42",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L27",
+      "status": "ready_for_review"
+    },
+    "R028": {
+      "item_id": "item-910f9cb720d8ab2afb801e0681fcc13a8628301570793ed271110479e495bf54",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L28",
+      "status": "ready_for_review"
+    },
+    "R029": {
+      "item_id": "item-b3c5df4807866d0696ace692ae20fae436a32c20f38ed875d9bb5b86a398acaa",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L29",
+      "status": "ready_for_review"
+    },
+    "R030": {
+      "item_id": "item-fdf78e17c85f0ed2cedf279d34c495388849e508e54b43b88b44a0a5abffed4a",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L30",
+      "status": "ready_for_review"
+    },
+    "R031": {
+      "item_id": "item-e82dcc30d53d282a12cbbac08c13a7ee55f38de77bc4371afddf86a937cf4703",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L31",
+      "status": "ready_for_review"
+    },
+    "R032": {
+      "item_id": "item-fd3204ac7aff45a1ceba0a1696d12f93ce6d6592bbc649bed7aeb3a030ddb4fd",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L32",
+      "status": "ready_for_review"
+    },
+    "R033": {
+      "item_id": "item-0b063d7f35da7649e9e4f9fe79f65874658f8fc8dd5fe42b433dc1f57fd4d6ab",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L33",
+      "status": "ready_for_review"
+    },
+    "R034": {
+      "item_id": "item-8d82bcf5169b16987338734e75dba2ef3ed25f3ba480f0e08d2401f8f4e912a3",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L34",
+      "status": "ready_for_review"
+    },
+    "R035": {
+      "item_id": "item-4afc5bead0c7a0658b7c46013c4e723c8bfb54a951be6d5f9f21982d7a6df0e3",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L35",
+      "status": "ready_for_review"
+    },
+    "R036": {
+      "item_id": "item-699efbca9b839b7055812bb357934b7309537180688af81b51553d041064524d",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L36",
+      "status": "ready_for_review"
+    },
+    "R037": {
+      "item_id": "item-10c7fccde2881d995b7b79b36e136b882e2905454cdd2dde02db0dddd57c2fff",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L37",
+      "status": "ready_for_review"
+    },
+    "R038": {
+      "item_id": "item-f6a5531a3a0aa9b0cd464c847bdfcc88165fc6409397214762942933bd314495",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L38",
+      "status": "ready_for_review"
+    },
+    "R039": {
+      "item_id": "item-4b0e67c8481f7715e992d28e54328a7cb279cd3f926a42441e78621d1c0e9683",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L39",
+      "status": "ready_for_review"
+    },
+    "R040": {
+      "item_id": "item-41119a5efe48ac93e1fd10d0861ff5150ff48c2c27c335999a4eb66e8b9b71cd",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L40",
+      "status": "ready_for_review"
+    },
+    "R041": {
+      "item_id": "item-a40ee815b93465d5474483482ebd64ba5dd8bda88508dd4d0bce9e0e0d1e3b2c",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L41",
+      "status": "ready_for_review"
+    },
+    "R042": {
+      "item_id": "item-c594e399835c7561ea7de581975d6f251fd0fb19ab5529263f87efef205e78d6",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L42",
+      "status": "ready_for_review"
+    },
+    "R043": {
+      "item_id": "item-2209758c535c00466a564a47a8390a21239da83e5299a88bb3673b2a2a4fb63a",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L43",
+      "status": "ready_for_review"
+    },
+    "R044": {
+      "item_id": "item-68cf125b7c0c8bbc677b0c70fabc8916be6ccac7cb050020e8322dc939903d26",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L44",
+      "status": "ready_for_review"
+    },
+    "R045": {
+      "item_id": "item-99edcdf80374a7bf8317d5434bc2c2038f19e385a416411d5d79d97ad990c1d2",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L45",
+      "status": "ready_for_review"
+    },
+    "R046": {
+      "item_id": "item-4d9f980171445f5e2b37063d6e372fcc0ae8027bd7efb6df419ed99f64de7b51",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L46",
+      "status": "ready_for_review"
+    },
+    "R047": {
+      "item_id": "item-6c04953638122065ffff642c6fee2142f20db0df9ec9d1d652d811cbae767eef",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L47",
+      "status": "ready_for_review"
+    },
+    "R048": {
+      "item_id": "item-697b7611a5eb6259ee609b81e94794e89cacfd07e7246c088f587d1bce137e64",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L48",
+      "status": "ready_for_review"
+    },
+    "R049": {
+      "item_id": "item-d817856db44b0d77ac9688a06fdbd31327c80df0b1ba3ed9f285a3b0a7c7229a",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L49",
+      "status": "ready_for_review"
+    },
+    "R050": {
+      "item_id": "item-16924e9126a9aa8efd9050beab1eba9f4641b6d3c43e053123b4725e23a36e44",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L50",
+      "status": "ready_for_review"
+    },
+    "R051": {
+      "item_id": "item-28541c75ca729bb80c94006e1734d42b590bf3a7b9463c529aee9a4cbe3b4219",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L51",
+      "status": "ready_for_review"
+    },
+    "R052": {
+      "item_id": "item-6606ffa5752bcfc0672876b4340147982220c37cf12761640db6162b500da4cd",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L52",
+      "status": "ready_for_review"
+    },
+    "R053": {
+      "item_id": "item-1d30c50253b83c5baf0b27606629c3d9dd8d15fc3b2d2a7855ad67b606f43dcb",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L53",
+      "status": "ready_for_review"
+    },
+    "R054": {
+      "item_id": "item-abcd79e3b2a538d5701e52133ac9faf989ab94c2e703bc9cc647f9cc17963ea0",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L54",
+      "status": "ready_for_review"
+    },
+    "R055": {
+      "item_id": "item-d3b0369c4dfb1f28d62fefd94600a9b7acb0afc42b6bebc6752bd7bdf6b07c3e",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L55",
+      "status": "ready_for_review"
+    },
+    "R056": {
+      "item_id": "item-16a69572e7160111e3dd4c27925fe237cec5781609a0fae156417971651542ad",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L56",
+      "status": "ready_for_review"
+    },
+    "R057": {
+      "item_id": "item-6441b5359e993c05444ec97966fefccd2be29c3b57d0dd63a41a6c7e00dff1b2",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L57",
+      "status": "ready_for_review"
+    },
+    "R058": {
+      "item_id": "item-67736a07a3af93df614d94eb320e324c61a082964d850df20b818c62e9f9da27",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L58",
+      "status": "ready_for_review"
+    },
+    "R059": {
+      "item_id": "item-6b0cd886d7fb82c37b28e787826e0a5d340bc3bff7efc2a1bc7eb55b48ae5848",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L59",
+      "status": "ready_for_review"
+    },
+    "R060": {
+      "item_id": "item-62126744ef7a6df08f2c211d638aa087c46653f17b45970d7347b6c56d6d9b83",
+      "rule_issues": [],
+      "source_locator": "data/raw/catalog-v1.jsonl#L60",
+      "status": "ready_for_review"
+    }
+  },
+  "removed_fields": [
+    "catalog_ui",
+    "export_note",
+    "import_batch",
+    "imported_at",
+    "local_shelf",
+    "status"
+  ],
+  "retained_ids": 60,
+  "retained_original_field_count": 12,
+  "retained_original_fields": [
+    "title",
+    "abstract",
+    "subjects",
+    "language",
+    "edition",
+    "copy",
+    "date",
+    "material_type",
+    "collection",
+    "restrictions",
+    "id",
+    "source_locator"
+  ],
+  "unique_preparation_items": 58
+}

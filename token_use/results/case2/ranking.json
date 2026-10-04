@@ -1,0 +1,496 @@
+{
+  "config": {
+    "expanded_k": 15,
+    "fields": [
+      "title",
+      "abstract",
+      "subjects",
+      "language",
+      "edition",
+      "copy",
+      "date",
+      "material_type",
+      "collection",
+      "restrictions"
+    ],
+    "query": "Appalachian community flood river",
+    "search_fields": [
+      "title",
+      "abstract",
+      "subjects"
+    ],
+    "stopwords": [
+      "a",
+      "an",
+      "and",
+      "are",
+      "as",
+      "at",
+      "be",
+      "by",
+      "for",
+      "from",
+      "in",
+      "is",
+      "it",
+      "of",
+      "on",
+      "or",
+      "that",
+      "the",
+      "their",
+      "this",
+      "to",
+      "was",
+      "were",
+      "with"
+    ],
+    "task_id": "appalachian-flood-candidates-v1",
+    "template": "templates/research-candidates.txt",
+    "token_pattern": "[a-z0-9]+",
+    "top_k": 5,
+    "type_filter": null,
+    "year_filter": null
+  },
+  "ranking": [
+    {
+      "id": "R001",
+      "matching_terms": [
+        "appalachian",
+        "community",
+        "flood",
+        "river"
+      ],
+      "score": 0.4811590523333033,
+      "source_locator": "data/raw/catalog-v1.jsonl#L1"
+    },
+    {
+      "id": "R016",
+      "matching_terms": [
+        "appalachian",
+        "community",
+        "flood",
+        "river"
+      ],
+      "score": 0.4811590523333033,
+      "source_locator": "data/raw/catalog-v1.jsonl#L16"
+    },
+    {
+      "id": "R059",
+      "matching_terms": [
+        "appalachian",
+        "community",
+        "flood",
+        "river"
+      ],
+      "score": 0.4811590523333033,
+      "source_locator": "data/raw/catalog-v1.jsonl#L59"
+    },
+    {
+      "id": "R002",
+      "matching_terms": [
+        "appalachian",
+        "community",
+        "flood",
+        "river"
+      ],
+      "score": 0.4570527391127821,
+      "source_locator": "data/raw/catalog-v1.jsonl#L2"
+    },
+    {
+      "id": "R060",
+      "matching_terms": [
+        "appalachian",
+        "community",
+        "flood",
+        "river"
+      ],
+      "score": 0.4570527391127821,
+      "source_locator": "data/raw/catalog-v1.jsonl#L60"
+    },
+    {
+      "id": "R015",
+      "matching_terms": [
+        "appalachian",
+        "community",
+        "flood",
+        "river"
+      ],
+      "score": 0.4499406861784255,
+      "source_locator": "data/raw/catalog-v1.jsonl#L15"
+    },
+    {
+      "id": "R006",
+      "matching_terms": [
+        "appalachian",
+        "community",
+        "flood",
+        "river"
+      ],
+      "score": 0.4279001568379889,
+      "source_locator": "data/raw/catalog-v1.jsonl#L6"
+    },
+    {
+      "id": "R010",
+      "matching_terms": [
+        "appalachian",
+        "community",
+        "flood",
+        "river"
+      ],
+      "score": 0.405434859337231,
+      "source_locator": "data/raw/catalog-v1.jsonl#L10"
+    },
+    {
+      "id": "R009",
+      "matching_terms": [
+        "appalachian",
+        "community",
+        "flood",
+        "river"
+      ],
+      "score": 0.3763016115363068,
+      "source_locator": "data/raw/catalog-v1.jsonl#L9"
+    },
+    {
+      "id": "R012",
+      "matching_terms": [
+        "appalachian",
+        "community",
+        "flood",
+        "river"
+      ],
+      "score": 0.3671964558761608,
+      "source_locator": "data/raw/catalog-v1.jsonl#L12"
+    },
+    {
+      "id": "R013",
+      "matching_terms": [
+        "appalachian",
+        "community",
+        "flood",
+        "river"
+      ],
+      "score": 0.3646795847818063,
+      "source_locator": "data/raw/catalog-v1.jsonl#L13"
+    },
+    {
+      "id": "R011",
+      "matching_terms": [
+        "community",
+        "flood",
+        "river"
+      ],
+      "score": 0.3637401009615157,
+      "source_locator": "data/raw/catalog-v1.jsonl#L11"
+    },
+    {
+      "id": "R005",
+      "matching_terms": [
+        "appalachian",
+        "community",
+        "flood",
+        "river"
+      ],
+      "score": 0.36126113581271463,
+      "source_locator": "data/raw/catalog-v1.jsonl#L5"
+    },
+    {
+      "id": "R014",
+      "matching_terms": [
+        "appalachian",
+        "community",
+        "flood",
+        "river"
+      ],
+      "score": 0.34105187215957444,
+      "source_locator": "data/raw/catalog-v1.jsonl#L14"
+    },
+    {
+      "id": "R004",
+      "matching_terms": [
+        "appalachian",
+        "community",
+        "river"
+      ],
+      "score": 0.16845348143610414,
+      "source_locator": "data/raw/catalog-v1.jsonl#L4"
+    },
+    {
+      "id": "R036",
+      "matching_terms": [
+        "community"
+      ],
+      "score": 0.06366946002479178,
+      "source_locator": "data/raw/catalog-v1.jsonl#L36"
+    },
+    {
+      "id": "R058",
+      "matching_terms": [
+        "community"
+      ],
+      "score": 0.06326601204553785,
+      "source_locator": "data/raw/catalog-v1.jsonl#L58"
+    },
+    {
+      "id": "R018",
+      "matching_terms": [
+        "community"
+      ],
+      "score": 0.055526296687461965,
+      "source_locator": "data/raw/catalog-v1.jsonl#L18"
+    },
+    {
+      "id": "R003",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L3"
+    },
+    {
+      "id": "R007",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L7"
+    },
+    {
+      "id": "R008",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L8"
+    },
+    {
+      "id": "R017",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L17"
+    },
+    {
+      "id": "R019",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L19"
+    },
+    {
+      "id": "R020",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L20"
+    },
+    {
+      "id": "R021",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L21"
+    },
+    {
+      "id": "R022",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L22"
+    },
+    {
+      "id": "R023",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L23"
+    },
+    {
+      "id": "R024",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L24"
+    },
+    {
+      "id": "R025",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L25"
+    },
+    {
+      "id": "R026",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L26"
+    },
+    {
+      "id": "R027",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L27"
+    },
+    {
+      "id": "R028",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L28"
+    },
+    {
+      "id": "R029",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L29"
+    },
+    {
+      "id": "R030",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L30"
+    },
+    {
+      "id": "R031",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L31"
+    },
+    {
+      "id": "R032",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L32"
+    },
+    {
+      "id": "R033",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L33"
+    },
+    {
+      "id": "R034",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L34"
+    },
+    {
+      "id": "R035",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L35"
+    },
+    {
+      "id": "R037",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L37"
+    },
+    {
+      "id": "R038",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L38"
+    },
+    {
+      "id": "R039",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L39"
+    },
+    {
+      "id": "R040",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L40"
+    },
+    {
+      "id": "R041",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L41"
+    },
+    {
+      "id": "R042",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L42"
+    },
+    {
+      "id": "R043",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L43"
+    },
+    {
+      "id": "R044",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L44"
+    },
+    {
+      "id": "R045",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L45"
+    },
+    {
+      "id": "R046",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L46"
+    },
+    {
+      "id": "R047",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L47"
+    },
+    {
+      "id": "R048",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L48"
+    },
+    {
+      "id": "R049",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L49"
+    },
+    {
+      "id": "R050",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L50"
+    },
+    {
+      "id": "R051",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L51"
+    },
+    {
+      "id": "R052",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L52"
+    },
+    {
+      "id": "R053",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L53"
+    },
+    {
+      "id": "R054",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L54"
+    },
+    {
+      "id": "R055",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L55"
+    },
+    {
+      "id": "R056",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L56"
+    },
+    {
+      "id": "R057",
+      "matching_terms": [],
+      "score": 0.0,
+      "source_locator": "data/raw/catalog-v1.jsonl#L57"
+    }
+  ]
+}

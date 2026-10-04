@@ -1,0 +1,61 @@
+{
+  "artifact_checks_exit_status": 0,
+  "command": "bash scripts/run_offline.sh",
+  "dependencies": {
+    "certifi": "2026.7.22",
+    "charset-normalizer": "3.5.2",
+    "idna": "3.20",
+    "pip": "25.3",
+    "regex": "2026.9.29",
+    "requests": "2.34.2",
+    "tiktoken": "0.12.0",
+    "urllib3": "2.8.0"
+  },
+  "external_probes": [
+    {
+      "errno": 101,
+      "family": "AF_INET",
+      "result": "[Errno 101] Network is unreachable",
+      "target": "('1.1.1.1', 443)"
+    },
+    {
+      "errno": 99,
+      "family": "AF_INET6",
+      "result": "[Errno 99] Cannot assign requested address",
+      "target": "('2606:4700:4700::1111', 443)"
+    }
+  ],
+  "finished_utc": "2026-10-04T16:58:58.308194+00:00",
+  "inner_network_namespace": "net:[4026533817]",
+  "interfaces": [
+    "lo"
+  ],
+  "ipv4_route_table": "",
+  "ipv6_route_table": "00000000000000000000000000000000 00 00000000000000000000000000000000 00 00000000000000000000000000000000 ffffffff 00000001 00000000 00200200       lo\n00000000000000000000000000000000 00 00000000000000000000000000000000 00 00000000000000000000000000000000 ffffffff 00000001 00000000 00200200       lo\n",
+  "method": "unshare --user --map-root-user --net; distinct Linux network namespace, only loopback, IPv4/IPv6 external probes blocked; strace network syscall audit of full demo",
+  "model_usage": {
+    "codex_development_tokens": "not measured",
+    "hokieai_allocation": "not measured",
+    "independent_model_answer_comparison": "not run",
+    "preprocessing_inference_calls": 0
+  },
+  "outer_network_namespace": "net:[4026531840]",
+  "platform": "Linux",
+  "preprocessing_exit_status": 0,
+  "preprocessing_network_syscall_count": 0,
+  "python": "3.13.11",
+  "scope": "This measured local preprocessing process and children. Not dependency installation, this Codex development session, future edited scripts, or any HokieAI session.",
+  "started_utc": "2026-10-04T16:58:56.587342+00:00",
+  "tests_exit_status": 0,
+  "traced_command": [
+    "strace",
+    "-f",
+    "-e",
+    "trace=network",
+    "-o",
+    "results/execution/network-syscalls.log",
+    ".venv/bin/python",
+    "scripts/run.py",
+    "demo"
+  ]
+}

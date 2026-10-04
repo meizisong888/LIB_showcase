@@ -1,0 +1,96 @@
+{
+  "config": {
+    "active_status": "active",
+    "fields": [
+      "title",
+      "abstract",
+      "subjects",
+      "language",
+      "edition",
+      "copy",
+      "date",
+      "material_type",
+      "collection",
+      "restrictions"
+    ],
+    "required_for_review": [
+      "title",
+      "abstract",
+      "subjects",
+      "language",
+      "edition",
+      "copy",
+      "date",
+      "material_type",
+      "collection",
+      "restrictions",
+      "id",
+      "source_locator"
+    ],
+    "rules_file": "configs/rules.json",
+    "task_id": "subject-review-v1",
+    "template": "templates/subject-review.txt",
+    "vocabulary_file": "configs/vocabulary.json"
+  },
+  "context": "b35c11e241f3109093d113c20d214e2621129badb1d946f6e1e5d2f70356f190",
+  "rules": {
+    "allowed_languages": [
+      "en",
+      "es",
+      "en-es"
+    ],
+    "allowed_types": [
+      "oral history",
+      "photographs",
+      "report",
+      "map",
+      "finding aid",
+      "book",
+      "diary",
+      "newspaper",
+      "audio",
+      "dataset"
+    ],
+    "date_format": "YYYY-MM-DD",
+    "required": [
+      "title",
+      "abstract",
+      "subjects",
+      "date",
+      "material_type",
+      "language",
+      "edition",
+      "copy",
+      "collection",
+      "restrictions",
+      "id",
+      "source_locator"
+    ],
+    "version": "rules-v1"
+  },
+  "vocabulary": {
+    "scope": "Synthetic local demonstration terms, not Library of Congress Subject Headings",
+    "terms": [
+      "Floods",
+      "Appalachia",
+      "Community life",
+      "Oral history",
+      "Weather",
+      "Agriculture",
+      "Transportation",
+      "Architecture",
+      "Education",
+      "Music",
+      "Textiles",
+      "Health",
+      "Photography",
+      "Labor",
+      "Maps",
+      "Conservation",
+      "Local history",
+      "Cooking",
+      "Water management"
+    ],
+    "version": "vocabulary-v2"
+  }
+}

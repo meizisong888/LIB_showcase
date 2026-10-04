@@ -1,0 +1,1439 @@
+{
+  "context": "b35c11e241f3109093d113c20d214e2621129badb1d946f6e1e5d2f70356f190",
+  "entries": {
+    "R001": {
+      "fingerprint": "5da80c8a122708ea122cb899a1115cfdef8d61be2450b31b34991e37d10fe2ac",
+      "prepared": {
+        "fields": {
+          "abstract": "Residents of an Appalachian community describe the river flood of 1977. They organized boat rescues, shared meals and repaired the school after the water receded.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1991-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "oral history",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Floods",
+            "Appalachia",
+            "Oral history"
+          ],
+          "title": "Appalachian community river flood interviews"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "6b0cd886d7fb82c37b28e787826e0a5d340bc3bff7efc2a1bc7eb55b48ae5848"
+    },
+    "R002": {
+      "fingerprint": "c4a2b5e2a74992e58bb4fc1ca93ea459de709a25cdbbd779c17248a526fabaca",
+      "prepared": {
+        "fields": {
+          "abstract": "Photographs show an Appalachian community during a river flood. Captions identify families moving furniture upstairs and volunteers distributing clean water.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1992-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "photographs",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Floods",
+            "Appalachia",
+            "Photography"
+          ],
+          "title": "Appalachian river flood community photographs"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "62126744ef7a6df08f2c211d638aa087c46653f17b45970d7347b6c56d6d9b83"
+    },
+    "R003": {
+      "fingerprint": "55525b3e700c4dcf53981b138510358787e93106d800c316a2b48539b0dc573d",
+      "prepared": {
+        "fields": {
+          "abstract": "Families in a Blue Ridge settlement recall the 1940 inundation. Neighbors shared shelter and rebuilt footbridges after water overtopped the banks.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1993-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "oral history",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Local history",
+            "Oral history"
+          ],
+          "title": "When the creek came through the door"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "76c4d1d81c809061c01a66e7fce8b8e123ba508f78330d6e50db3a5094581607"
+    },
+    "R006": {
+      "fingerprint": "8d7821491e38e01bcccae31f30851e71267a8a367d1709209a31e9279836a5f4",
+      "prepared": {
+        "fields": {
+          "abstract": "A classroom simulation uses the words Appalachian community, flood and river in an imaginary exercise. It explicitly excludes historical events, residents' experiences and community response evidence.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1996-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "report",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Weather",
+            "Education"
+          ],
+          "title": "Appalachian community flood river simulation"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "f525066587a3828c712d88485561e2ef9d5890785489f8e24fe671bb883a5111"
+    },
+    "R007": {
+      "fingerprint": "667b6075d7ac16934cd0b2f09322341128f32acba39b1ebd98d9367ab7e717bb",
+      "prepared": {
+        "fields": {
+          "abstract": "A practical book describes bean seed drying, germination tests and storage jars. Its contents concern garden cultivation and contain no astronomical observations.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1997-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "book",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Agriculture"
+          ],
+          "title": "Seed saving in a mountain garden"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "793a9110bd4c788777ec9f8ff51a486f51012152eac1dc389619a5309d66baf2"
+    },
+    "R008": {
+      "fingerprint": "821e9a72501e2b557638153405672ae46ec979767f8b32ad97a9fa8191f35cf7",
+      "prepared": {
+        "fields": {
+          "abstract": "",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1998-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "audio",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Oral history"
+          ],
+          "title": "Uncataloged valley interview"
+        },
+        "missing_fields": [
+          "abstract"
+        ],
+        "preparation_status": "insufficient_material",
+        "rule_issues": [
+          "missing:abstract"
+        ]
+      },
+      "prepared_sha256": "5af541f2824ecb46b847f7d7219ceb760ed957721a6389bf00ab446c7c9cca6a"
+    },
+    "R009": {
+      "fingerprint": "847e106cc6e3faab784dbf5313fc4a2740ff4c551d47e86310ed5ad9eb2931c3",
+      "prepared": {
+        "fields": {
+          "abstract": "The museum newsletter calls a donation campaign a flood of gifts. Its Appalachian community river exhibit concerns boat construction; there is no water disaster or recovery account.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1999-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "newspaper",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Local history",
+            "Transportation"
+          ],
+          "title": "A flood of gifts for an Appalachian community river museum"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "61ef391f9c16d6a9c666559f000af39aeb59f147721d3dbb4cb94a87441d84c6"
+    },
+    "R010": {
+      "fingerprint": "4e8562cbe6de4cec717257d3f51953d78ec1fbfc4218f7a51ac5bf61b7509ac1",
+      "prepared": {
+        "fields": {
+          "abstract": "An Appalachian community recorded flood relief supplies after the river overflowed. Ledger headings distinguish temporary shelter, bridge repair and distribution of drinking water.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2000-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "report",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Floods",
+            "Appalachia",
+            "Community life"
+          ],
+          "title": "Appalachian river flood relief ledger"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "29003c3b6e5efd0a678fb4ccaa04d7a6c59eb35d7c84dd6bcb8ec720793bf601"
+    },
+    "R011": {
+      "fingerprint": "c99f2e75f28a1b22e4f275ea56411041adaeab71de01bad39831857c1faa3e9b",
+      "prepared": {
+        "fields": {
+          "abstract": "This collection describes a coastal community in the Florida Keys responding to a river flood. The geographic scope excludes Appalachia.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2001-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "oral history",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Floods",
+            "Community life"
+          ],
+          "title": "Coastal river flood community accounts"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "39acccb85313bb1390b5695b995a455df362fde11574ddf1179e06c781ce9737"
+    },
+    "R012": {
+      "fingerprint": "3e8be8f24e7e70f69fc45f65adaaf49206e8fdabd3e2a25c8664237b89538d44",
+      "prepared": {
+        "fields": {
+          "abstract": "Numerical grids estimate river flood probabilities in Appalachian watersheds. No accounts of community experience, local action or past relief work are present.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2002-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "dataset",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Weather",
+            "Water management"
+          ],
+          "title": "Appalachian river flood forecast grids"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "537170ffb5f0ea451eb2c8fe7f698cdb4ed5f35678543ac889924407b6c7ef26"
+    },
+    "R013": {
+      "fingerprint": "51183e12e361602dec283a8fa9f4e7b930dc0defc09df43517998f8764f4fd3b",
+      "prepared": {
+        "fields": {
+          "abstract": "An Appalachian community exhibit remembers the river flood. Recorded recollections describe evacuation routes and a neighborhood fund used to replace damaged household stoves.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2003-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "finding aid",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Floods",
+            "Appalachia",
+            "Oral history"
+          ],
+          "title": "Appalachian community flood anniversary exhibit"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "254e90196e8d49e712febabc99ffc6b2662edbb152cb7d5ad366d84a1209198f"
+    },
+    "R014": {
+      "fingerprint": "d179b9d53a5bfaf7f1e14847667b31d13b5e9fe1363e89c6013b78cc61e66126",
+      "prepared": {
+        "fields": {
+          "abstract": "A bibliography lists titles about river engineering and flood models for an Appalachian community planning course. It contains no collection descriptions or evidence of residents experiencing or responding to floods.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2004-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "book",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Water management",
+            "Education"
+          ],
+          "title": "Appalachian community river planning bibliography"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "b75e71f391dd76e9d58f24da96eb682e6c21021c4db83723dcc410722f7c73e2"
+    },
+    "R015": {
+      "fingerprint": "d70cb5f8ec092b5686ac3769056446eec632138fe49f84a5b677baafb51354df",
+      "prepared": {
+        "fields": {
+          "abstract": "Residents of an Appalachian community describe the river flood of 1977. This revised edition adds an interview about households excluded from the first relief distribution.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2005-06-15",
+          "edition": "revised",
+          "language": "en",
+          "material_type": "oral history",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Floods",
+            "Appalachia",
+            "Oral history"
+          ],
+          "title": "Appalachian community river flood interviews"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "6d4d94790512a9ebc7d22fab09b3155ba8261c56d9c610ac63bf50bfad69da7c"
+    },
+    "R016": {
+      "fingerprint": "1399711da64929898b1d3fd3865c03e51ec2126560e6edfc051b05a52658497d",
+      "prepared": {
+        "fields": {
+          "abstract": "Residents of an Appalachian community describe the river flood of 1977. They organized boat rescues, shared meals and repaired the school after the water receded.",
+          "collection": "Synthetic teaching collection",
+          "copy": "B",
+          "date": "2006-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "oral history",
+          "restrictions": "Copy B lacks the final audio track; do not infer what that track says.",
+          "subjects": [
+            "Floods",
+            "Appalachia",
+            "Oral history"
+          ],
+          "title": "Appalachian community river flood interviews"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "7079411d03f52d365061c2159f7f3c77fca150f4db261639a2df185a8a41088c"
+    },
+    "R017": {
+      "fingerprint": "2db69da40c92d4b63830fc3225b1826c6bb94728c71b6cd8b2abd56f861fbf4b",
+      "prepared": {
+        "fields": {
+          "abstract": "En una aldea de las montañas Apalaches, el agua salió del cauce e inundó las casas. Las familias organizaron refugios y repararon el puente juntas.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2007-06-15",
+          "edition": "first",
+          "language": "es",
+          "material_type": "oral history",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Local history",
+            "Oral history"
+          ],
+          "title": "Memorias de la crecida"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "c34046b32f939a377573afbbebf6477b364ffbb1a8758765667ee7f94c2413a1"
+    },
+    "R018": {
+      "fingerprint": "9a28fff05dae53bccb03dc3f4f55b9d9f0c7e07d192bbf81128e26583e8526b7",
+      "prepared": {
+        "fields": {
+          "abstract": "Inspectors list masonry joints, deck wear and routine maintenance priorities. No disaster event or community response is described.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2021-02-30",
+          "edition": "first",
+          "language": "en",
+          "material_type": "report",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Transportation"
+          ],
+          "title": "County bridge inspection checklist"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": [
+          "invalid:date"
+        ]
+      },
+      "prepared_sha256": "8922a195740c6eda6fd9cc87cd0538f47ee1bb227c0c18a88427ee27abc69e70"
+    },
+    "R019": {
+      "fingerprint": "acaf0441cf5611faeb593e6beec5be3a6cedf43e2ce32e5826c119033c3f4477",
+      "prepared": {
+        "fields": {
+          "abstract": "Fabric samples compare indigo baths and wool preparation in a textile workshop.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2009-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "photocopy",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Textiles"
+          ],
+          "title": "Workshop dye sample sheets"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": [
+          "not_allowed:material_type"
+        ]
+      },
+      "prepared_sha256": "70d021410e6dd484bf142d86888e190c8d647b24a42d31390d0d80f8fc290ecb"
+    },
+    "R020": {
+      "fingerprint": "00509fc5c9047ab19838c6b5c13b0f76361dac44396f94c514d251430980f761",
+      "prepared": {
+        "fields": {
+          "abstract": "A field guide illustrates rock layers and mineral identification along walking routes. One plate is withheld from the public scan under the demonstration access condition.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2010-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "book",
+          "restrictions": "Plate 4 is now included in the demonstration scan; check its caption before reuse.",
+          "subjects": [
+            "Conservation"
+          ],
+          "title": "Mountain strata field guide"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "dd1720c43f0c2d25a6b5f040ba73c6248fbfb147648a597456a9732eb3ff38d2"
+    },
+    "R021": {
+      "fingerprint": "b4f8def64f9626ab1912b0c297f85a48d9ea724c8baa7467f11cca1a89a6af89",
+      "prepared": {
+        "fields": {
+          "abstract": "Photographs document seasonal apple pruning, tool care and grafting demonstrations.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2011-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "photographs",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Agriculture",
+            "Photography"
+          ],
+          "title": "Orchard pruning demonstration"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "f5cd0a1f3cfa6e97eb9a94464210f23e9b9a1d235197d276d068eb51b70008a1"
+    },
+    "R022": {
+      "fingerprint": "6dc4d24726285419375eb35140891dfc33dacf9fc96670d6afb9f33db41c5080",
+      "prepared": {
+        "fields": {
+          "abstract": "Measured drawings describe a railway platform, shelter columns and ticket window dimensions.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2012-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "map",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Transportation",
+            "Architecture"
+          ],
+          "title": "Depot platform survey"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "c416df6d64f36c5d2b3ea09e15e4bee399396fae6b31b94511f02a305ec9bde0"
+    },
+    "R023": {
+      "fingerprint": "f4fe3f105c80d7eb5ff7b3b6f2d75ea9bbc683c754538ae88eefba0c0c742e78",
+      "prepared": {
+        "fields": {
+          "abstract": "An inventory lists desks, reading lamps and shelves purchased for a school reading room.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2013-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "report",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Education"
+          ],
+          "title": "School reading room inventory"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "bdc445b4a51a5bb65be05b32df603cc274f2d6edf646a4feea073f14a52ecce2"
+    },
+    "R024": {
+      "fingerprint": "e208ced308a74202e481ccf39005a691a25502d14e03bcf07c5832b94c7b9c66",
+      "prepared": {
+        "fields": {
+          "abstract": "Audio tracks demonstrate bowing patterns and tuning for a fiddle workshop.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2014-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "audio",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Music"
+          ],
+          "title": "Fiddle workshop recordings"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "64cee815d60e390fc36dda2af849814c886373834f47d7a6e45187675473c477"
+    },
+    "R025": {
+      "fingerprint": "7d299babb16edb05fa00b669bb02691b5d9860f1b0dd65f37e679dad31079feb",
+      "prepared": {
+        "fields": {
+          "abstract": "Technicians record cleaning procedures and alignment measurements for a telescope lens.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2015-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "report",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Astronomy"
+          ],
+          "title": "Observatory lens maintenance"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": [
+          "not_in_local_vocabulary:subjects"
+        ]
+      },
+      "prepared_sha256": "9b5f5a1a5373fc1626535a35fd96d2621fa27fff5cca280e0e9507f3f6f81175"
+    },
+    "R026": {
+      "fingerprint": "5371bacc70a5d5c8d7d4d35c978ccdccb60c4405d42eb8202c159dccf63b8447",
+      "prepared": {
+        "fields": {
+          "abstract": "A notebook contains block diagrams, fabric measurements and stitching instructions.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2016-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "diary",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Textiles"
+          ],
+          "title": "Quilt pattern notebook"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "7b8d268cb8b36cfd230f68fd1585603c36d424d057fcb5cdce2c70c17e811903"
+    },
+    "R027": {
+      "fingerprint": "df9e92de3ad208a649782e8b8a083de2d8f7f05430c85133b3a407a80ba5d927",
+      "prepared": {
+        "fields": {
+          "abstract": "Floor plans show waiting rooms, ventilation routes and the placement of examination rooms.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2017-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "map",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Health",
+            "Architecture"
+          ],
+          "title": "Clinic building plans"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "1f3a975a9250f0a1e1ada6511513623c2b0f6855569d50a00863dd0c1b491f42"
+    },
+    "R028": {
+      "fingerprint": "18e893390f4a6623a838a6db8c7ac1268a390dd36cea926d1e0567909a61d6ab",
+      "prepared": {
+        "fields": {
+          "abstract": "Studio portraits illustrate backdrops, lighting arrangements and camera equipment.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2018-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "photographs",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Photography"
+          ],
+          "title": "Portrait studio negatives"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "910f9cb720d8ab2afb801e0681fcc13a8628301570793ed271110479e495bf54"
+    },
+    "R029": {
+      "fingerprint": "dba9df9f481ef1b640f19541ac325bad90e96e50e9ede559d18d0b209f9d829f",
+      "prepared": {
+        "fields": {
+          "abstract": "A handbook explains shift changes, tool checkout and wage categories at a small factory.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2019-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "book",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Labor"
+          ],
+          "title": "Factory shift rules"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "b3c5df4807866d0696ace692ae20fae436a32c20f38ed875d9bb5b86a398acaa"
+    },
+    "R030": {
+      "fingerprint": "19ea030334b407862ff8fbe36cc2ed57eca11430b25143e85b3dc94c18d5c10c",
+      "prepared": {
+        "fields": {
+          "abstract": "Maps locate trail junctions, elevation contours and designated camping areas.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2020-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "map",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Maps",
+            "Conservation"
+          ],
+          "title": "Trail marker atlas"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "fdf78e17c85f0ed2cedf279d34c495388849e508e54b43b88b44a0a5abffed4a"
+    },
+    "R031": {
+      "fingerprint": "5cb9b31eb17a5e09908eefcf12791bac71d614dd5a1c3f5a5040e0be76d051b9",
+      "prepared": {
+        "fields": {
+          "abstract": "A study compares cabinets and humidity control for dried plant specimens.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2021-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "report",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Conservation"
+          ],
+          "title": "Herbarium storage study"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "e82dcc30d53d282a12cbbac08c13a7ee55f38de77bc4371afddf86a937cf4703"
+    },
+    "R032": {
+      "fingerprint": "4baf5f04271c43479ffe54d4abb18a01f7eeb0409a2f89a3a189e28bba493e44",
+      "prepared": {
+        "fields": {
+          "abstract": "A repairer records gear replacements, pendulum adjustments and winding routines.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2022-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "diary",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Local history"
+          ],
+          "title": "Town clock repair diary"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "fd3204ac7aff45a1ceba0a1696d12f93ce6d6592bbc649bed7aeb3a030ddb4fd"
+    },
+    "R033": {
+      "fingerprint": "5839764192255384d357ca62f0a5bf37a712adc4a8fe3d09c85fa220802974ab",
+      "prepared": {
+        "fields": {
+          "abstract": "Recipes give preparation steps for jars, fruit syrups and pantry storage.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2023-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "book",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Cooking"
+          ],
+          "title": "Preserving peaches booklet"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "0b063d7f35da7649e9e4f9fe79f65874658f8fc8dd5fe42b433dc1f57fd4d6ab"
+    },
+    "R034": {
+      "fingerprint": "f2f296c1d6620960ea23a1c61ac8a84cf42c2927bd1dba1a802c5f866e1c8700",
+      "prepared": {
+        "fields": {
+          "abstract": "Engineering sheets specify valve sizes, operating pressures and inspection intervals.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2024-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "report",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Water management"
+          ],
+          "title": "Reservoir valve specifications"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "8d82bcf5169b16987338734e75dba2ef3ed25f3ba480f0e08d2401f8f4e912a3"
+    },
+    "R035": {
+      "fingerprint": "87bdd4d22729a014cf27ad35e2b3fb6f48bc9f2b4d821638ffede908fa65a7e9",
+      "prepared": {
+        "fields": {
+          "abstract": "A register records stall dimensions and permitted produce categories at a market.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1990-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "finding aid",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Local history",
+            "Agriculture"
+          ],
+          "title": "Market stall permit register"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "4afc5bead0c7a0658b7c46013c4e723c8bfb54a951be6d5f9f21982d7a6df0e3"
+    },
+    "R036": {
+      "fingerprint": "29d54322ea7ee6375d87596489663b5fc71eb74d80a1060b900916fc0a65d264",
+      "prepared": {
+        "fields": {
+          "abstract": "A map marks regular bookmobile stops at schools and community centers.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1991-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "map",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Maps",
+            "Education"
+          ],
+          "title": "Bookmobile route map"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "699efbca9b839b7055812bb357934b7309537180688af81b51553d041064524d"
+    },
+    "R037": {
+      "fingerprint": "9e6a2548624e009f3f21b7fd9b8c7cb10b4ee06a15e0dc7438f3c787adf8751a",
+      "prepared": {
+        "fields": {
+          "abstract": "Architectural drawings document aisle widths, balcony supports and replacement seats.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1992-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "map",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Architecture"
+          ],
+          "title": "Theater seating renovation"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "10c7fccde2881d995b7b79b36e136b882e2905454cdd2dde02db0dddd57c2fff"
+    },
+    "R038": {
+      "fingerprint": "9e1c78afd6a1ff63dd846cfece95a66def9b33433cb0e251c5da57bf4e5039fe",
+      "prepared": {
+        "fields": {
+          "abstract": "Programs list rehearsal pieces, voice sections and performance dates.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1993-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "finding aid",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Music"
+          ],
+          "title": "Choral rehearsal schedule"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "f6a5531a3a0aa9b0cd464c847bdfcc88165fc6409397214762942933bd314495"
+    },
+    "R039": {
+      "fingerprint": "2399bd1be086f7f57f7f7a7eba882f7c74d16be76fe9a9f5f9cff6cf528d2b91",
+      "prepared": {
+        "fields": {
+          "abstract": "Observers record eclipse timings, cloud cover and telescope magnification.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1994-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "diary",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Astronomy",
+            "Weather"
+          ],
+          "title": "Lunar eclipse observing log"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": [
+          "not_in_local_vocabulary:subjects"
+        ]
+      },
+      "prepared_sha256": "8d0f7af916fa3e54065562679d96b363d6d85eec63a792e2df2a3daeecd79cd6"
+    },
+    "R040": {
+      "fingerprint": "53f17a2044351f8f85df6bb17b1fc0d67700e5dfb9a17ff59e1fecc96de8ae72",
+      "prepared": {
+        "fields": {
+          "abstract": "Instructions explain spindle alignment, drive bands and wood treatment.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1995-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "book",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Textiles"
+          ],
+          "title": "Spinning wheel repair notes"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "41119a5efe48ac93e1fd10d0861ff5150ff48c2c27c335999a4eb66e8b9b71cd"
+    },
+    "R041": {
+      "fingerprint": "96838b2bb81b5cde71a266fdfdcf7261fbd4c7b5ba0a3310e1974f385b3ab144",
+      "prepared": {
+        "fields": {
+          "abstract": "A report inventories portable chairs, lights and sterilization equipment.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1996-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "report",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Health"
+          ],
+          "title": "Dental outreach equipment"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "a40ee815b93465d5474483482ebd64ba5dd8bda88508dd4d0bce9e0e0d1e3b2c"
+    },
+    "R042": {
+      "fingerprint": "994ef449b323ac8c4cb94304eaf59eabfa085887272befe9c7bf58875951d3d2",
+      "prepared": {
+        "fields": {
+          "abstract": "Cards compare developer dilutions, exposure times and print washing procedures.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1997-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "finding aid",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Photography"
+          ],
+          "title": "Darkroom chemistry cards"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "c594e399835c7561ea7de581975d6f251fd0fb19ab5529263f87efef205e78d6"
+    },
+    "R043": {
+      "fingerprint": "6e3b2d5fac3355dbbe2042cdf0ce6478a0e44f7f4bf0b971f0915311cf2b6bc8",
+      "prepared": {
+        "fields": {
+          "abstract": "Training chapters cover measuring, joints, tool maintenance and workshop safety.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1998-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "book",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Labor",
+            "Education"
+          ],
+          "title": "Carpenters apprenticeship handbook"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "2209758c535c00466a564a47a8390a21239da83e5299a88bb3673b2a2a4fb63a"
+    },
+    "R044": {
+      "fingerprint": "8df0b846585588edc203d38a7c9f09e4e86eaf6ba362bd2b0d03ba9437f2f4c7",
+      "prepared": {
+        "fields": {
+          "abstract": "A dataset records tree species, trunk diameter and planted location.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1999-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "dataset",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Conservation"
+          ],
+          "title": "Campus tree survey"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "68cf125b7c0c8bbc677b0c70fabc8916be6ccac7cb050020e8322dc939903d26"
+    },
+    "R045": {
+      "fingerprint": "022543524278f212031e36ba357e6ca423c8b1bc3fa0405ca9182c413473e9fa",
+      "prepared": {
+        "fields": {
+          "abstract": "A baker records oven temperatures, flour deliveries and daily bread batches.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2000-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "diary",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Cooking",
+            "Local history"
+          ],
+          "title": "Bakery oven ledger"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "99edcdf80374a7bf8317d5434bc2c2038f19e385a416411d5d79d97ad990c1d2"
+    },
+    "R046": {
+      "fingerprint": "c3e5a248601a17b6faf7cf5fbc281711350e9c5e9da8136807c3b6e2b5077b53",
+      "prepared": {
+        "fields": {
+          "abstract": "Images document shelter roof designs, seating and route signs.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2001-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "photographs",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Transportation",
+            "Photography"
+          ],
+          "title": "Bus shelter photographs"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "4d9f980171445f5e2b37063d6e372fcc0ae8027bd7efb6df419ed99f64de7b51"
+    },
+    "R047": {
+      "fingerprint": "27545f3411b66d0b487a0aeae56c62cf69d30ddc92d95542336218e166d39ee5",
+      "prepared": {
+        "fields": {
+          "abstract": "Specifications describe cloth covers, sewing methods and paper grain for bindings.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2002-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "report",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Conservation"
+          ],
+          "title": "Library binding specifications"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "6c04953638122065ffff642c6fee2142f20db0df9ec9d1d652d811cbae767eef"
+    },
+    "R048": {
+      "fingerprint": "0e68983f721e430cbc57a26b51988a5c1341cd0799ad014ce6a4da862c88ffcf",
+      "prepared": {
+        "fields": {
+          "abstract": "Workshop notes record temperatures, glaze combinations and firing durations.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2003-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "diary",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Local history"
+          ],
+          "title": "Pottery kiln firing notes"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "697b7611a5eb6259ee609b81e94794e89cacfd07e7246c088f587d1bce137e64"
+    },
+    "R049": {
+      "fingerprint": "10dbbaa1c05d37e0f15c0a6dc89550767798824227bb4f0b6371d663a088d8f5",
+      "prepared": {
+        "fields": {
+          "abstract": "A guide compares flowering periods and soil needs of plants used by beekeepers.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2004-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "book",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Agriculture"
+          ],
+          "title": "Bee pasture planting guide"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "d817856db44b0d77ac9688a06fdbd31327c80df0b1ba3ed9f285a3b0a7c7229a"
+    },
+    "R050": {
+      "fingerprint": "b30bf452b2113e9de67b0f293fd0ea864ba1d818893ecb8ccefb216c3aa53833",
+      "prepared": {
+        "fields": {
+          "abstract": "Technicians compare thermometer readings and calibrate rain gauges before installation.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2005-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "report",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Weather"
+          ],
+          "title": "Weather station calibration"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "16924e9126a9aa8efd9050beab1eba9f4641b6d3c43e053123b4725e23a36e44"
+    },
+    "R051": {
+      "fingerprint": "e4a1cc17c87ab49c4a96c5403c772d247cec97c730626881c8df0c4908d213bb",
+      "prepared": {
+        "fields": {
+          "abstract": "Drawings show gears, gate hinges and mechanical clearances at a canal lock.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2006-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "map",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Transportation",
+            "Water management"
+          ],
+          "title": "Canal lock mechanism drawings"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "28541c75ca729bb80c94006e1734d42b590bf3a7b9463c529aee9a4cbe3b4219"
+    },
+    "R052": {
+      "fingerprint": "5550be5a6d5942e22e7f7e66f58d644044bd4ca576951204e8adc5d0f27e1024",
+      "prepared": {
+        "fields": {
+          "abstract": "A catalog lists case dimensions, glazing options and lighting fixtures.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2007-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "book",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Architecture",
+            "Conservation"
+          ],
+          "title": "Museum display case catalog"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "6606ffa5752bcfc0672876b4340147982220c37cf12761640db6162b500da4cd"
+    },
+    "R053": {
+      "fingerprint": "07bb2088ac4bb8dd2637267a237cdc1cf92d85dbe1d284dc676ab533ef20da52",
+      "prepared": {
+        "fields": {
+          "abstract": "Audio exercises practice pronunciation and short dialogues about shopping and travel.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2008-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "audio",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Education"
+          ],
+          "title": "Language classroom recordings"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "1d30c50253b83c5baf0b27606629c3d9dd8d15fc3b2d2a7855ad67b606f43dcb"
+    },
+    "R054": {
+      "fingerprint": "f8ad9db804c1d57bbff90ecfe9247cb4a0804f087db58b8b564cebc15c1f1ad1",
+      "prepared": {
+        "fields": {
+          "abstract": "An inventory identifies instrument types, repair dates and storage lockers.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2009-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "finding aid",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Music"
+          ],
+          "title": "Brass band instrument register"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "abcd79e3b2a538d5701e52133ac9faf989ab94c2e703bc9cc647f9cc17963ea0"
+    },
+    "R055": {
+      "fingerprint": "38cad484737e24f3f419b8379b6362b1186a1f5ee0ae7c7fb5b488dd5306a5fb",
+      "prepared": {
+        "fields": {
+          "abstract": "Printing plates show constellation outlines and reference coordinates.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2010-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "photographs",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Astronomy",
+            "Maps"
+          ],
+          "title": "Star chart printing plates"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": [
+          "not_in_local_vocabulary:subjects"
+        ]
+      },
+      "prepared_sha256": "325f844e98d7839d66cf23a517cd27df3924ac081ec0e2fb1a499956c85691a5"
+    },
+    "R056": {
+      "fingerprint": "8fb65825f37b518b341ec71f4b0f4942f48bedbb661943c3c15a13fb5eeed7bd",
+      "prepared": {
+        "fields": {
+          "abstract": "Technical drawings specify frame dimensions and treadle connections for a hand loom.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2011-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "map",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Textiles"
+          ],
+          "title": "Weaving loom dimensions"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "16a69572e7160111e3dd4c27925fe237cec5781609a0fae156417971651542ad"
+    },
+    "R057": {
+      "fingerprint": "be211df450e45b7c45bd7cb2eba6ee481609594aaf456779aca3d385411ef018",
+      "prepared": {
+        "fields": {
+          "abstract": "A survey records pavement condition, gradients and bench spacing along a walking route.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2012-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "report",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Health",
+            "Maps"
+          ],
+          "title": "Walking route accessibility survey"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "6441b5359e993c05444ec97966fefccd2be29c3b57d0dd63a41a6c7e00dff1b2"
+    },
+    "R058": {
+      "fingerprint": "60118dacf6a5ac46f18179f62fcbb989015c99d0e807a21aa000b5482b3bd7c9",
+      "prepared": {
+        "fields": {
+          "abstract": "A booklet collects vegetable preservation recipes and seasonal ingredient substitutions.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2013-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "book",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Cooking",
+            "Community life"
+          ],
+          "title": "Canning club recipe exchange"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "67736a07a3af93df614d94eb320e324c61a082964d850df20b818c62e9f9da27"
+    },
+    "R059": {
+      "fingerprint": "378b9d81c262b776921d9432cf6eb78637489211778f20aec1403017def3b2e0",
+      "prepared": {
+        "fields": {
+          "abstract": "Residents of an Appalachian community describe the river flood of 1977. They organized boat rescues, shared meals and repaired the school after the water receded.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1991-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "oral history",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Floods",
+            "Appalachia",
+            "Oral history"
+          ],
+          "title": "Appalachian community river flood interviews"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "6b0cd886d7fb82c37b28e787826e0a5d340bc3bff7efc2a1bc7eb55b48ae5848"
+    },
+    "R060": {
+      "fingerprint": "f889e8ccd9eccbb962112a5e8e16d225d51ed8ddcd13881ea05814ecb38c8d7a",
+      "prepared": {
+        "fields": {
+          "abstract": "Photographs show an Appalachian community during a river flood. Captions identify families moving furniture upstairs and volunteers distributing clean water.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "1992-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "photographs",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Floods",
+            "Appalachia",
+            "Photography"
+          ],
+          "title": "Appalachian river flood community photographs"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "62126744ef7a6df08f2c211d638aa087c46653f17b45970d7347b6c56d6d9b83"
+    },
+    "R061": {
+      "fingerprint": "3966172f9e3328d8344af3e606a1c91b38af7e424d2062999cd4c402a0633acc",
+      "prepared": {
+        "fields": {
+          "abstract": "An inventory lists seed packets, storage dates and germination notes.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2025-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "report",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Agriculture"
+          ],
+          "title": "Community seed library inventory"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "dc33399bee8109c3d8c502f3d0bf0da51de5de28dab4e907d18bb148345e3d40"
+    },
+    "R062": {
+      "fingerprint": "537dcb34271ce878ad147d2c2865ab4cbc7c217a33cb32fa91e42f5f364ea7f7",
+      "prepared": {
+        "fields": {
+          "abstract": "A description records an Appalachian community running a shared kitchen after a river flood.",
+          "collection": "Synthetic teaching collection",
+          "copy": "A",
+          "date": "2025-06-15",
+          "edition": "first",
+          "language": "en",
+          "material_type": "report",
+          "restrictions": "Synthetic description open for reuse; no real collection item exists.",
+          "subjects": [
+            "Floods",
+            "Appalachia"
+          ],
+          "title": "Appalachian flood volunteer kitchen"
+        },
+        "missing_fields": [],
+        "preparation_status": "ready_for_review",
+        "rule_issues": []
+      },
+      "prepared_sha256": "bb1f17187fa42e9383178953f43d0e7493e760f56ae738cdf28b1ad2894ed44f"
+    }
+  },
+  "kind": "prepared_material_only"
+}

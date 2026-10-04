@@ -1,0 +1,64 @@
+{
+  "first": {
+    "active_rows": 60,
+    "cache_kind": "prepared_material_only",
+    "export_rows": 60,
+    "full_items": 58,
+    "pending_items": 58,
+    "pending_rows": 60,
+    "states": {
+      "new": 60
+    }
+  },
+  "rules-change": {
+    "active_rows": 60,
+    "cache_kind": "prepared_material_only",
+    "export_rows": 61,
+    "full_items": 58,
+    "pending_items": 58,
+    "pending_rows": 60,
+    "states": {
+      "dependency_changed": 60,
+      "inactive": 1
+    }
+  },
+  "second": {
+    "active_rows": 60,
+    "cache_kind": "prepared_material_only",
+    "export_rows": 61,
+    "full_items": 58,
+    "pending_items": 4,
+    "pending_rows": 4,
+    "states": {
+      "deleted": 1,
+      "inactive": 1,
+      "modified_or_cache_invalid": 2,
+      "new": 2,
+      "reused_preparation": 56
+    }
+  },
+  "task-change": {
+    "active_rows": 60,
+    "cache_kind": "prepared_material_only",
+    "export_rows": 61,
+    "full_items": 58,
+    "pending_items": 58,
+    "pending_rows": 60,
+    "states": {
+      "dependency_changed": 60,
+      "inactive": 1
+    }
+  },
+  "vocabulary-change": {
+    "active_rows": 60,
+    "cache_kind": "prepared_material_only",
+    "export_rows": 61,
+    "full_items": 58,
+    "pending_items": 58,
+    "pending_rows": 60,
+    "states": {
+      "dependency_changed": 60,
+      "inactive": 1
+    }
+  }
+}

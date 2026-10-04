@@ -1,0 +1,9 @@
+{
+  "task_id": "subject-review-v1",
+  "template": "templates/subject-review.txt",
+  "fields": ["title", "abstract", "subjects", "language", "edition", "copy", "date", "material_type", "collection", "restrictions"],
+  "required_for_review": ["title", "abstract", "subjects", "language", "edition", "copy", "date", "material_type", "collection", "restrictions", "id", "source_locator"],
+  "rules_file": "configs/rules.json",
+  "vocabulary_file": "configs/vocabulary.json",
+  "active_status": "active"
+}

@@ -1,0 +1,121 @@
+{
+  "imports_by_file": {
+    "scripts/make_demo_data.py": [
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "scripts/offline_run.py": [
+      "argparse",
+      "ast",
+      "datetime",
+      "errno",
+      "hashlib",
+      "importlib.metadata",
+      "json",
+      "library_token_use.core",
+      "os",
+      "pathlib",
+      "platform",
+      "socket",
+      "subprocess",
+      "sys"
+    ],
+    "scripts/run.py": [
+      "argparse",
+      "json",
+      "library_token_use.core",
+      "library_token_use.counting",
+      "library_token_use.experiment",
+      "pathlib",
+      "sys"
+    ],
+    "scripts/setup_tokenizer.py": [
+      "base64",
+      "hashlib",
+      "json",
+      "os",
+      "pathlib",
+      "tiktoken_ext.openai_public"
+    ],
+    "scripts/verify_artifacts.py": [
+      "hashlib",
+      "json",
+      "library_token_use.core",
+      "library_token_use.counting",
+      "pathlib",
+      "re",
+      "sys",
+      "urllib.parse"
+    ],
+    "src/library_token_use/__init__.py": [],
+    "src/library_token_use/core.py": [
+      "collections",
+      "datetime",
+      "hashlib",
+      "json",
+      "math",
+      "pathlib",
+      "re"
+    ],
+    "src/library_token_use/counting.py": [
+      "base64",
+      "core",
+      "hashlib",
+      "importlib.metadata",
+      "json",
+      "pathlib",
+      "tiktoken"
+    ],
+    "src/library_token_use/experiment.py": [
+      "collections",
+      "copy",
+      "core",
+      "counting",
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "tests/test_invariants.py": [
+      "copy",
+      "library_token_use.core",
+      "library_token_use.counting",
+      "library_token_use.experiment",
+      "pathlib",
+      "sys",
+      "tempfile",
+      "unittest"
+    ]
+  },
+  "inspection": "Entry scripts/run.py -> local core/experiment/counting. No inference client, embedding model, query rewriting service or model endpoint. Counting constructs tiktoken.Encoding from local checked files. requests is a transitive tiktoken installation dependency, not used by the measured entry point.",
+  "setup_separation": "scripts/setup_tokenizer.py downloads encoding resources during setup only. scripts/offline_run.py uses socket only for isolation probes before launching the traced experiment.",
+  "source_sha256": {
+    "configs/reports-2000-2025.json": "f819f12475bdaec4bf7211227afba1500b62d77061d077281d6c1c1c4b5842f7",
+    "configs/research-candidates.json": "08258b617b68dce29463e246c1d0644b4c2be9705e092d0082c9302e1f2acc97",
+    "configs/rules.json": "242f97e2ea5dddf67de95bd0f32faac6b9ff33fe8874d7316045e3bf664c0392",
+    "configs/subject-review.json": "4b91cbb4ded9e16b79dc0d624108d3b2791948d2582514adb1917315166c3870",
+    "configs/vocabulary.json": "ad38ade7e94e7afb4091972bb49e0bcfedc8dcfeb1766677bc758a725af19565",
+    "data/LICENSE": "47f30965395432442c3fb2c797322bad9ab247f4890ea2b401fb000fecb6de49",
+    "data/README.md": "d4d040f41baa3282ce53a1dde33863b2592c009466f94a42ae6aa73b4d71378f",
+    "data/fixture-lock.json": "bfe90390787477a860b6cb91cf9b71962ae06a878f1786cf729906f297a72cb6",
+    "data/raw/catalog-v1.jsonl": "1b8a276fb7ef8209f8f3b6509696a643b8eaa61dbfc3254d295fd46b815b838f",
+    "data/raw/catalog-v2.jsonl": "911e6737daf409aa6cba84fb5950e0b0ce88a87968919add1b21eae742343775",
+    "data/retrieval-gold.json": "2359efb82fe79c5cf54a5cfa25989bee657eabff443a0ea5c56d8bd684842fb5",
+    "data/subject-boundaries.json": "a9cd8f88e7f50e254aa0842c67fced4f93e2b9704178cc0d0c5701aa559c59d9",
+    "requirements-lock.txt": "e2fa0bd18ed41b6b4eee449dc80c6f408a9aa68a20e867d74266926abf52d10f",
+    "requirements.txt": "ac785205f5d97970c4a7f8aef135c62cfda01985ba2000973008c823ccc01d2f",
+    "scripts/make_demo_data.py": "1aac0fc1e35178d705cc2b1d720aa414645d549a72349653df6d4fbc82027550",
+    "scripts/offline_run.py": "e34c81bebdb492206fbc5e3edd778fe68f35025ee97863673b77b514f0739b38",
+    "scripts/run.py": "bfc7f0be0a07a6e92766b773f712e91ec2bfd859c1077997576849990afe3e01",
+    "scripts/run_offline.sh": "f6338b5460086057edf8f8203b991fb367b011a0cee8a98249d08eb30d881745",
+    "scripts/setup_tokenizer.py": "f7b4720634e1377508895754588ef43ef71986d825bd8e8dff545bc899932d6f",
+    "scripts/verify_artifacts.py": "fbfe5209846ed7b7ab30b61ce25c557a224f2b3a5a409f83b74cad22cdc95b51",
+    "src/library_token_use/__init__.py": "1e803e916fbe2e8003408fce7bf37236af85634608d21ad4f501d534e196f571",
+    "src/library_token_use/core.py": "75ce7a1d3c28fce0c1827716286bc3e43f009f6d518df7bff880caabf252af55",
+    "src/library_token_use/counting.py": "da6119e67a4aea893712479b62fe327f02657513b50ae5ba1d6436f2eac94e91",
+    "src/library_token_use/experiment.py": "d3e12da73947b17377064a5fdd273a2679272aad486fdf0124df0f1f8218479b",
+    "templates/research-candidates.txt": "11eae147e2fa347ca166b0dac33aa43d9d22d8a79b3b8a38678688cc9f67b73c",
+    "templates/subject-review.txt": "0f399791f55743efbe5565fdee79ff24bd0f7fe4681b2505f7fe8fa85dde68dc",
+    "tests/test_invariants.py": "172ff93a2be166480c43078440f454bad9d74dac7335f31f0744631a7d447741"
+  }
+}
