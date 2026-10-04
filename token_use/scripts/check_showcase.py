@@ -83,11 +83,11 @@ def main():
         section = readme.split(f"<!-- {marker}:START -->")[1].split(f"<!-- {marker}:END -->")[0]
         assert json.loads(re.search(r"```json\n(.*?)\n```", section, re.S)[1]) == expected
     prompt = (ROOT / "templates/public-subject-review.txt").read_text().strip()
-    assert all(prompt in (ROOT / p).read_text() for p in ["docs/staff-guide.md", "docs/staff-guide.zh-CN.md"])
+    assert prompt in (ROOT / "docs/staff-guide.md").read_text()
     report.update(status="passed", finished_utc=datetime.now(timezone.utc).isoformat(), commands=executed,
                   compared_public_artifacts=len(public_files), original_artifact_check=old.stdout.strip(),
                   local_links_checked=len(checks), local_links=checks, historical_audit_documentation_revised=revised_documentation,
-                  checks=["Documented commands executed successfully", "Fresh public output equals published output byte for byte", "Complete-file counts and identical task text verified", "Original and new recorded source hashes match current preprocessing code", "All original fixture/artifact checks still pass", "README complete before/after JSON equals the measured source artifacts", "English and Chinese guides contain the exact new task prompt"],
+                  checks=["Documented commands executed successfully", "Fresh public output equals published output byte for byte", "Complete-file counts and identical task text verified", "Original and new recorded source hashes match current preprocessing code", "All original fixture/artifact checks still pass", "README complete before/after JSON equals the measured source artifacts", "Staff guide contains the exact task prompt"],
                   not_measured=["HokieAI allocation", "Codex development usage", "Independent AI-answer comparison", "Librarian usability or production benefit"])
     write_json(report_file, report)
     print(f"Developer check passed: {len(commands)} documented commands, {len(public_files)} public artifacts, {len(checks)} local links; original measured evidence retained.")

@@ -3,7 +3,7 @@
 A practical guide for library staff preparing collection records for AI review.
 **Read this page without installing anything**, or try the supplied files with
 `.venv/bin/python scripts/prepare_public_case.py` after [setup](#try-it).
-[English staff guide](docs/staff-guide.md) · [中文指南](docs/staff-guide.zh-CN.md) ·
+[Staff guide](docs/staff-guide.md) ·
 [Complete worked example](docs/worked-example.md).
 
 ## 1. Why do this?
@@ -238,7 +238,7 @@ more source material before a useful semantic review is possible.
 | [Task configuration](configs/public-subject-review.json) | Inspect the exact fields and required evidence. |
 | [Pre-generated output](results/public-case/prepared.txt) | Read the complete counted packet without running anything. |
 | [Copyable prompt](templates/public-subject-review.txt) | Existing-subject review; no invented abstracts, sources or new headings. |
-| [English guide](docs/staff-guide.md) / [中文指南](docs/staff-guide.zh-CN.md) | Output checks, generic exports, updates and recovery instructions. |
+| [Staff guide](docs/staff-guide.md) | Output checks, generic exports, updates and recovery instructions. |
 
 Optional Linux verification: `bash scripts/run_public_offline.sh` reproduces
 the new blocked-network run; `bash scripts/run_offline.sh` reproduces the

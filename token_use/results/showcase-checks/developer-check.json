@@ -6,7 +6,7 @@
     "Original and new recorded source hashes match current preprocessing code",
     "All original fixture/artifact checks still pass",
     "README complete before/after JSON equals the measured source artifacts",
-    "English and Chinese guides contain the exact new task prompt"
+    "Staff guide contains the exact task prompt"
   ],
   "commands": [
     {
@@ -35,7 +35,7 @@
     }
   ],
   "compared_public_artifacts": 9,
-  "finished_utc": "2026-10-04T19:38:25.156874+00:00",
+  "finished_utc": "2026-10-04T19:54:00.726987+00:00",
   "historical_audit_documentation_revised": [
     "data/LICENSE",
     "data/README.md"
@@ -49,10 +49,6 @@
     {
       "document": "README.md",
       "target": "docs/staff-guide.md"
-    },
-    {
-      "document": "README.md",
-      "target": "docs/staff-guide.zh-CN.md"
     },
     {
       "document": "README.md",
@@ -124,10 +120,6 @@
     },
     {
       "document": "README.md",
-      "target": "docs/staff-guide.zh-CN.md"
-    },
-    {
-      "document": "README.md",
       "target": "../LICENSE"
     },
     {
@@ -137,42 +129,6 @@
     {
       "document": "README.md",
       "target": "data/public-loc/README.md#source-and-reuse"
-    },
-    {
-      "document": "docs/staff-guide.zh-CN.md",
-      "target": "worked-example.md"
-    },
-    {
-      "document": "docs/staff-guide.zh-CN.md",
-      "target": "../README.md#try-it"
-    },
-    {
-      "document": "docs/staff-guide.zh-CN.md",
-      "target": "../data/public-loc/records.jsonl"
-    },
-    {
-      "document": "docs/staff-guide.zh-CN.md",
-      "target": "../data/public-loc/README.md#native-schema-and-retained-evidence"
-    },
-    {
-      "document": "docs/staff-guide.zh-CN.md",
-      "target": "../configs/public-subject-review.json"
-    },
-    {
-      "document": "docs/staff-guide.zh-CN.md",
-      "target": "../results/case1/retention.json"
-    },
-    {
-      "document": "docs/staff-guide.zh-CN.md",
-      "target": "../templates/public-subject-review.txt"
-    },
-    {
-      "document": "docs/staff-guide.zh-CN.md",
-      "target": "../data/README.md#schema"
-    },
-    {
-      "document": "docs/staff-guide.zh-CN.md",
-      "target": "../configs/subject-review.json"
     },
     {
       "document": "docs/experiment-report.md",
@@ -583,14 +539,14 @@
       "target": "../../results/public-case/prepared.txt"
     }
   ],
-  "local_links_checked": 135,
+  "local_links_checked": 124,
   "not_measured": [
     "HokieAI allocation",
     "Codex development usage",
     "Independent AI-answer comparison",
     "Librarian usability or production benefit"
   ],
-  "original_artifact_check": "Verified 9 complete input pairs, 38 artifact hashes, 121 source locators and 125 local documentation links.",
-  "started_utc": "2026-10-04T19:38:23.432258+00:00",
+  "original_artifact_check": "Verified 9 complete input pairs, 38 artifact hashes, 121 source locators and 114 local documentation links.",
+  "started_utc": "2026-10-04T19:53:58.974892+00:00",
   "status": "passed"
 }

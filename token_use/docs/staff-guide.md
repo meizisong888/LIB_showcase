@@ -1,4 +1,4 @@
-# Prepare subject-review materials: seven steps
+# Staff guide: prepare subject-review materials
 
 You can [read the complete example](worked-example.md) without running anything.
 To try it, complete [setup](../README.md#try-it), then work from `token_use/`.

@@ -56,8 +56,7 @@ def main():
     replace("docs/worked-example.md", "PUBLIC-BEFORE", block(read("results/public-case/example-before.json")))
     replace("docs/worked-example.md", "PUBLIC-AFTER", block(read("results/public-case/example-after.json")))
     prompt = (ROOT / "templates/public-subject-review.txt").read_text().strip()
-    for path in ["docs/staff-guide.md", "docs/staff-guide.zh-CN.md"]:
-        replace(path, "STAFF-PROMPT", "> " + prompt)
+    replace("docs/staff-guide.md", "STAFF-PROMPT", "> " + prompt)
     cfg = read("configs/subject-review.json")
     field_table = "| Required information | Nonempty source values | Preservation / exception |\n| --- | ---: | --- |\n"
     exceptions = {"abstract": "R008 stays empty and is explicitly insufficient", "date": "R018's invalid date remains with a rule issue", "material_type": "R019's unrecognized type remains with a rule issue", "subjects": "R007's allowed but mismatched Astronomy term still reaches review", "restrictions": "R005/R016/R020 qualifications unchanged", "edition": "R015 remains separate", "copy": "R016 remains separate"}
@@ -65,7 +64,7 @@ def main():
         nonempty = sum(r.get(key) not in (None, "", []) for r in rows)
         field_table += f"| `{key}` | {nonempty}/{len(rows)} | Equal to original for every row; {exceptions.get(key, 'retained without rewriting')} |\n"
     replace("docs/experiment-report.md", "FIELD-RETENTION", field_table)
-    print("Rendered README examples, combined results, field-retention table, public worked example and identical staff prompts from stored artifacts.")
+    print("Rendered README examples, combined results, field-retention table, public worked example and staff prompt from stored artifacts.")
 
 
 if __name__ == "__main__":
