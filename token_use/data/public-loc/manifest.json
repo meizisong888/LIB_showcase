@@ -11,7 +11,7 @@
   "frozen_design_sha256": {
     "docs/public-case-design.md": "f17061bacc714359681c066973926aa74e711be5249a15faa19070f29c4f4736",
     "configs/public-subject-review.json": "b2d77b523cee8563f5965dd200b5daf91b2c8aeeb84d960598f8b34262852745",
-    "templates/public-subject-review.txt": "3b73d1cbc0bb6f0bdef5ab066d115266997a8d0ef5ebd09f989e010541909811"
+    "templates/public-subject-review.txt": "7c975640c198886ac1eb9d07a8e1c8bc3a01c2592055380789f3a5a4d72622f2"
   },
   "records": [
     {
@@ -109,6 +109,15 @@
       "source_locator": "data/public-loc/records.jsonl#L12",
       "rights_advisory": "No known restrictions on publication.",
       "record_sha256": "11bf55569f45404c7658c65fd63e76ffd49dc9ab2db4ea635f9df49bc36ada7a"
+    }
+  ],
+  "specification_revisions": [
+    {
+      "revised_utc": "2026-10-04T20:04:32.836059+00:00",
+      "file": "templates/public-subject-review.txt",
+      "previous_sha256": "3b73d1cbc0bb6f0bdef5ab066d115266997a8d0ef5ebd09f989e010541909811",
+      "sha256": "7c975640c198886ac1eb9d07a8e1c8bc3a01c2592055380789f3a5a4d72622f2",
+      "reason": "Standardize the insufficient-evidence label to English only at user request. Task scope, field selection and source records are unchanged; both complete inputs will be recounted."
     }
   ]
 }

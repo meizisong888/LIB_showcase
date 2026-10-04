@@ -52,8 +52,14 @@ by the collection response were used. See the [API documentation](https://www.lo
 The [design](../../docs/public-case-design.md), [field configuration](../../configs/public-subject-review.json)
 and [task prompt](../../templates/public-subject-review.txt) were fixed and hashed
 before token measurement. The date/reuse/notes fields were not removed to
-increase the measured reduction. Live API ordering or content may change;
-reproduce the published experiment with the checked-in snapshot. The separate
+increase the measured reduction. The manifest's `specification_revisions` records
+the later English-only response
+label update and both template hashes. The published inputs were regenerated
+and recounted with that revised prompt on both sides; source records and selected
+fields remain unchanged.
+
+Live API ordering or content may change; reproduce the published experiment
+with the checked-in snapshot. The separate
 [acquisition script](../../scripts/fetch_public_sample.py) documents how it was
 obtained and refuses to overwrite an existing snapshot. It is **not** invoked
 by local preprocessing.
@@ -92,7 +98,7 @@ configuration.
 
 | Data / task | Records → items | Baseline tokens | Prepared tokens | Input reduction | Retention and limit |
 | --- | ---: | ---: | ---: | ---: | --- |
-| Real LOC metadata · subject-review preparation | 12 → 12 | 14,914 | 11,487 | 22.98% | All 12 IDs and 29 configured field values per row preserved; 11 records need more evidence |
+| Real LOC metadata · subject-review preparation | 12 → 12 | 14,908 | 11,481 | 22.99% | All 12 IDs and 29 configured field values per row preserved; 11 records need more evidence |
 
 <!-- PUBLIC-RESULTS:END -->
 

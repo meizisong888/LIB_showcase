@@ -13,7 +13,7 @@
       "command": ".venv/bin/python scripts/prepare_public_case.py",
       "exit_status": 0,
       "stderr": "",
-      "stdout": "| Data / task | Records → items | Baseline tokens | Prepared tokens | Input reduction | Retention and limit |\n| --- | ---: | ---: | ---: | ---: | --- |\n| Real LOC metadata · subject-review preparation | 12 → 12 | 14,914 | 11,487 | 22.98% | All 12 IDs and 29 configured field values per row preserved; 11 records need more evidence |\nMissing required fields: {'summary': 11}. Prepared material only; no model judgment or quota measurement.\n"
+      "stdout": "| Data / task | Records → items | Baseline tokens | Prepared tokens | Input reduction | Retention and limit |\n| --- | ---: | ---: | ---: | ---: | --- |\n| Real LOC metadata · subject-review preparation | 12 → 12 | 14,908 | 11,481 | 22.99% | All 12 IDs and 29 configured field values per row preserved; 11 records need more evidence |\nMissing required fields: {'summary': 11}. Prepared material only; no model judgment or quota measurement.\n"
     },
     {
       "command": ".venv/bin/python scripts/run.py prepare --out outputs/review",
@@ -35,7 +35,7 @@
     }
   ],
   "compared_public_artifacts": 9,
-  "finished_utc": "2026-10-04T19:54:00.726987+00:00",
+  "finished_utc": "2026-10-04T20:04:48.925260+00:00",
   "historical_audit_documentation_revised": [
     "data/LICENSE",
     "data/README.md"
@@ -547,6 +547,6 @@
     "Librarian usability or production benefit"
   ],
   "original_artifact_check": "Verified 9 complete input pairs, 38 artifact hashes, 121 source locators and 114 local documentation links.",
-  "started_utc": "2026-10-04T19:53:58.974892+00:00",
+  "started_utc": "2026-10-04T20:04:47.001548+00:00",
   "status": "passed"
 }

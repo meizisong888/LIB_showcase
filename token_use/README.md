@@ -160,7 +160,7 @@ flags and instructions. Tables are generated from actual files.
 | Synthetic · TF-IDF top-5 | 15,212 → 1,279 | 91.59% | 5/12 relevant records; recall 41.67%; seven positives missed |
 | Synthetic · TF-IDF top-15 | 15,212 → 3,421 | 77.51% | 10/12 relevant records; recall 83.33%; two positives still missed |
 | Synthetic · second update | 13,812 → 1,076 | 92.21% | 56 preparations reused; four newly pending; no AI answers cached |
-| Real LOC metadata · subject preparation | 14,914 → 11,487 | 22.98% | 12 IDs; 29 configured content fields plus sources preserved; 11 missing summaries |
+| Real LOC metadata · subject preparation | 14,908 → 11,481 | 22.99% | 12 IDs; 29 configured content fields plus sources preserved; 11 missing summaries |
 
 <!-- SHOWCASE-RESULTS:END -->
 
@@ -253,7 +253,7 @@ Python 3.11+ is required; recorded runs used 3.13.11.
   supply an absent abstract or the underlying archival object.
 - The search must find everything: do not rely on top-k. Use the full source
   and appropriate subject expertise; a wider cutoff still can miss evidence.
-- Required evidence is missing: report **Insufficient information / 信息不足**
+- Required evidence is missing: report **Insufficient information**
   and obtain it; do not manufacture an answer.
 - Prior review conclusions are absent or outdated: a preparation cache is not
   permission to skip review.

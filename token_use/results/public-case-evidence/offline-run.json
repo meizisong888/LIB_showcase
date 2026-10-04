@@ -26,7 +26,7 @@
       "target": "('2606:4700:4700::1111', 443)"
     }
   ],
-  "finished_utc": "2026-10-04T19:28:04.513626+00:00",
+  "finished_utc": "2026-10-04T20:04:33.845820+00:00",
   "hokieai_allocation": "not measured",
   "imports_by_file": {
     "scripts/prepare_public_case.py": [
@@ -94,7 +94,7 @@
   "scope": "The new public-sample preprocessing process and descendants, after online acquisition/setup. Historical synthetic-run evidence is preserved separately. Not a librarian user test or an AI-answer evaluation.",
   "source_sha256": {
     "configs/public-subject-review.json": "b2d77b523cee8563f5965dd200b5daf91b2c8aeeb84d960598f8b34262852745",
-    "data/public-loc/manifest.json": "c16c9016ffbb28bd0714b2453d2213bd0e7dd2e58822c2d80034d4b38456a94d",
+    "data/public-loc/manifest.json": "548f08c68f933539230a3cc78810c9a67e03b2a0333492eeb25425e3453c77c4",
     "data/public-loc/records.jsonl": "faa19eb49965580a089f35d1d6134b90127fff91fd88eb0126d0184f55d00759",
     "requirements-lock.txt": "e2fa0bd18ed41b6b4eee449dc80c6f408a9aa68a20e867d74266926abf52d10f",
     "scripts/prepare_public_case.py": "291e1cdbd27642e131846ff718244aa3756e9221523b1782678f87ca82ff1430",
@@ -103,10 +103,10 @@
     "src/library_token_use/__init__.py": "1e803e916fbe2e8003408fce7bf37236af85634608d21ad4f501d534e196f571",
     "src/library_token_use/core.py": "75ce7a1d3c28fce0c1827716286bc3e43f009f6d518df7bff880caabf252af55",
     "src/library_token_use/counting.py": "da6119e67a4aea893712479b62fe327f02657513b50ae5ba1d6436f2eac94e91",
-    "templates/public-subject-review.txt": "3b73d1cbc0bb6f0bdef5ab066d115266997a8d0ef5ebd09f989e010541909811",
+    "templates/public-subject-review.txt": "7c975640c198886ac1eb9d07a8e1c8bc3a01c2592055380789f3a5a4d72622f2",
     "tests/test_public_case.py": "0369dde637c333d52853b817a229f771b2d57c304713c79bced319f975948584"
   },
-  "started_utc": "2026-10-04T19:28:03.951075+00:00",
+  "started_utc": "2026-10-04T20:04:33.149478+00:00",
   "tests_exit_status": 0,
   "traced_command": [
     "strace",
