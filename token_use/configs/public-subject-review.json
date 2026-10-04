@@ -1,0 +1,14 @@
+{
+  "task_id": "loc-color-photographs-text-subject-review-v1",
+  "input": "data/public-loc/records.jsonl",
+  "manifest": "data/public-loc/manifest.json",
+  "template": "templates/public-subject-review.txt",
+  "id_field": "id",
+  "source_field": "link",
+  "fields": ["title", "summary", "subject_headings", "subjects", "date", "created_published", "language", "contributors", "creators", "other_title", "medium", "format", "genre", "place", "call_number", "reproduction_number", "notes", "part_of", "source_collection", "repository", "rights_advisory", "rights_information", "digital_id", "control_number", "other_control_numbers", "number_former_id", "edition", "copy", "display_offsite"],
+  "required_for_review": ["title", "summary", "subject_headings", "date", "language", "notes", "part_of", "repository", "rights_advisory", "call_number", "reproduction_number"],
+  "optional_context": ["other_title", "edition", "copy"],
+  "scope": "Existing subjects versus title and summary only; no image interpretation, new headings or authority-control decision.",
+  "date_policy": "Keep original date strings, including uncertainty; do not invent a day or month.",
+  "vocabulary_policy": "No replacement headings requested. If a future task requires choosing from a vocabulary, include that complete vocabulary in both counted input files."
+}

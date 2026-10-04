@@ -1,0 +1,74 @@
+{
+  "2017877351": {
+    "id": "2017877351",
+    "item_id": "item-a123b63b1223fc2ed41b2277e14a4ac19d68b51a21d8f5f4e2aa0e0644e914d2",
+    "source_locator": "data/public-loc/records.jsonl#L1",
+    "source_url": "https://www.loc.gov/pictures/item/2017877351/"
+  },
+  "2017877359": {
+    "id": "2017877359",
+    "item_id": "item-925e73bba989ae33fb56b3f764a975fa0a8c8c407aedb68b658f90b8e071611b",
+    "source_locator": "data/public-loc/records.jsonl#L2",
+    "source_url": "https://www.loc.gov/pictures/item/2017877359/"
+  },
+  "2017877451": {
+    "id": "2017877451",
+    "item_id": "item-7dc54dde4f3ee674679e865bbe98b490b792e3c80f4decd89d184176417913e0",
+    "source_locator": "data/public-loc/records.jsonl#L3",
+    "source_url": "https://www.loc.gov/pictures/item/2017877451/"
+  },
+  "2017877452": {
+    "id": "2017877452",
+    "item_id": "item-29d07ad3e3a469b325d3fba4406f9bb6ea3e526cfc738ff40a7b5dcb1ea787a8",
+    "source_locator": "data/public-loc/records.jsonl#L5",
+    "source_url": "https://www.loc.gov/pictures/item/2017877452/"
+  },
+  "2017877453": {
+    "id": "2017877453",
+    "item_id": "item-5dcd58dbb1c3137db969de03ee4045c4e825636462c7fa83b97e7d5a0a61ce90",
+    "source_locator": "data/public-loc/records.jsonl#L6",
+    "source_url": "https://www.loc.gov/pictures/item/2017877453/"
+  },
+  "2017877454": {
+    "id": "2017877454",
+    "item_id": "item-3c942580d2aba2644eac8e84862627739a57dd7bcf7559b2c87151810d40f5b4",
+    "source_locator": "data/public-loc/records.jsonl#L7",
+    "source_url": "https://www.loc.gov/pictures/item/2017877454/"
+  },
+  "2017877464": {
+    "id": "2017877464",
+    "item_id": "item-ad14735db319d33eff55d55aad69fc5f93f798881da3140e5e1fbdc091c656e6",
+    "source_locator": "data/public-loc/records.jsonl#L11",
+    "source_url": "https://www.loc.gov/pictures/item/2017877464/"
+  },
+  "2017877465": {
+    "id": "2017877465",
+    "item_id": "item-748433ac984af8886cbfd003120ad3d5828ece3e95f458b4cb16e73072d0d75e",
+    "source_locator": "data/public-loc/records.jsonl#L12",
+    "source_url": "https://www.loc.gov/pictures/item/2017877465/"
+  },
+  "2017877476": {
+    "id": "2017877476",
+    "item_id": "item-775341e2f4113fa864be02e39e27ff1bc58ed2b11899f7e3b25f8190d5601a5e",
+    "source_locator": "data/public-loc/records.jsonl#L8",
+    "source_url": "https://www.loc.gov/pictures/item/2017877476/"
+  },
+  "2017877477": {
+    "id": "2017877477",
+    "item_id": "item-b9de4232a44d171af49632325549f24046dd30178dc80ec94a0288353ea30d4e",
+    "source_locator": "data/public-loc/records.jsonl#L9",
+    "source_url": "https://www.loc.gov/pictures/item/2017877477/"
+  },
+  "2017877478": {
+    "id": "2017877478",
+    "item_id": "item-5ae90ad94cb1b1a8b56f97785024893c155aa6de621bd12a80cce4d94c9a70f0",
+    "source_locator": "data/public-loc/records.jsonl#L10",
+    "source_url": "https://www.loc.gov/pictures/item/2017877478/"
+  },
+  "2017877502": {
+    "id": "2017877502",
+    "item_id": "item-eba8602f1f0b041dcb605b49d879fc9828ff175412f88179b7c2b8d05123e741",
+    "source_locator": "data/public-loc/records.jsonl#L4",
+    "source_url": "https://www.loc.gov/pictures/item/2017877502/"
+  }
+}

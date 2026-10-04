@@ -24,3 +24,23 @@ The verified background explains why reducing unnecessary input is useful;
 it supplies **no conversion** from this project's text tokens to HokieAI
 allocation, money, or total workflow usage. Current VT guidance remains the
 authority for actual use of that service.
+
+## Added real public metadata, checked 2026-10-04
+
+- [LOC FSA/OWI Color Photographs: Rights and Access](https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/):
+  the official indexed statement permits reuse of the public-domain collection.
+  Direct page retrieval returned 403; the indexed official text was available.
+  All twelve downloaded records also retain their native publication advisory.
+- [LOC JSON API endpoints](https://www.loc.gov/apis/json-and-yaml/requests/endpoints/):
+  collection results provide native bibliographic objects. We extracted the
+  first twelve `results[i].item` objects without filtering by content or size.
+- [LOC general terms](https://www.loc.gov/legal/): collection-specific conditions
+  must be checked; this project's choice does not imply all LOC holdings share
+  the same reuse status. The acquisition script uses one request for its sample.
+- [Exact source manifest](../data/public-loc/manifest.json) and
+  [sample documentation](../data/public-loc/README.md): download URL, acquisition
+  timestamp, source IDs, rights-check limitations, sampling, credit and hashes.
+
+This addition does not change the synthetic fixture's provenance or its
+Codex-assisted gold labels. The LOC descriptions themselves were not authored
+by Codex, and no real-source semantic correctness labels are claimed.

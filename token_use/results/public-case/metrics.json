@@ -1,0 +1,29 @@
+{
+  "all_configured_values_equal": true,
+  "baseline_tokens": 14914,
+  "codex_development_usage": "not measured",
+  "config": "configs/public-subject-review.json",
+  "configured_content_fields": 29,
+  "data_kind": "real public Library of Congress metadata; not synthetic",
+  "exact_duplicate_items_avoided": 0,
+  "hokieai_allocation": "not measured",
+  "insufficient_material_records": 11,
+  "missing_required_fields": {
+    "summary": 11
+  },
+  "model_answer_quality": "not measured",
+  "prepared_items": 12,
+  "prepared_tokens": 11487,
+  "records": 12,
+  "reduction": 0.2297840954807563,
+  "retained_ids": 12,
+  "source_records_sha256": "faa19eb49965580a089f35d1d6134b90127fff91fd88eb0126d0184f55d00759",
+  "task_template": "templates/public-subject-review.txt",
+  "tokenizer": {
+    "count_rule": "UTF-8 full file; encode with disallowed_special=(); no chat wrapper, output tokens or service-side attachments measured",
+    "encoding": "cl100k_base",
+    "library": "tiktoken",
+    "resource_sha256": "223921b76ee99bde995b7ff738513eef100fb51d18c93597a113bcffe865b2a7",
+    "version": "0.12.0"
+  }
+}

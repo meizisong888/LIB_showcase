@@ -4,6 +4,22 @@ Decide the library task first. These programs follow explicit instructions;
 they do not decide what the user really needs. A passed format rule is never
 a reason to omit a record from subject review.
 
+## Where the reduction happens
+
+| Method | Stage where work or input is reduced | What remains | What could be lost or still be wrong | Suitable task |
+| --- | --- | --- | --- | --- |
+| Explicit field selection | Material sent for the declared review | Task evidence, qualifications, every ID and source map | An incorrectly scoped field list can remove needed evidence; retained IDs alone prove little | Title/abstract/subject review preparation |
+| Rules and explicit conditions | Deterministic validation can finish locally; a scoped inventory excludes out-of-scope rows | Exact dates/types, exception ledger and source IDs | Plausible values may be false; a wrong year/type scope excludes useful records | Missing-field checks and a specified date/type inventory |
+| Exact grouping | Repeated preparation of identical task content | All member IDs, sources and selected version/copy distinctions | Near duplicates are not resolved; an omitted distinguishing field could make grouping unsafe | Repeated export rows within one task |
+| Dependency-aware incremental preparation | Rebuilding already prepared, unchanged material | Changed items, retirement ledger, current sources and dependency checks | No AI answer is cached; incomplete or outdated judgments still require review | A later export under a verified task/configuration |
+| TF-IDF candidate ranking | Number of candidate descriptions supplied | Complete selected descriptions, source pointers and scope-expansion route | Relevant records outside the cutoff, synonyms and other languages; lexical false positives | Initial research candidates, not exhaustive retrieval |
+
+The original synthetic comparisons and the added real LOC preparation use
+different source schemas and configurations. The LOC adapter preserves native
+date uncertainty rather than forcing dates such as `194[1] Jan.?` through the
+synthetic `YYYY-MM-DD` rule. It flags absent summaries, checks field equality,
+and does not validate headings against the synthetic teaching vocabulary.
+
 ## A. Task-driven field selection
 
 [subject-review.json](../configs/subject-review.json) names the fields to keep.

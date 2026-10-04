@@ -2,8 +2,10 @@
 
 Run date: **2026-10-04**. Exact UTC times, dependency versions, probe results
 and exit statuses are in [offline-run.json](../results/execution/offline-run.json).
-This is an experiment on synthetic preparation and evidence retention, not a
-study of production savings or AI-answer quality.
+The original experiment covers synthetic preparation and evidence retention.
+The added [real public-data case](#real-public-data-case) has separate input,
+outputs and execution evidence. Neither is a study of production savings or
+AI-answer quality.
 
 ## Design and data
 
@@ -63,8 +65,9 @@ accepts only documents and query configuration, never gold labels.
 
 <!-- RESULTS:END -->
 
-This table, the README table and [summary.md](../results/summary.md) are generated
-from the same [metrics.json](../results/metrics.json). The first and update
+This historical table and [summary.md](../results/summary.md) retain the original
+[metrics.json](../results/metrics.json). The README's combined table is rendered
+from those metrics and the separate public-case metrics. The first and update
 rows have different baselines as defined above; their percentages must not
 be added together. Dependency-reset rows each start independently from the
 second-run cache rather than accumulating changes in sequence.
@@ -82,6 +85,32 @@ The revised edition `R015`, copy B `R016`, and restrictions on `R005/R016/R020`
 survive. The separate rule-only inventory logs invalid date `R018` and invalid
 type `R019` as exceptions; those checks require no model.
 
+ID coverage alone is not an information-retention test. The configured
+subject-review requirements and their actual preservation are:
+
+<!-- FIELD-RETENTION:START -->
+
+| Required information | Nonempty source values | Preservation / exception |
+| --- | ---: | --- |
+| `title` | 60/60 | Equal to original for every row; retained without rewriting |
+| `abstract` | 59/60 | Equal to original for every row; R008 stays empty and is explicitly insufficient |
+| `subjects` | 60/60 | Equal to original for every row; R007's allowed but mismatched Astronomy term still reaches review |
+| `language` | 60/60 | Equal to original for every row; retained without rewriting |
+| `edition` | 60/60 | Equal to original for every row; R015 remains separate |
+| `copy` | 60/60 | Equal to original for every row; R016 remains separate |
+| `date` | 60/60 | Equal to original for every row; R018's invalid date remains with a rule issue |
+| `material_type` | 60/60 | Equal to original for every row; R019's unrecognized type remains with a rule issue |
+| `collection` | 60/60 | Equal to original for every row; retained without rewriting |
+| `restrictions` | 60/60 | Equal to original for every row; R005/R016/R020 qualifications unchanged |
+| `id` | 60/60 | Equal to original for every row; retained without rewriting |
+| `source_locator` | 60/60 | Equal to original for every row; retained without rewriting |
+
+<!-- FIELD-RETENTION:END -->
+
+The task configuration determines which evidence is needed; it cannot prove
+that an employee chose the right task scope. In particular, `local_shelf` was
+removed for this subject task and must return for a holdings-location task.
+
 **Case 2.** Top-5 finds only 5 of the 12 positive source rows. Its results
 include repeated export descriptions, visibly consuming candidate slots.
 Top-15 finds 10 of 12. It now includes `R004`, where location and response are
@@ -95,6 +124,23 @@ removes the input reduction. No cutoff here proves completeness in a real
 unlabeled collection. The twelve positives include two duplicate export rows;
 this is record-level recall, not deduplicated work-level recall.
 
+Top-5 recall is **41.67%**; top-15 recall is **83.33%**. The large input reductions
+therefore come with measured omissions. Every missed positive ID is accounted for:
+
+| ID | Narrow/wider result | Explanation grounded in the source and ranking |
+| --- | --- | --- |
+| R003 | Missed by both | Uses Blue Ridge, inundation and shared shelter rather than query words; zero query-term overlap. |
+| R004 | Missed by top-5; included at rank 15 | Lower lexical score; location and response occupy different paragraphs, both retained when selected. |
+| R005 | Missed by top-5; included at rank 13 | Relevant shelter response falls below the cutoff; source access qualification must stay attached. |
+| R010 | Missed by top-5; included at rank 8 | Relevant relief ledger falls below the narrow cutoff. |
+| R013 | Missed by top-5; included at rank 11 | Relevant evacuation/recovery evidence falls below the narrow cutoff. |
+| R015 | Missed by top-5; included at rank 6 | Revised-edition response evidence is outside top-5; other export rows occupy candidate slots. |
+| R017 | Missed by both | Spanish wording lacks the literal English query terms; retrieval has no translation. |
+
+Ranks come from [ranking.json](../results/case2/ranking.json); source judgments
+were fixed before retrieval. Widening is a recovery option, not a completeness
+guarantee. Neither selection is suitable as proof of an exhaustive search.
+
 **Case 3.** The first run prepares 60 active records as 58 items and establishes
 a cache. The second export has 61 rows: `R004` was deleted, `R005` is inactive,
 `R007` and `R020` changed, and `R061/R062` were added. It therefore has 60 active
@@ -104,6 +150,52 @@ locators are refreshed. Separate task-field, vocabulary and rule changes
 rebuild all 60 active records. The exact altered dependencies are saved beside
 each result. The cache stores prepared payloads only. No actual review answers
 were generated or reused; prior incomplete reviews still need completing.
+
+Thus 92.21% refers only to the reduction in newly pending prepared input versus
+the current full prepared batch. Actual AI review consumption is **not measured**.
+
+## Real public-data case
+
+Twelve real LOC FSA/OWI color-photograph records were acquired on 2026-10-04.
+They are separate from all synthetic gold labels and boundary tests. The
+[source README](../data/public-loc/README.md) documents reuse conditions,
+credit, exact API request, snapshot hashes and the unfiltered first-page sample.
+The [design](public-case-design.md), configuration and task prompt were fixed
+before token counting; no field or record was adjusted to improve reduction.
+
+<!-- PUBLIC-RESULTS:START -->
+
+| Data / task | Records → items | Baseline tokens | Prepared tokens | Input reduction | Retention and limit |
+| --- | ---: | ---: | ---: | ---: | --- |
+| Real LOC metadata · subject-review preparation | 12 → 12 | 14,914 | 11,487 | 22.98% | All 12 IDs and 29 configured field values per row preserved; 11 records need more evidence |
+
+<!-- PUBLIC-RESULTS:END -->
+
+Baseline: all fields in each native bibliographic `results[i].item` object,
+with the same source/member wrapper as prepared material. It excludes website
+response envelopes, not selected catalog evidence. Preparation retains the 29
+configured content fields and all original IDs/URLs/line pointers. Both files
+contain the same task template, JSON formatting and tokenizer convention as
+each other. The [retention ledger](../results/public-case/retention.json) checks
+all values and lists every deleted field and source absence.
+
+Eleven records have no summary. They remain in the prepared packet with explicit
+nulls and `insufficient_material`; this is a task-evidence limitation, not an
+automatic claim that the catalog is wrong. The one supplied summary retains its
+uncertainty and attribution. Original date strings such as `194[1] Jan.?` are
+not normalized into invented precision. All records have the native rights
+advisory preserved. Similar copper-plant titles remain separate source records;
+no duplicate reduction was manufactured.
+
+The new [blocked-network run](../results/public-case-evidence/offline-run.json)
+exited 0, traced zero network syscalls and passed four targeted checks. It uses
+the same local tokenizer and source-value equality approach. Acquisition and
+setup occur outside this run. The original synthetic core and its historical
+evidence were left intact; no need to rerun those unchanged calculations just
+to rewrite the explanation. The
+[developer reproduction check](../results/showcase-checks/developer-check.json)
+also executed the public-case command from the revised documentation and checked
+its outputs. It is not a librarian user test or an independent AI evaluation.
 
 ## Input files
 
@@ -173,4 +265,4 @@ missing tokenizer with no download fallback. Multiple invariants share a test.
 The defensible outcome is reproducible preparation, counted inputs and retained
 or missed evidence. It does not establish semantic answer equivalence, production
 effectiveness, general recall, or end-to-end token savings. See the
-[six-step staff workflow](staff-guide.md) for the checks that remain human work.
+[seven-step staff workflow](staff-guide.md) for the checks that remain human work.

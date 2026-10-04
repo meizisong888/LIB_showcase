@@ -1,5 +1,9 @@
 # Synthetic collection data
 
+This page describes the original synthetic fixture only. The separate
+[real public LOC sample](public-loc/README.md) has its own schema, provenance,
+rights statement and frozen source file.
+
 **No production library records, real patrons or private collections.** These
 are original, Codex-assisted teaching descriptions, authored on **2026-10-04**.
 The target directory contained no usable data. A small fixed synthetic corpus

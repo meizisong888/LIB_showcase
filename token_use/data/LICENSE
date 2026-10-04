@@ -1,6 +1,7 @@
 SPDX-License-Identifier: CC0-1.0
 
-Original synthetic collection fixtures and annotations in this data directory
+Original synthetic collection fixtures in data/raw and the synthetic annotations
+in data/retrieval-gold.json and data/subject-boundaries.json
 are dedicated to the public domain under CC0 1.0 Universal by meizisong888, 2026,
 to the extent legally possible. They may be copied, modified and redistributed.
 No real library, patron or collection record is represented.
@@ -9,3 +10,5 @@ CC0 1.0 Universal legal text:
 https://creativecommons.org/publicdomain/zero/1.0/legalcode
 
 The surrounding code and documentation retain the repository's MIT license.
+The real-source data/public-loc directory is excluded from this dedication;
+its Library of Congress source terms and credit are documented in its README.

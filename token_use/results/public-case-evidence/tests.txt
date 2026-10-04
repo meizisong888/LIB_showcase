@@ -1,0 +1,9 @@
+test_absent_summaries_are_not_reconstructed_from_captions (test_public_case.PublicCase.test_absent_summaries_are_not_reconstructed_from_captions) ... ok
+test_configuration_cannot_drop_required_rights (test_public_case.PublicCase.test_configuration_cannot_drop_required_rights) ... ok
+test_same_title_is_not_same_catalog_item (test_public_case.PublicCase.test_same_title_is_not_same_catalog_item) ... ok
+test_uncertain_dates_notes_rights_and_sources_survive (test_public_case.PublicCase.test_uncertain_dates_notes_rights_and_sources_survive) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.007s
+
+OK

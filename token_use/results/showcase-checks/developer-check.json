@@ -1,0 +1,596 @@
+{
+  "checks": [
+    "Documented commands executed successfully",
+    "Fresh public output equals published output byte for byte",
+    "Complete-file counts and identical task text verified",
+    "Original and new recorded source hashes match current preprocessing code",
+    "All original fixture/artifact checks still pass",
+    "README complete before/after JSON equals the measured source artifacts",
+    "English and Chinese guides contain the exact new task prompt"
+  ],
+  "commands": [
+    {
+      "command": ".venv/bin/python scripts/prepare_public_case.py",
+      "exit_status": 0,
+      "stderr": "",
+      "stdout": "| Data / task | Records → items | Baseline tokens | Prepared tokens | Input reduction | Retention and limit |\n| --- | ---: | ---: | ---: | ---: | --- |\n| Real LOC metadata · subject-review preparation | 12 → 12 | 14,914 | 11,487 | 22.98% | All 12 IDs and 29 configured field values per row preserved; 11 records need more evidence |\nMissing required fields: {'summary': 11}. Prepared material only; no model judgment or quota measurement.\n"
+    },
+    {
+      "command": ".venv/bin/python scripts/run.py prepare --out outputs/review",
+      "exit_status": 0,
+      "stderr": "",
+      "stdout": "Prepared /home/smeizi/Project/LIB/token_use/outputs/review/pending.txt; 13865 text tokens (cl100k_base). No model review performed.\n"
+    },
+    {
+      "command": "   .venv/bin/python scripts/run.py prepare --input data/raw/catalog-v2.jsonl --previous-cache outputs/review/cache.json --out outputs/review-v2",
+      "exit_status": 0,
+      "stderr": "",
+      "stdout": "Prepared /home/smeizi/Project/LIB/token_use/outputs/review-v2/pending.txt; 1076 text tokens (cl100k_base). No model review performed.\n"
+    },
+    {
+      "command": ".venv/bin/python scripts/run.py retrieve --all --out outputs/research-full",
+      "exit_status": 0,
+      "stderr": "",
+      "stdout": "Prepared /home/smeizi/Project/LIB/token_use/outputs/research-full/candidates.txt; 15212 text tokens (cl100k_base). No model review performed.\n"
+    }
+  ],
+  "compared_public_artifacts": 9,
+  "finished_utc": "2026-10-04T19:38:25.156874+00:00",
+  "historical_audit_documentation_revised": [
+    "data/LICENSE",
+    "data/README.md"
+  ],
+  "kind": "developer reproduction check; not librarian user testing",
+  "local_links": [
+    {
+      "document": "README.md",
+      "target": "#try-it"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/staff-guide.md"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/staff-guide.zh-CN.md"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/worked-example.md"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/methods.md#where-the-reduction-happens"
+    },
+    {
+      "document": "README.md",
+      "target": "data/raw/catalog-v1.jsonl#L7"
+    },
+    {
+      "document": "README.md",
+      "target": "results/case1/prepared.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "results/case1/retention.json"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/worked-example.md"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/experiment-report.md"
+    },
+    {
+      "document": "README.md",
+      "target": "data/public-loc/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "scripts/prepare_public_case.py"
+    },
+    {
+      "document": "README.md",
+      "target": "src/library_token_use/core.py"
+    },
+    {
+      "document": "README.md",
+      "target": "results/execution/offline-run.json"
+    },
+    {
+      "document": "README.md",
+      "target": "results/public-case-evidence/offline-run.json"
+    },
+    {
+      "document": "README.md",
+      "target": "data/public-loc/records.jsonl"
+    },
+    {
+      "document": "README.md",
+      "target": "configs/public-subject-review.json"
+    },
+    {
+      "document": "README.md",
+      "target": "results/public-case/prepared.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "templates/public-subject-review.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/staff-guide.md"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/staff-guide.zh-CN.md"
+    },
+    {
+      "document": "README.md",
+      "target": "../LICENSE"
+    },
+    {
+      "document": "README.md",
+      "target": "data/LICENSE"
+    },
+    {
+      "document": "README.md",
+      "target": "data/public-loc/README.md#source-and-reuse"
+    },
+    {
+      "document": "docs/staff-guide.zh-CN.md",
+      "target": "worked-example.md"
+    },
+    {
+      "document": "docs/staff-guide.zh-CN.md",
+      "target": "../README.md#try-it"
+    },
+    {
+      "document": "docs/staff-guide.zh-CN.md",
+      "target": "../data/public-loc/records.jsonl"
+    },
+    {
+      "document": "docs/staff-guide.zh-CN.md",
+      "target": "../data/public-loc/README.md#native-schema-and-retained-evidence"
+    },
+    {
+      "document": "docs/staff-guide.zh-CN.md",
+      "target": "../configs/public-subject-review.json"
+    },
+    {
+      "document": "docs/staff-guide.zh-CN.md",
+      "target": "../results/case1/retention.json"
+    },
+    {
+      "document": "docs/staff-guide.zh-CN.md",
+      "target": "../templates/public-subject-review.txt"
+    },
+    {
+      "document": "docs/staff-guide.zh-CN.md",
+      "target": "../data/README.md#schema"
+    },
+    {
+      "document": "docs/staff-guide.zh-CN.md",
+      "target": "../configs/subject-review.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/execution/offline-run.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "#real-public-data-case"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "experiment-design.md"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../data/raw/catalog-v1.jsonl"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../data/README.md"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../data/retrieval-gold.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../data/fixture-lock.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/summary.md"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/metrics.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case2/ranking.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../data/public-loc/README.md"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "public-case-design.md"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/public-case/retention.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/public-case-evidence/offline-run.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/showcase-checks/developer-check.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case1/baseline.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case1/prepared.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case1/retention.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case2/baseline.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case2/top5.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case2/top15.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case2/ranking.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case2/top15-evaluation.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/first/baseline.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/first/pending.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/first/status.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/second/baseline.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/second/pending.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/second/status.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/task-change/baseline.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/task-change/pending.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/task-change/dependency-change.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/vocabulary-change/baseline.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/vocabulary-change/pending.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/vocabulary-change/dependency-change.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/rules-change/baseline.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/rules-change/pending.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/rules-change/dependency-change.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/execution/offline-run.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/execution/network-syscalls.log"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/execution/code-audit.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../tests/test_invariants.py"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/execution/tests.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "staff-guide.md"
+    },
+    {
+      "document": "docs/sources.md",
+      "target": "methods.md"
+    },
+    {
+      "document": "docs/sources.md",
+      "target": "../data/README.md"
+    },
+    {
+      "document": "docs/sources.md",
+      "target": "../data/LICENSE"
+    },
+    {
+      "document": "docs/sources.md",
+      "target": "../results/metrics.json"
+    },
+    {
+      "document": "docs/sources.md",
+      "target": "../data/public-loc/manifest.json"
+    },
+    {
+      "document": "docs/sources.md",
+      "target": "../data/public-loc/README.md"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../data/public-loc/records.jsonl"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../data/public-loc/manifest.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case/example-before.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../configs/public-subject-review.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "public-case-design.md"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../README.md#try-it"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case/baseline.txt"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case/prepared.txt"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case/example-after.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case/retention.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case/id-map.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case/missing-information.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/case1/retention.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../templates/public-subject-review.txt"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case-evidence/offline-run.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case-evidence/tests.txt"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/showcase-checks/developer-check.json"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "worked-example.md"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../README.md#try-it"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../data/public-loc/records.jsonl"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../data/public-loc/README.md#native-schema-and-retained-evidence"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../configs/public-subject-review.json"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../results/case1/retention.json"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../templates/public-subject-review.txt"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../data/README.md#schema"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../configs/subject-review.json"
+    },
+    {
+      "document": "docs/experiment-design.md",
+      "target": "experiment-report.md"
+    },
+    {
+      "document": "docs/methods.md",
+      "target": "../configs/subject-review.json"
+    },
+    {
+      "document": "docs/methods.md",
+      "target": "../results/case1/retention.json"
+    },
+    {
+      "document": "docs/methods.md",
+      "target": "../configs/rules.json"
+    },
+    {
+      "document": "docs/methods.md",
+      "target": "../results/case1/rule-results.json"
+    },
+    {
+      "document": "docs/methods.md",
+      "target": "../configs/reports-2000-2025.json"
+    },
+    {
+      "document": "docs/methods.md",
+      "target": "../results/rules/scoped-inventory.json"
+    },
+    {
+      "document": "docs/methods.md",
+      "target": "../src/library_token_use/core.py"
+    },
+    {
+      "document": "data/README.md",
+      "target": "public-loc/README.md"
+    },
+    {
+      "document": "data/README.md",
+      "target": "LICENSE"
+    },
+    {
+      "document": "data/README.md",
+      "target": "raw/catalog-v1.jsonl"
+    },
+    {
+      "document": "data/README.md",
+      "target": "raw/catalog-v2.jsonl"
+    },
+    {
+      "document": "data/README.md",
+      "target": "retrieval-gold.json"
+    },
+    {
+      "document": "data/README.md",
+      "target": "subject-boundaries.json"
+    },
+    {
+      "document": "data/README.md",
+      "target": "fixture-lock.json"
+    },
+    {
+      "document": "data/README.md",
+      "target": "../scripts/make_demo_data.py"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "manifest.json"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "records.jsonl"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../docs/public-case-design.md"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../configs/public-subject-review.json"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../templates/public-subject-review.txt"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../scripts/fetch_public_sample.py"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../results/public-case/retention.json"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../docs/worked-example.md"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../results/public-case/baseline.txt"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../results/public-case/prepared.txt"
+    }
+  ],
+  "local_links_checked": 135,
+  "not_measured": [
+    "HokieAI allocation",
+    "Codex development usage",
+    "Independent AI-answer comparison",
+    "Librarian usability or production benefit"
+  ],
+  "original_artifact_check": "Verified 9 complete input pairs, 38 artifact hashes, 121 source locators and 125 local documentation links.",
+  "started_utc": "2026-10-04T19:38:23.432258+00:00",
+  "status": "passed"
+}

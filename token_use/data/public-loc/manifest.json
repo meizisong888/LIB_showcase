@@ -1,0 +1,114 @@
+{
+  "acquired_utc": "2026-10-04T19:24:42.209913+00:00",
+  "source_url": "https://www.loc.gov/collections/fsa-owi-color-photographs/?fo=json&c=12&sp=1",
+  "sampling": "First 12 results on collection page 1 in API-returned order; no query or content/completeness/token filtering. Fixed snapshot, not representative sampling.",
+  "extraction": "Each results[i].item is retained completely and unchanged in value, serialized as one JSON object per line. Site envelopes and image derivatives are not catalog records and are not included.",
+  "api_response_sha256": "91809d2222195f8e647746eca0653754116c1004cc8397acd143a97b17ef589d",
+  "records_sha256": "faa19eb49965580a089f35d1d6134b90127fff91fd88eb0126d0184f55d00759",
+  "rights_url": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/",
+  "credit_line": "Library of Congress, Prints & Photographs Division, Farm Security Administration/Office of War Information Color Photographs.",
+  "rights_verification": "Official collection rights statement retrieved through web search on 2026-10-04: collection contents are public domain and free to use/reuse. Direct rights-page HTTP requests returned 403; the official indexed statement was available. All 12 native item advisories were separately checked. No images downloaded.",
+  "frozen_design_sha256": {
+    "docs/public-case-design.md": "f17061bacc714359681c066973926aa74e711be5249a15faa19070f29c4f4736",
+    "configs/public-subject-review.json": "b2d77b523cee8563f5965dd200b5daf91b2c8aeeb84d960598f8b34262852745",
+    "templates/public-subject-review.txt": "3b73d1cbc0bb6f0bdef5ab066d115266997a8d0ef5ebd09f989e010541909811"
+  },
+  "records": [
+    {
+      "id": "2017877351",
+      "catalog_url": "https://www.loc.gov/pictures/item/2017877351/",
+      "source_result_url": "http://www.loc.gov/item/2017877351/",
+      "source_locator": "data/public-loc/records.jsonl#L1",
+      "rights_advisory": "No known restrictions on publication.",
+      "record_sha256": "666ef78eedebe19fc10485a48d35aa787d123eb54b533b72968b855595d7a72f"
+    },
+    {
+      "id": "2017877359",
+      "catalog_url": "https://www.loc.gov/pictures/item/2017877359/",
+      "source_result_url": "http://www.loc.gov/item/2017877359/",
+      "source_locator": "data/public-loc/records.jsonl#L2",
+      "rights_advisory": "No known restrictions on publication.",
+      "record_sha256": "0ef4d81808560a1e3ea02f425bfe51f8a37174f3820663b71c2808c8f2a54913"
+    },
+    {
+      "id": "2017877451",
+      "catalog_url": "https://www.loc.gov/pictures/item/2017877451/",
+      "source_result_url": "http://www.loc.gov/item/2017877451/",
+      "source_locator": "data/public-loc/records.jsonl#L3",
+      "rights_advisory": "No known restrictions on publication.",
+      "record_sha256": "878e460d567e2c2c775f5607f187e813b27acd5d69518d61b153f657482f38cb"
+    },
+    {
+      "id": "2017877502",
+      "catalog_url": "https://www.loc.gov/pictures/item/2017877502/",
+      "source_result_url": "http://www.loc.gov/item/2017877502/",
+      "source_locator": "data/public-loc/records.jsonl#L4",
+      "rights_advisory": "No known restrictions on publication.",
+      "record_sha256": "e427291e0f516588c03a5b8e5b769e621d1a7e1b779288342133430d910f8234"
+    },
+    {
+      "id": "2017877452",
+      "catalog_url": "https://www.loc.gov/pictures/item/2017877452/",
+      "source_result_url": "http://www.loc.gov/item/2017877452/",
+      "source_locator": "data/public-loc/records.jsonl#L5",
+      "rights_advisory": "No known restrictions on publication.",
+      "record_sha256": "7e5fbdd64b51ba3cd9b7938655438d42230182234827400b66afc562b4f00e8e"
+    },
+    {
+      "id": "2017877453",
+      "catalog_url": "https://www.loc.gov/pictures/item/2017877453/",
+      "source_result_url": "http://www.loc.gov/item/2017877453/",
+      "source_locator": "data/public-loc/records.jsonl#L6",
+      "rights_advisory": "No known restrictions on publication.",
+      "record_sha256": "546118c769162d06f1df9d84ef1d446c428633110c707b15d64ba9e6692a970e"
+    },
+    {
+      "id": "2017877454",
+      "catalog_url": "https://www.loc.gov/pictures/item/2017877454/",
+      "source_result_url": "http://www.loc.gov/item/2017877454/",
+      "source_locator": "data/public-loc/records.jsonl#L7",
+      "rights_advisory": "No known restrictions on publication.",
+      "record_sha256": "14596caa845b6cbf9736522d8cc8f65d121f3f578cf86d234369fb5f9f0d411d"
+    },
+    {
+      "id": "2017877476",
+      "catalog_url": "https://www.loc.gov/pictures/item/2017877476/",
+      "source_result_url": "http://www.loc.gov/item/2017877476/",
+      "source_locator": "data/public-loc/records.jsonl#L8",
+      "rights_advisory": "No known restrictions on publication.",
+      "record_sha256": "3595eba33a34755950adbb6b67d0bfaaa06916ba3b355fb4c6eea8b202268da7"
+    },
+    {
+      "id": "2017877477",
+      "catalog_url": "https://www.loc.gov/pictures/item/2017877477/",
+      "source_result_url": "http://www.loc.gov/item/2017877477/",
+      "source_locator": "data/public-loc/records.jsonl#L9",
+      "rights_advisory": "No known restrictions on publication.",
+      "record_sha256": "f7a8eae9d7341a6b1fe7d912d366e0dd1555ef795f9793700a4154c6b5daa1e4"
+    },
+    {
+      "id": "2017877478",
+      "catalog_url": "https://www.loc.gov/pictures/item/2017877478/",
+      "source_result_url": "http://www.loc.gov/item/2017877478/",
+      "source_locator": "data/public-loc/records.jsonl#L10",
+      "rights_advisory": "No known restrictions on publication.",
+      "record_sha256": "f174dc62a0a7fd4ae4f4db83b1a098a553c5df1f1621d10b01235da34100c7b7"
+    },
+    {
+      "id": "2017877464",
+      "catalog_url": "https://www.loc.gov/pictures/item/2017877464/",
+      "source_result_url": "http://www.loc.gov/item/2017877464/",
+      "source_locator": "data/public-loc/records.jsonl#L11",
+      "rights_advisory": "No known restrictions on publication.",
+      "record_sha256": "9a691809dc3adff3e65a52fb9053f4ff258a511603f45085421197287ccf7e98"
+    },
+    {
+      "id": "2017877465",
+      "catalog_url": "https://www.loc.gov/pictures/item/2017877465/",
+      "source_result_url": "http://www.loc.gov/item/2017877465/",
+      "source_locator": "data/public-loc/records.jsonl#L12",
+      "rights_advisory": "No known restrictions on publication.",
+      "record_sha256": "11bf55569f45404c7658c65fd63e76ffd49dc9ab2db4ea635f9df49bc36ada7a"
+    }
+  ]
+}

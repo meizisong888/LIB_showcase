@@ -1,0 +1,123 @@
+{
+  "code_inspection": "The entry point reads fixed JSON, projects fields, compares values, groups exact text and constructs a local tokenizer. No model client, local model loading, embeddings or online fallback. urllib is confined to the separate acquisition script. Socket use in this verification wrapper is limited to isolation probes.",
+  "codex_development_usage": "not measured",
+  "command": "bash scripts/run_public_offline.sh",
+  "dependencies": {
+    "certifi": "2026.7.22",
+    "charset-normalizer": "3.5.2",
+    "idna": "3.20",
+    "pip": "25.3",
+    "regex": "2026.9.29",
+    "requests": "2.34.2",
+    "tiktoken": "0.12.0",
+    "urllib3": "2.8.0"
+  },
+  "external_probes": [
+    {
+      "errno": 101,
+      "family": "AF_INET",
+      "result": "[Errno 101] Network is unreachable",
+      "target": "('1.1.1.1', 443)"
+    },
+    {
+      "errno": 99,
+      "family": "AF_INET6",
+      "result": "[Errno 99] Cannot assign requested address",
+      "target": "('2606:4700:4700::1111', 443)"
+    }
+  ],
+  "finished_utc": "2026-10-04T19:28:04.513626+00:00",
+  "hokieai_allocation": "not measured",
+  "imports_by_file": {
+    "scripts/prepare_public_case.py": [
+      "argparse",
+      "collections",
+      "hashlib",
+      "json",
+      "library_token_use.core",
+      "library_token_use.counting",
+      "pathlib",
+      "sys"
+    ],
+    "scripts/verify_public_offline.py": [
+      "argparse",
+      "ast",
+      "datetime",
+      "errno",
+      "hashlib",
+      "importlib.metadata",
+      "library_token_use.core",
+      "os",
+      "pathlib",
+      "socket",
+      "subprocess",
+      "sys"
+    ],
+    "src/library_token_use/__init__.py": [],
+    "src/library_token_use/core.py": [
+      "collections",
+      "datetime",
+      "hashlib",
+      "json",
+      "math",
+      "pathlib",
+      "re"
+    ],
+    "src/library_token_use/counting.py": [
+      "base64",
+      "core",
+      "hashlib",
+      "importlib.metadata",
+      "json",
+      "pathlib",
+      "tiktoken"
+    ],
+    "tests/test_public_case.py": [
+      "copy",
+      "library_token_use.core",
+      "pathlib",
+      "prepare_public_case",
+      "sys",
+      "unittest"
+    ]
+  },
+  "inner_network_namespace": "net:[4026533817]",
+  "interfaces": [
+    "lo"
+  ],
+  "method": "unshare --user --map-root-user --net; distinct namespace; IPv4/IPv6 probes; strace -f -e trace=network",
+  "model_answer_quality": "not measured",
+  "model_calls_in_preprocessing": 0,
+  "outer_network_namespace": "net:[4026531840]",
+  "preprocessing_exit_status": 0,
+  "preprocessing_network_syscall_count": 0,
+  "scope": "The new public-sample preprocessing process and descendants, after online acquisition/setup. Historical synthetic-run evidence is preserved separately. Not a librarian user test or an AI-answer evaluation.",
+  "source_sha256": {
+    "configs/public-subject-review.json": "b2d77b523cee8563f5965dd200b5daf91b2c8aeeb84d960598f8b34262852745",
+    "data/public-loc/manifest.json": "c16c9016ffbb28bd0714b2453d2213bd0e7dd2e58822c2d80034d4b38456a94d",
+    "data/public-loc/records.jsonl": "faa19eb49965580a089f35d1d6134b90127fff91fd88eb0126d0184f55d00759",
+    "requirements-lock.txt": "e2fa0bd18ed41b6b4eee449dc80c6f408a9aa68a20e867d74266926abf52d10f",
+    "scripts/prepare_public_case.py": "291e1cdbd27642e131846ff718244aa3756e9221523b1782678f87ca82ff1430",
+    "scripts/run_public_offline.sh": "b89b139b141fc785a0b47dcd3a937463b2f07cf9a806455412fc0942fd10391d",
+    "scripts/verify_public_offline.py": "7ec5acd9f501942cd0b0fcec4e0aeb7e30d0596196bd027de7e5d1351e3adf07",
+    "src/library_token_use/__init__.py": "1e803e916fbe2e8003408fce7bf37236af85634608d21ad4f501d534e196f571",
+    "src/library_token_use/core.py": "75ce7a1d3c28fce0c1827716286bc3e43f009f6d518df7bff880caabf252af55",
+    "src/library_token_use/counting.py": "da6119e67a4aea893712479b62fe327f02657513b50ae5ba1d6436f2eac94e91",
+    "templates/public-subject-review.txt": "3b73d1cbc0bb6f0bdef5ab066d115266997a8d0ef5ebd09f989e010541909811",
+    "tests/test_public_case.py": "0369dde637c333d52853b817a229f771b2d57c304713c79bced319f975948584"
+  },
+  "started_utc": "2026-10-04T19:28:03.951075+00:00",
+  "tests_exit_status": 0,
+  "traced_command": [
+    "strace",
+    "-f",
+    "-e",
+    "trace=network",
+    "-o",
+    "results/public-case-evidence/network-syscalls.log",
+    ".venv/bin/python",
+    "scripts/prepare_public_case.py",
+    "--out",
+    "results/public-case"
+  ]
+}
