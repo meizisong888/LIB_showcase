@@ -3,6 +3,9 @@
 A practical guide for library staff preparing collection records for AI review.
 **Read this page without installing anything**, or try the supplied files with
 `.venv/bin/python scripts/prepare_public_case.py` after [setup](#try-it).
+**Research extension:** [100 real LOC records: input ablation and planned quality study](research/README.md).
+The new pilot measures input counts; model and staff evaluations remain pending.
+
 [Staff guide](docs/staff-guide.md) ·
 [Complete worked example](docs/worked-example.md).
 

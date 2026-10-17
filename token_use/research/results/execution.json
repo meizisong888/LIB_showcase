@@ -1,0 +1,31 @@
+{
+  "executed_at_utc": "2026-10-17T20:37:40.711095+00:00",
+  "observed_network_syscalls": null,
+  "trace_sha256": null,
+  "pilot_sha256": "497d8a4f395495228cac826b423973dc3e36616ba05324a25995aea228140a91",
+  "network_namespace_isolation": false,
+  "namespace_probe": "unshare --user --map-root-user --net true failed: write failed /proc/self/uid_map: Operation not permitted",
+  "scope": "Default preprocessing uses local tokenizer files and a Python socket guard. OS network tracing and network namespace isolation could not be performed here. No model evaluation was run.",
+  "trace_status": "unavailable: ptrace is not permitted in this environment; empty trace is not evidence of zero calls",
+  "failed_trace_stderr": "strace: test_ptrace_get_syscall_info: PTRACE_TRACEME: Operation not permitted\nstrace: ptrace(PTRACE_TRACEME, ...): Operation not permitted\nstrace: PTRACE_SETOPTIONS: Operation not permitted\nstrace: cleanup: waitpid(-1, __WALL): No child processes\n",
+  "attempted_trace_command": [
+    "strace",
+    "-f",
+    "-e",
+    "trace=network",
+    "-o",
+    "results/network-syscalls.log",
+    "python",
+    "-B",
+    "pilot.py"
+  ],
+  "attempted_trace_exit_code": 1,
+  "command": [
+    "python",
+    "-B",
+    "pilot.py"
+  ],
+  "exit_code": 0,
+  "completed_at_utc": "2026-10-17T20:37:54.912620+00:00",
+  "note": "No trace file is distributed because tracing did not start; syscall count and trace digest are unavailable."
+}

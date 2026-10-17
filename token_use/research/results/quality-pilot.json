@@ -1,0 +1,142 @@
+{
+  "conditions": [
+    "full_pretty",
+    "full_compact",
+    "task_fields",
+    "title_subjects"
+  ],
+  "human_evaluation_status": "not_run",
+  "model_evaluation_status": "not_run",
+  "note": "Balanced pilot strata are not prevalence-representative. This file selects cases; it contains no gold labels or model answers.",
+  "records": [
+    {
+      "description_nonempty": true,
+      "record_key": "row-100",
+      "selection_sha256": "0636514f3de70a5401d558e6e70f47237d34b7e195771c58dd474b538a8d51d6",
+      "source_id": "http://www.loc.gov/item/2004680400/"
+    },
+    {
+      "description_nonempty": true,
+      "record_key": "row-046",
+      "selection_sha256": "097df225e45ce199a1dc9c89065630bc4adfe733137fc9242952f128e584e031",
+      "source_id": "http://www.loc.gov/item/2005677910/"
+    },
+    {
+      "description_nonempty": true,
+      "record_key": "row-018",
+      "selection_sha256": "0f05ec78f2d2b2a8b34d451d2ca26cbf8fe6263ed0f08436c3ffa3734f7dc234",
+      "source_id": "http://www.loc.gov/item/2014645761/"
+    },
+    {
+      "description_nonempty": true,
+      "record_key": "row-080",
+      "selection_sha256": "1511f1fe97d5829bae759f26bb4f9596f8e615586bf3d2962dee046d74168271",
+      "source_id": "http://www.loc.gov/item/98517503/"
+    },
+    {
+      "description_nonempty": true,
+      "record_key": "row-053",
+      "selection_sha256": "2502f83715aead0c46d19ff36f3b8d3b9f43546291d955071655f0063c584403",
+      "source_id": "http://www.loc.gov/item/96518598/"
+    },
+    {
+      "description_nonempty": true,
+      "record_key": "row-078",
+      "selection_sha256": "28e8c5e88b3a0695f7bc61336ca313673dc80ba9579e3ba7f2fcd035ae45460e",
+      "source_id": "http://www.loc.gov/item/2009615541/"
+    },
+    {
+      "description_nonempty": true,
+      "record_key": "row-028",
+      "selection_sha256": "37fdfa142cd9aa04e0cb9eac57582f145354a7dd25e05098f2cb2604e51d19f5",
+      "source_id": "http://www.loc.gov/item/2013645876/"
+    },
+    {
+      "description_nonempty": true,
+      "record_key": "row-036",
+      "selection_sha256": "4042805fec8970ed1f0cd6b4019e33e34efb95d7026c5900c118cf6faa6cc7cc",
+      "source_id": "http://www.loc.gov/item/2014691175/"
+    },
+    {
+      "description_nonempty": true,
+      "record_key": "row-050",
+      "selection_sha256": "434fe85b4a9710863de16e13b55be575cef12ce7c62bed307849b9428287b68e",
+      "source_id": "http://www.loc.gov/item/96503125/"
+    },
+    {
+      "description_nonempty": true,
+      "record_key": "row-062",
+      "selection_sha256": "438d984155cfe7fd84597cd48792057aed3e3dbd6c2bb2183f6e98f4881cc0ce",
+      "source_id": "http://www.loc.gov/item/2016832851/"
+    },
+    {
+      "description_nonempty": false,
+      "record_key": "row-048",
+      "selection_sha256": "111e6338b1ce03174744d37e17767f8b586338a0fb1c1ce5180b1cbba97aa8b1",
+      "source_id": "http://www.loc.gov/item/2017703606/"
+    },
+    {
+      "description_nonempty": false,
+      "record_key": "row-084",
+      "selection_sha256": "1510f9eaf2da86861461683aed9d378819b687faf0d4f8318b1f091e54aef183",
+      "source_id": "http://www.loc.gov/item/2004660284/"
+    },
+    {
+      "description_nonempty": false,
+      "record_key": "row-097",
+      "selection_sha256": "160253480cf80435fb98efc274e2208792112a84f45705f5c4f970cdd82b05b2",
+      "source_id": "http://www.loc.gov/item/2017702411/"
+    },
+    {
+      "description_nonempty": false,
+      "record_key": "row-037",
+      "selection_sha256": "1c8f2b392cdcf2a4657aaf1a79ff67a026e257be814b75a931720f618a09b960",
+      "source_id": "http://www.loc.gov/item/2010630915/"
+    },
+    {
+      "description_nonempty": false,
+      "record_key": "row-092",
+      "selection_sha256": "1cde16565eac8e8eae97cfa58e03b69a28c6c5d3d139701669ebf060d18f21f5",
+      "source_id": "http://www.loc.gov/item/afcwip001660/"
+    },
+    {
+      "description_nonempty": false,
+      "record_key": "row-017",
+      "selection_sha256": "24358fdffe3f5fc4b42a2d8576e2d655f398ff6fa2d35808b9054dc4f9e65c05",
+      "source_id": "http://www.loc.gov/item/2012592150/"
+    },
+    {
+      "description_nonempty": false,
+      "record_key": "row-054",
+      "selection_sha256": "2627e3cb56f6f494b55ea40e63b0ba79aa96a5c0d927de0a59f51d2dcdf10926",
+      "source_id": "http://www.loc.gov/item/94506959/"
+    },
+    {
+      "description_nonempty": false,
+      "record_key": "row-038",
+      "selection_sha256": "28cb7ba407efa7555ac721646cbd0a288df61c1d4b5b33bdc291f40628ca50d4",
+      "source_id": "http://www.loc.gov/item/2002719743/"
+    },
+    {
+      "description_nonempty": false,
+      "record_key": "row-011",
+      "selection_sha256": "300a5b01acf30a13533774650f7776a3b65a95f21e9760829799825e9b5db351",
+      "source_id": "http://www.loc.gov/item/2017811986/"
+    },
+    {
+      "description_nonempty": false,
+      "record_key": "row-085",
+      "selection_sha256": "33af64daf4e38c429e40f07c70452b724d48ccc2e0ef1f298d0a3d44d500ab0f",
+      "source_id": "http://www.loc.gov/item/afc1993001_196614_01/"
+    }
+  ],
+  "requested_per_description_stratum": 10,
+  "requests_path": "outputs/pilot-requests.jsonl",
+  "seed": "library-token-pilot-v1",
+  "selected_count": 20,
+  "selection_method": "Within each Description-availability stratum, ascending SHA256(seed + newline + canonical JSON source Id + newline + unique row key). No token-count or model-output-based selection.",
+  "source_stratum_counts": {
+    "description_missing": 69,
+    "description_present": 31
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    ".cache/cl100k_base.json": "b9b32d2f562688ec43d7a8066f807cbfb9f7675f0c25e2c93735091a2ffbd5c9",
+    ".cache/cl100k_base.tiktoken": "223921b76ee99bde995b7ff738513eef100fb51d18c93597a113bcffe865b2a7",
+    ".cache/manifest.json": "56e83dc2e1aa2e91f79f41ffb7fdd81683289ee347ffe768f4bebb09021373d9",
+    ".cache/o200k_base.json": "28cafc5d17c9a93063ee3a7bb3b353f31a1b62502aeee8e09203c2335c928dcf",
+    ".cache/o200k_base.tiktoken": "446a9538cb6c348e3516120d7c08b09f57c36495e2acfffe59a5bf8b0cfb1a2d",
+    "config.json": "4c059d0f444f05f1f0d67b2d6e4bdacf3488055f48afac7a0fcfc4db9be7e68e",
+    "data/loc-sample.json": "26ef5cb83d257de108a567f26f888510a7a7c530dfcb7937ea6a5e15588f9be5",
+    "data/manifest.json": "26bc6b1067762c366960aad0b16384ecd69be088fe3b3b2b20a540616c49254c",
+    "design-lock.json": "a1547723c2f77ba9f0a124a6d4d9b2bcd63162d19129ba7c69d5480a4f6f1863",
+    "outputs/pilot-requests.jsonl": "acb3ef645a70a7897ae5fd124c992e999e2e28668ede9cefdf98ac4940d6cfca",
+    "outputs/requests.jsonl": "d201f7da2bffe40b2348421ba5fc67730b2d6dd3dc1be168b381c72fef7c5539",
+    "pilot.py": "497d8a4f395495228cac826b423973dc3e36616ba05324a25995aea228140a91",
+    "results/example.json": "41bcf15b26fc8ffa2d63724554a835471ab193916544cf362ed21b3923a5c2a1",
+    "results/field-audit.json": "0fb5d6f73f634d047c3710719cb40cd63938645eb88deafc141abd6438fa2cb8",
+    "results/per-record.csv": "a19defb50e4c720fd4b1e71faf34de079c3d8b5170b287158d00d10bbb7691e3",
+    "results/prompt-inventory.json": "b16295fb0403668e4c0452d254c64e56fce6ba13aa2829f68b8660dab87b3bbd",
+    "results/quality-pilot.json": "10d6710d2b7320c1b8bc21340ac02c390144b8951d544dd1aaa77b926ef0c8d2",
+    "results/summary.json": "7b1b4f3651cec9e475170a0a823f55ef7c95e228889f18e30b28fea25d6bda55",
+    "task.txt": "995e57c3d9c3d688a4d4938e19e732ed00291e7951bf764df129786a395030d2"
+  },
+  "note": "Deterministic inputs, program, tokenizer tables, prepared prompts, and output artifacts. Variable timing/environment evidence is recorded separately; this manifest does not hash itself."
+}

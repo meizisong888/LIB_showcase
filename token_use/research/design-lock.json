@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-10-17T20:32:40.116107+00:00",
+  "note": "Configuration and task fixed before the first token-count run. This is a pilot design lock, not a public preregistration.",
+  "files": {
+    "config.json": "4c059d0f444f05f1f0d67b2d6e4bdacf3488055f48afac7a0fcfc4db9be7e68e",
+    "task.txt": "995e57c3d9c3d688a4d4938e19e732ed00291e7951bf764df129786a395030d2",
+    "data/loc-sample.json": "26ef5cb83d257de108a567f26f888510a7a7c530dfcb7937ea6a5e15588f9be5"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": "pilot-v1",
+  "task": "source-grounded public-facing collection description",
+  "input": "data/loc-sample.json",
+  "encodings": ["cl100k_base", "o200k_base"],
+  "retained_fields": ["Id", "Url", "Title", "Other_title", "Description", "Notes", "Creators", "Contributors", "Date", "Date_text", "Language", "Subject_headings", "Subjects", "Original_format", "Type_of_resource", "Medium", "Genre", "Rights", "Source_collection", "Repository", "Location_text", "Part_of", "Set", "Call_number", "Shelf_id", "Lccn", "Index"],
+  "stress_fields": ["Id", "Url", "Title", "Subjects", "Subject_headings"],
+  "conditions": ["full_pretty", "full_compact", "task_fields", "title_subjects"],
+  "primary_baseline": "full_compact",
+  "quality_pilot_per_description_stratum": 10,
+  "quality_pilot_seed": "library-token-pilot-v1",
+  "prompt_file": "task.txt"
+}

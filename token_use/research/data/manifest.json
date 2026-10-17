@@ -1,0 +1,9 @@
+{
+  "source_url": "https://data.labs.loc.gov/free-to-use/sample-data/metadata.json",
+  "documentation_url": "https://data.labs.loc.gov/free-to-use/README.html",
+  "retrieved_at": "2026-10-17T20:31:57.371212+00:00",
+  "sha256": "26ef5cb83d257de108a567f26f888510a7a7c530dfcb7937ea6a5e15588f9be5",
+  "bytes": 427069,
+  "record_count": 100,
+  "sampling": "All records in the official 100-item random sample; no outcome-dependent exclusions. Original sampling seed not documented."
+}

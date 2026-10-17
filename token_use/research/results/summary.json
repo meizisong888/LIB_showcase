@@ -1,0 +1,507 @@
+{
+  "checks": {
+    "all_retained_values_equal_source": true,
+    "all_source_rows_in_every_condition": true,
+    "pretty_compact_json_roundtrip_equal": true,
+    "unique_request_ids": true
+  },
+  "conditions": {
+    "full_compact": {
+      "tokens": {
+        "cl100k_base": {
+          "mean_per_record": 1296.71,
+          "median_per_record": 1246.5,
+          "reduction_from_full_compact": {
+            "iqr_record_pct": 0.0,
+            "max_record_pct": 0.0,
+            "mean_record_pct": 0.0,
+            "median_record_pct": 0.0,
+            "min_record_pct": 0.0,
+            "q1_record_pct": 0.0,
+            "q3_record_pct": 0.0,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": 0.0
+          },
+          "reduction_from_full_pretty": {
+            "iqr_record_pct": 2.927238,
+            "max_record_pct": 23.938224,
+            "mean_record_pct": 19.670891,
+            "median_record_pct": 20.080405,
+            "min_record_pct": 10.722057,
+            "q1_record_pct": 18.275278,
+            "q3_record_pct": 21.202515,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": 19.430982
+          },
+          "total": 129671
+        },
+        "o200k_base": {
+          "mean_per_record": 1315.61,
+          "median_per_record": 1257.5,
+          "reduction_from_full_compact": {
+            "iqr_record_pct": 0.0,
+            "max_record_pct": 0.0,
+            "mean_record_pct": 0.0,
+            "median_record_pct": 0.0,
+            "min_record_pct": 0.0,
+            "q1_record_pct": 0.0,
+            "q3_record_pct": 0.0,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": 0.0
+          },
+          "reduction_from_full_pretty": {
+            "iqr_record_pct": 2.908344,
+            "max_record_pct": 22.376543,
+            "mean_record_pct": 18.45488,
+            "median_record_pct": 18.85502,
+            "min_record_pct": 10.364034,
+            "q1_record_pct": 17.034091,
+            "q3_record_pct": 19.942435,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": 18.241929
+          },
+          "total": 131561
+        }
+      }
+    },
+    "full_pretty": {
+      "tokens": {
+        "cl100k_base": {
+          "mean_per_record": 1609.44,
+          "median_per_record": 1542.0,
+          "reduction_from_full_compact": {
+            "iqr_record_pct": 4.545602,
+            "max_record_pct": -12.00975,
+            "mean_record_pct": -24.599532,
+            "median_record_pct": -25.125759,
+            "min_record_pct": -31.472081,
+            "q1_record_pct": -26.907604,
+            "q3_record_pct": -22.362002,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": -24.117189
+          },
+          "reduction_from_full_pretty": {
+            "iqr_record_pct": 0.0,
+            "max_record_pct": 0.0,
+            "mean_record_pct": 0.0,
+            "median_record_pct": 0.0,
+            "min_record_pct": 0.0,
+            "q1_record_pct": 0.0,
+            "q3_record_pct": 0.0,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": 0.0
+          },
+          "total": 160944
+        },
+        "o200k_base": {
+          "mean_per_record": 1609.15,
+          "median_per_record": 1543.0,
+          "reduction_from_full_compact": {
+            "iqr_record_pct": 4.378679,
+            "max_record_pct": -11.562361,
+            "mean_record_pct": -22.728934,
+            "median_record_pct": -23.236255,
+            "min_record_pct": -28.827038,
+            "q1_record_pct": -24.91012,
+            "q3_record_pct": -20.531441,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": -22.312083
+          },
+          "reduction_from_full_pretty": {
+            "iqr_record_pct": 0.0,
+            "max_record_pct": 0.0,
+            "mean_record_pct": 0.0,
+            "median_record_pct": 0.0,
+            "min_record_pct": 0.0,
+            "q1_record_pct": 0.0,
+            "q3_record_pct": 0.0,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": 0.0
+          },
+          "total": 160915
+        }
+      }
+    },
+    "task_fields": {
+      "tokens": {
+        "cl100k_base": {
+          "mean_per_record": 858.25,
+          "median_per_record": 837.5,
+          "reduction_from_full_compact": {
+            "iqr_record_pct": 9.055539,
+            "max_record_pct": 47.53937,
+            "mean_record_pct": 34.132716,
+            "median_record_pct": 34.712495,
+            "min_record_pct": 10.137457,
+            "q1_record_pct": 29.925306,
+            "q3_record_pct": 38.980846,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": 33.813266
+          },
+          "reduction_from_full_pretty": {
+            "iqr_record_pct": 7.721735,
+            "max_record_pct": 59.803922,
+            "mean_record_pct": 46.989829,
+            "median_record_pct": 47.577176,
+            "min_record_pct": 23.649635,
+            "q1_record_pct": 43.760504,
+            "q3_record_pct": 51.482239,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": 46.673998
+          },
+          "total": 85825
+        },
+        "o200k_base": {
+          "mean_per_record": 866.56,
+          "median_per_record": 845.0,
+          "reduction_from_full_compact": {
+            "iqr_record_pct": 8.901508,
+            "max_record_pct": 47.63285,
+            "mean_record_pct": 34.408687,
+            "median_record_pct": 34.98486,
+            "min_record_pct": 10.236887,
+            "q1_record_pct": 30.259041,
+            "q3_record_pct": 39.160549,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": 34.132456
+          },
+          "reduction_from_full_pretty": {
+            "iqr_record_pct": 7.720874,
+            "max_record_pct": 59.155991,
+            "mean_record_pct": 46.419118,
+            "median_record_pct": 46.959976,
+            "min_record_pct": 22.667638,
+            "q1_record_pct": 43.219769,
+            "q3_record_pct": 50.940643,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": 46.147966
+          },
+          "total": 86656
+        }
+      }
+    },
+    "title_subjects": {
+      "tokens": {
+        "cl100k_base": {
+          "mean_per_record": 315.03,
+          "median_per_record": 309.0,
+          "reduction_from_full_compact": {
+            "iqr_record_pct": 6.560271,
+            "max_record_pct": 87.99025,
+            "mean_record_pct": 74.428466,
+            "median_record_pct": 75.773591,
+            "min_record_pct": 60.404949,
+            "q1_record_pct": 71.231825,
+            "q3_record_pct": 77.792096,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": 75.705439
+          },
+          "reduction_from_full_pretty": {
+            "iqr_record_pct": 5.381968,
+            "max_record_pct": 89.277943,
+            "mean_record_pct": 79.511877,
+            "median_record_pct": 80.214573,
+            "min_record_pct": 69.068541,
+            "q1_record_pct": 77.137984,
+            "q3_record_pct": 82.519951,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": 80.426111
+          },
+          "total": 31503
+        },
+        "o200k_base": {
+          "mean_per_record": 315.5,
+          "median_per_record": 311.5,
+          "reduction_from_full_compact": {
+            "iqr_record_pct": 6.316314,
+            "max_record_pct": 87.927208,
+            "mean_record_pct": 74.766061,
+            "median_record_pct": 76.064186,
+            "min_record_pct": 61.037528,
+            "q1_record_pct": 71.688501,
+            "q3_record_pct": 78.004815,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": 76.018729
+          },
+          "reduction_from_full_pretty": {
+            "iqr_record_pct": 5.390825,
+            "max_record_pct": 89.178436,
+            "mean_record_pct": 79.470551,
+            "median_record_pct": 80.200615,
+            "min_record_pct": 69.062226,
+            "q1_record_pct": 77.05029,
+            "q3_record_pct": 82.441115,
+            "quartile_method": "statistics.quantiles(n=4, method='inclusive')",
+            "total_pct": 80.393375
+          },
+          "total": 31550
+        }
+      }
+    }
+  },
+  "encodings": [
+    "cl100k_base",
+    "o200k_base"
+  ],
+  "experiment": "pilot-v1",
+  "human_evaluation_status": "not_run",
+  "model_evaluation_status": "not_run",
+  "natural_duplicates": {
+    "deduplication_applied": false,
+    "exact_full_records": {
+      "additional_rows_beyond_first": 0,
+      "duplicate_groups": 0,
+      "groups": [],
+      "rows_in_duplicate_groups": 0,
+      "unique_values": 100
+    },
+    "exact_task_content": {
+      "additional_rows_beyond_first": 0,
+      "duplicate_groups": 0,
+      "groups": [],
+      "rows_in_duplicate_groups": 0,
+      "unique_values": 100
+    },
+    "note": "Descriptive statistics only. Task-content comparison omits Id and Url but retains all other configured fields. All source rows are still processed independently; no savings are attributed to duplicate handling.",
+    "source_ids": {
+      "additional_rows_beyond_first": 0,
+      "duplicate_groups": 0,
+      "groups": [],
+      "rows_in_duplicate_groups": 0,
+      "unique_values": 100
+    },
+    "task_content_comparison_fields": [
+      "Title",
+      "Other_title",
+      "Description",
+      "Notes",
+      "Creators",
+      "Contributors",
+      "Date",
+      "Date_text",
+      "Language",
+      "Subject_headings",
+      "Subjects",
+      "Original_format",
+      "Type_of_resource",
+      "Medium",
+      "Genre",
+      "Rights",
+      "Source_collection",
+      "Repository",
+      "Location_text",
+      "Part_of",
+      "Set",
+      "Call_number",
+      "Shelf_id",
+      "Lccn",
+      "Index"
+    ]
+  },
+  "primary_baseline": "full_compact",
+  "quality_requests": {
+    "count": 80,
+    "path": "outputs/pilot-requests.jsonl",
+    "sha256": "acb3ef645a70a7897ae5fd124c992e999e2e28668ede9cefdf98ac4940d6cfca"
+  },
+  "record_count": 100,
+  "requests": {
+    "count": 400,
+    "path": "outputs/requests.jsonl",
+    "sha256": "d201f7da2bffe40b2348421ba5fc67730b2d6dd3dc1be168b381c72fef7c5539"
+  },
+  "runtime_evidence": "results/run-environment.json",
+  "source": {
+    "bytes": 427069,
+    "documentation_url": "https://data.labs.loc.gov/free-to-use/README.html",
+    "record_count": 100,
+    "retrieved_at": "2026-10-17T20:31:57.371212+00:00",
+    "sampling": "All records in the official 100-item random sample; no outcome-dependent exclusions. Original sampling seed not documented.",
+    "sha256": "26ef5cb83d257de108a567f26f888510a7a7c530dfcb7937ea6a5e15588f9be5",
+    "source_url": "https://data.labs.loc.gov/free-to-use/sample-data/metadata.json"
+  },
+  "source_field_coverage": {
+    "Call_number": {
+      "empty_or_absent_records": 3,
+      "nonempty_records": 97,
+      "present_records": 100
+    },
+    "Contributors": {
+      "empty_or_absent_records": 23,
+      "nonempty_records": 77,
+      "present_records": 100
+    },
+    "Creators": {
+      "empty_or_absent_records": 35,
+      "nonempty_records": 65,
+      "present_records": 100
+    },
+    "Date": {
+      "empty_or_absent_records": 1,
+      "nonempty_records": 99,
+      "present_records": 100
+    },
+    "Date_text": {
+      "empty_or_absent_records": 20,
+      "nonempty_records": 80,
+      "present_records": 100
+    },
+    "Description": {
+      "empty_or_absent_records": 69,
+      "nonempty_records": 31,
+      "present_records": 100
+    },
+    "Digitized": {
+      "empty_or_absent_records": 0,
+      "nonempty_records": 100,
+      "present_records": 100
+    },
+    "Genre": {
+      "empty_or_absent_records": 37,
+      "nonempty_records": 63,
+      "present_records": 100
+    },
+    "IIIF_manifest": {
+      "empty_or_absent_records": 0,
+      "nonempty_records": 100,
+      "present_records": 100
+    },
+    "Id": {
+      "empty_or_absent_records": 0,
+      "nonempty_records": 100,
+      "present_records": 100
+    },
+    "Index": {
+      "empty_or_absent_records": 0,
+      "nonempty_records": 100,
+      "present_records": 100
+    },
+    "Language": {
+      "empty_or_absent_records": 1,
+      "nonempty_records": 99,
+      "present_records": 100
+    },
+    "Last_updated_in_api": {
+      "empty_or_absent_records": 0,
+      "nonempty_records": 100,
+      "present_records": 100
+    },
+    "Lccn": {
+      "empty_or_absent_records": 14,
+      "nonempty_records": 86,
+      "present_records": 100
+    },
+    "Location": {
+      "empty_or_absent_records": 35,
+      "nonempty_records": 65,
+      "present_records": 100
+    },
+    "Location_text": {
+      "empty_or_absent_records": 34,
+      "nonempty_records": 66,
+      "present_records": 100
+    },
+    "Medium": {
+      "empty_or_absent_records": 3,
+      "nonempty_records": 97,
+      "present_records": 100
+    },
+    "Mime_type": {
+      "empty_or_absent_records": 0,
+      "nonempty_records": 100,
+      "present_records": 100
+    },
+    "Notes": {
+      "empty_or_absent_records": 2,
+      "nonempty_records": 98,
+      "present_records": 100
+    },
+    "Number_of_files": {
+      "empty_or_absent_records": 3,
+      "nonempty_records": 97,
+      "present_records": 100
+    },
+    "Online_format": {
+      "empty_or_absent_records": 0,
+      "nonempty_records": 100,
+      "present_records": 100
+    },
+    "Original_format": {
+      "empty_or_absent_records": 0,
+      "nonempty_records": 100,
+      "present_records": 100
+    },
+    "Other_record_formats": {
+      "empty_or_absent_records": 11,
+      "nonempty_records": 89,
+      "present_records": 100
+    },
+    "Other_title": {
+      "empty_or_absent_records": 91,
+      "nonempty_records": 9,
+      "present_records": 100
+    },
+    "Part_of": {
+      "empty_or_absent_records": 0,
+      "nonempty_records": 100,
+      "present_records": 100
+    },
+    "Preview_url": {
+      "empty_or_absent_records": 0,
+      "nonempty_records": 100,
+      "present_records": 100
+    },
+    "Repository": {
+      "empty_or_absent_records": 2,
+      "nonempty_records": 98,
+      "present_records": 100
+    },
+    "Rights": {
+      "empty_or_absent_records": 1,
+      "nonempty_records": 99,
+      "present_records": 100
+    },
+    "Set": {
+      "empty_or_absent_records": 0,
+      "nonempty_records": 100,
+      "present_records": 100
+    },
+    "Shelf_id": {
+      "empty_or_absent_records": 0,
+      "nonempty_records": 100,
+      "present_records": 100
+    },
+    "Source_collection": {
+      "empty_or_absent_records": 46,
+      "nonempty_records": 54,
+      "present_records": 100
+    },
+    "Subject_headings": {
+      "empty_or_absent_records": 9,
+      "nonempty_records": 91,
+      "present_records": 100
+    },
+    "Subjects": {
+      "empty_or_absent_records": 3,
+      "nonempty_records": 97,
+      "present_records": 100
+    },
+    "Title": {
+      "empty_or_absent_records": 0,
+      "nonempty_records": 100,
+      "present_records": 100
+    },
+    "Type_of_resource": {
+      "empty_or_absent_records": 3,
+      "nonempty_records": 97,
+      "present_records": 100
+    },
+    "Url": {
+      "empty_or_absent_records": 0,
+      "nonempty_records": 100,
+      "present_records": 100
+    }
+  },
+  "task": "source-grounded public-facing collection description",
+  "token_measurement": "Text of each complete task prompt plus one serialized metadata record, counted separately. Includes the same task instructions in every condition. Excludes provider chat framing, output/reasoning tokens, retries, billing, and any HokieAI allocation conversion."
+}
