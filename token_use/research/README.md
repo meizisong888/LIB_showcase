@@ -1,7 +1,8 @@
 # Library metadata research pilot
 
-**Research question:** Which preparation steps can reduce LLM input for a library
-item-description task while maintaining a useful, accurate staff draft?
+**Research question:** Which preparation steps, without calling a model, can
+reduce large language model (LLM) input for a library item-description task
+while maintaining an accurate, informative staff draft?
 
 **Executed:** 100 real Library of Congress records, four input conditions, two
 local tokenizers, and exact field-value checks. **Pending:** actual model answers,
@@ -9,7 +10,8 @@ provider usage, and independent staff assessment. The 400 generated prompts are
 prepared experimental inputs, not 400 completed model calls.
 
 [Study protocol](protocol.md) · [Related research](references.md) ·
-[Model evaluation instructions](model-evaluation.md) · [Original showcase](../README.md)
+[Model evaluation instructions](model-evaluation.md) ·
+[Local reproduction](reproduction.md) · [Original showcase](../README.md)
 
 ## Why this is the next experiment
 
@@ -77,11 +79,13 @@ tokenization. It loads no language model or embedding model. Source acquisition
 and tokenizer setup are separate online steps; default runs require verified
 local tables and block Python socket entry points.
 
-The recorded default run succeeded. This environment did not permit `strace`
-or network namespaces, so **no OS-level network-isolation or zero-syscall claim
-is made for this new pilot**. The failed instrumentation attempts are recorded
-in [execution.json](results/execution.json), rather than interpreted as successful
-offline evidence. This does not change the older showcase's separate evidence.
+The supplied run succeeded, but its environment did not permit `strace` or
+network namespaces. The failed attempts remain in the original
+[execution.json](results/execution.json). A separate
+[local reproduction](reproduction.md) matched all eight totals and the generated
+artifact hashes; it did not perform OS isolation or syscall tracing either.
+**Neither run establishes OS-level network isolation or zero network syscalls
+for this pilot.** This does not change the older showcase's separate evidence.
 Local computation and AI-assisted development are not cost-free.
 
 ## Reproduce the result
@@ -94,6 +98,7 @@ python3 -m venv .venv
 .venv/bin/python pilot.py --setup
 .venv/bin/python pilot.py
 .venv/bin/python -m unittest test_pilot test_review -v
+.venv/bin/python verify.py
 ```
 
 Installation and `--setup` may access the network. Subsequent `pilot.py` runs
@@ -101,6 +106,11 @@ use the frozen source and local tokenizer tables. No model key is required.
 Changes to frozen data, task, or configuration are rejected; a new study variant
 must have its own design record. The [design lock](design-lock.json) was created
 before counting; it is not a public preregistration.
+
+`verify.py` checks frozen and generated hashes, count totals, request identities,
+and local documentation links. Running `pilot.py` writes a new
+`results/run-environment.json`; the published original and this integration's
+separate environment record are explained in [reproduction.md](reproduction.md).
 
 The run creates `outputs/requests.jsonl` (400 requests) and
 `outputs/pilot-requests.jsonl` (80 selected requests in a recorded deterministic

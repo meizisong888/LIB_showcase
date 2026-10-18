@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-10-18T00:27:15.206816+00:00",
+  "url": "https://data.labs.loc.gov/free-to-use/sample-data/metadata.json",
+  "scope": "Separate online source check, outside the measured preprocessing run. Frozen source not overwritten.",
+  "http_status": 200,
+  "bytes": 427069,
+  "sha256": "26ef5cb83d257de108a567f26f888510a7a7c530dfcb7937ea6a5e15588f9be5",
+  "record_count": 100,
+  "matches_frozen_snapshot": true
+}

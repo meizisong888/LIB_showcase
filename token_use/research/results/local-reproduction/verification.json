@@ -1,0 +1,841 @@
+{
+  "status": "passed",
+  "hash_checks": [
+    {
+      "manifest": "design-lock.json",
+      "file": "config.json",
+      "sha256": "4c059d0f444f05f1f0d67b2d6e4bdacf3488055f48afac7a0fcfc4db9be7e68e"
+    },
+    {
+      "manifest": "design-lock.json",
+      "file": "task.txt",
+      "sha256": "995e57c3d9c3d688a4d4938e19e732ed00291e7951bf764df129786a395030d2"
+    },
+    {
+      "manifest": "design-lock.json",
+      "file": "data/loc-sample.json",
+      "sha256": "26ef5cb83d257de108a567f26f888510a7a7c530dfcb7937ea6a5e15588f9be5"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": ".cache/cl100k_base.json",
+      "sha256": "b9b32d2f562688ec43d7a8066f807cbfb9f7675f0c25e2c93735091a2ffbd5c9"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": ".cache/cl100k_base.tiktoken",
+      "sha256": "223921b76ee99bde995b7ff738513eef100fb51d18c93597a113bcffe865b2a7"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": ".cache/manifest.json",
+      "sha256": "56e83dc2e1aa2e91f79f41ffb7fdd81683289ee347ffe768f4bebb09021373d9"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": ".cache/o200k_base.json",
+      "sha256": "28cafc5d17c9a93063ee3a7bb3b353f31a1b62502aeee8e09203c2335c928dcf"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": ".cache/o200k_base.tiktoken",
+      "sha256": "446a9538cb6c348e3516120d7c08b09f57c36495e2acfffe59a5bf8b0cfb1a2d"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": "config.json",
+      "sha256": "4c059d0f444f05f1f0d67b2d6e4bdacf3488055f48afac7a0fcfc4db9be7e68e"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": "data/loc-sample.json",
+      "sha256": "26ef5cb83d257de108a567f26f888510a7a7c530dfcb7937ea6a5e15588f9be5"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": "data/manifest.json",
+      "sha256": "26bc6b1067762c366960aad0b16384ecd69be088fe3b3b2b20a540616c49254c"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": "design-lock.json",
+      "sha256": "a1547723c2f77ba9f0a124a6d4d9b2bcd63162d19129ba7c69d5480a4f6f1863"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": "outputs/pilot-requests.jsonl",
+      "sha256": "acb3ef645a70a7897ae5fd124c992e999e2e28668ede9cefdf98ac4940d6cfca"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": "outputs/requests.jsonl",
+      "sha256": "d201f7da2bffe40b2348421ba5fc67730b2d6dd3dc1be168b381c72fef7c5539"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": "pilot.py",
+      "sha256": "497d8a4f395495228cac826b423973dc3e36616ba05324a25995aea228140a91"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": "results/example.json",
+      "sha256": "41bcf15b26fc8ffa2d63724554a835471ab193916544cf362ed21b3923a5c2a1"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": "results/field-audit.json",
+      "sha256": "0fb5d6f73f634d047c3710719cb40cd63938645eb88deafc141abd6438fa2cb8"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": "results/per-record.csv",
+      "sha256": "a19defb50e4c720fd4b1e71faf34de079c3d8b5170b287158d00d10bbb7691e3"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": "results/prompt-inventory.json",
+      "sha256": "b16295fb0403668e4c0452d254c64e56fce6ba13aa2829f68b8660dab87b3bbd"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": "results/quality-pilot.json",
+      "sha256": "10d6710d2b7320c1b8bc21340ac02c390144b8951d544dd1aaa77b926ef0c8d2"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": "results/summary.json",
+      "sha256": "7b1b4f3651cec9e475170a0a823f55ef7c95e228889f18e30b28fea25d6bda55"
+    },
+    {
+      "manifest": "results/artifact-manifest.json",
+      "file": "task.txt",
+      "sha256": "995e57c3d9c3d688a4d4938e19e732ed00291e7951bf764df129786a395030d2"
+    }
+  ],
+  "count_rows": 800,
+  "requests": 400,
+  "selected_requests": 80,
+  "local_links": [
+    {
+      "document": "README.md",
+      "target": "#try-it"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/staff-guide.md"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/worked-example.md"
+    },
+    {
+      "document": "README.md",
+      "target": "research/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "research/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "research/data/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "research/protocol.md#conditions"
+    },
+    {
+      "document": "README.md",
+      "target": "research/protocol.md#research-question-and-scope"
+    },
+    {
+      "document": "README.md",
+      "target": "research/data/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "research/protocol.md#stage-1-paired-input-measurements"
+    },
+    {
+      "document": "README.md",
+      "target": "research/README.md#what-was-actually-measured"
+    },
+    {
+      "document": "README.md",
+      "target": "research/model-evaluation.md"
+    },
+    {
+      "document": "README.md",
+      "target": "research/reproduction.md"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/methods.md#where-the-reduction-happens"
+    },
+    {
+      "document": "README.md",
+      "target": "data/raw/catalog-v1.jsonl#L7"
+    },
+    {
+      "document": "README.md",
+      "target": "results/case1/prepared.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "results/case1/retention.json"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/worked-example.md"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/experiment-report.md"
+    },
+    {
+      "document": "README.md",
+      "target": "data/public-loc/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "scripts/prepare_public_case.py"
+    },
+    {
+      "document": "README.md",
+      "target": "src/library_token_use/core.py"
+    },
+    {
+      "document": "README.md",
+      "target": "results/execution/offline-run.json"
+    },
+    {
+      "document": "README.md",
+      "target": "results/public-case-evidence/offline-run.json"
+    },
+    {
+      "document": "README.md",
+      "target": "data/public-loc/records.jsonl"
+    },
+    {
+      "document": "README.md",
+      "target": "configs/public-subject-review.json"
+    },
+    {
+      "document": "README.md",
+      "target": "results/public-case/prepared.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "templates/public-subject-review.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "docs/staff-guide.md"
+    },
+    {
+      "document": "README.md",
+      "target": "../LICENSE"
+    },
+    {
+      "document": "README.md",
+      "target": "data/LICENSE"
+    },
+    {
+      "document": "README.md",
+      "target": "data/public-loc/README.md#source-and-reuse"
+    },
+    {
+      "document": "data/README.md",
+      "target": "public-loc/README.md"
+    },
+    {
+      "document": "data/README.md",
+      "target": "LICENSE"
+    },
+    {
+      "document": "data/README.md",
+      "target": "raw/catalog-v1.jsonl"
+    },
+    {
+      "document": "data/README.md",
+      "target": "raw/catalog-v2.jsonl"
+    },
+    {
+      "document": "data/README.md",
+      "target": "retrieval-gold.json"
+    },
+    {
+      "document": "data/README.md",
+      "target": "subject-boundaries.json"
+    },
+    {
+      "document": "data/README.md",
+      "target": "fixture-lock.json"
+    },
+    {
+      "document": "data/README.md",
+      "target": "../scripts/make_demo_data.py"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "manifest.json"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "records.jsonl"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../docs/public-case-design.md"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../configs/public-subject-review.json"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../templates/public-subject-review.txt"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../scripts/fetch_public_sample.py"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../results/public-case/retention.json"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../docs/worked-example.md"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../results/public-case/baseline.txt"
+    },
+    {
+      "document": "data/public-loc/README.md",
+      "target": "../../results/public-case/prepared.txt"
+    },
+    {
+      "document": "docs/experiment-design.md",
+      "target": "experiment-report.md"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/execution/offline-run.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "#real-public-data-case"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "experiment-design.md"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../data/raw/catalog-v1.jsonl"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../data/README.md"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../data/retrieval-gold.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../data/fixture-lock.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/summary.md"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/metrics.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case2/ranking.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../data/public-loc/README.md"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "public-case-design.md"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/public-case/retention.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/public-case-evidence/offline-run.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/showcase-checks/developer-check.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case1/baseline.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case1/prepared.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case1/retention.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case2/baseline.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case2/top5.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case2/top15.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case2/ranking.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case2/top15-evaluation.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/first/baseline.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/first/pending.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/first/status.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/second/baseline.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/second/pending.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/second/status.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/task-change/baseline.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/task-change/pending.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/task-change/dependency-change.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/vocabulary-change/baseline.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/vocabulary-change/pending.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/vocabulary-change/dependency-change.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/rules-change/baseline.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/rules-change/pending.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/case3/rules-change/dependency-change.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/execution/offline-run.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/execution/network-syscalls.log"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/execution/code-audit.json"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../tests/test_invariants.py"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "../results/execution/tests.txt"
+    },
+    {
+      "document": "docs/experiment-report.md",
+      "target": "staff-guide.md"
+    },
+    {
+      "document": "docs/methods.md",
+      "target": "../configs/subject-review.json"
+    },
+    {
+      "document": "docs/methods.md",
+      "target": "../results/case1/retention.json"
+    },
+    {
+      "document": "docs/methods.md",
+      "target": "../configs/rules.json"
+    },
+    {
+      "document": "docs/methods.md",
+      "target": "../results/case1/rule-results.json"
+    },
+    {
+      "document": "docs/methods.md",
+      "target": "../configs/reports-2000-2025.json"
+    },
+    {
+      "document": "docs/methods.md",
+      "target": "../results/rules/scoped-inventory.json"
+    },
+    {
+      "document": "docs/methods.md",
+      "target": "../src/library_token_use/core.py"
+    },
+    {
+      "document": "docs/sources.md",
+      "target": "methods.md"
+    },
+    {
+      "document": "docs/sources.md",
+      "target": "../data/README.md"
+    },
+    {
+      "document": "docs/sources.md",
+      "target": "../data/LICENSE"
+    },
+    {
+      "document": "docs/sources.md",
+      "target": "../results/metrics.json"
+    },
+    {
+      "document": "docs/sources.md",
+      "target": "../data/public-loc/manifest.json"
+    },
+    {
+      "document": "docs/sources.md",
+      "target": "../data/public-loc/README.md"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "worked-example.md"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../README.md#try-it"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../data/public-loc/records.jsonl"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../data/public-loc/README.md#native-schema-and-retained-evidence"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../configs/public-subject-review.json"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../results/case1/retention.json"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../templates/public-subject-review.txt"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../data/README.md#schema"
+    },
+    {
+      "document": "docs/staff-guide.md",
+      "target": "../configs/subject-review.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../data/public-loc/records.jsonl"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../data/public-loc/manifest.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case/example-before.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../configs/public-subject-review.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "public-case-design.md"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../README.md#try-it"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case/baseline.txt"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case/prepared.txt"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case/example-after.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case/retention.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case/id-map.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case/missing-information.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/case1/retention.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../templates/public-subject-review.txt"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case-evidence/offline-run.json"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/public-case-evidence/tests.txt"
+    },
+    {
+      "document": "docs/worked-example.md",
+      "target": "../results/showcase-checks/developer-check.json"
+    },
+    {
+      "document": "research/README.md",
+      "target": "protocol.md"
+    },
+    {
+      "document": "research/README.md",
+      "target": "references.md"
+    },
+    {
+      "document": "research/README.md",
+      "target": "model-evaluation.md"
+    },
+    {
+      "document": "research/README.md",
+      "target": "reproduction.md"
+    },
+    {
+      "document": "research/README.md",
+      "target": "../README.md"
+    },
+    {
+      "document": "research/README.md",
+      "target": "task.txt"
+    },
+    {
+      "document": "research/README.md",
+      "target": "data/loc-sample.json"
+    },
+    {
+      "document": "research/README.md",
+      "target": "data/manifest.json"
+    },
+    {
+      "document": "research/README.md",
+      "target": "config.json"
+    },
+    {
+      "document": "research/README.md",
+      "target": "results/field-audit.json"
+    },
+    {
+      "document": "research/README.md",
+      "target": "results/summary.json"
+    },
+    {
+      "document": "research/README.md",
+      "target": "results/per-record.csv"
+    },
+    {
+      "document": "research/README.md",
+      "target": "results/example.json"
+    },
+    {
+      "document": "research/README.md",
+      "target": "results/prompt-inventory.json"
+    },
+    {
+      "document": "research/README.md",
+      "target": "results/execution.json"
+    },
+    {
+      "document": "research/README.md",
+      "target": "reproduction.md"
+    },
+    {
+      "document": "research/README.md",
+      "target": "design-lock.json"
+    },
+    {
+      "document": "research/README.md",
+      "target": "reproduction.md"
+    },
+    {
+      "document": "research/README.md",
+      "target": "results/quality-pilot.json"
+    },
+    {
+      "document": "research/README.md",
+      "target": "protocol.md"
+    },
+    {
+      "document": "research/README.md",
+      "target": "prepare_review.py"
+    },
+    {
+      "document": "research/README.md",
+      "target": "data/README.md"
+    },
+    {
+      "document": "research/README.md",
+      "target": "references.md"
+    },
+    {
+      "document": "research/data/README.md",
+      "target": "loc-sample.json"
+    },
+    {
+      "document": "research/data/README.md",
+      "target": "manifest.json"
+    },
+    {
+      "document": "research/model-evaluation.md",
+      "target": "protocol.md"
+    },
+    {
+      "document": "research/protocol.md",
+      "target": "references.md"
+    },
+    {
+      "document": "research/protocol.md",
+      "target": "data/loc-sample.json"
+    },
+    {
+      "document": "research/protocol.md",
+      "target": "data/manifest.json"
+    },
+    {
+      "document": "research/protocol.md",
+      "target": "references.md"
+    },
+    {
+      "document": "research/protocol.md",
+      "target": "task.txt"
+    },
+    {
+      "document": "research/protocol.md",
+      "target": "config.json"
+    },
+    {
+      "document": "research/protocol.md",
+      "target": "design-lock.json"
+    },
+    {
+      "document": "research/references.md",
+      "target": "data/manifest.json"
+    },
+    {
+      "document": "research/reproduction.md",
+      "target": "results/local-reproduction/reproduction.json"
+    },
+    {
+      "document": "research/reproduction.md",
+      "target": "results/local-reproduction/packages.txt"
+    },
+    {
+      "document": "research/reproduction.md",
+      "target": "results/local-reproduction/tests.stderr.txt"
+    },
+    {
+      "document": "research/reproduction.md",
+      "target": "verify.py"
+    },
+    {
+      "document": "research/reproduction.md",
+      "target": "results/local-reproduction/verification.json"
+    },
+    {
+      "document": "research/reproduction.md",
+      "target": "data/README.md"
+    },
+    {
+      "document": "research/reproduction.md",
+      "target": "references.md"
+    },
+    {
+      "document": "research/reproduction.md",
+      "target": "results/local-reproduction/source-check.json"
+    },
+    {
+      "document": "research/reproduction.md",
+      "target": "results/run-environment.json"
+    },
+    {
+      "document": "research/reproduction.md",
+      "target": "results/local-reproduction/run-environment.json"
+    },
+    {
+      "document": "research/reproduction.md",
+      "target": "results/execution.json"
+    },
+    {
+      "document": "research/reproduction.md",
+      "target": "model-evaluation.md"
+    }
+  ],
+  "scope": "Hashes, counts, identities and local links; no external-link, model-quality or OS-network verification."
+}

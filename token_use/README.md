@@ -3,11 +3,39 @@
 A practical guide for library staff preparing collection records for AI review.
 **Read this page without installing anything**, or try the supplied files with
 `.venv/bin/python scripts/prepare_public_case.py` after [setup](#try-it).
-**Research extension:** [100 real LOC records: input ablation and planned quality study](research/README.md).
-The new pilot measures input counts; model and staff evaluations remain pending.
-
 [Staff guide](docs/staff-guide.md) ·
-[Complete worked example](docs/worked-example.md).
+[Complete worked example](docs/worked-example.md) ·
+[Research pilot: 100 real records](research/README.md).
+
+## Research extension: preparing item descriptions
+
+**Which preparation steps can reduce model input without sacrificing an
+accurate, informative library item description?** The separate
+[research pilot](research/README.md) prepares one catalog record per request
+for a draft of at most 80 English words. It uses all 100 records in the
+[official Library of Congress sample](research/data/README.md).
+
+The [four conditions](research/protocol.md#conditions) compare readable full
+JSON, compact full JSON, 27 task fields, and a title-and-subjects stress test.
+With the same task in every request, compacting full JSON reduces input by
+**19.43%** under `cl100k_base`. Selecting the task fields then reduces
+**129,671 → 85,825 tokens (33.81%)** relative to that compact baseline;
+`o200k_base` gives **131,561 → 86,656 (34.13%)** for field selection.
+These successive percentages have different denominators and cannot be added.
+
+[Research question](research/protocol.md#research-question-and-scope) →
+[Data and sources](research/data/README.md) →
+[Comparison methods](research/protocol.md#stage-1-paired-input-measurements) →
+[Measured results](research/README.md#what-was-actually-measured) →
+[Pending quality evaluation](research/model-evaluation.md).
+
+The [local reproduction](research/reproduction.md) matches all eight published
+token totals. The **400 requests are prepared inputs**, including 80 planned
+requests for 20 selected records; no model answers or librarian ratings have
+been collected. Retained field values are unchanged, but output quality remains
+untested. The sparsest condition is a stress test, not a recommendation.
+Model fees and HokieAI allocation deductions are **not measured**.
+The original teaching showcase continues below.
 
 ## 1. Why do this?
 

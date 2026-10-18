@@ -1,0 +1,10 @@
+test_all_projected_source_values_remain_exact (test_pilot.PilotChecks.test_all_projected_source_values_remain_exact) ... ok
+test_every_real_row_has_identical_pretty_and_compact_content (test_pilot.PilotChecks.test_every_real_row_has_identical_pretty_and_compact_content) ... ok
+test_nested_nulls_are_missing_but_false_and_zero_are_values (test_pilot.PilotChecks.test_nested_nulls_are_missing_but_false_and_zero_are_values) ... ok
+test_partial_run_unknown_usage_and_absent_evidence (test_review.ReviewContractTests.test_partial_run_unknown_usage_and_absent_evidence) ... ok
+test_rejects_unreliable_imports (test_review.ReviewContractTests.test_rejects_unreliable_imports) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.108s
+
+OK

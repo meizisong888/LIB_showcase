@@ -1,0 +1,1 @@
+Tokenizer tables acquired for cl100k_base, o200k_base. Default runs now require only these local files.

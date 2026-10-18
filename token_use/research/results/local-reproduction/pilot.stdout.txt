@@ -1,0 +1,4 @@
+Prepared 400 prompts from all 100 source rows; no model evaluation was run.
+cl100k_base: full_pretty=160944, full_compact=129671, task_fields=85825, title_subjects=31503
+o200k_base: full_pretty=160915, full_compact=131561, task_fields=86656, title_subjects=31550
+Results: research/results/summary.json; generated prompts: research/outputs/requests.jsonl

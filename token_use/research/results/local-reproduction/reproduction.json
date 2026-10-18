@@ -1,0 +1,74 @@
+{
+  "kind": "Developer reproduction of supplied research pilot; not a model or librarian evaluation",
+  "started_at_utc": "2026-10-18T00:24:47.823648+00:00",
+  "base_commit": "8d6eb0bccfc3f8dd98cc588c91732941d95bb7c3",
+  "import_commit": "ed5aa7cb18c052ca73657301cec46a592d37f6e3",
+  "archive_sha256": "665adeefdeade8d33e5ab50f324e5cfbdde80c76a170780dff22ce63f94f20ed",
+  "patch_sha256": "6d2cb12c71b79817e421daf7d2e26cc00070d06d64482870856ec8fadaee3256",
+  "original_result_sha256": {
+    "artifact-manifest.json": "a36697ded552941a4e334b81fb745010cec45f4140666d98055c58b3f498b3ea",
+    "example.json": "41bcf15b26fc8ffa2d63724554a835471ab193916544cf362ed21b3923a5c2a1",
+    "execution.json": "d496fe50ebd8361bf2c4dad9c4f488611eb2e4505814c0cb1356a0885799cdd2",
+    "field-audit.json": "0fb5d6f73f634d047c3710719cb40cd63938645eb88deafc141abd6438fa2cb8",
+    "per-record.csv": "a19defb50e4c720fd4b1e71faf34de079c3d8b5170b287158d00d10bbb7691e3",
+    "prompt-inventory.json": "b16295fb0403668e4c0452d254c64e56fce6ba13aa2829f68b8660dab87b3bbd",
+    "quality-pilot.json": "10d6710d2b7320c1b8bc21340ac02c390144b8951d544dd1aaa77b926ef0c8d2",
+    "run-environment.json": "a306c44261a06f3f5f945a47f0964f0ebe80d46334b428f47e92838e281b1bbc",
+    "run.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run.stdout.txt": "4ef3e5ea560f0b188b5bc760570806d7c4c7f6cea9fa9aea14c6b1b76f6f6f63",
+    "summary.json": "7b1b4f3651cec9e475170a0a823f55ef7c95e228889f18e30b28fea25d6bda55",
+    "tests.txt": "5353a680add3666abc6e42cff23829c5cde9e160ff80f9e2572695b1ed9d3948"
+  },
+  "commands": [
+    {
+      "command": ".venv/bin/python pilot.py --setup",
+      "cwd": "token_use/research",
+      "started_at_utc": "2026-10-18T00:24:47.835055+00:00",
+      "elapsed_seconds": 2.027508,
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/bin/python pilot.py",
+      "cwd": "token_use/research",
+      "started_at_utc": "2026-10-18T00:24:49.862603+00:00",
+      "elapsed_seconds": 1.002367,
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/bin/python -m unittest test_pilot test_review -v",
+      "cwd": "token_use/research",
+      "started_at_utc": "2026-10-18T00:24:50.865004+00:00",
+      "elapsed_seconds": 0.412064,
+      "exit_code": 0
+    }
+  ],
+  "os_network_isolation": "not performed in this reproduction",
+  "network_syscall_count": null,
+  "network_syscall_tracing": "not performed in this reproduction",
+  "network_scope": "Installation and tokenizer setup may use the network. The default pilot uses a Python socket guard, not OS isolation.",
+  "model_evaluation": "not run",
+  "human_evaluation": "not run",
+  "provider_usage": "not measured",
+  "hokieai_allocation": "not measured",
+  "test_fixture_scope": "test_review uses explicitly synthetic contract fixtures in temporary directories. They are not research responses or ratings.",
+  "changed_result_files_after_run": [
+    "run-environment.json"
+  ],
+  "matching_artifact_hashes": 19,
+  "totals": {
+    "cl100k_base": {
+      "full_pretty": 160944,
+      "full_compact": 129671,
+      "task_fields": 85825,
+      "title_subjects": 31503
+    },
+    "o200k_base": {
+      "full_pretty": 160915,
+      "full_compact": 131561,
+      "task_fields": 86656,
+      "title_subjects": 31550
+    }
+  },
+  "status": "passed",
+  "finished_at_utc": "2026-10-18T00:24:51.312427+00:00"
+}

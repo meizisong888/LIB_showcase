@@ -24,6 +24,9 @@ software license does not replace source terms.
 
 The raw `Location` field contains enrichment from OpenStreetMap; credit
 [OpenStreetMap contributors](https://www.openstreetmap.org/copyright).
+That component is available under the
+[Open Data Commons Open Database License (ODbL) 1.0](https://opendatacommons.org/licenses/odbl/1-0/),
+not the repository's software license.
 LOC cautions that these geocoded matches can be inaccurate. The task projection
 omits this enrichment but preserves original `Location_text`. Original catalog
 wording, including historical terminology, remains in the snapshot.

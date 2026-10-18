@@ -1,0 +1,11 @@
+{
+  "checked_at_utc": "2026-10-18T00:27:50.740589+00:00",
+  "status": "passed",
+  "base_commit": "8d6eb0bccfc3f8dd98cc588c91732941d95bb7c3",
+  "existing_repository_files_unchanged_except_token_use_readme": 183,
+  "original_research_result_files_identical_to_archive": 12,
+  "local_documentation_links_checked": 180,
+  "hash_checks": 22,
+  "source_sample_sha256": "26ef5cb83d257de108a567f26f888510a7a7c530dfcb7937ea6a5e15588f9be5",
+  "scope": "Read-only comparison against Git base and supplied ZIP; includes old teaching results, Staff guide, Student AI Guide and SkillPrompt. No model evaluation."
+}
