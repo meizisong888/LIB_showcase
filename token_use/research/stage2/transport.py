@@ -185,8 +185,8 @@ def run(policy,prompt,directory,evaluation=False):
     usage=completions[0].get('usage') if len(completions)==1 else None
     status=stopped or (fatal if fatal else 'completed' if returncode==0 and len(completions)==1 else 'transport_error')
     result={'status':status,'started_at_utc':start,'completed_at_utc':now(),'latency_seconds':round(time.monotonic()-clock,6),
-        'launched':True,'returncode':returncode,'usage':usage,'reasoning_tokens':None,
-        'backend_finish_reason':None,'finish_reason_note':'CLI reports turn completion, not provider finish_reason or reasoning-token breakdown.',
+        'launched':True,'returncode':returncode,'usage':usage,'reasoning_tokens':usage.get('reasoning_output_tokens') if usage else None,
+        'backend_finish_reason':None,'finish_reason_note':'CLI reports turn completion, not provider finish_reason; raw usage is authoritative for optional subcounts.',
         'thread_ids':[e['thread_id'] for e in events if e.get('type')=='thread.started'],
         'tool_event_count':sum(e.get('item',{}).get('type') not in (None,'agent_message','reasoning','error') for e in events),
         'errors':errors,'fatal_class':fatal or None,'response_nonempty':bool(response.strip())}
