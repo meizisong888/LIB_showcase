@@ -1,0 +1,6 @@
+{
+  "record_id": "http://www.loc.gov/item/2013645876/",
+  "description": "An 1889 wood engraving on two pages, with Thure de Thulstrup credited as artist. The title identifies the scene as “The Princeton-Yale foot-ball match at the Berkeley Oval,” while the catalog description states that it shows a football game at Yale University. Published in Harper’s Weekly, December 7, 1889, pages 976–977.",
+  "evidence_fields": ["Creators", "Date", "Medium", "Title", "Description", "Notes"],
+  "limitations": ["The underlying item has not been examined; scene identification follows the supplied title and catalog description, which give differing location descriptions."]
+}

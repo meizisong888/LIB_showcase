@@ -27,14 +27,23 @@ These successive percentages have different denominators and cannot be added.
 [Data and sources](research/data/README.md) →
 [Comparison methods](research/protocol.md#stage-1-paired-input-measurements) →
 [Measured results](research/README.md#what-was-actually-measured) →
-[Pending quality evaluation](research/model-evaluation.md).
+[Real model results and initial quality assessment](research/stage2/report.md).
 
 The [local reproduction](research/reproduction.md) matches all eight published
-token totals. The **400 requests are prepared inputs**, including 80 planned
-requests for 20 selected records; no model answers or librarian ratings have
-been collected. Retained field values are unchanged, but output quality remains
-untested. The sparsest condition is a stress test, not a recommendation.
-Model fees and HokieAI allocation deductions are **not measured**.
+token totals. The 400 prompts are prepared inputs; **80 selected requests have
+now produced real model answers** using the same `gpt-6.1-sol` model and isolated
+contexts. All 80 passed automatic structure checks, with no generation retries.
+For the selected 20 records, task fields reduced measured backend input from
+**117,307 to 108,209 tokens (7.76%)**. Shared runtime instructions make this a
+different denominator from the local text counts above.
+
+[The research results](research/README.md) pair input/output usage with anonymous
+AI-assisted evaluation, actual answer examples and evaluator limitations.
+AI ratings are not librarian approval; **two independent human reviews remain
+pending**. The sparsest condition is a stress test, not a recommendation.
+Model charges, development-session usage and HokieAI allocation deductions are
+**not measured**. Generation and evaluation consume model allowance; only the
+local preparation operations are model-free.
 The original teaching showcase continues below.
 
 ## 1. Why do this?

@@ -1,0 +1,173 @@
+{
+  "reference_concerns": [],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "A color digital photograph by Carol M. Highsmith, titled “Tip Top Drive In & Out, Lewiston, Idaho,”",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Identifies the photograph, named establishment, and location."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "A color digital photograph by Carol M. Highsmith",
+          "source_fields": ["Creators"],
+          "reason": "Conveys Highsmith's role as photographer."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "dated June 14, 2005. The catalog notes that the title, date, and subjects were provided by the photographer.",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Includes the full date and its photographer-supplied provenance."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "A color digital photograph",
+          "source_fields": ["Medium"],
+          "reason": "Explicitly conveys digital photographic format and color."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts, preserves the supplied-metadata qualification, and adds supported project and archive context.",
+      "usable": "yes",
+      "usability_reason": "“A color digital photograph by Carol M. Highsmith” and “dated June 14, 2005” convey the core Medium, Creators, and Date_text information; “the title, date, and subjects were provided by the photographer” preserves the Notes qualification. No important factual addition or correction is needed."
+    },
+    {
+      "label": "B",
+      "errors": [
+        {
+          "answer_quote": "No creator, date, or rights information is supplied.",
+          "kind": "contradicted",
+          "source_fields": ["Creators", "Date_text", "Rights"],
+          "source_quote": [
+            "{\"Name\":\"Highsmith, Carol M., 1946-\",\"Role\":\"photographer\"}",
+            "2005 June 14.",
+            "No known restrictions on publication."
+          ],
+          "reason": "This limitations claim contradicts supplied creator, date, and rights metadata. The rights statement is not a categorical permission grant, but rights information is present."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "The title identifies Tip Top Drive In & Out in Lewiston, Idaho. Catalog subject terms classify the item as a color digital photograph",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Together these statements identify the photograph's cataloged subject and location."
+        },
+        {
+          "fact_id": "F2",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Creators"],
+          "reason": "The description does not name Highsmith or convey her photographer role."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Neither the date nor the photographer-supplied provenance of title, date, and subjects appears in the description."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Catalog subject terms classify the item as a color digital photograph",
+          "source_fields": ["Medium", "Subjects"],
+          "reason": "Meaningfully conveys digital photographic format and color, both supported by the record."
+        }
+      ],
+      "informativeness": 2,
+      "informativeness_reason": "Provides the named subject, location, format, and qualified subject classifications, but omits the available photographer, exact date, and supplied-metadata provenance.",
+      "usable": "no",
+      "usability_reason": "“No creator, date, or rights information is supplied” requires correction against Creators, Date_text, and Rights. The description's “The title identifies Tip Top Drive In & Out in Lewiston, Idaho” supplies useful identification, but important additions are Carol M. Highsmith's photographer credit and June 14, 2005, with the Notes qualification that title, date, and subjects were provided by the photographer."
+    },
+    {
+      "label": "C",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "Color digital photograph by Carol M. Highsmith, identified as “Tip Top Drive In & Out, Lewiston, Idaho”",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Identifies the photograph, named establishment, and location."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "Color digital photograph by Carol M. Highsmith",
+          "source_fields": ["Creators"],
+          "reason": "Conveys Highsmith's role as photographer."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "dated June 14, 2005. The title, date, and subjects were provided by the photographer.",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Includes the full date and its photographer-supplied provenance."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Color digital photograph",
+          "source_fields": ["Medium"],
+          "reason": "Explicitly conveys digital photographic format and color."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts with appropriate provenance and adds supported project and archive context.",
+      "usable": "yes",
+      "usability_reason": "“Color digital photograph by Carol M. Highsmith” and “dated June 14, 2005” accurately convey Medium, Creators, and Date_text; “The title, date, and subjects were provided by the photographer” preserves the Notes qualification. No important factual correction or addition is needed."
+    },
+    {
+      "label": "D",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "Color digital photograph by Carol M. Highsmith, titled “Tip Top Drive In & Out, Lewiston, Idaho”",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Identifies the photograph, named establishment, and location."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "Color digital photograph by Carol M. Highsmith",
+          "source_fields": ["Creators"],
+          "reason": "Conveys Highsmith's role as photographer."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "dated June 14, 2005. The title, date, and subjects were provided by the photographer.",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Includes the full date and its photographer-supplied provenance."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Color digital photograph",
+          "source_fields": ["Medium"],
+          "reason": "Explicitly conveys digital photographic format and color."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts with appropriate provenance and adds supported project and archive context.",
+      "usable": "yes",
+      "usability_reason": "“Color digital photograph by Carol M. Highsmith” and “dated June 14, 2005” accurately convey Medium, Creators, and Date_text; “The title, date, and subjects were provided by the photographer” preserves the Notes qualification. No important factual correction or addition is needed."
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+[
+  {
+    "blind_id": "011c3ef9115139cb",
+    "request_id": "row-100--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-100"
+  },
+  {
+    "blind_id": "d186534c39b4d821",
+    "request_id": "row-100--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-100"
+  },
+  {
+    "blind_id": "c07a73358dfb7f3f",
+    "request_id": "row-100--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-100"
+  },
+  {
+    "blind_id": "0d17165c03371b08",
+    "request_id": "row-100--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-100"
+  },
+  {
+    "blind_id": "bafd23a699896660",
+    "request_id": "row-046--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-046"
+  },
+  {
+    "blind_id": "a022be4de5cf5109",
+    "request_id": "row-046--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-046"
+  },
+  {
+    "blind_id": "ac29e432e5236bd8",
+    "request_id": "row-046--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-046"
+  },
+  {
+    "blind_id": "4f113aeab7d2dba9",
+    "request_id": "row-046--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-046"
+  },
+  {
+    "blind_id": "d60e01f68ada6ad5",
+    "request_id": "row-018--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-018"
+  },
+  {
+    "blind_id": "fdf15e807410cd82",
+    "request_id": "row-018--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-018"
+  },
+  {
+    "blind_id": "32bb1b7c64c7b1c2",
+    "request_id": "row-018--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-018"
+  },
+  {
+    "blind_id": "8500489e5e560f34",
+    "request_id": "row-018--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-018"
+  },
+  {
+    "blind_id": "4be3ffcd5bbe4b53",
+    "request_id": "row-080--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-080"
+  },
+  {
+    "blind_id": "9f7f3a31aeaa33e7",
+    "request_id": "row-080--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-080"
+  },
+  {
+    "blind_id": "b20dc87ebb87fbc3",
+    "request_id": "row-080--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-080"
+  },
+  {
+    "blind_id": "2eea7c14e338ed30",
+    "request_id": "row-080--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-080"
+  },
+  {
+    "blind_id": "cb0bdaa2c51af84b",
+    "request_id": "row-053--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-053"
+  },
+  {
+    "blind_id": "029b0873b7300a5c",
+    "request_id": "row-053--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-053"
+  },
+  {
+    "blind_id": "47ba5f481a10b07a",
+    "request_id": "row-053--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-053"
+  },
+  {
+    "blind_id": "56b97ee05371e4a7",
+    "request_id": "row-053--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-053"
+  },
+  {
+    "blind_id": "d78ff5686f745cd2",
+    "request_id": "row-078--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-078"
+  },
+  {
+    "blind_id": "81afa4d60ae872f0",
+    "request_id": "row-078--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-078"
+  },
+  {
+    "blind_id": "3ee9bb46bdfd2429",
+    "request_id": "row-078--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-078"
+  },
+  {
+    "blind_id": "eeca7bb9f17a131b",
+    "request_id": "row-078--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-078"
+  },
+  {
+    "blind_id": "9aff4adc0f5d10df",
+    "request_id": "row-028--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-028"
+  },
+  {
+    "blind_id": "f2f13ae8a3d990e4",
+    "request_id": "row-028--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-028"
+  },
+  {
+    "blind_id": "295d63f7159b611c",
+    "request_id": "row-028--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-028"
+  },
+  {
+    "blind_id": "9fc3c1ae62356aa3",
+    "request_id": "row-028--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-028"
+  },
+  {
+    "blind_id": "caaee4a1920a6ad9",
+    "request_id": "row-036--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-036"
+  },
+  {
+    "blind_id": "9d8addceee22dd8c",
+    "request_id": "row-036--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-036"
+  },
+  {
+    "blind_id": "0f9464701a4f814c",
+    "request_id": "row-036--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-036"
+  },
+  {
+    "blind_id": "6812135771b9baab",
+    "request_id": "row-036--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-036"
+  },
+  {
+    "blind_id": "3b32a5b28a039ff6",
+    "request_id": "row-050--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-050"
+  },
+  {
+    "blind_id": "210411431950c4d5",
+    "request_id": "row-050--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-050"
+  },
+  {
+    "blind_id": "7904389fe7148bbf",
+    "request_id": "row-050--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-050"
+  },
+  {
+    "blind_id": "683e96791a7083bc",
+    "request_id": "row-050--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-050"
+  },
+  {
+    "blind_id": "6556e70c74819202",
+    "request_id": "row-062--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-062"
+  },
+  {
+    "blind_id": "22ba7d2dbfb4dd2d",
+    "request_id": "row-062--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-062"
+  },
+  {
+    "blind_id": "f991cefa7b881618",
+    "request_id": "row-062--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-062"
+  },
+  {
+    "blind_id": "e56347f715ecda8a",
+    "request_id": "row-062--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-062"
+  },
+  {
+    "blind_id": "3c57138b9f721ecd",
+    "request_id": "row-048--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-048"
+  },
+  {
+    "blind_id": "df0dd59b83d57b5d",
+    "request_id": "row-048--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-048"
+  },
+  {
+    "blind_id": "713960712d7281be",
+    "request_id": "row-048--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-048"
+  },
+  {
+    "blind_id": "26972a4857fbd634",
+    "request_id": "row-048--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-048"
+  },
+  {
+    "blind_id": "0fbe7b0aff0edbe6",
+    "request_id": "row-084--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-084"
+  },
+  {
+    "blind_id": "9597dc322a6257ab",
+    "request_id": "row-084--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-084"
+  },
+  {
+    "blind_id": "3c487dd4b2da97e6",
+    "request_id": "row-084--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-084"
+  },
+  {
+    "blind_id": "3f5eb05f63187c9e",
+    "request_id": "row-084--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-084"
+  },
+  {
+    "blind_id": "d0da2dff97fc68db",
+    "request_id": "row-097--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-097"
+  },
+  {
+    "blind_id": "54c71752544abba7",
+    "request_id": "row-097--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-097"
+  },
+  {
+    "blind_id": "5fcf362a988611f0",
+    "request_id": "row-097--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-097"
+  },
+  {
+    "blind_id": "f8e9d59aae13928c",
+    "request_id": "row-097--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-097"
+  },
+  {
+    "blind_id": "a40a62a4a925c29f",
+    "request_id": "row-037--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-037"
+  },
+  {
+    "blind_id": "a5b76455db356a0c",
+    "request_id": "row-037--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-037"
+  },
+  {
+    "blind_id": "bcef3bd7a3ca4bed",
+    "request_id": "row-037--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-037"
+  },
+  {
+    "blind_id": "4fbda8ac550f6a42",
+    "request_id": "row-037--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-037"
+  },
+  {
+    "blind_id": "9a71cbd98d200719",
+    "request_id": "row-092--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-092"
+  },
+  {
+    "blind_id": "0ebc91465d8b857f",
+    "request_id": "row-092--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-092"
+  },
+  {
+    "blind_id": "fc5f3719af62580e",
+    "request_id": "row-092--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-092"
+  },
+  {
+    "blind_id": "65fa427e38610c32",
+    "request_id": "row-092--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-092"
+  },
+  {
+    "blind_id": "36698485d038678d",
+    "request_id": "row-017--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-017"
+  },
+  {
+    "blind_id": "8e63fcaad1db4391",
+    "request_id": "row-017--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-017"
+  },
+  {
+    "blind_id": "319413bd212fc6cb",
+    "request_id": "row-017--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-017"
+  },
+  {
+    "blind_id": "9618a68f03653358",
+    "request_id": "row-017--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-017"
+  },
+  {
+    "blind_id": "aa176f8e94d80eac",
+    "request_id": "row-054--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-054"
+  },
+  {
+    "blind_id": "d1a04f81b6236462",
+    "request_id": "row-054--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-054"
+  },
+  {
+    "blind_id": "6176e57991acdc80",
+    "request_id": "row-054--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-054"
+  },
+  {
+    "blind_id": "851d631f9cc0bf26",
+    "request_id": "row-054--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-054"
+  },
+  {
+    "blind_id": "74d3e06630a1bb7a",
+    "request_id": "row-038--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-038"
+  },
+  {
+    "blind_id": "71de02383b2e6ca1",
+    "request_id": "row-038--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-038"
+  },
+  {
+    "blind_id": "853dccde542b092b",
+    "request_id": "row-038--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-038"
+  },
+  {
+    "blind_id": "50a2080879d818d2",
+    "request_id": "row-038--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-038"
+  },
+  {
+    "blind_id": "ee549021672d0341",
+    "request_id": "row-011--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-011"
+  },
+  {
+    "blind_id": "b6f057b26d5f4193",
+    "request_id": "row-011--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-011"
+  },
+  {
+    "blind_id": "f31632562f10434e",
+    "request_id": "row-011--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-011"
+  },
+  {
+    "blind_id": "5d00781885ea4be4",
+    "request_id": "row-011--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-011"
+  },
+  {
+    "blind_id": "ad07b37013eaf3c7",
+    "request_id": "row-085--full_pretty",
+    "condition": "full_pretty",
+    "record_key": "row-085"
+  },
+  {
+    "blind_id": "e342ff0343a653a8",
+    "request_id": "row-085--full_compact",
+    "condition": "full_compact",
+    "record_key": "row-085"
+  },
+  {
+    "blind_id": "85a6d43338032f9b",
+    "request_id": "row-085--task_fields",
+    "condition": "task_fields",
+    "record_key": "row-085"
+  },
+  {
+    "blind_id": "b5705b7f704ab5ce",
+    "request_id": "row-085--title_subjects",
+    "condition": "title_subjects",
+    "record_key": "row-085"
+  }
+]

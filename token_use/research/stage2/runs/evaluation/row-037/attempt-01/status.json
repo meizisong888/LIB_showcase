@@ -1,0 +1,25 @@
+{
+  "status": "completed",
+  "started_at_utc": "2026-10-18T19:38:02.463935+00:00",
+  "completed_at_utc": "2026-10-18T19:38:33.313606+00:00",
+  "latency_seconds": 30.849673,
+  "launched": true,
+  "returncode": 0,
+  "usage": {
+    "input_tokens": 7956,
+    "cached_input_tokens": 3456,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1922,
+    "reasoning_output_tokens": 107
+  },
+  "reasoning_tokens": 107,
+  "backend_finish_reason": null,
+  "finish_reason_note": "CLI reports turn completion, not provider finish_reason; raw usage is authoritative for optional subcounts.",
+  "thread_ids": [
+    "01a15085-6a47-7f33-b999-e1e8f232f68a"
+  ],
+  "tool_event_count": 0,
+  "errors": [],
+  "fatal_class": null,
+  "response_nonempty": true
+}

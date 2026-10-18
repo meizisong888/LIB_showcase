@@ -1,0 +1,5045 @@
+{
+  "kind": "Automatic structure checks, not factual accuracy",
+  "records": [
+    {
+      "request_id": "row-100--full_pretty",
+      "record_key": "row-100",
+      "condition": "full_pretty",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 64,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5885,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5885
+        },
+        "output_tokens": {
+          "known_sum": 161,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 161
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.348017,
+      "raw_response_path": "runs/generation/row-100--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1295,
+        "o200k_base": 1296
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-100--full_compact",
+      "record_key": "row-100",
+      "condition": "full_compact",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 59,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5595,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5595
+        },
+        "output_tokens": {
+          "known_sum": 146,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 146
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.106955,
+      "raw_response_path": "runs/generation/row-100--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 985,
+        "o200k_base": 1006
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-100--task_fields",
+      "record_key": "row-100",
+      "condition": "task_fields",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 60,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5176,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5176
+        },
+        "output_tokens": {
+          "known_sum": 151,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 151
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.819262,
+      "raw_response_path": "runs/generation/row-100--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 579,
+        "o200k_base": 587
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-100--title_subjects",
+      "record_key": "row-100",
+      "condition": "title_subjects",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 23,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4894,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4894
+        },
+        "output_tokens": {
+          "known_sum": 115,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 115
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.695706,
+      "raw_response_path": "runs/generation/row-100--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 305,
+        "o200k_base": 305
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-046--full_pretty",
+      "record_key": "row-046",
+      "condition": "full_pretty",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 46,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6128,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6128
+        },
+        "output_tokens": {
+          "known_sum": 134,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 134
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 4.997808,
+      "raw_response_path": "runs/generation/row-046--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1542,
+        "o200k_base": 1539
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-046--full_compact",
+      "record_key": "row-046",
+      "condition": "full_compact",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 42,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5809,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5809
+        },
+        "output_tokens": {
+          "known_sum": 124,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 124
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.745139,
+      "raw_response_path": "runs/generation/row-046--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1204,
+        "o200k_base": 1220
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-046--task_fields",
+      "record_key": "row-046",
+      "condition": "task_fields",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 69,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5364,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5364
+        },
+        "output_tokens": {
+          "known_sum": 166,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 166
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.641863,
+      "raw_response_path": "runs/generation/row-046--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 773,
+        "o200k_base": 775
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-046--title_subjects",
+      "record_key": "row-046",
+      "condition": "title_subjects",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 36,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4914,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4914
+        },
+        "output_tokens": {
+          "known_sum": 139,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 139
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.546376,
+      "raw_response_path": "runs/generation/row-046--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 327,
+        "o200k_base": 325
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-018--full_pretty",
+      "record_key": "row-018",
+      "condition": "full_pretty",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 62,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6417,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6417
+        },
+        "output_tokens": {
+          "known_sum": 184,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 184
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.012394,
+      "raw_response_path": "runs/generation/row-018--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1820,
+        "o200k_base": 1828
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-018--full_compact",
+      "record_key": "row-018",
+      "condition": "full_compact",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 62,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6054,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6054
+        },
+        "output_tokens": {
+          "known_sum": 159,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 159
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.031489,
+      "raw_response_path": "runs/generation/row-018--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1437,
+        "o200k_base": 1465
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-018--task_fields",
+      "record_key": "row-018",
+      "condition": "task_fields",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 60,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5472,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5472
+        },
+        "output_tokens": {
+          "known_sum": 153,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 153
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.088959,
+      "raw_response_path": "runs/generation/row-018--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 872,
+        "o200k_base": 883
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-018--title_subjects",
+      "record_key": "row-018",
+      "condition": "title_subjects",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 39,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4913,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4913
+        },
+        "output_tokens": {
+          "known_sum": 133,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 133
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.351442,
+      "raw_response_path": "runs/generation/row-018--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 323,
+        "o200k_base": 324
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-080--full_pretty",
+      "record_key": "row-080",
+      "condition": "full_pretty",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 61,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6250,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6250
+        },
+        "output_tokens": {
+          "known_sum": 192,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 192
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.407474,
+      "raw_response_path": "runs/generation/row-080--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1660,
+        "o200k_base": 1661
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-080--full_compact",
+      "record_key": "row-080",
+      "condition": "full_compact",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 61,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5940,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5940
+        },
+        "output_tokens": {
+          "known_sum": 161,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 161
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 7.446119,
+      "raw_response_path": "runs/generation/row-080--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1329,
+        "o200k_base": 1351
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-080--task_fields",
+      "record_key": "row-080",
+      "condition": "task_fields",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 66,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5599,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5599
+        },
+        "output_tokens": {
+          "known_sum": 172,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 172
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.801315,
+      "raw_response_path": "runs/generation/row-080--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 999,
+        "o200k_base": 1010
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-080--title_subjects",
+      "record_key": "row-080",
+      "condition": "title_subjects",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 54,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4908,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4908
+        },
+        "output_tokens": {
+          "known_sum": 147,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 147
+        },
+        "cached_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.210148,
+      "raw_response_path": "runs/generation/row-080--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 317,
+        "o200k_base": 319
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-053--full_pretty",
+      "record_key": "row-053",
+      "condition": "full_pretty",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 50,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5845,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5845
+        },
+        "output_tokens": {
+          "known_sum": 158,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 158
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.790547,
+      "raw_response_path": "runs/generation/row-053--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1256,
+        "o200k_base": 1256
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-053--full_compact",
+      "record_key": "row-053",
+      "condition": "full_compact",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 42,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5573,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5573
+        },
+        "output_tokens": {
+          "known_sum": 132,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 132
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 8.522438,
+      "raw_response_path": "runs/generation/row-053--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 965,
+        "o200k_base": 984
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-053--task_fields",
+      "record_key": "row-053",
+      "condition": "task_fields",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 54,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5204,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5204
+        },
+        "output_tokens": {
+          "known_sum": 148,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 148
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.942458,
+      "raw_response_path": "runs/generation/row-053--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 608,
+        "o200k_base": 615
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-053--title_subjects",
+      "record_key": "row-053",
+      "condition": "title_subjects",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 42,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4924,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4924
+        },
+        "output_tokens": {
+          "known_sum": 128,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 128
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.64147,
+      "raw_response_path": "runs/generation/row-053--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 334,
+        "o200k_base": 335
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-078--full_pretty",
+      "record_key": "row-078",
+      "condition": "full_pretty",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 56,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6099,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6099
+        },
+        "output_tokens": {
+          "known_sum": 184,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 184
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.087006,
+      "raw_response_path": "runs/generation/row-078--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1514,
+        "o200k_base": 1510
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-078--full_compact",
+      "record_key": "row-078",
+      "condition": "full_compact",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 55,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5815,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5815
+        },
+        "output_tokens": {
+          "known_sum": 163,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 163
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.378882,
+      "raw_response_path": "runs/generation/row-078--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1210,
+        "o200k_base": 1226
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-078--task_fields",
+      "record_key": "row-078",
+      "condition": "task_fields",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 51,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5430,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5430
+        },
+        "output_tokens": {
+          "known_sum": 153,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 153
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 7.187131,
+      "raw_response_path": "runs/generation/row-078--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 832,
+        "o200k_base": 841
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-078--title_subjects",
+      "record_key": "row-078",
+      "condition": "title_subjects",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 42,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4911,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4911
+        },
+        "output_tokens": {
+          "known_sum": 140,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 140
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.180745,
+      "raw_response_path": "runs/generation/row-078--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 317,
+        "o200k_base": 322
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-028--full_pretty",
+      "record_key": "row-028",
+      "condition": "full_pretty",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 51,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5999,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5999
+        },
+        "output_tokens": {
+          "known_sum": 158,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 158
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.656046,
+      "raw_response_path": "runs/generation/row-028--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1407,
+        "o200k_base": 1410
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-028--full_compact",
+      "record_key": "row-028",
+      "condition": "full_compact",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 50,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5693,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5693
+        },
+        "output_tokens": {
+          "known_sum": 163,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 163
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.506991,
+      "raw_response_path": "runs/generation/row-028--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1083,
+        "o200k_base": 1104
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-028--task_fields",
+      "record_key": "row-028",
+      "condition": "task_fields",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 55,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5246,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5246
+        },
+        "output_tokens": {
+          "known_sum": 147,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 147
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.803336,
+      "raw_response_path": "runs/generation/row-028--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 646,
+        "o200k_base": 657
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-028--title_subjects",
+      "record_key": "row-028",
+      "condition": "title_subjects",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 38,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4951,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4951
+        },
+        "output_tokens": {
+          "known_sum": 126,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 126
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.430518,
+      "raw_response_path": "runs/generation/row-028--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 361,
+        "o200k_base": 362
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-036--full_pretty",
+      "record_key": "row-036",
+      "condition": "full_pretty",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 49,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5889,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5889
+        },
+        "output_tokens": {
+          "known_sum": 162,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 162
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.476351,
+      "raw_response_path": "runs/generation/row-036--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1296,
+        "o200k_base": 1300
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-036--full_compact",
+      "record_key": "row-036",
+      "condition": "full_compact",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 52,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5668,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5668
+        },
+        "output_tokens": {
+          "known_sum": 140,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 140
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 7.326584,
+      "raw_response_path": "runs/generation/row-036--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1059,
+        "o200k_base": 1079
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-036--task_fields",
+      "record_key": "row-036",
+      "condition": "task_fields",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 55,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5363,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5363
+        },
+        "output_tokens": {
+          "known_sum": 148,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 148
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.788887,
+      "raw_response_path": "runs/generation/row-036--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 763,
+        "o200k_base": 774
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-036--title_subjects",
+      "record_key": "row-036",
+      "condition": "title_subjects",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 22,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4846,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4846
+        },
+        "output_tokens": {
+          "known_sum": 100,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 100
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.134754,
+      "raw_response_path": "runs/generation/row-036--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 256,
+        "o200k_base": 257
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-050--full_pretty",
+      "record_key": "row-050",
+      "condition": "full_pretty",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 56,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6014,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6014
+        },
+        "output_tokens": {
+          "known_sum": 172,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 172
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.444357,
+      "raw_response_path": "runs/generation/row-050--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1429,
+        "o200k_base": 1425
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-050--full_compact",
+      "record_key": "row-050",
+      "condition": "full_compact",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 59,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5778,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5778
+        },
+        "output_tokens": {
+          "known_sum": 159,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 159
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.10712,
+      "raw_response_path": "runs/generation/row-050--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1177,
+        "o200k_base": 1189
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-050--task_fields",
+      "record_key": "row-050",
+      "condition": "task_fields",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 56,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5390,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5390
+        },
+        "output_tokens": {
+          "known_sum": 155,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 155
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.332327,
+      "raw_response_path": "runs/generation/row-050--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 794,
+        "o200k_base": 801
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-050--title_subjects",
+      "record_key": "row-050",
+      "condition": "title_subjects",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 39,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4870,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4870
+        },
+        "output_tokens": {
+          "known_sum": 128,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 128
+        },
+        "cached_input_tokens": {
+          "known_sum": 2432,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 2432
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.402602,
+      "raw_response_path": "runs/generation/row-050--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 279,
+        "o200k_base": 281
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-062--full_pretty",
+      "record_key": "row-062",
+      "condition": "full_pretty",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 68,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5945,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5945
+        },
+        "output_tokens": {
+          "known_sum": 187,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 187
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.898864,
+      "raw_response_path": "runs/generation/row-062--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1355,
+        "o200k_base": 1356
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-062--full_compact",
+      "record_key": "row-062",
+      "condition": "full_compact",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 63,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5717,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5717
+        },
+        "output_tokens": {
+          "known_sum": 155,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 155
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 10.926181,
+      "raw_response_path": "runs/generation/row-062--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1109,
+        "o200k_base": 1128
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-062--task_fields",
+      "record_key": "row-062",
+      "condition": "task_fields",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 59,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5415,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5415
+        },
+        "output_tokens": {
+          "known_sum": 152,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 152
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.043607,
+      "raw_response_path": "runs/generation/row-062--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 812,
+        "o200k_base": 826
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-062--title_subjects",
+      "record_key": "row-062",
+      "condition": "title_subjects",
+      "description_present": true,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 30,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4852,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4852
+        },
+        "output_tokens": {
+          "known_sum": 117,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 117
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.79255,
+      "raw_response_path": "runs/generation/row-062--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 263,
+        "o200k_base": 263
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-048--full_pretty",
+      "record_key": "row-048",
+      "condition": "full_pretty",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 48,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6388,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6388
+        },
+        "output_tokens": {
+          "known_sum": 179,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 179
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.881645,
+      "raw_response_path": "runs/generation/row-048--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1802,
+        "o200k_base": 1799
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-048--full_compact",
+      "record_key": "row-048",
+      "condition": "full_compact",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 48,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5990,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5990
+        },
+        "output_tokens": {
+          "known_sum": 143,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 143
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.441927,
+      "raw_response_path": "runs/generation/row-048--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1376,
+        "o200k_base": 1401
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-048--task_fields",
+      "record_key": "row-048",
+      "condition": "task_fields",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 49,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5347,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5347
+        },
+        "output_tokens": {
+          "known_sum": 143,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 143
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.816077,
+      "raw_response_path": "runs/generation/row-048--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 746,
+        "o200k_base": 758
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-048--title_subjects",
+      "record_key": "row-048",
+      "condition": "title_subjects",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 43,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4913,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4913
+        },
+        "output_tokens": {
+          "known_sum": 123,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 123
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.499395,
+      "raw_response_path": "runs/generation/row-048--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 326,
+        "o200k_base": 324
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-084--full_pretty",
+      "record_key": "row-084",
+      "condition": "full_pretty",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 58,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6219,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6219
+        },
+        "output_tokens": {
+          "known_sum": 181,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 181
+        },
+        "cached_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.545473,
+      "raw_response_path": "runs/generation/row-084--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1634,
+        "o200k_base": 1630
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-084--full_compact",
+      "record_key": "row-084",
+      "condition": "full_compact",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 65,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5906,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5906
+        },
+        "output_tokens": {
+          "known_sum": 192,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 192
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.979276,
+      "raw_response_path": "runs/generation/row-084--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1297,
+        "o200k_base": 1317
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-084--task_fields",
+      "record_key": "row-084",
+      "condition": "task_fields",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 62,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5507,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5507
+        },
+        "output_tokens": {
+          "known_sum": 162,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 162
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.118741,
+      "raw_response_path": "runs/generation/row-084--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 911,
+        "o200k_base": 918
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-084--title_subjects",
+      "record_key": "row-084",
+      "condition": "title_subjects",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 57,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5049,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5049
+        },
+        "output_tokens": {
+          "known_sum": 141,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 141
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.739073,
+      "raw_response_path": "runs/generation/row-084--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 464,
+        "o200k_base": 460
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-097--full_pretty",
+      "record_key": "row-097",
+      "condition": "full_pretty",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 49,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6153,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6153
+        },
+        "output_tokens": {
+          "known_sum": 153,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 153
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.706486,
+      "raw_response_path": "runs/generation/row-097--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1559,
+        "o200k_base": 1564
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-097--full_compact",
+      "record_key": "row-097",
+      "condition": "full_compact",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 49,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5813,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5813
+        },
+        "output_tokens": {
+          "known_sum": 142,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 142
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.880223,
+      "raw_response_path": "runs/generation/row-097--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1196,
+        "o200k_base": 1224
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-097--task_fields",
+      "record_key": "row-097",
+      "condition": "task_fields",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 46,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5327,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5327
+        },
+        "output_tokens": {
+          "known_sum": 143,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 143
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.561468,
+      "raw_response_path": "runs/generation/row-097--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 721,
+        "o200k_base": 738
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-097--title_subjects",
+      "record_key": "row-097",
+      "condition": "title_subjects",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 39,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4898,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4898
+        },
+        "output_tokens": {
+          "known_sum": 139,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 139
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 9.20718,
+      "raw_response_path": "runs/generation/row-097--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 307,
+        "o200k_base": 309
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-037--full_pretty",
+      "record_key": "row-037",
+      "condition": "full_pretty",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 44,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6340,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6340
+        },
+        "output_tokens": {
+          "known_sum": 147,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 147
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.624659,
+      "raw_response_path": "runs/generation/row-037--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1754,
+        "o200k_base": 1751
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-037--full_compact",
+      "record_key": "row-037",
+      "condition": "full_compact",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 45,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5987,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5987
+        },
+        "output_tokens": {
+          "known_sum": 133,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 133
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.396624,
+      "raw_response_path": "runs/generation/row-037--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1381,
+        "o200k_base": 1398
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-037--task_fields",
+      "record_key": "row-037",
+      "condition": "task_fields",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 51,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5437,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5437
+        },
+        "output_tokens": {
+          "known_sum": 145,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 145
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.637526,
+      "raw_response_path": "runs/generation/row-037--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 841,
+        "o200k_base": 848
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-037--title_subjects",
+      "record_key": "row-037",
+      "condition": "title_subjects",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 33,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4896,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4896
+        },
+        "output_tokens": {
+          "known_sum": 134,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 134
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.057355,
+      "raw_response_path": "runs/generation/row-037--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 307,
+        "o200k_base": 307
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-092--full_pretty",
+      "record_key": "row-092",
+      "condition": "full_pretty",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 58,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6369,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6369
+        },
+        "output_tokens": {
+          "known_sum": 191,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 191
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 7.175015,
+      "raw_response_path": "runs/generation/row-092--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1761,
+        "o200k_base": 1780
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-092--full_compact",
+      "record_key": "row-092",
+      "condition": "full_compact",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 59,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6081,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6081
+        },
+        "output_tokens": {
+          "known_sum": 166,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 166
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 8.389767,
+      "raw_response_path": "runs/generation/row-092--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1453,
+        "o200k_base": 1492
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-092--task_fields",
+      "record_key": "row-092",
+      "condition": "task_fields",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 58,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5570,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5570
+        },
+        "output_tokens": {
+          "known_sum": 151,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 151
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.11578,
+      "raw_response_path": "runs/generation/row-092--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 969,
+        "o200k_base": 981
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-092--title_subjects",
+      "record_key": "row-092",
+      "condition": "title_subjects",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 30,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4941,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4941
+        },
+        "output_tokens": {
+          "known_sum": 116,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 116
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.270372,
+      "raw_response_path": "runs/generation/row-092--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 350,
+        "o200k_base": 352
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-017--full_pretty",
+      "record_key": "row-017",
+      "condition": "full_pretty",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 62,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6604,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6604
+        },
+        "output_tokens": {
+          "known_sum": 189,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 189
+        },
+        "cached_input_tokens": {
+          "known_sum": 2432,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 2432
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 7.600906,
+      "raw_response_path": "runs/generation/row-017--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 2014,
+        "o200k_base": 2015
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-017--full_compact",
+      "record_key": "row-017",
+      "condition": "full_compact",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 59,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6239,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6239
+        },
+        "output_tokens": {
+          "known_sum": 179,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 179
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.100874,
+      "raw_response_path": "runs/generation/row-017--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1629,
+        "o200k_base": 1650
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-017--task_fields",
+      "record_key": "row-017",
+      "condition": "task_fields",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 68,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5713,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5713
+        },
+        "output_tokens": {
+          "known_sum": 189,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 189
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.321383,
+      "raw_response_path": "runs/generation/row-017--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1113,
+        "o200k_base": 1124
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-017--title_subjects",
+      "record_key": "row-017",
+      "condition": "title_subjects",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 38,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4952,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4952
+        },
+        "output_tokens": {
+          "known_sum": 122,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 122
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.274035,
+      "raw_response_path": "runs/generation/row-017--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 362,
+        "o200k_base": 363
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-054--full_pretty",
+      "record_key": "row-054",
+      "condition": "full_pretty",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 48,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5836,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5836
+        },
+        "output_tokens": {
+          "known_sum": 153,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 153
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.09751,
+      "raw_response_path": "runs/generation/row-054--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1250,
+        "o200k_base": 1247
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-054--full_compact",
+      "record_key": "row-054",
+      "condition": "full_compact",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 65,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5621,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5621
+        },
+        "output_tokens": {
+          "known_sum": 171,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 171
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.468049,
+      "raw_response_path": "runs/generation/row-054--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1022,
+        "o200k_base": 1032
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-054--task_fields",
+      "record_key": "row-054",
+      "condition": "task_fields",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 54,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5233,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5233
+        },
+        "output_tokens": {
+          "known_sum": 168,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 168
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.750245,
+      "raw_response_path": "runs/generation/row-054--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 639,
+        "o200k_base": 644
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-054--title_subjects",
+      "record_key": "row-054",
+      "condition": "title_subjects",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 19,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4875,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4875
+        },
+        "output_tokens": {
+          "known_sum": 95,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 95
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.753662,
+      "raw_response_path": "runs/generation/row-054--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 285,
+        "o200k_base": 286
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-038--full_pretty",
+      "record_key": "row-038",
+      "condition": "full_pretty",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 49,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5758,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5758
+        },
+        "output_tokens": {
+          "known_sum": 155,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 155
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.837956,
+      "raw_response_path": "runs/generation/row-038--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1174,
+        "o200k_base": 1169
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-038--full_compact",
+      "record_key": "row-038",
+      "condition": "full_compact",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 57,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5546,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5546
+        },
+        "output_tokens": {
+          "known_sum": 155,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 155
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.689068,
+      "raw_response_path": "runs/generation/row-038--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 947,
+        "o200k_base": 957
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-038--task_fields",
+      "record_key": "row-038",
+      "condition": "task_fields",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 56,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5152,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5152
+        },
+        "output_tokens": {
+          "known_sum": 146,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 146
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.631877,
+      "raw_response_path": "runs/generation/row-038--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 558,
+        "o200k_base": 563
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-038--title_subjects",
+      "record_key": "row-038",
+      "condition": "title_subjects",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 28,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4928,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4928
+        },
+        "output_tokens": {
+          "known_sum": 94,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 94
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.35171,
+      "raw_response_path": "runs/generation/row-038--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 339,
+        "o200k_base": 339
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-011--full_pretty",
+      "record_key": "row-011",
+      "condition": "full_pretty",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 45,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6485,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6485
+        },
+        "output_tokens": {
+          "known_sum": 162,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 162
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.78893,
+      "raw_response_path": "runs/generation/row-011--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1891,
+        "o200k_base": 1896
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-011--full_compact",
+      "record_key": "row-011",
+      "condition": "full_compact",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 50,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6120,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6120
+        },
+        "output_tokens": {
+          "known_sum": 152,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 152
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.821608,
+      "raw_response_path": "runs/generation/row-011--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1502,
+        "o200k_base": 1531
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-011--task_fields",
+      "record_key": "row-011",
+      "condition": "task_fields",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 44,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5519,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5519
+        },
+        "output_tokens": {
+          "known_sum": 132,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 132
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 6.403718,
+      "raw_response_path": "runs/generation/row-011--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 914,
+        "o200k_base": 930
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-011--title_subjects",
+      "record_key": "row-011",
+      "condition": "title_subjects",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 24,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4873,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4873
+        },
+        "output_tokens": {
+          "known_sum": 97,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 97
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.988303,
+      "raw_response_path": "runs/generation/row-011--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 283,
+        "o200k_base": 284
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-085--full_pretty",
+      "record_key": "row-085",
+      "condition": "full_pretty",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 56,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6647,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6647
+        },
+        "output_tokens": {
+          "known_sum": 183,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 183
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 8.266546,
+      "raw_response_path": "runs/generation/row-085--full_pretty/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 2034,
+        "o200k_base": 2058
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-085--full_compact",
+      "record_key": "row-085",
+      "condition": "full_compact",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 60,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 6362,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 6362
+        },
+        "output_tokens": {
+          "known_sum": 164,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 164
+        },
+        "cached_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 7.94052,
+      "raw_response_path": "runs/generation/row-085--full_compact/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1727,
+        "o200k_base": 1773
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-085--task_fields",
+      "record_key": "row-085",
+      "condition": "task_fields",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 59,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 5745,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 5745
+        },
+        "output_tokens": {
+          "known_sum": 157,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 157
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 9.311029,
+      "raw_response_path": "runs/generation/row-085--task_fields/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 1140,
+        "o200k_base": 1156
+      },
+      "all_automatic_checks_pass": true
+    },
+    {
+      "request_id": "row-085--title_subjects",
+      "record_key": "row-085",
+      "condition": "title_subjects",
+      "description_present": false,
+      "planned": true,
+      "attempted": true,
+      "attempts": 1,
+      "retries": 0,
+      "backend_status": "completed",
+      "backend_completed": true,
+      "valid_json": true,
+      "record_id_correct": true,
+      "description_word_count": 43,
+      "description_within_limit": true,
+      "evidence_fields_not_supplied": [],
+      "evidence_fields_valid": true,
+      "importer_structure_pass": true,
+      "empty_response": false,
+      "refusal_text_flag": false,
+      "provider_refusal_status": null,
+      "provider_truncation_status": null,
+      "client_timeout": false,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 4901,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 4901
+        },
+        "output_tokens": {
+          "known_sum": 116,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 116
+        },
+        "cached_input_tokens": {
+          "known_sum": 3456,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 3456
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 1,
+          "total_attempts": 1,
+          "complete_total": 0
+        }
+      },
+      "latency_seconds_all_attempts": 5.170355,
+      "raw_response_path": "runs/generation/row-085--title_subjects/attempt-01/response.txt",
+      "local_input_tokens": {
+        "cl100k_base": 309,
+        "o200k_base": 312
+      },
+      "all_automatic_checks_pass": true
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "reference_concerns": [],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "The title identifies First Korean School in Silver Spring, Maryland. Index notes describe karate instruction, students attending picnic speeches, and Mrs. Shin, Hong Ki leading singing.",
+          "source_fields": ["Title", "Notes"],
+          "reason": "Meaningfully connects the named school and location with the picnic activities."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "Dated May 1, 1982",
+          "source_fields": ["Date"],
+          "reason": "Matches the recorded date."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "these 35 mm black-and-white film negatives",
+          "source_fields": ["Medium"],
+          "reason": "States the complete medium."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Index notes describe karate instruction, students attending picnic speeches, and Mrs. Shin, Hong Ki leading singing.",
+          "source_fields": ["Notes", "Index"],
+          "reason": "Attributes the activities to indexed notes about plural negatives, without asserting simultaneous visibility in one photograph."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts and adds supported photographer and collection information.",
+      "usable": "yes",
+      "usability_reason": "“Dated May 1, 1982,” “35 mm black-and-white film negatives,” and “Index notes describe” faithfully convey Date, Medium, and Notes; the school and location from Title are included. No important factual addition or correction is needed."
+    },
+    {
+      "label": "B",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "The title identifies First Korean School in Silver Spring, Maryland. Index notes describe karate instruction and a Korean school picnic",
+          "source_fields": ["Title", "Notes"],
+          "reason": "Conveys the school, location, and associated picnic."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "Dated May 1, 1982",
+          "source_fields": ["Date"],
+          "reason": "Matches the recorded date."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "these 35 mm black-and-white film negatives",
+          "source_fields": ["Medium"],
+          "reason": "States the complete medium."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Index notes describe karate instruction and a Korean school picnic, including students listening to speeches and Mrs. Shin, Hong Ki leading singing.",
+          "source_fields": ["Notes", "Index"],
+          "reason": "Summarizes the indexed activities across plural negatives without presenting them as one photograph."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all reference facts with useful, supported photographer and collection context.",
+      "usable": "yes",
+      "usability_reason": "“The title identifies First Korean School in Silver Spring, Maryland” and “Index notes describe” preserve the evidentiary basis in Title and Notes. Date and Medium are accurately stated; no important correction or addition is needed."
+    },
+    {
+      "label": "C",
+      "errors": [
+        {
+          "answer_quote": "No creator, date, or rights information is provided.",
+          "kind": "contradicted",
+          "source_fields": ["Date", "Rights"],
+          "source_quote": ["1982-05-01", "No known restrictions on use or reproduction."],
+          "reason": "The limitations incorrectly deny supplied date and rights information."
+        },
+        {
+          "answer_quote": "No creator, date, or rights information is provided.",
+          "kind": "uncertain",
+          "source_fields": ["Creators", "Contributors"],
+          "source_quote": "Long, Lucy M., 1956- (Photographer)",
+          "reason": "Creators is empty, but a photographer is explicitly supplied under Contributors. The blanket denial of creator information is misleading unless narrowly referring to the empty Creators field."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "The title identifies Korean class and a Korean school picnic at First Korean School in Silver Spring, Maryland.",
+          "source_fields": ["Title"],
+          "reason": "Conveys the title's school, picnic, and geographic association."
+        },
+        {
+          "fact_id": "F2",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Date"],
+          "reason": "The description does not give the recorded date."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Medium"],
+          "reason": "Documentary photographs does not convey the 35 mm black-and-white negative medium."
+        },
+        {
+          "fact_id": "F4",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Notes", "Index"],
+          "reason": "The description omits the indexed karate instruction, speeches, singing, and multi-frame context."
+        }
+      ],
+      "informativeness": 2,
+      "informativeness_reason": "Provides useful school, location, and qualified catalog-subject information, but omits three reference facts available in the full record.",
+      "usable": "no",
+      "usability_reason": "“No creator, date, or rights information is provided” requires correction against Date, Rights, and Contributors. The description also needs the date, negative medium, and indexed activity context from Date, Medium, and Notes; its qualified subject discussion does not supply those facts."
+    },
+    {
+      "label": "D",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "The title identifies First Korean School in Silver Spring, Maryland. Index notes describe karate instruction and a Korean school picnic",
+          "source_fields": ["Title", "Notes"],
+          "reason": "Conveys the school, location, and associated picnic."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "dated May 1, 1982",
+          "source_fields": ["Date"],
+          "reason": "Matches the recorded date."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "35 mm black-and-white film negatives",
+          "source_fields": ["Medium"],
+          "reason": "States the complete medium."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Index notes describe karate instruction and a Korean school picnic, including students listening to speeches and Mrs. Shin, Hong Ki leading singing.",
+          "source_fields": ["Notes", "Index"],
+          "reason": "Attributes the activities to indexed notes about plural negatives, rather than claiming all appear in one photograph."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers every reference fact and supplies supported photographer and collection context.",
+      "usable": "yes",
+      "usability_reason": "“35 mm black-and-white film negatives,” “dated May 1, 1982,” and “Index notes describe” accurately convey Medium, Date, and Notes. The Title association and Contributors attribution are preserved; no important factual correction or addition is needed."
+    }
+  ]
+}

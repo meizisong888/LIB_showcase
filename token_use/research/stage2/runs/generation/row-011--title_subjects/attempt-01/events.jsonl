@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a1507d-998a-7fb0-8e35-4384f598f68f"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"{\"record_id\":\"http://www.loc.gov/item/2017811986/\",\"description\":\"The title identifies a bathroom in a house renting for sixteen dollars a month in Norfolk, Virginia. Catalog subject terms include safety film negatives.\",\"evidence_fields\":[\"Title\",\"Subjects\"],\"limitations\":[\"No creator or date is supplied.\",\"No image or descriptive account is supplied to verify the title’s identification or describe visual details.\",\"The format reference comes from catalog subject metadata.\"]}"}}
+{"type":"turn.completed","usage":{"input_tokens":4873,"cached_input_tokens":3456,"cache_write_input_tokens":0,"output_tokens":97,"reasoning_output_tokens":0}}

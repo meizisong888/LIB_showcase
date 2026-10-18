@@ -1,0 +1,172 @@
+{
+  "reference_concerns": [],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "The caption-card-derived title identifies a bathroom in a Norfolk, Virginia, house renting for sixteen dollars a month.",
+          "source_fields": ["Title", "Notes"],
+          "reason": "Conveys the scene, rent, location, and caption provenance."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "The record credits John Vachon as photographer",
+          "source_fields": ["Creators"],
+          "reason": "Identifies the photographer and role."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "quote": "dates the safety film negative to March 1941",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the recorded month and year."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "the safety film negative",
+          "source_fields": ["Medium", "Genre"],
+          "reason": "Identifies the item's format."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts and adds supported collection context.",
+      "usable": "yes",
+      "usability_reason": "“The caption-card-derived title identifies a bathroom” preserves Title/Notes provenance; “John Vachon as photographer” and “March 1941” match Creators and Date_text. The description also supplies the format and collection without requiring factual correction or important addition."
+    },
+    {
+      "label": "B",
+      "errors": [
+        {
+          "quote": "No creator or date is supplied.",
+          "kind": "contradicted",
+          "source_fields": ["Creators", "Date_text"],
+          "source_quote": [
+            "{\"Name\":\"Vachon, John, 1914-1975\",\"Role\":\"photographer\"}",
+            "1941 Mar."
+          ],
+          "reason": "The full record supplies both a photographer and a date; this limitation is false."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "The title identifies a bathroom in a house renting for sixteen dollars a month in Norfolk, Virginia.",
+          "source_fields": ["Title", "Notes"],
+          "reason": "Conveys the scene, rent, and location as a title-based identification."
+        },
+        {
+          "fact_id": "F2",
+          "status": "missing",
+          "quote": "",
+          "source_fields": ["Creators"],
+          "reason": "The description does not identify John Vachon or his role."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "quote": "",
+          "source_fields": ["Date_text"],
+          "reason": "The description omits March 1941."
+        },
+        {
+          "fact_id": "F4",
+          "status": "partial",
+          "quote": "Catalog subject terms include safety film negatives.",
+          "source_fields": ["Subjects", "Medium"],
+          "reason": "Reports a supported subject term but does not clearly identify this item's physical format."
+        }
+      ],
+      "informativeness": 2,
+      "informativeness_reason": "Provides concrete caption information, but omits the photographer and date and only indirectly conveys format.",
+      "usable": "no",
+      "usability_reason": "“No creator or date is supplied” contradicts Creators and Date_text. Correct that limitation and add John Vachon, photographer, and March 1941 to the description; clarify the item's safety-negative format from Medium."
+    },
+    {
+      "label": "C",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "The caption-card-derived title identifies a bathroom in a house renting for sixteen dollars a month in Norfolk, Virginia.",
+          "source_fields": ["Title", "Notes"],
+          "reason": "Conveys the scene, rent, location, and caption provenance."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "by photographer John Vachon",
+          "source_fields": ["Creators"],
+          "reason": "Identifies the photographer and role."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "quote": "dated March 1941",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the recorded month and year."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "A safety film negative",
+          "source_fields": ["Medium", "Genre"],
+          "reason": "Identifies the item's format."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts and adds supported collection context.",
+      "usable": "yes",
+      "usability_reason": "“A safety film negative by photographer John Vachon, dated March 1941” matches Medium, Creators, and Date_text. “The caption-card-derived title identifies” preserves Title/Notes provenance. No substantive correction or important addition is needed."
+    },
+    {
+      "label": "D",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "The caption-derived title identifies a bathroom in a Norfolk, Virginia, house renting for sixteen dollars a month.",
+          "source_fields": ["Title", "Notes"],
+          "reason": "Conveys the scene, rent, location, and caption provenance."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "by photographer John Vachon",
+          "source_fields": ["Creators"],
+          "reason": "Identifies the photographer and role."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "quote": "dated March 1941",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the recorded month and year."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "A safety film negative",
+          "source_fields": ["Medium", "Genre"],
+          "reason": "Identifies the item's format."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts and adds supported collection context.",
+      "usable": "yes",
+      "usability_reason": "“A safety film negative by photographer John Vachon, dated March 1941” matches Medium, Creators, and Date_text. “The caption-derived title identifies” faithfully attributes the scene to Title/Notes. No substantive correction or important addition is needed."
+    }
+  ]
+}

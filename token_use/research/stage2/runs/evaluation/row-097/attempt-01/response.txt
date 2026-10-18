@@ -1,0 +1,187 @@
+{
+  "reference_concerns": [],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "A 35 mm color slide by photographer John Margolies, titled “Storybook Gardens billboard, Lake Delton, Wisconsin”",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Conveys the photographic format, named billboard, and location."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "by photographer John Margolies",
+          "source_fields": ["Creators"],
+          "reason": "Names the creator and correct role."
+        },
+        {
+          "fact_id": "F3",
+          "status": "partial",
+          "description_quote": "dated 1988. The title and date are based on information provided by the photographer.",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Includes the date and its provenance, but omits photographer-supplied keyword provenance."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "A 35 mm color slide",
+          "source_fields": ["Medium"],
+          "reason": "Meaningfully conveys the color transparency and 35 mm slide format."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Provides subject, location, photographer, date, format, provenance, and archive context; only keyword provenance is omitted.",
+      "usable": "yes",
+      "usability_reason": "“A 35 mm color slide by photographer John Margolies” and “dated 1988” faithfully convey Medium, Creators, and Date_text, with photographer-supplied title/date provenance from Notes. No substantive correction or important addition is needed; omitted keyword provenance is minor."
+    },
+    {
+      "label": "B",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "A 35 mm color slide photographed by John Margolies, cataloged as “Storybook Gardens billboard, Lake Delton, Wisconsin,”",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Conveys the photographic format, named billboard, and location."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "photographed by John Margolies",
+          "source_fields": ["Creators"],
+          "reason": "Names the photographer with the correct role."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "dated 1988. The title, date, and keywords are based on information supplied by the photographer.",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Includes the date and all specified provenance qualifications."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "A 35 mm color slide",
+          "source_fields": ["Medium"],
+          "reason": "Meaningfully conveys the color transparency and 35 mm slide format."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all reference facts and adds supported archive context.",
+      "usable": "yes",
+      "usability_reason": "“A 35 mm color slide photographed by John Margolies” and “dated 1988” match Medium, Creators, and Date_text; “The title, date, and keywords are based on information supplied by the photographer” preserves Notes provenance. No substantive correction or important addition is needed."
+    },
+    {
+      "label": "C",
+      "errors": [
+        {
+          "answer_quote": "No creator or explicit creation date supplied",
+          "kind": "contradicted",
+          "source_fields": ["Creators", "Date_text", "Notes"],
+          "source_quote": [
+            "{\"Name\":\"Margolies, John\",\"Role\":\"photographer\"}",
+            "1988.",
+            "Title, date and keywords based on information provided by the photographer."
+          ],
+          "reason": "The limitation incorrectly denies supplied photographer and date metadata."
+        },
+        {
+          "answer_quote": "1980–1990 appears only in subject headings.",
+          "kind": "contradicted",
+          "source_fields": ["Genre"],
+          "source_quote": "Slides--1980-1990.--Color",
+          "reason": "The same date range also appears in Genre."
+        },
+        {
+          "answer_quote": "No rights information supplied.",
+          "kind": "contradicted",
+          "source_fields": ["Rights"],
+          "source_quote": "No known restrictions on publication. For more information, see \"John Margolies Roadside America Photograph Archive - Rights and Restrictions Information\" https://www.loc.gov/rr/print/res/723_marg.html",
+          "reason": "The record supplies a rights statement, although it is not a categorical permission grant."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "Titled “Storybook Gardens billboard, Lake Delton, WIsconsin,” this item is cataloged with terms for color slides",
+          "source_fields": ["Title", "Medium", "Subjects"],
+          "reason": "Conveys the named billboard, location, and photographic slide context through catalog attribution."
+        },
+        {
+          "fact_id": "F2",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Creators"],
+          "reason": "The description does not identify John Margolies as photographer."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Neither the 1988 date nor photographer-supplied title/date/keyword provenance is conveyed."
+        },
+        {
+          "fact_id": "F4",
+          "status": "partial",
+          "description_quote": "cataloged with terms for color slides",
+          "source_fields": ["Medium", "Subjects"],
+          "reason": "Conveys color-slide indexing but not the specific 35 mm format."
+        }
+      ],
+      "informativeness": 2,
+      "informativeness_reason": "Provides the subject, location, and useful indexing context, but omits the photographer, specific date, provenance, and 35 mm format.",
+      "usable": "no",
+      "usability_reason": "The description needs the photographer and qualified 1988 date from Creators, Date_text, and Notes, plus the 35 mm format from Medium. Limitations stating “No creator or explicit creation date supplied” and “No rights information supplied” contradict the supplied record and require correction."
+    },
+    {
+      "label": "D",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "A 35 mm color slide by photographer John Margolies, titled “Storybook Gardens billboard, Lake Delton, Wisconsin”",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Conveys the photographic format, named billboard, and location."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "by photographer John Margolies",
+          "source_fields": ["Creators"],
+          "reason": "Names the creator and correct role."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "dated 1988. The title, date, and keywords are based on information provided by the photographer.",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Includes the date and all specified provenance qualifications."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "A 35 mm color slide",
+          "source_fields": ["Medium"],
+          "reason": "Meaningfully conveys the color transparency and 35 mm slide format."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all reference facts and adds supported archive context.",
+      "usable": "yes",
+      "usability_reason": "“A 35 mm color slide by photographer John Margolies” and “dated 1988” match Medium, Creators, and Date_text; “The title, date, and keywords are based on information provided by the photographer” preserves Notes provenance. No substantive correction or important addition is needed."
+    }
+  ]
+}

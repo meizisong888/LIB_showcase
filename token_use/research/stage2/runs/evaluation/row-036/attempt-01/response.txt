@@ -1,0 +1,193 @@
+{
+  "reference_concerns": [],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "Titled “Tanis Guinness & ‘Ta Wang’,” this photograph is described in the catalog as showing a young girl holding a dog.",
+          "source_fields": ["Title", "Description"],
+          "reason": "Conveys the title and cataloged depiction without assigning the names to particular subjects."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "the glass negative",
+          "source_fields": ["Medium"],
+          "reason": "Identifies the glass-negative medium."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "dates from approximately 1910–1915",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the approximate date range."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Published by Bain News Service",
+          "source_fields": ["Creators"],
+          "reason": "Correctly identifies the publisher without asserting photographer attribution."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts and adds supported collection membership and title provenance.",
+      "usable": "yes",
+      "usability_reason": "“Showing a young girl holding a dog,” “Published by Bain News Service,” and “the glass negative dates from approximately 1910–1915” faithfully convey Description, Creators, Medium, and Date_text. No important factual addition or correction is needed."
+    },
+    {
+      "label": "B",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "Titled “Tanis Guinness & ‘Ta Wang’,” this photograph is described in the catalog as showing a young girl holding a dog.",
+          "source_fields": ["Title", "Description"],
+          "reason": "Conveys the title and cataloged depiction without resolving the subjects’ identities."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "the glass negative",
+          "source_fields": ["Medium"],
+          "reason": "Identifies the glass-negative medium."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "dates from approximately 1910–1915",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the approximate date range."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Published by Bain News Service",
+          "source_fields": ["Creators"],
+          "reason": "Preserves the publisher role without asserting photographer attribution."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts and adds supported dimensions and collection membership.",
+      "usable": "yes",
+      "usability_reason": "“Showing a young girl holding a dog,” “Published by Bain News Service,” and “the glass negative dates from approximately 1910–1915” match Description, Creators, Medium, and Date_text. “Measures 5 × 7 inches or smaller” also preserves Medium’s qualification."
+    },
+    {
+      "label": "C",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "Titled “Tanis Guinness & ‘Ta Wang’,” this glass negative is described in the catalog as showing a young girl holding a dog.",
+          "source_fields": ["Title", "Description"],
+          "reason": "Conveys the title and cataloged depiction without independently identifying the subjects."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "this glass negative",
+          "source_fields": ["Medium"],
+          "reason": "Identifies the glass-negative medium."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "dated approximately 1910–1915",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the approximate date range."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Published by Bain News Service",
+          "source_fields": ["Creators"],
+          "reason": "Correctly states the publisher role without asserting photographer attribution."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts and adds supported collection membership and title provenance.",
+      "usable": "yes",
+      "usability_reason": "“This glass negative,” “showing a young girl holding a dog,” and “Published by Bain News Service and dated approximately 1910–1915” faithfully convey Medium, Description, Creators, and Date_text. No important factual correction or addition is needed."
+    },
+    {
+      "label": "D",
+      "errors": [
+        {
+          "answer_quote": "The available metadata does not establish what it depicts.",
+          "kind": "contradicted",
+          "source_fields": ["Description"],
+          "source_quote": "Photo shows young girl holding a dog.",
+          "reason": "The supplied metadata explicitly describes the depicted content."
+        },
+        {
+          "answer_quote": "No description, creator, or date is supplied.",
+          "kind": "contradicted",
+          "source_fields": ["Description", "Creators", "Date_text"],
+          "source_quote": {
+            "Description": "Photo shows young girl holding a dog.",
+            "Creators": {
+              "Name": "Bain News Service",
+              "Role": "publisher"
+            },
+            "Date_text": "[between ca. 1910 and ca. 1915]"
+          },
+          "reason": "This limitations claim incorrectly denies supplied fields; the creator entry specifies a publisher, not necessarily a photographer."
+        },
+        {
+          "answer_quote": "The identities of Tanis Guinness and “Ta Wang” and the depicted content are not established by the metadata.",
+          "kind": "contradicted",
+          "source_fields": ["Title", "Description"],
+          "source_quote": {
+            "Title": "Tanis Guinness & \"Ta Wang\"",
+            "Description": "Photo shows young girl holding a dog."
+          },
+          "reason": "Caution about independently verified identities is reasonable, but the claim also incorrectly denies the explicit description of depicted content."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "partial",
+          "description_quote": "Titled “Tanis Guinness & ‘Ta Wang’,”",
+          "source_fields": ["Title", "Description"],
+          "reason": "Supplies the title but not the young girl holding a dog; instead, the description incorrectly denies available depiction information."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "this item is cataloged under “glass negatives.”",
+          "source_fields": ["Subjects", "Medium"],
+          "reason": "Meaningfully conveys the cataloged glass-negative classification, consistent with Medium."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Date_text"],
+          "reason": "The description does not provide the approximate 1910–1915 date range."
+        },
+        {
+          "fact_id": "F4",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Creators"],
+          "reason": "The description does not identify Bain News Service as publisher."
+        }
+      ],
+      "informativeness": 1,
+      "informativeness_reason": "Provides only the title and glass-negative classification, omitting the supplied depiction, approximate date range, and publisher.",
+      "usable": "no",
+      "usability_reason": "“The available metadata does not establish what it depicts” contradicts Description, and “No description, creator, or date is supplied” contradicts Description, Creators, and Date_text. Correct those claims and add the young girl holding a dog, approximate 1910–1915 date range, and Bain News Service’s publisher role."
+    }
+  ]
+}

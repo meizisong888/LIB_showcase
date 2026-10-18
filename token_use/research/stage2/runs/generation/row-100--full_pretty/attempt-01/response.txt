@@ -1,0 +1,6 @@
+{
+  "record_id": "http://www.loc.gov/item/2004680400/",
+  "description": "Photographic print cataloged as “Unfinished steel structure intact after quake, San Francisco,” with the date recorded as “c1906.” The catalog description identifies a man standing among rubble, an unfinished but intact steel structure behind him, and remnants of burned-out brick and stone buildings following the San Francisco earthquake and fire. A note credits George R. Lawrence & Co., Chicago, as the photograph’s copyright holder.",
+  "evidence_fields": ["Title", "Date_text", "Medium", "Description", "Notes"],
+  "limitations": ["The underlying photograph was not examined.", "No creator is identified; the copyright credit does not establish authorship."]
+}

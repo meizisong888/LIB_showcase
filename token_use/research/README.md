@@ -1,30 +1,147 @@
 # Library metadata research pilot
 
-**Research question:** Which preparation steps, without calling a model, can
-reduce large language model (LLM) input for a library item-description task
-while maintaining an accurate, informative staff draft?
+**Research question:** Which preparation operations that do not call a model
+can reduce input tokens for library item descriptions while keeping the drafts
+accurate and informative?
 
-**Executed:** 100 real Library of Congress records, four input conditions, two
-local tokenizers, and exact field-value checks. **Pending:** actual model answers,
-provider usage, and independent staff assessment. The 400 generated prompts are
-prepared experimental inputs, not 400 completed model calls.
+**Input preparation and counting are complete. Actual generation is complete:
+80/80 requests.** Automatic checks and **20 independent AI-evaluation calls** are complete
+and reported below. **Librarian evaluation remains pending.** The study has not
+measured monetary charges, HokieAI allocation or staff time.
 
-[Study protocol](protocol.md) · [Related research](references.md) ·
-[Model evaluation instructions](model-evaluation.md) ·
-[Local reproduction](reproduction.md) · [Original showcase](../README.md)
+[Observed model results](stage2/report.md) · [Same-record answers](stage2/results/examples.md) ·
+[Study protocol](protocol.md) · [Sources](data/README.md) ·
+[Human review materials](stage2/human-review/README.md) · [Original showcase](../README.md)
 
-## Why this is the next experiment
+## Library task and comparison
 
-The original showcase demonstrates local preparation. A research paper needs to
-learn which operations help a real library task and what information or output
-quality they sacrifice. This pilot isolates formatting from field selection,
-uses an external real-data sample, and prepares a paired evaluation of model
-responses. It does not claim to invent compression, field selection, or deduplication.
+A staff member needs an informative description of **one catalog item**, no
+more than 80 English words, grounded only in its supplied metadata. The model
+returns the item ID, draft, evidence fields and limitations. Staff still need
+to check it before use. This is not collection-level archival description,
+subject-heading assignment or automated catalog publication.
 
-The task is to draft a description of **one catalog item**, at most 80 English
-words, using only supplied metadata. Library staff would check the draft before
-use. This is not collection-level archival description. The exact [task](task.txt)
-is identical in every condition and is included in every token count.
+The frozen data contain 100 real records from the Library of Congress (LOC)
+Labs Free to Use and Reuse package, downloaded on 2026-10-17. We retain the
+[original source](data/loc-sample.json) and [provenance and reuse terms](data/README.md).
+The 20 model-evaluation records were selected before seeing answers: ten with
+nonempty Description and ten without. The same records, [task](task.txt) and
+[conditions](config.json) are used throughout:
+
+| Condition | What the model receives | Comparison purpose |
+| --- | --- | --- |
+| `full_pretty` | All 36 fields in readable JSON | Formatting comparison |
+| `full_compact` | All 36 fields in compact JSON | Primary baseline |
+| `task_fields` | 27 predefined fields, retaining dates, notes, roles, rights and descriptive evidence | Primary field-selection comparison |
+| `title_subjects` | IDs, URLs, title and subjects only | Aggressive stress test; not a recommended workflow |
+
+Preparation uses local JSON operations, explicit field lists and hashes.
+Generation itself **does call a model**. On 2026-10-18, the official Codex CLI
+0.163.0 used the existing ChatGPT login and model identifier `gpt-6.1-sol`.
+Generation settings were identical across all four conditions. Every request
+used a fresh isolated context with no repository, source-file, history or
+retrieval access. Evaluation used separate anonymous contexts with the same
+model; possible self-evaluation bias remains. [Execution and isolation evidence](stage2/reproduction.md).
+
+## Real generation results and initial quality comparison
+
+The table covers the **20 paired records**, not all 100 source records.
+Backend input includes common CLI runtime instructions. Output includes the
+entire answer, including supporting JSON fields. The local counts below use a
+different scope and must not be substituted for provider usage.
+
+<!-- STAGE2_TABLE_START -->
+| Condition | Completed / planned | Backend input | Backend output | Input change vs compact | Structure pass | AI coverage | Raw AI usable† |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| full_pretty | 20/20 | 123,270 | 3,385 | 5.08% higher | 20/20 | 92.33% | 19/20 |
+| full_compact | 20/20 | 117,307 | 3,099 | baseline | 20/20 | 93.83% | 18/20 |
+| task_fields | 20/20 | 108,209 | 3,081 | 7.76% lower | 20/20 | 94.83% | 19/20 |
+| title_subjects | 20/20 | 98,209 | 2,450 | 16.28% lower | 20/20 | 14.75% | 0/20 |
+<!-- STAGE2_TABLE_END -->
+
+All 80 generations completed without retries. Automatic checks confirm valid
+JSON, matching IDs, descriptions within the 80-word limit and evidence-field
+names present in the corresponding input. These are **structure checks, not
+factual accuracy**. Provider truncation/refusal flags were not exposed and remain
+unknown; raw answers and native usage objects are preserved.
+
+The AI evaluator uses full source records and a provisional important-fact list
+fixed before generation. The list and ratings are **not human-confirmed**.
+Coverage credits only fully conveyed facts; omissions are separate from invented
+claims. † Raw AI usability judgments need particular caution: the evaluator
+sometimes penalized a correct statement that a field was absent from a reduced
+input because the full source contained it. Those scores are preserved with
+scope flags, not silently repaired. They are not librarian acceptance rates.
+The primary contrast showed mean AI coverage of **94.83% for task_fields vs
+93.83% for full_compact**, with different directions in the two source strata.
+The sparse condition's **14.75%** coverage signals substantial missing detail.
+These judgments do not establish unchanged quality or professional usability.
+See the [paired comparisons, both description strata and evaluator limitations](stage2/report.md).
+
+For these 20 records, task fields reduced local `o200k_base` input from
+**25,527 to 16,429 (35.64%)**; measured backend input fell from **117,307 to
+108,209 (7.76%)**. The difference reflects shared runtime overhead. Cached input
+and reasoning tokens are subsets of input/output, not additional totals.
+Generation, evaluation and unknown development usage are reported separately.
+No input reduction here is a measured HokieAI quota or financial saving.
+
+## Read an actual same-record comparison
+
+The first scheduled record, [row-100](stage2/results/examples.md#row-100-unfinished-steel-structure-intact-after-quake-san-francisco),
+concerns an unfinished steel structure after the San Francisco earthquake.
+The source Description also mentions a man among rubble and burned brick and
+stone buildings; `Date_text` is `c1906.`. These fields exist in both the full
+and task-field inputs and are absent from title-and-subjects input.
+
+Actual `task_fields` description:
+
+> Photographic print dated “c1906.” The catalog describes San Francisco’s earthquake and fire disaster, with a man standing among rubble, an unfinished but intact steel structure in the background, and remnants of burned-out brick and stone buildings nearby. A note states that the photograph was copyrighted by George R. Lawrence & Co., Chicago. Rights metadata states: “No known restrictions on publication.”
+
+Actual `title_subjects` description:
+
+> Titled “Unfinished steel structure intact after quake, San Francisco,” this item is cataloged with subject headings for San Francisco skyscrapers and earthquakes, 1900–1910.
+
+The latter also correctly says that no Description or rights field was supplied.
+Its omitted scene detail and date illustrate reduced information, not proof of
+invented facts. The evaluator incorrectly treated those input-limit statements
+as source contradictions. [The complete raw answers and evaluation](stage2/results/examples.md)
+make this failure visible. Further examples include the first sparse-source
+record and both extremes of the primary coverage difference, with original-order
+tie breaking, rather than only examples favorable to reduction.
+
+## What is complete, and what remains
+
+| Component | Status and boundary |
+| --- | --- |
+| 100-record preparation, two tokenizers, field-value checks | Complete; original evidence preserved |
+| 20 records × four conditions | 80 real generations complete; other prepared prompts were not submitted |
+| Automatic structure checks | Complete; no factual-accuracy claim |
+| AI-assisted paired evaluation | 20 independent calls complete, producing 80 candidate judgments; documented evaluator errors, no human gold standard |
+| Two independent human reviewers | Pending; [two blank packets](stage2/human-review/README.md) are ready |
+| Money, HokieAI allocation, staff editing time, development usage | Not measured |
+
+This small, deliberately balanced pilot does not establish quality equivalence,
+professional acceptance or general production savings. The source metadata can
+be uncertain or wrong; no unseen objects were independently verified. A model
+alias without an immutable snapshot, one response per condition, fixed request
+order, the shared runtime wrapper and evaluator errors limit generalization.
+The title-and-subjects condition is a stress test even if it uses the fewest tokens.
+
+## Reproduce the saved analysis without model calls
+
+From `token_use/research/` in the prepared environment:
+
+```bash
+.venv/bin/python stage2/analyze.py
+.venv/bin/python stage2/render.py
+.venv/bin/python stage2/verify.py
+```
+
+These read saved observations. [Reproduction details](stage2/reproduction.md)
+cover setup on a fresh checkout, exact commands, resumability, usage accounting
+and developer checks. They do not claim librarian user testing. New inference
+would consume model allowance; the existing successful calls must not be repeated
+as if they were free preprocessing.
 
 ## What was actually measured
 
@@ -88,7 +205,7 @@ artifact hashes; it did not perform OS isolation or syscall tracing either.
 for this pilot.** This does not change the older showcase's separate evidence.
 Local computation and AI-assisted development are not cost-free.
 
-## Reproduce the result
+## Reproduce the input result
 
 From this `token_use/research/` directory, with Python 3.11 or later:
 
@@ -117,39 +234,20 @@ The run creates `outputs/requests.jsonl` (400 requests) and
 order), plus results and checksums. Generated prompt files and tokenizer caches
 are not committed; the script regenerates them exactly.
 
-## What is needed for a paper
+## What is still needed for a paper
 
-A fixed [20-record quality pilot](results/quality-pilot.json) selects ten records
-with descriptions and ten without, using hashes before observing model outcomes.
-The same model would receive all four inputs for each item: 80 independent calls.
-Its real responses and usage have **not** been collected.
+Two independent reviewers should identify important facts from the full sources
+before seeing answers, freeze an agreed reference, and score the blinded drafts.
+The teacher and reviewers still need a practical quality margin; none is invented
+from these outcomes. Preserve independent ratings and disagreements before any
+adjudication. [Evaluation instructions](model-evaluation.md) explain the files.
 
-Two reviewers should score the outputs with condition labels hidden: unsupported
-claims, lost qualifications, informative coverage of important source facts, and
-whether staff could use the draft. Reviewers identify the important facts from
-the full records before seeing responses. This prevents a nearly empty but
-technically accurate answer from winning simply by saying very little.
+The contribution is task-specific evidence about which input operations help
+and where they stop being useful. A broader claim needs human assessment and,
+depending on pilot precision, additional collections or a larger study. Exact
+deduplication, incremental processing and keyword retrieval require different
+workloads and remain separate from this description experiment.
 
-[The protocol](protocol.md) specifies paired comparisons, actual input/output
-usage, failures and retries, and a quality criterion agreed with the teacher
-before scoring. [prepare_review.py](prepare_review.py) imports actual outputs and
-builds blinded rating sheets; it never invents model responses or human scores.
-The next execution step is selecting the study's model access and reviewers.
-
-The intended contribution is practical evidence about **which input operations
-help this library workflow and where they stop being useful**. A paper-level
-claim about quality requires the pending evaluation and, depending on pilot
-precision, a larger or second-collection study. Deduplication, incremental work,
-and keyword retrieval require different workloads and remain separate studies.
-
-## Sources and limits
-
-This is a curated public-data sample, not a representative survey of libraries.
-The source package already standardized its metadata; derived locations can be
-inaccurate. We assess faithfulness to metadata, not truth about unseen objects.
-See [data provenance and reuse](data/README.md) and [six primary research sources](references.md).
-
-No HokieAI allocation, production savings, model accuracy, or staff-time saving
-has been measured. The original teaching examples remain separately available.
-Software uses the repository's MIT license; source metadata retain their own
-attribution and rights context.
+See [six primary research sources](references.md) and the original
+[stage-one reproduction](reproduction.md). Software uses the repository's MIT
+license; source metadata retain their attribution and rights context.

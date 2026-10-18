@@ -1,0 +1,190 @@
+{
+  "reference_concerns": [],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "a Model T Ford resting partly on and partly off a streetcar boarding platform in Washington, D.C.",
+          "source_fields": ["Description"],
+          "reason": "Conveys the vehicle, position, platform, and location."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "Glass negative",
+          "source_fields": ["Medium"],
+          "reason": "Correctly identifies the medium."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "cataloged as [1922]",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Preserves the supplied date and explains its basis: “The date derives from negatives in the same range”."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "the title comes from unverified data supplied by the National Photo Company on negatives or sleeves.",
+          "source_fields": ["Title", "Notes"],
+          "reason": "Preserves title provenance and uncertainty without inventing accident circumstances."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts with concrete depiction, medium, date basis, and title qualification.",
+      "usable": "yes",
+      "usability_reason": "“Glass negative” and the Model T/platform description follow Medium and Description; “The date derives from negatives in the same range” and “unverified data” preserve the Notes qualifications. No substantive correction or important addition is needed."
+    },
+    {
+      "label": "B",
+      "errors": [
+        {
+          "answer_quote": "The available metadata does not establish what the item depicts.",
+          "kind": "contradicted",
+          "source_fields": ["Description"],
+          "source_quote": "Photo shows a Model T Ford that has \"come to rest half on and half off a a streetcar boarding platform in Washington, D.C.\"",
+          "reason": "The supplied metadata explicitly describes the depicted content; independent visual verification is not required to report that description."
+        },
+        {
+          "answer_quote": "No descriptive account or image is supplied to verify depicted content.",
+          "kind": "contradicted",
+          "source_fields": ["Description"],
+          "source_quote": "Photo shows a Model T Ford that has \"come to rest half on and half off a a streetcar boarding platform in Washington, D.C.\"",
+          "reason": "The limitation incorrectly denies a supplied descriptive account. No underlying image was examined, but that does not negate the account."
+        },
+        {
+          "answer_quote": "No creator, date, or location is provided.",
+          "kind": "contradicted",
+          "source_fields": ["Date_text", "Description", "Notes"],
+          "source_quote": "[1922]; Photo shows a Model T Ford that has \"come to rest half on and half off a a streetcar boarding platform in Washington, D.C.\"; Date from negatives in same range.",
+          "reason": "No creator is identified, but a qualified date and a location in the description are supplied."
+        },
+        {
+          "answer_quote": "“Glass negatives” appears as a subject term, not a confirmed format statement.",
+          "kind": "contradicted",
+          "source_fields": ["Medium"],
+          "source_quote": "1 negative : glass ; 4 x 5 in. or smaller",
+          "reason": "The Medium field independently identifies a glass negative."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Description"],
+          "reason": "Does not convey the Model T, platform position, or Washington location."
+        },
+        {
+          "fact_id": "F2",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Medium"],
+          "reason": "Mentions only a subject term, not the item's glass-negative medium."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Omits both the supplied date and its inferential basis."
+        },
+        {
+          "fact_id": "F4",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Title", "Notes"],
+          "reason": "Names the title but omits its unverified National Photo Company provenance."
+        }
+      ],
+      "informativeness": 1,
+      "informativeness_reason": "Provides title and indexing terms but none of the substantive frozen reference facts.",
+      "usable": "no",
+      "usability_reason": "“The available metadata does not establish what the item depicts” contradicts Description. The limitations also incorrectly deny the date, location, and medium supplied by Date_text, Notes, Description, and Medium. Add the concrete depiction, glass-negative identification, qualified date, and unverified title provenance."
+    },
+    {
+      "label": "C",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "a Model T Ford resting partly on and partly off a streetcar boarding platform in Washington, D.C.",
+          "source_fields": ["Description"],
+          "reason": "Conveys the vehicle, position, platform, and location."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "Glass negative",
+          "source_fields": ["Medium"],
+          "reason": "Correctly identifies the medium."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "The supplied date, [1922], is inferred from negatives in the same range.",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Preserves the date's supplied and inferred character."
+        },
+        {
+          "fact_id": "F4",
+          "status": "partial",
+          "description_quote": "The title derives from unverified information supplied on negatives or sleeves.",
+          "source_fields": ["Title", "Notes"],
+          "reason": "Preserves uncertainty and the physical source, but does not explicitly identify the National Photo Company as supplier of the title data."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Provides the concrete depiction, medium and dimensions, qualified date, collection, and substantive title caveat.",
+      "usable": "yes",
+      "usability_reason": "“described in the metadata” faithfully frames Description; “The supplied date, [1922], is inferred” preserves Date_text and Notes. “unverified information supplied on negatives or sleeves” retains the important title qualification. Explicitly naming the title-data supplier would improve completeness but is not an important factual addition."
+    },
+    {
+      "label": "D",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "a Model T Ford resting partly on and partly off a streetcar boarding platform in Washington, D.C.",
+          "source_fields": ["Description"],
+          "reason": "Conveys the vehicle, position, platform, and location."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "this glass negative",
+          "source_fields": ["Medium"],
+          "reason": "Correctly identifies the medium."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "The supplied date, [1922], derives from negatives in the same range.",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Preserves the supplied date and its inferential basis."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Part of the National Photo Company Collection, its title comes from unverified company data on negatives or sleeves.",
+          "source_fields": ["Title", "Notes", "Source_collection"],
+          "reason": "Identifies the company context, unverified title data, and source surfaces without inventing circumstances."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts with concrete depiction and faithful date and title qualifications.",
+      "usable": "yes",
+      "usability_reason": "“this glass negative” and the Model T/platform account follow Medium and Description. “The supplied date, [1922], derives from negatives in the same range” and “unverified company data” preserve Notes qualifications. No substantive correction or important addition is needed."
+    }
+  ]
+}

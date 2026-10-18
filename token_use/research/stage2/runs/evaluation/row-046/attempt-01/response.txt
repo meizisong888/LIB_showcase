@@ -1,0 +1,141 @@
+{
+  "reference_concerns": [],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "a photographic print on a stereo card ... The catalog description identifies a display of a lighthouse and buoys at the 1876 International Exhibition in Philadelphia.",
+          "source_fields": ["Description", "Medium"],
+          "reason": "Conveys the stereo-card format, display, exhibition, year, and location."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "credited to Centennial Photographic Co. as photographer and copyright claimant",
+          "source_fields": ["Creators"],
+          "reason": "Explicitly preserves both credited roles."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "with the date recorded as “c1876.”",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Retains the recorded copyright-date notation without strengthening it."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Includes the specific exhibition display and location, physical format, both creator roles, and qualified date.",
+      "usable": "yes",
+      "usability_reason": "“1876 International Exhibition in Philadelphia,” “photographer and copyright claimant,” and “c1876” faithfully convey Description, Creators, and Date_text; no important factual addition is needed."
+    },
+    {
+      "label": "B",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "A photographic print on a stereo card, titled “Light house and buoys,” described in the catalog as showing a lighthouse and buoys display at the 1876 International Exhibition in Philadelphia.",
+          "source_fields": ["Description", "Medium"],
+          "reason": "Conveys the format and complete catalog-described exhibition scene."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "Centennial Photographic Co. is credited as photographer and copyright claimant",
+          "source_fields": ["Creators"],
+          "reason": "Explicitly preserves both credited roles."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "the date is recorded as “c1876.”",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Retains the recorded copyright-date notation."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all reference facts and adds a qualified, supported account of the rights statement.",
+      "usable": "yes",
+      "usability_reason": "“photographer and copyright claimant” and “c1876” preserve Creators and Date_text; the exhibition description matches Description. “No known restrictions on publication” is appropriately balanced with researcher responsibility from Rights."
+    },
+    {
+      "label": "C",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "This photographic print on a stereo card is described in the catalog as showing a lighthouse and buoys display at the 1876 International Exhibition in Philadelphia.",
+          "source_fields": ["Description", "Medium"],
+          "reason": "Conveys the format, display, exhibition, year, and location."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "Centennial Photographic Co. is credited as photographer and copyright claimant.",
+          "source_fields": ["Creators"],
+          "reason": "Explicitly preserves both credited roles."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "The date is recorded as “c1876.”",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Retains the recorded copyright-date notation."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Provides the concrete exhibition scene, format, attribution with both roles, and qualified date.",
+      "usable": "yes",
+      "usability_reason": "“lighthouse and buoys display at the 1876 International Exhibition in Philadelphia,” both credited roles, and “c1876” faithfully cover Description, Medium, Creators, and Date_text without requiring important additions."
+    },
+    {
+      "label": "D",
+      "errors": [
+        {
+          "answer_quote": "No descriptive text or image is supplied to verify depicted content.",
+          "kind": "contradicted",
+          "source_fields": ["Description"],
+          "source_quote": "Stereograph shows display of a light house and buoys at the 1876 International Exhibition, Philadelphia.",
+          "reason": "The limitation incorrectly says no descriptive text is supplied; an explicit catalog description is present. This does not establish that the image itself was examined."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "partial",
+          "description_quote": "Titled “Light house and buoys,” ... Catalog metadata identifies it as a stereograph and photographic print, with subject headings linking lighthouses, buoys, and centennial celebrations to Philadelphia, Pennsylvania, in 1870–1880.",
+          "source_fields": ["Description", "Medium", "Title", "Subject_headings"],
+          "reason": "Conveys format and related subjects, but not the described display at the specific 1876 International Exhibition."
+        },
+        {
+          "fact_id": "F2",
+          "status": "partial",
+          "description_quote": "this item credits Centennial Photographic Co., Philadelphia.",
+          "source_fields": ["Title", "Creators"],
+          "reason": "Names the credited company but omits its photographer and copyright-claimant roles."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Does not convey c1876; the subject-heading range 1870–1880 is not the recorded copyright date."
+        }
+      ],
+      "informativeness": 2,
+      "informativeness_reason": "Supplies format, company credit, and indexed subjects, but omits the specific exhibition display, both creator roles, and recorded date.",
+      "usable": "no",
+      "usability_reason": "Correct “No descriptive text ... is supplied” using Description. Expand “credits Centennial Photographic Co.” with both roles from Creators, add “c1876” from Date_text, and identify the 1876 International Exhibition display from Description rather than relying only on subject headings."
+    }
+  ]
+}

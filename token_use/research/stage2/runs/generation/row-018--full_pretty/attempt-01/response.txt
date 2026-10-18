@@ -1,0 +1,10 @@
+{
+  "record_id": "http://www.loc.gov/item/2014645761/",
+  "description": "Albumen print on card mount, photographed between 1862 and 1865 and printed between 1880 and 1889. The catalog describes African-American adults and children reading books outside a barracks-like building. Titled “Freedman's Village, Arlington [i.e., Alexandria], Va.,” the photograph has differing identifications: the National Archives calls it “A contraband school”; the White House Historical Association identifies Camp Barker residents preparing for Lincoln’s visit.",
+  "evidence_fields": ["Medium", "Date_text", "Description", "Title"],
+  "limitations": [
+    "No creator is identified.",
+    "Institutional identifications differ; the precise setting is unresolved in the supplied metadata.",
+    "The underlying photograph was not examined."
+  ]
+}

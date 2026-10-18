@@ -1,0 +1,159 @@
+{
+  "reference_concerns": [],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "an unfinished but intact steel structure behind him, and nearby remnants of burned-out brick and stone buildings following the San Francisco earthquake and fire",
+          "source_fields": ["Title", "Description"],
+          "reason": "Conveys the intact unfinished structure in the disaster's aftermath."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "a man standing amid rubble, an unfinished but intact steel structure behind him, and nearby remnants of burned-out brick and stone buildings",
+          "source_fields": ["Description"],
+          "reason": "Conveys the man among rubble, relative foreground placement, and nearby burned building remnants."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "Photographic print titled “Unfinished steel structure intact after quake, San Francisco,” dated “c1906.”",
+          "source_fields": ["Medium", "Date_text", "Notes"],
+          "reason": "Identifies the print and preserves the recorded date without asserting an exposure date."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all three reference facts with concrete scene details and a carefully distinguished copyright credit.",
+      "usable": "yes",
+      "usability_reason": "“dated “c1906.”” preserves Date_text; “an unfinished but intact steel structure behind him” and “nearby remnants of burned-out brick and stone buildings” faithfully convey Description. No important factual addition or correction is needed."
+    },
+    {
+      "label": "B",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "San Francisco’s earthquake and fire disaster, with a man standing among rubble, an unfinished but intact steel structure in the background",
+          "source_fields": ["Title", "Description"],
+          "reason": "Conveys the unfinished structure remaining intact in the earthquake and fire scene."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "a man standing among rubble, an unfinished but intact steel structure in the background, and remnants of burned-out brick and stone buildings nearby",
+          "source_fields": ["Description"],
+          "reason": "Conveys the man among rubble, relative foreground placement, and nearby burned building remnants."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "Photographic print dated “c1906.”",
+          "source_fields": ["Medium", "Date_text", "Notes"],
+          "reason": "Preserves the recorded date and does not assert a precise exposure date."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all reference facts and adds accurately qualified copyright and rights information.",
+      "usable": "yes",
+      "usability_reason": "“Photographic print dated “c1906.”” follows Medium and Date_text; the scene follows Description. “No known restrictions on publication” reproduces Rights without expanding permission. No important correction or addition is needed."
+    },
+    {
+      "label": "C",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "an unfinished but intact steel structure behind him, and remnants of burned-out brick and stone buildings following the San Francisco earthquake and fire",
+          "source_fields": ["Title", "Description"],
+          "reason": "Conveys the intact unfinished structure following the disaster."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "a man standing among rubble, an unfinished but intact steel structure behind him, and remnants of burned-out brick and stone buildings",
+          "source_fields": ["Description"],
+          "reason": "Conveys the man among rubble, relative foreground placement, and burned building remnants in the scene."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "Photographic print cataloged as “Unfinished steel structure intact after quake, San Francisco,” with the date recorded as “c1906.”",
+          "source_fields": ["Medium", "Date_text", "Notes"],
+          "reason": "Identifies the print and explicitly preserves the cataloged date rather than claiming an exposure date."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all reference facts with concrete scene details and a copyright attribution distinguished from authorship.",
+      "usable": "yes",
+      "usability_reason": "“with the date recorded as “c1906.”” follows Date_text, and the man, structure, and burned remnants follow Description. “copyright holder” reflects Notes without assigning photographer authorship. No important correction or addition is needed."
+    },
+    {
+      "label": "D",
+      "errors": [
+        {
+          "answer_quote": "No image or Description field is supplied to verify the title’s characterization.",
+          "kind": "contradicted",
+          "source_fields": ["Description"],
+          "source_quote": "Photo shows the San Francisco earthquake and fire disaster with a man standing among rubble in foreground and an unfinished but intact steel structure in background and remnants of burned out brick and stone buildings nearby",
+          "reason": "A substantive Description field is supplied, regardless of whether an image was examined."
+        },
+        {
+          "answer_quote": "No creator or creation date is supplied; 1900–1910 appears only in subject headings.",
+          "kind": "contradicted",
+          "source_fields": ["Date_text", "Date", "Genre"],
+          "source_quote": {
+            "Date_text": "c1906.",
+            "Date": "1906",
+            "Genre": ["Photographic prints--1900-1910"]
+          },
+          "reason": "Although no creator or precise exposure date is established, catalog date metadata is supplied. The range 1900–1910 also appears in Genre, not only subject headings."
+        },
+        {
+          "answer_quote": "No rights information is supplied.",
+          "kind": "contradicted",
+          "source_fields": ["Rights"],
+          "source_quote": "No known restrictions on publication.",
+          "reason": "The record explicitly supplies rights information."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "partial",
+          "description_quote": "Titled “Unfinished steel structure intact after quake, San Francisco,”",
+          "source_fields": ["Title", "Description"],
+          "reason": "Conveys the unfinished structure intact after the earthquake, but omits the fire context."
+        },
+        {
+          "fact_id": "F2",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Description"],
+          "reason": "Does not describe the man, foreground rubble, or burned brick and stone remnants."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Medium", "Date_text", "Notes"],
+          "reason": "Does not identify the photographic print or convey its recorded c1906 date."
+        }
+      ],
+      "informativeness": 1,
+      "informativeness_reason": "Provides title-level information and indexed subjects, but omits the concrete scene details, medium, and recorded date.",
+      "usable": "no",
+      "usability_reason": "“No image or Description field is supplied” and “No rights information is supplied” contradict Description and Rights; the date limitation also misrepresents Date_text, Date, and Genre. Correct those limitations and add the man, rubble, burned building remnants, photographic-print medium, and recorded “c1906.” date."
+    }
+  ]
+}

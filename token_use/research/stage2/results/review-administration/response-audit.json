@@ -1,0 +1,1145 @@
+{
+  "model": "gpt-6.1-sol",
+  "settings": {
+    "backend": "official Codex CLI with existing ChatGPT login",
+    "backend_max_output_tokens": null,
+    "cli_version": "0.163.0",
+    "description_word_limit": 80,
+    "reasoning_effort": "low"
+  },
+  "imported_responses": 80,
+  "generated_requests": 400,
+  "planned_quality_requests": 80,
+  "observed_quality_requests": 80,
+  "missing_quality_requests": [],
+  "nonpilot_imports": [],
+  "quality_pilot_all_conditions_attempted": true,
+  "quality_records_with_all_conditions_attempted": 20,
+  "status_counts": {
+    "success": 80
+  },
+  "semantic_quality": "pending independent human review",
+  "usage_scope": "Supplied provider usage only. Missing usage is unknown, never zero. Include all attempts; preserve per-attempt provider logs separately.",
+  "results": [
+    {
+      "request_id": "row-100--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-100",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5885,
+        "output_tokens": 161
+      },
+      "attempts": 1,
+      "latency_seconds": 6.348017
+    },
+    {
+      "request_id": "row-100--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-100",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5595,
+        "output_tokens": 146
+      },
+      "attempts": 1,
+      "latency_seconds": 6.106955
+    },
+    {
+      "request_id": "row-100--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-100",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5176,
+        "output_tokens": 151
+      },
+      "attempts": 1,
+      "latency_seconds": 5.819262
+    },
+    {
+      "request_id": "row-100--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-100",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4894,
+        "output_tokens": 115
+      },
+      "attempts": 1,
+      "latency_seconds": 6.695706
+    },
+    {
+      "request_id": "row-046--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-046",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6128,
+        "output_tokens": 134
+      },
+      "attempts": 1,
+      "latency_seconds": 4.997808
+    },
+    {
+      "request_id": "row-046--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-046",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5809,
+        "output_tokens": 124
+      },
+      "attempts": 1,
+      "latency_seconds": 5.745139
+    },
+    {
+      "request_id": "row-046--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-046",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5364,
+        "output_tokens": 166
+      },
+      "attempts": 1,
+      "latency_seconds": 6.641863
+    },
+    {
+      "request_id": "row-046--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-046",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4914,
+        "output_tokens": 139
+      },
+      "attempts": 1,
+      "latency_seconds": 5.546376
+    },
+    {
+      "request_id": "row-018--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-018",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6417,
+        "output_tokens": 184
+      },
+      "attempts": 1,
+      "latency_seconds": 6.012394
+    },
+    {
+      "request_id": "row-018--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-018",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6054,
+        "output_tokens": 159
+      },
+      "attempts": 1,
+      "latency_seconds": 5.031489
+    },
+    {
+      "request_id": "row-018--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-018",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5472,
+        "output_tokens": 153
+      },
+      "attempts": 1,
+      "latency_seconds": 6.088959
+    },
+    {
+      "request_id": "row-018--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-018",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4913,
+        "output_tokens": 133
+      },
+      "attempts": 1,
+      "latency_seconds": 5.351442
+    },
+    {
+      "request_id": "row-080--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-080",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6250,
+        "output_tokens": 192
+      },
+      "attempts": 1,
+      "latency_seconds": 5.407474
+    },
+    {
+      "request_id": "row-080--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-080",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5940,
+        "output_tokens": 161
+      },
+      "attempts": 1,
+      "latency_seconds": 7.446119
+    },
+    {
+      "request_id": "row-080--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-080",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5599,
+        "output_tokens": 172
+      },
+      "attempts": 1,
+      "latency_seconds": 5.801315
+    },
+    {
+      "request_id": "row-080--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-080",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4908,
+        "output_tokens": 147
+      },
+      "attempts": 1,
+      "latency_seconds": 5.210148
+    },
+    {
+      "request_id": "row-053--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-053",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5845,
+        "output_tokens": 158
+      },
+      "attempts": 1,
+      "latency_seconds": 5.790547
+    },
+    {
+      "request_id": "row-053--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-053",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5573,
+        "output_tokens": 132
+      },
+      "attempts": 1,
+      "latency_seconds": 8.522438
+    },
+    {
+      "request_id": "row-053--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-053",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5204,
+        "output_tokens": 148
+      },
+      "attempts": 1,
+      "latency_seconds": 5.942458
+    },
+    {
+      "request_id": "row-053--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-053",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4924,
+        "output_tokens": 128
+      },
+      "attempts": 1,
+      "latency_seconds": 5.64147
+    },
+    {
+      "request_id": "row-078--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-078",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6099,
+        "output_tokens": 184
+      },
+      "attempts": 1,
+      "latency_seconds": 6.087006
+    },
+    {
+      "request_id": "row-078--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-078",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5815,
+        "output_tokens": 163
+      },
+      "attempts": 1,
+      "latency_seconds": 5.378882
+    },
+    {
+      "request_id": "row-078--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-078",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5430,
+        "output_tokens": 153
+      },
+      "attempts": 1,
+      "latency_seconds": 7.187131
+    },
+    {
+      "request_id": "row-078--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-078",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4911,
+        "output_tokens": 140
+      },
+      "attempts": 1,
+      "latency_seconds": 6.180745
+    },
+    {
+      "request_id": "row-028--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-028",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5999,
+        "output_tokens": 158
+      },
+      "attempts": 1,
+      "latency_seconds": 6.656046
+    },
+    {
+      "request_id": "row-028--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-028",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5693,
+        "output_tokens": 163
+      },
+      "attempts": 1,
+      "latency_seconds": 6.506991
+    },
+    {
+      "request_id": "row-028--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-028",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5246,
+        "output_tokens": 147
+      },
+      "attempts": 1,
+      "latency_seconds": 5.803336
+    },
+    {
+      "request_id": "row-028--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-028",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4951,
+        "output_tokens": 126
+      },
+      "attempts": 1,
+      "latency_seconds": 5.430518
+    },
+    {
+      "request_id": "row-036--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-036",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5889,
+        "output_tokens": 162
+      },
+      "attempts": 1,
+      "latency_seconds": 6.476351
+    },
+    {
+      "request_id": "row-036--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-036",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5668,
+        "output_tokens": 140
+      },
+      "attempts": 1,
+      "latency_seconds": 7.326584
+    },
+    {
+      "request_id": "row-036--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-036",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5363,
+        "output_tokens": 148
+      },
+      "attempts": 1,
+      "latency_seconds": 5.788887
+    },
+    {
+      "request_id": "row-036--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-036",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4846,
+        "output_tokens": 100
+      },
+      "attempts": 1,
+      "latency_seconds": 6.134754
+    },
+    {
+      "request_id": "row-050--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-050",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6014,
+        "output_tokens": 172
+      },
+      "attempts": 1,
+      "latency_seconds": 6.444357
+    },
+    {
+      "request_id": "row-050--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-050",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5778,
+        "output_tokens": 159
+      },
+      "attempts": 1,
+      "latency_seconds": 6.10712
+    },
+    {
+      "request_id": "row-050--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-050",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5390,
+        "output_tokens": 155
+      },
+      "attempts": 1,
+      "latency_seconds": 6.332327
+    },
+    {
+      "request_id": "row-050--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-050",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4870,
+        "output_tokens": 128
+      },
+      "attempts": 1,
+      "latency_seconds": 6.402602
+    },
+    {
+      "request_id": "row-062--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-062",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5945,
+        "output_tokens": 187
+      },
+      "attempts": 1,
+      "latency_seconds": 5.898864
+    },
+    {
+      "request_id": "row-062--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-062",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5717,
+        "output_tokens": 155
+      },
+      "attempts": 1,
+      "latency_seconds": 10.926181
+    },
+    {
+      "request_id": "row-062--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-062",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5415,
+        "output_tokens": 152
+      },
+      "attempts": 1,
+      "latency_seconds": 5.043607
+    },
+    {
+      "request_id": "row-062--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-062",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4852,
+        "output_tokens": 117
+      },
+      "attempts": 1,
+      "latency_seconds": 5.79255
+    },
+    {
+      "request_id": "row-048--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-048",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6388,
+        "output_tokens": 179
+      },
+      "attempts": 1,
+      "latency_seconds": 5.881645
+    },
+    {
+      "request_id": "row-048--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-048",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5990,
+        "output_tokens": 143
+      },
+      "attempts": 1,
+      "latency_seconds": 6.441927
+    },
+    {
+      "request_id": "row-048--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-048",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5347,
+        "output_tokens": 143
+      },
+      "attempts": 1,
+      "latency_seconds": 5.816077
+    },
+    {
+      "request_id": "row-048--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-048",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4913,
+        "output_tokens": 123
+      },
+      "attempts": 1,
+      "latency_seconds": 5.499395
+    },
+    {
+      "request_id": "row-084--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-084",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6219,
+        "output_tokens": 181
+      },
+      "attempts": 1,
+      "latency_seconds": 5.545473
+    },
+    {
+      "request_id": "row-084--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-084",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5906,
+        "output_tokens": 192
+      },
+      "attempts": 1,
+      "latency_seconds": 6.979276
+    },
+    {
+      "request_id": "row-084--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-084",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5507,
+        "output_tokens": 162
+      },
+      "attempts": 1,
+      "latency_seconds": 6.118741
+    },
+    {
+      "request_id": "row-084--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-084",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5049,
+        "output_tokens": 141
+      },
+      "attempts": 1,
+      "latency_seconds": 6.739073
+    },
+    {
+      "request_id": "row-097--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-097",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6153,
+        "output_tokens": 153
+      },
+      "attempts": 1,
+      "latency_seconds": 6.706486
+    },
+    {
+      "request_id": "row-097--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-097",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5813,
+        "output_tokens": 142
+      },
+      "attempts": 1,
+      "latency_seconds": 5.880223
+    },
+    {
+      "request_id": "row-097--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-097",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5327,
+        "output_tokens": 143
+      },
+      "attempts": 1,
+      "latency_seconds": 6.561468
+    },
+    {
+      "request_id": "row-097--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-097",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4898,
+        "output_tokens": 139
+      },
+      "attempts": 1,
+      "latency_seconds": 9.20718
+    },
+    {
+      "request_id": "row-037--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-037",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6340,
+        "output_tokens": 147
+      },
+      "attempts": 1,
+      "latency_seconds": 5.624659
+    },
+    {
+      "request_id": "row-037--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-037",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5987,
+        "output_tokens": 133
+      },
+      "attempts": 1,
+      "latency_seconds": 6.396624
+    },
+    {
+      "request_id": "row-037--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-037",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5437,
+        "output_tokens": 145
+      },
+      "attempts": 1,
+      "latency_seconds": 5.637526
+    },
+    {
+      "request_id": "row-037--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-037",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4896,
+        "output_tokens": 134
+      },
+      "attempts": 1,
+      "latency_seconds": 6.057355
+    },
+    {
+      "request_id": "row-092--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-092",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6369,
+        "output_tokens": 191
+      },
+      "attempts": 1,
+      "latency_seconds": 7.175015
+    },
+    {
+      "request_id": "row-092--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-092",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6081,
+        "output_tokens": 166
+      },
+      "attempts": 1,
+      "latency_seconds": 8.389767
+    },
+    {
+      "request_id": "row-092--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-092",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5570,
+        "output_tokens": 151
+      },
+      "attempts": 1,
+      "latency_seconds": 6.11578
+    },
+    {
+      "request_id": "row-092--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-092",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4941,
+        "output_tokens": 116
+      },
+      "attempts": 1,
+      "latency_seconds": 5.270372
+    },
+    {
+      "request_id": "row-017--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-017",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6604,
+        "output_tokens": 189
+      },
+      "attempts": 1,
+      "latency_seconds": 7.600906
+    },
+    {
+      "request_id": "row-017--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-017",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6239,
+        "output_tokens": 179
+      },
+      "attempts": 1,
+      "latency_seconds": 5.100874
+    },
+    {
+      "request_id": "row-017--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-017",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5713,
+        "output_tokens": 189
+      },
+      "attempts": 1,
+      "latency_seconds": 6.321383
+    },
+    {
+      "request_id": "row-017--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-017",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4952,
+        "output_tokens": 122
+      },
+      "attempts": 1,
+      "latency_seconds": 5.274035
+    },
+    {
+      "request_id": "row-054--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-054",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5836,
+        "output_tokens": 153
+      },
+      "attempts": 1,
+      "latency_seconds": 6.09751
+    },
+    {
+      "request_id": "row-054--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-054",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5621,
+        "output_tokens": 171
+      },
+      "attempts": 1,
+      "latency_seconds": 5.468049
+    },
+    {
+      "request_id": "row-054--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-054",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5233,
+        "output_tokens": 168
+      },
+      "attempts": 1,
+      "latency_seconds": 5.750245
+    },
+    {
+      "request_id": "row-054--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-054",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4875,
+        "output_tokens": 95
+      },
+      "attempts": 1,
+      "latency_seconds": 5.753662
+    },
+    {
+      "request_id": "row-038--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-038",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5758,
+        "output_tokens": 155
+      },
+      "attempts": 1,
+      "latency_seconds": 5.837956
+    },
+    {
+      "request_id": "row-038--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-038",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5546,
+        "output_tokens": 155
+      },
+      "attempts": 1,
+      "latency_seconds": 5.689068
+    },
+    {
+      "request_id": "row-038--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-038",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5152,
+        "output_tokens": 146
+      },
+      "attempts": 1,
+      "latency_seconds": 5.631877
+    },
+    {
+      "request_id": "row-038--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-038",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4928,
+        "output_tokens": 94
+      },
+      "attempts": 1,
+      "latency_seconds": 6.35171
+    },
+    {
+      "request_id": "row-011--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-011",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6485,
+        "output_tokens": 162
+      },
+      "attempts": 1,
+      "latency_seconds": 6.78893
+    },
+    {
+      "request_id": "row-011--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-011",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6120,
+        "output_tokens": 152
+      },
+      "attempts": 1,
+      "latency_seconds": 6.821608
+    },
+    {
+      "request_id": "row-011--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-011",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5519,
+        "output_tokens": 132
+      },
+      "attempts": 1,
+      "latency_seconds": 6.403718
+    },
+    {
+      "request_id": "row-011--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-011",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4873,
+        "output_tokens": 97
+      },
+      "attempts": 1,
+      "latency_seconds": 5.988303
+    },
+    {
+      "request_id": "row-085--full_pretty",
+      "condition": "full_pretty",
+      "record_key": "row-085",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6647,
+        "output_tokens": 183
+      },
+      "attempts": 1,
+      "latency_seconds": 8.266546
+    },
+    {
+      "request_id": "row-085--full_compact",
+      "condition": "full_compact",
+      "record_key": "row-085",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 6362,
+        "output_tokens": 164
+      },
+      "attempts": 1,
+      "latency_seconds": 7.94052
+    },
+    {
+      "request_id": "row-085--task_fields",
+      "condition": "task_fields",
+      "record_key": "row-085",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 5745,
+        "output_tokens": 157
+      },
+      "attempts": 1,
+      "latency_seconds": 9.311029
+    },
+    {
+      "request_id": "row-085--title_subjects",
+      "condition": "title_subjects",
+      "record_key": "row-085",
+      "status": "success",
+      "structural_valid": true,
+      "claimed_evidence_fields_not_supplied": [],
+      "usage": {
+        "input_tokens": 4901,
+        "output_tokens": 116
+      },
+      "attempts": 1,
+      "latency_seconds": 5.170355
+    }
+  ]
+}

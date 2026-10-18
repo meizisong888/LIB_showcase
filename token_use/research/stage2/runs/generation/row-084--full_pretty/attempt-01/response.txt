@@ -1,0 +1,10 @@
+{
+  "record_id": "http://www.loc.gov/item/2004660284/",
+  "description": "Drawing by artist Alfred R. Waud, dated [1863 March 18], in pencil and Chinese white on tan paper. The inscribed title identifies a marriage at the camp of the 7th N.J.V., Army of the Potomac, Virginia. Part of the Morgan collection of Civil War drawings, it was published with descriptive text in Harper’s Weekly on April 4, 1863.",
+  "evidence_fields": ["Creators", "Date_text", "Medium", "Title", "Notes", "Source_collection"],
+  "limitations": [
+    "No descriptive text is supplied, and the underlying image has not been examined.",
+    "Scene identification relies on the cataloged title.",
+    "The date is supplied in brackets."
+  ]
+}

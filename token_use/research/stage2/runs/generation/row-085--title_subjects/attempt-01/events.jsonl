@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a1507e-150f-7351-94eb-341dd0aa1a64"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"{\"record_id\":\"http://www.loc.gov/item/afc1993001_196614_01/\",\"description\":\"The title identifies Korean class and a Korean school picnic at First Korean School in Silver Spring, Maryland. Catalog subject terms classify the material as documentary photographs and associate it with ethnography and Korean Americans; they do not independently establish what is depicted.\",\"evidence_fields\":[\"Title\",\"Subject_headings\",\"Subjects\"],\"limitations\":[\"No description or image is supplied to verify depicted content.\",\"No creator, date, or rights information is provided.\"]}"}}
+{"type":"turn.completed","usage":{"input_tokens":4901,"cached_input_tokens":3456,"cache_write_input_tokens":0,"output_tokens":116,"reasoning_output_tokens":0}}

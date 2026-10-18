@@ -1,0 +1,176 @@
+{
+  "reference_concerns": [],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "The catalog describes African-American adults and children reading books outside a barracks-like building.",
+          "source_fields": ["Description", "Medium"],
+          "reason": "Conveys the people, activity, and setting with catalog attribution."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "Titled “Freedman's Village, Arlington [i.e., Alexandria], Va.,” the photograph has differing identifications: the National Archives calls it “A contraband school”; the White House Historical Association identifies Camp Barker residents preparing for Lincoln’s visit.",
+          "source_fields": ["Title", "Description"],
+          "reason": "Preserves the title correction and attributes differing identifications without resolving them."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "photographed between 1862 and 1865 and printed between 1880 and 1889",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves both date ranges and distinguishes photography from printing."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Albumen print on card mount",
+          "source_fields": ["Medium"],
+          "reason": "States the process and mount."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Meaningfully covers all four reference facts, including the scene, distinct production dates, physical medium, and identification conflict.",
+      "usable": "yes",
+      "usability_reason": "“Albumen print on card mount,” both date ranges, and “differing identifications” faithfully convey Medium, Date_text, Title, and Description. No substantive correction or important addition is needed."
+    },
+    {
+      "label": "B",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "The catalog describes African-American adults and children reading books outside a barracks-like building.",
+          "source_fields": ["Description", "Medium"],
+          "reason": "Conveys the people, activity, and setting with catalog attribution."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "Titled “Freedman's Village, Arlington [i.e., Alexandria], Va.,” it has differing institutional identifications: the National Archives calls it “A contraband school,” while the White House Historical Association identifies Camp Barker residents preparing for Lincoln’s visit.",
+          "source_fields": ["Title", "Description"],
+          "reason": "Preserves the title correction and competing institutional descriptions without settling the identification."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "photographed between 1862 and 1865 and printed between 1880 and 1889",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves both date ranges and their respective production stages."
+        },
+        {
+          "fact_id": "F4",
+          "status": "partial",
+          "description_quote": "Albumen photograph",
+          "source_fields": ["Medium"],
+          "reason": "Conveys the albumen medium but omits the card mount."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Provides the scene, production chronology, albumen medium, and identification conflict; only the mount detail is omitted.",
+      "usable": "yes",
+      "usability_reason": "“Albumen photograph,” the two production date ranges, and “differing institutional identifications” faithfully summarize Medium, Date_text, Description, and Title. The omitted card mount is a minor physical-detail omission, not an important addition needed for this draft."
+    },
+    {
+      "label": "C",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "The catalog describes African-American adults and children reading books outside a barracks-like building.",
+          "source_fields": ["Description", "Medium"],
+          "reason": "Conveys the people, activity, and setting with catalog attribution."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "Titled “Freedman's Village, Arlington [i.e., Alexandria], Va.,” it is described by the National Archives as “A contraband school” and by the White House Historical Association as Camp Barker residents preparing for Lincoln’s visit.",
+          "source_fields": ["Title", "Description"],
+          "reason": "Includes the title correction and separately attributes the alternative descriptions rather than selecting one."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "photographed between 1862 and 1865 and printed between 1880 and 1889",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves both date ranges and distinguishes photography from printing."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Albumen photograph on card mount",
+          "source_fields": ["Medium"],
+          "reason": "Conveys the albumen medium and card mount."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Meaningfully covers all four reference facts with concrete scene, physical, chronological, and identification information.",
+      "usable": "yes",
+      "usability_reason": "“Albumen photograph on card mount,” both date ranges, and the separately attributed National Archives and White House Historical Association descriptions faithfully convey Medium, Date_text, Title, and Description. No substantive correction or important addition is needed."
+    },
+    {
+      "label": "D",
+      "errors": [
+        {
+          "answer_quote": "No description or image is supplied to verify depicted content.",
+          "kind": "contradicted",
+          "source_fields": ["Description"],
+          "source_quote": "Photograph shows African-American adults and children reading books while lined up in front of a barracks-like building.",
+          "reason": "The limitation falsely claims that no description is supplied. This finding does not assume that linked images were examined."
+        },
+        {
+          "answer_quote": "No creator, item date, or rights information is supplied.",
+          "kind": "contradicted",
+          "source_fields": ["Creators", "Date_text", "Rights"],
+          "source_quote": "[photographed between 1862 and 1865, printed between 1880 and 1889]; No known restrictions on publication.",
+          "reason": "No creator is identified, but item dates and rights information are explicitly supplied. The rights statement is not a categorical permission grant."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Description", "Medium"],
+          "reason": "Does not describe the adults and children reading before the building."
+        },
+        {
+          "fact_id": "F2",
+          "status": "partial",
+          "description_quote": "The title identifies this item as “Freedman's Village, Arlington [i.e., Alexandria], Va.”",
+          "source_fields": ["Title", "Description"],
+          "reason": "Preserves the title correction but omits the differing institutional identifications."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Date_text"],
+          "reason": "The subject-heading period 1860–1870 does not convey the photography and printing date ranges."
+        },
+        {
+          "fact_id": "F4",
+          "status": "partial",
+          "description_quote": "Catalog subjects associate it with freedmen in Alexandria, Virginia, in 1860–1870, the Civil War, and albumen prints",
+          "source_fields": ["Medium", "Subjects", "Subject_headings"],
+          "reason": "Mentions albumen prints only as catalog indexing; does not describe the physical print on card mount."
+        }
+      ],
+      "informativeness": 1,
+      "informativeness_reason": "Provides title and subject-index information but omits the supplied scene description, production chronology, and meaningful physical description.",
+      "usable": "no",
+      "usability_reason": "The limitations “No description or image is supplied” and “No creator, item date, or rights information is supplied” need correction against Description, Date_text, and Rights. The title-and-subject summary also needs important additions from Description, Date_text, and Medium, including the depicted activity and differing institutional identifications."
+    }
+  ]
+}

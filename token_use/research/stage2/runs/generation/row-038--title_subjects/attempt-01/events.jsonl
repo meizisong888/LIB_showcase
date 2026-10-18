@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a1507d-335a-7f03-9959-1550e105de64"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"{\"record_id\":\"http://www.loc.gov/item/2002719743/\",\"description\":\"The supplied bracketed title identifies William Howard Taft seated at a table playing cards with his wife and two men aboard a boat en route to the Philippines.\",\"evidence_fields\":[\"Title\"],\"limitations\":[\"No image or Description field is supplied; the scene and identities cannot be independently verified.\",\"No creator, creation date, or rights information is supplied.\"]}"}}
+{"type":"turn.completed","usage":{"input_tokens":4928,"cached_input_tokens":3456,"cache_write_input_tokens":0,"output_tokens":94,"reasoning_output_tokens":0}}

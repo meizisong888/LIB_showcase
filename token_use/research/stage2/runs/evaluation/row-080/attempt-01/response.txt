@@ -1,0 +1,204 @@
+{
+  "reference_concerns": [],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "Color silkscreen poster for the Federal Theatre Project’s presentation of Theodore Pratt’s “Big Blow” at Maxine Elliott’s Theatre in New York City.",
+          "source_fields": ["Title", "Description"],
+          "reason": "Conveys the production, playwright, venue and city."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "The catalog describes a woman and man struggling against gale-force winds.",
+          "source_fields": ["Description"],
+          "reason": "Faithfully conveys the cataloged scene."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "Richard Halls is credited as artist and the Federal Theatre Project as sponsor.",
+          "source_fields": ["Creators"],
+          "reason": "Preserves both credited roles."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Dated between 1936 and 1939; a verso stamp reads June 28, 1939.",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Preserves the date range and distinguishes the verso stamp."
+        },
+        {
+          "fact_id": "F5",
+          "status": "covered",
+          "description_quote": "Color silkscreen poster",
+          "source_fields": ["Medium"],
+          "reason": "Identifies medium, color and format."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all five reference facts with concrete production, depiction, attribution, date and medium information.",
+      "usable": "yes",
+      "usability_reason": "“Richard Halls is credited as artist” and “Dated between 1936 and 1939; a verso stamp reads June 28, 1939” faithfully preserve Creators, Date_text and Notes. Description, Title and Medium are also meaningfully covered; no important factual addition or correction is needed."
+    },
+    {
+      "label": "B",
+      "errors": [
+        {
+          "answer_quote": "No image or descriptive account is supplied to establish visual content.",
+          "kind": "contradicted",
+          "source_fields": ["Description"],
+          "source_quote": "Poster for Federal Theatre Project presentation of \"Big Blow\" at Maxine Elliott's Theatre, 109 West 39th Street, New York City, showing a woman and a man struggling against gale force winds.",
+          "reason": "This limitation falsely denies a supplied descriptive account; no image examination is necessary to report the catalog description."
+        },
+        {
+          "answer_quote": "Halls’s role is unspecified.",
+          "kind": "contradicted",
+          "source_fields": ["Creators"],
+          "source_quote": "{\"Name\":\"Halls, Richard, 1906-\",\"Role\":\"artist\"}",
+          "reason": "The full record explicitly identifies Halls as artist. The description's narrower statement about the title alone is supported."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "partial",
+          "description_quote": "The title announces a Federal Theatre presentation of “Big blow,” described as “a drama of the hurricane country” by Theodore Pratt.",
+          "source_fields": ["Title", "Description"],
+          "reason": "Conveys the production and playwright but omits Maxine Elliott's Theatre and its New York City location."
+        },
+        {
+          "fact_id": "F2",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Description"],
+          "reason": "Does not describe the woman and man struggling against winds."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Creators"],
+          "reason": "Naming Halls without a role does not convey his artist credit or the Federal Theatre Project's sponsor credit."
+        },
+        {
+          "fact_id": "F4",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "The subject-heading period does not convey the 1936–1939 date range or separate verso stamp."
+        },
+        {
+          "fact_id": "F5",
+          "status": "covered",
+          "description_quote": "Catalog terms identify the item as a color screen print and theatrical poster",
+          "source_fields": ["Medium", "Genre", "Subjects"],
+          "reason": "Conveys the color screen-print medium and poster format."
+        }
+      ],
+      "informativeness": 2,
+      "informativeness_reason": "Provides useful production, playwright and medium information, but omits the depicted scene, venue, credited roles and item dating.",
+      "usable": "no",
+      "usability_reason": "“No image or descriptive account is supplied” contradicts Description, and “Halls’s role is unspecified” contradicts Creators. Correct those limitations and add the scene and venue from Description, roles from Creators, and qualified dating from Date_text and Notes."
+    },
+    {
+      "label": "C",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "Color silkscreen poster for the Federal Theatre Project presentation of Theodore Pratt’s “Big Blow” at Maxine Elliott’s Theatre in New York City.",
+          "source_fields": ["Title", "Description"],
+          "reason": "Conveys the production, playwright, venue and city."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "The catalog describes a woman and man struggling against gale-force winds.",
+          "source_fields": ["Description"],
+          "reason": "Faithfully conveys the cataloged scene."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "Richard Halls is credited as artist and the Federal Theatre Project as sponsor.",
+          "source_fields": ["Creators"],
+          "reason": "Preserves both credited roles."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Dated between 1936 and 1939, with a June 28, 1939 stamp noted on the verso.",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Preserves the date range and distinguishes the verso stamp."
+        },
+        {
+          "fact_id": "F5",
+          "status": "covered",
+          "description_quote": "Color silkscreen poster",
+          "source_fields": ["Medium"],
+          "reason": "Identifies medium, color and format."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all five reference facts with concrete production, depiction, attribution, date and medium information.",
+      "usable": "yes",
+      "usability_reason": "“Richard Halls is credited as artist” matches Creators, and “Dated between 1936 and 1939, with a June 28, 1939 stamp noted on the verso” preserves Date_text and Notes. Title, Description and Medium are also adequately conveyed without substantive correction."
+    },
+    {
+      "label": "D",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "Color silkscreen poster by artist Richard Halls for the Federal Theatre Project’s presentation of Theodore Pratt’s “Big Blow” at Maxine Elliott’s Theatre in New York City.",
+          "source_fields": ["Title", "Description"],
+          "reason": "Conveys the production, playwright, venue and city."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "The catalog describes a woman and a man struggling against gale-force winds.",
+          "source_fields": ["Description"],
+          "reason": "Faithfully conveys the cataloged scene."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "Color silkscreen poster by artist Richard Halls for the Federal Theatre Project’s presentation of Theodore Pratt’s “Big Blow” at Maxine Elliott’s Theatre in New York City. The catalog describes a woman and a man struggling against gale-force winds. Dated between 1936 and 1939, with a June 28, 1939 stamp noted on the verso. The Federal Theatre Project is identified as sponsor.",
+          "source_fields": ["Creators"],
+          "reason": "Explicitly identifies Halls as artist and the Federal Theatre Project as sponsor."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "Dated between 1936 and 1939, with a June 28, 1939 stamp noted on the verso.",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Preserves the date range and distinguishes the verso stamp."
+        },
+        {
+          "fact_id": "F5",
+          "status": "covered",
+          "description_quote": "Color silkscreen poster",
+          "source_fields": ["Medium"],
+          "reason": "Identifies medium, color and format."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all five reference facts with concrete production, depiction, attribution, date and medium information.",
+      "usable": "yes",
+      "usability_reason": "“by artist Richard Halls” and “The Federal Theatre Project is identified as sponsor” match Creators. “Dated between 1936 and 1939” preserves Date_text, with the verso stamp separately identified from Notes. Title, Description and Medium are adequately conveyed; no important factual correction or addition is needed."
+    }
+  ]
+}

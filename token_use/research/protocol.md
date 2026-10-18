@@ -1,5 +1,24 @@
 # Research protocol: token reduction for descriptions of library collection items
 
+## Execution update: 2026-10-18
+
+The original prospective protocol below is retained. The [stage-two execution
+amendment](stage2/README.md) was frozen before generation and records the actual
+CLI model, isolation, limits and evaluation rubric. The 80 fixed generation
+requests have now been executed; [the observed report](stage2/report.md) separates
+generation, automatic checks and AI-assisted judgments from **pending independent
+human review**. This does not retroactively fulfill the human-review design.
+
+The amendment preserves the existing request order, as requested, rather than
+reshuffling conditions. It uses the same catalog model alias, with no exposed
+immutable snapshot or supported hard output-token cap. All generation arms use
+the same settings, backend defaults and 80-word instruction. These are stated
+limitations relative to the prospective ideal below. AI-authored reference facts
+and the AI rubric were fixed before generation; no teacher-approved practical
+quality margin or human reference list has been established. Evaluation uses
+anonymous labels and separate sessions; it is not a substitute for the two
+human reviewers. See [reproduction and evidence](stage2/reproduction.md).
+
 ## Research question and scope
 
 For a library workflow that drafts short descriptions from catalog metadata, how much can deterministic preprocessing reduce the input sent to a large language model (LLM), and what changes in the resulting descriptions?

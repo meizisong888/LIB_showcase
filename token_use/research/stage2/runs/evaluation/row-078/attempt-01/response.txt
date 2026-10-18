@@ -1,0 +1,183 @@
+{
+  "reference_concerns": [],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [
+        {
+          "quote": "No description or image is supplied to verify depicted content.",
+          "kind": "contradicted",
+          "source_fields": ["Description"],
+          "source_quote": "Print shows several children fighting during a game of \"go.\"",
+          "reason": "The claim that no description is supplied is false. No image was supplied for direct examination."
+        },
+        {
+          "quote": "No creator or creation date is supplied; 1780–1790 appears only in subject headings.",
+          "kind": "contradicted",
+          "source_fields": ["Creators", "Date_text"],
+          "source_quote": "{\"Name\":\"Torii, Kiyonaga, 1752-1815\",\"Role\":\"artist\"}; \"[between 1781 and 1789]\"",
+          "reason": "The record supplies both an artist and a qualified creation-date range."
+        },
+        {
+          "quote": "No rights information is supplied.",
+          "kind": "contradicted",
+          "source_fields": ["Rights"],
+          "source_quote": "No known restrictions on publication.",
+          "reason": "Rights information is supplied, including this statement and a fuller explanation of permission responsibilities."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "partial",
+          "quote": "cataloged with subject terms for Chinese children, play, fighting, and the game of go, with headings referencing Japan and 1780–1790. Additional terms include ukiyo-e, woodcuts, and color.",
+          "source_fields": ["Description", "Medium", "Subjects", "Subject_headings"],
+          "reason": "Names relevant indexed topics but does not convey the documented scene or establish the item's color woodcut medium."
+        },
+        {
+          "fact_id": "F2",
+          "status": "missing",
+          "quote": "",
+          "source_fields": ["Creators"],
+          "reason": "The description does not identify Torii Kiyonaga as artist."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "quote": "",
+          "source_fields": ["Date_text"],
+          "reason": "Subject-heading dates do not convey the supplied creation-date range."
+        },
+        {
+          "fact_id": "F4",
+          "status": "missing",
+          "quote": "",
+          "source_fields": ["Notes"],
+          "reason": "The series is not identified."
+        }
+      ],
+      "informativeness": 1,
+      "informativeness_reason": "Provides title and indexed topics but omits the artist, qualified date, series, and a meaningful account of the documented scene.",
+      "usable": "no",
+      "usability_reason": "“These terms do not independently establish what the item depicts” appropriately qualifies subjects, but Description supplies the scene. Add that scene, the medium, artist, date range, and series from Description, Medium, Creators, Date_text, and Notes. Correct the limitations claiming “No description,” “No creator or creation date,” and “No rights information” are supplied."
+    },
+    {
+      "label": "B",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "“Go,” a color woodcut by artist Torii Kiyonaga, is dated [between 1781 and 1789]. The catalog describes several children fighting during a game of go.",
+          "source_fields": ["Description", "Medium"],
+          "reason": "Conveys both the medium and the catalog-described scene."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "by artist Torii Kiyonaga",
+          "source_fields": ["Creators"],
+          "reason": "Correctly identifies the artist and role."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "quote": "is dated [between 1781 and 1789]",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the bracketed date range."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "the print belongs to the series “Karako asobi : Chinese children playing.”",
+          "source_fields": ["Notes"],
+          "reason": "Identifies the series and its translated title."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts and adds supported dimensions and descriptive-metadata provenance.",
+      "usable": "yes",
+      "usability_reason": "“a color woodcut by artist Torii Kiyonaga,” “[between 1781 and 1789],” “The catalog describes several children fighting,” and the named series faithfully convey Medium, Creators, Date_text, Description, and Notes. No important factual addition or correction is needed."
+    },
+    {
+      "label": "C",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "“Go,” a color woodcut by artist Torii Kiyonaga, is dated [between 1781 and 1789]. The catalog description states that several children fight during a game of go.",
+          "source_fields": ["Description", "Medium"],
+          "reason": "Conveys both the medium and the catalog-described scene."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "by artist Torii Kiyonaga",
+          "source_fields": ["Creators"],
+          "reason": "Correctly identifies the artist and role."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "quote": "is dated [between 1781 and 1789]",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the bracketed date range."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "It belongs to the series “Karako asobi: Chinese children playing.”",
+          "source_fields": ["Notes"],
+          "reason": "Identifies the series and its translated title."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts and adds supported descriptive-metadata provenance; dimensions are not essential to adequacy.",
+      "usable": "yes",
+      "usability_reason": "“a color woodcut by artist Torii Kiyonaga,” “[between 1781 and 1789],” “The catalog description states,” and the named series faithfully convey Medium, Creators, Date_text, Description, and Notes. No important factual addition or correction is needed."
+    },
+    {
+      "label": "D",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "“Go” is a color woodcut by artist Torii Kiyonaga, dated [between 1781 and 1789]. The catalog describes several children fighting during a game of go.",
+          "source_fields": ["Description", "Medium"],
+          "reason": "Conveys both the medium and the catalog-described scene."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "by artist Torii Kiyonaga",
+          "source_fields": ["Creators"],
+          "reason": "Correctly identifies the artist and role."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "quote": "dated [between 1781 and 1789]",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the bracketed date range."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "the print belongs to the series “Karako asobi: Chinese children playing.”",
+          "source_fields": ["Notes"],
+          "reason": "Identifies the series and its translated title."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts and adds supported dimensions and descriptive-metadata provenance.",
+      "usable": "yes",
+      "usability_reason": "“a color woodcut by artist Torii Kiyonaga,” “[between 1781 and 1789],” “The catalog describes several children fighting,” and the named series faithfully convey Medium, Creators, Date_text, Description, and Notes. No important factual addition or correction is needed."
+    }
+  ]
+}

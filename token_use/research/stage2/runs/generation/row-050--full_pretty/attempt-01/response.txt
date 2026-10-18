@@ -1,0 +1,6 @@
+{
+  "record_id": "http://www.loc.gov/item/96503125/",
+  "description": "“See America,” by artist Alexander Dux, is a color silkscreen poster on board dated between 1936 and 1939. The catalog describes it as promoting tourism for the United States Travel Bureau and showing two people in caverns. Part of the Work Projects Administration Poster Collection, it bears a June 28, 1939 date stamp on the reverse.",
+  "evidence_fields": ["Title", "Creators", "Date_text", "Description", "Medium", "Notes"],
+  "limitations": ["The underlying item has not been examined; visual content is reported from the catalog description.", "The creation date is given as a range; the reverse date stamp does not establish an exact creation date."]
+}

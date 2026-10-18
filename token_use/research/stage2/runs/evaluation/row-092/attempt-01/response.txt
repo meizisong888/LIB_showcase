@@ -1,0 +1,171 @@
+{
+  "reference_concerns": [
+    "F3's wording, “Recorded morning of August 15, 1994,” does not preserve the group-level scope of Notes. Date supports the item's calendar date, but the morning context explicitly describes a group of images. Individual morning timing remains uncertain."
+  ],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [
+        {
+          "quote": "No creator or date is supplied.",
+          "kind": "contradicted",
+          "source_fields": ["Creators", "Date", "Notes"],
+          "source_quote": "1994-08-15",
+          "reason": "The creator is absent, but a date is supplied in Date and Notes. This error is in limitations, not the description."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "The title identifies Jelina Cubic at work at a winding operation.",
+          "source_fields": ["Title"],
+          "reason": "Conveys the named person and activity with explicit title attribution."
+        },
+        {
+          "fact_id": "F2",
+          "status": "partial",
+          "quote": "Catalog subject headings associate the record with silk production, weaving, and Kalkstein Silk Mills, Inc., in Paterson, New Jersey.",
+          "source_fields": ["Notes", "Subject_headings"],
+          "reason": "Names the mill and location, but conveys only a subject association rather than membership in the documented group of scenes."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "quote": "",
+          "source_fields": ["Notes", "Date"],
+          "reason": "The description supplies neither the date nor the morning context."
+        },
+        {
+          "fact_id": "F4",
+          "status": "missing",
+          "quote": "",
+          "source_fields": ["Medium"],
+          "reason": "The description omits the 35 mm color-slide medium."
+        }
+      ],
+      "informativeness": 2,
+      "informativeness_reason": "Provides the named person, activity, mill and city, but omits the medium, dated group context and explicit relationship to that group.",
+      "usable": "no",
+      "usability_reason": "“The title identifies Jelina Cubic” provides useful Title-based detail, but Medium and Notes require important additions: the 35 mm color-slide format and dated group context. The limitation “No creator or date is supplied” also needs correction against Date and Notes."
+    },
+    {
+      "label": "B",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "A 35 mm color slide titled “Jelina Cubic at work at the winding operation.”",
+          "source_fields": ["Title"],
+          "reason": "Conveys the person and activity as title information."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "According to the notes, it forms part of a group documenting scenes at Kalkstein Silk Mills, Inc., 75 Wood Street, Paterson, New Jersey",
+          "source_fields": ["Notes"],
+          "reason": "Preserves the group relationship, mill and location."
+        },
+        {
+          "fact_id": "F3",
+          "status": "uncertain",
+          "quote": "According to the notes, it forms part of a group documenting scenes at Kalkstein Silk Mills, Inc., 75 Wood Street, Paterson, New Jersey, on the morning of August 15, 1994.",
+          "source_fields": ["Notes", "Date"],
+          "reason": "Faithfully conveys the dated group context; whether F3 asserts independently established individual morning timing is ambiguous."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "A 35 mm color slide",
+          "source_fields": ["Medium"],
+          "reason": "States the complete medium."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Includes the person, activity, medium, mill, address, dated group context and collection affiliation.",
+      "usable": "yes",
+      "usability_reason": "“A 35 mm color slide titled” and “According to the notes, it forms part of a group” faithfully convey Title, Medium and Notes without strengthening their evidence. Source_collection and Repository support the collection affiliation. F3's reference ambiguity does not make this explicitly group-qualified description unsupported."
+    },
+    {
+      "label": "C",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "A 35 mm color slide titled “Jelina Cubic at work at the winding operation.”",
+          "source_fields": ["Title"],
+          "reason": "Conveys the person and activity as title information."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "According to the catalog note, it belongs to a group documenting scenes at Kalkstein Silk Mills, Inc., 75 Wood Street, Paterson, New Jersey",
+          "source_fields": ["Notes"],
+          "reason": "Preserves the group relationship, mill and location."
+        },
+        {
+          "fact_id": "F3",
+          "status": "uncertain",
+          "quote": "According to the catalog note, it belongs to a group documenting scenes at Kalkstein Silk Mills, Inc., 75 Wood Street, Paterson, New Jersey, on the morning of August 15, 1994.",
+          "source_fields": ["Notes", "Date"],
+          "reason": "Faithfully conveys the dated group context; whether F3 asserts independently established individual morning timing is ambiguous."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "A 35 mm color slide",
+          "source_fields": ["Medium"],
+          "reason": "States the complete medium."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Includes the person, activity, medium, mill, address, dated group context and collection affiliation.",
+      "usable": "yes",
+      "usability_reason": "“A 35 mm color slide titled” and “According to the catalog note, it belongs to a group” preserve the support and scope of Title, Medium and Notes. Source_collection and Repository support the affiliation. F3's reference ambiguity requires no correction to this group-qualified description."
+    },
+    {
+      "label": "D",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "A 35 mm color slide titled “Jelina Cubic at work at the winding operation.”",
+          "source_fields": ["Title"],
+          "reason": "Conveys the person and activity as title information."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "According to the catalog notes, it forms part of a group documenting scenes at Kalkstein Silk Mills, Inc., 75 Wood Street, Paterson, New Jersey",
+          "source_fields": ["Notes"],
+          "reason": "Preserves the group relationship, mill and location."
+        },
+        {
+          "fact_id": "F3",
+          "status": "uncertain",
+          "quote": "According to the catalog notes, it forms part of a group documenting scenes at Kalkstein Silk Mills, Inc., 75 Wood Street, Paterson, New Jersey, on the morning of August 15, 1994.",
+          "source_fields": ["Notes", "Date"],
+          "reason": "Faithfully conveys the dated group context; whether F3 asserts independently established individual morning timing is ambiguous."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "A 35 mm color slide",
+          "source_fields": ["Medium"],
+          "reason": "States the complete medium."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Includes the person, activity, medium, mill, address, dated group context and collection affiliation.",
+      "usable": "yes",
+      "usability_reason": "“A 35 mm color slide titled” and “According to the catalog notes, it forms part of a group” faithfully convey Title, Medium and Notes. Source_collection and Repository support the affiliation. The description preserves group scope independently of its additional limitation; F3's reference ambiguity requires no factual correction."
+    }
+  ]
+}

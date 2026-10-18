@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-10-18T19:32:03.513345+00:00",
+  "source": "Codex account/rateLimits/read",
+  "inference_started": false,
+  "windows": {
+    "primary": {
+      "usedPercent": 23,
+      "windowDurationMins": 10080,
+      "resetsAt": 1792874438
+    }
+  },
+  "limit_reached": false,
+  "admitted": true
+}

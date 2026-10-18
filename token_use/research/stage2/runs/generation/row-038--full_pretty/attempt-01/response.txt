@@ -1,0 +1,10 @@
+{
+  "record_id": "http://www.loc.gov/item/2002719743/",
+  "description": "One photographic print, dated [1900], with a Library staff-devised title identifying William Howard Taft seated at a table playing cards with his wife and two men aboard a boat en route to the Philippines. The item forms part of the William H. Taft papers at the Library of Congress.",
+  "evidence_fields": ["Medium", "Date_text", "Title", "Notes"],
+  "limitations": [
+    "No descriptive text or creator identification is supplied.",
+    "Identification and activity are attributed to the staff-devised title, not verified from the image.",
+    "The date is supplied in brackets."
+  ]
+}

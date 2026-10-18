@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a15079-b6e1-7e72-a87a-bda129465a47"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"{\"record_id\":\"http://www.loc.gov/item/96503125/\",\"description\":\"Titled “See America / Dux.,” this item is cataloged with terms for color screen-print posters, caves, and tourism. Subject headings associate caves and tourism with 1930–1940; they do not establish the item’s creation date or verify its depicted content.\",\"evidence_fields\":[\"Title\",\"Subjects\",\"Subject_headings\"],\"limitations\":[\"No description or image is supplied to verify depicted content.\",\"The role or identity of “Dux” is unspecified.\",\"No creation date or rights information is supplied.\"]}"}}
+{"type":"turn.completed","usage":{"input_tokens":4870,"cached_input_tokens":2432,"cache_write_input_tokens":0,"output_tokens":128,"reasoning_output_tokens":0}}

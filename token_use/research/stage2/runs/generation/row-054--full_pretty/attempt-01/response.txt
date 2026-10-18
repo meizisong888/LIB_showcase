@@ -1,0 +1,9 @@
+{
+  "record_id": "http://www.loc.gov/item/94506959/",
+  "description": "A photographic print by photographer Hartsook, cataloged with the supplied title identifying Henry Ford in a head-and-shoulders portrait facing slightly left. The date is tentatively given as 1919. Listed in the National Photo Company Collection, the record includes a copyright note naming Keystone View Co., Inc., of N.Y.",
+  "evidence_fields": ["Title", "Creators", "Medium", "Date_text", "Notes"],
+  "limitations": [
+    "No descriptive text is supplied; identification and pose rely on the catalog title, not examination of the image.",
+    "The date is uncertain."
+  ]
+}

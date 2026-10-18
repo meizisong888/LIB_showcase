@@ -1,0 +1,7 @@
+{
+  "condition": "task_fields",
+  "prompt_sha256": "943f6e44b37e425ff1dca01273f6aa58333aa904dcf0ec63b64e8395023e2d73",
+  "record_key": "row-100",
+  "request_id": "row-100--task_fields",
+  "source_id": "http://www.loc.gov/item/2004680400/"
+}

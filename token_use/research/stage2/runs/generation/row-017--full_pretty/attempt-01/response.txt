@@ -1,0 +1,10 @@
+{
+  "record_id": "http://www.loc.gov/item/2012592150/",
+  "description": "Dated 1851, this map of Allegheny County, Pennsylvania, is described as hand-colored on four cloth-backed sheets. Catalog notes report rural buildings labeled with landowners’ names, but no property boundaries; municipal coloring; relief hachures; a post-office directory; and a courthouse illustration. S. McCrea is listed as a surveyor contributor. Copy 2 bears an 1852 copyright label, while its printed registration statement retains 1851.",
+  "evidence_fields": ["Title", "Date", "Medium", "Notes", "Contributors", "Call_number"],
+  "limitations": [
+    "Description is based on metadata, not examination of the map.",
+    "Other contributors’ roles are unspecified.",
+    "Copy-specific copyright markings differ."
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "reference_concerns": [],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "A drawing by Alfred R. Waud, dated [1863 March 18], in pencil and Chinese white on tan paper. Its inscribed title identifies a marriage at the camp of the 7th N.J.V., Army of the Potomac, Virginia.",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Identifies the drawing and meaningfully conveys its title."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "A drawing by Alfred R. Waud",
+          "source_fields": ["Creators"],
+          "reason": "Conveys Waud's artist role."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "dated [1863 March 18]",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the supplied date's brackets."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "in pencil and Chinese white on tan paper",
+          "source_fields": ["Medium"],
+          "reason": "Includes both media and the paper."
+        },
+        {
+          "fact_id": "F5",
+          "status": "covered",
+          "description_quote": "The metadata notes publication with descriptive text in Harper’s Weekly, April 4, 1863.",
+          "source_fields": ["Notes"],
+          "reason": "Includes publication, descriptive text, and date."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all five reference facts and adds supported signature and collection information.",
+      "usable": "yes",
+      "usability_reason": "“dated [1863 March 18]” preserves Date_text; “pencil and Chinese white on tan paper” matches Medium; the title identification and publication statement match Title and Notes. No important factual addition or correction is needed."
+    },
+    {
+      "label": "B",
+      "errors": [
+        {
+          "answer_quote": "Creator, creation date, and medium are not established by the supplied metadata.",
+          "kind": "contradicted",
+          "source_fields": ["Creators", "Date_text", "Medium"],
+          "source_quote": "Creators: \"Waud, Alfred R. (Alfred Rudolph), 1828-1891\", Role: \"artist\"; Date_text: \"[1863 March 18]\"; Medium: \"1 drawing on tan paper : pencil and Chinese white ; 24.7 x 35.7 cm. (sheet).\"",
+          "reason": "This limitations statement incorrectly denies supplied creator and medium information and a catalog-supplied date. The bracketed date warrants qualification, not a claim that no date is established."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "partial",
+          "description_quote": "Titled “Marriage at the camp of the 7th N.J.V. Army of the Potomac, Va,” this item",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Gives the title but does not identify the item as a drawing."
+        },
+        {
+          "fact_id": "F2",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Creators"],
+          "reason": "The description does not identify Waud or his artist role."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Date_text"],
+          "reason": "The description omits the catalog-supplied date."
+        },
+        {
+          "fact_id": "F4",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Medium"],
+          "reason": "The description omits the media and tan paper."
+        },
+        {
+          "fact_id": "F5",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Notes"],
+          "reason": "The description omits the publication information."
+        }
+      ],
+      "informativeness": 2,
+      "informativeness_reason": "Provides a specific title and useful, appropriately qualified subject-heading information, but omits the artist, supplied date, physical medium, and publication history.",
+      "usable": "no",
+      "usability_reason": "“Titled ‘Marriage at the camp of the 7th N.J.V. Army of the Potomac, Va,’” conveys Title, and “cataloged with subject headings” appropriately qualifies Subject_headings. However, important information from Creators, Date_text, Medium, and Notes must be added. The limitation “Creator, creation date, and medium are not established by the supplied metadata” also requires correction."
+    },
+    {
+      "label": "C",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "Drawing by artist Alfred R. Waud, dated [1863 March 18], in pencil and Chinese white on tan paper. The inscribed title identifies a marriage at the camp of the 7th N.J.V., Army of the Potomac, Virginia.",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Identifies the drawing and meaningfully conveys its title."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "Drawing by artist Alfred R. Waud",
+          "source_fields": ["Creators"],
+          "reason": "Explicitly identifies Waud as artist."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "dated [1863 March 18]",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the supplied date's brackets."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "in pencil and Chinese white on tan paper",
+          "source_fields": ["Medium"],
+          "reason": "Includes both media and the paper."
+        },
+        {
+          "fact_id": "F5",
+          "status": "covered",
+          "description_quote": "it was published with descriptive text in Harper’s Weekly on April 4, 1863.",
+          "source_fields": ["Notes"],
+          "reason": "Includes publication, descriptive text, and date."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all five reference facts and adds supported collection information.",
+      "usable": "yes",
+      "usability_reason": "“Drawing by artist Alfred R. Waud” matches Creators and Medium; “dated [1863 March 18]” preserves Date_text; the title identification and publication statement match Title and Notes. No important factual addition or correction is needed."
+    },
+    {
+      "label": "D",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "A drawing by Alfred R. Waud, dated [1863 March 18], in pencil and Chinese white on tan paper. Its inscribed title is “Marriage at the camp of the 7th N.J.V. Army of the Potomac, Va.”",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Identifies the drawing and supplies its title."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "A drawing by Alfred R. Waud",
+          "source_fields": ["Creators"],
+          "reason": "Conveys Waud's artist role."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "dated [1863 March 18]",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the supplied date's brackets."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "in pencil and Chinese white on tan paper",
+          "source_fields": ["Medium"],
+          "reason": "Includes both media and the paper."
+        },
+        {
+          "fact_id": "F5",
+          "status": "covered",
+          "description_quote": "it was published with descriptive text in Harper’s Weekly, April 4, 1863, page 216.",
+          "source_fields": ["Notes"],
+          "reason": "Includes publication, descriptive text, date, and supported page number."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all five reference facts and adds supported sheet dimensions, collection, and publication page.",
+      "usable": "yes",
+      "usability_reason": "“dated [1863 March 18]” preserves Date_text; “The sheet measures 24.7 × 35.7 cm” matches Medium; the inscribed title and publication details match Title and Notes. No important factual addition or correction is needed."
+    }
+  ]
+}

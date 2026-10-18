@@ -1,0 +1,171 @@
+{
+  "reference_concerns": [
+    "F3's staff-devised-title assertion is explicit in Notes. Its independent-verification clause should mean only that independent verification is not supplied here; the record does not establish whether verification ever occurred."
+  ],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [
+        {
+          "quote": "No creator, creation date, or rights information is supplied.",
+          "kind": "contradicted",
+          "source_fields": ["Date_text", "Date", "Rights"],
+          "source_quote": ["[1900]", "1900", "No known restrictions on publication."],
+          "reason": "This limitation incorrectly denies supplied date and rights metadata. The date is catalog-supplied and bracketed; creator identification is indeed absent."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "partial",
+          "quote": "The supplied bracketed title identifies William Howard Taft seated at a table playing cards with his wife and two men aboard a boat en route to the Philippines.",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Conveys the title's scene and identification with attribution, but does not identify the item as a photograph."
+        },
+        {
+          "fact_id": "F2",
+          "status": "missing",
+          "quote": "",
+          "source_fields": ["Date_text"],
+          "reason": "The description omits the supplied date [1900]."
+        },
+        {
+          "fact_id": "F3",
+          "status": "partial",
+          "quote": "The supplied bracketed title identifies",
+          "source_fields": ["Notes", "Title"],
+          "reason": "Attributes identification to the supplied title, but does not convey that Library staff devised it."
+        },
+        {
+          "fact_id": "F4",
+          "status": "missing",
+          "quote": "",
+          "source_fields": ["Notes"],
+          "reason": "The description omits membership in the William H. Taft papers."
+        }
+      ],
+      "informativeness": 2,
+      "informativeness_reason": "Provides concrete title-derived scene details, but omits photographic format, date, staff authorship of the title, and collection membership.",
+      "usable": "no",
+      "usability_reason": "The description's \"supplied bracketed title\" needs the staff-devised qualification from Notes, plus the photographic format (Medium), [1900] (Date_text), and collection membership (Notes). The limitation \"No creator, creation date, or rights information is supplied\" also needs correction against Date_text and Rights."
+    },
+    {
+      "label": "B",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "One photographic print, dated [1900]. The Library staff-devised title identifies William Howard Taft seated at a table playing cards with his wife and two men aboard a boat en route to the Philippines.",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Conveys photographic format and the complete title-derived scene with attribution."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "dated [1900]",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the bracketed date."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "quote": "The Library staff-devised title identifies",
+          "source_fields": ["Notes"],
+          "reason": "Explicitly attributes identification to the staff-devised title rather than claiming independent visual verification."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "The print forms part of the William H. Taft papers at the Library of Congress.",
+          "source_fields": ["Notes"],
+          "reason": "Explicitly states collection membership."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts with appropriate qualifications and accurately quotes the rights statement.",
+      "usable": "yes",
+      "usability_reason": "\"One photographic print, dated [1900]\", \"Library staff-devised title\", and \"forms part of the William H. Taft papers\" faithfully convey Medium, Date_text, Title, and Notes. The Rights quotation preserves its limited wording; no important factual addition or correction is needed."
+    },
+    {
+      "label": "C",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "One photographic print, dated [1900], with a Library staff-devised title identifying William Howard Taft seated at a table playing cards with his wife and two men aboard a boat en route to the Philippines.",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Conveys photographic format and the complete title-derived scene with attribution."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "dated [1900]",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the bracketed date."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "quote": "with a Library staff-devised title identifying",
+          "source_fields": ["Notes"],
+          "reason": "Explicitly presents identification as coming from the staff-devised title."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "The item forms part of the William H. Taft papers at the Library of Congress.",
+          "source_fields": ["Notes"],
+          "reason": "Explicitly states collection membership."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers photographic format, qualified date, attributed scene identification, and collection membership.",
+      "usable": "yes",
+      "usability_reason": "\"One photographic print, dated [1900]\", \"Library staff-devised title identifying\", and \"forms part of the William H. Taft papers\" accurately convey Medium, Date_text, Title, and Notes. No important factual correction or addition is needed."
+    },
+    {
+      "label": "D",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "One photographic print, dated [1900], from the William H. Taft papers at the Library of Congress. The Library staff-devised title identifies William Howard Taft seated at a table playing cards with his wife and two men aboard a boat en route to the Philippines.",
+          "source_fields": ["Title", "Medium"],
+          "reason": "Conveys photographic format and the complete title-derived scene with attribution."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "dated [1900]",
+          "source_fields": ["Date_text"],
+          "reason": "Preserves the bracketed date."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "quote": "The Library staff-devised title identifies",
+          "source_fields": ["Notes"],
+          "reason": "Explicitly attributes identification to the staff-devised title."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "from the William H. Taft papers at the Library of Congress",
+          "source_fields": ["Notes"],
+          "reason": "Conveys collection membership."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all four reference facts and adds supported creator and rights information without strengthening either.",
+      "usable": "yes",
+      "usability_reason": "\"One photographic print, dated [1900]\", \"from the William H. Taft papers\", and \"Library staff-devised title\" faithfully convey Medium, Date_text, Notes, and Title. \"The creator is not identified\" matches Creators, and the Rights quotation is exact. No important factual correction or addition is needed."
+    }
+  ]
+}

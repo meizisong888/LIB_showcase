@@ -1,0 +1,9 @@
+{
+  "record_id": "http://www.loc.gov/item/afc1993001_196614_01/",
+  "description": "Dated May 1, 1982, these 35 mm black-and-white film negatives credit Lucy M. Long as photographer. The title identifies First Korean School in Silver Spring, Maryland. Index notes describe karate instruction, students attending picnic speeches, and Mrs. Shin, Hong Ki leading singing. The material belongs to the Ethnic Heritage and Language Schools in America Project collection.",
+  "evidence_fields": ["Date", "Medium", "Contributors", "Title", "Notes", "Source_collection"],
+  "limitations": [
+    "No Description field content is supplied; activities and identifications rely on the title and index notes, not direct examination.",
+    "The index notes identify some speechmakers only as unidentified men."
+  ]
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "record_key": "row-100",
+    "reasons": [
+      "First scheduled record with a nonempty Description"
+    ]
+  },
+  {
+    "record_key": "row-048",
+    "reasons": [
+      "First scheduled record with an empty Description",
+      "Largest primary coverage increase; original-order tie break"
+    ]
+  },
+  {
+    "record_key": "row-018",
+    "reasons": [
+      "Largest primary coverage decrease; original-order tie break"
+    ]
+  }
+]

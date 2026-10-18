@@ -1,0 +1,8 @@
+{
+  "record_id": "http://www.loc.gov/item/2010630915/",
+  "description": "Color digital photograph by Carol M. Highsmith, titled “Tip Top Drive In & Out, Lewiston, Idaho” and dated June 14, 2005. The title, date, and subjects were provided by the photographer. Part of Carol M. Highsmith’s America Project in the Carol M. Highsmith Archive.",
+  "evidence_fields": ["Creators", "Title", "Date_text", "Medium", "Notes"],
+  "limitations": [
+    "No Description text is supplied, and the underlying photograph has not been examined; visual details cannot be confirmed."
+  ]
+}

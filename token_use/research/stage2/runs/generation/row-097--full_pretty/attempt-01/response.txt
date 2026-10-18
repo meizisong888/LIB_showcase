@@ -1,0 +1,8 @@
+{
+  "record_id": "http://www.loc.gov/item/2017702411/",
+  "description": "A 35 mm color slide by photographer John Margolies, titled “Storybook Gardens billboard, Lake Delton, Wisconsin” and dated 1988. The title and date are based on information provided by the photographer. Part of the John Margolies Roadside America photograph archive at the Library of Congress, Prints and Photographs Division.",
+  "evidence_fields": ["Title", "Creators", "Date", "Medium", "Notes", "Repository"],
+  "limitations": [
+    "No descriptive narrative is supplied; visual details beyond the photographer-supplied title cannot be established from this metadata."
+  ]
+}

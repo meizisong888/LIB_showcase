@@ -1,0 +1,862 @@
+{
+  "task_fields": {
+    "baseline": "full_compact",
+    "overall": {
+      "pairs": 20,
+      "mean_coverage_delta": 0.010000000000000004,
+      "usable_transitions": {
+        "yes -> yes": 18,
+        "no -> no": 1,
+        "no -> yes": 1
+      },
+      "more_error_claims": 0,
+      "fewer_error_claims": 0
+    },
+    "strata": {
+      "description_present": {
+        "pairs": 10,
+        "mean_coverage_delta": -0.025,
+        "usable_transitions": {
+          "yes -> yes": 9,
+          "no -> no": 1
+        },
+        "more_error_claims": 0,
+        "fewer_error_claims": 0
+      },
+      "description_missing": {
+        "pairs": 10,
+        "mean_coverage_delta": 0.045000000000000005,
+        "usable_transitions": {
+          "yes -> yes": 9,
+          "no -> yes": 1
+        },
+        "more_error_claims": 0,
+        "fewer_error_claims": 0
+      }
+    },
+    "records": [
+      {
+        "record_key": "row-100",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-046",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-018",
+        "description_present": true,
+        "coverage_delta": -0.25,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-080",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-053",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "no",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-078",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-028",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-036",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-050",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-062",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-048",
+        "description_present": false,
+        "coverage_delta": 0.25,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-084",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-097",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-037",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-092",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-017",
+        "description_present": false,
+        "coverage_delta": 0.20000000000000007,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "no",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-054",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-038",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-011",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-085",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      }
+    ]
+  },
+  "full_pretty": {
+    "baseline": "full_compact",
+    "overall": {
+      "pairs": 20,
+      "mean_coverage_delta": -0.014999999999999996,
+      "usable_transitions": {
+        "yes -> yes": 18,
+        "no -> no": 1,
+        "no -> yes": 1
+      },
+      "more_error_claims": 0,
+      "fewer_error_claims": 0
+    },
+    "strata": {
+      "description_present": {
+        "pairs": 10,
+        "mean_coverage_delta": -0.025,
+        "usable_transitions": {
+          "yes -> yes": 9,
+          "no -> no": 1
+        },
+        "more_error_claims": 0,
+        "fewer_error_claims": 0
+      },
+      "description_missing": {
+        "pairs": 10,
+        "mean_coverage_delta": -0.004999999999999993,
+        "usable_transitions": {
+          "yes -> yes": 9,
+          "no -> yes": 1
+        },
+        "more_error_claims": 0,
+        "fewer_error_claims": 0
+      }
+    },
+    "records": [
+      {
+        "record_key": "row-100",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-046",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": [
+          "Fact quote not found: F1"
+        ]
+      },
+      {
+        "record_key": "row-018",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-080",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-053",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "no",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-078",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-028",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-036",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-050",
+        "description_present": true,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-062",
+        "description_present": true,
+        "coverage_delta": -0.25,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-048",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-084",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-097",
+        "description_present": false,
+        "coverage_delta": -0.25,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-037",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-092",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-017",
+        "description_present": false,
+        "coverage_delta": 0.20000000000000007,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "no",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-054",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-038",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-011",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-085",
+        "description_present": false,
+        "coverage_delta": 0.0,
+        "error_claims_delta": 0,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "yes",
+        "baseline_flags": [],
+        "condition_flags": []
+      }
+    ]
+  },
+  "title_subjects": {
+    "baseline": "full_compact",
+    "overall": {
+      "pairs": 20,
+      "mean_coverage_delta": -0.7908333333333333,
+      "usable_transitions": {
+        "yes -> no": 18,
+        "no -> no": 2
+      },
+      "more_error_claims": 20,
+      "fewer_error_claims": 0
+    },
+    "strata": {
+      "description_present": {
+        "pairs": 10,
+        "mean_coverage_delta": -0.8966666666666667,
+        "usable_transitions": {
+          "yes -> no": 9,
+          "no -> no": 1
+        },
+        "more_error_claims": 10,
+        "fewer_error_claims": 0
+      },
+      "description_missing": {
+        "pairs": 10,
+        "mean_coverage_delta": -0.685,
+        "usable_transitions": {
+          "yes -> no": 9,
+          "no -> no": 1
+        },
+        "more_error_claims": 10,
+        "fewer_error_claims": 0
+      }
+    },
+    "records": [
+      {
+        "record_key": "row-100",
+        "description_present": true,
+        "coverage_delta": -1.0,
+        "error_claims_delta": 3,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-046",
+        "description_present": true,
+        "coverage_delta": -1.0,
+        "error_claims_delta": 1,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": [
+          "Fact quote not found: F1"
+        ]
+      },
+      {
+        "record_key": "row-018",
+        "description_present": true,
+        "coverage_delta": -1.0,
+        "error_claims_delta": 2,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": [
+          "errors: source quote not found verbatim"
+        ]
+      },
+      {
+        "record_key": "row-080",
+        "description_present": true,
+        "coverage_delta": -0.8,
+        "error_claims_delta": 2,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": [
+          "errors: source quote not found verbatim"
+        ]
+      },
+      {
+        "record_key": "row-053",
+        "description_present": true,
+        "coverage_delta": -0.6666666666666666,
+        "error_claims_delta": 2,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "no",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-078",
+        "description_present": true,
+        "coverage_delta": -1.0,
+        "error_claims_delta": 3,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": [
+          "errors: source quote not found verbatim"
+        ]
+      },
+      {
+        "record_key": "row-028",
+        "description_present": true,
+        "coverage_delta": -0.75,
+        "error_claims_delta": 2,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-036",
+        "description_present": true,
+        "coverage_delta": -0.75,
+        "error_claims_delta": 3,
+        "description_error_claims_delta": 1,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-050",
+        "description_present": true,
+        "coverage_delta": -1.0,
+        "error_claims_delta": 3,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": [
+          "errors: source quote not found verbatim",
+          "errors: source quote not found verbatim"
+        ]
+      },
+      {
+        "record_key": "row-062",
+        "description_present": true,
+        "coverage_delta": -1.0,
+        "error_claims_delta": 4,
+        "description_error_claims_delta": 1,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": [
+          "errors: source quote not found verbatim"
+        ]
+      },
+      {
+        "record_key": "row-048",
+        "description_present": false,
+        "coverage_delta": -0.5,
+        "error_claims_delta": 1,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": [
+          "errors: source quote not found verbatim"
+        ]
+      },
+      {
+        "record_key": "row-084",
+        "description_present": false,
+        "coverage_delta": -1.0,
+        "error_claims_delta": 1,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": [
+          "errors: source quote not found verbatim"
+        ]
+      },
+      {
+        "record_key": "row-097",
+        "description_present": false,
+        "coverage_delta": -0.75,
+        "error_claims_delta": 3,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": [
+          "errors: source quote not found verbatim"
+        ]
+      },
+      {
+        "record_key": "row-037",
+        "description_present": false,
+        "coverage_delta": -0.5,
+        "error_claims_delta": 1,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": [
+          "errors: source quote not found verbatim"
+        ]
+      },
+      {
+        "record_key": "row-092",
+        "description_present": false,
+        "coverage_delta": -0.5,
+        "error_claims_delta": 1,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-017",
+        "description_present": false,
+        "coverage_delta": -0.6,
+        "error_claims_delta": 1,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "no",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-054",
+        "description_present": false,
+        "coverage_delta": -0.5,
+        "error_claims_delta": 1,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": [
+          "errors: source quote not found verbatim"
+        ]
+      },
+      {
+        "record_key": "row-038",
+        "description_present": false,
+        "coverage_delta": -1.0,
+        "error_claims_delta": 1,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": []
+      },
+      {
+        "record_key": "row-011",
+        "description_present": false,
+        "coverage_delta": -0.75,
+        "error_claims_delta": 1,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": [
+          "errors: source quote not found verbatim"
+        ]
+      },
+      {
+        "record_key": "row-085",
+        "description_present": false,
+        "coverage_delta": -0.75,
+        "error_claims_delta": 1,
+        "description_error_claims_delta": 0,
+        "qualifier_losses_delta": 0,
+        "baseline_usable": "yes",
+        "condition_usable": "no",
+        "baseline_flags": [],
+        "condition_flags": []
+      }
+    ]
+  }
+}

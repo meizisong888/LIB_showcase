@@ -1,0 +1,10 @@
+{
+  "record_id": "http://www.loc.gov/item/2017703606/",
+  "description": "A 35 mm color slide photographed by John Margolies, titled “Julie's Victory Diner sign, State Street, Watertown, New York,” and dated 1995. The title and date are based on information supplied by the photographer. Part of the John Margolies Roadside America photograph archive at the Library of Congress.",
+  "evidence_fields": ["Creators", "Title", "Date", "Medium", "Notes", "Repository"],
+  "limitations": [
+    "No descriptive text is supplied, and the underlying image has not been examined.",
+    "Title and date rely on photographer-provided information.",
+    "Structured location entries include conflicting Watertown identifications; the description retains the location stated in the title."
+  ]
+}

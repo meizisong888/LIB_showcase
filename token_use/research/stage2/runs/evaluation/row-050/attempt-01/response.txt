@@ -1,0 +1,211 @@
+{
+  "reference_concerns": [],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [
+        {
+          "quote": "No description or image is supplied to verify depicted content.",
+          "kind": "contradicted",
+          "source_fields": ["Description"],
+          "source_quote": "Poster for the United States Travel Bureau promoting tourism, showing two people in caverns.",
+          "reason": "A catalog description is supplied, although no image has been examined. This error occurs in limitations, not the description."
+        },
+        {
+          "quote": "The role or identity of “Dux” is unspecified.",
+          "kind": "contradicted",
+          "source_fields": ["Creators", "Contributors"],
+          "source_quote": "{\"Name\":\"Dux, Alexander\",\"Role\":\"artist\"}",
+          "reason": "The record identifies Alexander Dux as artist. This error occurs in limitations."
+        },
+        {
+          "quote": "No creation date or rights information is supplied.",
+          "kind": "contradicted",
+          "source_fields": ["Date_text", "Rights"],
+          "source_quote": "[between 1936 and 1939]; No known restrictions on publication.",
+          "reason": "A date range and rights information are supplied, though neither an exact creation date nor categorical permission is established. This error occurs in limitations."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "partial",
+          "quote": "Titled “See America / Dux.,” this item is cataloged with terms for color screen-print posters, caves, and tourism.",
+          "source_fields": ["Title", "Description"],
+          "reason": "Names the title and tourism indexing but does not convey its promotional purpose or the United States Travel Bureau."
+        },
+        {
+          "fact_id": "F2",
+          "status": "missing",
+          "quote": "",
+          "source_fields": ["Description"],
+          "reason": "Does not describe the two people in caverns."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "quote": "",
+          "source_fields": ["Creators"],
+          "reason": "The title's mention of Dux does not identify Alexander Dux as artist."
+        },
+        {
+          "fact_id": "F4",
+          "status": "missing",
+          "quote": "",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Discusses subject-heading dates but omits the supplied creation range and verso stamp."
+        },
+        {
+          "fact_id": "F5",
+          "status": "partial",
+          "quote": "cataloged with terms for color screen-print posters",
+          "source_fields": ["Medium", "Subjects"],
+          "reason": "Conveys color screen-print indexing but not the print-on-board medium."
+        }
+      ],
+      "informativeness": 1,
+      "informativeness_reason": "Provides title and subject-indexing detail but omits the depicted people, artist, creation range, bureau, and board support.",
+      "usable": "no",
+      "usability_reason": "The description's “cataloged with terms” supplies little beyond indexing. Important additions are available in Description, Creators, Date_text, Notes, and Medium. Limitations also require correction: “The role or identity of ‘Dux’ is unspecified” contradicts Creators, and “No creation date or rights information is supplied” contradicts Date_text and Rights."
+    },
+    {
+      "label": "B",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "“See America,” by artist Alexander Dux, is a color silkscreen poster on board dated between 1936 and 1939. The catalog describes it as promoting tourism for the United States Travel Bureau",
+          "source_fields": ["Title", "Description"],
+          "reason": "Conveys the title, poster purpose, and bureau."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "The catalog describes it as promoting tourism for the United States Travel Bureau and showing two people in caverns.",
+          "source_fields": ["Description"],
+          "reason": "Reports the depicted content with catalog attribution."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "quote": "by artist Alexander Dux",
+          "source_fields": ["Creators"],
+          "reason": "Preserves the artist's name and role."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "dated between 1936 and 1939. The catalog describes it as promoting tourism for the United States Travel Bureau and showing two people in caverns. Part of the Work Projects Administration Poster Collection, it bears a June 28, 1939 date stamp on the reverse.",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Preserves the creation range and separately identifies the reverse stamp without treating it as an exact creation date."
+        },
+        {
+          "fact_id": "F5",
+          "status": "covered",
+          "quote": "a color silkscreen poster on board",
+          "source_fields": ["Medium"],
+          "reason": "Conveys color, process, format, and support."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all five reference facts and adds supported collection and reverse-stamp information.",
+      "usable": "yes",
+      "usability_reason": "“by artist Alexander Dux,” “color silkscreen poster on board,” and the catalog-attributed tourism scene match Creators, Medium, and Description. “dated between 1936 and 1939” remains distinct from the reverse stamp in Notes; no substantive correction or important addition is needed."
+    },
+    {
+      "label": "C",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "“See America,” by artist Alexander Dux, is a color silkscreen poster on board promoting tourism for the United States Travel Bureau.",
+          "source_fields": ["Title", "Description"],
+          "reason": "Conveys the title, poster purpose, and bureau."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "The catalog describes two people in caverns.",
+          "source_fields": ["Description"],
+          "reason": "Reports the depicted content with catalog attribution."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "quote": "by artist Alexander Dux",
+          "source_fields": ["Creators"],
+          "reason": "Preserves the artist's name and role."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "Dated between 1936 and 1939, it bears a June 28, 1939 stamp on the reverse",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Preserves the creation range and separately identifies the reverse stamp without treating it as an exact creation date."
+        },
+        {
+          "fact_id": "F5",
+          "status": "covered",
+          "quote": "a color silkscreen poster on board",
+          "source_fields": ["Medium"],
+          "reason": "Conveys color, process, format, and support."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all five reference facts and adds supported collection and reverse-stamp information.",
+      "usable": "yes",
+      "usability_reason": "“promoting tourism for the United States Travel Bureau” and “The catalog describes two people in caverns” match Description. The artist and medium match Creators and Medium; “Dated between 1936 and 1939” distinguishes the creation range from the reverse stamp in Notes. No substantive correction or important addition is needed."
+    },
+    {
+      "label": "D",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "quote": "“See America,” a color silkscreen poster on board by artist Alexander Dux, dated between 1936 and 1939. The catalog describes it as promoting tourism for the United States Travel Bureau",
+          "source_fields": ["Title", "Description"],
+          "reason": "Conveys the title, poster purpose, and bureau."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "quote": "The catalog describes it as promoting tourism for the United States Travel Bureau and showing two people in caverns.",
+          "source_fields": ["Description"],
+          "reason": "Reports the depicted content with catalog attribution."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "quote": "by artist Alexander Dux",
+          "source_fields": ["Creators"],
+          "reason": "Preserves the artist's name and role."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "quote": "dated between 1936 and 1939. The catalog describes it as promoting tourism for the United States Travel Bureau and showing two people in caverns. A note records a June 28, 1939 date stamp on the verso.",
+          "source_fields": ["Date_text", "Notes"],
+          "reason": "Preserves the creation range and separately reports the verso stamp without treating it as an exact creation date."
+        },
+        {
+          "fact_id": "F5",
+          "status": "covered",
+          "quote": "a color silkscreen poster on board",
+          "source_fields": ["Medium"],
+          "reason": "Conveys color, process, format, and support."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all five reference facts and adds supported collection and verso-stamp information.",
+      "usable": "yes",
+      "usability_reason": "“by artist Alexander Dux” and “a color silkscreen poster on board” match Creators and Medium. The catalog-attributed scene matches Description; “dated between 1936 and 1939” and “A note records a June 28, 1939 date stamp on the verso” faithfully distinguish Date_text from Notes. No substantive correction or important addition is needed."
+    }
+  ]
+}

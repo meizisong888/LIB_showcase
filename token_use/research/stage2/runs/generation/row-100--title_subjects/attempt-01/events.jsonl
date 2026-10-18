@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a15076-b513-7460-9dbc-a0ede7b331fc"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"{\"record_id\":\"http://www.loc.gov/item/2004680400/\",\"description\":\"Titled “Unfinished steel structure intact after quake, San Francisco,” this item is cataloged with subject headings for San Francisco skyscrapers and earthquakes, 1900–1910.\",\"evidence_fields\":[\"Title\",\"Subject_headings\"],\"limitations\":[\"No image or Description field is supplied to verify the title’s characterization.\",\"No creator or creation date is supplied; 1900–1910 appears only in subject headings.\",\"No rights information is supplied.\"]}"}}
+{"type":"turn.completed","usage":{"input_tokens":4894,"cached_input_tokens":3456,"cache_write_input_tokens":0,"output_tokens":115,"reasoning_output_tokens":0}}

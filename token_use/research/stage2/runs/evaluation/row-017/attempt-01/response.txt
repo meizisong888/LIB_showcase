@@ -1,0 +1,200 @@
+{
+  "reference_concerns": [],
+  "candidates": [
+    {
+      "label": "A",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "partial",
+          "description_quote": "Dated 1851, this map of Allegheny County, Pennsylvania",
+          "source_fields": ["Title", "Date"],
+          "reason": "Identifies date and place; the description also conveys landowners’ names but omits the title’s actual-surveys claim."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "Catalog notes report rural buildings labeled with landowners’ names, but no property boundaries",
+          "source_fields": ["Notes"],
+          "reason": "Conveys the rural buildings, names, and explicit absence of property boundaries."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "hand-colored on four cloth-backed sheets. Catalog notes report rural buildings labeled with landowners’ names, but no property boundaries; municipal coloring",
+          "source_fields": ["Notes", "Medium"],
+          "reason": "The hand-coloring statement and municipal-coloring detail together convey coloring by municipality."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "hand-colored on four cloth-backed sheets. Catalog notes report rural buildings labeled with landowners’ names, but no property boundaries; municipal coloring; relief hachures",
+          "source_fields": ["Notes", "Medium"],
+          "reason": "Includes four sheets and hachured relief."
+        },
+        {
+          "fact_id": "F5",
+          "status": "covered",
+          "description_quote": "a post-office directory; and a courthouse illustration",
+          "source_fields": ["Notes"],
+          "reason": "Includes both supplementary features."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers all substantive cartographic features in F2–F5 and most of F1, with additional supported physical and copy-specific details.",
+      "usable": "yes",
+      "usability_reason": "“Rural buildings labeled with landowners’ names, but no property boundaries,” “municipal coloring,” and “relief hachures” faithfully summarize Notes; “four cloth-backed sheets” follows Medium. The omitted Title phrase about actual surveys is a minor coverage gap, not an important addition needed for this otherwise informative draft."
+    },
+    {
+      "label": "B",
+      "errors": [
+        {
+          "answer_quote": "Creator, date, and rights information are not supplied.",
+          "kind": "contradicted",
+          "source_fields": ["Creators", "Date", "Rights"],
+          "source_quote": [
+            "1851",
+            "The Library of Congress is providing access to \rthese materials for educational and research purposes and is not aware of \rany U.S. copyright protection"
+          ],
+          "reason": "In limitations, the absence claim is false for date and rights information. Creators is empty, but Date and Rights are supplied."
+        }
+      ],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "partial",
+          "description_quote": "Titled “Map of Allegheny County, Pennsylvania, with the names of property-holders : from actual surveys,” this record identifies a county map.",
+          "source_fields": ["Title", "Date"],
+          "reason": "Conveys geography, property-holder names, and the qualified title claim about surveys, but omits 1851."
+        },
+        {
+          "fact_id": "F2",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Notes"],
+          "reason": "Subject associations with landowners and land tenure do not convey rural buildings or the absence of boundaries."
+        },
+        {
+          "fact_id": "F3",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Notes"],
+          "reason": "Does not describe hand coloring or its municipal purpose."
+        },
+        {
+          "fact_id": "F4",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Notes", "Medium"],
+          "reason": "Does not mention four sheets or hachured relief."
+        },
+        {
+          "fact_id": "F5",
+          "status": "missing",
+          "description_quote": "",
+          "source_fields": ["Notes"],
+          "reason": "Does not mention the directory or courthouse illustration."
+        }
+      ],
+      "informativeness": 1,
+      "informativeness_reason": "Provides title-level information and subject associations while omitting the concrete cartographic details in F2–F5 and the date.",
+      "usable": "no",
+      "usability_reason": "“This record identifies a county map” and the subject-heading summary leave important Notes and Medium details unreported, including the absence of property boundaries, municipal coloring, four sheets, hachures, and supplementary features. The limitation “date, and rights information are not supplied” also requires correction against Date and Rights."
+    },
+    {
+      "label": "C",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "partial",
+          "description_quote": "Dated 1851, this four-sheet map of Allegheny County, Pennsylvania, is described in catalog notes as showing rural buildings with landowners’ names",
+          "source_fields": ["Title", "Date", "Notes"],
+          "reason": "Conveys date, geography, and landowners’ names, but omits the title’s actual-surveys claim."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "showing rural buildings with landowners’ names, but not property boundaries",
+          "source_fields": ["Notes"],
+          "reason": "Conveys all components, including the boundary limitation."
+        },
+        {
+          "fact_id": "F3",
+          "status": "covered",
+          "description_quote": "Hand coloring identifies municipalities",
+          "source_fields": ["Notes"],
+          "reason": "Explicitly conveys the purpose of the hand coloring."
+        },
+        {
+          "fact_id": "F4",
+          "status": "covered",
+          "description_quote": "this four-sheet map of Allegheny County, Pennsylvania, is described in catalog notes as showing rural buildings with landowners’ names, but not property boundaries. Hand coloring identifies municipalities; relief is shown by hachures.",
+          "source_fields": ["Notes", "Medium"],
+          "reason": "Includes both the four-sheet format and hachured relief."
+        },
+        {
+          "fact_id": "F5",
+          "status": "covered",
+          "description_quote": "Notes also identify a post-office directory and courthouse illustration.",
+          "source_fields": ["Notes"],
+          "reason": "Includes both supplementary features."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Covers F2–F5 fully and most of F1, with supported contributor and copy-specific dating details.",
+      "usable": "yes",
+      "usability_reason": "“Hand coloring identifies municipalities; relief is shown by hachures” and “rural buildings with landowners’ names, but not property boundaries” accurately convey Notes. The contributing-surveyor wording follows Contributors, and the differing Copy 2 dates follow Call_number. Omission of the Title’s survey claim is minor rather than an important required addition."
+    },
+    {
+      "label": "D",
+      "errors": [],
+      "qualifier_losses": [],
+      "facts": [
+        {
+          "fact_id": "F1",
+          "status": "covered",
+          "description_quote": "Dated 1851, this four-sheet, hand-colored map of Allegheny County, Pennsylvania, is titled as drawn “from actual surveys.” Catalog notes describe rural buildings labeled with landowners’ names",
+          "source_fields": ["Title", "Date", "Notes"],
+          "reason": "Conveys date, geography, names, and the survey claim with title attribution."
+        },
+        {
+          "fact_id": "F2",
+          "status": "covered",
+          "description_quote": "Catalog notes describe rural buildings labeled with landowners’ names, but no property boundaries",
+          "source_fields": ["Notes"],
+          "reason": "Conveys all components, including the explicit boundary limitation."
+        },
+        {
+          "fact_id": "F3",
+          "status": "partial",
+          "description_quote": "hand-colored map",
+          "source_fields": ["Notes", "Medium"],
+          "reason": "Mentions hand coloring but not that it identifies municipalities."
+        },
+        {
+          "fact_id": "F4",
+          "status": "partial",
+          "description_quote": "four-sheet, hand-colored map",
+          "source_fields": ["Notes", "Medium"],
+          "reason": "Conveys four sheets but omits hachured relief."
+        },
+        {
+          "fact_id": "F5",
+          "status": "covered",
+          "description_quote": "a post-office directory and courthouse illustration",
+          "source_fields": ["Notes"],
+          "reason": "Includes both supplementary features."
+        }
+      ],
+      "informativeness": 3,
+      "informativeness_reason": "Provides substantial concrete detail, fully covering F1, F2, and F5, but leaves the coloring’s purpose and relief technique unspecified.",
+      "usable": "no",
+      "usability_reason": "The description is faithful, but “four-sheet, hand-colored map” does not convey the important Notes details “Hand col. to identify municipalities (townships, boroughs, cities)” and “Relief shown by hachures.” Those additions are needed to complete the map’s principal cartographic characterization; no factual correction is otherwise identified."
+    }
+  ]
+}

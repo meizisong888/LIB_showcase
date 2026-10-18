@@ -1,0 +1,10 @@
+{
+  "record_id": "http://www.loc.gov/item/afcwip001660/",
+  "description": "A 35 mm color slide titled “Jelina Cubic at work at the winding operation.” According to the catalog notes, it forms part of a group documenting scenes at Kalkstein Silk Mills, Inc., 75 Wood Street, Paterson, New Jersey, on the morning of August 15, 1994. Part of the Working in Paterson Project Collection at the American Folklife Center.",
+  "evidence_fields": ["Title", "Medium", "Notes", "Source_collection", "Repository"],
+  "limitations": [
+    "No item-level description is supplied; the person's identification and activity are taken from the title, not independently verified.",
+    "No creator is identified.",
+    "The location and morning date context apply to the group of images described in the notes."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "record_id": "http://www.loc.gov/item/2016832851/",
+  "description": "Glass negative cataloged as “Auto accident,” described in the metadata as showing a Model T Ford resting partly on and partly off a streetcar boarding platform in Washington, D.C. The supplied date, [1922], is inferred from negatives in the same range. Part of the National Photo Company Collection, the negative measures 4 × 5 inches or smaller. The title derives from unverified information supplied on negatives or sleeves.",
+  "evidence_fields": ["Title", "Description", "Date_text", "Notes", "Medium", "Source_collection"],
+  "limitations": [
+    "The underlying image has not been examined.",
+    "The title information is unverified.",
+    "The date is inferred from negatives in the same range.",
+    "No creator is identified."
+  ]
+}

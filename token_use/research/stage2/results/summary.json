@@ -1,0 +1,648 @@
+{
+  "model": "gpt-6.1-sol",
+  "backend": "official Codex CLI with existing ChatGPT login",
+  "conditions": {
+    "full_pretty": {
+      "planned": 20,
+      "attempted_requests": 20,
+      "attempts": 20,
+      "backend_completed": 20,
+      "backend_failures": 0,
+      "automatic_pass": 20,
+      "json_pass": 20,
+      "identity_pass": 20,
+      "word_limit_pass": 20,
+      "evidence_fields_pass": 20,
+      "mean_description_words": 54,
+      "empty_answers": 0,
+      "refusal_text_flags": 0,
+      "provider_refusal_count": null,
+      "provider_truncation_count": null,
+      "client_timeouts": 0,
+      "retries": 0,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 123270,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 123270
+        },
+        "output_tokens": {
+          "known_sum": 3385,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 3385
+        },
+        "cached_input_tokens": {
+          "known_sum": 64640,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 64640
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 0
+        }
+      },
+      "elapsed_seconds_all_attempts": 125.64399,
+      "median_request_seconds": 6.092257999999999,
+      "local_input_tokens": {
+        "cl100k_base": 31447,
+        "o200k_base": 31490
+      },
+      "ai_quality": {
+        "rated": 20,
+        "drafts_with_errors": 0,
+        "error_claims": 0,
+        "uncertain_error_claims": 0,
+        "drafts_with_description_errors": 0,
+        "description_error_claims": 0,
+        "limitation_error_claims": 0,
+        "drafts_with_input_scope_review_flags": 0,
+        "drafts_with_qualifier_losses": 0,
+        "qualifier_losses": 0,
+        "mean_record_coverage": 0.9233333333333333,
+        "covered_facts": 75,
+        "reference_facts": 81,
+        "partial_facts": 5,
+        "uncertain_facts": 1,
+        "mean_informativeness": 3,
+        "usable_counts": {
+          "yes": 19,
+          "no": 1
+        },
+        "ratings_with_citation_or_schema_flags": 1,
+        "records_with_reference_concerns": 2
+      },
+      "strata": {
+        "description_present": {
+          "generation_requests": 10,
+          "automatic_pass": 10,
+          "ai_quality": {
+            "rated": 10,
+            "drafts_with_errors": 0,
+            "error_claims": 0,
+            "uncertain_error_claims": 0,
+            "drafts_with_description_errors": 0,
+            "description_error_claims": 0,
+            "limitation_error_claims": 0,
+            "drafts_with_input_scope_review_flags": 0,
+            "drafts_with_qualifier_losses": 0,
+            "qualifier_losses": 0,
+            "mean_record_coverage": 0.9416666666666667,
+            "covered_facts": 37,
+            "reference_facts": 39,
+            "partial_facts": 2,
+            "uncertain_facts": 0,
+            "mean_informativeness": 3,
+            "usable_counts": {
+              "yes": 9,
+              "no": 1
+            },
+            "ratings_with_citation_or_schema_flags": 1,
+            "records_with_reference_concerns": 0
+          }
+        },
+        "description_missing": {
+          "generation_requests": 10,
+          "automatic_pass": 10,
+          "ai_quality": {
+            "rated": 10,
+            "drafts_with_errors": 0,
+            "error_claims": 0,
+            "uncertain_error_claims": 0,
+            "drafts_with_description_errors": 0,
+            "description_error_claims": 0,
+            "limitation_error_claims": 0,
+            "drafts_with_input_scope_review_flags": 0,
+            "drafts_with_qualifier_losses": 0,
+            "qualifier_losses": 0,
+            "mean_record_coverage": 0.905,
+            "covered_facts": 38,
+            "reference_facts": 42,
+            "partial_facts": 3,
+            "uncertain_facts": 1,
+            "mean_informativeness": 3,
+            "usable_counts": {
+              "yes": 10
+            },
+            "ratings_with_citation_or_schema_flags": 0,
+            "records_with_reference_concerns": 2
+          }
+        }
+      }
+    },
+    "full_compact": {
+      "planned": 20,
+      "attempted_requests": 20,
+      "attempts": 20,
+      "backend_completed": 20,
+      "backend_failures": 0,
+      "automatic_pass": 20,
+      "json_pass": 20,
+      "identity_pass": 20,
+      "word_limit_pass": 20,
+      "evidence_fields_pass": 20,
+      "mean_description_words": 55.1,
+      "empty_answers": 0,
+      "refusal_text_flags": 0,
+      "provider_refusal_count": null,
+      "provider_truncation_count": null,
+      "client_timeouts": 0,
+      "retries": 0,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 117307,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 117307
+        },
+        "output_tokens": {
+          "known_sum": 3099,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 3099
+        },
+        "cached_input_tokens": {
+          "known_sum": 65664,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 65664
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 0
+        }
+      },
+      "elapsed_seconds_all_attempts": 134.205834,
+      "median_request_seconds": 6.4192754999999995,
+      "local_input_tokens": {
+        "cl100k_base": 25088,
+        "o200k_base": 25527
+      },
+      "ai_quality": {
+        "rated": 20,
+        "drafts_with_errors": 0,
+        "error_claims": 0,
+        "uncertain_error_claims": 0,
+        "drafts_with_description_errors": 0,
+        "description_error_claims": 0,
+        "limitation_error_claims": 0,
+        "drafts_with_input_scope_review_flags": 0,
+        "drafts_with_qualifier_losses": 0,
+        "qualifier_losses": 0,
+        "mean_record_coverage": 0.9383333333333334,
+        "covered_facts": 76,
+        "reference_facts": 81,
+        "partial_facts": 4,
+        "uncertain_facts": 1,
+        "mean_informativeness": 3,
+        "usable_counts": {
+          "yes": 18,
+          "no": 2
+        },
+        "ratings_with_citation_or_schema_flags": 0,
+        "records_with_reference_concerns": 2
+      },
+      "strata": {
+        "description_present": {
+          "generation_requests": 10,
+          "automatic_pass": 10,
+          "ai_quality": {
+            "rated": 10,
+            "drafts_with_errors": 0,
+            "error_claims": 0,
+            "uncertain_error_claims": 0,
+            "drafts_with_description_errors": 0,
+            "description_error_claims": 0,
+            "limitation_error_claims": 0,
+            "drafts_with_input_scope_review_flags": 0,
+            "drafts_with_qualifier_losses": 0,
+            "qualifier_losses": 0,
+            "mean_record_coverage": 0.9666666666666667,
+            "covered_facts": 38,
+            "reference_facts": 39,
+            "partial_facts": 1,
+            "uncertain_facts": 0,
+            "mean_informativeness": 3,
+            "usable_counts": {
+              "yes": 9,
+              "no": 1
+            },
+            "ratings_with_citation_or_schema_flags": 0,
+            "records_with_reference_concerns": 0
+          }
+        },
+        "description_missing": {
+          "generation_requests": 10,
+          "automatic_pass": 10,
+          "ai_quality": {
+            "rated": 10,
+            "drafts_with_errors": 0,
+            "error_claims": 0,
+            "uncertain_error_claims": 0,
+            "drafts_with_description_errors": 0,
+            "description_error_claims": 0,
+            "limitation_error_claims": 0,
+            "drafts_with_input_scope_review_flags": 0,
+            "drafts_with_qualifier_losses": 0,
+            "qualifier_losses": 0,
+            "mean_record_coverage": 0.91,
+            "covered_facts": 38,
+            "reference_facts": 42,
+            "partial_facts": 3,
+            "uncertain_facts": 1,
+            "mean_informativeness": 3,
+            "usable_counts": {
+              "yes": 9,
+              "no": 1
+            },
+            "ratings_with_citation_or_schema_flags": 0,
+            "records_with_reference_concerns": 2
+          }
+        }
+      }
+    },
+    "task_fields": {
+      "planned": 20,
+      "attempted_requests": 20,
+      "attempts": 20,
+      "backend_completed": 20,
+      "backend_failures": 0,
+      "automatic_pass": 20,
+      "json_pass": 20,
+      "identity_pass": 20,
+      "word_limit_pass": 20,
+      "evidence_fields_pass": 20,
+      "mean_description_words": 56.6,
+      "empty_answers": 0,
+      "refusal_text_flags": 0,
+      "provider_refusal_count": null,
+      "provider_truncation_count": null,
+      "client_timeouts": 0,
+      "retries": 0,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 108209,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 108209
+        },
+        "output_tokens": {
+          "known_sum": 3081,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 3081
+        },
+        "cached_input_tokens": {
+          "known_sum": 69120,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 69120
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 0
+        }
+      },
+      "elapsed_seconds_all_attempts": 124.116989,
+      "median_request_seconds": 6.015708500000001,
+      "local_input_tokens": {
+        "cl100k_base": 16230,
+        "o200k_base": 16429
+      },
+      "ai_quality": {
+        "rated": 20,
+        "drafts_with_errors": 0,
+        "error_claims": 0,
+        "uncertain_error_claims": 0,
+        "drafts_with_description_errors": 0,
+        "description_error_claims": 0,
+        "limitation_error_claims": 0,
+        "drafts_with_input_scope_review_flags": 0,
+        "drafts_with_qualifier_losses": 0,
+        "qualifier_losses": 0,
+        "mean_record_coverage": 0.9483333333333334,
+        "covered_facts": 77,
+        "reference_facts": 81,
+        "partial_facts": 3,
+        "uncertain_facts": 1,
+        "mean_informativeness": 3,
+        "usable_counts": {
+          "yes": 19,
+          "no": 1
+        },
+        "ratings_with_citation_or_schema_flags": 0,
+        "records_with_reference_concerns": 2
+      },
+      "strata": {
+        "description_present": {
+          "generation_requests": 10,
+          "automatic_pass": 10,
+          "ai_quality": {
+            "rated": 10,
+            "drafts_with_errors": 0,
+            "error_claims": 0,
+            "uncertain_error_claims": 0,
+            "drafts_with_description_errors": 0,
+            "description_error_claims": 0,
+            "limitation_error_claims": 0,
+            "drafts_with_input_scope_review_flags": 0,
+            "drafts_with_qualifier_losses": 0,
+            "qualifier_losses": 0,
+            "mean_record_coverage": 0.9416666666666667,
+            "covered_facts": 37,
+            "reference_facts": 39,
+            "partial_facts": 2,
+            "uncertain_facts": 0,
+            "mean_informativeness": 3,
+            "usable_counts": {
+              "yes": 9,
+              "no": 1
+            },
+            "ratings_with_citation_or_schema_flags": 0,
+            "records_with_reference_concerns": 0
+          }
+        },
+        "description_missing": {
+          "generation_requests": 10,
+          "automatic_pass": 10,
+          "ai_quality": {
+            "rated": 10,
+            "drafts_with_errors": 0,
+            "error_claims": 0,
+            "uncertain_error_claims": 0,
+            "drafts_with_description_errors": 0,
+            "description_error_claims": 0,
+            "limitation_error_claims": 0,
+            "drafts_with_input_scope_review_flags": 0,
+            "drafts_with_qualifier_losses": 0,
+            "qualifier_losses": 0,
+            "mean_record_coverage": 0.955,
+            "covered_facts": 40,
+            "reference_facts": 42,
+            "partial_facts": 1,
+            "uncertain_facts": 1,
+            "mean_informativeness": 3,
+            "usable_counts": {
+              "yes": 10
+            },
+            "ratings_with_citation_or_schema_flags": 0,
+            "records_with_reference_concerns": 2
+          }
+        }
+      }
+    },
+    "title_subjects": {
+      "planned": 20,
+      "attempted_requests": 20,
+      "attempts": 20,
+      "backend_completed": 20,
+      "backend_failures": 0,
+      "automatic_pass": 20,
+      "json_pass": 20,
+      "identity_pass": 20,
+      "word_limit_pass": 20,
+      "evidence_fields_pass": 20,
+      "mean_description_words": 35.95,
+      "empty_answers": 0,
+      "refusal_text_flags": 0,
+      "provider_refusal_count": null,
+      "provider_truncation_count": null,
+      "client_timeouts": 0,
+      "retries": 0,
+      "usage": {
+        "input_tokens": {
+          "known_sum": 98209,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 98209
+        },
+        "output_tokens": {
+          "known_sum": 2450,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 2450
+        },
+        "cached_input_tokens": {
+          "known_sum": 64640,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 64640
+        },
+        "reasoning_output_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 0
+        },
+        "cache_write_input_tokens": {
+          "known_sum": 0,
+          "reported_attempts": 20,
+          "total_attempts": 20,
+          "complete_total": 0
+        }
+      },
+      "elapsed_seconds_all_attempts": 119.697751,
+      "median_request_seconds": 5.773106,
+      "local_input_tokens": {
+        "cl100k_base": 6414,
+        "o200k_base": 6429
+      },
+      "ai_quality": {
+        "rated": 20,
+        "drafts_with_errors": 20,
+        "error_claims": 37,
+        "uncertain_error_claims": 1,
+        "drafts_with_description_errors": 2,
+        "description_error_claims": 2,
+        "limitation_error_claims": 35,
+        "drafts_with_input_scope_review_flags": 20,
+        "drafts_with_qualifier_losses": 0,
+        "qualifier_losses": 0,
+        "mean_record_coverage": 0.1475,
+        "covered_facts": 12,
+        "reference_facts": 81,
+        "partial_facts": 21,
+        "uncertain_facts": 0,
+        "mean_informativeness": 1.6,
+        "usable_counts": {
+          "no": 20
+        },
+        "ratings_with_citation_or_schema_flags": 12,
+        "records_with_reference_concerns": 2
+      },
+      "strata": {
+        "description_present": {
+          "generation_requests": 10,
+          "automatic_pass": 10,
+          "ai_quality": {
+            "rated": 10,
+            "drafts_with_errors": 10,
+            "error_claims": 25,
+            "uncertain_error_claims": 0,
+            "drafts_with_description_errors": 2,
+            "description_error_claims": 2,
+            "limitation_error_claims": 23,
+            "drafts_with_input_scope_review_flags": 10,
+            "drafts_with_qualifier_losses": 0,
+            "qualifier_losses": 0,
+            "mean_record_coverage": 0.07,
+            "covered_facts": 3,
+            "reference_facts": 39,
+            "partial_facts": 13,
+            "uncertain_facts": 0,
+            "mean_informativeness": 1.3,
+            "usable_counts": {
+              "no": 10
+            },
+            "ratings_with_citation_or_schema_flags": 6,
+            "records_with_reference_concerns": 0
+          }
+        },
+        "description_missing": {
+          "generation_requests": 10,
+          "automatic_pass": 10,
+          "ai_quality": {
+            "rated": 10,
+            "drafts_with_errors": 10,
+            "error_claims": 12,
+            "uncertain_error_claims": 1,
+            "drafts_with_description_errors": 0,
+            "description_error_claims": 0,
+            "limitation_error_claims": 12,
+            "drafts_with_input_scope_review_flags": 10,
+            "drafts_with_qualifier_losses": 0,
+            "qualifier_losses": 0,
+            "mean_record_coverage": 0.225,
+            "covered_facts": 9,
+            "reference_facts": 42,
+            "partial_facts": 8,
+            "uncertain_facts": 0,
+            "mean_informativeness": 1.9,
+            "usable_counts": {
+              "no": 10
+            },
+            "ratings_with_citation_or_schema_flags": 6,
+            "records_with_reference_concerns": 2
+          }
+        }
+      }
+    }
+  },
+  "generation_usage": {
+    "input_tokens": {
+      "known_sum": 446995,
+      "reported_attempts": 80,
+      "total_attempts": 80,
+      "complete_total": 446995
+    },
+    "output_tokens": {
+      "known_sum": 12015,
+      "reported_attempts": 80,
+      "total_attempts": 80,
+      "complete_total": 12015
+    },
+    "cached_input_tokens": {
+      "known_sum": 264064,
+      "reported_attempts": 80,
+      "total_attempts": 80,
+      "complete_total": 264064
+    },
+    "reasoning_output_tokens": {
+      "known_sum": 0,
+      "reported_attempts": 80,
+      "total_attempts": 80,
+      "complete_total": 0
+    },
+    "cache_write_input_tokens": {
+      "known_sum": 0,
+      "reported_attempts": 80,
+      "total_attempts": 80,
+      "complete_total": 0
+    }
+  },
+  "evaluation_usage": {
+    "input_tokens": {
+      "known_sum": 157060,
+      "reported_attempts": 20,
+      "total_attempts": 20,
+      "complete_total": 157060
+    },
+    "output_tokens": {
+      "known_sum": 41273,
+      "reported_attempts": 20,
+      "total_attempts": 20,
+      "complete_total": 41273
+    },
+    "cached_input_tokens": {
+      "known_sum": 65024,
+      "reported_attempts": 20,
+      "total_attempts": 20,
+      "complete_total": 65024
+    },
+    "reasoning_output_tokens": {
+      "known_sum": 3666,
+      "reported_attempts": 20,
+      "total_attempts": 20,
+      "complete_total": 3666
+    },
+    "cache_write_input_tokens": {
+      "known_sum": 0,
+      "reported_attempts": 20,
+      "total_attempts": 20,
+      "complete_total": 0
+    }
+  },
+  "evaluation_calls": 20,
+  "evaluation_completed": 20,
+  "evaluation_retries": 0,
+  "evaluation_elapsed_seconds": 707.712761,
+  "execution_windows": {
+    "generation": {
+      "started_at_utc": "2026-10-18T19:21:03.423078+00:00",
+      "completed_at_utc": "2026-10-18T19:30:07.101860+00:00"
+    },
+    "evaluation": {
+      "started_at_utc": "2026-10-18T19:30:20.724001+00:00",
+      "completed_at_utc": "2026-10-18T19:42:09.006263+00:00"
+    }
+  },
+  "development_usage": null,
+  "human_review": "pending",
+  "hokieai_allocation": null,
+  "money_cost": null,
+  "notes": [
+    "Backend usage includes common CLI/runtime instructions; local tokenizer counts cover the frozen task prompt only.",
+    "Cached-input/reasoning counts are subsets; do not add them to input/output totals.",
+    "Client elapsed includes CLI startup and allowance check; provider-only latency is unavailable.",
+    "English-word check uses whitespace splitting, as in the existing importer; language correctness is not an automatic factual metric.",
+    "CLI does not expose provider refusal or truncation flags. Text heuristics are separate; absence of a flag is not proof.",
+    "AI ratings and provisional facts lack human confirmation. Citation flags require review; raw scores are not silently corrected.",
+    "Post-hoc input-scope flags separate evaluator claims about limitations from description claims. A truthful statement about absent reduced-input fields may be wrongly penalized against the full-source record. Raw AI errors and usability judgments remain unchanged and require human review."
+  ]
+}

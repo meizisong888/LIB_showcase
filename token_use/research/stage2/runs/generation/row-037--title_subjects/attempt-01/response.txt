@@ -1,0 +1,10 @@
+{
+  "record_id": "http://www.loc.gov/item/2010630915/",
+  "description": "The title identifies Tip Top Drive In & Out in Lewiston, Idaho. Catalog subject terms classify the item as a color digital photograph and associate it with fast food restaurants and rural America.",
+  "evidence_fields": ["Title", "Subjects", "Subject_headings"],
+  "limitations": [
+    "No description or underlying image is supplied; visual content cannot be verified.",
+    "Subject terms are catalog classifications, not independent confirmation of depicted content.",
+    "No creator, date, or rights information is supplied."
+  ]
+}

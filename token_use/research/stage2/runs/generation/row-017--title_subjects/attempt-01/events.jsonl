@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a1507c-7efc-7320-b1ca-98d4f3d0549c"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"{\"record_id\":\"http://www.loc.gov/item/2012592150/\",\"description\":\"Titled “Map of Allegheny County, Pennsylvania, with the names of property-holders : from actual surveys,” this record identifies a county map. Catalog subject headings associate it with landowners, land tenure, and administrative and political divisions in Allegheny County.\",\"evidence_fields\":[\"Title\",\"Subject_headings\"],\"limitations\":[\"No underlying item or Description field is supplied to verify depicted content or the title’s survey claim.\",\"Creator, date, and rights information are not supplied.\"]}"}}
+{"type":"turn.completed","usage":{"input_tokens":4952,"cached_input_tokens":3456,"cache_write_input_tokens":0,"output_tokens":122,"reasoning_output_tokens":0}}

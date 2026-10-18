@@ -1,0 +1,6 @@
+{
+  "record_id": "http://www.loc.gov/item/96518598/",
+  "description": "An aerial photographic print identified as the Woolworth Building in New York City, titled “Woolworth tower in clouds, New York City.” A catalog note credits the aerial photograph to Fairchild Aerial Surveys Inc., N.Y.C. The date is recorded as “c1928 May 22.” Rights metadata states: “No known restrictions on publication.”",
+  "evidence_fields": ["Description", "Title", "Medium", "Notes", "Date_text", "Rights"],
+  "limitations": ["The underlying image has not been examined; visual content is described through catalog metadata.", "The date retains the source’s “c” qualification."]
+}
