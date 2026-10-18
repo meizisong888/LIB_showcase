@@ -1,0 +1,27 @@
+{
+  "at_utc": "2026-10-18T19:19:37.834572+00:00",
+  "isolation_probe": {
+    "returncode": 0,
+    "stdout": "isolation-probe-passed\n",
+    "stderr": ""
+  },
+  "auth_status": {
+    "returncode": 0,
+    "diagnostic": "Logged in using ChatGPT\n"
+  },
+  "scope": "Filesystem/PID isolation with network available to official CLI. No claim of network isolation.",
+  "allowance": {
+    "checked_at_utc": "2026-10-18T19:19:37.835385+00:00",
+    "source": "Codex account/rateLimits/read",
+    "inference_started": false,
+    "windows": {
+      "primary": {
+        "usedPercent": 21,
+        "windowDurationMins": 10080,
+        "resetsAt": 1792874438
+      }
+    },
+    "limit_reached": false,
+    "admitted": true
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "seed": "library-stage2-blind-v1",
+  "not_for_human_reviewers": true,
+  "records": {
+    "row-100": {
+      "A": "full_compact",
+      "B": "task_fields",
+      "C": "full_pretty",
+      "D": "title_subjects"
+    },
+    "row-046": {
+      "A": "full_pretty",
+      "B": "task_fields",
+      "C": "full_compact",
+      "D": "title_subjects"
+    },
+    "row-018": {
+      "A": "full_pretty",
+      "B": "task_fields",
+      "C": "full_compact",
+      "D": "title_subjects"
+    },
+    "row-080": {
+      "A": "task_fields",
+      "B": "title_subjects",
+      "C": "full_compact",
+      "D": "full_pretty"
+    },
+    "row-053": {
+      "A": "full_compact",
+      "B": "full_pretty",
+      "C": "title_subjects",
+      "D": "task_fields"
+    },
+    "row-078": {
+      "A": "title_subjects",
+      "B": "full_pretty",
+      "C": "task_fields",
+      "D": "full_compact"
+    },
+    "row-028": {
+      "A": "full_pretty",
+      "B": "task_fields",
+      "C": "title_subjects",
+      "D": "full_compact"
+    },
+    "row-036": {
+      "A": "full_pretty",
+      "B": "task_fields",
+      "C": "full_compact",
+      "D": "title_subjects"
+    },
+    "row-050": {
+      "A": "title_subjects",
+      "B": "full_pretty",
+      "C": "task_fields",
+      "D": "full_compact"
+    },
+    "row-062": {
+      "A": "full_compact",
+      "B": "title_subjects",
+      "C": "full_pretty",
+      "D": "task_fields"
+    },
+    "row-048": {
+      "A": "task_fields",
+      "B": "full_compact",
+      "C": "title_subjects",
+      "D": "full_pretty"
+    },
+    "row-084": {
+      "A": "task_fields",
+      "B": "title_subjects",
+      "C": "full_pretty",
+      "D": "full_compact"
+    },
+    "row-097": {
+      "A": "full_pretty",
+      "B": "task_fields",
+      "C": "title_subjects",
+      "D": "full_compact"
+    },
+    "row-037": {
+      "A": "task_fields",
+      "B": "title_subjects",
+      "C": "full_compact",
+      "D": "full_pretty"
+    },
+    "row-092": {
+      "A": "title_subjects",
+      "B": "task_fields",
+      "C": "full_compact",
+      "D": "full_pretty"
+    },
+    "row-017": {
+      "A": "full_pretty",
+      "B": "title_subjects",
+      "C": "task_fields",
+      "D": "full_compact"
+    },
+    "row-054": {
+      "A": "task_fields",
+      "B": "full_pretty",
+      "C": "full_compact",
+      "D": "title_subjects"
+    },
+    "row-038": {
+      "A": "title_subjects",
+      "B": "task_fields",
+      "C": "full_pretty",
+      "D": "full_compact"
+    },
+    "row-011": {
+      "A": "full_compact",
+      "B": "title_subjects",
+      "C": "full_pretty",
+      "D": "task_fields"
+    },
+    "row-085": {
+      "A": "full_pretty",
+      "B": "full_compact",
+      "C": "title_subjects",
+      "D": "task_fields"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "created_at_utc": "2026-10-18T19:21:02.586363+00:00",
+  "note": "Frozen before first generation. Private design lock, not preregistration. AI reference facts lack human confirmation.",
+  "files": {
+    "data/loc-sample.json": "26ef5cb83d257de108a567f26f888510a7a7c530dfcb7937ea6a5e15588f9be5",
+    "config.json": "4c059d0f444f05f1f0d67b2d6e4bdacf3488055f48afac7a0fcfc4db9be7e68e",
+    "task.txt": "995e57c3d9c3d688a4d4938e19e732ed00291e7951bf764df129786a395030d2",
+    "design-lock.json": "a1547723c2f77ba9f0a124a6d4d9b2bcd63162d19129ba7c69d5480a4f6f1863",
+    "results/quality-pilot.json": "10d6710d2b7320c1b8bc21340ac02c390144b8951d544dd1aaa77b926ef0c8d2",
+    "outputs/pilot-requests.jsonl": "acb3ef645a70a7897ae5fd124c992e999e2e28668ede9cefdf98ac4940d6cfca",
+    "stage2/settings.json": "e44395f387117ebca3a63c53f18488a1f8759ae2aa041907abf5a245a2dcdbce",
+    "stage2/evaluation-prompt.txt": "578ff995fe729d5e321a63b76db8a28e7cddb7e9dec8ede28d8551ef0c214206",
+    "stage2/reference-facts.json": "eb0d017e109a8cdd9fd6e8c008ef24280b84d70fb508161dbde41db6fbc60d7c",
+    "stage2/generation-order.json": "b5eb124c0c178815f3a04923559449af9818d05e125865d17338272bc282a70a",
+    "stage2/blind-key.json": "f4e9d78138594bfec4f52479132d6e871c00b2d2b43e1c0c432a3e7fec0dc348",
+    "stage2/base-instructions.txt": "79dc60f1e99a50589e34f67ea87c5b3c8dc4e2caee97094a09397e6362134eca",
+    "stage2/transport.py": "329bcaedbdfa3fc124fc28a03edfdec4dec78e8c0cbca9562bdb60ac0cff8402",
+    "stage2/run.py": "61a93e95b9e3fde77f18abd23098a0c9b0eaa86280c0806de9f0511e0f0e81ae",
+    "stage2/README.md": "3a3fbe36d56097b8324a004eab3db960b4fd181eca061af2d62f4cd83fa7119c"
+  }
+}
