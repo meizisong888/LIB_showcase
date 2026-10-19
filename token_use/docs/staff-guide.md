@@ -1,5 +1,9 @@
 # Staff guide: prepare subject-review materials
 
+For drafting short item descriptions, follow the separate
+[catalog record → prepared input → actual draft example](../research/README.md#follow-one-record-from-input-to-draft).
+The steps below prepare evidence for checking existing subject headings.
+
 You can [read the complete example](worked-example.md) without running anything.
 To try it, complete [setup](../README.md#try-it), then work from `token_use/`.
 The main exercise uses real public Library of Congress (LOC) metadata; no model

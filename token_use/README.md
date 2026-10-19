@@ -1,52 +1,115 @@
-# Library Token Use — Practical Preprocessing Without Model Calls
+# Library Token Use — A Practical Showcase for Library Staff
 
-A practical guide for library staff preparing collection records for AI review.
-**Read this page without installing anything**, or try the supplied files with
-`.venv/bin/python scripts/prepare_public_case.py` after [setup](#try-it).
-[Staff guide](docs/staff-guide.md) ·
-[Complete worked example](docs/worked-example.md) ·
-[Research pilot: 100 real records](research/README.md).
+**Prepare catalog metadata locally, then give AI the evidence it needs for a
+useful staff draft.** This showcase demonstrates how ordinary programs can remove
+unneeded formatting, select explicit fields and avoid repeated preparation before
+sending material to a model. Staff keep the original records and check the answers.
 
-## Research extension: preparing item descriptions
+[Description example and results](research/README.md) ·
+[Staff guide: subject review](docs/staff-guide.md) ·
+[Complete preparation example](docs/worked-example.md)
 
-**Which preparation steps can reduce model input without sacrificing an
-accurate, informative library item description?** The separate
-[research pilot](research/README.md) prepares one catalog record per request
-for a draft of at most 80 English words. It uses all 100 records in the
-[official Library of Congress sample](research/data/README.md).
+## What is the staff task?
 
-The [four conditions](research/protocol.md#conditions) compare readable full
-JSON, compact full JSON, 27 task fields, and a title-and-subjects stress test.
-With the same task in every request, compacting full JSON reduces input by
-**19.43%** under `cl100k_base`. Selecting the task fields then reduces
-**129,671 → 85,825 tokens (33.81%)** relative to that compact baseline;
-`o200k_base` gives **131,561 → 86,656 (34.13%)** for field selection.
-These successive percentages have different denominators and cannot be added.
+**Draft a short description of one library item from its catalog metadata.**
+The input includes the title, descriptive notes, dates, creator roles, subjects
+and source information. The output is a draft of at most 80 English words,
+with its record ID, supporting field names and limitations, ready for staff review.
+The program prepares the evidence; AI drafts the text; staff decide whether it
+is accurate and useful enough to use.
 
-[Research question](research/protocol.md#research-question-and-scope) →
-[Data and sources](research/data/README.md) →
-[Comparison methods](research/protocol.md#stage-1-paired-input-measurements) →
-[Measured results](research/README.md#what-was-actually-measured) →
-[Real model results and initial quality assessment](research/stage2/report.md).
+The showcase also includes preparing subject-review packets, finding candidate
+collection materials with keywords, and preparing changed records after an update.
+Each task has its own configuration and evidence requirements.
 
-The [local reproduction](research/reproduction.md) matches all eight published
-token totals. The 400 prompts are prepared inputs; **80 selected requests have
-now produced real model answers** using the same `gpt-6.1-sol` model and isolated
-contexts. All 80 passed automatic structure checks, with no generation retries.
-For the selected 20 records, task fields reduced measured backend input from
-**117,307 to 108,209 tokens (7.76%)**. Shared runtime instructions make this a
-different denominator from the local text counts above.
+## How do we do it?
 
-[The research results](research/README.md) pair input/output usage with anonymous
-AI-assisted evaluation, actual answer examples and evaluator limitations.
-AI ratings are not librarian approval; **two independent human reviews remain
-pending**. The sparsest condition is a stress test, not a recommendation.
-Model charges, development-session usage and HokieAI allocation deductions are
-**not measured**. Generation and evaluation consume model allowance; only the
-local preparation operations are model-free.
-The original teaching showcase continues below.
+1. **Define the task before removing fields.** For item descriptions, a saved
+   [configuration](research/config.json) keeps 27 of 36 fields, including title,
+   description, notes, date wording, creator roles, rights, IDs and source links.
+2. **Prepare the input locally.** Compact JavaScript Object Notation (JSON)
+   removes formatting whitespace. Field selection copies the configured values
+   unchanged. No model decides which fields to delete, and the original stays available.
+3. **Check what remains.** The [field audit](research/results/field-audit.json)
+   checks retained values and record identities. Missing information stays missing;
+   keeping an ID or passing a format check does not prove that evidence is sufficient.
+4. **Ask for the draft using a fixed task.** The [prompt](research/task.txt)
+   requires source-grounded descriptions, preserved uncertainty and explicit
+   limitations. This step calls a model and consumes model allowance.
+5. **Review the answer against the original.** Check dates, roles, attributions,
+   omitted details and source links. Restore fields or obtain more material when
+   the prepared input cannot support the task.
 
-## 1. Why do this?
+## What do the completed experiments show?
+
+We used **100 real Library of Congress metadata records** for input preparation
+and local token counting. A fixed subset of **20 records** was used for actual
+answers: four input approaches per record, **80 model calls**, followed by
+**20 separate AI-assisted evaluation calls**. All completed without failures or
+retries. The generator was `gpt-6.1-sol` through the official Codex CLI on
+2026-10-18; every generation had a fresh context and the same settings.
+
+The table below covers the **20-record answer comparison**. Coverage is the AI
+evaluator's estimate of how much of a provisional important-fact list appears
+in each description; it is **not factual accuracy or librarian approval**.
+
+| Input approach | Backend input tokens | Backend output tokens | AI-assessed information coverage |
+| --- | ---: | ---: | ---: |
+| Full metadata, readable JSON | 123,270 | 3,385 | 92.33% |
+| Full metadata, compact JSON | 117,307 | 3,099 | 93.83% |
+| 27 task-relevant fields | 108,209 | 3,081 | 94.83% |
+| Title and subjects, plus IDs/URLs | 98,209 | 2,450 | 14.75% |
+
+Selecting task fields reduced measured backend input from **117,307 to 108,209
+(7.76%)**, with similar preliminary coverage (**94.83% vs 93.83%**). This small
+example does not prove unchanged quality. The title-and-subjects condition used
+less input but omitted substantial detail; it is a stress test, not a staff default.
+
+The 100-record local counting example separately found **33.81%** less input
+under `cl100k_base` for task fields versus compact full metadata. Local text
+counts exclude the backend's common runtime instructions. Neither percentage
+measures money saved or HokieAI allocation deductions. Do not add the percentages.
+
+The AI evaluator also made mistakes about fields absent from reduced inputs.
+Raw answers, those mistakes and both favorable and unfavorable examples are
+visible in the [detailed results](research/README.md). **Independent librarian
+review is still pending.** This is a working example, not a validated production tool.
+
+## See what a staff draft looks like
+
+[This real record](research/stage2/runs/generation/row-048--task_fields/attempt-01/prompt.txt)
+concerns Julie's Victory Diner sign. Its Description is empty, but its title,
+photographer, date, medium and catalog notes still support a limited draft.
+Here is the actual generated description from the task-field input:
+
+> A 35 mm color slide photographed by John Margolies, titled “Julie's Victory Diner sign, State Street, Watertown, New York,” and dated 1995. The title, date, and keywords are based on information supplied by the photographer. Part of the John Margolies Roadside America photograph archive at the Library of Congress.
+
+The [complete answer](research/stage2/runs/generation/row-048--task_fields/attempt-01/response.txt)
+also retains the record ID, lists its evidence fields and says that visual details
+cannot be independently confirmed. Staff should check those qualifications before
+using the draft. [Follow the example step by step](research/README.md#follow-one-record-from-input-to-draft).
+
+## Choose a starting point
+
+| Staff task | Open these files | What still needs judgment |
+| --- | --- | --- |
+| Draft an item description | [Saved input, prompt and actual answers](research/README.md#follow-one-record-from-input-to-draft) | Factual support, qualifications and useful detail |
+| Prepare subject-review materials | [Staff guide](docs/staff-guide.md) and [ready-made packet](results/public-case/prepared.txt) | Whether subjects fit the supplied evidence |
+| Find collection candidates | [Retrieval example](docs/experiment-report.md) | Relevance and material the keyword ranking missed |
+| Prepare an updated export | [Update instructions](docs/staff-guide.md) | Whether earlier judgments remain valid; the cache stores preparation only |
+
+Read the saved inputs and outputs without installing anything. To try the
+12-record subject-preparation example locally after [setup](#try-it), run:
+
+```bash
+.venv/bin/python scripts/prepare_public_case.py
+```
+
+It creates `outputs/public-review/prepared.txt`, its ID mapping and missing-information
+checks. This local preparation makes no model calls; sending the packet to HokieAI
+is a separate step.
+
+## More examples: subject review, search and updates
 
 Library staff may send catalog records and collection descriptions to AI tools
 for help with subject review or research. With limited AI allocations, it is
@@ -62,7 +125,7 @@ that meter. [Official Virginia Tech background](https://ai.vt.edu/tools/hokieai.
 This is an independent teaching project, not an official VT or validated
 production service.
 
-## 2. The employee's task
+### Prepare subject-review materials
 
 **Prepare materials to check whether catalog subjects fit the title and
 abstract.** The input is a local JSON Lines (JSONL) export: one record per line,
@@ -76,7 +139,7 @@ photograph records. In the real sample, 11 records have no summary. The program
 flags that evidence gap; it does not invent an abstract or call it a cataloging
 error.
 
-## 3. How the preparation works
+### Rules, duplicates and updates
 
 1. A saved configuration selects the fields needed for this task, including
    notes, dates, edition/copy context, restrictions and provenance.
@@ -93,7 +156,7 @@ ranker offers research candidates. It can miss synonyms, other languages and
 relevant context. It is not an exhaustive search. See the
 [method/retention/trade-off table](docs/methods.md#where-the-reduction-happens).
 
-## 4. One complete before-and-after record
+### One complete before-and-after record
 
 This **synthetic record, R007**, comes directly from the executed experiment's
 [raw export](data/raw/catalog-v1.jsonl#L7) and
@@ -186,7 +249,7 @@ checks all kept field values, not only ID counts. The
 [worked example](docs/worked-example.md) also shows complete real-source input
 and output, including a missing summary and original rights wording.
 
-## 5. Measured effects and trade-offs
+### Results for these preparation examples
 
 Counts use **tiktoken 0.12.0 / cl100k_base**, the same task text and JSON
 formatting within each comparison, including all sent IDs, source mappings,
@@ -214,11 +277,12 @@ uncompleted reviews still need doing.
 For the public sample, every configured value remains equal to its source,
 including uncertain dates, complete notes and rights qualifications. Keeping
 all IDs alone would not establish that. Missing summaries remain explicitly
-missing. Neither experiment establishes that a model would give equally good
-answers. [Full report](docs/experiment-report.md) ·
+missing. These preparation examples do not measure answer quality. The separate
+20-record description comparison above includes actual answers and preliminary
+AI-assisted checks, but does not establish equally good answers. [Full report](docs/experiment-report.md) ·
 [Public sample source, sampling and reuse conditions](data/public-loc/README.md).
 
-## 6. Why preprocessing makes no model calls
+## Why the preparation itself makes no model calls
 
 These steps run as ordinary local programs: selecting named fields, comparing
 values, parsing rules, calculating hashes and word frequencies. They send no
@@ -226,7 +290,7 @@ request to a generative model or embedding service and load no local generative
 model. The tokenizer counts text locally; it does not ask a model to answer.
 CPU, memory and disk work still have costs.
 
-The original synthetic run and the new public-data run both completed in
+The recorded synthetic and 12-record public-data preparation runs completed in
 verified Linux network isolation, with blocked external connection probes and
 **zero network system calls** in each traced preprocessing process. Ten original
 checks and four new checks passed. Code inspection covers the absence of local
@@ -242,10 +306,11 @@ not future edits or the surrounding development session.
 | --- | --- |
 | Local preprocessing model calls | Zero for the inspected, executed paths. |
 | Prepared input tokens | Measured locally under the named encoding. |
-| Codex development or evaluation usage | Not measured; Codex itself uses a model. No independent model-answer evaluation was run. |
+| Model generation and AI evaluation | Measured separately in the [20-record description example](research/stage2/results/metrics.md); both use a model. |
+| Codex development usage | Not measured; development itself uses a model. |
 | HokieAI actual allocation deduction | Not measured. No HokieAI call was made. |
 
-## 7. Use it yourself
+## Prepare a subject-review packet yourself
 
 Prepare a file → choose the task configuration → run locally → inspect
 missing fields, qualifications and sources → copy the complete prepared packet
@@ -286,7 +351,7 @@ original synthetic comparisons. Both require `unshare`, `strace` and permitted
 user/network namespaces. Ordinary Python runs do not certify network isolation.
 Python 3.11+ is required; recorded runs used 3.13.11.
 
-## 8. When to keep more material
+## When to keep more material
 
 - The task needs full text, images, shelf location or another removed field:
   keep that evidence or cancel the projection. Restoring metadata does not
@@ -300,5 +365,6 @@ Python 3.11+ is required; recorded runs used 3.13.11.
 
 Code and original documentation use the repository's [MIT license](../LICENSE).
 [Synthetic data terms](data/LICENSE) and [LOC source terms](data/public-loc/README.md#source-and-reuse)
-are separate. No librarian user study, production savings study or independent
-AI-answer comparison has been completed.
+are separate. The description comparison includes real model answers and AI-assisted
+checks. Independent librarian review, production savings and staff-time savings
+have not been measured.

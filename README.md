@@ -1,3 +1,30 @@
+# Library AI Showcases
+
+## Library Token Use — practical metadata preparation for library staff
+
+**The task:** turn catalog metadata into short, source-grounded item descriptions
+that staff can review, while reducing unnecessary input sent to AI.
+
+**How it works:** a local program compacts JSON, selects explicitly configured
+fields and checks that their values and source IDs remain intact. AI then drafts
+the description; staff check facts, qualifications and missing information.
+Other examples cover subject-review preparation, keyword candidates and updates.
+
+**What we tried:** 100 public Library of Congress records for input counting;
+20 of those records for 80 actual generated drafts and 20 separate AI-assisted
+evaluation calls. Task-field input used fewer backend tokens with similar
+preliminary information coverage. Aggressive field removal lost detail.
+Librarian review and actual cost or HokieAI allocation savings remain unmeasured.
+
+**[Open the Library Token Use showcase](token_use/README.md)** ·
+[See the description workflow and measured results](token_use/research/README.md) ·
+[Staff guide](token_use/docs/staff-guide.md)
+
+The pages contain real inputs, outputs and results; no installation or live demo
+is needed to understand the examples.
+
+---
+
 # VT Student AI Guide
 
 **[Open the live guide](https://meizisong888.github.io/LIB_showcase/)**

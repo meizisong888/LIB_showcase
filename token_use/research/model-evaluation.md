@@ -76,16 +76,16 @@ for that provenance. A structurally valid response still requires human review.
 The importer permits a partial run and reports its size; a partial run must not
 be presented as the completed paired experiment.
 
-## What still needs agreement and human work
+## Before staff use the drafts
 
-- Confirm the item-description task and a practical quality threshold with the teacher.
+- Confirm that the item-description task fits the intended staff workflow and
+  decide what detail a usable draft must retain.
 - Recruit two reviewers, freeze their source-fact reference, calibrate the rubric,
   and retain independent scores plus any adjudication.
 - Review evaluator errors, particularly input-availability claims and uncertain
   date/role judgments. The AI rubric and scope flags do not create human gold labels.
-- Decide whether another collection and a larger sample are needed to assess
-  generalization and variability. One response per condition does not estimate
-  repeat-run variance.
+- Check additional collections and repeated drafts before applying the workflow
+  broadly. One answer per condition does not show how much later answers may vary.
 
 Do not label a token-reduction method “equally accurate” from retained fields,
 20 pairs, AI scores or a nonsignificant difference. Human evaluation remains pending.
