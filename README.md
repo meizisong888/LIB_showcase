@@ -1,5 +1,14 @@
 # Library AI Showcases
 
+## Library Collections to Audio with NotebookLM
+
+Turn collection webpage text and photograph catalog descriptions into a short
+English audio introduction for visitors. This Wright brothers example includes
+the actual recordings, source links, reusable prompts, and documented review limits.
+
+**[Open the Library Collections to Audio showcase](library_audio/README.md)** ·
+[Download the latest audio — M4A, about 1:27](library_audio/wright-flight-v2.m4a?raw=true)
+
 ## Library Token Use — practical metadata preparation for library staff
 
 **The task:** turn catalog metadata into short, source-grounded item descriptions
