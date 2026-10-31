@@ -9,9 +9,9 @@ hear the collection's story, then follow links to the original materials.
 
 **[Download the latest audio — M4A, about 1:27](wright-flight-v2.m4a?raw=true)**
 
-The file is **wright-flight-v2.m4a**, measured on October 31, 2026 at
-**86.610431 seconds** and **2,788,268 bytes**. The revised prompt requested
-**about 3 minutes**; the actual output is **about 1 minute 27 seconds**.
+The revised prompt requested **about 3 minutes**; the actual output is
+**about 1:27**. Detailed measurements are recorded in the
+[audio review](review.md#saved-audio-and-measurements).
 
 **Review status: AI-assisted content review completed; issues remain.** The
 [automatic transcript](transcript-v2.md) supports several corrections but reveals
@@ -38,31 +38,59 @@ S4 was used during checking; its import into NotebookLM is **not confirmed**.
 Screenshots show S1–S3 entered and later listed, but only **2 sources** selected.
 The exact sources used for each recording are unconfirmed. Webpage text imports
 do not establish that photographs or linked manuscript scans were supplied.
-See [screenshot evidence and its limits](screenshots.md).
 
 ## How to reproduce
 
 These are recommended steps; they are not a claim that every step was completed
-in the recorded run.
+in the recorded run. The screenshots show earlier workflow steps, not confirmed
+settings for the latest recording.
 
-1. **Choose materials.** Select a small collection topic and a few authoritative
-   webpages. Keep their titles and links so visitors can explore further.
-2. **Import and inspect.** Add the selected sources to a notebook. Open each
-   imported text, check that the useful content is present, and verify the
-   selected source list before generation.
-3. **Check facts.** Use the [source-check prompt](prompts.md#source-check-prompt).
-   Open citations and compare dates, people, measurements, and uncertain claims
-   with the sources. Record supplementary checks separately.
-4. **Set language, format, and instructions.** Suggested settings are English,
-   Deep Dive for two hosts, and Short/Shorter where available. Use the
-   [revised short-audio prompt](prompts.md#revised-short-audio-prompt), treating its
-   three-minute target as a request. The screenshot confirms **Deep Dive,
-   English, Short, and 2 sources at that moment**, not the latest run's settings.
-5. **Generate and review.** Measure the downloaded result. Check its actual
-   claims, then listen from start to finish for pronunciation and audio quality.
-   Revise and regenerate if needed; changing a prompt does not change saved audio.
-6. **Download and display.** Keep the real file format. Publish the audio with
-   source links, prompts, measured duration, and an honest review status.
+### 1. Choose materials
+
+Select a small collection topic and a few authoritative webpages. Keep their
+titles and links so visitors can explore further.
+
+### 2. Import and inspect the sources
+
+Add the selected sources to a notebook. Open each imported text, check that the
+useful content is present, and verify the selected source list before generation.
+
+![Entering source URLs in NotebookLM](images/sources.png)
+
+*Entering the selected Library of Congress source URLs.*
+
+### 3. Check the facts
+
+Use the [source-check prompt](prompts.md#source-check-prompt). Open citations and
+compare dates, people, measurements, and uncertain claims with the sources.
+Record supplementary checks separately.
+
+![Checking a source citation in NotebookLM](images/source-check.png)
+
+*Checking a generated fact sheet against a source citation.*
+
+### 4. Configure the Audio Overview
+
+Suggested settings are English, Deep Dive for two hosts, and Short/Shorter where
+available. Use the [revised short-audio prompt](prompts.md#revised-short-audio-prompt),
+treating its three-minute target as a request.
+
+![Configuring the Audio Overview](images/studio.png)
+
+*Selecting the audio format, language, and length.*
+
+See the [screenshot notes](screenshots.md) for details about the recorded settings.
+
+### 5. Generate and review
+
+Generate the audio and measure the downloaded result. Check its actual claims,
+then listen from start to finish for pronunciation and audio quality. Revise and
+regenerate if needed; changing a prompt does not change saved audio.
+
+### 6. Download and share
+
+Keep the real downloaded file format. Share the audio with source links, prompts,
+measured duration, and an honest review status.
 
 Google's instructions cover [adding sources](https://support.google.com/notebooklm/answer/16215270?hl=en)
 and [customizing and downloading audio](https://support.google.com/notebooklm/answer/16212820?hl=en).
