@@ -30,7 +30,7 @@ The example uses Library of Congress exhibition text and the catalog record for 
 
 **Publisher:** Library of Congress.
 
-**Actual access/import date:** Pending.
+**Actual access/import date:** October 31, 2026.
 
 **Import method:** Pending. Record whether each source was added as a URL, uploaded file, or pasted webpage text.
 
@@ -42,10 +42,17 @@ Website imports capture webpage text. Importing S3's URL does not mean that the 
 
 1. Open the three source pages and inspect their contents.
 2. Create a new notebook and import S1, S2, and S3.
+   <img width="1465" height="806" alt="image" src="https://github.com/user-attachments/assets/f67e7d09-6724-4dba-8b5e-3077407d25d4" />
+
 3. Inspect the imported text and confirm that the main content is present.
 4. Ask for a short fact sheet with source citations, then check those citations.
+   <img width="902" height="709" alt="image" src="https://github.com/user-attachments/assets/7ac95904-ef84-4e55-ab49-c2a6bf7dc912" />
+
 5. Open Studio, configure Audio Overview, and enter the generation prompt below.
-6. Generate the audio, listen to the complete recording, and check key claims.
+   <img width="1460" height="799" alt="image" src="https://github.com/user-attachments/assets/d9388336-4fc5-4e7b-be85-72c7ecbdd319" />
+
+6. Generate the audio, listen to the complete recording, and check key claims
+   
 7. Regenerate if needed, then download the selected recording and record the actual settings and result.
 
 ## Settings and run record
