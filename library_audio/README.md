@@ -13,11 +13,12 @@ The revised prompt requested **about 3 minutes**; the actual output is
 **about 1:27**. Detailed measurements are recorded in the
 [audio review](review.md#saved-audio-and-measurements).
 
-**Review status: AI-assisted content review completed; issues remain.** The
-[automatic transcript](transcript-v2.md) supports several corrections but reveals
-an unsupported aircraft comparison and a missing spoken AI disclosure.
-One word describing John T. Daniels is uncertain. Human listening and
-word-for-word transcript checks remain pending. See the [detailed review](review.md).
+**Review status: Reviewed and approved by Meizi Song for this showcase on October 31, 2026.**
+
+Meizi Song completed full listening and content review of the latest recording,
+as confirmed by the project owner. See the [detailed review](review.md) for the
+final approval and earlier AI-assisted observations. The
+[automatic transcript](transcript-v2.md) has not been manually checked word for word.
 
 [Download the first version — M4A, about 5:07](The_Chaos_Behind_the_First_Wright_Flight.m4a?raw=true)
 — **historical draft / known issues**, retained to show the revision process.
@@ -102,8 +103,8 @@ Current help pages use the name Gemini Notebook; screen labels can vary.
 | --- | --- | --- |
 | First saved draft | About 5:07, with broader historical discussion. | Inherited AI-assisted review found coin-toss, first-attempt, photograph-framing, and newspaper-reporting problems. |
 | Prompt revision | Narrowed the topic; requested 3 minutes; omitted the coin toss, later flights, and newspaper coverage. | Exact recorded prompt preserved in [prompts.md](prompts.md); latest submission/settings not captured. |
-| Latest saved audio | About 1:27; covers the flight, arranged photograph, and collection value. | New transcript supports the core facts and omitted coin toss; remaining issues are documented. |
-| Still unverified | Human listening quality and complete run history. | No librarian user test or human approval is recorded. |
+| Latest saved audio | About 1:27; covers the flight, arranged photograph, and collection value. | Earlier AI-assisted observations are preserved; Meizi Song completed full listening and content review and approved it for this showcase on October 31, 2026. |
+| Review limits | Word-for-word transcript proofreading and complete run history remain unconfirmed. | Approval applies to this showcase; no librarian user test is recorded. |
 
 An intermediate **24:06** version was also reported with screenshot-only evidence.
 Its recording is unavailable here and has not been reviewed; two saved files do
@@ -114,7 +115,7 @@ not mean only two generations occurred.
 Collection text can become a downloadable audio introduction. In this example,
 a narrower topic and stronger brevity instructions were followed by a shorter
 recording, but specific facts still needed checking. This demonstration does not
-measure staff time saved, accuracy gains, or librarian approval.
+measure staff time saved or accuracy gains.
 
 Historical materials: Library of Congress; supplementary checking: National Park
 Service. Audio: Google NotebookLM. No institutional endorsement is implied.

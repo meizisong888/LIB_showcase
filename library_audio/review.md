@@ -4,10 +4,13 @@
 
 ## Scope and method
 
-This is an **AI-assisted review** using automatic transcription and comparison
-with historical sources. It is not librarian user testing or a completed human
-listening review. Transcription can miss or misrecognize speech; checking text
-does not assess pronunciation, voices, pacing, or listening quality.
+This record preserves earlier **AI-assisted checks** using automatic transcription
+and comparison with historical sources, followed by the
+[final human review](#final-human-review) of the latest recording. The project
+owner confirmed that Meizi Song completed full listening and content review and
+approved it for this showcase on October 31, 2026. This is not librarian user
+testing. Transcription can miss or misrecognize speech; the earlier text-based
+checks did not assess pronunciation, voices, pacing, or listening quality.
 
 The first-draft table below preserves the previous README's findings and
 approximate timestamps. The underlying first-draft transcript, transcription
@@ -93,9 +96,33 @@ The inherited review results are preserved below.
 
 **File:** [wright-flight-v2.m4a](wright-flight-v2.m4a?raw=true)
 
-**Status:** AI-assisted content review completed; issues remain. Human listening pending.
+**Status:** Reviewed and approved by Meizi Song for this showcase on October 31, 2026.
+
+### Final human review
+
+| Field | Record |
+| --- | --- |
+| Reviewer | Meizi Song |
+| Review date | October 31, 2026 |
+| Recording | [wright-flight-v2.m4a](wright-flight-v2.m4a?raw=true) |
+| Method | Full listening and content review, confirmed by the project owner. |
+| Outcome | Approved for use in this showcase. |
+
+The approval applies to the existing latest recording for this showcase. The
+project owner did not provide item-by-item corrections or confirm word-for-word
+transcript proofreading. This approval does not establish that every historical
+claim has been independently verified. The audio and automatic transcript are
+unchanged; no new version was generated. The first draft retains its historical
+review status and known issues.
+
+### Earlier AI-assisted review
 
 **Reviewer:** Codex (AI-assisted), October 31, 2026.
+
+The observations below were recorded **before the final human review**. The
+project owner subsequently confirmed completion of the review and approval for
+this showcase. These earlier observations are preserved as part of the record;
+the approval does not document audio edits or individual factual corrections.
 
 A new local transcription was made from the complete latest recording using
 `faster-whisper` 1.2.1 and `small.en`, with no historical text supplied as a
@@ -118,7 +145,7 @@ none were copied from the first draft.
 | New unsupported comparison | 00:30.000–00:35.900 | Compares 120 feet with the wingspan of a modern commercial jet. S1–S4 do not supply this comparison or identify an aircraft; remove it or provide a suitable source in a future version. |
 | Spoken AI disclosure | Opening, 00:00–00:11.940; full transcript checked | Does not identify itself as AI-generated, despite the revised prompt's opening requirement. This README labels it, but the recording needs its own disclosure when shared alone. |
 | Tone and brevity instructions | 00:12.480–00:14.460; 01:07.860–01:19.700 | Rhetorical questions and dramatic reactions remain despite instructions to avoid them. The output is shorter than the 3-minute / 350–450-word request: about 1:27 and approximately 255 transcribed words. |
-| Pronunciation, voices, pacing, and glitches | Whole recording | Not assessed by this text-based review. Human listening remains pending. |
+| Pronunciation, voices, pacing, and glitches | Whole recording | Not assessed by this earlier text-based review. Meizi Song subsequently completed full listening and content review and approved the recording for this showcase; no separate item-by-item ratings were supplied. |
 
 ### Transcription disagreement near 00:50
 
@@ -127,22 +154,29 @@ A second local `base.en` pass on the original 00:39–00:55 audio recognizes
 **“a local guy”** instead. Neither pass was given a suggested phrase. The raw
 full transcript is preserved rather than silently corrected.
 
-This disagreement needs human listening before it can be called an audio error.
+The project owner's later approval did not specify whether the recording says
+“guide” or “guy”; that wording remains unresolved in this record.
 If the recording says “guide,” that role is unsupported by the checked sources:
 S2 and S4 describe Daniels as being from the local lifesaving station. His name
 and shutter operation are supported either way. The unsupported jet comparison
 and missing spoken AI disclosure do not depend on this disputed word.
 
-### Remaining work
+### Review completion and optional follow-up
 
-- [ ] Listen to the complete latest recording and check the transcript word for word, especially “guide” versus “guy” near 00:50.
-- [ ] Assess pronunciation, voices, pacing, and audio glitches through human listening; record the reviewer and date when done.
-- [ ] For a future recording, remove the unsupported aircraft comparison, include the spoken AI disclosure, and simplify the dramatic reactions. A [suggested next prompt](prompts.md#suggested-next-prompt) is available but has not been run.
-- [ ] If regenerating, capture the selected sources, full custom prompt, settings, and generation date, then review the new file independently.
+- [x] Complete full listening and content review of the latest recording: Meizi Song, October 31, 2026, as confirmed by the project owner.
+- [x] Record the final outcome: approved for use in this showcase.
+- [ ] Check the automatic transcript word for word, including “guide” versus “guy” near 00:50. This proofreading has not been confirmed by the project owner.
 
-The latest version is suitable for showing the workflow and its limitations;
-it is not marked as fully approved interpretive audio. There is no recorded
-librarian approval or visitor evaluation.
+The earlier AI-assisted review suggested removing the unsupported aircraft
+comparison, including a spoken AI disclosure, and simplifying dramatic reactions
+in a future recording. These remain optional follow-up suggestions, not completed
+changes or conditions on the owner's approval. The
+[suggested next prompt](prompts.md#suggested-next-prompt) has not been run. If a
+future version is generated, its sources, prompt, settings, date, and independent
+review should be recorded.
+
+The latest version is approved for this showcase. No librarian user test or
+visitor evaluation is recorded.
 
 ## Confirmed settings versus recommended practice
 
