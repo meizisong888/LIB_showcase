@@ -89,6 +89,11 @@ Use plain language and short sentences. Avoid lengthy introductions, repeated fa
 
 Use only the supplied sources. Do not invent quotations or details. End immediately after the invitation to explore the collection.
 
+## Listen to the result
+
+[Download the revised audio](wright-flight-v2.m4a)
+
+This version was generated with a shorter, more focused prompt.
 
 ## Settings and run record
 
