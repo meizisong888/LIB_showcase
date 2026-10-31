@@ -52,23 +52,58 @@ Website imports capture webpage text. Importing S3's URL does not mean that the 
    <img width="1460" height="799" alt="image" src="https://github.com/user-attachments/assets/d9388336-4fc5-4e7b-be85-72c7ecbdd319" />
 
 6. Generate the audio, listen to the complete recording, and check key claims
-   
+   ### Audio demo — first draft
+
+[Download the audio](wright-flight-v1.m4a)
+
 7. Regenerate if needed, then download the selected recording and record the actual settings and result.
+
+   **Editing Prompt:**
+
+Create a SHORT English audio introduction for a library showcase.
+
+Target duration: 3 minutes.
+Aim for approximately 350–450 spoken words in total across both hosts.
+Use a brief two-host conversation. Prioritize brevity over detail.
+
+Cover ONLY these points, in this order:
+
+1. Opening:
+Identify this as an AI-generated introduction based on historical collection materials.
+
+2. The first successful flight:
+On December 17, 1903, near Kitty Hawk, North Carolina, Orville Wright piloted the first successful powered flight. It lasted 12 seconds and covered 120 feet.
+
+3. The photograph:
+Orville prepared the camera, and John T. Daniels operated the shutter. Explain that the photograph was deliberately arranged, not an accidental snapshot.
+
+4. Why library collections matter:
+Briefly explain how the photograph, Orville’s diary, and the telegram help people understand and verify the event.
+
+5. Closing:
+Invite listeners to explore the linked Library of Congress materials.
+
+Omit the coin-toss story entirely. Do not discuss the December 14 attempt, later flights, the damaged aircraft, newspaper coverage, childhood, or aviation history.
+
+Use plain language and short sentences. Avoid lengthy introductions, repeated facts, dramatic storytelling, rhetorical questions, and extended reactions between hosts.
+
+Use only the supplied sources. Do not invent quotations or details. End immediately after the invitation to explore the collection.
+
 
 ## Settings and run record
 
-| Setting | Planned value | Actual value |
-| --- | --- | --- |
-| Tool | NotebookLM / Gemini Notebook, Audio Overview | Pending |
-| Notebook title | Library Audio Showcase - Wright Brothers | Pending |
-| Format | Deep Dive, two hosts | Pending |
-| Language | English | Pending |
-| Length option | Shorter, if available | Pending |
-| Target duration | Approximately 3-5 minutes; a preference, not a guaranteed duration | Pending |
-| Generation date | Record when generated | Pending |
-| Number of generation attempts | Record all attempts, including revisions | Pending |
-| Selected audio filename and format | Keep the real downloaded extension | Pending |
-| Measured audio duration | Read from the downloaded recording | Pending |
+| Setting | Planned value |
+| --- | --- |
+| Tool | NotebookLM / Gemini Notebook, Audio Overview |
+| Notebook title | Library Audio Showcase - Wright Brothers |
+| Format | Deep Dive, two hosts |
+| Language | English |
+| Length option | Shorter, if available |
+| Target duration | Approximately 3-5 minutes; a preference, not a guaranteed duration |
+| Generation date | Record when generated |
+| Number of generation attempts | Record all attempts, including revisions |
+| Selected audio filename and format | Keep the real downloaded extension |
+| Measured audio duration | Read from the downloaded recording | 
 
 ## Prompts
 
@@ -92,19 +127,48 @@ Briefly identify the Library of Congress as the source and finish by inviting li
 
 **Prompt actually used:** Pending. If the instructions change, replace the prompt above with the exact final text and describe the change in the revision table below.
 
-## Human review
+## Audio review
 
-The checks below are prepared reference points, not completed reviews. Record a timestamp only after locating the claim in the actual audio. Check other factual claims in the recording as well.
+**Audio:** First draft — *The Chaos Behind the First Wright Flight*  
+**Duration:** Approximately 5 minutes 7 seconds  
+**Status:** Revisions needed
+
+This review uses an automatically generated transcript and source verification.
+Timestamps are approximate. Human listening checks remain pending.
 
 | Check | Reference point | Source | Audio timestamp | Review result |
 | --- | --- | --- | --- | --- |
-| Date | December 17, 1903 | S1, S3 | Pending | Pending |
-| Pilot | Orville piloted the first flight; Wilbur was alongside the machine | S2: First Flight Photograph; S3 | Pending | Pending |
-| First-flight measurements | 12 seconds and 120 feet | S2: First Flight Photograph; S3 title | Pending | Pending |
-| Photograph | Orville set up the camera; John T. Daniels triggered the shutter | S2: First Flight Photograph; S3 | Pending | Pending |
-| Later flights, if mentioned | The fourth flight was 852 feet in 59 seconds | S2: Wrecked Plane | Pending | Pending |
-| Collection context | Explain the photograph and related written records using the supplied descriptions | S2: Orville's Account; S3 | Pending | Pending |
-| Other claims and audio quality | Check additional claims, pronunciation, intelligibility, and glitches | Relevant source passage | Pending | Pending |
+| Date and location | December 17, 1903, near Kitty Hawk, North Carolina | S1, S3 | 00:47–00:54 | Incomplete: mentions December 1903, but omits the day and location. |
+| Pilot | Orville piloted the first successful flight; Wilbur was alongside the machine | S2, S3 | 01:04–01:14 | Partly covered: Orville is correctly identified; Wilbur's position is not clearly described. |
+| First-flight measurements | 12 seconds and 120 feet | S2, S3 | 01:09–01:20 | Correct. |
+| Photograph | Orville prepared the camera; John T. Daniels operated the shutter | S2, S3 | 01:36–01:57 | Correct. |
+| Photograph framing | The photograph was deliberately arranged | S2 | 00:00–00:11; 04:30–04:46 | Revise: descriptions such as "accidental" and "lucky snapshot" understate the preparation. |
+| Fourth flight | Wilbur flew 852 feet in 59 seconds | S2 | 02:03–02:28 | Correct; distinguished from the first flight. |
+| Collection context | Photographs, diaries, and telegrams document the event | S2, S3 | 03:32–04:03; 04:18–04:35 | Covered: explains the value of visual and written records. |
+| Coin-toss chronology | Wilbur won the toss before the unsuccessful December 14 attempt; Orville's turn came on December 17 | S4 | 01:04–01:14 | Incorrect: says Orville won the coin toss. |
+| First attempt versus first successful flight | The photograph records the successful December 17 flight, following an unsuccessful December 14 attempt | S3, S4 | 01:26–01:31 | Replace "the very first attempt" with "the first successful powered flight." |
+| Newspaper coverage | The newspaper account mixed facts with inaccurate descriptions | S2 | 04:03–04:19 | Replace "without having any actual facts" with "included inaccurate descriptions." |
+| Pronunciation and audio quality | Clear speech, understandable names, and no distracting glitches | Human listening | Pending | Pending human review. |
+
+### Additional verification source
+
+**S4:** [National Park Service: 1903—The First Flight](https://home.nps.gov/wrbr/learn/historyculture/thefirstflight.htm)
+
+The LOC exhibition's brief coin-toss description does not clearly explain
+the sequence of attempts. S4 was consulted during review to resolve this issue.
+
+### Revision checklist
+
+- [ ] Correct the coin-toss chronology.
+- [ ] Distinguish the first attempt from the first successful flight.
+- [ ] State the full date and location.
+- [ ] Describe the photograph as deliberately arranged.
+- [ ] Replace exaggerated claims about newspaper coverage.
+- [ ] Generate and review the revised audio.
+- [ ] Complete human listening checks.
+
+**Revised audio review:** Pending  
+**Human reviewer and review date:** Pending
 
 **Reviewer and review date:** Pending.
 
