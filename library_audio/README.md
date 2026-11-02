@@ -93,13 +93,12 @@ download; you can also right-click the link and choose **Save link as**.
 | Recording | Length | Listen or download | Status |
 | --- | --- | --- | --- |
 | **The Chaos Behind the First Wright Flight** | 5:07 | [Open M4A](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/The_Chaos_Behind_the_First_Wright_Flight.m4a) | First draft, retained for comparison; known factual issues are documented in the review. |
-| **How the First Flight Photo Was Taken** | 5:17 | [Open M4A](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/How_the_First_Flight_Photo_Was_Taken.m4a) | Additional recording; its prompt, generation settings, and content review are not documented here. |
+| **Wright Flight — revised short version (`wright-flight-v2.m4a`)** | 1:27 | [Open M4A](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/wright-flight-v2.m4a) | Revised version; reviewed and approved by Meizi Song for this showcase on October 31, 2026. |
 
-**Previously reviewed short version:**
-[Listen or download — 1:27, M4A](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/wright-flight-v2.m4a).
-The October 31 approval applies to this short recording. Its
-[automatic transcript](transcript-v2.md) and [detailed review](review.md#latest-audio-content-review)
-are available for reference.
+**Start with the revised 1:27 version** for the focused introduction. The 5:07
+first draft is included to show what changed during review. The revised version's
+[automatic transcript](transcript-v2.md) and
+[detailed review](review.md#latest-audio-content-review) are available for reference.
 
 ## 5. What does this example show?
 

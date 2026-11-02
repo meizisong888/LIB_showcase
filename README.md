@@ -14,7 +14,7 @@ The showcase includes recordings, source links, prompts, and review notes.
 
 **[Open the Library Collections to Audio showcase](library_audio/README.md)** ·
 [The Chaos Behind the First Wright Flight — M4A, 5:07](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/The_Chaos_Behind_the_First_Wright_Flight.m4a) ·
-[How the First Flight Photo Was Taken — M4A, 5:17](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/How_the_First_Flight_Photo_Was_Taken.m4a)
+[Wright Flight — revised version, M4A, 1:27](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/wright-flight-v2.m4a)
 
 ## Library Token Use — practical metadata preparation for library staff
 

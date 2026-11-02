@@ -2,10 +2,9 @@
 
 [Back to the showcase](README.md) · [Prompts](prompts.md) · [Screenshots](screenshots.md)
 
-**Which recording is reviewed here?** The October 31 review below uses "latest"
-to mean the **1:27 short version, `wright-flight-v2.m4a`**. It does not cover
-`How_the_First_Flight_Photo_Was_Taken.m4a`, added on November 2. The approval and
-transcript belong only to the short version.
+This page records the first draft's known issues and the review of the revised
+**1:27 short version, `wright-flight-v2.m4a`**. References to the "latest audio"
+mean that revised version; the approval and transcript belong to it.
 
 ## Scope and method
 
@@ -54,18 +53,6 @@ Those two saved files are not all generation attempts: the owner also reports an
 intermediate **24:06** version shown in a screenshot. Its audio is unavailable
 here and has not been reviewed; none of the three saved screenshots shows it.
 The total number of attempts and the per-file generation dates are unconfirmed.
-
-### Additional recording added November 2, 2026
-
-| Recording | Measured duration | Display duration | File size |
-| --- | --- | --- | --- |
-| [How the First Flight Photo Was Taken](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/How_the_First_Flight_Photo_Was_Taken.m4a) | 317.091701 seconds | About 5:17 | 10,206,041 bytes |
-
-The duration was read from the M4A container's movie header. The Git blob SHA is
-`487d4d48062aeed9c5e2100f2f724560402121e1`. This is a separate file from the
-reviewed 1:27 short version. Its generation date, source selection, prompt, and
-content review are not documented here; the October 31 approval is not assigned
-to this recording.
 
 ## Sources used for checking
 
