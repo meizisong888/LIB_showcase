@@ -42,6 +42,10 @@ NotebookLM is not confirmed.
 
 ## 3. How did we do it?
 
+**[Watch the NotebookLM walkthrough — MP4, 1:33](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/notebooklm.mp4)**
+
+Open the link to watch or download the screen recording.
+
 **Select collection pages → check the facts → generate audio → review → revise.**
 
 1. **Choose a focused story.** Start with the first flight, how its photograph
