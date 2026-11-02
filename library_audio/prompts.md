@@ -2,6 +2,10 @@
 
 [Back to the showcase](README.md) · [Review and evidence](review.md)
 
+References to the "latest audio" below mean the **1:27 short version,
+`wright-flight-v2.m4a`**, in the October 31 record. No prompt has been documented
+here for `How_the_First_Flight_Photo_Was_Taken.m4a`, added on November 2.
+
 These three prompts are copied verbatim from the previous README at commit
 `fb3308c`. Headings and context have been added; the historical prompt text has
 not been rewritten.

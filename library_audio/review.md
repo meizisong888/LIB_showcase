@@ -2,6 +2,11 @@
 
 [Back to the showcase](README.md) · [Prompts](prompts.md) · [Screenshots](screenshots.md)
 
+**Which recording is reviewed here?** The October 31 review below uses "latest"
+to mean the **1:27 short version, `wright-flight-v2.m4a`**. It does not cover
+`How_the_First_Flight_Photo_Was_Taken.m4a`, added on November 2. The approval and
+transcript belong only to the short version.
+
 ## Scope and method
 
 This record preserves earlier **AI-assisted checks** using automatic transcription
@@ -20,8 +25,8 @@ here. New measurements and the latest recording's review are dated
 
 ## Saved audio and measurements
 
-Both files were checked against the freshly fetched `origin/main` at commit
-`fb3308c`. Sizes and blob IDs match that remote tree. Durations were measured
+On October 31, the two files then saved were checked against the freshly fetched
+`origin/main` at commit `fb3308c`. Sizes and blob IDs match that remote tree. Durations were measured
 locally with PyAV 19.0.2 / FFmpeg container and audio-stream metadata; both methods
 agree. Both files contain AAC audio in an M4A/MP4 container, stereo, 44,100 Hz.
 No audio was renamed, duplicated, or converted for publication.
@@ -30,8 +35,8 @@ the downloaded byte counts and Git blob IDs also matched the local files.
 
 | Saved recording | Measured duration | Display duration | File size |
 | --- | --- | --- | --- |
-| [First draft](The_Chaos_Behind_the_First_Wright_Flight.m4a?raw=true) | 306.735601 seconds | About 5:07 | 9,872,746 bytes |
-| [Latest audio](wright-flight-v2.m4a?raw=true) | 86.610431 seconds | About 1:27 | 2,788,268 bytes |
+| [First draft](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/The_Chaos_Behind_the_First_Wright_Flight.m4a) | 306.735601 seconds | About 5:07 | 9,872,746 bytes |
+| [Latest audio](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/wright-flight-v2.m4a) | 86.610431 seconds | About 1:27 | 2,788,268 bytes |
 
 Git blob SHA values:
 
@@ -45,10 +50,22 @@ wright-flight-v2.m4a
 
 The revised prompt requests approximately **3 minutes**, with 350–450 words.
 The **1:27** result is the actual output, not the requested duration.
-The two saved files are not all generation attempts: the owner also reports an
+Those two saved files are not all generation attempts: the owner also reports an
 intermediate **24:06** version shown in a screenshot. Its audio is unavailable
 here and has not been reviewed; none of the three saved screenshots shows it.
 The total number of attempts and the per-file generation dates are unconfirmed.
+
+### Additional recording added November 2, 2026
+
+| Recording | Measured duration | Display duration | File size |
+| --- | --- | --- | --- |
+| [How the First Flight Photo Was Taken](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/How_the_First_Flight_Photo_Was_Taken.m4a) | 317.091701 seconds | About 5:17 | 10,206,041 bytes |
+
+The duration was read from the M4A container's movie header. The Git blob SHA is
+`487d4d48062aeed9c5e2100f2f724560402121e1`. This is a separate file from the
+reviewed 1:27 short version. Its generation date, source selection, prompt, and
+content review are not documented here; the October 31 approval is not assigned
+to this recording.
 
 ## Sources used for checking
 
@@ -68,7 +85,7 @@ is to **omit the coin-toss story**, not retell the entire sequence.
 
 ## First draft: historical review, known issues
 
-**File:** [The Chaos Behind the First Wright Flight](The_Chaos_Behind_the_First_Wright_Flight.m4a?raw=true)
+**File:** [The Chaos Behind the First Wright Flight](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/The_Chaos_Behind_the_First_Wright_Flight.m4a)
 
 **Status:** Revisions needed; historical draft.
 
@@ -94,7 +111,7 @@ The inherited review results are preserved below.
 
 ## Latest audio: content review
 
-**File:** [wright-flight-v2.m4a](wright-flight-v2.m4a?raw=true)
+**File:** [wright-flight-v2.m4a](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/wright-flight-v2.m4a)
 
 **Status:** Reviewed and approved by Meizi Song for this showcase on October 31, 2026.
 
@@ -104,7 +121,7 @@ The inherited review results are preserved below.
 | --- | --- |
 | Reviewer | Meizi Song |
 | Review date | October 31, 2026 |
-| Recording | [wright-flight-v2.m4a](wright-flight-v2.m4a?raw=true) |
+| Recording | [wright-flight-v2.m4a](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/wright-flight-v2.m4a) |
 | Method | Full listening and content review, confirmed by the project owner. |
 | Outcome | Approved for use in this showcase. |
 

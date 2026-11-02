@@ -2,6 +2,11 @@
 
 [Back to the showcase](README.md) · [Prompts](prompts.md) · [Audio review](review.md)
 
+These notes describe the files available on October 31. "Latest recording"
+refers to the 1:27 short version, `wright-flight-v2.m4a`. The additional
+`How_the_First_Flight_Photo_Was_Taken.m4a` file was added on November 2 and is
+not tied to these screenshots.
+
 These are the three original screenshots from the earlier README. All three
 GitHub attachment URLs returned HTTP 200 on October 31, 2026. The PNG files are
 saved unchanged in this repository. Captions describe what is visible, without
@@ -51,5 +56,6 @@ latest recording. No saved screenshot shows the revised prompt being submitted.
 
 The project owner reports an intermediate **24:06** version documented by a
 screenshot. That screenshot is not among these three repository attachments,
-and its recording is not supplied here. It has not been reviewed. The two saved
-M4A files therefore do not represent a count of all generation attempts.
+and its recording is not supplied here. It has not been reviewed. The two M4A
+files saved at the time therefore do not represent a count of all generation
+attempts.

@@ -1,121 +1,124 @@
 # Library Collections to Audio with NotebookLM
 
-**Example: the Wright brothers' first flight.** This showcase turns selected
-collection webpage text and photograph catalog descriptions into a short English
-audio introduction for library visitors, students, and teachers. Visitors can
-hear the collection's story, then follow links to the original materials.
+**A small example of turning library collection text into an audio introduction.**
+We use materials about the Wright brothers' first flight from the Library of
+Congress, ask Google NotebookLM to create a conversation, and check the result
+against the sources. The intended audience is library visitors, students, and
+teachers who are new to the topic.
 
-## Listen to the latest audio
+## 1. What problem are we trying to solve?
 
-**[Download the latest audio — M4A, about 1:27](wright-flight-v2.m4a?raw=true)**
+A collection can contain a photograph, a diary, and a telegram about the same
+event, spread across several webpages. A visitor needs an easy starting point:
+**What happened, why do these materials matter, and where can I learn more?**
 
-The revised prompt requested **about 3 minutes**; the actual output is
-**about 1:27**. Detailed measurements are recorded in the
-[audio review](review.md#saved-audio-and-measurements).
+This project explores a short audio introduction as that starting point. The
+audio tells the basic story and points listeners back to the original collection.
+The aim is to make the materials easier to approach; visitor understanding and
+staff time savings have not been measured.
 
-**Review status: Reviewed and approved by Meizi Song for this showcase on October 31, 2026.**
+## 2. What data did we use?
 
-Meizi Song completed full listening and content review of the latest recording,
-as confirmed by the project owner. See the [detailed review](review.md) for the
-final approval and earlier AI-assisted observations. The
-[automatic transcript](transcript-v2.md) has not been manually checked word for word.
+The source material is **public exhibition text and a photograph catalog
+description**. The topic is the Wright brothers' first successful powered flight
+on December 17, 1903. Three Library of Congress pages were selected:
 
-[Download the first version — M4A, about 5:07](The_Chaos_Behind_the_First_Wright_Flight.m4a?raw=true)
-— **historical draft / known issues**, retained to show the revision process.
-If GitHub opens a file page, use its download control to save the audio.
+<a id="source-materials"></a>
 
-## Source materials
-
-S1–S3 are the selected Library of Congress materials for this example.
-
-| ID | Title and link | Purpose |
+| ID | Source | What it contributes |
 | --- | --- | --- |
-| S1 | [The Dream of Flight](https://www.loc.gov/exhibits/dreamofflight/) | Introduce the event and exhibition. |
-| S2 | [The Achievement](https://www.loc.gov/exhibits/dreamofflight/dream-achieve.html) | Explain the flight, photograph, diary, and telegram. |
-| S3 | [First flight, 120 feet in 12 seconds, 10:35 a.m.; Kitty Hawk, North Carolina](https://www.loc.gov/item/00652085/) | Identify the photograph, people, and camera preparation. |
-| S4 | [NPS: 1903—The First Flight](https://home.nps.gov/wrbr/learn/historyculture/thefirstflight.htm) | Supplementary verification of the coin toss and attempt chronology. |
+| S1 | [The Dream of Flight](https://www.loc.gov/exhibits/dreamofflight/) | A brief introduction to the event and the exhibition. |
+| S2 | [The Achievement](https://www.loc.gov/exhibits/dreamofflight/dream-achieve.html) | The flight story and descriptions of the photograph, Orville's diary, and the family telegram. |
+| S3 | [First-flight photograph record](https://www.loc.gov/item/00652085/) | A catalog description identifying the scene, the people, and how the camera was prepared. |
 
-S4 was used during checking; its import into NotebookLM is **not confirmed**.
-Screenshots show S1–S3 entered and later listed, but only **2 sources** selected.
-The exact sources used for each recording are unconfirmed. Webpage text imports
-do not establish that photographs or linked manuscript scans were supplied.
+The workflow uses the webpages' text. The records do not establish that the
+photograph itself or scans of the diary and telegram were supplied to NotebookLM.
+Screenshots show all three source titles, with **two sources selected**; the
+exact pair used for each recording was not saved.
 
-## How to reproduce
+A fourth page, [S4: NPS, 1903—The First Flight](https://home.nps.gov/wrbr/learn/historyculture/thefirstflight.htm),
+was used to check the sequence of events during review. Its import into
+NotebookLM is not confirmed.
 
-These are recommended steps; they are not a claim that every step was completed
-in the recorded run. The screenshots show earlier workflow steps, not confirmed
-settings for the latest recording.
+## 3. How did we do it?
 
-### 1. Choose materials
+**Select collection pages → check the facts → generate audio → review → revise.**
 
-Select a small collection topic and a few authoritative webpages. Keep their
-titles and links so visitors can explore further.
+1. **Choose a focused story.** Start with the first flight, how its photograph
+   was taken, and what the collection preserves about the event.
+2. **Add the source URLs to NotebookLM.** Ask for a short fact sheet with
+   citations so dates, names, and measurements can be compared with the sources.
+3. **Generate a conversation.** Use NotebookLM's Audio Overview to turn the
+   material into spoken English. The saved setup screenshot shows **Deep Dive**
+   (two hosts), **English**, and **Short**.
+4. **Check the output.** The first saved draft lasts **5:07**. The recorded review
+   found problems with the coin-toss story, the sequence of attempts, the way the
+   photograph was described, and the discussion of newspaper reporting.
+5. **Narrow the prompt and review again.** The revised prompt focuses on the
+   successful flight, the prepared photograph, and the collection's value. It
+   leaves out the coin toss, later flights, and newspaper coverage. The saved
+   short version lasts **1:27**, although the prompt requested about three
+   minutes. Meizi Song reviewed and approved that short version for this
+   showcase on October 31, 2026.
 
-### 2. Import and inspect the sources
+The [prompts](prompts.md) and [review record](review.md) document this process.
+The screenshots capture the earlier setup; they do not establish the settings
+or complete source selection for every recording.
 
-Add the selected sources to a notebook. Open each imported text, check that the
-useful content is present, and verify the selected source list before generation.
+<details>
+<summary>See the three workflow screenshots</summary>
 
-![Entering source URLs in NotebookLM](images/sources.png)
+**Add the source URLs**
 
-*Entering the selected Library of Congress source URLs.*
+![Entering the Library of Congress source URLs in NotebookLM.](images/sources.png)
 
-### 3. Check the facts
+**Inspect a fact-sheet citation**
 
-Use the [source-check prompt](prompts.md#source-check-prompt). Open citations and
-compare dates, people, measurements, and uncertain claims with the sources.
-Record supplementary checks separately.
+![A generated fact sheet with a citation from The Achievement open for checking.](images/source-check.png)
 
-![Checking a source citation in NotebookLM](images/source-check.png)
+**Configure the audio**
 
-*Checking a generated fact sheet against a source citation.*
+![Audio Overview settings showing Deep Dive, English, Short, and two selected sources.](images/studio.png)
 
-### 4. Configure the Audio Overview
+See the [screenshot notes](screenshots.md) for the full captions.
 
-Suggested settings are English, Deep Dive for two hosts, and Short/Shorter where
-available. Use the [revised short-audio prompt](prompts.md#revised-short-audio-prompt),
-treating its three-minute target as a request.
+</details>
 
-![Configuring the Audio Overview](images/studio.png)
+## 4. Listen to the audio
 
-*Selecting the audio format, language, and length.*
+These are AI-generated conversations about historical materials. Each M4A link
+below opens the audio file directly. Depending on your browser, it will play or
+download; you can also right-click the link and choose **Save link as**.
 
-See the [screenshot notes](screenshots.md) for details about the recorded settings.
+| Recording | Length | Listen or download | Status |
+| --- | --- | --- | --- |
+| **The Chaos Behind the First Wright Flight** | 5:07 | [Open M4A](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/The_Chaos_Behind_the_First_Wright_Flight.m4a) | First draft, retained for comparison; known factual issues are documented in the review. |
+| **How the First Flight Photo Was Taken** | 5:17 | [Open M4A](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/How_the_First_Flight_Photo_Was_Taken.m4a) | Additional recording; its prompt, generation settings, and content review are not documented here. |
 
-### 5. Generate and review
+**Previously reviewed short version:**
+[Listen or download — 1:27, M4A](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/wright-flight-v2.m4a).
+The October 31 approval applies to this short recording. Its
+[automatic transcript](transcript-v2.md) and [detailed review](review.md#latest-audio-content-review)
+are available for reference.
 
-Generate the audio and measure the downloaded result. Check its actual claims,
-then listen from start to finish for pronunciation and audio quality. Revise and
-regenerate if needed; changing a prompt does not change saved audio.
+## 5. What does this example show?
 
-### 6. Download and share
+Collection text can become an audio introduction that gives visitors another
+way into the material. The revision process also shows why a fluent conversation
+still needs checking: the first draft included factual problems, and a requested
+duration did not determine the actual length.
 
-Keep the real downloaded file format. Share the audio with source links, prompts,
-measured duration, and an honest review status.
+For a similar project, keep the topic small, retain the original source links,
+check the generated claims, and listen to the complete recording before sharing.
+This is a worked example; audience testing and measured accuracy or time savings
+remain future work.
 
-Google's instructions cover [adding sources](https://support.google.com/notebooklm/answer/16215270?hl=en)
-and [customizing and downloading audio](https://support.google.com/notebooklm/answer/16212820?hl=en).
-Current help pages use the name Gemini Notebook; screen labels can vary.
+## Supporting materials
 
-## What changed between drafts
+- [Prompts](prompts.md): the fact-checking request and the original and revised audio instructions.
+- [Audio review](review.md): measurements, known issues, and the short version's human review.
+- [Short-version transcript](transcript-v2.md): automatic transcription, not proofread word for word.
+- [Screenshots](screenshots.md): source entry, a citation check, and the audio settings.
 
-| Stage | Output, finding, or change | Verification |
-| --- | --- | --- |
-| First saved draft | About 5:07, with broader historical discussion. | Inherited AI-assisted review found coin-toss, first-attempt, photograph-framing, and newspaper-reporting problems. |
-| Prompt revision | Narrowed the topic; requested 3 minutes; omitted the coin toss, later flights, and newspaper coverage. | Exact recorded prompt preserved in [prompts.md](prompts.md); latest submission/settings not captured. |
-| Latest saved audio | About 1:27; covers the flight, arranged photograph, and collection value. | Earlier AI-assisted observations are preserved; Meizi Song completed full listening and content review and approved it for this showcase on October 31, 2026. |
-| Review limits | Word-for-word transcript proofreading and complete run history remain unconfirmed. | Approval applies to this showcase; no librarian user test is recorded. |
-
-An intermediate **24:06** version was also reported with screenshot-only evidence.
-Its recording is unavailable here and has not been reviewed; two saved files do
-not mean only two generations occurred.
-
-## Practical takeaway
-
-Collection text can become a downloadable audio introduction. In this example,
-a narrower topic and stronger brevity instructions were followed by a shorter
-recording, but specific facts still needed checking. This demonstration does not
-measure staff time saved or accuracy gains.
-
-Historical materials: Library of Congress; supplementary checking: National Park
-Service. Audio: Google NotebookLM. No institutional endorsement is implied.
+Historical materials: Library of Congress. Supplementary fact checking: National
+Park Service. Audio generation: Google NotebookLM.

@@ -1,8 +1,8 @@
-# Latest audio: automatic transcript
+# Reviewed short version (1:27): automatic transcript
 
 [Back to the showcase](README.md) · [Factual review](review.md#latest-audio-content-review)
 
-**Audio:** [wright-flight-v2.m4a](wright-flight-v2.m4a?raw=true)
+**Audio:** [wright-flight-v2.m4a](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/wright-flight-v2.m4a)
 
 **Git blob SHA:** `4d07d8f4b2a99ee2fe69a605f50ac8001e4d627f`
 

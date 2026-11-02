@@ -2,12 +2,19 @@
 
 ## Library Collections to Audio with NotebookLM
 
-Turn collection webpage text and photograph catalog descriptions into a short
-English audio introduction for visitors. This Wright brothers example includes
-the actual recordings, source links, reusable prompts, and documented review limits.
+**The problem:** give visitors an easy starting point for exploring a collection
+whose photographs and written records are spread across several webpages.
+
+**The data:** public Library of Congress exhibition text and a photograph catalog
+description about the Wright brothers' first flight.
+
+**The approach:** use NotebookLM to create an English audio conversation, check
+its claims against the sources, and revise the prompt to keep the story focused.
+The showcase includes recordings, source links, prompts, and review notes.
 
 **[Open the Library Collections to Audio showcase](library_audio/README.md)** ·
-[Download the latest audio — M4A, about 1:27](library_audio/wright-flight-v2.m4a?raw=true)
+[The Chaos Behind the First Wright Flight — M4A, 5:07](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/The_Chaos_Behind_the_First_Wright_Flight.m4a) ·
+[How the First Flight Photo Was Taken — M4A, 5:17](https://raw.githubusercontent.com/meizisong888/LIB_showcase/refs/heads/main/library_audio/How_the_First_Flight_Photo_Was_Taken.m4a)
 
 ## Library Token Use — practical metadata preparation for library staff
 
