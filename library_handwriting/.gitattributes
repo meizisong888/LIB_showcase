@@ -1,0 +1,9 @@
+# Preserve original downloaded reference bytes, including CRLF.
+data/reference/*-download.txt binary
+# Diplomatic text and diffs intentionally retain source whitespace.
+data/reference/*.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+data/checked/*.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+results/*-line-diff.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+results/searchable-text.txt whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol
+results/comparison.csv whitespace=cr-at-eol
+images/*.jpg binary

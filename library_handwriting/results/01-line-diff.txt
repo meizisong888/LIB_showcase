@@ -1,0 +1,17 @@
+--- 01: AI original
++++ 01: public reference
+@@ -1,9 +1,9 @@
+-Theodore Bunting Co B. - 12th N J
++Theodore Bunting Co B - 12th NJ.
+ in Lincoln Hospital Ward 5.
+-his father called Mar. [uncertain: 18] and desires
+-his discharge - only 16 years old -
++his father called Mar. 1st and desires
++his discharge - only 16 years old.
+ 
+-10 - Blankets -
++10 Blankets - 
+ " pairs drawers.
+-" socks -
++" socks.
+ " under shirts

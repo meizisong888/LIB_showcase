@@ -1,0 +1,71 @@
+{
+  "item_api": "https://www.loc.gov/item/mss119730007/?fo=json",
+  "title": "Clara Barton Papers: Diaries and Journals: 1863, Jan.-Feb.",
+  "resource": "https://www.loc.gov/resource/mss11973.001_0349_0380/",
+  "image_number": 8,
+  "files": [
+    {
+      "height": 480,
+      "levels": 1,
+      "mimetype": "image/jpeg",
+      "url": "https://tile.loc.gov/image-services/iiif/service:mss:mss11973:001:0300:0356/full/pct:25/0/default.jpg",
+      "width": 382
+    },
+    {
+      "height": 960,
+      "levels": 1,
+      "mimetype": "image/jpeg",
+      "url": "https://tile.loc.gov/image-services/iiif/service:mss:mss11973:001:0300:0356/full/pct:50/0/default.jpg",
+      "width": 764
+    },
+    {
+      "height": 1921,
+      "levels": 1,
+      "mimetype": "image/jpeg",
+      "url": "https://tile.loc.gov/image-services/iiif/service:mss:mss11973:001:0300:0356/full/pct:100/0/default.jpg",
+      "width": 1529
+    },
+    {
+      "height": 1921,
+      "info": "https://tile.loc.gov/image-services/iiif/service:mss:mss11973:001:0300:0356/info.json",
+      "levels": 6,
+      "mimetype": "image/jp2",
+      "size": 125936,
+      "url": "https://tile.loc.gov/storage-services/service/mss/mss11973/001/0300/0356.jp2",
+      "width": 1529
+    },
+    {
+      "height": 188,
+      "levels": 1,
+      "mimetype": "image/gif",
+      "size": 7988,
+      "url": "https://tile.loc.gov/storage-services/service/mss/mss11973/001/0300/0356t.gif",
+      "width": 150
+    },
+    {
+      "height": null,
+      "levels": 1,
+      "mimetype": "image/tiff",
+      "size": 2937596,
+      "url": "https://tile.loc.gov/storage-services/master/mss/mss11973/001/0300/0356.tif",
+      "width": null
+    },
+    {
+      "height": 1921,
+      "levels": 1,
+      "mimetype": "image/jpeg",
+      "size": 366945,
+      "url": "https://tile.loc.gov/storage-services/service/mss/mss11973/001/0300/0356.jpg",
+      "width": 1529
+    },
+    {
+      "height": null,
+      "levels": null,
+      "mimetype": "text/plain",
+      "size": 731,
+      "url": "https://tile.loc.gov/storage-services/service/gdc/gdccrowd/mss/mss11973/001/0300/0356.txt",
+      "use": "text",
+      "width": null
+    }
+  ]
+}

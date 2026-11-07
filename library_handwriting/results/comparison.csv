@@ -1,0 +1,4 @@
+id,condition,reference_characters,character_edits,CER,reference_words,word_edits,WER,uncertainty_markers
+01,Clearer short notes,189,23,0.12169312169312169,37,10,0.2702702702702703,1
+02,Names and abbreviations,706,119,0.16855524079320114,112,52,0.4642857142857143,5
+03,"Faint, dense diary entry",1227,77,0.06275468622656886,245,34,0.13877551020408163,3

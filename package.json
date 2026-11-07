@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
-    "build": "tsc -b && vite build && node scripts/create-pages-fallback.mjs && node scripts/build-skillprompt.mjs",
+    "build": "tsc -b && vite build && node scripts/create-pages-fallback.mjs && node scripts/build-skillprompt.mjs && python3 library_handwriting/scripts/build.py --publish-dir dist && python3 library_handwriting/scripts/validate.py",
     "lint": "eslint .",
     "typecheck": "tsc -b --pretty false",
     "test": "vitest run",

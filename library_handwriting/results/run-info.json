@@ -1,0 +1,41 @@
+{
+  "run_date_utc": "2026-11-07",
+  "tool": "Codex image understanding via view_image (original detail)",
+  "execution": "One fresh isolated agent context, no inherited parent conversation; three scans viewed separately; each first pass saved before the next scan. Only the common prompt and image inputs were supplied. Earlier self-produced page outputs remained in that same context.",
+  "model": {
+    "runtime_description": "Codex, based on GPT-6 (developer instructions)",
+    "exact_serving_model": null,
+    "version": null,
+    "status": "Exact model/version not exposed; not recorded."
+  },
+  "initial_pass_reference_access": false,
+  "reference_download_order": "All three first outputs saved before selected reference TXT downloads were read for comparison.",
+  "first_pass_completed_at_utc": "2026-11-07T18:35:13Z",
+  "prompt": "prompts.md",
+  "first_pass_files": [
+    "data/ai-original/01.txt",
+    "data/ai-original/02.txt",
+    "data/ai-original/03.txt"
+  ],
+  "reference_files": [
+    "data/reference/01-download.txt",
+    "data/reference/02-download.txt",
+    "data/reference/03-download.txt"
+  ],
+  "token_usage": null,
+  "inference_duration_seconds": null,
+  "cost": null,
+  "unavailable_measurements_note": "Not recorded; no estimates are presented as observations. Completion timestamps are workflow provenance, not model latency measurements.",
+  "additional_model_service_purchased": false,
+  "human_review_of_project_outputs": {
+    "performed": false,
+    "reviewer": null
+  },
+  "public_reference_review": "Prior By the People volunteer transcription and review, verified by exact-page LOC resource attribution.",
+  "checked_text_method": "AI comparison of unchanged first passes, public references and original scan details; unresolved image/reference disagreements explicitly marked.",
+  "python_version_used": "3.13.11",
+  "metric_implementation": "Python standard library, unit-cost Levenshtein distance; see scripts/build.py and evaluation-notes.md.",
+  "model_rerun_reproducible": false,
+  "deterministic_comparison_reproducible": true,
+  "no_loc_submission": true
+}

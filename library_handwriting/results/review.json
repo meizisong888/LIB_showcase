@@ -1,0 +1,39 @@
+{
+  "01": {
+    "short_title": "A hospital note and a supply list",
+    "page_description": "Image 12 of 32 \u00b7 file 0360 \u00b7 two-page spread \u00b7 cataloged Jan.\u2013Feb. 1863; note says Mar.",
+    "alt": "Complete two-page scan with four lines about Theodore Bunting in Lincoln Hospital on the left and a list of blankets and clothing on the right.",
+    "summary": "The note names Theodore Bunting in Lincoln Hospital, Ward 5, and records his father asking for his discharge at age 16. The facing page lists blankets and clothing. The day after Mar. remains uncertain.",
+    "review_notes": [
+      "Theodore Bunting and Lincoln Hospital were correctly recovered in the first pass.",
+      "The AI suggested 18 for the day; the reference says 1st; the checked copy tentatively reads 13 and retains an uncertainty marker.",
+      "The page says Mar. within a volume cataloged Jan.\u2013Feb. 1863. This date mismatch remains unresolved.",
+      "The checked copy otherwise follows the reference, including ditto marks and punctuation."
+    ]
+  },
+  "02": {
+    "short_title": "Names, places, and abbreviated addresses",
+    "page_description": "Image 8 of 32 \u00b7 file 0356 \u00b7 one photographed address page \u00b7 undated within a volume cataloged Jan.\u2013Feb. 1863",
+    "alt": "Full address page in bold cursive, with names and locations in two sections, including Worcester, Washington, Hightstown and Boston.",
+    "summary": "This page lists people and addresses, including entries in Worcester, Washington, Boston and New Jersey. It shows why identifying names and abbreviated places can require review even when the ink is bold.",
+    "review_notes": [
+      "P.M., Chas. and Wm. follow the reference; the original tentative and superscript forms remain in the AI first pass.",
+      "Harriot and Hightown remain uncertain. Do not assume Hightown must match Hightstown in the line above.",
+      "The reference ends the Upperman address with O.D.b.; the scan and first pass suggest D. C. The checked copy flags D.C.",
+      "Ditto marks and the above-line phrase the people have different representations in the AI and reference. These differences remain scored."
+    ]
+  },
+  "03": {
+    "short_title": "A day indoors, a visit, and a boat to New York",
+    "page_description": "Image 12 of 64 \u00b7 file 0392 \u00b7 two-page spread \u00b7 April 13, 1863",
+    "alt": "Full diary spread headed Monday April 13 1863 in faint dense handwriting, with a visit from Hunter and a final passage about a boat and New York.",
+    "summary": "Barton describes a warm day indoors, work on a riding skirt, and a visit from General Hunter. She records his account of damage to monitors and the limits on an attack, then mentions a rumored additional boat service with the Arago to New York.",
+    "review_notes": [
+      "The AI read George; the reference and comparison with the scan support Arago. New York was correctly recognized.",
+      "The personal name remains [uncertain: London]; the first pass had suggested Jorden. No identity is inferred.",
+      "The reference says work where the AI says word. Both readings remain flagged in the checked copy.",
+      "The checked text otherwise follows the reference, including its word joining, become, grounds, punctuation and number formatting. These are working readings, not certified corrections.",
+      "The introduction summarizes what the entry reports; military events and troop figures were not independently verified."
+    ]
+  }
+}

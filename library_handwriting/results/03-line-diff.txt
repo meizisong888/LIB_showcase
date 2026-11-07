@@ -1,0 +1,83 @@
+--- 03: AI original
++++ 03: public reference
+@@ -1,41 +1,41 @@
+-Monday. Apr. 13ᵗʰ 1863.
+-This has been the warmest
+-day we have seen here - I
+-have not been out at all for
+-days, and it almost seems as if
+-I never am to, any more. a dull
+-life, and to little purpose only -
+-for the thought - that the Lord
+-knows best, I have been arrang
+-ing a riding skirt; [uncertain: Jorden] [uncertain: brings]
+-my meals with a great deal of
+-care; This evening while we were
+-arranging to change rooms with
+-Lieut Lowell, Col Elwell sent me
+-word that Genˡ Hunter would
+-call; We had a very pleasant con-
+--versation, he tells me that five out
+-of the eight monitors became [uncertain: disabled]
+-in the first-hour's fire, and it would have
+-been impracticable to renew the attack the
+-next day, and as he had but 10000.
+-troops to meet 50000, he had only to
+-
+-make his bow and retire, as the
+-troops only went to occupy after
+-the Gun boats should have taken
+-the ground, the engagement
+-was to be strictly naval, he
+-thinks our gun boats are as
+-secure against the Shot of
+-the enemy, as against the
+-jar and recoil of their own
++Monday Apr. 13th 1863
++This has been the warmest 
++day we have seen here - I 
++have not been out at all for 
++days, and it almost seems as if 
++I never am to, any more. a dull 
++life, and to little purpose only 
++for the thought that the Lord 
++knows best. I have been arranging
++ a riding skirt, London brings 
++my meals with a great deal of 
++care; This evening while we were 
++arranging to change rooms with 
++Lieut. Lowell, Col Elwell sent me 
++work that Genl Hunter would 
++call, We had a very pleasant conversation,
++he tells me that five out
++of the eight Monitors become disabled 
++in the first hour's fire, and it would have 
++been impracticable to renew the attack the 
++next day, and as he had but 10 000 
++troops to meet 50,000, he had only to
++  
++make his bow and retire as the 
++troops only went to occupy after 
++the Gunboats should have taken 
++the grounds. The engagement 
++was to be strictly naval; he 
++thinks our gun boats are as 
++secure against the shot of 
++the enemy as against the 
++jar and recoil of their own 
+ guns, which appear quite as
+-likely to injure them, and
+-in some instances did so -
+-A steamer will sail in the
+-morning, it is rumored that
+-a second regular boat is
+-to be put on the line with the
+-George to run between here and
++likely to injure them, and 
++in some instances did so - 
++A steamer will sail in the 
++morning, it is rumored that 
++a second regular boat is 
++to be put on the line with the 
++Arago, to run between here and 
+ New York. I hope it is so,

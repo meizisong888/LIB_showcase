@@ -1,5 +1,19 @@
 # Library AI Showcases
 
+## From Handwriting to Searchable Text
+
+**The problem:** scanned handwriting can still be hard to read and impossible to search as text.
+
+**The showcase:** three real Clara Barton diary scans from the Library of Congress,
+actual image-only AI transcriptions, page-matched public references, visible
+corrections, and a static search demonstration. Original outputs and reproducible
+CER/WER calculations are preserved; unresolved readings and the need for human
+review remain explicit.
+
+**[Open the handwriting showcase](library_handwriting/README.md)** ·
+[Search and compare the three pages](https://meizisong888.github.io/LIB_showcase/library_handwriting/) ·
+[Staff guide](library_handwriting/staff-guide.md)
+
 ## Library Collections to Audio with NotebookLM
 
 **The problem:** give visitors an easy starting point for exploring a collection
