@@ -1,0 +1,74 @@
+{
+  "audit_date_utc": "2026-11-07",
+  "purpose": "Additional provenance recovered from the original isolated transcription session. Original run-info.json and transcription-execution.json remain unchanged.",
+  "source_log_filename": "rollout-2026-11-07T13-33-31-01a1b749-87c9-7a20-af34-339a62f36cbd.jsonl",
+  "source_log_sha256": "9ad6ab2d4fb53be60a00a425ce646f731ef4c2927f01e70cfc4e565bcdfd68cd",
+  "session_meta_excerpt": {
+    "source_line": 1,
+    "recorded_at": "2026-11-07T18:33:31.949Z",
+    "id": "01a1b749-87c9-7a20-af34-339a62f36cbd",
+    "timestamp": "2026-11-07T18:33:31.876Z",
+    "cli_version": "0.167.0",
+    "originator": "codex-tui",
+    "source": {
+      "subagent": {
+        "thread_spawn": {
+          "parent_thread_id": "01a1b746-1828-72a1-bad9-775301a8df0f",
+          "depth": 1,
+          "agent_path": "/root/image_transcription",
+          "agent_nickname": "Huygens",
+          "agent_role": null
+        }
+      }
+    },
+    "model_provider": "openai"
+  },
+  "turn_context_excerpt": {
+    "source_line": 10,
+    "recorded_at": "2026-11-07T18:33:32.838Z",
+    "turn_id": "01a1b749-87f5-7552-b07c-1e1c6ddedf15",
+    "model": "gpt-6-astra"
+  },
+  "interpretation": {
+    "tool_product": "Codex",
+    "image_access_tool": "view_image (original detail); a tool, not a model name",
+    "recorded_model_id": "gpt-6-astra",
+    "model_version_or_snapshot": null,
+    "version_note": "Not exposed or recorded for this run. The model ID is the original turn-context identifier, not an immutable backend snapshot.",
+    "tool_cli_version": "0.167.0",
+    "runtime_description": "Codex, based on GPT-6 (developer instructions); descriptive text, not model-version evidence.",
+    "run_date_utc": "2026-11-07"
+  },
+  "original_output_linkage": [
+    {
+      "sample": "01",
+      "image_tool_event_line": 23,
+      "image_tool_event_at": "2026-11-07T18:33:43.761Z",
+      "output_write_event_line": 30,
+      "output_write_event_at": "2026-11-07T18:33:59.737Z",
+      "output_file": "data/ai-original/01.txt",
+      "output_sha256": "bedf4995120d20f0882dc26ffae8a9cecff778dcd20ceb810b257631e3d2f745",
+      "logged_patch_matches_preserved_output": true
+    },
+    {
+      "sample": "02",
+      "image_tool_event_line": 35,
+      "image_tool_event_at": "2026-11-07T18:34:01.957Z",
+      "output_write_event_line": 46,
+      "output_write_event_at": "2026-11-07T18:34:34.491Z",
+      "output_file": "data/ai-original/02.txt",
+      "output_sha256": "c87b8d2e647f519a45e2ec0a62176a80949f215823c16d85100d48a552e2d311",
+      "logged_patch_matches_preserved_output": true
+    },
+    {
+      "sample": "03",
+      "image_tool_event_line": 51,
+      "image_tool_event_at": "2026-11-07T18:34:37.248Z",
+      "output_write_event_line": 62,
+      "output_write_event_at": "2026-11-07T18:35:13.846Z",
+      "output_file": "data/ai-original/03.txt",
+      "output_sha256": "a964e7ce9f613539aa4ede615dbeb61239c4f6794c747539458d99ad62fd9e90",
+      "logged_patch_matches_preserved_output": true
+    }
+  ]
+}

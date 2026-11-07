@@ -60,6 +60,21 @@ def main():
     parser.add_argument('--publish-dir', type=Path, help='Copy the static showcase into an existing Pages build')
     args = parser.parse_args()
     verify_originals()
+    evidence = json.loads(read('results/ai-used-evidence.json'))
+    ai_rows = [
+        ('Product / tool', 'Codex'),
+        ('Image access tool', 'view_image (original detail); this is a tool, not a model name.'),
+        ('Recorded model ID', evidence['turn_context_excerpt']['model']),
+        ('Model version / snapshot', 'Not exposed or recorded for this run.'),
+        ('Tool / CLI version', evidence['session_meta_excerpt']['cli_version'] + ' (original session metadata)'),
+        ('Runtime description', 'Codex, based on GPT-6 (developer instructions); not model-version evidence.'),
+        ('Run date (UTC)', evidence['interpretation']['run_date_utc']),
+    ]
+    ai_markdown = '| Field | Recorded information |\n| --- | --- |\n' + '\n'.join(
+        f'| {key} | {value} |' for key, value in ai_rows)
+    ai_html = '<table class="ai-used"><caption>AI used</caption><thead><tr><th scope="col">Field</th><th scope="col">Recorded information</th></tr></thead><tbody>' + ''.join(
+        '<tr><th scope="row">' + html.escape(key) + '</th><td>' + html.escape(value) + '</td></tr>'
+        for key, value in ai_rows) + '</tbody></table>'
     sources = json.loads(read('data/sources.json'))
     review = json.loads(read('results/review.json'))
     rows, samples, searchable = [], [], []
@@ -105,17 +120,17 @@ def main():
 <header class="sample-header"><div><span class="eyebrow">Sample {s['id']} · {e(s['label'])}</span><h2>{e(s['short_title'])}</h2></div><a href="{e(s['page_url'])}">View original at LOC ↗</a></header>
 <p>{e(s['summary'])}</p><p class="source-meta">{e(s['page_description'])} · {e(s['reference_status'])}</p>
 <div class="viewer"><figure><a href="{s['image_path']}" target="_blank" rel="noopener"><img src="{s['image_path']}" alt="{e(s['alt'])}" width="{s['width']}" height="{s['height']}" loading="lazy"></a><figcaption>Full LOC scan, image {s['image_number']} (file {s['page_identifier']}). Click to enlarge. <a href="{e(s['image_url'])}">Download from LOC</a> · <a href="{e(s['rights_url'])}">Rights</a>.</figcaption></figure>
-<section class="text-panel" aria-label="Sample {s['id']} transcription"><label for="version-{s['id']}">Text version</label><select id="version-{s['id']}" class="version"><option value="checked">Checked against reference · AI prepared</option><option value="ai">AI first pass · unchanged</option><option value="reference">Public reference · By the People</option><option value="diff">AI ↔ reference differences</option></select>
-<p class="version-note">Checked against the reference by AI.</p>
-<pre class="transcript" tabindex="0">{e(s['checked'])}</pre><div class="diff" hidden></div>
+<section class="text-panel" aria-label="Sample {s['id']} transcription"><label for="version-{s['id']}">Text version</label><select id="version-{s['id']}" class="version"><option value="ai" selected>AI first pass · unchanged</option><option value="reference">Compare · LOC By the People reference</option><option value="diff">Compare · AI ↔ reference differences</option><option value="checked">Review aid · reference-checked, AI prepared</option></select>
+<p class="version-note">AI first pass from the image only, before reading the reference. Bracketed uncertainty is unchanged.</p>
+<pre class="transcript" tabindex="0">{e(s['ai'])}</pre><div class="diff" hidden></div>
 <div class="downloads"><a href="data/ai-original/{s['id']}.txt" download>AI TXT</a><a href="data/reference/{s['id']}.txt" download>Reference TXT</a><a href="data/checked/{s['id']}.txt" download>Checked TXT</a></div></section></div>
 <details><summary>Review notes and measured differences</summary><p>CER {s['metrics']['CER']:.2%}; WER {s['metrics']['WER']:.2%}. These measure disagreement with the published reference.</p><ul>{''.join('<li>'+e(x)+'</li>' for x in s['review_notes'])}</ul><p><a href="{e(s['reference_page_url'])}">LOC reference view</a> · <a href="{e(s['reference_url'])}">LOC reference download</a> · <a href="results/{s['id']}-line-diff.txt">Full line diff</a></p><h3>First-pass model notes</h3><pre>{e(s['notes'])}</pre></details></article>''')
     payload=json.dumps(samples,ensure_ascii=False).replace('<','\\u003c')
-    for key,value in {'samples':'\n'.join(cards),'data':payload}.items():
+    for key,value in {'samples':'\n'.join(cards),'data':payload,'ai_used_table':ai_html}.items():
         template=template.replace('{{'+key+'}}',value)
     assert '{{' not in template
     write('index.html','\n'.join(line.rstrip() for line in template.splitlines())+'\n')
-    readme=read('site/readme.template.md').replace('{{results}}',table)
+    readme=read('site/readme.template.md').replace('{{results}}',table).replace('{{ai_used_table}}',ai_markdown)
     for s in samples:
         for key in ['ai','reference','checked']:
             readme=readme.replace('{{'+s['id']+'_'+key+'}}',s[key].rstrip())

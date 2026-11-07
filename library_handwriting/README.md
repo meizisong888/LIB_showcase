@@ -34,14 +34,29 @@ This is an **AI-assisted library preparation showcase**, not a new recognition a
 
 ## 3. How it works
 
-1. **Select a document →** inspect the real scan, its reuse rights, its exact image number, and the availability of a matching reference. This prevents comparing a page with someone else's text.
-2. **Transcribe with AI →** provide only the image and a common prompt. Preserve spelling and line order, mark uncertain words, and save the first answer before opening the reference.
-3. **Compare and correct →** use Python to expose differences, then inspect them against the scan and public reference. Keep unresolved readings visible; a reference can also be wrong.
-4. **Search and reuse →** save text with its source ID, then search names and keywords or prepare an index and short reader introduction. Human review is still needed before treating uncertain readings as authoritative.
+Start with a scan whose reuse rights and exact source page have been recorded.
+
+1. **AI first: create a draft transcription →** read only the image and the common prompt, without the public reference. Save the unchanged draft with its uncertainty markers. The demo opens each sample with the scan and this AI first pass.
+2. **Compare: check against an existing transcription →** compare the saved draft with the LOC By the People text using the differences and CER/WER results. Check both formatting and content differences; the reference can also contain errors.
+3. **Review: use the draft, verify the details →** use the readable draft for an initial understanding. Before quotation, cataloging, or accurate search, a person needs to check important details against the scan. The reference-checked version is an AI-prepared review aid, not a human-approved transcription.
 
 These samples have existing public transcriptions, which allow us to compare the AI’s first-pass output with a reference. The intended application is to assist with documents that do not yet have transcriptions. Here, the existing texts let us test and demonstrate AI reading, rather than repeat completed transcription work.
 
 The AI’s first pass did not read the references. They were used only afterward for comparison and assisted correction, and can contain errors. Reference-assisted corrections do not show what AI would achieve independently on documents without references.
+
+### AI used
+
+| Field | Recorded information |
+| --- | --- |
+| Product / tool | Codex |
+| Image access tool | view_image (original detail); this is a tool, not a model name. |
+| Recorded model ID | gpt-6-astra |
+| Model version / snapshot | Not exposed or recorded for this run. |
+| Tool / CLI version | 0.167.0 (original session metadata) |
+| Runtime description | Codex, based on GPT-6 (developer instructions); not model-version evidence. |
+| Run date (UTC) | 2026-11-07 |
+
+The model ID and tool version come from the **original isolated transcription session**, not the current environment. The [evidence extract](results/ai-used-evidence.json) identifies the log and line numbers and verifies that its saved output patches match all three preserved first passes. No dated model snapshot was recorded. The original [run information](results/run-info.json) and [execution record](results/transcription-execution.json), which did not expose these identifiers to the transcribing context, remain unchanged.
 
 ## 4. See one complete example
 
@@ -53,9 +68,9 @@ The AI’s first pass did not read the references. They were used only afterward
 
 *Complete, unretouched LOC JPEG, 1741 × 1393 pixels. Open the image for full size. Clara Barton Papers: Diaries and Journals: 1863, Apr. 2–July 23; image 12. [Source](https://www.loc.gov/resource/mss11973.001_0381_0444/?sp=12) · [Download](https://tile.loc.gov/storage-services/service/mss/mss11973/001/0300/0392.jpg) · [Rights](https://findingaids.loc.gov/repositories/19/resources/2059). The [demo](https://meizisong888.github.io/LIB_showcase/library_handwriting/#sample-03) provides a scan-and-text layout.*
 
-### AI first pass — complete and unchanged
+### AI first: create a draft transcription
 
-This was produced by direct image reading in a fresh Codex context. Brackets are part of the actual saved output. The model's [separate notes](data/ai-original/03-notes.txt) identify difficult names and layout decisions.
+This complete, unchanged draft was produced by direct image reading in a fresh Codex context, without the public reference. Brackets are part of the actual saved output. The model's [separate notes](data/ai-original/03-notes.txt) identify difficult names and layout decisions.
 
 ```text
 Monday. Apr. 13ᵗʰ 1863.
@@ -101,7 +116,7 @@ George to run between here and
 New York. I hope it is so,
 ```
 
-### Public reference — complete transcription body
+### Compare: check against an existing transcription
 
 The LOC resource API attributes this exact page's reference to **transcription and review by By the People contributors**; the [saved attribution](data/source-evidence/03-attribution.json) preserves that evidence. We did not observe the live Crowd status badge because that site returned HTTP 403. The following text preserves the download's spelling and punctuation; CRLF line endings are converted to LF and invisible line-end spaces are omitted in this README display. The separate reference TXT preserves those spaces. The [original downloaded bytes](data/reference/03-download.txt) are retained.
 
@@ -168,9 +183,9 @@ Some differences in punctuation, spacing, line breaks, and abbreviation forms ma
 
 [Full line diff](results/03-line-diff.txt) · [Word diff in the live demo](https://meizisong888.github.io/LIB_showcase/library_handwriting/#sample-03) · [All sample review decisions](results/review.json)
 
-### Text checked against the reference — complete
+### Review: use the draft, verify the details
 
-The checked version follows the reference's spelling and line segmentation, with the two unresolved readings explicitly marked. It is an AI-prepared working text, not a human-certified edition. The unchanged first pass above remains available separately.
+The draft makes much of the entry easier to read, but the comparison reveals details that a person still needs to verify against the scan. The complete reference-checked text below follows the reference's spelling and line segmentation, with two unresolved readings marked. It was prepared by AI with help from the reference; it is not a human-approved transcription. The unchanged first pass remains available above.
 
 ```text
 Monday Apr. 13th 1863
@@ -222,7 +237,7 @@ Barton describes a warm day spent indoors, work on a riding skirt, and a visit f
 
 ## 5. Results across three pages
 
-Across these three examples, AI produced useful draft transcriptions that make much of the handwritten content easier to read. The examples also show why names, dates, and other important details need verification.
+In these three examples, AI transcribed much of the handwritten content into readable drafts. Comparison with existing public transcriptions revealed both formatting differences and content errors. AI can therefore provide a useful first draft, while human review remains necessary to verify important details.
 
 These are **first-pass AI versus public-reference** comparisons, not scores for the checked version. Every selected page is included. The faint page did not have the highest error rates: page length, names, punctuation, abbreviations, and explicit uncertainty all affect this small comparison.
 
@@ -254,7 +269,7 @@ The hit links back to its exact scan. Search **Arago** to find sample 03 and the
 
 The full entry ends with `New York. I hope it is so,`. This is a practical reason to check a transcription: the original AI's `George` would not support this ship-name search.
 
-Library staff could use the linked text to prepare names-and-places indexes, organize material by topic, or draft short reader introductions. Search covers only the three checked texts. It is a literal, case-insensitive search; it does not resolve abbreviated names, join split words, or verify uncertain readings.
+Library staff could use the linked text to prepare names-and-places indexes, organize material by topic, or draft short reader introductions. Search covers only the three checked texts; opening a hit selects that version, while each sample initially displays the AI first pass. It is a literal, case-insensitive search; it does not resolve abbreviated names, join split words, or verify uncertain readings.
 
 ## 7. Staff guide
 
@@ -294,7 +309,7 @@ Each sample's reference status, rights links, item date, observed page date, sou
 
 ### Actual AI run
 
-Run date: **November 7, 2026 (UTC)**. Tool: **Codex direct image understanding through `view_image`, original detail**. Runtime instructions identify Codex as GPT-6 based, but the exact serving model/version was not exposed; it is not claimed. One fresh context, with no inherited research conversation, read the same prompt and the three images separately, saving each first response before moving to the next. It did not receive source titles, references, preexisting answers, or web results. Its own earlier page outputs remained in the same isolated context. The reference downloads for comparison occurred after all three outputs were saved.
+Run date: **November 7, 2026 (UTC)**. Tool: **Codex direct image understanding through `view_image`, original detail**. The original transcription session records model ID **`gpt-6-astra`** and tool/CLI version **`0.167.0`**. A specific model version or snapshot was not exposed or recorded. “Based on GPT-6” is only the runtime instruction description. See the [original-session evidence extract](results/ai-used-evidence.json) and the AI used table above. One fresh context, with no inherited research conversation, read the same prompt and the three images separately, saving each first response before moving to the next. It did not receive source titles, references, preexisting answers, or web results. Its own earlier page outputs remained in the same isolated context. The reference downloads for comparison occurred after all three outputs were saved.
 
 The source-selection context had fetched other diary material, so isolation was used to avoid reference leakage. Model pretraining exposure cannot be ruled out. Token usage, inference duration and cost were **not recorded**; no estimates are reported as measurements. No additional model service was purchased. [Run information](results/run-info.json) · [Execution record](results/transcription-execution.json) · [Immutable-evidence checksums](results/evidence-sha256.json)
 

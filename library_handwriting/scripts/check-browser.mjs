@@ -3,6 +3,7 @@ import { chromium } from 'playwright'
 import AxeBuilder from '@axe-core/playwright'
 import { pathToFileURL } from 'node:url'
 import { resolve } from 'node:path'
+import { readFile } from 'node:fs/promises'
 
 const url = process.argv[2] || 'http://127.0.0.1:8766/library_handwriting/'
 const browser = await chromium.launch({ headless: true })
@@ -11,9 +12,18 @@ const page = await context.newPage()
 const errors = []
 page.on('pageerror', error => errors.push(error.message))
 page.on('console', message => { if (message.type() === 'error') errors.push(message.text()) })
+async function checkInitialDrafts() {
+  for (const id of ['01', '02', '03']) {
+    assert.equal(await page.locator(`#version-${id}`).inputValue(), 'ai', `Sample ${id} must open with AI first pass`)
+    const original = await readFile(`library_handwriting/data/ai-original/${id}.txt`, 'utf8')
+    assert.equal(await page.locator(`#sample-${id} .transcript`).textContent(), original)
+    assert.ok(await page.locator(`#sample-${id} figure`).isVisible())
+  }
+}
 try {
   const response = await page.goto(url)
   if (response) assert.equal(response.status(), 200)
+  await checkInitialDrafts()
   await page.locator('.sample').last().scrollIntoViewIfNeeded()
   assert.equal(await page.locator('.sample').count(), 3)
   await page.waitForFunction(() => [...document.images].every(img => img.complete && img.naturalWidth > 0))
@@ -69,10 +79,11 @@ try {
   assert.deepEqual(errors, [])
   // Local-file operation is part of the offline promise.
   await page.goto(pathToFileURL(resolve('library_handwriting/index.html')).href)
+  await checkInitialDrafts()
   await page.locator('#query').fill('Arago')
   await page.locator('#search-form button').click()
   assert.equal(await page.locator('.hit').count(), 1)
-  console.log(JSON.stringify({url,samples:3,search:'passed',versions:'passed',layouts:'passed',keyboard:'passed',mobile_overflow:false,axe_violations:0,console_errors:errors,offline_file_search:'passed'},null,2))
+  console.log(JSON.stringify({url,samples:3,initial_version:'AI first pass',search:'passed',versions:'passed',layouts:'passed',keyboard:'passed',mobile_overflow:false,axe_violations:0,console_errors:errors,offline_file_search:'passed'},null,2))
 } finally {
   await browser.close()
 }
