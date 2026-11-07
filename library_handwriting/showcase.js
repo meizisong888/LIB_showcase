@@ -2,7 +2,7 @@
 const samples = JSON.parse(document.querySelector('#sample-data').textContent)
 const sampleById = new Map(samples.map(sample => [sample.id, sample]))
 const versionNotes = {
-  checked: 'Checked against the reference by AI. No new human review recorded.',
+  checked: 'Checked against the reference by AI.',
   ai: 'Unchanged first-pass AI output. Bracketed uncertainty is part of the original output.',
   reference: 'Published By the People reference. Volunteer review does not make a text infallible.',
   diff: 'Strikethrough = AI wording removed; underline = reference wording added. Differences include formatting and editorial conventions.',

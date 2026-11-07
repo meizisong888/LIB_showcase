@@ -24,14 +24,13 @@ For an initial reading, a draft can help readers understand the general content.
 
 This is an **AI-assisted library preparation showcase**, not a new recognition algorithm or a representative performance study. It uses three deliberately selected digital images from the **Clara Barton Papers**. Two images show a two-page spread; “page” below means the identified LOC digital image, not necessarily one physical leaf.
 
-**The four records are different:**
+**The three text versions are different:**
 
 | Record | What it means here |
 | --- | --- |
 | AI first pass | The unchanged image-only output, saved before reference access. |
 | Public reference | LOC text attributed to transcription and review by By the People contributors. |
 | Reference-checked text | This project's AI-prepared comparison and editing, with unresolved readings marked. |
-| New human review | **Not performed or recorded.** Neither a librarian nor Meizi is represented as having approved these results. |
 
 ## 3. How it works
 
@@ -117,7 +116,7 @@ These are **first-pass AI versus public-reference** comparisons, not scores for 
 
 **Scoring rules.** Python applies Unicode NFC, case folding, and whitespace collapse (including newlines) to comparison copies only. Punctuation, digits, superscript letters, hyphens, and all `[uncertain: …]` / `[illegible]` markers remain. CER is character edit distance divided by reference characters, including normalized spaces. WER is edit distance between whitespace-separated tokens divided by reference tokens. Substitution, deletion and insertion each cost one. No dehyphenation or abbreviation expansion is performed. These rules are deliberately conservative and penalize explicit uncertainty and formatting differences. **Neither 1 − CER nor 1 − WER is presented as factual accuracy.**
 
-The references are reliable, page-matched comparison material, not absolute ground truth. Sample 01's date, sample 02's `O.D.b.`, and sample 03's `work` are documented review concerns. The sample count cannot establish performance across historical collections. No staff time, efficiency gains, monetary savings, or new human review were measured.
+The references are reliable, page-matched comparison material, not absolute ground truth. Sample 01's date, sample 02's `O.D.b.`, and sample 03's `work` are documented review concerns. The sample count cannot establish performance across historical collections. No staff time, efficiency gains, or monetary savings were measured.
 
 [Reproducible CSV](results/comparison.csv) · [Evaluation notes](results/evaluation-notes.md) · [All checked text](results/searchable-text.txt)
 
