@@ -16,7 +16,11 @@ Scanning preserves a historical document, but it does not automatically make its
 
 ## 2. What this project does
 
+AI can turn difficult-to-read historical handwriting into readable draft transcriptions, helping readers understand the content and giving library staff a starting point for review.
+
 This workflow takes a historical handwriting scan and produces a first-pass AI transcription, a comparison with a public reference, a reference-checked text, and a short introduction. The checked text can be searched and downloaded without an online model or server.
+
+For an initial reading, a draft can help readers understand the general content. For accurate quotation, cataloging, and search, names, dates, places, and other important details still need checking against the scan.
 
 This is an **AI-assisted library preparation showcase**, not a new recognition algorithm or a representative performance study. It uses three deliberately selected digital images from the **Clara Barton Papers**. Two images show a two-page spread; “page” below means the identified LOC digital image, not necessarily one physical leaf.
 
@@ -35,6 +39,10 @@ This is an **AI-assisted library preparation showcase**, not a new recognition a
 2. **Transcribe with AI →** provide only the image and a common prompt. Preserve spelling and line order, mark uncertain words, and save the first answer before opening the reference.
 3. **Compare and correct →** use Python to expose differences, then inspect them against the scan and public reference. Keep unresolved readings visible; a reference can also be wrong.
 4. **Search and reuse →** save text with its source ID, then search names and keywords or prepare an index and short reader introduction. Human review is still needed before treating uncertain readings as authoritative.
+
+These samples have existing public transcriptions, which allow us to compare the AI’s first-pass output with a reference. The intended application is to assist with documents that do not yet have transcriptions. Here, the existing texts let us test and demonstrate AI reading, rather than repeat completed transcription work.
+
+The AI’s first pass did not read the references. They were used only afterward for comparison and assisted correction, and can contain errors. Reference-assisted corrections do not show what AI would achieve independently on documents without references.
 
 ## 4. See one complete example
 
@@ -144,6 +152,8 @@ New York. I hope it is so,
 
 ### What worked, what differed, and why checking matters
 
+Some differences in punctuation, spacing, line breaks, and abbreviation forms may not prevent understanding. Others change the content and can affect interpretation and search. The `George` / `Arago` ship-name error below shows how one misread name can cause a keyword search to miss a page.
+
 | Location | Actual AI first pass | Published reference | Decision and significance |
 | --- | --- | --- | --- |
 | Final line | `New York` | `New York` | Correctly recognized; immediately useful as a place search term. |
@@ -213,6 +223,8 @@ Barton describes a warm day spent indoors, work on a riding skirt, and a visit f
 
 ## 5. Results across three pages
 
+Across these three examples, AI produced useful draft transcriptions that make much of the handwritten content easier to read. The examples also show why names, dates, and other important details need verification.
+
 These are **first-pass AI versus public-reference** comparisons, not scores for the checked version. Every selected page is included. The faint page did not have the highest error rates: page length, names, punctuation, abbreviations, and explicit uncertainty all affect this small comparison.
 
 | Sample | What it illustrates | Reference words | CER (edits / characters) | WER (edits / words) | AI uncertainty markers |
@@ -225,7 +237,7 @@ These are **first-pass AI versus public-reference** comparisons, not scores for 
 - **02 — Names and abbreviations:** an undated address list. Letter shapes are relatively bold, yet proper names, raised abbreviation letters, punctuation and ditto marks need interpretation.
 - **03 — Faint diary:** a complete April 13, 1863 entry across a spread, with dense, uneven writing and words split at line endings.
 
-**Scoring rules.** Python applies Unicode NFC, case folding, and whitespace collapse (including newlines) to comparison copies only. Punctuation, digits, superscript letters, hyphens, and all `[uncertain: …]` / `[illegible]` markers remain. CER is character edit distance divided by reference characters, including normalized spaces. WER is edit distance between whitespace-separated tokens divided by reference tokens. Substitution, deletion and insertion each cost one. No dehyphenation or abbreviation expansion is performed. These rules are deliberately conservative and penalize explicit uncertainty and formatting differences. **WER is not converted into an “accuracy” percentage.**
+**Scoring rules.** Python applies Unicode NFC, case folding, and whitespace collapse (including newlines) to comparison copies only. Punctuation, digits, superscript letters, hyphens, and all `[uncertain: …]` / `[illegible]` markers remain. CER is character edit distance divided by reference characters, including normalized spaces. WER is edit distance between whitespace-separated tokens divided by reference tokens. Substitution, deletion and insertion each cost one. No dehyphenation or abbreviation expansion is performed. These rules are deliberately conservative and penalize explicit uncertainty and formatting differences. **Neither 1 − CER nor 1 − WER is presented as factual accuracy.**
 
 The references are reliable, page-matched comparison material, not absolute ground truth. Sample 01's date, sample 02's `O.D.b.`, and sample 03's `work` are documented review concerns. The sample count cannot establish performance across historical collections. No staff time, efficiency gains, monetary savings, or new human review were measured.
 
