@@ -1,0 +1,12 @@
+{
+  "wall_seconds_successful_manifest_download": 4.129738618968986,
+  "source_snapshots": {
+    "token_use/data/public-loc/records.jsonl": "faa19eb49965580a089f35d1d6134b90127fff91fd88eb0126d0184f55d00759",
+    "token_use/research/data/loc-sample.json": "26ef5cb83d257de108a567f26f888510a7a7c530dfcb7937ea6a5e15588f9be5"
+  },
+  "selection": "11 fresh Highsmith items (two deliberately paired memorial views), 12 existing FSA/OWI color records, 9 photographic records from existing 100-record LOC snapshot. First 30 base; final 2 new independent increment files. Convenience sample, not random or representative.",
+  "acquisition_limit": "LOC catalog API returned HTTP 429 after 11 successful records. Retained original responses and used already saved official item metadata for remaining records; image download endpoints succeeded. API search retry time excluded from detection.",
+  "metadata_note": "Original metadata acquisition dates differ from image download dates. Per-record provenance is explicit.",
+  "rights_verification_note": "FSA/OWI color collection rights statement independently rechecked 2026-11-14 through official LOC indexed rights page: public domain/free to use and reuse. For all other collections the per-item rights statement is retained. No blanket public-domain inference.",
+  "rights_verification_source": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/"
+}

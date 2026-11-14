@@ -1,0 +1,180 @@
+{
+  "reproductions": "<p>\nSome images in this collection are described in groups; others are \ndescribed individually. In some cases, all of the images in the \ngroup display online, in other cases they do not.\n</p>\n\n<p>\nYou can download online images yourself.  Alternatively, you can \npurchase copies of various types.\n</p>\n\n<ol>\n<p>\t\n<strong><li>Determine whether the desired materials can be retrieved \nonline.</strong>\n</p>\n<ul>\n<p>\t\n<li>Look in the <strong>Medium</strong> field above to determine whether\n the description is for one photograph or more than one.</li>\n </p>\n <p>\n<li>If the description is for a single item and it is displaying, \nyou can download or purchase a print.  Cite the number that begins \nwith &quot;LC-DIG...&quot; when purchasing copies through Library of \nCongress Duplication Services.\n</p>\n<p>\n<li>If the description is for more than one item and there is \na &quot;Click for more images&quot; icon displaying, select that. \nIndividual images will display; you can download or purchase prints. \nCite the number that begins with &quot;LC-DIG...&quot; when purchasing \ncopies through Library of Congress Duplication Services.\n</p>\n<p>\n<li>If the description is for more than one item and there is no\n &quot;Click for more images&quot; icon displaying, return to the\n  &quot;About this Item&quot; tab and select the &quot;<i>Check for \n  online items from this group</i>&quot; link.  Then select the \n  \"Obtaining Copies\" tab for any retrieved items that are of interest.\n</p>\n</ul>\n</li>\n\n<p>\n<strong><li>If the images do not display online</strong> -- Select images for reproduction through one of these methods:\n</p>\n<ul>\n<p>\t\n<li>Visit the Prints &amp; Photographs Reading Room and request to view \nthe group (general information about service in the reading room is \navailable at: <a href=\"https://www.loc.gov/rr/print/info/001_ref.html\">http://www.loc.gov/rr/print/info/001_ref.html</a>).</li>  \n</p>\n<p>\n<li>P&amp;P reading room staff can provide up to 15 photocopies of items \nper calendar year. (Color images cannot be photocopied.) For assistance,\n see our <a href=\"https://www.loc.gov/rr/askalib/ask-print.html\">Ask a Librarian</a> page. OR</li>\n</p>\n<p>\n<li>Hire a freelance researcher to do further selection for you \n(a list of researchers is available at: \n<a href=\"https://www.loc.gov/rr/print/resource/013_pic.html\">http://www.loc.gov/rr/print/resource/013_pic.html</a>).\n</p>\n</ul>\n</li>\n</ol>\n\n<p>\n<strong>Purchasing Copies</strong>\n</p>\n\n<p>\nLibrary of Congress Duplication Services can make copies of various \ntypes from images in Prints & Photographs Division Collections.  \nPrice lists, contact information, and order forms are available on the \n<a href=\"https://www.loc.gov/duplicationservices/\">Duplication Services Web site</a>.\n</p>\n\n<p>\nCarol M. Highsmith sells prints of her photographs at: <a href=\"http://photographsamerica.com/\">http://photographsamerica.com/</a> .\n</p>  \n\n\n\n\n        ",
+  "item": {
+    "source_created": "2020-11-10T00:00:00Z",
+    "restriction": "",
+    "other_number": "",
+    "resource_links": [
+      "https://hdl.loc.gov/loc.pnp/highsm.64232"
+    ],
+    "title": "A rare face-on view of the statue of U.S. president Abraham Lincoln at the Lincoln Memorial on Washington, D.C.'s National Mall",
+    "related_items": [],
+    "medium_brief": "1 photograph :",
+    "service_medium": "https://tile.loc.gov/storage-services/service/pnp/highsm/64200/64232r.jpg",
+    "collections": [
+      {
+        "code": "highsm",
+        "link": "https://www.loc.gov/pictures/collection/highsm/",
+        "title": "Highsmith (Carol M.) Archive"
+      }
+    ],
+    "part_of_group": null,
+    "stmt_of_responsibility": "",
+    "other_titles": "",
+    "link": "https://www.loc.gov/pictures/item/2020720205/",
+    "other_control_numbers": [
+      "21810260"
+    ],
+    "notes": [
+      {
+        "note": "Title, date, keywords, and additional description details based on information provided by the photographer.",
+        "label": null
+      },
+      {
+        "note": "The seated statue, by sculptor Daniel Chester French, is normally viewed from ground level or the steps of the memorial. This was obtained from a construction crane placed temporarily right in front of the marble statue.",
+        "label": null
+      },
+      {
+        "note": "Gift; Carol M. Highsmith Photography, Inc.; 2020; (DLC/PP-2002:038-23).",
+        "label": null
+      },
+      {
+        "note": "Forms part of Carol M. Highsmith's America Project in the Carol M. Highsmith Archive.",
+        "label": null
+      }
+    ],
+    "modified": "2022-10-18T06:17:09Z",
+    "summary": "",
+    "formats": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=format&q=Digital%20photographs--Color--2000-2010.&co=highsm",
+        "title": "Digital photographs--Color--2000-2010."
+      }
+    ],
+    "marc": "https://www.loc.gov/pictures/item/2020720205/marc/",
+    "mediums": [
+      {
+        "medium": "1 photograph : digital, tiff file, color.",
+        "label": null
+      }
+    ],
+    "group_has_items": false,
+    "thumb_gallery": "https://tile.loc.gov/storage-services/service/pnp/highsm/64200/64232_150px.jpg",
+    "rights_information": "No known restrictions on publication.",
+    "display_offsite": true,
+    "related_names": [],
+    "created_published": "2007-08-26.",
+    "title_translation": "",
+    "id": "2020720205",
+    "contents": "",
+    "raw_collections": [
+      "diof",
+      "highsm",
+      "pp"
+    ],
+    "call_number": "LC-DIG-highsm- 64232 (ONLINE) [P&P]",
+    "sort_date": "2007",
+    "subjects": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=subject&q=United%20States--District%20of%20Columbia--Washington%20%28D.C.%29.&co=highsm",
+        "title": "United States--District of Columbia--Washington (D.C.)."
+      },
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=subject&q=America&co=highsm",
+        "title": "America"
+      },
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=subject&q=Lincoln%20Memorial&co=highsm",
+        "title": "Lincoln Memorial"
+      },
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=subject&q=Daniel%20Chester%20French&co=highsm",
+        "title": "Daniel Chester French"
+      },
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=subject&q=Abraham%20Lincoln&co=highsm",
+        "title": "Abraham Lincoln"
+      }
+    ],
+    "source_modified": "2022-10-11T15:43:29Z",
+    "part_of": "Highsmith, Carol M., 1946- Carol M. Highsmith Archive.",
+    "terms": [],
+    "reproduction_number": "LC-DIG-highsm-64232 (original digital file)",
+    "repository": "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA https://hdl.loc.gov/loc.pnp/pp.print",
+    "service_low": "https://tile.loc.gov/storage-services/service/pnp/highsm/64200/64232_150px.jpg",
+    "date": "2007-08-26.",
+    "created": "2022-10-18T06:17:08Z",
+    "control_number": "2020720205",
+    "place": [
+      {
+        "latitude": "",
+        "link": "https://www.loc.gov/pictures/related/?fi=place&q=District%20of%20Columbia--Washington%20%28D.C.%29&co=highsm",
+        "longitude": "",
+        "title": "District of Columbia--Washington (D.C.)"
+      }
+    ],
+    "creators": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Highsmith%2C%20Carol%20M.%2C%201946-&co=highsm",
+        "role": "photographer",
+        "title": "Highsmith, Carol M., 1946-"
+      }
+    ],
+    "created_published_date": "2007-08-26."
+  },
+  "thesaurus_entry": null,
+  "resources": [
+    {
+      "note": "original digital file",
+      "medium": "https://tile.loc.gov/storage-services/service/pnp/highsm/64200/64232r.jpg",
+      "largest": "https://tile.loc.gov/storage-services/master/pnp/highsm/64200/64232a.tif",
+      "largest_s": 235490182,
+      "url": "https://hdl.loc.gov/loc.pnp/highsm.64232",
+      "medium_s": 112037,
+      "small_s": 87714,
+      "large": "https://tile.loc.gov/storage-services/service/pnp/highsm/64200/64232v.jpg",
+      "item": "64232",
+      "larger_s": 117757016,
+      "large_s": 341365,
+      "external": null,
+      "larger": "https://tile.loc.gov/storage-services/master/pnp/highsm/64200/64232u.tif",
+      "aggregate": "highsm",
+      "small": "https://tile.loc.gov/storage-services/service/pnp/highsm/64200/64232_150px.jpg",
+      "id": "highsm.64232",
+      "link": "https://www.loc.gov/pictures/resource/highsm.64232/?co=highsm"
+    }
+  ],
+  "links": {
+    "json": "https://www.loc.gov/pictures/collection/highsm/item/2020720205/?fo=json",
+    "html": "https://www.loc.gov/pictures/collection/highsm/item/2020720205/"
+  },
+  "related": {
+    "lot_link": null,
+    "neighbors": "https://www.loc.gov/pictures/related/?&co=highsm&pk=2020720205&st=gallery&sb=call_number#focus",
+    "survey_link": null,
+    "group_record": null
+  },
+  "unrestricted": true,
+  "collection": {
+    "digitized": "Some",
+    "code": "highsm",
+    "display_offsite": "Yes",
+    "thumb_large_item": "",
+    "title": "Highsmith (Carol M.) Archive",
+    "banner_item": "https://www.loc.gov/pictures/item/2012649300/",
+    "brief": "Architecture and architectural renovation projects in Washington, D.C., and throughout the United States, as well as political figures, and people in the U.S.",
+    "banner_title": "Idaho farm and field. Carol M. Highsmith, June 19, 2005.",
+    "thumb_item": "",
+    "home_link": "https://www.loc.gov/pictures/collection/highsm/",
+    "from_date": "1980",
+    "view_all": "https://www.loc.gov/pictures/search?st=grid&co=highsm",
+    "link": "https://www.loc.gov/pictures/collection/highsm/",
+    "to_date": "2009",
+    "extent": "2,500 negatives and transparencies; about 500 catalog records; records being added.",
+    "thumb_featured": "https://www.loc.gov/pictures/static/data/highsm/featured.png",
+    "rights": "https://www.loc.gov/rr/print/res/482_high.html",
+    "thumb_large": "https://www.loc.gov/pictures/static/data/highsm/thumb_large.png",
+    "banner": "https://www.loc.gov/pictures/static/data/highsm/banner.jpg",
+    "thumb": "https://www.loc.gov/pictures/static/data/highsm/thumb.png"
+  }
+}

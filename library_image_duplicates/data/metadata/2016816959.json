@@ -1,0 +1,115 @@
+{
+  "Call_number": "LC-D420-2659 [P&P]",
+  "Contributors": [
+    {
+      "Name": "Detroit Publishing Co., publisher."
+    }
+  ],
+  "Date_text": "1924 June 4.",
+  "Date": "1924",
+  "Digitized": true,
+  "Set": [
+    "Cars"
+  ],
+  "Genre": [
+    "Dry plate negatives",
+    "Photographic prints--Reproductions"
+  ],
+  "Id": "http://www.loc.gov/item/2016816959/",
+  "IIIF_manifest": "http://www.loc.gov/item/2016816959/manifest.json",
+  "Preview_url": [
+    "https://tile.loc.gov/storage-services/service/pnp/det/4a20000/4a27000/4a27900/4a27901t.gif#h=108&w=150",
+    "https://tile.loc.gov/storage-services/service/pnp/det/4a20000/4a27000/4a27900/4a27901v.jpg#h=754&w=1024",
+    "https://tile.loc.gov/storage-services/service/pnp/det/4a20000/4a27000/4a27900/4a27901r.jpg#h=471&w=640",
+    "https://tile.loc.gov/storage-services/service/pnp/det/4a20000/4a27000/4a27900/4a27901_150px.jpg#h=110&w=150"
+  ],
+  "Index": 1,
+  "Other_title": [],
+  "Description": [],
+  "Creators": [
+    {
+      "Name": "Detroit Publishing Co.",
+      "Role": "publisher"
+    }
+  ],
+  "Type_of_resource": [
+    "Still image"
+  ],
+  "Location_text": [],
+  "Other_record_formats": [
+    {
+      "Type": "MODS Record",
+      "Id": "https://lccn.loc.gov/2016816959/mods"
+    },
+    {
+      "Type": "MARC Record",
+      "Id": "//www.loc.gov/pictures/item/2016816959/marc/"
+    },
+    {
+      "Type": "Dublin Core Record",
+      "Id": "https://lccn.loc.gov/2016816959/dc"
+    },
+    {
+      "Type": "MARCXML Record",
+      "Id": "https://lccn.loc.gov/2016816959/marcxml"
+    }
+  ],
+  "Rights": [
+    "No known restrictions on publication.",
+    "<p>The Library of Congress believes that many of the papers in the Detroit Publishing Company collection are in the public domain or have no known copyright restrictions and are free to use and reuse. For example, all photos published in the U.S. more than 95 years ago are in the public domain. The Library has also obtained permission for the use of many other materials, and presents additional materials pursuant to fair use under United States copyright law. Researchers should watch for documents that may be copyrighted (for example, published in the United States less than 95 years ago, or unpublished and the author died less than 70 years ago).</p>\r\n<p> You are responsible for deciding whether your use of the items in this collection is legal. You will need written permission from the rightsholders to copy, distribute, or otherwise use copyrighted materials except as allowed by fair use or other statutory exemptions. Some materials may be protected under international law. You may also need permission from holders of other rights, such as publicity and/or privacy rights.</p>\r\n<p>Credit Line: Library of Congress, Prints &amp; Photographs Division, Detroit Publishing Company Collection.<br>\r\nFor information about reproducing, publishing, and citing material from this collection, as well as access to the original items, see: <a href=\"https://www.loc.gov/rr/print/res/102_det.html\">Detroit Publishing Company - Rights and Restrictions Information</a></p>\r\n<p>More about <a href=\"/legal/\">Copyright and other Restrictions</a> </p>\r\n<p>For guidance about compiling full citations consult <a href=\"https://www.loc.gov/teachers/usingprimarysources/citing.html\">Citing Primary Sources</a>.</p>"
+  ],
+  "Source_collection": [
+    "Detroit Publishing Company photograph collection (Library of Congress)"
+  ],
+  "Language": [
+    "English"
+  ],
+  "Lccn": "2016816959",
+  "Medium": [
+    "1 negative : glass ; 5 x 7 in."
+  ],
+  "Mime_type": [
+    "image/jpg",
+    "image/gif",
+    "image/tif"
+  ],
+  "Notes": [
+    "Possibly made for Ford Motor Company.",
+    "Gift; State Historical Society of Colorado; 1949.",
+    "Detroit Publishing Co. no. K 2659.",
+    "\"The ten million[th Ford], New York to San Francisco, Lincoln Highway\" on left car.",
+    "Title from jacket."
+  ],
+  "Online_format": [
+    "Image"
+  ],
+  "Original_format": [
+    "Photo, print, drawing"
+  ],
+  "Part_of": [
+    "detroit publishing company",
+    "prints and photographs division",
+    "catalog",
+    "american memory"
+  ],
+  "Repository": [
+    "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+  ],
+  "Number_of_files": 1,
+  "Shelf_id": "LC-D420-2659 [P&P]",
+  "Subjects": [
+    "ford, henry",
+    "reproductions",
+    "automobiles",
+    "dry plate negatives",
+    "photographic prints"
+  ],
+  "Subject_headings": [
+    "Automobiles",
+    "Ford, Henry,--1863-1947"
+  ],
+  "Last_updated_in_api": "2021-09-04T14:06:14.750Z",
+  "Title": "[First and ten millionth Ford]",
+  "Url": "https://www.loc.gov/item/2016816959/",
+  "Location": []
+}

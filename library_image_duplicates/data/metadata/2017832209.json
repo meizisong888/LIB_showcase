@@ -1,0 +1,165 @@
+{
+  "Call_number": "LC-USW3- 003685-E [P&P]",
+  "Contributors": [
+    {
+      "Name": "Collins, Marjory, 1912-1985, photographer."
+    }
+  ],
+  "Date_text": "1942 May-June.",
+  "Date": "1942",
+  "Digitized": true,
+  "Set": [
+    "Athletes"
+  ],
+  "Genre": [
+    "Nitrate negatives"
+  ],
+  "Id": "http://www.loc.gov/item/2017832209/",
+  "IIIF_manifest": "http://www.loc.gov/item/2017832209/manifest.json",
+  "Preview_url": [
+    "https://tile.loc.gov/storage-services/service/pnp/fsa/8d21000/8d21100/8d21117r.jpg#h=640&w=620",
+    "https://tile.loc.gov/storage-services/service/pnp/fsa/8d21000/8d21100/8d21117_150px.jpg#h=150&w=145",
+    "https://tile.loc.gov/storage-services/service/pnp/fsa/8d21000/8d21100/8d21117v.jpg#h=1024&w=991",
+    "https://tile.loc.gov/storage-services/service/pnp/fsa/8d21000/8d21100/8d21117t.gif#h=150&w=144"
+  ],
+  "Index": 1,
+  "Other_title": [],
+  "Description": [],
+  "Creators": [
+    {
+      "Name": "Collins, Marjory, 1912-1985",
+      "Role": "photographer"
+    }
+  ],
+  "Type_of_resource": [
+    "Still image"
+  ],
+  "Location_text": [
+    "Prince George'S County",
+    "Maryland--Prince George's County--Greenbelt",
+    "Maryland",
+    "United States",
+    "Greenbelt"
+  ],
+  "Other_record_formats": [
+    {
+      "Type": "MODS Record",
+      "Id": "https://lccn.loc.gov/2017832209/mods"
+    },
+    {
+      "Type": "Dublin Core Record",
+      "Id": "https://lccn.loc.gov/2017832209/dc"
+    },
+    {
+      "Type": "MARCXML Record",
+      "Id": "https://lccn.loc.gov/2017832209/marcxml"
+    },
+    {
+      "Type": "MARC Record",
+      "Id": "https://www.loc.gov/pictures/item/2017832209/marc/"
+    }
+  ],
+  "Rights": [
+    "<p>The contents of the Library of Congress Farm Security Administration/Office of War Information Black-and-White Negatives are in the public domain and are free to use and reuse.</p>\r\n<p> Credit Line: Library of Congress, Prints &amp; Photographs Division, Farm Security Administration/Office of War Information Black-and-White Negatives.</p>\r\n<p>For information about reproducing, publishing, and citing material from this collection, as well as access to the original items, see: <a href=\"https://www.loc.gov/rr/print/res/071_fsab.html\">U.S. Farm Security Administration/Office of War Information Black &amp; White Photographs - Rights and Restrictions Information</a>\r\n</p>\r\n<p>More about <a href=\"/legal/\">Copyright and other Restrictions</a> </p>\r\n<p>For guidance about compiling full citations consult <a href=\"https://www.loc.gov/teachers/usingprimarysources/citing.html\">Citing Primary Sources</a>.</p>",
+    "No known restrictions. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html"
+  ],
+  "Source_collection": [
+    "Farm Security Administration - Office of War Information photograph collection (Library of Congress)"
+  ],
+  "Language": [
+    "English"
+  ],
+  "Lccn": "2017832209",
+  "Medium": [
+    "1 negative : nitrate ; 2 1/4 x 2 1/4 inches or smaller."
+  ],
+  "Mime_type": [
+    "image/jpg",
+    "image/gif",
+    "image/tif"
+  ],
+  "Notes": [
+    "Appears to be related to negative LC-USW3-003687-E https://www.loc.gov/pictures/item/2017832211/",
+    "Temp. note: owibatch1",
+    "Film copy on SIS roll 10, frame 1082.",
+    "Title and other information from a possibly related negative. Image came to Library of Congress untitled. (There was no caption for this image in the FSA/OWI shelflist.)",
+    "More information about the FSA/OWI Collection is available at http://hdl.loc.gov/loc.pnp/pp.fsaowi",
+    "Transfer; United States. Office of War Information. Overseas Picture Division. Washington Division; 1944."
+  ],
+  "Online_format": [
+    "Image"
+  ],
+  "Original_format": [
+    "Photo, print, drawing"
+  ],
+  "Part_of": [
+    "prints and photographs division",
+    "catalog",
+    "american memory",
+    "farm security administration/office of war information black-and-white negatives"
+  ],
+  "Repository": [
+    "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+  ],
+  "Number_of_files": 1,
+  "Shelf_id": "LC-USW3- 003685-E [P&P]",
+  "Subjects": [
+    "nitrate negatives",
+    "greenbelt",
+    "maryland",
+    "united states",
+    "prince george's county"
+  ],
+  "Subject_headings": [
+    "United States--Maryland--Prince George's County--Greenbelt"
+  ],
+  "Last_updated_in_api": "2021-09-04T15:49:41.467Z",
+  "Title": "[Untitled photo, possibly related to: Greenbelt, Maryland. Handball courts behind the swimming pool]",
+  "Url": "https://www.loc.gov/item/2017832209/",
+  "Location": [
+    {
+      "Short_name": "Prince George's County",
+      "Full_name": "Prince George's County, Maryland, United States",
+      "Osm_url": "https://www.openstreetmap.org/relation/936412",
+      "Latitude": 38.803929,
+      "Longitude": -76.8518695,
+      "County": "Prince George's County",
+      "State_district": "Unknown",
+      "State": "Maryland",
+      "Country": "United States"
+    },
+    {
+      "Short_name": "Maryland",
+      "Full_name": "Maryland, United States",
+      "Osm_url": "https://www.openstreetmap.org/relation/162112",
+      "Latitude": 39.5162401,
+      "Longitude": -76.9382069,
+      "County": "Unknown",
+      "State_district": "Unknown",
+      "State": "Maryland",
+      "Country": "United States"
+    },
+    {
+      "Short_name": "Greenbelt",
+      "Full_name": "Greenbelt, Mandan Road, Glen Oaks Apartments, Greenbelt, Prince George's County, Maryland, 20070, United States",
+      "Osm_url": "https://www.openstreetmap.org/relation/133737",
+      "Latitude": 38.9933654,
+      "Longitude": -76.88333238304114,
+      "County": "Prince George's County",
+      "State_district": "Unknown",
+      "State": "Maryland",
+      "Country": "United States"
+    },
+    {
+      "Short_name": "United States",
+      "Full_name": "United States",
+      "Osm_url": "https://www.openstreetmap.org/relation/148838",
+      "Latitude": 39.7837304,
+      "Longitude": -100.445882,
+      "County": "Unknown",
+      "State_district": "Unknown",
+      "State": "Unknown",
+      "Country": "United States"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "Call_number": "LC-USW3- 014844-C [P&P] LOT 682 (associated LOT)",
+  "Contributors": [
+    {
+      "Name": "Parks, Gordon, 1912-2006, photographer."
+    }
+  ],
+  "Date_text": "1943 Jan.",
+  "Date": "1943",
+  "Digitized": true,
+  "Set": [
+    "Teachers-And-Students"
+  ],
+  "Genre": [
+    "Safety film negatives"
+  ],
+  "Id": "http://www.loc.gov/item/2017843211/",
+  "IIIF_manifest": "http://www.loc.gov/item/2017843211/manifest.json",
+  "Preview_url": [
+    "https://tile.loc.gov/storage-services/service/pnp/fsa/8d12000/8d12500/8d12511r.jpg#h=640&w=542",
+    "https://tile.loc.gov/storage-services/service/pnp/fsa/8d12000/8d12500/8d12511t.gif#h=150&w=127",
+    "https://tile.loc.gov/storage-services/service/pnp/fsa/8d12000/8d12500/8d12511v.jpg#h=1024&w=867",
+    "https://tile.loc.gov/storage-services/service/pnp/fsa/8d12000/8d12500/8d12511_150px.jpg#h=150&w=127"
+  ],
+  "Index": 1,
+  "Other_title": [],
+  "Description": [],
+  "Creators": [
+    {
+      "Name": "Parks, Gordon, 1912-2006",
+      "Role": "photographer"
+    }
+  ],
+  "Type_of_resource": [
+    "Still image"
+  ],
+  "Location_text": [
+    "Florida--Volusia County--Daytona Beach",
+    "Daytona Beach",
+    "United States",
+    "Florida",
+    "Volusia County"
+  ],
+  "Other_record_formats": [
+    {
+      "Type": "Dublin Core Record",
+      "Id": "https://lccn.loc.gov/2017843211/dc"
+    },
+    {
+      "Type": "MARCXML Record",
+      "Id": "https://lccn.loc.gov/2017843211/marcxml"
+    },
+    {
+      "Type": "MARC Record",
+      "Id": "//www.loc.gov/pictures/item/2017843211/marc/"
+    },
+    {
+      "Type": "MODS Record",
+      "Id": "https://lccn.loc.gov/2017843211/mods"
+    }
+  ],
+  "Rights": [
+    "<p>The contents of the Library of Congress Farm Security Administration/Office of War Information Black-and-White Negatives are in the public domain and are free to use and reuse.</p>\r\n<p> Credit Line: Library of Congress, Prints &amp; Photographs Division, Farm Security Administration/Office of War Information Black-and-White Negatives.</p>\r\n<p>For information about reproducing, publishing, and citing material from this collection, as well as access to the original items, see: <a href=\"https://www.loc.gov/rr/print/res/071_fsab.html\">U.S. Farm Security Administration/Office of War Information Black &amp; White Photographs - Rights and Restrictions Information</a>\r\n</p>\r\n<p>More about <a href=\"/legal/\">Copyright and other Restrictions</a> </p>\r\n<p>For guidance about compiling full citations consult <a href=\"https://www.loc.gov/teachers/usingprimarysources/citing.html\">Citing Primary Sources</a>.</p>",
+    "No known restrictions. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html"
+  ],
+  "Source_collection": [
+    "Farm Security Administration - Office of War Information photograph collection (Library of Congress)"
+  ],
+  "Language": [
+    "English"
+  ],
+  "Lccn": "2017843211",
+  "Medium": [
+    "1 negative : safety ; 4 x 5 inches or smaller."
+  ],
+  "Mime_type": [
+    "image/jpg",
+    "image/gif",
+    "image/tif"
+  ],
+  "Notes": [
+    "Temp. note: owibatch3",
+    "Title and other information from print in lot.",
+    "More information about the FSA/OWI Collection is available at http://hdl.loc.gov/loc.pnp/pp.fsaowi",
+    "Film copy on SIS roll 5, frame 1994.",
+    "Transfer; United States. Office of War Information. Overseas Picture Division. Washington Division; 1944."
+  ],
+  "Online_format": [
+    "Image"
+  ],
+  "Original_format": [
+    "Photo, print, drawing"
+  ],
+  "Part_of": [
+    "prints and photographs division",
+    "lot 682",
+    "american memory",
+    "farm security administration/office of war information black-and-white negatives",
+    "catalog"
+  ],
+  "Repository": [
+    "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+  ],
+  "Number_of_files": 1,
+  "Shelf_id": "LC-USW3- 014844-C [P&P] LOT 682 (associated LOT)",
+  "Subjects": [
+    "safety film negatives",
+    "united states",
+    "florida",
+    "daytona beach",
+    "volusia county"
+  ],
+  "Subject_headings": [
+    "United States--Florida--Volusia County--Daytona Beach"
+  ],
+  "Last_updated_in_api": "2021-09-04T15:58:03.714Z",
+  "Title": "Daytona Beach, Florida. Bethune-Cookman College. Dr. Mary McLeod Bethune, founder and former president and director of the NYA (National Youth Administration) Negro Relations",
+  "Url": "https://www.loc.gov/item/2017843211/",
+  "Location": [
+    {
+      "Short_name": "United States",
+      "Full_name": "United States",
+      "Osm_url": "https://www.openstreetmap.org/relation/148838",
+      "Latitude": 39.7837304,
+      "Longitude": -100.445882,
+      "County": "Unknown",
+      "State_district": "Unknown",
+      "State": "Unknown",
+      "Country": "United States"
+    },
+    {
+      "Short_name": "Daytona Beach",
+      "Full_name": "Daytona Beach, Volusia County, Florida, United States",
+      "Osm_url": "https://www.openstreetmap.org/relation/117945",
+      "Latitude": 29.2108147,
+      "Longitude": -81.0228331,
+      "County": "Volusia County",
+      "State_district": "Unknown",
+      "State": "Florida",
+      "Country": "United States"
+    },
+    {
+      "Short_name": "Volusia County",
+      "Full_name": "Volusia County, Florida, United States",
+      "Osm_url": "https://www.openstreetmap.org/relation/389025",
+      "Latitude": 29.0533409,
+      "Longitude": -81.1310761,
+      "County": "Volusia County",
+      "State_district": "Unknown",
+      "State": "Florida",
+      "Country": "United States"
+    },
+    {
+      "Short_name": "Florida",
+      "Full_name": "Florida, United States",
+      "Osm_url": "https://www.openstreetmap.org/relation/162050",
+      "Latitude": 27.7567667,
+      "Longitude": -81.4639835,
+      "County": "Unknown",
+      "State_district": "Unknown",
+      "State": "Florida",
+      "Country": "United States"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "purpose": "Exact detection, data preparation and evaluation implementation used for the final measured run. Git commit is available in repository history.",
+  "sha256": {
+    "scripts/engine.py": "b420594196242998311180545d462cc7c1d70156af71f808a52ede5f87d35832",
+    "scripts/worker.py": "61f20ed8c8178ad1d39517b10e85ff5a1dd7cfce856eb32f2fe3ff68b2d83d2a",
+    "scripts/experiment.py": "bb87001d100a8165d41ed84663394280b79206d9857bb1bf52b872db4652dde6",
+    "scripts/evaluate.py": "d7bf84b851510f3de992f01cd1845bd535f9fb3745f6bc7dfa9142f1f83e1650",
+    "scripts/prepare.py": "c420c92135efe3de5473133c9e078ac91a5fcb6d7fe520b524f38494c1b1bf21",
+    "scripts/common.py": "3e88500b95d0af0dd7b4a8ba6c3f30ca16c708beadcf1e566dfc734630d5dee7",
+    "requirements.txt": "b15e4e46e1969203a46ede2944257c8a87c0346e4b34e643bd376e0cf983108d"
+  }
+}

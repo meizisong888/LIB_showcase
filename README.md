@@ -1,5 +1,14 @@
 # Library AI Showcases
 
+## Finding Duplicate Collection Images with Less Computation
+
+**The problem:** a collection may contain identical files, compressed copies and crops of one photograph. Similar views of a building are different photographs and need careful review.
+
+**The showcase:** 30 real Library of Congress photographs, 180 files with known edits, four measured methods, and a five-file incremental test. Compare exact bytes, perceptual hashes, SSCD image features and verified reuse. Inspect real matches, misses and false positives alongside accuracy, timing and source records.
+
+**[Open the image duplicate showcase](library_image_duplicates/README.md)** ·
+[Compare images and measured results](https://meizisong888.github.io/LIB_showcase/library_image_duplicates/)
+
 ## From Handwriting to Searchable Text
 
 **The problem:** scanned handwriting can still be hard to read and impossible to search as text.

@@ -1,0 +1,883 @@
+[
+  {
+    "identity": "2010630676",
+    "source_page": "https://www.loc.gov/pictures/collection/highsm/item/2010630676/",
+    "metadata_url": "https://www.loc.gov/pictures/collection/highsm/item/2010630676/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/highsm/04600/04692v.jpg",
+    "title": "Jefferson Memorial, Washington, D.C.",
+    "collection_title": "Highsmith (Carol M.) Archive",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Highsmith%2C%20Carol%20M.%2C%201946-&co=highsm",
+        "role": "photographer",
+        "title": "Highsmith, Carol M., 1946-"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/rr/print/res/482_high.html",
+    "resource_id": "highsm.04692",
+    "metadata_provenance": "Fetched 2026-11-14 from LOC Pictures API; full response saved.",
+    "download_utc": "2026-11-14T20:00:14Z",
+    "download_seconds": 0.09183362196199596,
+    "sha256": "b92935a7988585895890590c564f1d094d90dc599d039f93f4728d24d4a06e23",
+    "bytes": 263912,
+    "role": "base",
+    "size": [
+      1024,
+      683
+    ]
+  },
+  {
+    "identity": "2010630677",
+    "source_page": "https://www.loc.gov/pictures/collection/highsm/item/2010630677/",
+    "metadata_url": "https://www.loc.gov/pictures/collection/highsm/item/2010630677/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/highsm/04600/04693v.jpg",
+    "title": "Jefferson Memorial, aerial view, Washington, D.C.",
+    "collection_title": "Highsmith (Carol M.) Archive",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Highsmith%2C%20Carol%20M.%2C%201946-&co=highsm",
+        "role": "photographer",
+        "title": "Highsmith, Carol M., 1946-"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/rr/print/res/482_high.html",
+    "resource_id": "highsm.04693",
+    "metadata_provenance": "Fetched 2026-11-14 from LOC Pictures API; full response saved.",
+    "download_utc": "2026-11-14T20:00:14Z",
+    "download_seconds": 0.07407446700381115,
+    "sha256": "6628f92b7f93e7678a06daf0241b515286b52ba625d3a561d20b323469f16a5e",
+    "bytes": 463041,
+    "role": "base",
+    "size": [
+      1024,
+      683
+    ]
+  },
+  {
+    "identity": "2010630765",
+    "source_page": "https://www.loc.gov/pictures/collection/highsm/item/2010630765/",
+    "metadata_url": "https://www.loc.gov/pictures/collection/highsm/item/2010630765/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/highsm/04700/04781v.jpg",
+    "title": "Aerial view of the Lincoln Memorial, Washington, D.C.",
+    "collection_title": "Highsmith (Carol M.) Archive",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Highsmith%2C%20Carol%20M.%2C%201946-&co=highsm",
+        "role": "photographer",
+        "title": "Highsmith, Carol M., 1946-"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/rr/print/res/482_high.html",
+    "resource_id": "highsm.04781",
+    "metadata_provenance": "Fetched 2026-11-14 from LOC Pictures API; full response saved.",
+    "download_utc": "2026-11-14T20:00:14Z",
+    "download_seconds": 0.07661035499768332,
+    "sha256": "2cc98c519af0466eec73923576cc83963c99733a9dc573a50cdef5ad015e4de0",
+    "bytes": 589289,
+    "role": "base",
+    "size": [
+      1024,
+      759
+    ]
+  },
+  {
+    "identity": "2020720205",
+    "source_page": "https://www.loc.gov/pictures/collection/highsm/item/2020720205/",
+    "metadata_url": "https://www.loc.gov/pictures/collection/highsm/item/2020720205/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/highsm/64200/64232v.jpg",
+    "title": "A rare face-on view of the statue of U.S. president Abraham Lincoln at the Lincoln Memorial on Washington, D.C.'s National Mall",
+    "collection_title": "Highsmith (Carol M.) Archive",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Highsmith%2C%20Carol%20M.%2C%201946-&co=highsm",
+        "role": "photographer",
+        "title": "Highsmith, Carol M., 1946-"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/rr/print/res/482_high.html",
+    "resource_id": "highsm.64232",
+    "metadata_provenance": "Fetched 2026-11-14 from LOC Pictures API; full response saved.",
+    "download_utc": "2026-11-14T20:00:14Z",
+    "download_seconds": 0.07594753603916615,
+    "sha256": "038572e2414045e623c328c6597f392b41dc331dd338f9a6ec3b1de33ebdec2e",
+    "bytes": 341365,
+    "role": "base",
+    "size": [
+      1024,
+      769
+    ]
+  },
+  {
+    "identity": "2011631173",
+    "source_page": "https://www.loc.gov/pictures/collection/highsm/item/2011631173/",
+    "metadata_url": "https://www.loc.gov/pictures/collection/highsm/item/2011631173/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/highsm/12900/12979v.jpg",
+    "title": "[Golden Gate Bridge, San Francisco, California]",
+    "collection_title": "Highsmith (Carol M.) Archive",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Highsmith%2C%20Carol%20M.%2C%201946-&co=highsm",
+        "role": "photographer",
+        "title": "Highsmith, Carol M., 1946-"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/rr/print/res/482_high.html",
+    "resource_id": "highsm.12979",
+    "metadata_provenance": "Fetched 2026-11-14 from LOC Pictures API; full response saved.",
+    "download_utc": "2026-11-14T20:00:15Z",
+    "download_seconds": 0.065361070970539,
+    "sha256": "b94b94d17e579918182db8d08ea6b5179bfb57aa84513adf0b84099632e812ba",
+    "bytes": 344476,
+    "role": "base",
+    "size": [
+      803,
+      1024
+    ]
+  },
+  {
+    "identity": "2018701036",
+    "source_page": "https://www.loc.gov/pictures/collection/highsm/item/2018701036/",
+    "metadata_url": "https://www.loc.gov/pictures/collection/highsm/item/2018701036/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/highsm/52900/52960v.jpg",
+    "title": "A pedestrian's-eye view on the Brooklyn Bridge, which crosses the East River between New York City's Manhattan and Brooklyn boroughs, or county-like jurisdictions",
+    "collection_title": "Highsmith (Carol M.) Archive",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Highsmith%2C%20Carol%20M.%2C%201946-&co=highsm",
+        "role": "photographer",
+        "title": "Highsmith, Carol M., 1946-"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/rr/print/res/482_high.html",
+    "resource_id": "highsm.52960",
+    "metadata_provenance": "Fetched 2026-11-14 from LOC Pictures API; full response saved.",
+    "download_utc": "2026-11-14T20:00:15Z",
+    "download_seconds": 0.07342977001098916,
+    "sha256": "9ee4926fdcfb61cf47c5261f88c40e2b6a55fb6c640073d13f7fae481bea6285",
+    "bytes": 676100,
+    "role": "base",
+    "size": [
+      1024,
+      768
+    ]
+  },
+  {
+    "identity": "2011636061",
+    "source_page": "https://www.loc.gov/pictures/collection/highsm/item/2011636061/",
+    "metadata_url": "https://www.loc.gov/pictures/collection/highsm/item/2011636061/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/highsm/17800/17867v.jpg",
+    "title": "Gateway Arch, or Gateway to the West, the centerpiece of the Jefferson National Expansion Memorial, St. Louis, Missouri",
+    "collection_title": "Highsmith (Carol M.) Archive",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Highsmith%2C%20Carol%20M.%2C%201946-&co=highsm",
+        "role": "photographer",
+        "title": "Highsmith, Carol M., 1946-"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/rr/print/res/482_high.html",
+    "resource_id": "highsm.17867",
+    "metadata_provenance": "Fetched 2026-11-14 from LOC Pictures API; full response saved.",
+    "download_utc": "2026-11-14T20:00:15Z",
+    "download_seconds": 0.06870572303887457,
+    "sha256": "8e8c0f84098edcd9c3ee58369effc2fefa6084f58718b1e9090acf011985b253",
+    "bytes": 272175,
+    "role": "base",
+    "size": [
+      1024,
+      810
+    ]
+  },
+  {
+    "identity": "2010630616",
+    "source_page": "https://www.loc.gov/pictures/collection/highsm/item/2010630616/",
+    "metadata_url": "https://www.loc.gov/pictures/collection/highsm/item/2010630616/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/highsm/04600/04632v.jpg",
+    "title": "Aerial view of Mount Rushmore, South Dakota",
+    "collection_title": "Highsmith (Carol M.) Archive",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Highsmith%2C%20Carol%20M.%2C%201946-&co=highsm",
+        "role": "photographer",
+        "title": "Highsmith, Carol M., 1946-"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/rr/print/res/482_high.html",
+    "resource_id": "highsm.04632",
+    "metadata_provenance": "Fetched 2026-11-14 from LOC Pictures API; full response saved.",
+    "download_utc": "2026-11-14T20:00:15Z",
+    "download_seconds": 0.07789359899470583,
+    "sha256": "1a4e63ab16deb2923ca60b5a2667bbdba4b08d371b672d1ddfaec67415509e33",
+    "bytes": 602332,
+    "role": "base",
+    "size": [
+      1024,
+      683
+    ]
+  },
+  {
+    "identity": "2017882041",
+    "source_page": "https://www.loc.gov/pictures/collection/highsm/item/2017882041/",
+    "metadata_url": "https://www.loc.gov/pictures/collection/highsm/item/2017882041/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/highsm/45200/45292v.jpg",
+    "title": "The Statue of Liberty on Liberty Island, New Jersey",
+    "collection_title": "Highsmith (Carol M.) Archive",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Highsmith%2C%20Carol%20M.%2C%201946-&co=highsm",
+        "role": "photographer",
+        "title": "Highsmith, Carol M., 1946-"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/rr/print/res/482_high.html",
+    "resource_id": "highsm.45292",
+    "metadata_provenance": "Fetched 2026-11-14 from LOC Pictures API; full response saved.",
+    "download_utc": "2026-11-14T20:00:15Z",
+    "download_seconds": 0.07593928894493729,
+    "sha256": "2ea91b703739d9119f842e39db8c06cdf2d07e624a2b61142e6e40ee821a4977",
+    "bytes": 319268,
+    "role": "base",
+    "size": [
+      1024,
+      683
+    ]
+  },
+  {
+    "identity": "2010630408",
+    "source_page": "https://www.loc.gov/pictures/collection/highsm/item/2010630408/",
+    "metadata_url": "https://www.loc.gov/pictures/collection/highsm/item/2010630408/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/highsm/04400/04421v.jpg",
+    "title": "Seattle, Washington, view taken from the Space Needle",
+    "collection_title": "Highsmith (Carol M.) Archive",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Highsmith%2C%20Carol%20M.%2C%201946-&co=highsm",
+        "role": "photographer",
+        "title": "Highsmith, Carol M., 1946-"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/rr/print/res/482_high.html",
+    "resource_id": "highsm.04421",
+    "metadata_provenance": "Fetched 2026-11-14 from LOC Pictures API; full response saved.",
+    "download_utc": "2026-11-14T20:00:15Z",
+    "download_seconds": 0.08524083101656288,
+    "sha256": "3829e2b1690dfd13c56b22e6714847478d8fc80aac5c61f169f7b551f2ca8cfb",
+    "bytes": 577252,
+    "role": "base",
+    "size": [
+      1024,
+      749
+    ]
+  },
+  {
+    "identity": "2018663548",
+    "source_page": "https://www.loc.gov/pictures/collection/highsm/item/2018663548/",
+    "metadata_url": "https://www.loc.gov/pictures/collection/highsm/item/2018663548/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/highsm/49800/49828v.jpg",
+    "title": "Garden at the historic Arizona Biltmore resort in Phoenix, Arizona.  Warren McArthur, Jr., and brother Charles McArthur, along with John McEntee Bowman -- the entrepreneur behind the Biltmore Hotel chain -- opened the hotel 1929",
+    "collection_title": "Highsmith (Carol M.) Archive",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Highsmith%2C%20Carol%20M.%2C%201946-&co=highsm",
+        "role": "photographer",
+        "title": "Highsmith, Carol M., 1946-"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/rr/print/res/482_high.html",
+    "resource_id": "highsm.49828",
+    "metadata_provenance": "Fetched 2026-11-14 from LOC Pictures API; full response saved.",
+    "download_utc": "2026-11-14T20:00:15Z",
+    "download_seconds": 0.07660208299057558,
+    "sha256": "8e5ea7cedc5a362eed1f4739f26981e58bce9a970ece7d5b8eb65f634aa5e52f",
+    "bytes": 605279,
+    "role": "base",
+    "size": [
+      1024,
+      768
+    ]
+  },
+  {
+    "identity": "2017877351",
+    "source_page": "https://www.loc.gov/pictures/item/2017877351/",
+    "metadata_url": "https://www.loc.gov/pictures/item/2017877351/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a33000/1a33800/1a33849v.jpg",
+    "title": "Commuters, who have just come off the train, waiting for the bus to go home, Lowell, Mass.",
+    "collection_title": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Delano%2C%20Jack%2C%201914-1997&co=fsac",
+        "role": "photographer",
+        "title": "Delano, Jack, 1914-1997"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/",
+    "resource_id": "fsac 1a33849 https://hdl.loc.gov/loc.pnp/fsac.1a33849",
+    "metadata_provenance": "Unchanged LOC item snapshot in token_use/data/public-loc/records.jsonl, acquired 2026-10-04; catalog API limited requests during this experiment.",
+    "download_utc": "2026-11-14T20:00:15Z",
+    "download_seconds": 0.06368332199053839,
+    "sha256": "9977ec6b39b9c5ccfd4e9fcbb0ddf330c34e6abd94c7af1fd1365e811c6c51d7",
+    "bytes": 184576,
+    "role": "base",
+    "size": [
+      1024,
+      715
+    ]
+  },
+  {
+    "identity": "2017877359",
+    "source_page": "https://www.loc.gov/pictures/item/2017877359/",
+    "metadata_url": "https://www.loc.gov/pictures/item/2017877359/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a33000/1a33800/1a33858v.jpg",
+    "title": "Railroad cars and factory buildings in Lawrence, Mass.",
+    "collection_title": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Delano%2C%20Jack%2C%201914-1997&co=fsac",
+        "role": "photographer",
+        "title": "Delano, Jack, 1914-1997"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/",
+    "resource_id": "fsac 1a33858 https://hdl.loc.gov/loc.pnp/fsac.1a33858",
+    "metadata_provenance": "Unchanged LOC item snapshot in token_use/data/public-loc/records.jsonl, acquired 2026-10-04; catalog API limited requests during this experiment.",
+    "download_utc": "2026-11-14T20:00:15Z",
+    "download_seconds": 0.08848435699474066,
+    "sha256": "f64e0ca0e8ad0be584fc7870deeb03a31fdadc7c598a95a64dc142ced4df1e8e",
+    "bytes": 283343,
+    "role": "base",
+    "size": [
+      1024,
+      715
+    ]
+  },
+  {
+    "identity": "2017877451",
+    "source_page": "https://www.loc.gov/pictures/item/2017877451/",
+    "metadata_url": "https://www.loc.gov/pictures/item/2017877451/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34319v.jpg",
+    "title": "Copper mining and sulfuric acid plant, Copperhill], Tenn.",
+    "collection_title": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Wolcott%2C%20Marion%20Post%2C%201910-1990&co=fsac",
+        "role": "photographer",
+        "title": "Wolcott, Marion Post, 1910-1990"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/",
+    "resource_id": "fsac 1a34319 https://hdl.loc.gov/loc.pnp/fsac.1a34319",
+    "metadata_provenance": "Unchanged LOC item snapshot in token_use/data/public-loc/records.jsonl, acquired 2026-10-04; catalog API limited requests during this experiment.",
+    "download_utc": "2026-11-14T20:00:15Z",
+    "download_seconds": 0.1622833880246617,
+    "sha256": "258d539df21af9ed1cef417bf1301883a3c0fa0e48ee517c8c1da95f614e3710",
+    "bytes": 262722,
+    "role": "base",
+    "size": [
+      1024,
+      728
+    ]
+  },
+  {
+    "identity": "2017877502",
+    "source_page": "https://www.loc.gov/pictures/item/2017877502/",
+    "metadata_url": "https://www.loc.gov/pictures/item/2017877502/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a33000/1a33800/1a33876v.jpg",
+    "title": "Going to town on Saturday afternoon, Greene County, Ga.",
+    "collection_title": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Delano%2C%20Jack%2C%201914-1997&co=fsac",
+        "role": "photographer",
+        "title": "Delano, Jack, 1914-1997"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/",
+    "resource_id": "fsac 1a33876 https://hdl.loc.gov/loc.pnp/fsac.1a33876",
+    "metadata_provenance": "Unchanged LOC item snapshot in token_use/data/public-loc/records.jsonl, acquired 2026-10-04; catalog API limited requests during this experiment.",
+    "download_utc": "2026-11-14T20:00:16Z",
+    "download_seconds": 0.07296688901260495,
+    "sha256": "1f5dec1dea4bc9625182300278ce14533d9a958f0ce39e69b4db60746eae8ec1",
+    "bytes": 326754,
+    "role": "base",
+    "size": [
+      1024,
+      718
+    ]
+  },
+  {
+    "identity": "2017877452",
+    "source_page": "https://www.loc.gov/pictures/item/2017877452/",
+    "metadata_url": "https://www.loc.gov/pictures/item/2017877452/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34320v.jpg",
+    "title": "Copper mining and sulfuric acid plant, Copperhill], Tenn.",
+    "collection_title": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Wolcott%2C%20Marion%20Post%2C%201910-1990&co=fsac",
+        "role": "photographer",
+        "title": "Wolcott, Marion Post, 1910-1990"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/",
+    "resource_id": "fsac 1a34320 https://hdl.loc.gov/loc.pnp/fsac.1a34320",
+    "metadata_provenance": "Unchanged LOC item snapshot in token_use/data/public-loc/records.jsonl, acquired 2026-10-04; catalog API limited requests during this experiment.",
+    "download_utc": "2026-11-14T20:00:16Z",
+    "download_seconds": 0.06818068301072344,
+    "sha256": "1b02fb92507f9109870d3959b26b93c01b1df5595cc3b3f2a9e2904dc97be6d5",
+    "bytes": 278225,
+    "role": "base",
+    "size": [
+      1024,
+      727
+    ]
+  },
+  {
+    "identity": "2017877453",
+    "source_page": "https://www.loc.gov/pictures/item/2017877453/",
+    "metadata_url": "https://www.loc.gov/pictures/item/2017877453/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34321v.jpg",
+    "title": "A train bringing copper ore out of the mine, Ducktown, Tenn. Fumes from smelting copper for sulfuric acid have destroyed all vegetation and eroded the land",
+    "collection_title": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Wolcott%2C%20Marion%20Post%2C%201910-1990&co=fsac",
+        "role": "photographer",
+        "title": "Wolcott, Marion Post, 1910-1990"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/",
+    "resource_id": "fsac 1a34321 https://hdl.loc.gov/loc.pnp/fsac.1a34321",
+    "metadata_provenance": "Unchanged LOC item snapshot in token_use/data/public-loc/records.jsonl, acquired 2026-10-04; catalog API limited requests during this experiment.",
+    "download_utc": "2026-11-14T20:00:16Z",
+    "download_seconds": 0.07272639300208539,
+    "sha256": "d21c3185f38e67e96648f81f441b4da82e6947f23a6b46ca2f564ff205e78740",
+    "bytes": 299622,
+    "role": "base",
+    "size": [
+      1024,
+      727
+    ]
+  },
+  {
+    "identity": "2017877454",
+    "source_page": "https://www.loc.gov/pictures/item/2017877454/",
+    "metadata_url": "https://www.loc.gov/pictures/item/2017877454/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34322v.jpg",
+    "title": "Copper mining and sulfuric acid plant, Copperhill], Tenn.",
+    "collection_title": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Wolcott%2C%20Marion%20Post%2C%201910-1990&co=fsac",
+        "role": "photographer",
+        "title": "Wolcott, Marion Post, 1910-1990"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/",
+    "resource_id": "fsac 1a34322 https://hdl.loc.gov/loc.pnp/fsac.1a34322",
+    "metadata_provenance": "Unchanged LOC item snapshot in token_use/data/public-loc/records.jsonl, acquired 2026-10-04; catalog API limited requests during this experiment.",
+    "download_utc": "2026-11-14T20:00:16Z",
+    "download_seconds": 0.137876218999736,
+    "sha256": "3cdf5186bf47aeb02c6f90c07ecee6449fe49f701e0ee9cda06edfa43a28b259",
+    "bytes": 272828,
+    "role": "base",
+    "size": [
+      1024,
+      721
+    ]
+  },
+  {
+    "identity": "2017877476",
+    "source_page": "https://www.loc.gov/pictures/item/2017877476/",
+    "metadata_url": "https://www.loc.gov/pictures/item/2017877476/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34330v.jpg",
+    "title": "Southern U.S., Mississippi?",
+    "collection_title": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Wolcott%2C%20Marion%20Post%2C%201910-1990&co=fsac",
+        "role": "photographer",
+        "title": "Wolcott, Marion Post, 1910-1990"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/",
+    "resource_id": "fsac 1a34330 https://hdl.loc.gov/loc.pnp/fsac.1a34330",
+    "metadata_provenance": "Unchanged LOC item snapshot in token_use/data/public-loc/records.jsonl, acquired 2026-10-04; catalog API limited requests during this experiment.",
+    "download_utc": "2026-11-14T20:00:16Z",
+    "download_seconds": 0.12015188299119473,
+    "sha256": "461b1c0d22f673975adb3fb336df4b0b7c0cd35799fe5c159de8e8ea85b07870",
+    "bytes": 345894,
+    "role": "base",
+    "size": [
+      1024,
+      726
+    ]
+  },
+  {
+    "identity": "2017877477",
+    "source_page": "https://www.loc.gov/pictures/item/2017877477/",
+    "metadata_url": "https://www.loc.gov/pictures/item/2017877477/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34331v.jpg",
+    "title": "Negroes fishing in creek near cotton plantations outside Belzoni, Miss.",
+    "collection_title": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Wolcott%2C%20Marion%20Post%2C%201910-1990&co=fsac",
+        "role": "photographer",
+        "title": "Wolcott, Marion Post, 1910-1990"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/",
+    "resource_id": "fsac 1a34331 https://hdl.loc.gov/loc.pnp/fsac.1a34331",
+    "metadata_provenance": "Unchanged LOC item snapshot in token_use/data/public-loc/records.jsonl, acquired 2026-10-04; catalog API limited requests during this experiment.",
+    "download_utc": "2026-11-14T20:00:16Z",
+    "download_seconds": 0.17357889097183943,
+    "sha256": "72f10c39b43fe9d0d0f6406d9c80d8ce07516f9d7c4d4e5a03d95bca52672f7e",
+    "bytes": 322375,
+    "role": "base",
+    "size": [
+      1024,
+      701
+    ]
+  },
+  {
+    "identity": "2017877478",
+    "source_page": "https://www.loc.gov/pictures/item/2017877478/",
+    "metadata_url": "https://www.loc.gov/pictures/item/2017877478/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34332v.jpg",
+    "title": "Negroes fishing in creek near cotton plantations outside Belzoni, Miss. Delta",
+    "collection_title": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Wolcott%2C%20Marion%20Post%2C%201910-1990&co=fsac",
+        "role": "photographer",
+        "title": "Wolcott, Marion Post, 1910-1990"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/",
+    "resource_id": "fsac 1a34332 https://hdl.loc.gov/loc.pnp/fsac.1a34332",
+    "metadata_provenance": "Unchanged LOC item snapshot in token_use/data/public-loc/records.jsonl, acquired 2026-10-04; catalog API limited requests during this experiment.",
+    "download_utc": "2026-11-14T20:00:16Z",
+    "download_seconds": 0.07482932601124048,
+    "sha256": "ea69d95d9269ad64082145d49063483c3ed65f7c883dd1ebeee4a17d7cf15d93",
+    "bytes": 517766,
+    "role": "base",
+    "size": [
+      1024,
+      741
+    ]
+  },
+  {
+    "identity": "2017877464",
+    "source_page": "https://www.loc.gov/pictures/item/2017877464/",
+    "metadata_url": "https://www.loc.gov/pictures/item/2017877464/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34357v.jpg",
+    "title": "Bayou Bourbeau plantation operated by Bayou Bourbeau Farmstead Association, a cooperative established through the cooperation of FSA, Natchitoches, La.",
+    "collection_title": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Wolcott%2C%20Marion%20Post%2C%201910-1990&co=fsac",
+        "role": "photographer",
+        "title": "Wolcott, Marion Post, 1910-1990"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/",
+    "resource_id": "fsac 1a34357 https://hdl.loc.gov/loc.pnp/fsac.1a34357",
+    "metadata_provenance": "Unchanged LOC item snapshot in token_use/data/public-loc/records.jsonl, acquired 2026-10-04; catalog API limited requests during this experiment.",
+    "download_utc": "2026-11-14T20:00:16Z",
+    "download_seconds": 0.07611996994819492,
+    "sha256": "7eb755e23167e7ac6c8dc4fdf39a85358156c513fe318f2cedfe3f778dd26706",
+    "bytes": 340075,
+    "role": "base",
+    "size": [
+      1024,
+      732
+    ]
+  },
+  {
+    "identity": "2017877465",
+    "source_page": "https://www.loc.gov/pictures/item/2017877465/",
+    "metadata_url": "https://www.loc.gov/pictures/item/2017877465/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34358v.jpg",
+    "title": "Negro tenant's home beside the Mississippi River levee, near Lake Providence, La.",
+    "collection_title": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+    "creator": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Wolcott%2C%20Marion%20Post%2C%201910-1990&co=fsac",
+        "role": "photographer",
+        "title": "Wolcott, Marion Post, 1910-1990"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/",
+    "resource_id": "fsac 1a34358 https://hdl.loc.gov/loc.pnp/fsac.1a34358",
+    "metadata_provenance": "Unchanged LOC item snapshot in token_use/data/public-loc/records.jsonl, acquired 2026-10-04; catalog API limited requests during this experiment.",
+    "download_utc": "2026-11-14T20:00:17Z",
+    "download_seconds": 0.2881067229900509,
+    "sha256": "fcea8b7d8ffb5612f18dfb572db3aa6cf7df033debcf35e1ad41c804dcabedb4",
+    "bytes": 296187,
+    "role": "base",
+    "size": [
+      1024,
+      727
+    ]
+  },
+  {
+    "identity": "2016832837",
+    "source_page": "https://www.loc.gov/item/2016832837/",
+    "metadata_url": "https://www.loc.gov/item/2016832837/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/npcc/06400/06492v.jpg",
+    "title": "[Four unidentified women on tennis court], 5/31/22",
+    "collection_title": "National Photo Company Collection (Library of Congress)",
+    "creator": [],
+    "rights_statement": "No known restrictions on publication. For more information, see National Photo Company Collection - Rights and Restrictions Information https://www.loc.gov/rr/print/res/275_npco.html\n<p>The Library of Congress does not&nbsp;own rights to material  in its collections. Therefore, it does not license or charge permission fees  for use of such material and cannot grant or deny permission to publish or  otherwise distribute the material. </p>\n<p>Ultimately, it is the researcher's obligation to assess copyright or other use restrictions and  obtain permission from third parties when necessary before publishing or  otherwise distributing materials found in the Library's collections. </p>\n<p>For information about reproducing,  publishing, and citing material from this collection, as well as access to the  original items, see: <a href=\"//www.loc.gov/rr/print/res/275_npco.html\">National Photo Company Collection - Rights and Restrictions Information</a> </p>\n \n",
+    "rights_url": "https://www.loc.gov/rr/print/res/275_npco.html",
+    "resource_id": "https://tile.loc.gov/storage-services/service/pnp/npcc/06400/06492v.jpg",
+    "metadata_provenance": "Existing LOC snapshot token_use/research/data/loc-sample.json, index 0; exact record copied. Parent snapshot hash retained in collection-preparation.json.",
+    "download_utc": "2026-11-14T20:00:17Z",
+    "download_seconds": 0.2832365189678967,
+    "sha256": "5c6bf6efb1d11cf282b1cf1721bad6420ff469aaad0080e84da75869553160ef",
+    "bytes": 150819,
+    "role": "base",
+    "size": [
+      1024,
+      834
+    ]
+  },
+  {
+    "identity": "2017832209",
+    "source_page": "https://www.loc.gov/item/2017832209/",
+    "metadata_url": "https://www.loc.gov/item/2017832209/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8d21000/8d21100/8d21117v.jpg",
+    "title": "[Untitled photo, possibly related to: Greenbelt, Maryland. Handball courts behind the swimming pool]",
+    "collection_title": "Farm Security Administration - Office of War Information photograph collection (Library of Congress)",
+    "creator": [
+      {
+        "Name": "Collins, Marjory, 1912-1985",
+        "Role": "photographer"
+      }
+    ],
+    "rights_statement": "<p>The contents of the Library of Congress Farm Security Administration/Office of War Information Black-and-White Negatives are in the public domain and are free to use and reuse.</p>\r\n<p> Credit Line: Library of Congress, Prints &amp; Photographs Division, Farm Security Administration/Office of War Information Black-and-White Negatives.</p>\r\n<p>For information about reproducing, publishing, and citing material from this collection, as well as access to the original items, see: <a href=\"https://www.loc.gov/rr/print/res/071_fsab.html\">U.S. Farm Security Administration/Office of War Information Black &amp; White Photographs - Rights and Restrictions Information</a>\r\n</p>\r\n<p>More about <a href=\"/legal/\">Copyright and other Restrictions</a> </p>\r\n<p>For guidance about compiling full citations consult <a href=\"https://www.loc.gov/teachers/usingprimarysources/citing.html\">Citing Primary Sources</a>.</p>\nNo known restrictions. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html",
+    "rights_url": "https://www.loc.gov/rr/print/res/071_fsab.html",
+    "resource_id": "https://tile.loc.gov/storage-services/service/pnp/fsa/8d21000/8d21100/8d21117v.jpg",
+    "metadata_provenance": "Existing LOC snapshot token_use/research/data/loc-sample.json, index 1; exact record copied. Parent snapshot hash retained in collection-preparation.json.",
+    "download_utc": "2026-11-14T20:00:17Z",
+    "download_seconds": 0.09973272000206634,
+    "sha256": "756c873ebe52f1a9b13615cbe08d1715851f2cddeb5ad83cfea5a71399fa8d75",
+    "bytes": 406117,
+    "role": "base",
+    "size": [
+      991,
+      1024
+    ]
+  },
+  {
+    "identity": "2017843211",
+    "source_page": "https://www.loc.gov/item/2017843211/",
+    "metadata_url": "https://www.loc.gov/item/2017843211/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8d12000/8d12500/8d12511v.jpg",
+    "title": "Daytona Beach, Florida. Bethune-Cookman College. Dr. Mary McLeod Bethune, founder and former president and director of the NYA (National Youth Administration) Negro Relations",
+    "collection_title": "Farm Security Administration - Office of War Information photograph collection (Library of Congress)",
+    "creator": [
+      {
+        "Name": "Parks, Gordon, 1912-2006",
+        "Role": "photographer"
+      }
+    ],
+    "rights_statement": "<p>The contents of the Library of Congress Farm Security Administration/Office of War Information Black-and-White Negatives are in the public domain and are free to use and reuse.</p>\r\n<p> Credit Line: Library of Congress, Prints &amp; Photographs Division, Farm Security Administration/Office of War Information Black-and-White Negatives.</p>\r\n<p>For information about reproducing, publishing, and citing material from this collection, as well as access to the original items, see: <a href=\"https://www.loc.gov/rr/print/res/071_fsab.html\">U.S. Farm Security Administration/Office of War Information Black &amp; White Photographs - Rights and Restrictions Information</a>\r\n</p>\r\n<p>More about <a href=\"/legal/\">Copyright and other Restrictions</a> </p>\r\n<p>For guidance about compiling full citations consult <a href=\"https://www.loc.gov/teachers/usingprimarysources/citing.html\">Citing Primary Sources</a>.</p>\nNo known restrictions. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html",
+    "rights_url": "https://www.loc.gov/rr/print/res/071_fsab.html",
+    "resource_id": "https://tile.loc.gov/storage-services/service/pnp/fsa/8d12000/8d12500/8d12511v.jpg",
+    "metadata_provenance": "Existing LOC snapshot token_use/research/data/loc-sample.json, index 4; exact record copied. Parent snapshot hash retained in collection-preparation.json.",
+    "download_utc": "2026-11-14T20:00:17Z",
+    "download_seconds": 0.06768682098481804,
+    "sha256": "de00d0af3184afac91e299cce7377429dbb7246e75c990d0dfaa119031711381",
+    "bytes": 302169,
+    "role": "base",
+    "size": [
+      818,
+      1024
+    ]
+  },
+  {
+    "identity": "2017705303",
+    "source_page": "https://www.loc.gov/item/2017705303/",
+    "metadata_url": "https://www.loc.gov/item/2017705303/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/mrg/03100/03192v.jpg",
+    "title": "Haunted house, Castle Park Golf, Polk Street, Riverside, California",
+    "collection_title": "Margolies, John John Margolies Roadside America photograph archive",
+    "creator": [
+      {
+        "Name": "Margolies, John",
+        "Role": "photographer"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication. For more information, see \"John Margolies Roadside America Photograph Archive - Rights and Restrictions Information\" https://www.loc.gov/rr/print/res/723_marg.html",
+    "rights_url": "https://www.loc.gov/rr/print/res/723_marg.html",
+    "resource_id": "https://tile.loc.gov/storage-services/service/pnp/mrg/03100/03192v.jpg",
+    "metadata_provenance": "Existing LOC snapshot token_use/research/data/loc-sample.json, index 9; exact record copied. Parent snapshot hash retained in collection-preparation.json.",
+    "download_utc": "2026-11-14T20:00:17Z",
+    "download_seconds": 0.2423216620227322,
+    "sha256": "ee3dca15da8a48de16fbb700feeb442575327a008b9c4bc4bc9d4c160dbf246c",
+    "bytes": 454598,
+    "role": "base",
+    "size": [
+      714,
+      1024
+    ]
+  },
+  {
+    "identity": "2017811986",
+    "source_page": "https://www.loc.gov/item/2017811986/",
+    "metadata_url": "https://www.loc.gov/item/2017811986/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8c18000/8c18900/8c18989v.jpg",
+    "title": "Bathroom in house which rents for sixteen dollars a month. Norfolk, Virginia",
+    "collection_title": "Farm Security Administration - Office of War Information Photograph Collection (Library of Congress)",
+    "creator": [
+      {
+        "Name": "Vachon, John, 1914-1975",
+        "Role": "photographer"
+      }
+    ],
+    "rights_statement": "<p>The contents of the Library of Congress Farm Security Administration/Office of War Information Black-and-White Negatives are in the public domain and are free to use and reuse.</p>\r\n<p> Credit Line: Library of Congress, Prints &amp; Photographs Division, Farm Security Administration/Office of War Information Black-and-White Negatives.</p>\r\n<p>For information about reproducing, publishing, and citing material from this collection, as well as access to the original items, see: <a href=\"https://www.loc.gov/rr/print/res/071_fsab.html\">U.S. Farm Security Administration/Office of War Information Black &amp; White Photographs - Rights and Restrictions Information</a>\r\n</p>\r\n<p>More about <a href=\"/legal/\">Copyright and other Restrictions</a> </p>\r\n<p>For guidance about compiling full citations consult <a href=\"https://www.loc.gov/teachers/usingprimarysources/citing.html\">Citing Primary Sources</a>.</p>\nNo known restrictions. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html",
+    "rights_url": "https://www.loc.gov/rr/print/res/071_fsab.html",
+    "resource_id": "https://tile.loc.gov/storage-services/service/pnp/fsa/8c18000/8c18900/8c18989v.jpg",
+    "metadata_provenance": "Existing LOC snapshot token_use/research/data/loc-sample.json, index 10; exact record copied. Parent snapshot hash retained in collection-preparation.json.",
+    "download_utc": "2026-11-14T20:00:18Z",
+    "download_seconds": 0.23705503402743489,
+    "sha256": "cf8215c8b782cb41666b621072a1feb02d12f30fa2150cd89ad6d8e117b8e1bc",
+    "bytes": 334374,
+    "role": "base",
+    "size": [
+      1024,
+      781
+    ]
+  },
+  {
+    "identity": "2016804519",
+    "source_page": "https://www.loc.gov/item/2016804519/",
+    "metadata_url": "https://www.loc.gov/item/2016804519/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/det/4a10000/4a12000/4a12100/4a12198v.jpg",
+    "title": "A Cape Ann fisherman mending his nets",
+    "collection_title": "Detroit Publishing Company photograph collection (Library of Congress)",
+    "creator": [
+      {
+        "Name": "Detroit Publishing Co.",
+        "Role": "publisher"
+      },
+      {
+        "Name": "Detroit Publishing Co.",
+        "Role": "copyright claimant"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.\n<p>The Library of Congress believes that many of the papers in the Detroit Publishing Company collection are in the public domain or have no known copyright restrictions and are free to use and reuse. For example, all photos published in the U.S. more than 95 years ago are in the public domain. The Library has also obtained permission for the use of many other materials, and presents additional materials pursuant to fair use under United States copyright law. Researchers should watch for documents that may be copyrighted (for example, published in the United States less than 95 years ago, or unpublished and the author died less than 70 years ago).</p>\r\n<p> You are responsible for deciding whether your use of the items in this collection is legal. You will need written permission from the rightsholders to copy, distribute, or otherwise use copyrighted materials except as allowed by fair use or other statutory exemptions. Some materials may be protected under international law. You may also need permission from holders of other rights, such as publicity and/or privacy rights.</p>\r\n<p>Credit Line: Library of Congress, Prints &amp; Photographs Division, Detroit Publishing Company Collection.<br>\r\nFor information about reproducing, publishing, and citing material from this collection, as well as access to the original items, see: <a href=\"https://www.loc.gov/rr/print/res/102_det.html\">Detroit Publishing Company - Rights and Restrictions Information</a></p>\r\n<p>More about <a href=\"/legal/\">Copyright and other Restrictions</a> </p>\r\n<p>For guidance about compiling full citations consult <a href=\"https://www.loc.gov/teachers/usingprimarysources/citing.html\">Citing Primary Sources</a>.</p>",
+    "rights_url": "https://www.loc.gov/rr/print/res/102_det.html",
+    "resource_id": "https://tile.loc.gov/storage-services/service/pnp/det/4a10000/4a12000/4a12100/4a12198v.jpg",
+    "metadata_provenance": "Existing LOC snapshot token_use/research/data/loc-sample.json, index 14; exact record copied. Parent snapshot hash retained in collection-preparation.json.",
+    "download_utc": "2026-11-14T20:00:18Z",
+    "download_seconds": 0.21170158201130107,
+    "sha256": "7fc9243359d3ead5babc55e12ebe8796e11981bb3ea03b86e324b50244998516",
+    "bytes": 175454,
+    "role": "base",
+    "size": [
+      827,
+      1024
+    ]
+  },
+  {
+    "identity": "2003656135",
+    "source_page": "https://www.loc.gov/item/2003656135/",
+    "metadata_url": "https://www.loc.gov/item/2003656135/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3b10000/3b18000/3b18600/3b18665r.jpg",
+    "title": "[Race between Lincoln Beechey in airplane and Barney Oldfield in automobile, going around race track]",
+    "collection_title": "",
+    "creator": [],
+    "rights_statement": "No known restrictions on publication.",
+    "rights_url": "https://www.loc.gov/item/2003656135/",
+    "resource_id": "https://tile.loc.gov/storage-services/service/pnp/cph/3b10000/3b18000/3b18600/3b18665r.jpg",
+    "metadata_provenance": "Existing LOC snapshot token_use/research/data/loc-sample.json, index 15; exact record copied. Parent snapshot hash retained in collection-preparation.json.",
+    "download_utc": "2026-11-14T20:00:18Z",
+    "download_seconds": 0.059133174014277756,
+    "sha256": "54e522c970d69c3dabf57771197d232332a632041841777c1d6f32fde31f2e8d",
+    "bytes": 19400,
+    "role": "base",
+    "size": [
+      640,
+      505
+    ]
+  },
+  {
+    "identity": "2016816959",
+    "source_page": "https://www.loc.gov/item/2016816959/",
+    "metadata_url": "https://www.loc.gov/item/2016816959/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/det/4a20000/4a27000/4a27900/4a27901v.jpg",
+    "title": "[First and ten millionth Ford]",
+    "collection_title": "Detroit Publishing Company photograph collection (Library of Congress)",
+    "creator": [
+      {
+        "Name": "Detroit Publishing Co.",
+        "Role": "publisher"
+      }
+    ],
+    "rights_statement": "No known restrictions on publication.\n<p>The Library of Congress believes that many of the papers in the Detroit Publishing Company collection are in the public domain or have no known copyright restrictions and are free to use and reuse. For example, all photos published in the U.S. more than 95 years ago are in the public domain. The Library has also obtained permission for the use of many other materials, and presents additional materials pursuant to fair use under United States copyright law. Researchers should watch for documents that may be copyrighted (for example, published in the United States less than 95 years ago, or unpublished and the author died less than 70 years ago).</p>\r\n<p> You are responsible for deciding whether your use of the items in this collection is legal. You will need written permission from the rightsholders to copy, distribute, or otherwise use copyrighted materials except as allowed by fair use or other statutory exemptions. Some materials may be protected under international law. You may also need permission from holders of other rights, such as publicity and/or privacy rights.</p>\r\n<p>Credit Line: Library of Congress, Prints &amp; Photographs Division, Detroit Publishing Company Collection.<br>\r\nFor information about reproducing, publishing, and citing material from this collection, as well as access to the original items, see: <a href=\"https://www.loc.gov/rr/print/res/102_det.html\">Detroit Publishing Company - Rights and Restrictions Information</a></p>\r\n<p>More about <a href=\"/legal/\">Copyright and other Restrictions</a> </p>\r\n<p>For guidance about compiling full citations consult <a href=\"https://www.loc.gov/teachers/usingprimarysources/citing.html\">Citing Primary Sources</a>.</p>",
+    "rights_url": "https://www.loc.gov/rr/print/res/102_det.html",
+    "resource_id": "https://tile.loc.gov/storage-services/service/pnp/det/4a20000/4a27000/4a27900/4a27901v.jpg",
+    "metadata_provenance": "Existing LOC snapshot token_use/research/data/loc-sample.json, index 21; exact record copied. Parent snapshot hash retained in collection-preparation.json.",
+    "download_utc": "2026-11-14T20:00:18Z",
+    "download_seconds": 0.18011107499478385,
+    "sha256": "952120c7ed0319d5444e2b5ca74892c183dd222f5c28c0ac3dcd09aa6e77e103",
+    "bytes": 406220,
+    "role": "incremental_new",
+    "size": [
+      1024,
+      754
+    ]
+  },
+  {
+    "identity": "2017778455",
+    "source_page": "https://www.loc.gov/item/2017778455/",
+    "metadata_url": "https://www.loc.gov/item/2017778455/?fo=json",
+    "download_url": "https://tile.loc.gov/storage-services/service/pnp/fsa/8b18000/8b18400/8b18448v.jpg",
+    "title": "Farm people at livestock auction. Central Iowa Fair, Marshalltown, Iowa",
+    "collection_title": "Farm Security Administration - Office of War Information Photograph Collection (Library of Congress)",
+    "creator": [
+      {
+        "Name": "Rothstein, Arthur, 1915-1985",
+        "Role": "photographer"
+      }
+    ],
+    "rights_statement": "<p>The contents of the Library of Congress Farm Security Administration/Office of War Information Black-and-White Negatives are in the public domain and are free to use and reuse.</p>\r\n<p> Credit Line: Library of Congress, Prints &amp; Photographs Division, Farm Security Administration/Office of War Information Black-and-White Negatives.</p>\r\n<p>For information about reproducing, publishing, and citing material from this collection, as well as access to the original items, see: <a href=\"https://www.loc.gov/rr/print/res/071_fsab.html\">U.S. Farm Security Administration/Office of War Information Black &amp; White Photographs - Rights and Restrictions Information</a>\r\n</p>\r\n<p>More about <a href=\"/legal/\">Copyright and other Restrictions</a> </p>\r\n<p>For guidance about compiling full citations consult <a href=\"https://www.loc.gov/teachers/usingprimarysources/citing.html\">Citing Primary Sources</a>.</p>\nNo known restrictions. For information, see U.S. Farm Security Administration/Office of War Information Black & White Photographs https://www.loc.gov/rr/print/res/071_fsab.html",
+    "rights_url": "https://www.loc.gov/rr/print/res/071_fsab.html",
+    "resource_id": "https://tile.loc.gov/storage-services/service/pnp/fsa/8b18000/8b18400/8b18448v.jpg",
+    "metadata_provenance": "Existing LOC snapshot token_use/research/data/loc-sample.json, index 24; exact record copied. Parent snapshot hash retained in collection-preparation.json.",
+    "download_utc": "2026-11-14T20:00:18Z",
+    "download_seconds": 0.07167431199923158,
+    "sha256": "48381b6773908c6ee1f8bcb0a3bf6a62e00410bd7e91c023c6241e1a15ee28c2",
+    "bytes": 272603,
+    "role": "incremental_new",
+    "size": [
+      1024,
+      774
+    ]
+  }
+]

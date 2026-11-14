@@ -1,0 +1,43 @@
+{
+  "run_utc": "2026-11-14T20:18:42Z",
+  "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:28:48) [GCC 14.3.0]",
+  "platform": "Linux-5.14.0-687.65.1.el9_8.x86_64-x86_64-with-glibc2.34",
+  "machine": "x86_64",
+  "cpu_model": "Intel(R) Xeon(R) Gold 6426Y",
+  "cpu_count": 32,
+  "affinity": [
+    0,
+    1
+  ],
+  "threads": {
+    "OMP_NUM_THREADS": 2,
+    "MKL_NUM_THREADS": 2,
+    "OPENBLAS_NUM_THREADS": 2,
+    "torch_intraop": 2,
+    "torch_interop": 1
+  },
+  "torch_runtime_version": "2.10.0+cpu",
+  "device": "CPU only; no GPU used",
+  "dependencies": {
+    "torch": "2.10.0+cpu",
+    "numpy": "2.2.6",
+    "Pillow": "13.0.0",
+    "ImageHash": "4.3.2",
+    "scipy": "1.17.0",
+    "PyWavelets": "1.10.0",
+    "requests": "2.32.5",
+    "psutil": "7.1.3"
+  },
+  "repeats": 3,
+  "thresholds_sha256": "898e96646845647fe9aa66791c2517b1a14bdb5eb9aa486a224c93aaa5e661c2",
+  "timing_scope": "Parent wall: complete fresh subprocess, imports + file reads + content hashes + cache validation + model integrity/load when needed + extraction + comparison + JSON output. Model/data downloads excluded. CPU + peak RSS: Linux wait4 resource usage for the complete child, including output serialization.",
+  "limitations": [
+    "Application cache cleared for first/full runs; OS page cache not cleared.",
+    "Shared host; fixed CPU affinity and threads do not isolate other workloads.",
+    "Sequential single-image inference; first forward/JIT costs included.",
+    "Cold/warm describe application feature cache, not OS cache.",
+    "Model loaded lazily only when features are missing.",
+    "Incremental run rehashes all files to detect changes; it extracts only new content.",
+    "No energy, monetary cost, FLOPs, or GPU measurements."
+  ]
+}

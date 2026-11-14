@@ -1,0 +1,554 @@
+[
+  {
+    "method": "D",
+    "configuration": {
+      "algorithm_version": "1.0.0",
+      "method": "D",
+      "phash": {
+        "hash_size": 8,
+        "highfreq_factor": 4
+      },
+      "model": "9f26bd4c848cc19b73d2ae92eea6e04886f61a7b764ceb7a13aeee62e6a6db56",
+      "preprocessing": {
+        "color": "EXIF transpose then RGB",
+        "resize": [
+          320,
+          320
+        ],
+        "interpolation": "Pillow BILINEAR",
+        "aspect_ratio": "direct square resize, no crop",
+        "scale": 0.00392156862745098,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "output": "L2 normalize float32; cosine dot product rounded to 8 decimals"
+      },
+      "dependencies": {
+        "Pillow": "13.0.0",
+        "numpy": "2.2.6",
+        "ImageHash": "4.3.2",
+        "scipy": "1.17.0",
+        "torch": "2.10.0+cpu"
+      },
+      "device": "cpu",
+      "torch_threads": 2,
+      "interop_threads": 1,
+      "batch_size": 1
+    },
+    "thresholds": {
+      "phash_max_distance": 20,
+      "ai_min_cosine": 0.75
+    },
+    "counters": {
+      "files": 113,
+      "files_read": 113,
+      "files_decoded": 94,
+      "sha256_computations": 113,
+      "phash_computations": 0,
+      "ai_extractions": 94,
+      "cache_hits": 0,
+      "exact_reuses": 19,
+      "byte_comparisons": 19,
+      "ai_vector_comparisons": 4371,
+      "ai_score_pairs_including_exact_groups": 4389
+    },
+    "stages": {
+      "file_read_s": 0.0482555185444653,
+      "content_hash_s": 0.015752695500850677,
+      "byte_verify_s": 0.00030968344071879983,
+      "cache_read_s": 0.12234217202058062,
+      "image_library_import_s": 0.0155818400089629,
+      "model_integrity_s": 0.10935660800896585,
+      "torch_import_s": 1.1423415720346384,
+      "model_load_s": 1.0102530120057054,
+      "decode_s": 0.3719521726598032,
+      "preprocess_s": 0.3856782054062933,
+      "feature_extract_s": 9.169962921412662,
+      "cache_write_s": 0.8463027243851684,
+      "compare_s": 0.012360445980448276,
+      "phash_library_import_s": 0.0,
+      "phash_s": 0.0
+    },
+    "torch_runtime_version": "2.10.0+cpu",
+    "worker_wall_s": 13.364714680996258,
+    "cpu_s": 21.370079,
+    "peak_rss_mib": 506.8046875,
+    "affinity": [
+      0,
+      1
+    ],
+    "process_wall_s": 13.818959423981141,
+    "worker_cpu_before_output_s": 20.946256,
+    "utc": "2026-11-14T20:17:34Z",
+    "label": "incremental-full-0",
+    "repeat": 0,
+    "mode": "full"
+  },
+  {
+    "method": "D",
+    "configuration": {
+      "algorithm_version": "1.0.0",
+      "method": "D",
+      "phash": {
+        "hash_size": 8,
+        "highfreq_factor": 4
+      },
+      "model": "9f26bd4c848cc19b73d2ae92eea6e04886f61a7b764ceb7a13aeee62e6a6db56",
+      "preprocessing": {
+        "color": "EXIF transpose then RGB",
+        "resize": [
+          320,
+          320
+        ],
+        "interpolation": "Pillow BILINEAR",
+        "aspect_ratio": "direct square resize, no crop",
+        "scale": 0.00392156862745098,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "output": "L2 normalize float32; cosine dot product rounded to 8 decimals"
+      },
+      "dependencies": {
+        "Pillow": "13.0.0",
+        "numpy": "2.2.6",
+        "ImageHash": "4.3.2",
+        "scipy": "1.17.0",
+        "torch": "2.10.0+cpu"
+      },
+      "device": "cpu",
+      "torch_threads": 2,
+      "interop_threads": 1,
+      "batch_size": 1
+    },
+    "thresholds": {
+      "phash_max_distance": 20,
+      "ai_min_cosine": 0.75
+    },
+    "counters": {
+      "files": 113,
+      "files_read": 113,
+      "files_decoded": 4,
+      "sha256_computations": 113,
+      "phash_computations": 0,
+      "ai_extractions": 4,
+      "cache_hits": 90,
+      "exact_reuses": 19,
+      "byte_comparisons": 19,
+      "ai_vector_comparisons": 4371,
+      "ai_score_pairs_including_exact_groups": 4389
+    },
+    "stages": {
+      "file_read_s": 0.056485203676857054,
+      "content_hash_s": 0.01564769825199619,
+      "byte_verify_s": 0.0003010313375853002,
+      "cache_read_s": 0.2228906749514863,
+      "image_library_import_s": 0.02371155802393332,
+      "model_integrity_s": 0.10695659799966961,
+      "torch_import_s": 1.33004605199676,
+      "model_load_s": 1.255342765012756,
+      "decode_s": 0.028595171053893864,
+      "preprocess_s": 0.016515274008270353,
+      "feature_extract_s": 0.5248283839318901,
+      "cache_write_s": 0.03718884399859235,
+      "compare_s": 0.011085774982348084,
+      "phash_library_import_s": 0.0,
+      "phash_s": 0.0
+    },
+    "torch_runtime_version": "2.10.0+cpu",
+    "worker_wall_s": 3.7462145279860124,
+    "cpu_s": 3.165858,
+    "peak_rss_mib": 503.00390625,
+    "affinity": [
+      0,
+      1
+    ],
+    "process_wall_s": 4.163432500034105,
+    "worker_cpu_before_output_s": 2.775489,
+    "utc": "2026-11-14T20:17:38Z",
+    "label": "incremental-reuse-0",
+    "repeat": 0,
+    "mode": "reuse"
+  },
+  {
+    "method": "D",
+    "configuration": {
+      "algorithm_version": "1.0.0",
+      "method": "D",
+      "phash": {
+        "hash_size": 8,
+        "highfreq_factor": 4
+      },
+      "model": "9f26bd4c848cc19b73d2ae92eea6e04886f61a7b764ceb7a13aeee62e6a6db56",
+      "preprocessing": {
+        "color": "EXIF transpose then RGB",
+        "resize": [
+          320,
+          320
+        ],
+        "interpolation": "Pillow BILINEAR",
+        "aspect_ratio": "direct square resize, no crop",
+        "scale": 0.00392156862745098,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "output": "L2 normalize float32; cosine dot product rounded to 8 decimals"
+      },
+      "dependencies": {
+        "Pillow": "13.0.0",
+        "numpy": "2.2.6",
+        "ImageHash": "4.3.2",
+        "scipy": "1.17.0",
+        "torch": "2.10.0+cpu"
+      },
+      "device": "cpu",
+      "torch_threads": 2,
+      "interop_threads": 1,
+      "batch_size": 1
+    },
+    "thresholds": {
+      "phash_max_distance": 20,
+      "ai_min_cosine": 0.75
+    },
+    "counters": {
+      "files": 113,
+      "files_read": 113,
+      "files_decoded": 94,
+      "sha256_computations": 113,
+      "phash_computations": 0,
+      "ai_extractions": 94,
+      "cache_hits": 0,
+      "exact_reuses": 19,
+      "byte_comparisons": 19,
+      "ai_vector_comparisons": 4371,
+      "ai_score_pairs_including_exact_groups": 4389
+    },
+    "stages": {
+      "file_read_s": 0.0515227930736728,
+      "content_hash_s": 0.015813220932614058,
+      "byte_verify_s": 0.0004345613415353,
+      "cache_read_s": 0.12071493297116831,
+      "image_library_import_s": 0.01753149402793497,
+      "model_integrity_s": 0.10702355997636914,
+      "torch_import_s": 1.139497488969937,
+      "model_load_s": 1.1020905600162223,
+      "decode_s": 0.37509107013465837,
+      "preprocess_s": 0.39753392088459805,
+      "feature_extract_s": 9.143627520010341,
+      "cache_write_s": 0.9112700288533233,
+      "compare_s": 0.012424771033693105,
+      "phash_library_import_s": 0.0,
+      "phash_s": 0.0
+    },
+    "torch_runtime_version": "2.10.0+cpu",
+    "worker_wall_s": 13.53302375099156,
+    "cpu_s": 21.267492999999998,
+    "peak_rss_mib": 508.2421875,
+    "affinity": [
+      0,
+      1
+    ],
+    "process_wall_s": 13.979284870030824,
+    "worker_cpu_before_output_s": 20.849919,
+    "utc": "2026-11-14T20:18:06Z",
+    "label": "incremental-full-1",
+    "repeat": 1,
+    "mode": "full"
+  },
+  {
+    "method": "D",
+    "configuration": {
+      "algorithm_version": "1.0.0",
+      "method": "D",
+      "phash": {
+        "hash_size": 8,
+        "highfreq_factor": 4
+      },
+      "model": "9f26bd4c848cc19b73d2ae92eea6e04886f61a7b764ceb7a13aeee62e6a6db56",
+      "preprocessing": {
+        "color": "EXIF transpose then RGB",
+        "resize": [
+          320,
+          320
+        ],
+        "interpolation": "Pillow BILINEAR",
+        "aspect_ratio": "direct square resize, no crop",
+        "scale": 0.00392156862745098,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "output": "L2 normalize float32; cosine dot product rounded to 8 decimals"
+      },
+      "dependencies": {
+        "Pillow": "13.0.0",
+        "numpy": "2.2.6",
+        "ImageHash": "4.3.2",
+        "scipy": "1.17.0",
+        "torch": "2.10.0+cpu"
+      },
+      "device": "cpu",
+      "torch_threads": 2,
+      "interop_threads": 1,
+      "batch_size": 1
+    },
+    "thresholds": {
+      "phash_max_distance": 20,
+      "ai_min_cosine": 0.75
+    },
+    "counters": {
+      "files": 113,
+      "files_read": 113,
+      "files_decoded": 4,
+      "sha256_computations": 113,
+      "phash_computations": 0,
+      "ai_extractions": 4,
+      "cache_hits": 90,
+      "exact_reuses": 19,
+      "byte_comparisons": 19,
+      "ai_vector_comparisons": 4371,
+      "ai_score_pairs_including_exact_groups": 4389
+    },
+    "stages": {
+      "file_read_s": 0.056112744321580976,
+      "content_hash_s": 0.015624977182596922,
+      "byte_verify_s": 0.0002900825347751379,
+      "cache_read_s": 0.2383375730132684,
+      "image_library_import_s": 0.01691188698168844,
+      "model_integrity_s": 0.10747789696324617,
+      "torch_import_s": 1.1200497210375033,
+      "model_load_s": 1.0188706279732287,
+      "decode_s": 0.025242692965548486,
+      "preprocess_s": 0.01656586694298312,
+      "feature_extract_s": 0.5498048070003279,
+      "cache_write_s": 0.04281206603627652,
+      "compare_s": 0.010861568036489189,
+      "phash_library_import_s": 0.0,
+      "phash_s": 0.0
+    },
+    "torch_runtime_version": "2.10.0+cpu",
+    "worker_wall_s": 3.335529048985336,
+    "cpu_s": 3.1929229999999995,
+    "peak_rss_mib": 508.953125,
+    "affinity": [
+      0,
+      1
+    ],
+    "process_wall_s": 3.7482922849594615,
+    "worker_cpu_before_output_s": 2.80734,
+    "utc": "2026-11-14T20:18:10Z",
+    "label": "incremental-reuse-1",
+    "repeat": 1,
+    "mode": "reuse"
+  },
+  {
+    "method": "D",
+    "configuration": {
+      "algorithm_version": "1.0.0",
+      "method": "D",
+      "phash": {
+        "hash_size": 8,
+        "highfreq_factor": 4
+      },
+      "model": "9f26bd4c848cc19b73d2ae92eea6e04886f61a7b764ceb7a13aeee62e6a6db56",
+      "preprocessing": {
+        "color": "EXIF transpose then RGB",
+        "resize": [
+          320,
+          320
+        ],
+        "interpolation": "Pillow BILINEAR",
+        "aspect_ratio": "direct square resize, no crop",
+        "scale": 0.00392156862745098,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "output": "L2 normalize float32; cosine dot product rounded to 8 decimals"
+      },
+      "dependencies": {
+        "Pillow": "13.0.0",
+        "numpy": "2.2.6",
+        "ImageHash": "4.3.2",
+        "scipy": "1.17.0",
+        "torch": "2.10.0+cpu"
+      },
+      "device": "cpu",
+      "torch_threads": 2,
+      "interop_threads": 1,
+      "batch_size": 1
+    },
+    "thresholds": {
+      "phash_max_distance": 20,
+      "ai_min_cosine": 0.75
+    },
+    "counters": {
+      "files": 113,
+      "files_read": 113,
+      "files_decoded": 4,
+      "sha256_computations": 113,
+      "phash_computations": 0,
+      "ai_extractions": 4,
+      "cache_hits": 90,
+      "exact_reuses": 19,
+      "byte_comparisons": 19,
+      "ai_vector_comparisons": 4371,
+      "ai_score_pairs_including_exact_groups": 4389
+    },
+    "stages": {
+      "file_read_s": 0.053686703846324235,
+      "content_hash_s": 0.01563035330036655,
+      "byte_verify_s": 0.00029528874438256025,
+      "cache_read_s": 0.20278099202550948,
+      "image_library_import_s": 0.017077883007004857,
+      "model_integrity_s": 0.10750927700428292,
+      "torch_import_s": 1.1933334170025773,
+      "model_load_s": 1.0593195970286615,
+      "decode_s": 0.024923876975663006,
+      "preprocess_s": 0.01709751400630921,
+      "feature_extract_s": 0.5570157369947992,
+      "cache_write_s": 0.041209457034710795,
+      "compare_s": 0.011144025018438697,
+      "phash_library_import_s": 0.0,
+      "phash_s": 0.0
+    },
+    "torch_runtime_version": "2.10.0+cpu",
+    "worker_wall_s": 3.4152493770234287,
+    "cpu_s": 3.2120249999999997,
+    "peak_rss_mib": 501.53125,
+    "affinity": [
+      0,
+      1
+    ],
+    "process_wall_s": 3.819063617964275,
+    "worker_cpu_before_output_s": 2.8408559999999996,
+    "utc": "2026-11-14T20:18:27Z",
+    "label": "incremental-reuse-2",
+    "repeat": 2,
+    "mode": "reuse"
+  },
+  {
+    "method": "D",
+    "configuration": {
+      "algorithm_version": "1.0.0",
+      "method": "D",
+      "phash": {
+        "hash_size": 8,
+        "highfreq_factor": 4
+      },
+      "model": "9f26bd4c848cc19b73d2ae92eea6e04886f61a7b764ceb7a13aeee62e6a6db56",
+      "preprocessing": {
+        "color": "EXIF transpose then RGB",
+        "resize": [
+          320,
+          320
+        ],
+        "interpolation": "Pillow BILINEAR",
+        "aspect_ratio": "direct square resize, no crop",
+        "scale": 0.00392156862745098,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "output": "L2 normalize float32; cosine dot product rounded to 8 decimals"
+      },
+      "dependencies": {
+        "Pillow": "13.0.0",
+        "numpy": "2.2.6",
+        "ImageHash": "4.3.2",
+        "scipy": "1.17.0",
+        "torch": "2.10.0+cpu"
+      },
+      "device": "cpu",
+      "torch_threads": 2,
+      "interop_threads": 1,
+      "batch_size": 1
+    },
+    "thresholds": {
+      "phash_max_distance": 20,
+      "ai_min_cosine": 0.75
+    },
+    "counters": {
+      "files": 113,
+      "files_read": 113,
+      "files_decoded": 94,
+      "sha256_computations": 113,
+      "phash_computations": 0,
+      "ai_extractions": 94,
+      "cache_hits": 0,
+      "exact_reuses": 19,
+      "byte_comparisons": 19,
+      "ai_vector_comparisons": 4371,
+      "ai_score_pairs_including_exact_groups": 4389
+    },
+    "stages": {
+      "file_read_s": 0.057292236073408276,
+      "content_hash_s": 0.01563214446650818,
+      "byte_verify_s": 0.0002938454272225499,
+      "cache_read_s": 0.13767810497665778,
+      "image_library_import_s": 0.016787066007964313,
+      "model_integrity_s": 0.10842207900714129,
+      "torch_import_s": 1.0889455410069786,
+      "model_load_s": 1.026371012965683,
+      "decode_s": 0.37203306081937626,
+      "preprocess_s": 0.3873756792745553,
+      "feature_extract_s": 9.22612781409407,
+      "cache_write_s": 1.8642472591018304,
+      "compare_s": 0.01244387001497671,
+      "phash_library_import_s": 0.0,
+      "phash_s": 0.0
+    },
+    "torch_runtime_version": "2.10.0+cpu",
+    "worker_wall_s": 14.43241411796771,
+    "cpu_s": 21.599094,
+    "peak_rss_mib": 514.78515625,
+    "affinity": [
+      0,
+      1
+    ],
+    "process_wall_s": 14.89401979901595,
+    "worker_cpu_before_output_s": 21.166803,
+    "utc": "2026-11-14T20:18:42Z",
+    "label": "incremental-full-2",
+    "repeat": 2,
+    "mode": "full"
+  }
+]

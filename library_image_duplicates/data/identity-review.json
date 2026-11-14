@@ -1,0 +1,13 @@
+{
+  "reviewed_utc": "2026-11-14",
+  "reviewer": "Codex visual inspection of all 32-source contact sheet, full-size creek and factory photographs, and LOC records before calibration/testing",
+  "scope": "Each catalog item is one photographic exposure. No uncertain pair was forced to be positive or negative. Source identity for edits is inherited mechanically from the downloaded original.",
+  "pairs": [
+    {"a": "2010630676", "b": "2010630677", "split": "calibration", "same_photo": false, "evidence": "Jefferson Memorial: first image is a ground-level dusk view with water reflection; second is a daylight aerial view showing the roof, lawn and rear water edge. Perspective and occlusion differ; one cannot be a crop of the other."},
+    {"a": "2010630765", "b": "2020720205", "split": "test", "same_photo": false, "difficulty": "same landmark, comparatively easy negative", "evidence": "Lincoln Memorial: exterior aerial view versus interior close view of seated statue. Separate source records and distinct viewpoints/subjects."},
+    {"a": "2017877451", "b": "2017877454", "split": "calibration", "same_photo": false, "evidence": "Copperhill plant: near view with large tanks and road in foreground versus distant view across eroded hills. Relative positions and perspective of tanks, chimney and factory change. Original catalog titles refer to the same site; this is not the same exposure."},
+    {"a": "2017877451", "b": "2017877452", "split": "calibration", "same_photo": false, "evidence": "Copperhill plant: close industrial tanks versus road curving toward a distant chimney and truck. Different camera position and foreground; distinct exposure."},
+    {"a": "2017877477", "b": "2017877478", "split": "test", "same_photo": false, "evidence": "Belzoni creek: a group fishes on a bank to the right in the first and to the left in the second; foreground observer moves from left to right, the visible bank and foliage change, and fishing poses/rods differ. The camera views the group from different positions; not a crop, resize or mirror copy. Adjacent but distinct LOC source IDs."}
+  ],
+  "limits": "Small convenience sample. Identity checks are visual and catalog-based, not a claim to resolve every real collection's attribution problems. Historical catalog wording remains in the provenance records."
+}

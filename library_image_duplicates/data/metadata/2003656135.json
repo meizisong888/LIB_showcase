@@ -1,0 +1,92 @@
+{
+  "Call_number": "BIOG FILE - BEECHEY, LINCOLN [item] [P&P]",
+  "Contributors": [
+    {
+      "Name": null
+    }
+  ],
+  "Date_text": "1912 June 28.",
+  "Date": "1928",
+  "Digitized": true,
+  "Set": [
+    "Cars"
+  ],
+  "Genre": [],
+  "Id": "http://www.loc.gov/item/2003656135/",
+  "IIIF_manifest": "http://www.loc.gov/item/2003656135/manifest.json",
+  "Preview_url": [
+    "https://tile.loc.gov/storage-services/service/pnp/cph/3b10000/3b18000/3b18600/3b18665_150px.jpg",
+    "https://tile.loc.gov/storage-services/service/pnp/cph/3b10000/3b18000/3b18600/3b18665t.gif#h=118&w=150",
+    "https://tile.loc.gov/storage-services/service/pnp/cph/3b10000/3b18000/3b18600/3b18665_150px.jpg#h=118&w=150",
+    "https://tile.loc.gov/storage-services/service/pnp/cph/3b10000/3b18000/3b18600/3b18665r.jpg#h=505&w=640"
+  ],
+  "Index": 1,
+  "Other_title": [],
+  "Description": [],
+  "Creators": [],
+  "Type_of_resource": [
+    "Still image"
+  ],
+  "Location_text": [],
+  "Other_record_formats": [
+    {
+      "Type": "MARCXML Record",
+      "Id": "https://lccn.loc.gov/2003656135/marcxml"
+    },
+    {
+      "Type": "MARC Record",
+      "Id": "https://www.loc.gov/pictures/item/2003656135/marc/"
+    },
+    {
+      "Type": "MODS Record",
+      "Id": "https://lccn.loc.gov/2003656135/mods"
+    },
+    {
+      "Type": "Dublin Core Record",
+      "Id": "https://lccn.loc.gov/2003656135/dc"
+    }
+  ],
+  "Rights": [
+    "No known restrictions on publication."
+  ],
+  "Source_collection": [],
+  "Language": [
+    "English"
+  ],
+  "Lccn": "2003656135",
+  "Medium": [
+    "1 photographic print."
+  ],
+  "Mime_type": [
+    "image/jpg",
+    "image/gif",
+    "image/jpeg",
+    "image/tif"
+  ],
+  "Notes": [
+    "J157056 U.S. Copyright Office",
+    "This record contains unverified, old data from caption card.",
+    "Caption card tracings: Racing; Airplanes 1912; Automobiles 1912; BI; Transportation 1912; Shelf. Sources checked: Beechey, Lincoln: MUMS; www; Web; www in Am. Sports. Oldfield, Barney, 1878-1946 [Bernd E.]: MUMS - no dates; www; Web [dd]; www in Am. Sports."
+  ],
+  "Online_format": [
+    "Image"
+  ],
+  "Original_format": [
+    "Photo, print, drawing"
+  ],
+  "Part_of": [
+    "prints and photographs division",
+    "catalog"
+  ],
+  "Repository": [
+    "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA"
+  ],
+  "Number_of_files": 1,
+  "Shelf_id": "BIOG FILE - BEECHEY, LINCOLN [item] [P&P]",
+  "Subjects": [],
+  "Subject_headings": [],
+  "Last_updated_in_api": "2021-08-28T13:00:25.742Z",
+  "Title": "[Race between Lincoln Beechey in airplane and Barney Oldfield in automobile, going around race track]",
+  "Url": "https://www.loc.gov/item/2003656135/",
+  "Location": []
+}

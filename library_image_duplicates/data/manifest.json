@@ -1,0 +1,3788 @@
+{
+  "seed": 20261114,
+  "construction": "real collection photographs + synthetic variants",
+  "calibration_identities": [
+    "2010630408",
+    "2010630676",
+    "2010630677",
+    "2017811986",
+    "2017877359",
+    "2017877451",
+    "2017877452",
+    "2017877454",
+    "2017877464",
+    "2017877476",
+    "2017877502",
+    "2018701036"
+  ],
+  "test_identities": [
+    "2003656135",
+    "2010630616",
+    "2010630765",
+    "2011631173",
+    "2011636061",
+    "2016804519",
+    "2016832837",
+    "2017705303",
+    "2017832209",
+    "2017843211",
+    "2017877351",
+    "2017877453",
+    "2017877465",
+    "2017877477",
+    "2017877478",
+    "2017882041",
+    "2018663548",
+    "2020720205"
+  ],
+  "files": [
+    {
+      "id": "2010630676__original.jpg",
+      "identity": "2010630676",
+      "variant": "original",
+      "split": "calibration",
+      "path": "work/files/2010630676__original.jpg",
+      "sha256": "b92935a7988585895890590c564f1d094d90dc599d039f93f4728d24d4a06e23",
+      "bytes": 263912,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2010630676__copy.jpg",
+      "identity": "2010630676",
+      "variant": "copy",
+      "split": "calibration",
+      "path": "work/files/2010630676__copy.jpg",
+      "sha256": "b92935a7988585895890590c564f1d094d90dc599d039f93f4728d24d4a06e23",
+      "bytes": 263912,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2010630676__resize.jpg",
+      "identity": "2010630676",
+      "variant": "resize",
+      "split": "calibration",
+      "path": "work/files/2010630676__resize.jpg",
+      "sha256": "b6dc6183f29d781662c09dbe7e79fbd9e4ca583c622e0938b5a082f6927ee290",
+      "bytes": 24754,
+      "size": [
+        410,
+        273
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          273
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2010630676__compressed.jpg",
+      "identity": "2010630676",
+      "variant": "compressed",
+      "split": "calibration",
+      "path": "work/files/2010630676__compressed.jpg",
+      "sha256": "bcfd63d9cc7cb1cee6e7c70d1e9e1a9aabcaa4d414784d9a56f7e1d76f18328a",
+      "bytes": 30520,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2010630676__crop.jpg",
+      "identity": "2010630676",
+      "variant": "crop",
+      "split": "calibration",
+      "path": "work/files/2010630676__crop.jpg",
+      "sha256": "758572a928c11e370d9985260589a40d8e1f74e38bee2ec3198edd889346de38",
+      "bytes": 112322,
+      "size": [
+        887,
+        591
+      ],
+      "parameters": {
+        "box": [
+          16,
+          30,
+          903,
+          621
+        ],
+        "retained_area": 0.7495324510431918,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2010630676__crop_upscale.jpg",
+      "identity": "2010630676",
+      "variant": "crop_upscale",
+      "split": "calibration",
+      "path": "work/files/2010630676__crop_upscale.jpg",
+      "sha256": "6fc692591bd341fb91d38ba3cbf0cf0f5ef431582001ad7a838576196cbdbf23",
+      "bytes": 138875,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "box": [
+          16,
+          30,
+          903,
+          621
+        ],
+        "retained_area": 0.7495324510431918,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          683
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2010630677__original.jpg",
+      "identity": "2010630677",
+      "variant": "original",
+      "split": "calibration",
+      "path": "work/files/2010630677__original.jpg",
+      "sha256": "6628f92b7f93e7678a06daf0241b515286b52ba625d3a561d20b323469f16a5e",
+      "bytes": 463041,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2010630677__copy.jpg",
+      "identity": "2010630677",
+      "variant": "copy",
+      "split": "calibration",
+      "path": "work/files/2010630677__copy.jpg",
+      "sha256": "6628f92b7f93e7678a06daf0241b515286b52ba625d3a561d20b323469f16a5e",
+      "bytes": 463041,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2010630677__resize.jpg",
+      "identity": "2010630677",
+      "variant": "resize",
+      "split": "calibration",
+      "path": "work/files/2010630677__resize.jpg",
+      "sha256": "8c9872a571ce6baa200b99dadeed5e3c1622c438d2a0407caa2b55f5d33ca80f",
+      "bytes": 50933,
+      "size": [
+        410,
+        273
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          273
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2010630677__compressed.jpg",
+      "identity": "2010630677",
+      "variant": "compressed",
+      "split": "calibration",
+      "path": "work/files/2010630677__compressed.jpg",
+      "sha256": "11ee28345692c9e73e6e395d1aad12579e73d1236429357e0d02e721e2a5ebff",
+      "bytes": 48706,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2010630677__crop.jpg",
+      "identity": "2010630677",
+      "variant": "crop",
+      "split": "calibration",
+      "path": "work/files/2010630677__crop.jpg",
+      "sha256": "8e3820782e82335e0a0fb437d9a9f8ac1f4dd535e09a714631c73d778420c82e",
+      "bytes": 233272,
+      "size": [
+        887,
+        591
+      ],
+      "parameters": {
+        "box": [
+          123,
+          64,
+          1010,
+          655
+        ],
+        "retained_area": 0.7495324510431918,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2010630677__crop_upscale.jpg",
+      "identity": "2010630677",
+      "variant": "crop_upscale",
+      "split": "calibration",
+      "path": "work/files/2010630677__crop_upscale.jpg",
+      "sha256": "11b6914ae410c5b90f23a00e7dbad868dce67756a9d3c16bc754309bfb666bb4",
+      "bytes": 281314,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "box": [
+          123,
+          64,
+          1010,
+          655
+        ],
+        "retained_area": 0.7495324510431918,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          683
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2010630765__original.jpg",
+      "identity": "2010630765",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2010630765__original.jpg",
+      "sha256": "2cc98c519af0466eec73923576cc83963c99733a9dc573a50cdef5ad015e4de0",
+      "bytes": 589289,
+      "size": [
+        1024,
+        759
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2010630765__copy.jpg",
+      "identity": "2010630765",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2010630765__copy.jpg",
+      "sha256": "2cc98c519af0466eec73923576cc83963c99733a9dc573a50cdef5ad015e4de0",
+      "bytes": 589289,
+      "size": [
+        1024,
+        759
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2010630765__resize.jpg",
+      "identity": "2010630765",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2010630765__resize.jpg",
+      "sha256": "a29606d9f0de6570680ff99829c5d41976ad89822530ae52e70993a5d73b32c1",
+      "bytes": 63108,
+      "size": [
+        410,
+        304
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          304
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2010630765__compressed.jpg",
+      "identity": "2010630765",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2010630765__compressed.jpg",
+      "sha256": "1be63092deec0e46394334fb3e6d3ee4204c379fad3e055c109f96eb62e477b8",
+      "bytes": 64722,
+      "size": [
+        1024,
+        759
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2010630765__crop.jpg",
+      "identity": "2010630765",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2010630765__crop.jpg",
+      "sha256": "6288dd52d001c8ea9cab51babfc57ed16d8a17d06116075ea6597b5715afd687",
+      "bytes": 305040,
+      "size": [
+        887,
+        657
+      ],
+      "parameters": {
+        "box": [
+          33,
+          63,
+          920,
+          720
+        ],
+        "retained_area": 0.749803143527668,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2010630765__crop_upscale.jpg",
+      "identity": "2010630765",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2010630765__crop_upscale.jpg",
+      "sha256": "ed93f71e38c8e84e44795876abc5eee03b640f30f5db9c6d2312c39925f71114",
+      "bytes": 365149,
+      "size": [
+        1024,
+        759
+      ],
+      "parameters": {
+        "box": [
+          33,
+          63,
+          920,
+          720
+        ],
+        "retained_area": 0.749803143527668,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          759
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2020720205__original.jpg",
+      "identity": "2020720205",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2020720205__original.jpg",
+      "sha256": "038572e2414045e623c328c6597f392b41dc331dd338f9a6ec3b1de33ebdec2e",
+      "bytes": 341365,
+      "size": [
+        1024,
+        769
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2020720205__copy.jpg",
+      "identity": "2020720205",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2020720205__copy.jpg",
+      "sha256": "038572e2414045e623c328c6597f392b41dc331dd338f9a6ec3b1de33ebdec2e",
+      "bytes": 341365,
+      "size": [
+        1024,
+        769
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2020720205__resize.jpg",
+      "identity": "2020720205",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2020720205__resize.jpg",
+      "sha256": "db6967217d0e889a831f077a099714f6056f82a6071de31a73cb5acb26252fdb",
+      "bytes": 31765,
+      "size": [
+        410,
+        308
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          308
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2020720205__compressed.jpg",
+      "identity": "2020720205",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2020720205__compressed.jpg",
+      "sha256": "9c7aed0cd723e60be42d00ec33bb98fb4dc4ee86fbf613b4520dfb661d36410c",
+      "bytes": 34115,
+      "size": [
+        1024,
+        769
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2020720205__crop.jpg",
+      "identity": "2020720205",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2020720205__crop.jpg",
+      "sha256": "c02a3f365a62b0b8949f686b9ff8a48ce4b207ce4f905923814c402519c55bb3",
+      "bytes": 151334,
+      "size": [
+        887,
+        666
+      ],
+      "parameters": {
+        "box": [
+          6,
+          56,
+          893,
+          722
+        ],
+        "retained_area": 0.75019048683355,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2020720205__crop_upscale.jpg",
+      "identity": "2020720205",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2020720205__crop_upscale.jpg",
+      "sha256": "53cae7997d04a9180cc184d3b49d592ab2bd75c8c433332c22453f9f40b5fbdc",
+      "bytes": 185213,
+      "size": [
+        1024,
+        769
+      ],
+      "parameters": {
+        "box": [
+          6,
+          56,
+          893,
+          722
+        ],
+        "retained_area": 0.75019048683355,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          769
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2011631173__original.jpg",
+      "identity": "2011631173",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2011631173__original.jpg",
+      "sha256": "b94b94d17e579918182db8d08ea6b5179bfb57aa84513adf0b84099632e812ba",
+      "bytes": 344476,
+      "size": [
+        803,
+        1024
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2011631173__copy.jpg",
+      "identity": "2011631173",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2011631173__copy.jpg",
+      "sha256": "b94b94d17e579918182db8d08ea6b5179bfb57aa84513adf0b84099632e812ba",
+      "bytes": 344476,
+      "size": [
+        803,
+        1024
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2011631173__resize.jpg",
+      "identity": "2011631173",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2011631173__resize.jpg",
+      "sha256": "b46d3f50e43f24987edda8a6d210480d63e229cbbb8b027a600bf650a4714aee",
+      "bytes": 53126,
+      "size": [
+        321,
+        410
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          321,
+          410
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2011631173__compressed.jpg",
+      "identity": "2011631173",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2011631173__compressed.jpg",
+      "sha256": "47b55ddb8c0d6ac167aa0618251ecc23830d49d718882efd8153f3d9da683a65",
+      "bytes": 54439,
+      "size": [
+        803,
+        1024
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2011631173__crop.jpg",
+      "identity": "2011631173",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2011631173__crop.jpg",
+      "sha256": "d95b8ecdab6582d38615724bf3b4ab3b5fa4df05a9fef87ed55a49fab9ae8a37",
+      "bytes": 228211,
+      "size": [
+        695,
+        887
+      ],
+      "parameters": {
+        "box": [
+          100,
+          60,
+          795,
+          947
+        ],
+        "retained_area": 0.7497093419209215,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2011631173__crop_upscale.jpg",
+      "identity": "2011631173",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2011631173__crop_upscale.jpg",
+      "sha256": "6b812b48846543d2e434092ea7573645f334a9fef4f32fc82ce1ea3bfc41d132",
+      "bytes": 280922,
+      "size": [
+        803,
+        1024
+      ],
+      "parameters": {
+        "box": [
+          100,
+          60,
+          795,
+          947
+        ],
+        "retained_area": 0.7497093419209215,
+        "jpeg_quality": 92,
+        "output_size": [
+          803,
+          1024
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2018701036__original.jpg",
+      "identity": "2018701036",
+      "variant": "original",
+      "split": "calibration",
+      "path": "work/files/2018701036__original.jpg",
+      "sha256": "9ee4926fdcfb61cf47c5261f88c40e2b6a55fb6c640073d13f7fae481bea6285",
+      "bytes": 676100,
+      "size": [
+        1024,
+        768
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2018701036__copy.jpg",
+      "identity": "2018701036",
+      "variant": "copy",
+      "split": "calibration",
+      "path": "work/files/2018701036__copy.jpg",
+      "sha256": "9ee4926fdcfb61cf47c5261f88c40e2b6a55fb6c640073d13f7fae481bea6285",
+      "bytes": 676100,
+      "size": [
+        1024,
+        768
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2018701036__resize.jpg",
+      "identity": "2018701036",
+      "variant": "resize",
+      "split": "calibration",
+      "path": "work/files/2018701036__resize.jpg",
+      "sha256": "0c364182f98d8b078bdb603a155d7b360a88b107f72e0001d8550bbae89db498",
+      "bytes": 79020,
+      "size": [
+        410,
+        307
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          307
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2018701036__compressed.jpg",
+      "identity": "2018701036",
+      "variant": "compressed",
+      "split": "calibration",
+      "path": "work/files/2018701036__compressed.jpg",
+      "sha256": "a39f115a005be51a36415643fe1435d9e3cdae600f169e241a769d72d9d0c211",
+      "bytes": 100433,
+      "size": [
+        1024,
+        768
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2018701036__crop.jpg",
+      "identity": "2018701036",
+      "variant": "crop",
+      "split": "calibration",
+      "path": "work/files/2018701036__crop.jpg",
+      "sha256": "e86e293432274725dc434124ed522b537d424a01158947f0dd3515beeff074c3",
+      "bytes": 374810,
+      "size": [
+        887,
+        665
+      ],
+      "parameters": {
+        "box": [
+          110,
+          94,
+          997,
+          759
+        ],
+        "retained_area": 0.7500394185384115,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2018701036__crop_upscale.jpg",
+      "identity": "2018701036",
+      "variant": "crop_upscale",
+      "split": "calibration",
+      "path": "work/files/2018701036__crop_upscale.jpg",
+      "sha256": "be9a99676d7252098139068a199aebfc4ae4c4878caeaba47123a51bee14ae36",
+      "bytes": 450548,
+      "size": [
+        1024,
+        768
+      ],
+      "parameters": {
+        "box": [
+          110,
+          94,
+          997,
+          759
+        ],
+        "retained_area": 0.7500394185384115,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          768
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2011636061__original.jpg",
+      "identity": "2011636061",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2011636061__original.jpg",
+      "sha256": "8e8c0f84098edcd9c3ee58369effc2fefa6084f58718b1e9090acf011985b253",
+      "bytes": 272175,
+      "size": [
+        1024,
+        810
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2011636061__copy.jpg",
+      "identity": "2011636061",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2011636061__copy.jpg",
+      "sha256": "8e8c0f84098edcd9c3ee58369effc2fefa6084f58718b1e9090acf011985b253",
+      "bytes": 272175,
+      "size": [
+        1024,
+        810
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2011636061__resize.jpg",
+      "identity": "2011636061",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2011636061__resize.jpg",
+      "sha256": "8942984092c319b1d1709bdd9ce74928e9ffeb52284bf5a4896be30f98bec02e",
+      "bytes": 29672,
+      "size": [
+        410,
+        324
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          324
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2011636061__compressed.jpg",
+      "identity": "2011636061",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2011636061__compressed.jpg",
+      "sha256": "207ff0b0a7a7f393fa48175c3fd091fdbc9120b2ea961099871a6d4709326b8d",
+      "bytes": 46293,
+      "size": [
+        1024,
+        810
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2011636061__crop.jpg",
+      "identity": "2011636061",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2011636061__crop.jpg",
+      "sha256": "886f6e7d2c8bbea99a7c439e99fb3c747047ba23b3c85de270c48fb9f3272831",
+      "bytes": 151319,
+      "size": [
+        887,
+        701
+      ],
+      "parameters": {
+        "box": [
+          39,
+          3,
+          926,
+          704
+        ],
+        "retained_area": 0.7496467496141975,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2011636061__crop_upscale.jpg",
+      "identity": "2011636061",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2011636061__crop_upscale.jpg",
+      "sha256": "9c3294a8fe9ad1ceb68e6099fbd91bb720d85800465dc2a74bf8fbf8aebd0c84",
+      "bytes": 190041,
+      "size": [
+        1024,
+        810
+      ],
+      "parameters": {
+        "box": [
+          39,
+          3,
+          926,
+          704
+        ],
+        "retained_area": 0.7496467496141975,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          810
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2010630616__original.jpg",
+      "identity": "2010630616",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2010630616__original.jpg",
+      "sha256": "1a4e63ab16deb2923ca60b5a2667bbdba4b08d371b672d1ddfaec67415509e33",
+      "bytes": 602332,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2010630616__copy.jpg",
+      "identity": "2010630616",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2010630616__copy.jpg",
+      "sha256": "1a4e63ab16deb2923ca60b5a2667bbdba4b08d371b672d1ddfaec67415509e33",
+      "bytes": 602332,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2010630616__resize.jpg",
+      "identity": "2010630616",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2010630616__resize.jpg",
+      "sha256": "f14099af8e5449f7dc912efc17368c643e7ec6d0ab9911da833991a341ac1274",
+      "bytes": 65363,
+      "size": [
+        410,
+        273
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          273
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2010630616__compressed.jpg",
+      "identity": "2010630616",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2010630616__compressed.jpg",
+      "sha256": "757b7abffad2c241f00fb70626b394846dc549a4b6ea789ff0e86e706a6feee6",
+      "bytes": 68644,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2010630616__crop.jpg",
+      "identity": "2010630616",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2010630616__crop.jpg",
+      "sha256": "8d67e76d6c597577897c91794d81524e0e0df4cc36f5d5e4bafad4f6f3b20798",
+      "bytes": 336298,
+      "size": [
+        887,
+        591
+      ],
+      "parameters": {
+        "box": [
+          107,
+          78,
+          994,
+          669
+        ],
+        "retained_area": 0.7495324510431918,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2010630616__crop_upscale.jpg",
+      "identity": "2010630616",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2010630616__crop_upscale.jpg",
+      "sha256": "f8b50b71b1565c9939daf79d59c0e81c2b7051bd88c36251ed47665e920b02d5",
+      "bytes": 413556,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "box": [
+          107,
+          78,
+          994,
+          669
+        ],
+        "retained_area": 0.7495324510431918,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          683
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017882041__original.jpg",
+      "identity": "2017882041",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2017882041__original.jpg",
+      "sha256": "2ea91b703739d9119f842e39db8c06cdf2d07e624a2b61142e6e40ee821a4977",
+      "bytes": 319268,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017882041__copy.jpg",
+      "identity": "2017882041",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2017882041__copy.jpg",
+      "sha256": "2ea91b703739d9119f842e39db8c06cdf2d07e624a2b61142e6e40ee821a4977",
+      "bytes": 319268,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017882041__resize.jpg",
+      "identity": "2017882041",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2017882041__resize.jpg",
+      "sha256": "0f8e22f03dd262cc850ab9f34cb0bdaf04806d4fe1b8b07b4e92d8475c2b59d9",
+      "bytes": 33793,
+      "size": [
+        410,
+        273
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          273
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017882041__compressed.jpg",
+      "identity": "2017882041",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2017882041__compressed.jpg",
+      "sha256": "3901d917e9dc94f7d26d269879ded1cd4a20ee3ad9742a1c8f182dad0462521e",
+      "bytes": 39782,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017882041__crop.jpg",
+      "identity": "2017882041",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2017882041__crop.jpg",
+      "sha256": "ba365fbdd2c3c4f594755d665ded6c340644615646cb71db0482b4cc79ae68e6",
+      "bytes": 186797,
+      "size": [
+        887,
+        591
+      ],
+      "parameters": {
+        "box": [
+          97,
+          50,
+          984,
+          641
+        ],
+        "retained_area": 0.7495324510431918,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017882041__crop_upscale.jpg",
+      "identity": "2017882041",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2017882041__crop_upscale.jpg",
+      "sha256": "752e8e20094bcf53e920012a2d9668e8a8c336ab4576441b90f9d4bda6e08827",
+      "bytes": 226743,
+      "size": [
+        1024,
+        683
+      ],
+      "parameters": {
+        "box": [
+          97,
+          50,
+          984,
+          641
+        ],
+        "retained_area": 0.7495324510431918,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          683
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2010630408__original.jpg",
+      "identity": "2010630408",
+      "variant": "original",
+      "split": "calibration",
+      "path": "work/files/2010630408__original.jpg",
+      "sha256": "3829e2b1690dfd13c56b22e6714847478d8fc80aac5c61f169f7b551f2ca8cfb",
+      "bytes": 577252,
+      "size": [
+        1024,
+        749
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2010630408__copy.jpg",
+      "identity": "2010630408",
+      "variant": "copy",
+      "split": "calibration",
+      "path": "work/files/2010630408__copy.jpg",
+      "sha256": "3829e2b1690dfd13c56b22e6714847478d8fc80aac5c61f169f7b551f2ca8cfb",
+      "bytes": 577252,
+      "size": [
+        1024,
+        749
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2010630408__resize.jpg",
+      "identity": "2010630408",
+      "variant": "resize",
+      "split": "calibration",
+      "path": "work/files/2010630408__resize.jpg",
+      "sha256": "9b3ce990503ac4921c07ce1c526ece9ad4f895cdc6b534b7714d789c238b7aff",
+      "bytes": 66553,
+      "size": [
+        410,
+        300
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          300
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2010630408__compressed.jpg",
+      "identity": "2010630408",
+      "variant": "compressed",
+      "split": "calibration",
+      "path": "work/files/2010630408__compressed.jpg",
+      "sha256": "ebe13482210768422e55c88b5ce9db0987c7bde50bc6c75543975064fd8d14a2",
+      "bytes": 71173,
+      "size": [
+        1024,
+        749
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2010630408__crop.jpg",
+      "identity": "2010630408",
+      "variant": "crop",
+      "split": "calibration",
+      "path": "work/files/2010630408__crop.jpg",
+      "sha256": "fd3ca856d2904ad85b16509841a78bb40ecc7b3313a2cc1a86b8c91134910c17",
+      "bytes": 287237,
+      "size": [
+        887,
+        649
+      ],
+      "parameters": {
+        "box": [
+          69,
+          28,
+          956,
+          677
+        ],
+        "retained_area": 0.7505619471795728,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2010630408__crop_upscale.jpg",
+      "identity": "2010630408",
+      "variant": "crop_upscale",
+      "split": "calibration",
+      "path": "work/files/2010630408__crop_upscale.jpg",
+      "sha256": "462c4b2aad745c994b199233bf18d51b4980e91c8b72694eb232e6421e6e74cd",
+      "bytes": 347784,
+      "size": [
+        1024,
+        749
+      ],
+      "parameters": {
+        "box": [
+          69,
+          28,
+          956,
+          677
+        ],
+        "retained_area": 0.7505619471795728,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          749
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2018663548__original.jpg",
+      "identity": "2018663548",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2018663548__original.jpg",
+      "sha256": "8e5ea7cedc5a362eed1f4739f26981e58bce9a970ece7d5b8eb65f634aa5e52f",
+      "bytes": 605279,
+      "size": [
+        1024,
+        768
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2018663548__copy.jpg",
+      "identity": "2018663548",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2018663548__copy.jpg",
+      "sha256": "8e5ea7cedc5a362eed1f4739f26981e58bce9a970ece7d5b8eb65f634aa5e52f",
+      "bytes": 605279,
+      "size": [
+        1024,
+        768
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2018663548__resize.jpg",
+      "identity": "2018663548",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2018663548__resize.jpg",
+      "sha256": "d16999d74fcabfa2676a20a0fab35ed414450400ed5d8368cfb7217edc7253a5",
+      "bytes": 70515,
+      "size": [
+        410,
+        307
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          307
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2018663548__compressed.jpg",
+      "identity": "2018663548",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2018663548__compressed.jpg",
+      "sha256": "028936b685fb328145c737f1a1ffa60f222559ec1cdceed315ea0343e46d05ff",
+      "bytes": 69087,
+      "size": [
+        1024,
+        768
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2018663548__crop.jpg",
+      "identity": "2018663548",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2018663548__crop.jpg",
+      "sha256": "a5d1ca00069b078cc62d3a2f183bff9766a1c3be5279ae367b314c0793d37dea",
+      "bytes": 365600,
+      "size": [
+        887,
+        665
+      ],
+      "parameters": {
+        "box": [
+          61,
+          58,
+          948,
+          723
+        ],
+        "retained_area": 0.7500394185384115,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2018663548__crop_upscale.jpg",
+      "identity": "2018663548",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2018663548__crop_upscale.jpg",
+      "sha256": "af0c1b2235c240d42e59d8631f35d1f811112341500c2d5b3789804a22ec331b",
+      "bytes": 435059,
+      "size": [
+        1024,
+        768
+      ],
+      "parameters": {
+        "box": [
+          61,
+          58,
+          948,
+          723
+        ],
+        "retained_area": 0.7500394185384115,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          768
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017877351__original.jpg",
+      "identity": "2017877351",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2017877351__original.jpg",
+      "sha256": "9977ec6b39b9c5ccfd4e9fcbb0ddf330c34e6abd94c7af1fd1365e811c6c51d7",
+      "bytes": 184576,
+      "size": [
+        1024,
+        715
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017877351__copy.jpg",
+      "identity": "2017877351",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2017877351__copy.jpg",
+      "sha256": "9977ec6b39b9c5ccfd4e9fcbb0ddf330c34e6abd94c7af1fd1365e811c6c51d7",
+      "bytes": 184576,
+      "size": [
+        1024,
+        715
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017877351__resize.jpg",
+      "identity": "2017877351",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2017877351__resize.jpg",
+      "sha256": "81e4c331d2fe6e6b1f9a33d962f78bcc3c707e5060da13da205219da1049eff3",
+      "bytes": 32779,
+      "size": [
+        410,
+        286
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          286
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877351__compressed.jpg",
+      "identity": "2017877351",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2017877351__compressed.jpg",
+      "sha256": "60ab1296d5fd4b79dc11a4cc04d9c2052e7936209f3a77b7c2bf28ad2fe5babc",
+      "bytes": 32668,
+      "size": [
+        1024,
+        715
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017877351__crop.jpg",
+      "identity": "2017877351",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2017877351__crop.jpg",
+      "sha256": "0400c23aeee9591b997d9d24240df6a06060d03119a872c20c076815386a8cc9",
+      "bytes": 124215,
+      "size": [
+        887,
+        619
+      ],
+      "parameters": {
+        "box": [
+          38,
+          83,
+          925,
+          702
+        ],
+        "retained_area": 0.7499084899475524,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877351__crop_upscale.jpg",
+      "identity": "2017877351",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2017877351__crop_upscale.jpg",
+      "sha256": "1394999c524bff2c5adaa158b1f018fd334e0b978736a2fe005baa10b310a9bf",
+      "bytes": 154437,
+      "size": [
+        1024,
+        715
+      ],
+      "parameters": {
+        "box": [
+          38,
+          83,
+          925,
+          702
+        ],
+        "retained_area": 0.7499084899475524,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          715
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017877359__original.jpg",
+      "identity": "2017877359",
+      "variant": "original",
+      "split": "calibration",
+      "path": "work/files/2017877359__original.jpg",
+      "sha256": "f64e0ca0e8ad0be584fc7870deeb03a31fdadc7c598a95a64dc142ced4df1e8e",
+      "bytes": 283343,
+      "size": [
+        1024,
+        715
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017877359__copy.jpg",
+      "identity": "2017877359",
+      "variant": "copy",
+      "split": "calibration",
+      "path": "work/files/2017877359__copy.jpg",
+      "sha256": "f64e0ca0e8ad0be584fc7870deeb03a31fdadc7c598a95a64dc142ced4df1e8e",
+      "bytes": 283343,
+      "size": [
+        1024,
+        715
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017877359__resize.jpg",
+      "identity": "2017877359",
+      "variant": "resize",
+      "split": "calibration",
+      "path": "work/files/2017877359__resize.jpg",
+      "sha256": "143eb2320edd2ca2ea86013aab579a43c486bd6d4aeef41518b60b294c24d49f",
+      "bytes": 45574,
+      "size": [
+        410,
+        286
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          286
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877359__compressed.jpg",
+      "identity": "2017877359",
+      "variant": "compressed",
+      "split": "calibration",
+      "path": "work/files/2017877359__compressed.jpg",
+      "sha256": "6c321299da1ce71d6b74cc535a426f7d488f3a74ee2f2b07926df29d536889c9",
+      "bytes": 46468,
+      "size": [
+        1024,
+        715
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017877359__crop.jpg",
+      "identity": "2017877359",
+      "variant": "crop",
+      "split": "calibration",
+      "path": "work/files/2017877359__crop.jpg",
+      "sha256": "4e5bcb9b5c50cd4c362aa0a2e6309fc4898bdb7c5a33c8c3cff64119b3d831de",
+      "bytes": 200107,
+      "size": [
+        887,
+        619
+      ],
+      "parameters": {
+        "box": [
+          133,
+          72,
+          1020,
+          691
+        ],
+        "retained_area": 0.7499084899475524,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877359__crop_upscale.jpg",
+      "identity": "2017877359",
+      "variant": "crop_upscale",
+      "split": "calibration",
+      "path": "work/files/2017877359__crop_upscale.jpg",
+      "sha256": "91631cffb4ee4784e7364c3b483298549255ded14ff22f4022905df85277eb72",
+      "bytes": 243861,
+      "size": [
+        1024,
+        715
+      ],
+      "parameters": {
+        "box": [
+          133,
+          72,
+          1020,
+          691
+        ],
+        "retained_area": 0.7499084899475524,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          715
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017877451__original.jpg",
+      "identity": "2017877451",
+      "variant": "original",
+      "split": "calibration",
+      "path": "work/files/2017877451__original.jpg",
+      "sha256": "258d539df21af9ed1cef417bf1301883a3c0fa0e48ee517c8c1da95f614e3710",
+      "bytes": 262722,
+      "size": [
+        1024,
+        728
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017877451__copy.jpg",
+      "identity": "2017877451",
+      "variant": "copy",
+      "split": "calibration",
+      "path": "work/files/2017877451__copy.jpg",
+      "sha256": "258d539df21af9ed1cef417bf1301883a3c0fa0e48ee517c8c1da95f614e3710",
+      "bytes": 262722,
+      "size": [
+        1024,
+        728
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017877451__resize.jpg",
+      "identity": "2017877451",
+      "variant": "resize",
+      "split": "calibration",
+      "path": "work/files/2017877451__resize.jpg",
+      "sha256": "72a2ad2c0ce13d6c9436c455b7b0811faae39b8814991e9ccea06e0284b3b581",
+      "bytes": 42860,
+      "size": [
+        410,
+        291
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          291
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877451__compressed.jpg",
+      "identity": "2017877451",
+      "variant": "compressed",
+      "split": "calibration",
+      "path": "work/files/2017877451__compressed.jpg",
+      "sha256": "5f21c67788fb916d12086799cfdc3dbee28fffe5bf040bf8ce9d9d9d7c87f473",
+      "bytes": 42462,
+      "size": [
+        1024,
+        728
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017877451__crop.jpg",
+      "identity": "2017877451",
+      "variant": "crop",
+      "split": "calibration",
+      "path": "work/files/2017877451__crop.jpg",
+      "sha256": "1175c2dbb5349d1318ec84579bedcd87cffb3ebcd0bc5a22d8f7ecce82b453ab",
+      "bytes": 191269,
+      "size": [
+        887,
+        630
+      ],
+      "parameters": {
+        "box": [
+          54,
+          47,
+          941,
+          677
+        ],
+        "retained_area": 0.7496056189903846,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877451__crop_upscale.jpg",
+      "identity": "2017877451",
+      "variant": "crop_upscale",
+      "split": "calibration",
+      "path": "work/files/2017877451__crop_upscale.jpg",
+      "sha256": "7d771e9a1a9ac59d8606007e2596fa9d92a24ef401e5b67fd6a97dbd71015516",
+      "bytes": 233419,
+      "size": [
+        1024,
+        728
+      ],
+      "parameters": {
+        "box": [
+          54,
+          47,
+          941,
+          677
+        ],
+        "retained_area": 0.7496056189903846,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          728
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017877502__original.jpg",
+      "identity": "2017877502",
+      "variant": "original",
+      "split": "calibration",
+      "path": "work/files/2017877502__original.jpg",
+      "sha256": "1f5dec1dea4bc9625182300278ce14533d9a958f0ce39e69b4db60746eae8ec1",
+      "bytes": 326754,
+      "size": [
+        1024,
+        718
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017877502__copy.jpg",
+      "identity": "2017877502",
+      "variant": "copy",
+      "split": "calibration",
+      "path": "work/files/2017877502__copy.jpg",
+      "sha256": "1f5dec1dea4bc9625182300278ce14533d9a958f0ce39e69b4db60746eae8ec1",
+      "bytes": 326754,
+      "size": [
+        1024,
+        718
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017877502__resize.jpg",
+      "identity": "2017877502",
+      "variant": "resize",
+      "split": "calibration",
+      "path": "work/files/2017877502__resize.jpg",
+      "sha256": "5d2014a04f6f846dbffecc98d615ffeb90e2e6f8dc19ee2a8d3f5224703c945a",
+      "bytes": 60489,
+      "size": [
+        410,
+        287
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          287
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877502__compressed.jpg",
+      "identity": "2017877502",
+      "variant": "compressed",
+      "split": "calibration",
+      "path": "work/files/2017877502__compressed.jpg",
+      "sha256": "f8023644dddf5162b1b6c866bbfdf5980dbe3f67842f5a533e97e5ee94966b34",
+      "bytes": 59398,
+      "size": [
+        1024,
+        718
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017877502__crop.jpg",
+      "identity": "2017877502",
+      "variant": "crop",
+      "split": "calibration",
+      "path": "work/files/2017877502__crop.jpg",
+      "sha256": "785ea917a546be9a03d1dabdae3a7dc67bae101b2ea0f2cc9062f2e051f05446",
+      "bytes": 256272,
+      "size": [
+        887,
+        622
+      ],
+      "parameters": {
+        "box": [
+          49,
+          50,
+          936,
+          672
+        ],
+        "retained_area": 0.7503944333217271,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877502__crop_upscale.jpg",
+      "identity": "2017877502",
+      "variant": "crop_upscale",
+      "split": "calibration",
+      "path": "work/files/2017877502__crop_upscale.jpg",
+      "sha256": "52fcff176456d82f788121c2a90904a080e6ff3f7a23b1354ebb16f4e25130a2",
+      "bytes": 310138,
+      "size": [
+        1024,
+        718
+      ],
+      "parameters": {
+        "box": [
+          49,
+          50,
+          936,
+          672
+        ],
+        "retained_area": 0.7503944333217271,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          718
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017877452__original.jpg",
+      "identity": "2017877452",
+      "variant": "original",
+      "split": "calibration",
+      "path": "work/files/2017877452__original.jpg",
+      "sha256": "1b02fb92507f9109870d3959b26b93c01b1df5595cc3b3f2a9e2904dc97be6d5",
+      "bytes": 278225,
+      "size": [
+        1024,
+        727
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017877452__copy.jpg",
+      "identity": "2017877452",
+      "variant": "copy",
+      "split": "calibration",
+      "path": "work/files/2017877452__copy.jpg",
+      "sha256": "1b02fb92507f9109870d3959b26b93c01b1df5595cc3b3f2a9e2904dc97be6d5",
+      "bytes": 278225,
+      "size": [
+        1024,
+        727
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017877452__resize.jpg",
+      "identity": "2017877452",
+      "variant": "resize",
+      "split": "calibration",
+      "path": "work/files/2017877452__resize.jpg",
+      "sha256": "be7c56349b41dab8f60e6508aa5976e0dfd41e59e111d05d833ca75a523f466e",
+      "bytes": 44706,
+      "size": [
+        410,
+        291
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          291
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877452__compressed.jpg",
+      "identity": "2017877452",
+      "variant": "compressed",
+      "split": "calibration",
+      "path": "work/files/2017877452__compressed.jpg",
+      "sha256": "9e3000ed27f7a332505f87d233d5b755aa7a4e60ff3d874e9c5df0f31821d2dd",
+      "bytes": 42072,
+      "size": [
+        1024,
+        727
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017877452__crop.jpg",
+      "identity": "2017877452",
+      "variant": "crop",
+      "split": "calibration",
+      "path": "work/files/2017877452__crop.jpg",
+      "sha256": "7f5bcfe56dc380561a2051e74a90bfa4f577abc4b195532853e53dc8ea97ac94",
+      "bytes": 198131,
+      "size": [
+        887,
+        630
+      ],
+      "parameters": {
+        "box": [
+          123,
+          37,
+          1010,
+          667
+        ],
+        "retained_area": 0.7506367133768913,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877452__crop_upscale.jpg",
+      "identity": "2017877452",
+      "variant": "crop_upscale",
+      "split": "calibration",
+      "path": "work/files/2017877452__crop_upscale.jpg",
+      "sha256": "9ec2151d88754db4ea5a25eafd4231a8682c34cc0ae3ef2e0d74f9d777022df3",
+      "bytes": 242038,
+      "size": [
+        1024,
+        727
+      ],
+      "parameters": {
+        "box": [
+          123,
+          37,
+          1010,
+          667
+        ],
+        "retained_area": 0.7506367133768913,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          727
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017877453__original.jpg",
+      "identity": "2017877453",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2017877453__original.jpg",
+      "sha256": "d21c3185f38e67e96648f81f441b4da82e6947f23a6b46ca2f564ff205e78740",
+      "bytes": 299622,
+      "size": [
+        1024,
+        727
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017877453__copy.jpg",
+      "identity": "2017877453",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2017877453__copy.jpg",
+      "sha256": "d21c3185f38e67e96648f81f441b4da82e6947f23a6b46ca2f564ff205e78740",
+      "bytes": 299622,
+      "size": [
+        1024,
+        727
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017877453__resize.jpg",
+      "identity": "2017877453",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2017877453__resize.jpg",
+      "sha256": "86e00ccabdbdaa3c8f905e601e9df8de0609add2b3f5d4ab7887243d13087549",
+      "bytes": 45784,
+      "size": [
+        410,
+        291
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          291
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877453__compressed.jpg",
+      "identity": "2017877453",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2017877453__compressed.jpg",
+      "sha256": "b9877a5ab000ad849cbd34739e80d4e6123bd65615c4ed491b6b0717838c994a",
+      "bytes": 43203,
+      "size": [
+        1024,
+        727
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017877453__crop.jpg",
+      "identity": "2017877453",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2017877453__crop.jpg",
+      "sha256": "9f9529f65d5b7ebdeeaed30789a0d781ff2470328d9fcfca4b4127fa0d2d4c9d",
+      "bytes": 219652,
+      "size": [
+        887,
+        630
+      ],
+      "parameters": {
+        "box": [
+          31,
+          81,
+          918,
+          711
+        ],
+        "retained_area": 0.7506367133768913,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877453__crop_upscale.jpg",
+      "identity": "2017877453",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2017877453__crop_upscale.jpg",
+      "sha256": "5843ac9bde722ea06a8c1e974c5bed25159ef2f11b0c8533da5bca3c7f3d57ef",
+      "bytes": 267796,
+      "size": [
+        1024,
+        727
+      ],
+      "parameters": {
+        "box": [
+          31,
+          81,
+          918,
+          711
+        ],
+        "retained_area": 0.7506367133768913,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          727
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017877454__original.jpg",
+      "identity": "2017877454",
+      "variant": "original",
+      "split": "calibration",
+      "path": "work/files/2017877454__original.jpg",
+      "sha256": "3cdf5186bf47aeb02c6f90c07ecee6449fe49f701e0ee9cda06edfa43a28b259",
+      "bytes": 272828,
+      "size": [
+        1024,
+        721
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017877454__copy.jpg",
+      "identity": "2017877454",
+      "variant": "copy",
+      "split": "calibration",
+      "path": "work/files/2017877454__copy.jpg",
+      "sha256": "3cdf5186bf47aeb02c6f90c07ecee6449fe49f701e0ee9cda06edfa43a28b259",
+      "bytes": 272828,
+      "size": [
+        1024,
+        721
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017877454__resize.jpg",
+      "identity": "2017877454",
+      "variant": "resize",
+      "split": "calibration",
+      "path": "work/files/2017877454__resize.jpg",
+      "sha256": "ac0cf5baf2c5f497fafcd4d56ca07a9872839113b703a127d6b5d5661e49cdf3",
+      "bytes": 44793,
+      "size": [
+        410,
+        288
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          288
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877454__compressed.jpg",
+      "identity": "2017877454",
+      "variant": "compressed",
+      "split": "calibration",
+      "path": "work/files/2017877454__compressed.jpg",
+      "sha256": "74f756e2b4e3ab45d887b7b719e1a63551c1e7fa2c1dfc3cbffb4367d14916d2",
+      "bytes": 41894,
+      "size": [
+        1024,
+        721
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017877454__crop.jpg",
+      "identity": "2017877454",
+      "variant": "crop",
+      "split": "calibration",
+      "path": "work/files/2017877454__crop.jpg",
+      "sha256": "f4eb1355549c80a0cbd42bda67772d88495528535244725e987ad9b3dd5f6da4",
+      "bytes": 203964,
+      "size": [
+        887,
+        624
+      ],
+      "parameters": {
+        "box": [
+          47,
+          72,
+          934,
+          696
+        ],
+        "retained_area": 0.7496749306518724,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877454__crop_upscale.jpg",
+      "identity": "2017877454",
+      "variant": "crop_upscale",
+      "split": "calibration",
+      "path": "work/files/2017877454__crop_upscale.jpg",
+      "sha256": "96039e7e28902983d1f791411b8886ba092cddf2309c5890fe8fb544b78415f5",
+      "bytes": 247238,
+      "size": [
+        1024,
+        721
+      ],
+      "parameters": {
+        "box": [
+          47,
+          72,
+          934,
+          696
+        ],
+        "retained_area": 0.7496749306518724,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          721
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017877476__original.jpg",
+      "identity": "2017877476",
+      "variant": "original",
+      "split": "calibration",
+      "path": "work/files/2017877476__original.jpg",
+      "sha256": "461b1c0d22f673975adb3fb336df4b0b7c0cd35799fe5c159de8e8ea85b07870",
+      "bytes": 345894,
+      "size": [
+        1024,
+        726
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017877476__copy.jpg",
+      "identity": "2017877476",
+      "variant": "copy",
+      "split": "calibration",
+      "path": "work/files/2017877476__copy.jpg",
+      "sha256": "461b1c0d22f673975adb3fb336df4b0b7c0cd35799fe5c159de8e8ea85b07870",
+      "bytes": 345894,
+      "size": [
+        1024,
+        726
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017877476__resize.jpg",
+      "identity": "2017877476",
+      "variant": "resize",
+      "split": "calibration",
+      "path": "work/files/2017877476__resize.jpg",
+      "sha256": "dbc597857eefc7213854e3d4045293b7ff9ecbf6ea3d9eb655e685070cbad934",
+      "bytes": 63631,
+      "size": [
+        410,
+        290
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          290
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877476__compressed.jpg",
+      "identity": "2017877476",
+      "variant": "compressed",
+      "split": "calibration",
+      "path": "work/files/2017877476__compressed.jpg",
+      "sha256": "fd898cbb6a5f53ab75b67662ea6c0e01202aafd469530167ec6b3d9f1d10bcd4",
+      "bytes": 58730,
+      "size": [
+        1024,
+        726
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017877476__crop.jpg",
+      "identity": "2017877476",
+      "variant": "crop",
+      "split": "calibration",
+      "path": "work/files/2017877476__crop.jpg",
+      "sha256": "a28dc0d64cb220773d9cdd8a32a2ec856900c96c6a5b6a2e24532c2bc3737dc6",
+      "bytes": 246807,
+      "size": [
+        887,
+        629
+      ],
+      "parameters": {
+        "box": [
+          91,
+          22,
+          978,
+          651
+        ],
+        "retained_area": 0.7504775202307162,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877476__crop_upscale.jpg",
+      "identity": "2017877476",
+      "variant": "crop_upscale",
+      "split": "calibration",
+      "path": "work/files/2017877476__crop_upscale.jpg",
+      "sha256": "3a90de644df377907925f97d3486ec5b2934458fd2ee5ce40f1d100c5c3fd39f",
+      "bytes": 297847,
+      "size": [
+        1024,
+        726
+      ],
+      "parameters": {
+        "box": [
+          91,
+          22,
+          978,
+          651
+        ],
+        "retained_area": 0.7504775202307162,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          726
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017877477__original.jpg",
+      "identity": "2017877477",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2017877477__original.jpg",
+      "sha256": "72f10c39b43fe9d0d0f6406d9c80d8ce07516f9d7c4d4e5a03d95bca52672f7e",
+      "bytes": 322375,
+      "size": [
+        1024,
+        701
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017877477__copy.jpg",
+      "identity": "2017877477",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2017877477__copy.jpg",
+      "sha256": "72f10c39b43fe9d0d0f6406d9c80d8ce07516f9d7c4d4e5a03d95bca52672f7e",
+      "bytes": 322375,
+      "size": [
+        1024,
+        701
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017877477__resize.jpg",
+      "identity": "2017877477",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2017877477__resize.jpg",
+      "sha256": "160e787aadf85ce40e0efc551db6dcec96dca22ca44b3f6e2c0cb77ae8d1de00",
+      "bytes": 50959,
+      "size": [
+        410,
+        280
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          280
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877477__compressed.jpg",
+      "identity": "2017877477",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2017877477__compressed.jpg",
+      "sha256": "edf18aac5ea1b027650719b5a2380ff11ec3214826fb60dc648d196bdcdc7e36",
+      "bytes": 53488,
+      "size": [
+        1024,
+        701
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017877477__crop.jpg",
+      "identity": "2017877477",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2017877477__crop.jpg",
+      "sha256": "7d827de23c1eca523000e7114fa7de5752d65f8ed77e24cb2c20842d419e5526",
+      "bytes": 245492,
+      "size": [
+        887,
+        607
+      ],
+      "parameters": {
+        "box": [
+          117,
+          82,
+          1004,
+          689
+        ],
+        "retained_area": 0.7500571170649073,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877477__crop_upscale.jpg",
+      "identity": "2017877477",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2017877477__crop_upscale.jpg",
+      "sha256": "9c210eab97820ceaa2bcafedc43c0d170abeddf3796fd13731b721acfcbf6a6b",
+      "bytes": 300556,
+      "size": [
+        1024,
+        701
+      ],
+      "parameters": {
+        "box": [
+          117,
+          82,
+          1004,
+          689
+        ],
+        "retained_area": 0.7500571170649073,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          701
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017877478__original.jpg",
+      "identity": "2017877478",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2017877478__original.jpg",
+      "sha256": "ea69d95d9269ad64082145d49063483c3ed65f7c883dd1ebeee4a17d7cf15d93",
+      "bytes": 517766,
+      "size": [
+        1024,
+        741
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017877478__copy.jpg",
+      "identity": "2017877478",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2017877478__copy.jpg",
+      "sha256": "ea69d95d9269ad64082145d49063483c3ed65f7c883dd1ebeee4a17d7cf15d93",
+      "bytes": 517766,
+      "size": [
+        1024,
+        741
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017877478__resize.jpg",
+      "identity": "2017877478",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2017877478__resize.jpg",
+      "sha256": "91835f0558ba81aa2c0114fc3101731e6f63f336c6de2ce5be7e0cd8e5021b18",
+      "bytes": 86360,
+      "size": [
+        410,
+        296
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          296
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877478__compressed.jpg",
+      "identity": "2017877478",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2017877478__compressed.jpg",
+      "sha256": "84be4c95d9785490ee7f646945b59cae65e6f04d3f22bff30a59292debe95520",
+      "bytes": 87460,
+      "size": [
+        1024,
+        741
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017877478__crop.jpg",
+      "identity": "2017877478",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2017877478__crop.jpg",
+      "sha256": "9b4b883b9db7ea0556bb459deb4379a42a4130a8e7250d76a123a1ca8ff5ff06",
+      "bytes": 397859,
+      "size": [
+        887,
+        642
+      ],
+      "parameters": {
+        "box": [
+          107,
+          81,
+          994,
+          723
+        ],
+        "retained_area": 0.750482350708502,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877478__crop_upscale.jpg",
+      "identity": "2017877478",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2017877478__crop_upscale.jpg",
+      "sha256": "b1e04bc805ff5770fba2caf7e85039e054c7fdc8914b2f517642e32ba4af179e",
+      "bytes": 481908,
+      "size": [
+        1024,
+        741
+      ],
+      "parameters": {
+        "box": [
+          107,
+          81,
+          994,
+          723
+        ],
+        "retained_area": 0.750482350708502,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          741
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017877464__original.jpg",
+      "identity": "2017877464",
+      "variant": "original",
+      "split": "calibration",
+      "path": "work/files/2017877464__original.jpg",
+      "sha256": "7eb755e23167e7ac6c8dc4fdf39a85358156c513fe318f2cedfe3f778dd26706",
+      "bytes": 340075,
+      "size": [
+        1024,
+        732
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017877464__copy.jpg",
+      "identity": "2017877464",
+      "variant": "copy",
+      "split": "calibration",
+      "path": "work/files/2017877464__copy.jpg",
+      "sha256": "7eb755e23167e7ac6c8dc4fdf39a85358156c513fe318f2cedfe3f778dd26706",
+      "bytes": 340075,
+      "size": [
+        1024,
+        732
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017877464__resize.jpg",
+      "identity": "2017877464",
+      "variant": "resize",
+      "split": "calibration",
+      "path": "work/files/2017877464__resize.jpg",
+      "sha256": "70317991443cbb2f415280ca3b5004b3e35444ba96fc8190cb6505f6aeac1a3e",
+      "bytes": 60906,
+      "size": [
+        410,
+        293
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          293
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877464__compressed.jpg",
+      "identity": "2017877464",
+      "variant": "compressed",
+      "split": "calibration",
+      "path": "work/files/2017877464__compressed.jpg",
+      "sha256": "4650aaad094caec1f9abb1c84fe4103f2b7c7740facd1344388322dabc0740e2",
+      "bytes": 60605,
+      "size": [
+        1024,
+        732
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017877464__crop.jpg",
+      "identity": "2017877464",
+      "variant": "crop",
+      "split": "calibration",
+      "path": "work/files/2017877464__crop.jpg",
+      "sha256": "34802f529e801ce9c74a9332dbb3a02b6135b6f1d3dee051aba5e3200f6fc750",
+      "bytes": 276132,
+      "size": [
+        887,
+        634
+      ],
+      "parameters": {
+        "box": [
+          36,
+          78,
+          923,
+          712
+        ],
+        "retained_area": 0.7502428065232241,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877464__crop_upscale.jpg",
+      "identity": "2017877464",
+      "variant": "crop_upscale",
+      "split": "calibration",
+      "path": "work/files/2017877464__crop_upscale.jpg",
+      "sha256": "bb0bf43e317d78f97cf11aa3f19608d9dc49823e7847f5da5060bf3e9f02087e",
+      "bytes": 332510,
+      "size": [
+        1024,
+        732
+      ],
+      "parameters": {
+        "box": [
+          36,
+          78,
+          923,
+          712
+        ],
+        "retained_area": 0.7502428065232241,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          732
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017877465__original.jpg",
+      "identity": "2017877465",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2017877465__original.jpg",
+      "sha256": "fcea8b7d8ffb5612f18dfb572db3aa6cf7df033debcf35e1ad41c804dcabedb4",
+      "bytes": 296187,
+      "size": [
+        1024,
+        727
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017877465__copy.jpg",
+      "identity": "2017877465",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2017877465__copy.jpg",
+      "sha256": "fcea8b7d8ffb5612f18dfb572db3aa6cf7df033debcf35e1ad41c804dcabedb4",
+      "bytes": 296187,
+      "size": [
+        1024,
+        727
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017877465__resize.jpg",
+      "identity": "2017877465",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2017877465__resize.jpg",
+      "sha256": "dd344fa1f7a682f7a282f60f82c8a68142860f703326d86f1f3ff0b42025b8f6",
+      "bytes": 53030,
+      "size": [
+        410,
+        291
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          291
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877465__compressed.jpg",
+      "identity": "2017877465",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2017877465__compressed.jpg",
+      "sha256": "5fc4093fd987acdf8cac6798c3878e83e7f55bb37f43a1cce64d8e5546be3175",
+      "bytes": 45922,
+      "size": [
+        1024,
+        727
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017877465__crop.jpg",
+      "identity": "2017877465",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2017877465__crop.jpg",
+      "sha256": "51e607381c6c2e153b19d17c2ec3d1ace018602f30599ddded352cee3c3cdf4c",
+      "bytes": 206011,
+      "size": [
+        887,
+        630
+      ],
+      "parameters": {
+        "box": [
+          18,
+          28,
+          905,
+          658
+        ],
+        "retained_area": 0.7506367133768913,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017877465__crop_upscale.jpg",
+      "identity": "2017877465",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2017877465__crop_upscale.jpg",
+      "sha256": "5356364090c56830f3d87c617e4085d3d0d1af7ef311d31aa601c85f91f8449c",
+      "bytes": 254616,
+      "size": [
+        1024,
+        727
+      ],
+      "parameters": {
+        "box": [
+          18,
+          28,
+          905,
+          658
+        ],
+        "retained_area": 0.7506367133768913,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          727
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2016832837__original.jpg",
+      "identity": "2016832837",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2016832837__original.jpg",
+      "sha256": "5c6bf6efb1d11cf282b1cf1721bad6420ff469aaad0080e84da75869553160ef",
+      "bytes": 150819,
+      "size": [
+        1024,
+        834
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2016832837__copy.jpg",
+      "identity": "2016832837",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2016832837__copy.jpg",
+      "sha256": "5c6bf6efb1d11cf282b1cf1721bad6420ff469aaad0080e84da75869553160ef",
+      "bytes": 150819,
+      "size": [
+        1024,
+        834
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2016832837__resize.jpg",
+      "identity": "2016832837",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2016832837__resize.jpg",
+      "sha256": "acccc1bc57a7bf9c7cdad23366b5c9278a3911220abf39f935d1d95db1492dbe",
+      "bytes": 52255,
+      "size": [
+        410,
+        334
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          334
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2016832837__compressed.jpg",
+      "identity": "2016832837",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2016832837__compressed.jpg",
+      "sha256": "0859c06c468e19c5c6113fbb0460519a1df57735fc136dcacb792de4f04e606a",
+      "bytes": 67442,
+      "size": [
+        1024,
+        834
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2016832837__crop.jpg",
+      "identity": "2016832837",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2016832837__crop.jpg",
+      "sha256": "0589f8b57c2e5bee8bfd44011f10477df48806ba0e640d256dae3db373b4a799",
+      "bytes": 238969,
+      "size": [
+        887,
+        722
+      ],
+      "parameters": {
+        "box": [
+          46,
+          14,
+          933,
+          736
+        ],
+        "retained_area": 0.7498852480515588,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2016832837__crop_upscale.jpg",
+      "identity": "2016832837",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2016832837__crop_upscale.jpg",
+      "sha256": "1c677d9eb09191956d7be4da5ac69ca8795620e48dc3dab1b19b266148002671",
+      "bytes": 284695,
+      "size": [
+        1024,
+        834
+      ],
+      "parameters": {
+        "box": [
+          46,
+          14,
+          933,
+          736
+        ],
+        "retained_area": 0.7498852480515588,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          834
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017832209__original.jpg",
+      "identity": "2017832209",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2017832209__original.jpg",
+      "sha256": "756c873ebe52f1a9b13615cbe08d1715851f2cddeb5ad83cfea5a71399fa8d75",
+      "bytes": 406117,
+      "size": [
+        991,
+        1024
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017832209__copy.jpg",
+      "identity": "2017832209",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2017832209__copy.jpg",
+      "sha256": "756c873ebe52f1a9b13615cbe08d1715851f2cddeb5ad83cfea5a71399fa8d75",
+      "bytes": 406117,
+      "size": [
+        991,
+        1024
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017832209__resize.jpg",
+      "identity": "2017832209",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2017832209__resize.jpg",
+      "sha256": "c92c710e375dabc8ffba83b2e8fbfe6a26e00aa2af5bef1fddb26bbc2c6f9e86",
+      "bytes": 51743,
+      "size": [
+        396,
+        410
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          396,
+          410
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017832209__compressed.jpg",
+      "identity": "2017832209",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2017832209__compressed.jpg",
+      "sha256": "d058d19cc6ffb1c85cf573c4553f1ddc0b1b6968fb18c04360324c1102063cb9",
+      "bytes": 66850,
+      "size": [
+        991,
+        1024
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017832209__crop.jpg",
+      "identity": "2017832209",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2017832209__crop.jpg",
+      "sha256": "1c946fec4f7557eea9f119fec0faf26174ddc706b1f3e191a0d79005046c8c1b",
+      "bytes": 289517,
+      "size": [
+        858,
+        887
+      ],
+      "parameters": {
+        "box": [
+          93,
+          134,
+          951,
+          1021
+        ],
+        "retained_area": 0.7499586118819375,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017832209__crop_upscale.jpg",
+      "identity": "2017832209",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2017832209__crop_upscale.jpg",
+      "sha256": "977a8ebc5bd40a90199cbbbb4e260164891a34d3b31199e5ff8cee6a7a9d7738",
+      "bytes": 345000,
+      "size": [
+        991,
+        1024
+      ],
+      "parameters": {
+        "box": [
+          93,
+          134,
+          951,
+          1021
+        ],
+        "retained_area": 0.7499586118819375,
+        "jpeg_quality": 92,
+        "output_size": [
+          991,
+          1024
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017843211__original.jpg",
+      "identity": "2017843211",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2017843211__original.jpg",
+      "sha256": "de00d0af3184afac91e299cce7377429dbb7246e75c990d0dfaa119031711381",
+      "bytes": 302169,
+      "size": [
+        818,
+        1024
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017843211__copy.jpg",
+      "identity": "2017843211",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2017843211__copy.jpg",
+      "sha256": "de00d0af3184afac91e299cce7377429dbb7246e75c990d0dfaa119031711381",
+      "bytes": 302169,
+      "size": [
+        818,
+        1024
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017843211__resize.jpg",
+      "identity": "2017843211",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2017843211__resize.jpg",
+      "sha256": "255c741b6f7431fb3cec8dde890030f8cda4c6715b4bbe5656c52921a91df6e9",
+      "bytes": 43214,
+      "size": [
+        327,
+        410
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          327,
+          410
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017843211__compressed.jpg",
+      "identity": "2017843211",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2017843211__compressed.jpg",
+      "sha256": "64a7690040fbc00855983b7f5b00eab12d314aa01cc92a1d4609c08ba63897d8",
+      "bytes": 54145,
+      "size": [
+        818,
+        1024
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017843211__crop.jpg",
+      "identity": "2017843211",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2017843211__crop.jpg",
+      "sha256": "c349557ad24eda2f87bd5d133ba92599de416f9fa7cbe1079b7c5f58eb991ffd",
+      "bytes": 185687,
+      "size": [
+        708,
+        887
+      ],
+      "parameters": {
+        "box": [
+          22,
+          85,
+          730,
+          972
+        ],
+        "retained_area": 0.7497278040953546,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017843211__crop_upscale.jpg",
+      "identity": "2017843211",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2017843211__crop_upscale.jpg",
+      "sha256": "792266ce041309cd300ae8c398e7847cc22c294764ceb85d599ade958d86a038",
+      "bytes": 225176,
+      "size": [
+        818,
+        1024
+      ],
+      "parameters": {
+        "box": [
+          22,
+          85,
+          730,
+          972
+        ],
+        "retained_area": 0.7497278040953546,
+        "jpeg_quality": 92,
+        "output_size": [
+          818,
+          1024
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017705303__original.jpg",
+      "identity": "2017705303",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2017705303__original.jpg",
+      "sha256": "ee3dca15da8a48de16fbb700feeb442575327a008b9c4bc4bc9d4c160dbf246c",
+      "bytes": 454598,
+      "size": [
+        714,
+        1024
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017705303__copy.jpg",
+      "identity": "2017705303",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2017705303__copy.jpg",
+      "sha256": "ee3dca15da8a48de16fbb700feeb442575327a008b9c4bc4bc9d4c160dbf246c",
+      "bytes": 454598,
+      "size": [
+        714,
+        1024
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017705303__resize.jpg",
+      "identity": "2017705303",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2017705303__resize.jpg",
+      "sha256": "0c3640e0b492f8a9201cb195dd344dccd3c69216fa4f94aeef733173e45e2521",
+      "bytes": 59930,
+      "size": [
+        286,
+        410
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          286,
+          410
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017705303__compressed.jpg",
+      "identity": "2017705303",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2017705303__compressed.jpg",
+      "sha256": "04b17e6036e590531f898a2435b225a48fa310aae23403495fe407e635dfe101",
+      "bytes": 64734,
+      "size": [
+        714,
+        1024
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017705303__crop.jpg",
+      "identity": "2017705303",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2017705303__crop.jpg",
+      "sha256": "9c9273d82bfab78373c9e419ab22dcc4c77dc71982dc02342d11e79dbe464631",
+      "bytes": 282534,
+      "size": [
+        618,
+        887
+      ],
+      "parameters": {
+        "box": [
+          87,
+          35,
+          705,
+          922
+        ],
+        "retained_area": 0.7497456013655462,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017705303__crop_upscale.jpg",
+      "identity": "2017705303",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2017705303__crop_upscale.jpg",
+      "sha256": "b24105803151e00ca48b94ee7c601ba74e234175018d0f00c2186200d7601ae8",
+      "bytes": 342780,
+      "size": [
+        714,
+        1024
+      ],
+      "parameters": {
+        "box": [
+          87,
+          35,
+          705,
+          922
+        ],
+        "retained_area": 0.7497456013655462,
+        "jpeg_quality": 92,
+        "output_size": [
+          714,
+          1024
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2017811986__original.jpg",
+      "identity": "2017811986",
+      "variant": "original",
+      "split": "calibration",
+      "path": "work/files/2017811986__original.jpg",
+      "sha256": "cf8215c8b782cb41666b621072a1feb02d12f30fa2150cd89ad6d8e117b8e1bc",
+      "bytes": 334374,
+      "size": [
+        1024,
+        781
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2017811986__copy.jpg",
+      "identity": "2017811986",
+      "variant": "copy",
+      "split": "calibration",
+      "path": "work/files/2017811986__copy.jpg",
+      "sha256": "cf8215c8b782cb41666b621072a1feb02d12f30fa2150cd89ad6d8e117b8e1bc",
+      "bytes": 334374,
+      "size": [
+        1024,
+        781
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2017811986__resize.jpg",
+      "identity": "2017811986",
+      "variant": "resize",
+      "split": "calibration",
+      "path": "work/files/2017811986__resize.jpg",
+      "sha256": "fb98eec85b3c01c97b1d47f4b0a880affd9a773f46b27beb1fcbb2a7c4ea58c1",
+      "bytes": 41798,
+      "size": [
+        410,
+        312
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          410,
+          312
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017811986__compressed.jpg",
+      "identity": "2017811986",
+      "variant": "compressed",
+      "split": "calibration",
+      "path": "work/files/2017811986__compressed.jpg",
+      "sha256": "11548b6e14f0b90077bae6959b88b91d72b92266ef9924d9e4ba52066cb9f7cc",
+      "bytes": 51795,
+      "size": [
+        1024,
+        781
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2017811986__crop.jpg",
+      "identity": "2017811986",
+      "variant": "crop",
+      "split": "calibration",
+      "path": "work/files/2017811986__crop.jpg",
+      "sha256": "aed43ce7081240a998d47a816cc8ce7b8751198739eb15478c8c04fd7a9d0df6",
+      "bytes": 214396,
+      "size": [
+        887,
+        676
+      ],
+      "parameters": {
+        "box": [
+          112,
+          36,
+          999,
+          712
+        ],
+        "retained_area": 0.749754921574904,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2017811986__crop_upscale.jpg",
+      "identity": "2017811986",
+      "variant": "crop_upscale",
+      "split": "calibration",
+      "path": "work/files/2017811986__crop_upscale.jpg",
+      "sha256": "769df85d5d7155e16962cff8448b002a2d2455a9057b44fec7bd72924b9a3fb5",
+      "bytes": 257154,
+      "size": [
+        1024,
+        781
+      ],
+      "parameters": {
+        "box": [
+          112,
+          36,
+          999,
+          712
+        ],
+        "retained_area": 0.749754921574904,
+        "jpeg_quality": 92,
+        "output_size": [
+          1024,
+          781
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2016804519__original.jpg",
+      "identity": "2016804519",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2016804519__original.jpg",
+      "sha256": "7fc9243359d3ead5babc55e12ebe8796e11981bb3ea03b86e324b50244998516",
+      "bytes": 175454,
+      "size": [
+        827,
+        1024
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2016804519__copy.jpg",
+      "identity": "2016804519",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2016804519__copy.jpg",
+      "sha256": "7fc9243359d3ead5babc55e12ebe8796e11981bb3ea03b86e324b50244998516",
+      "bytes": 175454,
+      "size": [
+        827,
+        1024
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2016804519__resize.jpg",
+      "identity": "2016804519",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2016804519__resize.jpg",
+      "sha256": "3b2bf4dd68f578fbbdabf7b70cedfdbffb8b56ca004207dee97064e95edfa0d8",
+      "bytes": 49657,
+      "size": [
+        331,
+        410
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          331,
+          410
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2016804519__compressed.jpg",
+      "identity": "2016804519",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2016804519__compressed.jpg",
+      "sha256": "0ad6b1c227fe77f857ab747f3bc4b802c0f6618fcfa0a87c0d3044c9c28e3cc6",
+      "bytes": 65429,
+      "size": [
+        827,
+        1024
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2016804519__crop.jpg",
+      "identity": "2016804519",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2016804519__crop.jpg",
+      "sha256": "a7f6552574557fc6ec35ea42250e20e78f96d39ec406690c6b4bfdb5c9eb3777",
+      "bytes": 241252,
+      "size": [
+        716,
+        887
+      ],
+      "parameters": {
+        "box": [
+          22,
+          38,
+          738,
+          925
+        ],
+        "retained_area": 0.749948042623942,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2016804519__crop_upscale.jpg",
+      "identity": "2016804519",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2016804519__crop_upscale.jpg",
+      "sha256": "ca975553c80fd3a259e95e7d966cdbc402f2296bfdeae753bca0d8e7d3a598af",
+      "bytes": 291376,
+      "size": [
+        827,
+        1024
+      ],
+      "parameters": {
+        "box": [
+          22,
+          38,
+          738,
+          925
+        ],
+        "retained_area": 0.749948042623942,
+        "jpeg_quality": 92,
+        "output_size": [
+          827,
+          1024
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2003656135__original.jpg",
+      "identity": "2003656135",
+      "variant": "original",
+      "split": "test",
+      "path": "work/files/2003656135__original.jpg",
+      "sha256": "54e522c970d69c3dabf57771197d232332a632041841777c1d6f32fde31f2e8d",
+      "bytes": 19400,
+      "size": [
+        640,
+        505
+      ],
+      "parameters": {
+        "operation": "unaltered downloaded LOC large JPEG"
+      }
+    },
+    {
+      "id": "2003656135__copy.jpg",
+      "identity": "2003656135",
+      "variant": "copy",
+      "split": "test",
+      "path": "work/files/2003656135__copy.jpg",
+      "sha256": "54e522c970d69c3dabf57771197d232332a632041841777c1d6f32fde31f2e8d",
+      "bytes": 19400,
+      "size": [
+        640,
+        505
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy; filename changed"
+      }
+    },
+    {
+      "id": "2003656135__resize.jpg",
+      "identity": "2003656135",
+      "variant": "resize",
+      "split": "test",
+      "path": "work/files/2003656135__resize.jpg",
+      "sha256": "3965bec5c3b1691069d27ec49304d8fa5736f02bf1ebcc0b62a3cbefba9e41a5",
+      "bytes": 13973,
+      "size": [
+        256,
+        202
+      ],
+      "parameters": {
+        "scale": 0.4,
+        "size": [
+          256,
+          202
+        ],
+        "resample": "LANCZOS",
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2003656135__compressed.jpg",
+      "identity": "2003656135",
+      "variant": "compressed",
+      "split": "test",
+      "path": "work/files/2003656135__compressed.jpg",
+      "sha256": "a1929f19dc0204b744c198fbaa7e3c251dd6b3f7eed7b1e161d07bd46a66b1ce",
+      "bytes": 17420,
+      "size": [
+        640,
+        505
+      ],
+      "parameters": {
+        "jpeg_quality": 18,
+        "subsampling": 0
+      }
+    },
+    {
+      "id": "2003656135__crop.jpg",
+      "identity": "2003656135",
+      "variant": "crop",
+      "split": "test",
+      "path": "work/files/2003656135__crop.jpg",
+      "sha256": "b371a9304995b44de56dfd9968851b00ba9adf09979b8f73aba2dcbe25d18e9c",
+      "bytes": 47144,
+      "size": [
+        554,
+        437
+      ],
+      "parameters": {
+        "box": [
+          48,
+          33,
+          602,
+          470
+        ],
+        "retained_area": 0.749065594059406,
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2003656135__crop_upscale.jpg",
+      "identity": "2003656135",
+      "variant": "crop_upscale",
+      "split": "test",
+      "path": "work/files/2003656135__crop_upscale.jpg",
+      "sha256": "3885d42d0f51535ea7a8e945ce979e7b56724310dd70e9b4e5a45c44d99ec86c",
+      "bytes": 61788,
+      "size": [
+        640,
+        505
+      ],
+      "parameters": {
+        "box": [
+          48,
+          33,
+          602,
+          470
+        ],
+        "retained_area": 0.749065594059406,
+        "jpeg_quality": 92,
+        "output_size": [
+          640,
+          505
+        ],
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2003656135__added_copy.jpg",
+      "identity": "2003656135",
+      "variant": "added_copy",
+      "split": "incremental",
+      "path": "work/files/2003656135__added_copy.jpg",
+      "sha256": "54e522c970d69c3dabf57771197d232332a632041841777c1d6f32fde31f2e8d",
+      "bytes": 19400,
+      "size": [
+        640,
+        505
+      ],
+      "parameters": {
+        "operation": "byte-for-byte copy"
+      }
+    },
+    {
+      "id": "2010630616__added_resize.jpg",
+      "identity": "2010630616",
+      "variant": "added_resize",
+      "split": "incremental",
+      "path": "work/files/2010630616__added_resize.jpg",
+      "sha256": "f5f416a8c6706d9bf2dbe7fede82386009abf29e4cfcb6f0eb28538d2a1e90c4",
+      "bytes": 145243,
+      "size": [
+        614,
+        410
+      ],
+      "parameters": {
+        "scale": 0.6,
+        "jpeg_quality": 92,
+        "resample": "LANCZOS"
+      }
+    },
+    {
+      "id": "2010630765__added_crop.jpg",
+      "identity": "2010630765",
+      "variant": "added_crop",
+      "split": "incremental",
+      "path": "work/files/2010630765__added_crop.jpg",
+      "sha256": "bb96fd30a3067c0423b3d7ca08d24babf6aab1e930e2ea93fbb52d4a30af7c37",
+      "bytes": 276307,
+      "size": [
+        819,
+        607
+      ],
+      "parameters": {
+        "box": [
+          0,
+          0,
+          819,
+          607
+        ],
+        "jpeg_quality": 92
+      }
+    },
+    {
+      "id": "2016816959__new_original.jpg",
+      "identity": "2016816959",
+      "variant": "new_original",
+      "split": "incremental",
+      "path": "work/files/2016816959__new_original.jpg",
+      "sha256": "952120c7ed0319d5444e2b5ca74892c183dd222f5c28c0ac3dcd09aa6e77e103",
+      "bytes": 406220,
+      "size": [
+        1024,
+        754
+      ],
+      "parameters": {
+        "operation": "new independent LOC photograph"
+      }
+    },
+    {
+      "id": "2017778455__new_original.jpg",
+      "identity": "2017778455",
+      "variant": "new_original",
+      "split": "incremental",
+      "path": "work/files/2017778455__new_original.jpg",
+      "sha256": "48381b6773908c6ee1f8bcb0a3bf6a62e00410bd7e91c023c6241e1a15ee28c2",
+      "bytes": 272603,
+      "size": [
+        1024,
+        774
+      ],
+      "parameters": {
+        "operation": "new independent LOC photograph"
+      }
+    }
+  ]
+}

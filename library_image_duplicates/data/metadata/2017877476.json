@@ -1,0 +1,120 @@
+{
+  "call_number": "LC-USF35-105 [P&P]",
+  "contributors": [
+    "Wolcott, Marion Post, 1910-1990, photographer"
+  ],
+  "control_number": "2017877476",
+  "created": "2023-02-14T06:15:28Z",
+  "created_published": "ca. 1940",
+  "created_published_date": "ca. 1940",
+  "creators": [
+    {
+      "link": "https://www.loc.gov/pictures/related/?fi=name&q=Wolcott%2C%20Marion%20Post%2C%201910-1990&co=fsac",
+      "role": "photographer",
+      "title": "Wolcott, Marion Post, 1910-1990"
+    }
+  ],
+  "date": "ca. 1940",
+  "digital_id": [
+    "fsac 1a34330 https://hdl.loc.gov/loc.pnp/fsac.1a34330"
+  ],
+  "display_offsite": true,
+  "format": [
+    "still image"
+  ],
+  "formats": [
+    {
+      "link": "https://www.loc.gov/pictures/related/?fi=format&q=Slides--Color.&co=fsac",
+      "title": "Slides--Color."
+    }
+  ],
+  "genre": [
+    "Slides--Color"
+  ],
+  "id": "2017877476",
+  "language": [
+    "eng"
+  ],
+  "link": "https://www.loc.gov/pictures/item/2017877476/",
+  "marc": "https://www.loc.gov/pictures/item/2017877476/marc/",
+  "medium": [
+    "1 slide : color."
+  ],
+  "medium_brief": "1 slide :",
+  "mediums": [
+    "1 slide : color."
+  ],
+  "modified": "2023-02-14T06:15:28Z",
+  "notes": [
+    "11671-8.",
+    "Transfer from U.S. Office of War Information, 1944.",
+    "General information about the FSA/OWI Color Photographs is available at http://hdl.loc.gov/loc.pnp/pp.fsac",
+    "Title from FSA or OWI agency caption.",
+    "Additional information about this photograph might be available through the Flickr Commons project at http://www.flickr.com/photos/library_of_congress/2179060644"
+  ],
+  "number_former_id": [
+    "https://www.loc.gov/item/2017877476",
+    "https://www.loc.gov/item/fsa1992000137/PP"
+  ],
+  "other_control_numbers": [
+    "19979394",
+    "fsa1992000137/PP"
+  ],
+  "part_of": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+  "place": [
+    {
+      "latitude": "",
+      "link": "https://www.loc.gov/pictures/related/?fi=place&q=Mississippi&co=fsac",
+      "longitude": "",
+      "title": "Mississippi"
+    },
+    {
+      "latitude": "",
+      "link": "https://www.loc.gov/pictures/related/?fi=place&q=Southern%20States&co=fsac",
+      "longitude": "",
+      "title": "Southern States"
+    }
+  ],
+  "raw_collections": [
+    "ammem",
+    "diof",
+    "flickrppoc",
+    "fsac",
+    "pp",
+    "srtg"
+  ],
+  "repository": "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print",
+  "reproduction_number": "LC-DIG-fsac-1a34330 (digital file from original slide)\nLC-USF351-105 (color film copy slide)",
+  "resource_links": [
+    "https://hdl.loc.gov/loc.pnp/fsac.1a34330"
+  ],
+  "rights_advisory": "No known restrictions on publication.",
+  "rights_information": "No known restrictions on publication.",
+  "service_low": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34330_150px.jpg",
+  "service_medium": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34330r.jpg",
+  "sort_date": "1939",
+  "source_collection": [
+    "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)"
+  ],
+  "source_created": "1985-01-01T00:00:00Z",
+  "source_modified": "2023-02-13T15:22:50Z",
+  "subject_headings": [
+    "African Americans",
+    "trucks",
+    "Agricultural laborers",
+    "United States--Mississippi",
+    "United States--Southern States",
+    "Mississippi",
+    "Southern States"
+  ],
+  "subjects": [
+    "African Americans",
+    "Trucks",
+    "Agricultural laborers",
+    "United States--Mississippi",
+    "United States--Southern states"
+  ],
+  "summary": "Photograph shows a 1934-1936 International C30 truck transporting people who might be farm workers. (Source: Flickr Commons project, 2009)",
+  "thumb_gallery": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34330_150px.jpg",
+  "title": "Southern U.S., Mississippi?"
+}

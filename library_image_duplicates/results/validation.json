@@ -1,0 +1,19 @@
+{
+  "mode": "full local validation",
+  "checks": {
+    "identity_split_no_leakage": true,
+    "measured_implementation_matches": true,
+    "metrics_rederived_from_all_saved_pairs": true,
+    "frozen_threshold_hash_and_test_order": true,
+    "exact_mapping_and_extraction_counts": true,
+    "incremental_vs_full_exact_output_equality": true,
+    "thumbnail_file_binding": true,
+    "page_scores_and_examples_match_experiment": true,
+    "generated_page_and_readme_current": true,
+    "local_page_links_and_images_exist": true,
+    "all_downloaded_and_transformed_bytes_match": true,
+    "same_hash_requires_byte_verification": true,
+    "cache_configuration_changes_invalidate": true
+  },
+  "passed": true
+}

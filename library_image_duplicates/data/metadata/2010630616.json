@@ -1,0 +1,178 @@
+{
+  "reproductions": "<p>\nSome images in this collection are described in groups; others are \ndescribed individually. In some cases, all of the images in the \ngroup display online, in other cases they do not.\n</p>\n\n<p>\nYou can download online images yourself.  Alternatively, you can \npurchase copies of various types.\n</p>\n\n<ol>\n<p>\t\n<strong><li>Determine whether the desired materials can be retrieved \nonline.</strong>\n</p>\n<ul>\n<p>\t\n<li>Look in the <strong>Medium</strong> field above to determine whether\n the description is for one photograph or more than one.</li>\n </p>\n <p>\n<li>If the description is for a single item and it is displaying, \nyou can download or purchase a print.  Cite the number that begins \nwith &quot;LC-DIG...&quot; when purchasing copies through Library of \nCongress Duplication Services.\n</p>\n<p>\n<li>If the description is for more than one item and there is \na &quot;Click for more images&quot; icon displaying, select that. \nIndividual images will display; you can download or purchase prints. \nCite the number that begins with &quot;LC-DIG...&quot; when purchasing \ncopies through Library of Congress Duplication Services.\n</p>\n<p>\n<li>If the description is for more than one item and there is no\n &quot;Click for more images&quot; icon displaying, return to the\n  &quot;About this Item&quot; tab and select the &quot;<i>Check for \n  online items from this group</i>&quot; link.  Then select the \n  \"Obtaining Copies\" tab for any retrieved items that are of interest.\n</p>\n</ul>\n</li>\n\n<p>\n<strong><li>If the images do not display online</strong> -- Select images for reproduction through one of these methods:\n</p>\n<ul>\n<p>\t\n<li>Visit the Prints &amp; Photographs Reading Room and request to view \nthe group (general information about service in the reading room is \navailable at: <a href=\"https://www.loc.gov/rr/print/info/001_ref.html\">http://www.loc.gov/rr/print/info/001_ref.html</a>).</li>  \n</p>\n<p>\n<li>P&amp;P reading room staff can provide up to 15 photocopies of items \nper calendar year. (Color images cannot be photocopied.) For assistance,\n see our <a href=\"https://www.loc.gov/rr/askalib/ask-print.html\">Ask a Librarian</a> page. OR</li>\n</p>\n<p>\n<li>Hire a freelance researcher to do further selection for you \n(a list of researchers is available at: \n<a href=\"https://www.loc.gov/rr/print/resource/013_pic.html\">http://www.loc.gov/rr/print/resource/013_pic.html</a>).\n</p>\n</ul>\n</li>\n</ol>\n\n<p>\n<strong>Purchasing Copies</strong>\n</p>\n\n<p>\nLibrary of Congress Duplication Services can make copies of various \ntypes from images in Prints & Photographs Division Collections.  \nPrice lists, contact information, and order forms are available on the \n<a href=\"https://www.loc.gov/duplicationservices/\">Duplication Services Web site</a>.\n</p>\n\n<p>\nCarol M. Highsmith sells prints of her photographs at: <a href=\"http://photographsamerica.com/\">http://photographsamerica.com/</a> .\n</p>  \n\n\n\n\n        ",
+  "item": {
+    "source_created": "2010-01-05T00:00:00Z",
+    "restriction": "",
+    "other_number": "",
+    "resource_links": [
+      "https://hdl.loc.gov/loc.pnp/highsm.04632"
+    ],
+    "title": "Aerial view of Mount Rushmore, South Dakota",
+    "related_items": [],
+    "medium_brief": "1 photograph :",
+    "service_medium": "https://cdn.loc.gov/service/pnp/highsm/04600/04632r.jpg",
+    "collections": [
+      {
+        "code": "highsm",
+        "link": "https://www.loc.gov/pictures/collection/highsm/",
+        "title": "Highsmith (Carol M.) Archive"
+      }
+    ],
+    "part_of_group": null,
+    "stmt_of_responsibility": "",
+    "other_titles": "",
+    "link": "https://www.loc.gov/pictures/item/2010630616/",
+    "other_control_numbers": [
+      "16078258",
+      "hig2010000633"
+    ],
+    "notes": [
+      {
+        "note": "Mount Rushmore National Memorial, near Keystone, South Dakota, is a monumental granite sculpture by Gutzon Borglum (1867-1941), located within the United States Presidential Memorial that represents the first 150 years of the history of the United States of America with 60-foot sculptures of the heads of former United States presidents.",
+        "label": null
+      },
+      {
+        "note": "Title, date, and subjects provided by the photographer.",
+        "label": null
+      },
+      {
+        "note": "Credit line: Carol M. Highsmith's America, Library of Congress, Prints and Photographs Division.",
+        "label": null
+      },
+      {
+        "note": "Gift and purchase; Carol M. Highsmith; 2009; (DLC/PP-2010:031).",
+        "label": null
+      },
+      {
+        "note": "Forms part of: Carol M. Highsmith's America Project in the Carol M. Highsmith Archive.",
+        "label": null
+      }
+    ],
+    "modified": "2017-05-23T03:40:22Z",
+    "summary": "",
+    "formats": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=format&q=Digital%20photographs--Color--2000-2010.&co=highsm",
+        "title": "Digital photographs--Color--2000-2010."
+      }
+    ],
+    "marc": "https://www.loc.gov/pictures/item/2010630616/marc/",
+    "mediums": [
+      {
+        "medium": "1 photograph : digital, TIFF file, color.",
+        "label": null
+      }
+    ],
+    "group_has_items": false,
+    "thumb_gallery": "https://cdn.loc.gov/service/pnp/highsm/04600/04632_150px.jpg",
+    "rights_information": "No known restrictions on publication.",
+    "display_offsite": true,
+    "related_names": [],
+    "created_published": "2009 September 16.",
+    "title_translation": "",
+    "id": "2010630616",
+    "contents": "",
+    "raw_collections": [
+      "diof",
+      "highsm",
+      "min",
+      "pp"
+    ],
+    "call_number": "LC-DIG-highsm- 04632 (ONLINE) [P&P]",
+    "sort_date": "2009",
+    "subjects": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=subject&q=United%20States--South%20Dakota--Mount%20Rushmore.&co=highsm",
+        "title": "United States--South Dakota--Mount Rushmore."
+      },
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=subject&q=Mount%20Rushmore&co=highsm",
+        "title": "Mount Rushmore"
+      },
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=subject&q=America&co=highsm",
+        "title": "America"
+      }
+    ],
+    "source_modified": "2017-05-18T14:56:35Z",
+    "part_of": "Highsmith, Carol M., 1946- Carol M. Highsmith Archive.",
+    "terms": [],
+    "reproduction_number": "LC-DIG-highsm-04632 (original digital file)",
+    "repository": "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print",
+    "service_low": "https://cdn.loc.gov/service/pnp/highsm/04600/04632_150px.jpg",
+    "date": "2009 September 16.",
+    "created": "2017-05-23T03:40:22Z",
+    "control_number": "2010630616",
+    "place": [
+      {
+        "latitude": "",
+        "link": "https://www.loc.gov/pictures/related/?fi=place&q=South%20Dakota--Mount%20Rushmore&co=highsm",
+        "longitude": "",
+        "title": "South Dakota--Mount Rushmore"
+      }
+    ],
+    "creators": [
+      {
+        "link": "https://www.loc.gov/pictures/related/?fi=name&q=Highsmith%2C%20Carol%20M.%2C%201946-&co=highsm",
+        "role": "photographer",
+        "title": "Highsmith, Carol M., 1946-"
+      }
+    ],
+    "created_published_date": "2009 September 16."
+  },
+  "thesaurus_entry": null,
+  "resources": [
+    {
+      "note": "original digital file",
+      "medium": "https://cdn.loc.gov/service/pnp/highsm/04600/04632r.jpg",
+      "largest": "https://cdn.loc.gov/master/pnp/highsm/04600/04632a.tif",
+      "largest_s": 151032152,
+      "url": "https://hdl.loc.gov/loc.pnp/highsm.04632",
+      "medium_s": 82783,
+      "small_s": 16207,
+      "large": "https://cdn.loc.gov/service/pnp/highsm/04600/04632v.jpg",
+      "item": "04632",
+      "larger_s": 75541296,
+      "large_s": 212407,
+      "external": null,
+      "larger": "https://cdn.loc.gov/master/pnp/highsm/04600/04632u.tif",
+      "aggregate": "highsm",
+      "small": "https://cdn.loc.gov/service/pnp/highsm/04600/04632_150px.jpg",
+      "id": "highsm.04632",
+      "link": "https://www.loc.gov/pictures/resource/highsm.04632/?co=highsm"
+    }
+  ],
+  "links": {
+    "json": "https://www.loc.gov/pictures/collection/highsm/item/2010630616/?fo=json",
+    "html": "https://www.loc.gov/pictures/collection/highsm/item/2010630616/"
+  },
+  "related": {
+    "lot_link": null,
+    "neighbors": "https://www.loc.gov/pictures/related/?&co=highsm&pk=2010630616&st=gallery&sb=call_number#focus",
+    "survey_link": null,
+    "group_record": null
+  },
+  "unrestricted": true,
+  "collection": {
+    "digitized": "Some",
+    "code": "highsm",
+    "display_offsite": "Yes",
+    "thumb_large_item": "",
+    "title": "Highsmith (Carol M.) Archive",
+    "banner_item": "https://www.loc.gov/pictures/item/2012649300/",
+    "brief": "Architecture and architectural renovation projects in Washington, D.C., and throughout the United States, as well as political figures, and people in the U.S.",
+    "banner_title": "Idaho farm and field. Carol M. Highsmith, June 19, 2005.",
+    "thumb_item": "",
+    "home_link": "https://www.loc.gov/pictures/collection/highsm/",
+    "from_date": "1980",
+    "view_all": "https://www.loc.gov/pictures/search?st=grid&co=highsm",
+    "link": "https://www.loc.gov/pictures/collection/highsm/",
+    "to_date": "2009",
+    "extent": "2,500 negatives and transparencies; about 500 catalog records; records being added.",
+    "thumb_featured": "https://www.loc.gov/pictures/static/data/highsm/featured.png",
+    "rights": "https://www.loc.gov/rr/print/res/482_high.html",
+    "thumb_large": "https://www.loc.gov/pictures/static/data/highsm/thumb_large.png",
+    "banner": "https://www.loc.gov/pictures/static/data/highsm/banner.jpg",
+    "thumb": "https://www.loc.gov/pictures/static/data/highsm/thumb.png"
+  }
+}

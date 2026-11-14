@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-11-14T20:15:18Z",
+  "catalog_pages": [
+    {
+      "url": "https://www.loc.gov/pictures/collection/highsm/item/2011636061/",
+      "http_status": 403,
+      "interpretation": "LOC anti-bot access restriction for this automated client; not proof of a broken source URL."
+    },
+    {
+      "url": "https://www.loc.gov/item/2017877477/",
+      "http_status": 403,
+      "interpretation": "LOC anti-bot access restriction for this automated client; not proof of a broken source URL."
+    },
+    {
+      "url": "https://www.loc.gov/collections/fsa-owi-color-photographs/about-this-collection/rights-and-access/",
+      "http_status": 403,
+      "interpretation": "LOC anti-bot access restriction for this automated client; not proof of a broken source URL."
+    }
+  ],
+  "image_downloads": "All 32 image URLs returned success and their downloaded bytes were recorded in data/sources.json. prepare.py reproduced all 185 full-file checksums.",
+  "limitation": "Cannot verify ordinary-browser access to every external LOC catalog page from this environment. Saved official metadata, source URLs, rights statements and image hashes remain available."
+}

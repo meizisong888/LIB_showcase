@@ -1,0 +1,108 @@
+{
+  "call_number": "LC-USF35-1 [P&P]",
+  "contributors": [
+    "Delano, Jack, 1914-1997, photographer"
+  ],
+  "control_number": "2017877351",
+  "created": "2023-02-14T06:38:17Z",
+  "created_published": "1941 Jan.",
+  "created_published_date": "1941 Jan.",
+  "creators": [
+    {
+      "link": "https://www.loc.gov/pictures/related/?fi=name&q=Delano%2C%20Jack%2C%201914-1997&co=fsac",
+      "role": "photographer",
+      "title": "Delano, Jack, 1914-1997"
+    }
+  ],
+  "date": "1941 Jan.",
+  "digital_id": [
+    "fsac 1a33849 https://hdl.loc.gov/loc.pnp/fsac.1a33849"
+  ],
+  "display_offsite": true,
+  "format": [
+    "still image"
+  ],
+  "formats": [
+    {
+      "link": "https://www.loc.gov/pictures/related/?fi=format&q=Slides--Color.&co=fsac",
+      "title": "Slides--Color."
+    }
+  ],
+  "genre": [
+    "Slides--Color"
+  ],
+  "id": "2017877351",
+  "language": [
+    "eng"
+  ],
+  "link": "https://www.loc.gov/pictures/item/2017877351/",
+  "marc": "https://www.loc.gov/pictures/item/2017877351/marc/",
+  "medium": [
+    "1 slide : color."
+  ],
+  "medium_brief": "1 slide :",
+  "mediums": [
+    "1 slide : color."
+  ],
+  "modified": "2023-02-14T06:38:18Z",
+  "notes": [
+    "11671-1.",
+    "Transfer from U.S. Office of War Information, 1944.",
+    "General information about the FSA/OWI Color Photographs is available at http://hdl.loc.gov/loc.pnp/pp.fsac",
+    "Title from FSA or OWI agency caption.",
+    "Additional information about this photograph might be available through the Flickr Commons project at http://www.flickr.com/photos/library_of_congress/2178248615"
+  ],
+  "number_former_id": [
+    "https://www.loc.gov/item/2017877351",
+    "https://www.loc.gov/item/fsa1992000012/PP"
+  ],
+  "other_control_numbers": [
+    "19977862",
+    "fsa1992000012/PP"
+  ],
+  "part_of": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+  "place": [
+    {
+      "latitude": "",
+      "link": "https://www.loc.gov/pictures/related/?fi=place&q=Massachusetts--Lowell&co=fsac",
+      "longitude": "",
+      "title": "Massachusetts--Lowell"
+    }
+  ],
+  "raw_collections": [
+    "ammem",
+    "diof",
+    "flickrppoc",
+    "fsac",
+    "pp",
+    "srtg"
+  ],
+  "repository": "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print",
+  "reproduction_number": "LC-DIG-fsac-1a33849 (digital file from original slide)\nLC-USF351-1 (color film copy slide)",
+  "resource_links": [
+    "https://hdl.loc.gov/loc.pnp/fsac.1a33849"
+  ],
+  "rights_advisory": "No known restrictions on publication.",
+  "rights_information": "No known restrictions on publication.",
+  "service_low": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a33000/1a33800/1a33849_150px.jpg",
+  "service_medium": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a33000/1a33800/1a33849r.jpg",
+  "sort_date": "1939",
+  "source_collection": [
+    "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)"
+  ],
+  "source_created": "1985-01-01T00:00:00Z",
+  "source_modified": "2023-02-07T13:08:13Z",
+  "subject_headings": [
+    "commuters",
+    "bus stops",
+    "United States--Massachusetts--Lowell",
+    "Massachusetts--Lowell"
+  ],
+  "subjects": [
+    "Commuters",
+    "Bus stops",
+    "United States--Massachusetts--Lowell"
+  ],
+  "thumb_gallery": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a33000/1a33800/1a33849_150px.jpg",
+  "title": "Commuters, who have just come off the train, waiting for the bus to go home, Lowell, Mass."
+}

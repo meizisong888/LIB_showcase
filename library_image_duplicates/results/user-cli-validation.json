@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "input_files_unchanged": true,
+  "first_ai_extractions": 2,
+  "repeat_ai_extractions": 0,
+  "repeat_cache_hits": 2,
+  "outputs_equal": true,
+  "threshold_changes_reapplied_without_feature_reextraction": true,
+  "unknown_images_have_candidate_review_labels_only": true
+}

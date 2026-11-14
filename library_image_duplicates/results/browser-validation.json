@@ -1,0 +1,17 @@
+{
+  "url": "http://127.0.0.1:8767/",
+  "passed": true,
+  "desktop": [
+    1440,
+    1000
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "galleryIdentities": 18,
+  "filtersChecked": 20,
+  "axeViolations": 0,
+  "sourceImages": 32,
+  "consoleErrors": []
+}

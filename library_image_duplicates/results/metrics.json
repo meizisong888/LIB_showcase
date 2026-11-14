@@ -1,0 +1,281 @@
+{
+  "C": {
+    "precision": 1.0,
+    "recall": 0.9925925925925926,
+    "tp": 268,
+    "fp": 0,
+    "fn": 2,
+    "candidate_pairs": 268,
+    "evaluated_pairs": 5778,
+    "by_variant": {
+      "copy": {
+        "found": 18,
+        "total": 18
+      },
+      "resize": {
+        "found": 18,
+        "total": 18
+      },
+      "compressed": {
+        "found": 18,
+        "total": 18
+      },
+      "crop": {
+        "found": 18,
+        "total": 18
+      },
+      "crop_upscale": {
+        "found": 18,
+        "total": 18
+      }
+    },
+    "examples": {
+      "success": [
+        {
+          "a": "2003656135__compressed.jpg",
+          "b": "2003656135__crop.jpg",
+          "score": 0.76701427,
+          "candidate": true,
+          "exact_verified": false
+        },
+        {
+          "a": "2003656135__compressed.jpg",
+          "b": "2003656135__crop_upscale.jpg",
+          "score": 0.76801676,
+          "candidate": true,
+          "exact_verified": false
+        }
+      ],
+      "miss": [
+        {
+          "a": "2011636061__compressed.jpg",
+          "b": "2011636061__crop.jpg",
+          "score": 0.70899916,
+          "candidate": false,
+          "exact_verified": false
+        },
+        {
+          "a": "2011636061__compressed.jpg",
+          "b": "2011636061__crop_upscale.jpg",
+          "score": 0.70377362,
+          "candidate": false,
+          "exact_verified": false
+        }
+      ],
+      "false_positive": []
+    }
+  },
+  "B": {
+    "precision": 0.7098765432098766,
+    "recall": 0.8518518518518519,
+    "tp": 230,
+    "fp": 94,
+    "fn": 40,
+    "candidate_pairs": 324,
+    "evaluated_pairs": 5778,
+    "by_variant": {
+      "copy": {
+        "found": 18,
+        "total": 18
+      },
+      "resize": {
+        "found": 18,
+        "total": 18
+      },
+      "compressed": {
+        "found": 18,
+        "total": 18
+      },
+      "crop": {
+        "found": 13,
+        "total": 18
+      },
+      "crop_upscale": {
+        "found": 13,
+        "total": 18
+      }
+    },
+    "examples": {
+      "success": [
+        {
+          "a": "2003656135__compressed.jpg",
+          "b": "2003656135__crop.jpg",
+          "score": 12,
+          "candidate": true,
+          "exact_verified": false
+        },
+        {
+          "a": "2003656135__compressed.jpg",
+          "b": "2003656135__crop_upscale.jpg",
+          "score": 14,
+          "candidate": true,
+          "exact_verified": false
+        }
+      ],
+      "miss": [
+        {
+          "a": "2011636061__compressed.jpg",
+          "b": "2011636061__crop.jpg",
+          "score": 26,
+          "candidate": false,
+          "exact_verified": false
+        },
+        {
+          "a": "2011636061__compressed.jpg",
+          "b": "2011636061__crop_upscale.jpg",
+          "score": 26,
+          "candidate": false,
+          "exact_verified": false
+        }
+      ],
+      "false_positive": [
+        {
+          "a": "2017832209__crop.jpg",
+          "b": "2003656135__copy.jpg",
+          "score": 20,
+          "candidate": true,
+          "exact_verified": false
+        },
+        {
+          "a": "2017832209__crop.jpg",
+          "b": "2003656135__original.jpg",
+          "score": 20,
+          "candidate": true,
+          "exact_verified": false
+        }
+      ]
+    }
+  },
+  "D": {
+    "precision": 1.0,
+    "recall": 0.9925925925925926,
+    "tp": 268,
+    "fp": 0,
+    "fn": 2,
+    "candidate_pairs": 268,
+    "evaluated_pairs": 5778,
+    "by_variant": {
+      "copy": {
+        "found": 18,
+        "total": 18
+      },
+      "resize": {
+        "found": 18,
+        "total": 18
+      },
+      "compressed": {
+        "found": 18,
+        "total": 18
+      },
+      "crop": {
+        "found": 18,
+        "total": 18
+      },
+      "crop_upscale": {
+        "found": 18,
+        "total": 18
+      }
+    },
+    "examples": {
+      "success": [
+        {
+          "a": "2003656135__compressed.jpg",
+          "b": "2003656135__crop.jpg",
+          "score": 0.76701427,
+          "candidate": true,
+          "exact_verified": false
+        },
+        {
+          "a": "2003656135__compressed.jpg",
+          "b": "2003656135__crop_upscale.jpg",
+          "score": 0.76801676,
+          "candidate": true,
+          "exact_verified": false
+        }
+      ],
+      "miss": [
+        {
+          "a": "2011636061__compressed.jpg",
+          "b": "2011636061__crop.jpg",
+          "score": 0.70899916,
+          "candidate": false,
+          "exact_verified": false
+        },
+        {
+          "a": "2011636061__compressed.jpg",
+          "b": "2011636061__crop_upscale.jpg",
+          "score": 0.70377362,
+          "candidate": false,
+          "exact_verified": false
+        }
+      ],
+      "false_positive": []
+    }
+  },
+  "A": {
+    "precision": 1.0,
+    "recall": 0.06666666666666667,
+    "tp": 18,
+    "fp": 0,
+    "fn": 252,
+    "candidate_pairs": 18,
+    "evaluated_pairs": 5778,
+    "by_variant": {
+      "copy": {
+        "found": 18,
+        "total": 18
+      },
+      "resize": {
+        "found": 0,
+        "total": 18
+      },
+      "compressed": {
+        "found": 0,
+        "total": 18
+      },
+      "crop": {
+        "found": 0,
+        "total": 18
+      },
+      "crop_upscale": {
+        "found": 0,
+        "total": 18
+      }
+    },
+    "examples": {
+      "success": [
+        {
+          "a": "2003656135__original.jpg",
+          "b": "2003656135__copy.jpg",
+          "score": 1,
+          "candidate": true,
+          "exact_verified": true
+        },
+        {
+          "a": "2010630616__original.jpg",
+          "b": "2010630616__copy.jpg",
+          "score": 1,
+          "candidate": true,
+          "exact_verified": true
+        }
+      ],
+      "miss": [
+        {
+          "a": "2003656135__compressed.jpg",
+          "b": "2003656135__crop.jpg",
+          "score": 0,
+          "candidate": false,
+          "exact_verified": false
+        },
+        {
+          "a": "2003656135__compressed.jpg",
+          "b": "2003656135__crop_upscale.jpg",
+          "score": 0,
+          "candidate": false,
+          "exact_verified": false
+        }
+      ],
+      "false_positive": []
+    }
+  }
+}

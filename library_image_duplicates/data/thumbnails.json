@@ -1,0 +1,1852 @@
+[
+  {
+    "id": "2010630676__original.jpg",
+    "experiment_file_sha256": "b92935a7988585895890590c564f1d094d90dc599d039f93f4728d24d4a06e23",
+    "thumbnail_sha256": "23b947a567429b53e6566d8abd15d761c22a88c5a43468bf2aa160a726a8707e",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630676__copy.jpg",
+    "experiment_file_sha256": "b92935a7988585895890590c564f1d094d90dc599d039f93f4728d24d4a06e23",
+    "thumbnail_sha256": "23b947a567429b53e6566d8abd15d761c22a88c5a43468bf2aa160a726a8707e",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630676__resize.jpg",
+    "experiment_file_sha256": "b6dc6183f29d781662c09dbe7e79fbd9e4ca583c622e0938b5a082f6927ee290",
+    "thumbnail_sha256": "3be13c8308a21c6269c8be7c8a8f81cd4e77e3a4885ae0f317830a52a1473b9a",
+    "display_size": [
+      410,
+      273
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630676__compressed.jpg",
+    "experiment_file_sha256": "bcfd63d9cc7cb1cee6e7c70d1e9e1a9aabcaa4d414784d9a56f7e1d76f18328a",
+    "thumbnail_sha256": "12685e8bb8de33929a79d0f3e69fd90fb5f7135642ac71dd404302e3a1fdb0a2",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630676__crop.jpg",
+    "experiment_file_sha256": "758572a928c11e370d9985260589a40d8e1f74e38bee2ec3198edd889346de38",
+    "thumbnail_sha256": "3e15a28f0f78998c0288bb9b3caca80f1d2619248468c921bdc29c21bbe9b539",
+    "display_size": [
+      520,
+      346
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630676__crop_upscale.jpg",
+    "experiment_file_sha256": "6fc692591bd341fb91d38ba3cbf0cf0f5ef431582001ad7a838576196cbdbf23",
+    "thumbnail_sha256": "1ca22f8ebfd5a71fe09bf1fe776400d9b8034f434ec67fa994d89bb6c916e871",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630677__original.jpg",
+    "experiment_file_sha256": "6628f92b7f93e7678a06daf0241b515286b52ba625d3a561d20b323469f16a5e",
+    "thumbnail_sha256": "4b60b0c112f76c8a1f20ea0c433028858fb6e662b3a1f3e7a8bb1a378bc3160d",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630677__copy.jpg",
+    "experiment_file_sha256": "6628f92b7f93e7678a06daf0241b515286b52ba625d3a561d20b323469f16a5e",
+    "thumbnail_sha256": "4b60b0c112f76c8a1f20ea0c433028858fb6e662b3a1f3e7a8bb1a378bc3160d",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630677__resize.jpg",
+    "experiment_file_sha256": "8c9872a571ce6baa200b99dadeed5e3c1622c438d2a0407caa2b55f5d33ca80f",
+    "thumbnail_sha256": "a3f195a9b82ab13c1776ab62ba64d5422353df998abb974b8d3f4ef4d51dae3a",
+    "display_size": [
+      410,
+      273
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630677__compressed.jpg",
+    "experiment_file_sha256": "11ee28345692c9e73e6e395d1aad12579e73d1236429357e0d02e721e2a5ebff",
+    "thumbnail_sha256": "0f66dc3b1b811486f8b9f7090882dda58f8e4aab42a717c0400a177c1663525b",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630677__crop.jpg",
+    "experiment_file_sha256": "8e3820782e82335e0a0fb437d9a9f8ac1f4dd535e09a714631c73d778420c82e",
+    "thumbnail_sha256": "1b829057f04de0a9b2e4e241f1ec8672329860323a867b0c06aa8d04c2ea82fd",
+    "display_size": [
+      520,
+      346
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630677__crop_upscale.jpg",
+    "experiment_file_sha256": "11b6914ae410c5b90f23a00e7dbad868dce67756a9d3c16bc754309bfb666bb4",
+    "thumbnail_sha256": "a012a853fd9a907f10ef18f8e1cb9733f935b8ccdd09de935983e79a15fafe65",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630765__original.jpg",
+    "experiment_file_sha256": "2cc98c519af0466eec73923576cc83963c99733a9dc573a50cdef5ad015e4de0",
+    "thumbnail_sha256": "0735d6e2e41523ecf2ba0dd58b1350fcb6df70ee062a44611d2deb2f68cc2dd5",
+    "display_size": [
+      513,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630765__copy.jpg",
+    "experiment_file_sha256": "2cc98c519af0466eec73923576cc83963c99733a9dc573a50cdef5ad015e4de0",
+    "thumbnail_sha256": "0735d6e2e41523ecf2ba0dd58b1350fcb6df70ee062a44611d2deb2f68cc2dd5",
+    "display_size": [
+      513,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630765__resize.jpg",
+    "experiment_file_sha256": "a29606d9f0de6570680ff99829c5d41976ad89822530ae52e70993a5d73b32c1",
+    "thumbnail_sha256": "5710c89c5bccdb60206a5a0aff3bd8d06d180f8bde3b96dc535181a5432409b5",
+    "display_size": [
+      410,
+      304
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630765__compressed.jpg",
+    "experiment_file_sha256": "1be63092deec0e46394334fb3e6d3ee4204c379fad3e055c109f96eb62e477b8",
+    "thumbnail_sha256": "2285a55c8ecb5617f98d9876b404e58ca8a07a41dd17beab90d16796f6b1d1fc",
+    "display_size": [
+      513,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630765__crop.jpg",
+    "experiment_file_sha256": "6288dd52d001c8ea9cab51babfc57ed16d8a17d06116075ea6597b5715afd687",
+    "thumbnail_sha256": "fae3c66a6464e00eba804976be2e7d27c88971615d4a22ec4c04b74526b9571a",
+    "display_size": [
+      513,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630765__crop_upscale.jpg",
+    "experiment_file_sha256": "ed93f71e38c8e84e44795876abc5eee03b640f30f5db9c6d2312c39925f71114",
+    "thumbnail_sha256": "b72b45a10b0061f135c1b7e9b40171e013a31c952f35b6c963c5cc9ca063d6c2",
+    "display_size": [
+      513,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2020720205__original.jpg",
+    "experiment_file_sha256": "038572e2414045e623c328c6597f392b41dc331dd338f9a6ec3b1de33ebdec2e",
+    "thumbnail_sha256": "13f78f9a3d1359cc98c45e1c283420c443b033114d0b4377eebd1b0adda860cb",
+    "display_size": [
+      506,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2020720205__copy.jpg",
+    "experiment_file_sha256": "038572e2414045e623c328c6597f392b41dc331dd338f9a6ec3b1de33ebdec2e",
+    "thumbnail_sha256": "13f78f9a3d1359cc98c45e1c283420c443b033114d0b4377eebd1b0adda860cb",
+    "display_size": [
+      506,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2020720205__resize.jpg",
+    "experiment_file_sha256": "db6967217d0e889a831f077a099714f6056f82a6071de31a73cb5acb26252fdb",
+    "thumbnail_sha256": "c03faf762a2d47ad93587e3e017930ac126db2546257fd8653f693bec4627416",
+    "display_size": [
+      410,
+      308
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2020720205__compressed.jpg",
+    "experiment_file_sha256": "9c7aed0cd723e60be42d00ec33bb98fb4dc4ee86fbf613b4520dfb661d36410c",
+    "thumbnail_sha256": "fb25d6449d5483d079a431b748371bdc6d749ec7b0c2646cfe7696b28a9bc717",
+    "display_size": [
+      506,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2020720205__crop.jpg",
+    "experiment_file_sha256": "c02a3f365a62b0b8949f686b9ff8a48ce4b207ce4f905923814c402519c55bb3",
+    "thumbnail_sha256": "a41a15a3c9d2aff133eff4501cde91309d028f17b11363bef6b4cfcb71abec39",
+    "display_size": [
+      506,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2020720205__crop_upscale.jpg",
+    "experiment_file_sha256": "53cae7997d04a9180cc184d3b49d592ab2bd75c8c433332c22453f9f40b5fbdc",
+    "thumbnail_sha256": "2b82f48d11f50aec3a80e36f0db8b03e863e46add238428249598fd401c1c1cf",
+    "display_size": [
+      506,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2011631173__original.jpg",
+    "experiment_file_sha256": "b94b94d17e579918182db8d08ea6b5179bfb57aa84513adf0b84099632e812ba",
+    "thumbnail_sha256": "759ff9ef0d403f25511fa5a0fbc7412a0270fa206568d995aa609783c10041ef",
+    "display_size": [
+      298,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2011631173__copy.jpg",
+    "experiment_file_sha256": "b94b94d17e579918182db8d08ea6b5179bfb57aa84513adf0b84099632e812ba",
+    "thumbnail_sha256": "759ff9ef0d403f25511fa5a0fbc7412a0270fa206568d995aa609783c10041ef",
+    "display_size": [
+      298,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2011631173__resize.jpg",
+    "experiment_file_sha256": "b46d3f50e43f24987edda8a6d210480d63e229cbbb8b027a600bf650a4714aee",
+    "thumbnail_sha256": "748302d71c5782fcdd98bbdb1feb02514c9abf28dfd905fce167dedb5522d7e2",
+    "display_size": [
+      298,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2011631173__compressed.jpg",
+    "experiment_file_sha256": "47b55ddb8c0d6ac167aa0618251ecc23830d49d718882efd8153f3d9da683a65",
+    "thumbnail_sha256": "6a70ac7cd082a7301d24bf7a345b44fe7a26220afa383376159e3e7d0cc69cbc",
+    "display_size": [
+      298,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2011631173__crop.jpg",
+    "experiment_file_sha256": "d95b8ecdab6582d38615724bf3b4ab3b5fa4df05a9fef87ed55a49fab9ae8a37",
+    "thumbnail_sha256": "526fc7f5a4a5ed836881a554578d09c3f22c98a55651fd31271217a9fc406c44",
+    "display_size": [
+      298,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2011631173__crop_upscale.jpg",
+    "experiment_file_sha256": "6b812b48846543d2e434092ea7573645f334a9fef4f32fc82ce1ea3bfc41d132",
+    "thumbnail_sha256": "1e91d41b437bcb0b415573268d392ae21fdb6194bc00b90ce9d71701273ffa28",
+    "display_size": [
+      298,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2018701036__original.jpg",
+    "experiment_file_sha256": "9ee4926fdcfb61cf47c5261f88c40e2b6a55fb6c640073d13f7fae481bea6285",
+    "thumbnail_sha256": "ea4f6219609f3a2b58fbb2d62b18cd022732d7f928afa19d700b59d4744197b9",
+    "display_size": [
+      507,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2018701036__copy.jpg",
+    "experiment_file_sha256": "9ee4926fdcfb61cf47c5261f88c40e2b6a55fb6c640073d13f7fae481bea6285",
+    "thumbnail_sha256": "ea4f6219609f3a2b58fbb2d62b18cd022732d7f928afa19d700b59d4744197b9",
+    "display_size": [
+      507,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2018701036__resize.jpg",
+    "experiment_file_sha256": "0c364182f98d8b078bdb603a155d7b360a88b107f72e0001d8550bbae89db498",
+    "thumbnail_sha256": "89c2e0461fc94e028d6615048aacbfb90c57037fac00fcf3f37ddb6a7660c7cc",
+    "display_size": [
+      410,
+      307
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2018701036__compressed.jpg",
+    "experiment_file_sha256": "a39f115a005be51a36415643fe1435d9e3cdae600f169e241a769d72d9d0c211",
+    "thumbnail_sha256": "5ed5022405c0f55df3bc0121ef8a35a26ea7d3d3fd3922e7363725cbeee2900d",
+    "display_size": [
+      507,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2018701036__crop.jpg",
+    "experiment_file_sha256": "e86e293432274725dc434124ed522b537d424a01158947f0dd3515beeff074c3",
+    "thumbnail_sha256": "4a0c952ce3864e8f82d2acff195b33b0752e56a92e3b7919aa6832f9a03e9ac6",
+    "display_size": [
+      507,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2018701036__crop_upscale.jpg",
+    "experiment_file_sha256": "be9a99676d7252098139068a199aebfc4ae4c4878caeaba47123a51bee14ae36",
+    "thumbnail_sha256": "bdbbaeeeea64112dc180ee7ad218b720deb6f56701b982bc7a13874f4eb355c7",
+    "display_size": [
+      507,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2011636061__original.jpg",
+    "experiment_file_sha256": "8e8c0f84098edcd9c3ee58369effc2fefa6084f58718b1e9090acf011985b253",
+    "thumbnail_sha256": "51210ab24a8832acc6d5ffa0f5256755a3c0d318ec02e090df6aa1df38330bb0",
+    "display_size": [
+      480,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2011636061__copy.jpg",
+    "experiment_file_sha256": "8e8c0f84098edcd9c3ee58369effc2fefa6084f58718b1e9090acf011985b253",
+    "thumbnail_sha256": "51210ab24a8832acc6d5ffa0f5256755a3c0d318ec02e090df6aa1df38330bb0",
+    "display_size": [
+      480,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2011636061__resize.jpg",
+    "experiment_file_sha256": "8942984092c319b1d1709bdd9ce74928e9ffeb52284bf5a4896be30f98bec02e",
+    "thumbnail_sha256": "50ace6f07c7d3b4df456791015b10db4919e900ecac242c02e5f1352fb46ac04",
+    "display_size": [
+      410,
+      324
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2011636061__compressed.jpg",
+    "experiment_file_sha256": "207ff0b0a7a7f393fa48175c3fd091fdbc9120b2ea961099871a6d4709326b8d",
+    "thumbnail_sha256": "60df9045c93b8150e61c4e3d96fee06e6d0919c61566b41298b249fbeb965137",
+    "display_size": [
+      480,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2011636061__crop.jpg",
+    "experiment_file_sha256": "886f6e7d2c8bbea99a7c439e99fb3c747047ba23b3c85de270c48fb9f3272831",
+    "thumbnail_sha256": "9201310f62398bd70e087814d16c32e8645b5fe6bb9268b647c7676fae63451e",
+    "display_size": [
+      481,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2011636061__crop_upscale.jpg",
+    "experiment_file_sha256": "9c3294a8fe9ad1ceb68e6099fbd91bb720d85800465dc2a74bf8fbf8aebd0c84",
+    "thumbnail_sha256": "4b9876a17329ed22a23eff437bd8b7f412e6968b89d4811517af91a83fccbd86",
+    "display_size": [
+      480,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630616__original.jpg",
+    "experiment_file_sha256": "1a4e63ab16deb2923ca60b5a2667bbdba4b08d371b672d1ddfaec67415509e33",
+    "thumbnail_sha256": "ccd262f51cafda26d4308e6a3b44c388047aa449833b5e078568c00ed65611e5",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630616__copy.jpg",
+    "experiment_file_sha256": "1a4e63ab16deb2923ca60b5a2667bbdba4b08d371b672d1ddfaec67415509e33",
+    "thumbnail_sha256": "ccd262f51cafda26d4308e6a3b44c388047aa449833b5e078568c00ed65611e5",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630616__resize.jpg",
+    "experiment_file_sha256": "f14099af8e5449f7dc912efc17368c643e7ec6d0ab9911da833991a341ac1274",
+    "thumbnail_sha256": "1611db1957a415d6299f73f4b1915c90449d130be019d68119be417589f98a1b",
+    "display_size": [
+      410,
+      273
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630616__compressed.jpg",
+    "experiment_file_sha256": "757b7abffad2c241f00fb70626b394846dc549a4b6ea789ff0e86e706a6feee6",
+    "thumbnail_sha256": "97f02d4baf31e6c8a003571ba203fe47e57ae1ddc0f9580b6824429af56ce250",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630616__crop.jpg",
+    "experiment_file_sha256": "8d67e76d6c597577897c91794d81524e0e0df4cc36f5d5e4bafad4f6f3b20798",
+    "thumbnail_sha256": "4d05781365fa6bf8ecfd472e2e402baca9c41b56320663864e0917b8c438fc01",
+    "display_size": [
+      520,
+      346
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630616__crop_upscale.jpg",
+    "experiment_file_sha256": "f8b50b71b1565c9939daf79d59c0e81c2b7051bd88c36251ed47665e920b02d5",
+    "thumbnail_sha256": "a1b35adf9ef75784447406dcb360b632b9fa6c95b689cc69eda6fa9559e5ca7a",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017882041__original.jpg",
+    "experiment_file_sha256": "2ea91b703739d9119f842e39db8c06cdf2d07e624a2b61142e6e40ee821a4977",
+    "thumbnail_sha256": "2c45f3c49b4e310e019d5574ad39dac67f2249ba6da5618549919310cdc7b786",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017882041__copy.jpg",
+    "experiment_file_sha256": "2ea91b703739d9119f842e39db8c06cdf2d07e624a2b61142e6e40ee821a4977",
+    "thumbnail_sha256": "2c45f3c49b4e310e019d5574ad39dac67f2249ba6da5618549919310cdc7b786",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017882041__resize.jpg",
+    "experiment_file_sha256": "0f8e22f03dd262cc850ab9f34cb0bdaf04806d4fe1b8b07b4e92d8475c2b59d9",
+    "thumbnail_sha256": "32cf785efa1b404b447d3821f9382e0140477e94b0374292b81e532d0feeeb7c",
+    "display_size": [
+      410,
+      273
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017882041__compressed.jpg",
+    "experiment_file_sha256": "3901d917e9dc94f7d26d269879ded1cd4a20ee3ad9742a1c8f182dad0462521e",
+    "thumbnail_sha256": "fb79379dd4550db44af11548f3b20b327e0ea02b969ded7d0ab893d4f03f859f",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017882041__crop.jpg",
+    "experiment_file_sha256": "ba365fbdd2c3c4f594755d665ded6c340644615646cb71db0482b4cc79ae68e6",
+    "thumbnail_sha256": "7b09494d777d10fd9f1f31e0a8ab8212634e76b0694712a0310ae124edfd8c5d",
+    "display_size": [
+      520,
+      346
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017882041__crop_upscale.jpg",
+    "experiment_file_sha256": "752e8e20094bcf53e920012a2d9668e8a8c336ab4576441b90f9d4bda6e08827",
+    "thumbnail_sha256": "35c90e70140c5a9effefd1a9384e0d026c161d86646388ed3512ed653f379ef1",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630408__original.jpg",
+    "experiment_file_sha256": "3829e2b1690dfd13c56b22e6714847478d8fc80aac5c61f169f7b551f2ca8cfb",
+    "thumbnail_sha256": "d6adbe6ad38b3944db18c928d1cb2062c9baaa7b7be5a34c2a223f4690e44a70",
+    "display_size": [
+      520,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630408__copy.jpg",
+    "experiment_file_sha256": "3829e2b1690dfd13c56b22e6714847478d8fc80aac5c61f169f7b551f2ca8cfb",
+    "thumbnail_sha256": "d6adbe6ad38b3944db18c928d1cb2062c9baaa7b7be5a34c2a223f4690e44a70",
+    "display_size": [
+      520,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630408__resize.jpg",
+    "experiment_file_sha256": "9b3ce990503ac4921c07ce1c526ece9ad4f895cdc6b534b7714d789c238b7aff",
+    "thumbnail_sha256": "ad8ab8b3e01fff57ccd7314584cac525b15d1f4035ee5185ac7153091c0db4ff",
+    "display_size": [
+      410,
+      300
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630408__compressed.jpg",
+    "experiment_file_sha256": "ebe13482210768422e55c88b5ce9db0987c7bde50bc6c75543975064fd8d14a2",
+    "thumbnail_sha256": "40d1fffb18b4d3f333956fe0548c96c4b714a0ea4b22892a4cbffe56090d435e",
+    "display_size": [
+      520,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630408__crop.jpg",
+    "experiment_file_sha256": "fd3ca856d2904ad85b16509841a78bb40ecc7b3313a2cc1a86b8c91134910c17",
+    "thumbnail_sha256": "a13ca30cbf37c9c995cadbe6f26aa0931bd345130ae0224449b60af1985e6ce0",
+    "display_size": [
+      519,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630408__crop_upscale.jpg",
+    "experiment_file_sha256": "462c4b2aad745c994b199233bf18d51b4980e91c8b72694eb232e6421e6e74cd",
+    "thumbnail_sha256": "1dc7f26d0d835be944db7115baf9ef1f12f726ece406d53363078be39f1f9191",
+    "display_size": [
+      520,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2018663548__original.jpg",
+    "experiment_file_sha256": "8e5ea7cedc5a362eed1f4739f26981e58bce9a970ece7d5b8eb65f634aa5e52f",
+    "thumbnail_sha256": "52feca7263b30ab76fe4dd7c4f2b828b9d6e5a1e5cf16b3842587d0cf16661d0",
+    "display_size": [
+      507,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2018663548__copy.jpg",
+    "experiment_file_sha256": "8e5ea7cedc5a362eed1f4739f26981e58bce9a970ece7d5b8eb65f634aa5e52f",
+    "thumbnail_sha256": "52feca7263b30ab76fe4dd7c4f2b828b9d6e5a1e5cf16b3842587d0cf16661d0",
+    "display_size": [
+      507,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2018663548__resize.jpg",
+    "experiment_file_sha256": "d16999d74fcabfa2676a20a0fab35ed414450400ed5d8368cfb7217edc7253a5",
+    "thumbnail_sha256": "04ca315d57074ee8f21434575b71e26b726776e63301f154779f282808d2a06b",
+    "display_size": [
+      410,
+      307
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2018663548__compressed.jpg",
+    "experiment_file_sha256": "028936b685fb328145c737f1a1ffa60f222559ec1cdceed315ea0343e46d05ff",
+    "thumbnail_sha256": "4280b9f07713f59ae219f7c90fdf1eaf15c604e60d28b9b816a13834df9b5140",
+    "display_size": [
+      507,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2018663548__crop.jpg",
+    "experiment_file_sha256": "a5d1ca00069b078cc62d3a2f183bff9766a1c3be5279ae367b314c0793d37dea",
+    "thumbnail_sha256": "72da8a2a942ed6aaa5df7094a62bb03a2b850c6201ee4272791bea79bf5d6e6e",
+    "display_size": [
+      507,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2018663548__crop_upscale.jpg",
+    "experiment_file_sha256": "af0c1b2235c240d42e59d8631f35d1f811112341500c2d5b3789804a22ec331b",
+    "thumbnail_sha256": "d0dc38d65e8d31ad5f3d734cc4bb5468235e78aeff6cc00c3cda05f405f42a3d",
+    "display_size": [
+      507,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877351__original.jpg",
+    "experiment_file_sha256": "9977ec6b39b9c5ccfd4e9fcbb0ddf330c34e6abd94c7af1fd1365e811c6c51d7",
+    "thumbnail_sha256": "e933be7013c36933e22c53d721fdbc0e936b4cd7548eac1d3903150484c6add7",
+    "display_size": [
+      520,
+      363
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877351__copy.jpg",
+    "experiment_file_sha256": "9977ec6b39b9c5ccfd4e9fcbb0ddf330c34e6abd94c7af1fd1365e811c6c51d7",
+    "thumbnail_sha256": "e933be7013c36933e22c53d721fdbc0e936b4cd7548eac1d3903150484c6add7",
+    "display_size": [
+      520,
+      363
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877351__resize.jpg",
+    "experiment_file_sha256": "81e4c331d2fe6e6b1f9a33d962f78bcc3c707e5060da13da205219da1049eff3",
+    "thumbnail_sha256": "df3522ae5370f28b95b2510bef5bd52d6cc422658f0b2c6758f728cf26fa7322",
+    "display_size": [
+      410,
+      286
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877351__compressed.jpg",
+    "experiment_file_sha256": "60ab1296d5fd4b79dc11a4cc04d9c2052e7936209f3a77b7c2bf28ad2fe5babc",
+    "thumbnail_sha256": "5fb8f23c494e7b443caaa1f7df336e94232f8b9c697f98fbd89e825611aed8c7",
+    "display_size": [
+      520,
+      363
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877351__crop.jpg",
+    "experiment_file_sha256": "0400c23aeee9591b997d9d24240df6a06060d03119a872c20c076815386a8cc9",
+    "thumbnail_sha256": "8da7f523b759e8ad134126d07fa0c90a563c021529d3ceb42bc8ccbd869c15f1",
+    "display_size": [
+      520,
+      363
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877351__crop_upscale.jpg",
+    "experiment_file_sha256": "1394999c524bff2c5adaa158b1f018fd334e0b978736a2fe005baa10b310a9bf",
+    "thumbnail_sha256": "57d6bbaaca1a93113f3d8aceb150f5eae37540078b008f2dae1dfba05d9d9889",
+    "display_size": [
+      520,
+      363
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877359__original.jpg",
+    "experiment_file_sha256": "f64e0ca0e8ad0be584fc7870deeb03a31fdadc7c598a95a64dc142ced4df1e8e",
+    "thumbnail_sha256": "db16f55494c90d67fe0c87847e75f90ab406ec522108958cd567ac51a228e20d",
+    "display_size": [
+      520,
+      363
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877359__copy.jpg",
+    "experiment_file_sha256": "f64e0ca0e8ad0be584fc7870deeb03a31fdadc7c598a95a64dc142ced4df1e8e",
+    "thumbnail_sha256": "db16f55494c90d67fe0c87847e75f90ab406ec522108958cd567ac51a228e20d",
+    "display_size": [
+      520,
+      363
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877359__resize.jpg",
+    "experiment_file_sha256": "143eb2320edd2ca2ea86013aab579a43c486bd6d4aeef41518b60b294c24d49f",
+    "thumbnail_sha256": "3d8b0fcb0c191f099b6276b9709e7ad0830fe56a965fea3de7e87e2d0c90a36a",
+    "display_size": [
+      410,
+      286
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877359__compressed.jpg",
+    "experiment_file_sha256": "6c321299da1ce71d6b74cc535a426f7d488f3a74ee2f2b07926df29d536889c9",
+    "thumbnail_sha256": "5d0faffd3e7e21eba2c27190221204461334cfff754ac3217b224078be12c0aa",
+    "display_size": [
+      520,
+      363
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877359__crop.jpg",
+    "experiment_file_sha256": "4e5bcb9b5c50cd4c362aa0a2e6309fc4898bdb7c5a33c8c3cff64119b3d831de",
+    "thumbnail_sha256": "cf5dcaa68f0a092e1727c2147ecace422e5ffa04a2ae69e6ac30080b4e9c6177",
+    "display_size": [
+      520,
+      363
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877359__crop_upscale.jpg",
+    "experiment_file_sha256": "91631cffb4ee4784e7364c3b483298549255ded14ff22f4022905df85277eb72",
+    "thumbnail_sha256": "3f92646c47514a529559a044eb69810645ef965833f64b89a7ae2d7f2928f5d5",
+    "display_size": [
+      520,
+      363
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877451__original.jpg",
+    "experiment_file_sha256": "258d539df21af9ed1cef417bf1301883a3c0fa0e48ee517c8c1da95f614e3710",
+    "thumbnail_sha256": "af8b7301673569219f28a2313cc8df505e8ad58f1187f134b50217f02d71480d",
+    "display_size": [
+      520,
+      370
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877451__copy.jpg",
+    "experiment_file_sha256": "258d539df21af9ed1cef417bf1301883a3c0fa0e48ee517c8c1da95f614e3710",
+    "thumbnail_sha256": "af8b7301673569219f28a2313cc8df505e8ad58f1187f134b50217f02d71480d",
+    "display_size": [
+      520,
+      370
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877451__resize.jpg",
+    "experiment_file_sha256": "72a2ad2c0ce13d6c9436c455b7b0811faae39b8814991e9ccea06e0284b3b581",
+    "thumbnail_sha256": "b51de1776e4a04dd3d577d89e2bbb81977fdd1a8eed8dd35378d0175df0fc788",
+    "display_size": [
+      410,
+      291
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877451__compressed.jpg",
+    "experiment_file_sha256": "5f21c67788fb916d12086799cfdc3dbee28fffe5bf040bf8ce9d9d9d7c87f473",
+    "thumbnail_sha256": "40620011b47bb2a708b1bc48fb712b691d218b4774042ef656195544140e6c93",
+    "display_size": [
+      520,
+      370
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877451__crop.jpg",
+    "experiment_file_sha256": "1175c2dbb5349d1318ec84579bedcd87cffb3ebcd0bc5a22d8f7ecce82b453ab",
+    "thumbnail_sha256": "f741e245b6ef23c16821609ff0ebb024c6ce604a823d0c1979a0de160193a35f",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877451__crop_upscale.jpg",
+    "experiment_file_sha256": "7d771e9a1a9ac59d8606007e2596fa9d92a24ef401e5b67fd6a97dbd71015516",
+    "thumbnail_sha256": "d6e4a07bc8a429f028551ad7daa0b2251abcad5c7b98143a50bfff31b9f1c747",
+    "display_size": [
+      520,
+      370
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877502__original.jpg",
+    "experiment_file_sha256": "1f5dec1dea4bc9625182300278ce14533d9a958f0ce39e69b4db60746eae8ec1",
+    "thumbnail_sha256": "4e323c73bfe1ddd4d7b22aa5ff603cae3017bb0c68bc41b05c8203846f125c77",
+    "display_size": [
+      520,
+      365
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877502__copy.jpg",
+    "experiment_file_sha256": "1f5dec1dea4bc9625182300278ce14533d9a958f0ce39e69b4db60746eae8ec1",
+    "thumbnail_sha256": "4e323c73bfe1ddd4d7b22aa5ff603cae3017bb0c68bc41b05c8203846f125c77",
+    "display_size": [
+      520,
+      365
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877502__resize.jpg",
+    "experiment_file_sha256": "5d2014a04f6f846dbffecc98d615ffeb90e2e6f8dc19ee2a8d3f5224703c945a",
+    "thumbnail_sha256": "953350b64b1a486969d928830fba4be530b94cc9a66aaae3f085449081a3270f",
+    "display_size": [
+      410,
+      287
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877502__compressed.jpg",
+    "experiment_file_sha256": "f8023644dddf5162b1b6c866bbfdf5980dbe3f67842f5a533e97e5ee94966b34",
+    "thumbnail_sha256": "caf7ac34527dab44d7b5066f9fa63cc7587063de701a378d3bd515ffa65b4158",
+    "display_size": [
+      520,
+      365
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877502__crop.jpg",
+    "experiment_file_sha256": "785ea917a546be9a03d1dabdae3a7dc67bae101b2ea0f2cc9062f2e051f05446",
+    "thumbnail_sha256": "1e461140c9830f20665d3461df966506fa74e061a6f3a2d72c9b131212c2f43e",
+    "display_size": [
+      520,
+      365
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877502__crop_upscale.jpg",
+    "experiment_file_sha256": "52fcff176456d82f788121c2a90904a080e6ff3f7a23b1354ebb16f4e25130a2",
+    "thumbnail_sha256": "03b5840f830d16773a2e28fb111b14208977dbbf8fef192d0671c49bddf2d7b0",
+    "display_size": [
+      520,
+      365
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877452__original.jpg",
+    "experiment_file_sha256": "1b02fb92507f9109870d3959b26b93c01b1df5595cc3b3f2a9e2904dc97be6d5",
+    "thumbnail_sha256": "fee8a5626f15d3977617f965e7e9e467540ce2217af2ed5769b6b7e7d9686298",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877452__copy.jpg",
+    "experiment_file_sha256": "1b02fb92507f9109870d3959b26b93c01b1df5595cc3b3f2a9e2904dc97be6d5",
+    "thumbnail_sha256": "fee8a5626f15d3977617f965e7e9e467540ce2217af2ed5769b6b7e7d9686298",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877452__resize.jpg",
+    "experiment_file_sha256": "be7c56349b41dab8f60e6508aa5976e0dfd41e59e111d05d833ca75a523f466e",
+    "thumbnail_sha256": "65f30efad17bd5a04e85444ddd0cbd39785e5987f14647c5b312254608e882a8",
+    "display_size": [
+      410,
+      291
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877452__compressed.jpg",
+    "experiment_file_sha256": "9e3000ed27f7a332505f87d233d5b755aa7a4e60ff3d874e9c5df0f31821d2dd",
+    "thumbnail_sha256": "fc2493e788b46f82910ee73a2fb67f16067749c4c79c18c4c5409e0eca228578",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877452__crop.jpg",
+    "experiment_file_sha256": "7f5bcfe56dc380561a2051e74a90bfa4f577abc4b195532853e53dc8ea97ac94",
+    "thumbnail_sha256": "6564e55c303a5487e01cef0854b3f7f844bd3f1610da4f34b3ae9243ed503ac8",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877452__crop_upscale.jpg",
+    "experiment_file_sha256": "9ec2151d88754db4ea5a25eafd4231a8682c34cc0ae3ef2e0d74f9d777022df3",
+    "thumbnail_sha256": "2c0966682dceacc72a89c54c26d00902e71714b6d91bb37163f9cb471ab93cc1",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877453__original.jpg",
+    "experiment_file_sha256": "d21c3185f38e67e96648f81f441b4da82e6947f23a6b46ca2f564ff205e78740",
+    "thumbnail_sha256": "5e90463627add6029be43d7a4d0bbce47835261f3e64342e084b5e44b92919ea",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877453__copy.jpg",
+    "experiment_file_sha256": "d21c3185f38e67e96648f81f441b4da82e6947f23a6b46ca2f564ff205e78740",
+    "thumbnail_sha256": "5e90463627add6029be43d7a4d0bbce47835261f3e64342e084b5e44b92919ea",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877453__resize.jpg",
+    "experiment_file_sha256": "86e00ccabdbdaa3c8f905e601e9df8de0609add2b3f5d4ab7887243d13087549",
+    "thumbnail_sha256": "bfe613a0836106af9304bd2c5c8f619af6e3c937c696ab840c73bdd286b5f8e6",
+    "display_size": [
+      410,
+      291
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877453__compressed.jpg",
+    "experiment_file_sha256": "b9877a5ab000ad849cbd34739e80d4e6123bd65615c4ed491b6b0717838c994a",
+    "thumbnail_sha256": "e0d97639a6f78a6867748f9cd8a68bdbfcdd7d0e0a6223a6678b0e8e95f1ac66",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877453__crop.jpg",
+    "experiment_file_sha256": "9f9529f65d5b7ebdeeaed30789a0d781ff2470328d9fcfca4b4127fa0d2d4c9d",
+    "thumbnail_sha256": "30d4e47be50749f624e163faf2f868176ad2d71845176c1589c7fbf85fba5f3c",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877453__crop_upscale.jpg",
+    "experiment_file_sha256": "5843ac9bde722ea06a8c1e974c5bed25159ef2f11b0c8533da5bca3c7f3d57ef",
+    "thumbnail_sha256": "ee5623823eabf172699b7d3ce36e2ad2594d5f537d2de7e25e48f46b9e79da99",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877454__original.jpg",
+    "experiment_file_sha256": "3cdf5186bf47aeb02c6f90c07ecee6449fe49f701e0ee9cda06edfa43a28b259",
+    "thumbnail_sha256": "bc44b081154a5d3ad5df4eb68e119098925a6426630e8e46397e02025c9c8a72",
+    "display_size": [
+      520,
+      366
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877454__copy.jpg",
+    "experiment_file_sha256": "3cdf5186bf47aeb02c6f90c07ecee6449fe49f701e0ee9cda06edfa43a28b259",
+    "thumbnail_sha256": "bc44b081154a5d3ad5df4eb68e119098925a6426630e8e46397e02025c9c8a72",
+    "display_size": [
+      520,
+      366
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877454__resize.jpg",
+    "experiment_file_sha256": "ac0cf5baf2c5f497fafcd4d56ca07a9872839113b703a127d6b5d5661e49cdf3",
+    "thumbnail_sha256": "083cbc6d5f7dcd382acbfc1c9bd9f55cc415fa887ce553887ed1afb870ef482c",
+    "display_size": [
+      410,
+      288
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877454__compressed.jpg",
+    "experiment_file_sha256": "74f756e2b4e3ab45d887b7b719e1a63551c1e7fa2c1dfc3cbffb4367d14916d2",
+    "thumbnail_sha256": "d380b6e4de4004103aa221eeb16dff46ba9abed74f247d5dc63f79037b5ce7a9",
+    "display_size": [
+      520,
+      366
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877454__crop.jpg",
+    "experiment_file_sha256": "f4eb1355549c80a0cbd42bda67772d88495528535244725e987ad9b3dd5f6da4",
+    "thumbnail_sha256": "d0630860ca83957faee1087e061fd4d9163c23815cd27952b45aa5a6d8b1d053",
+    "display_size": [
+      520,
+      366
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877454__crop_upscale.jpg",
+    "experiment_file_sha256": "96039e7e28902983d1f791411b8886ba092cddf2309c5890fe8fb544b78415f5",
+    "thumbnail_sha256": "5571dd4d58d9fcf0a9cba7deda1a16fad39fe8366610538ceb09c7c3939be76d",
+    "display_size": [
+      520,
+      366
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877476__original.jpg",
+    "experiment_file_sha256": "461b1c0d22f673975adb3fb336df4b0b7c0cd35799fe5c159de8e8ea85b07870",
+    "thumbnail_sha256": "a549b454f35d0682d4b0dc7da1462a7e39401cfa1d5fec515f0a1ce9902ce353",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877476__copy.jpg",
+    "experiment_file_sha256": "461b1c0d22f673975adb3fb336df4b0b7c0cd35799fe5c159de8e8ea85b07870",
+    "thumbnail_sha256": "a549b454f35d0682d4b0dc7da1462a7e39401cfa1d5fec515f0a1ce9902ce353",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877476__resize.jpg",
+    "experiment_file_sha256": "dbc597857eefc7213854e3d4045293b7ff9ecbf6ea3d9eb655e685070cbad934",
+    "thumbnail_sha256": "b89bc9b9f135f2ae684f34446343ee717b9af4e94cc05dac5153fbcec1961bb5",
+    "display_size": [
+      410,
+      290
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877476__compressed.jpg",
+    "experiment_file_sha256": "fd898cbb6a5f53ab75b67662ea6c0e01202aafd469530167ec6b3d9f1d10bcd4",
+    "thumbnail_sha256": "8676bc05878aebda56f3dbd457e98111d3723331a1ba5968040e65737aa37bb3",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877476__crop.jpg",
+    "experiment_file_sha256": "a28dc0d64cb220773d9cdd8a32a2ec856900c96c6a5b6a2e24532c2bc3737dc6",
+    "thumbnail_sha256": "1772de03ef74d14f0d5dd3bc5caa859c0883b597462e664f840b2288df94ff9c",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877476__crop_upscale.jpg",
+    "experiment_file_sha256": "3a90de644df377907925f97d3486ec5b2934458fd2ee5ce40f1d100c5c3fd39f",
+    "thumbnail_sha256": "aa9e534aa7b61f698e1b4904a4dbacb9eba42cc71d346922be2dee9f097575cc",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877477__original.jpg",
+    "experiment_file_sha256": "72f10c39b43fe9d0d0f6406d9c80d8ce07516f9d7c4d4e5a03d95bca52672f7e",
+    "thumbnail_sha256": "c5d1c0ea6932e598857bff4679968341fbc0d4a33e130f677b1161470a2c8504",
+    "display_size": [
+      520,
+      356
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877477__copy.jpg",
+    "experiment_file_sha256": "72f10c39b43fe9d0d0f6406d9c80d8ce07516f9d7c4d4e5a03d95bca52672f7e",
+    "thumbnail_sha256": "c5d1c0ea6932e598857bff4679968341fbc0d4a33e130f677b1161470a2c8504",
+    "display_size": [
+      520,
+      356
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877477__resize.jpg",
+    "experiment_file_sha256": "160e787aadf85ce40e0efc551db6dcec96dca22ca44b3f6e2c0cb77ae8d1de00",
+    "thumbnail_sha256": "7b05690fe1fb77b6174e0133dd4b084d05758a2cb0d2bce9eec727235e1579c0",
+    "display_size": [
+      410,
+      280
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877477__compressed.jpg",
+    "experiment_file_sha256": "edf18aac5ea1b027650719b5a2380ff11ec3214826fb60dc648d196bdcdc7e36",
+    "thumbnail_sha256": "e84823678522ce1aa39efc97b560c5fc3667eca6199e80cd27d25c83b5af7d97",
+    "display_size": [
+      520,
+      356
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877477__crop.jpg",
+    "experiment_file_sha256": "7d827de23c1eca523000e7114fa7de5752d65f8ed77e24cb2c20842d419e5526",
+    "thumbnail_sha256": "625558c3cebe481db147d996f005678b47570e93e9f126b3429368db0617ace4",
+    "display_size": [
+      520,
+      356
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877477__crop_upscale.jpg",
+    "experiment_file_sha256": "9c210eab97820ceaa2bcafedc43c0d170abeddf3796fd13731b721acfcbf6a6b",
+    "thumbnail_sha256": "c20d06364cda8df309f868ddc5e0aa71d1f430612bee12e571c5256c2e031c66",
+    "display_size": [
+      520,
+      356
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877478__original.jpg",
+    "experiment_file_sha256": "ea69d95d9269ad64082145d49063483c3ed65f7c883dd1ebeee4a17d7cf15d93",
+    "thumbnail_sha256": "88c90dd01a8f92feefd9dd99169dc8aa030d5963df80f9edcbc097695c3706c0",
+    "display_size": [
+      520,
+      376
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877478__copy.jpg",
+    "experiment_file_sha256": "ea69d95d9269ad64082145d49063483c3ed65f7c883dd1ebeee4a17d7cf15d93",
+    "thumbnail_sha256": "88c90dd01a8f92feefd9dd99169dc8aa030d5963df80f9edcbc097695c3706c0",
+    "display_size": [
+      520,
+      376
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877478__resize.jpg",
+    "experiment_file_sha256": "91835f0558ba81aa2c0114fc3101731e6f63f336c6de2ce5be7e0cd8e5021b18",
+    "thumbnail_sha256": "0bd928041b4906c38b2e92d291e569a156079031ff9d840c50d849fa269e4834",
+    "display_size": [
+      410,
+      296
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877478__compressed.jpg",
+    "experiment_file_sha256": "84be4c95d9785490ee7f646945b59cae65e6f04d3f22bff30a59292debe95520",
+    "thumbnail_sha256": "1dc39706a0ae326e4ad5cb5e145f79bd2838dfb256820c49b495ec3b8bbcabe7",
+    "display_size": [
+      520,
+      376
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877478__crop.jpg",
+    "experiment_file_sha256": "9b4b883b9db7ea0556bb459deb4379a42a4130a8e7250d76a123a1ca8ff5ff06",
+    "thumbnail_sha256": "16bc585b3f61233a76b6a647a2036118536fcddefd3d627a3f96dcd13f856d7e",
+    "display_size": [
+      520,
+      376
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877478__crop_upscale.jpg",
+    "experiment_file_sha256": "b1e04bc805ff5770fba2caf7e85039e054c7fdc8914b2f517642e32ba4af179e",
+    "thumbnail_sha256": "1b07fa375824af0d0c7abd1619735a3f543a4d36a01db891c472cb8b85688acb",
+    "display_size": [
+      520,
+      376
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877464__original.jpg",
+    "experiment_file_sha256": "7eb755e23167e7ac6c8dc4fdf39a85358156c513fe318f2cedfe3f778dd26706",
+    "thumbnail_sha256": "f47f2e36add094d3ff08cbb94fe86eeec9b8a9182e2f895cd5d300e9cb4ca8d6",
+    "display_size": [
+      520,
+      372
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877464__copy.jpg",
+    "experiment_file_sha256": "7eb755e23167e7ac6c8dc4fdf39a85358156c513fe318f2cedfe3f778dd26706",
+    "thumbnail_sha256": "f47f2e36add094d3ff08cbb94fe86eeec9b8a9182e2f895cd5d300e9cb4ca8d6",
+    "display_size": [
+      520,
+      372
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877464__resize.jpg",
+    "experiment_file_sha256": "70317991443cbb2f415280ca3b5004b3e35444ba96fc8190cb6505f6aeac1a3e",
+    "thumbnail_sha256": "cb76c76e3de29e5e359397cfe9e3c8a261e23c2ba5816a8bfcfc150e6e65107f",
+    "display_size": [
+      410,
+      293
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877464__compressed.jpg",
+    "experiment_file_sha256": "4650aaad094caec1f9abb1c84fe4103f2b7c7740facd1344388322dabc0740e2",
+    "thumbnail_sha256": "5b9f2d1d58c67426e83a91be7d0e25f53c626f99633616395643143f9c0c70f5",
+    "display_size": [
+      520,
+      372
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877464__crop.jpg",
+    "experiment_file_sha256": "34802f529e801ce9c74a9332dbb3a02b6135b6f1d3dee051aba5e3200f6fc750",
+    "thumbnail_sha256": "23e67f82b755ad5644e973c97568cfa22efdd07ef753b6243e48d6b1eec838a6",
+    "display_size": [
+      520,
+      372
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877464__crop_upscale.jpg",
+    "experiment_file_sha256": "bb0bf43e317d78f97cf11aa3f19608d9dc49823e7847f5da5060bf3e9f02087e",
+    "thumbnail_sha256": "ec6777d17d9b014954bb75ee38d9143a00f007212ad2c8ba99cbb4a88b130198",
+    "display_size": [
+      520,
+      372
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877465__original.jpg",
+    "experiment_file_sha256": "fcea8b7d8ffb5612f18dfb572db3aa6cf7df033debcf35e1ad41c804dcabedb4",
+    "thumbnail_sha256": "90e8dc370582ae05bbe81b7f97540f6c0980a7081fdb2972be8021bc2958c718",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877465__copy.jpg",
+    "experiment_file_sha256": "fcea8b7d8ffb5612f18dfb572db3aa6cf7df033debcf35e1ad41c804dcabedb4",
+    "thumbnail_sha256": "90e8dc370582ae05bbe81b7f97540f6c0980a7081fdb2972be8021bc2958c718",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877465__resize.jpg",
+    "experiment_file_sha256": "dd344fa1f7a682f7a282f60f82c8a68142860f703326d86f1f3ff0b42025b8f6",
+    "thumbnail_sha256": "0ab78519bd74aec40b146e5f4bbc2df541b864800db34f8a85942d3c8cb8b7ba",
+    "display_size": [
+      410,
+      291
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877465__compressed.jpg",
+    "experiment_file_sha256": "5fc4093fd987acdf8cac6798c3878e83e7f55bb37f43a1cce64d8e5546be3175",
+    "thumbnail_sha256": "71eb441b539cd5cd7f730b02b2a2b6c09dc70f3da0f514105d46f45bdfcf782e",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877465__crop.jpg",
+    "experiment_file_sha256": "51e607381c6c2e153b19d17c2ec3d1ace018602f30599ddded352cee3c3cdf4c",
+    "thumbnail_sha256": "b48c41bbb27c4039bfe82b5a1eb062df57058101d2ac9b422b556ba42001da3d",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017877465__crop_upscale.jpg",
+    "experiment_file_sha256": "5356364090c56830f3d87c617e4085d3d0d1af7ef311d31aa601c85f91f8449c",
+    "thumbnail_sha256": "743932a91d286f662376b9d6269b094d315cd0807bdfaa3983763bb2b195a289",
+    "display_size": [
+      520,
+      369
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2016832837__original.jpg",
+    "experiment_file_sha256": "5c6bf6efb1d11cf282b1cf1721bad6420ff469aaad0080e84da75869553160ef",
+    "thumbnail_sha256": "9dffbe95e12043b08f612aa39b7facd819a274bac78d17d889826ebe78c0e2f6",
+    "display_size": [
+      467,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2016832837__copy.jpg",
+    "experiment_file_sha256": "5c6bf6efb1d11cf282b1cf1721bad6420ff469aaad0080e84da75869553160ef",
+    "thumbnail_sha256": "9dffbe95e12043b08f612aa39b7facd819a274bac78d17d889826ebe78c0e2f6",
+    "display_size": [
+      467,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2016832837__resize.jpg",
+    "experiment_file_sha256": "acccc1bc57a7bf9c7cdad23366b5c9278a3911220abf39f935d1d95db1492dbe",
+    "thumbnail_sha256": "3ee8b6d809079bb0d0410f14b47247e831a8ab644ac20074849383336b32cb8e",
+    "display_size": [
+      410,
+      334
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2016832837__compressed.jpg",
+    "experiment_file_sha256": "0859c06c468e19c5c6113fbb0460519a1df57735fc136dcacb792de4f04e606a",
+    "thumbnail_sha256": "07aa0b68ec25d498d4688d639979a5a2e314ceeefdd2ebd91f531fe1fa9648d2",
+    "display_size": [
+      467,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2016832837__crop.jpg",
+    "experiment_file_sha256": "0589f8b57c2e5bee8bfd44011f10477df48806ba0e640d256dae3db373b4a799",
+    "thumbnail_sha256": "845fed545e3d79db858a83cfd3ce64240135b58ee45110568ada6aeabcce3e49",
+    "display_size": [
+      467,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2016832837__crop_upscale.jpg",
+    "experiment_file_sha256": "1c677d9eb09191956d7be4da5ac69ca8795620e48dc3dab1b19b266148002671",
+    "thumbnail_sha256": "d822a1a18809207f1186d695354e11043a1fc7b175c96b5b4407193baa270005",
+    "display_size": [
+      467,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017832209__original.jpg",
+    "experiment_file_sha256": "756c873ebe52f1a9b13615cbe08d1715851f2cddeb5ad83cfea5a71399fa8d75",
+    "thumbnail_sha256": "01dde4ac5089f46793f6a887b83c7d25dfe5753afbf4a7b3434d2b2f19ad855b",
+    "display_size": [
+      368,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017832209__copy.jpg",
+    "experiment_file_sha256": "756c873ebe52f1a9b13615cbe08d1715851f2cddeb5ad83cfea5a71399fa8d75",
+    "thumbnail_sha256": "01dde4ac5089f46793f6a887b83c7d25dfe5753afbf4a7b3434d2b2f19ad855b",
+    "display_size": [
+      368,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017832209__resize.jpg",
+    "experiment_file_sha256": "c92c710e375dabc8ffba83b2e8fbfe6a26e00aa2af5bef1fddb26bbc2c6f9e86",
+    "thumbnail_sha256": "9ac4471a2efd44810700bf71db4807488005fc1c07c28600f0e1c81ccde36778",
+    "display_size": [
+      367,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017832209__compressed.jpg",
+    "experiment_file_sha256": "d058d19cc6ffb1c85cf573c4553f1ddc0b1b6968fb18c04360324c1102063cb9",
+    "thumbnail_sha256": "c80a994390e6bb941bc7e6f4a0a7b3f22068114ce3dc9836fbd1c4089c72e887",
+    "display_size": [
+      368,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017832209__crop.jpg",
+    "experiment_file_sha256": "1c946fec4f7557eea9f119fec0faf26174ddc706b1f3e191a0d79005046c8c1b",
+    "thumbnail_sha256": "c154b1a3b0d3d6508c731c4846b266e39dc513c3e694d9343e1a8fef32e6768a",
+    "display_size": [
+      368,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017832209__crop_upscale.jpg",
+    "experiment_file_sha256": "977a8ebc5bd40a90199cbbbb4e260164891a34d3b31199e5ff8cee6a7a9d7738",
+    "thumbnail_sha256": "6d17151179eba67aa4913edf835f3417ef4161152643e41cac94140c8d524aa7",
+    "display_size": [
+      368,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017843211__original.jpg",
+    "experiment_file_sha256": "de00d0af3184afac91e299cce7377429dbb7246e75c990d0dfaa119031711381",
+    "thumbnail_sha256": "afef7547c16ef4aded8477468fdc2d7278095739dbafafc7f169a20edda3216d",
+    "display_size": [
+      304,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017843211__copy.jpg",
+    "experiment_file_sha256": "de00d0af3184afac91e299cce7377429dbb7246e75c990d0dfaa119031711381",
+    "thumbnail_sha256": "afef7547c16ef4aded8477468fdc2d7278095739dbafafc7f169a20edda3216d",
+    "display_size": [
+      304,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017843211__resize.jpg",
+    "experiment_file_sha256": "255c741b6f7431fb3cec8dde890030f8cda4c6715b4bbe5656c52921a91df6e9",
+    "thumbnail_sha256": "7f966eab5e052cfe8c8770d93b7d2f94bf61db95ebf05d5083ecc921bc1a36a3",
+    "display_size": [
+      303,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017843211__compressed.jpg",
+    "experiment_file_sha256": "64a7690040fbc00855983b7f5b00eab12d314aa01cc92a1d4609c08ba63897d8",
+    "thumbnail_sha256": "951bc8b49cab35198bf9150587ae058f5b0d9c0d8df7de52697afd9e33baf5af",
+    "display_size": [
+      304,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017843211__crop.jpg",
+    "experiment_file_sha256": "c349557ad24eda2f87bd5d133ba92599de416f9fa7cbe1079b7c5f58eb991ffd",
+    "thumbnail_sha256": "e4f89ece095023ede474a28a8492028866627491ddef92fbe09bd091d194ac66",
+    "display_size": [
+      303,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017843211__crop_upscale.jpg",
+    "experiment_file_sha256": "792266ce041309cd300ae8c398e7847cc22c294764ceb85d599ade958d86a038",
+    "thumbnail_sha256": "6b9bcf98adfcf0ed33eeb028e7363073505c88e93665b08bedbc9db148f3f3d6",
+    "display_size": [
+      304,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017705303__original.jpg",
+    "experiment_file_sha256": "ee3dca15da8a48de16fbb700feeb442575327a008b9c4bc4bc9d4c160dbf246c",
+    "thumbnail_sha256": "f313fefcd3b678f2ef76a6b0104b87d7c8cfe0cfb9eb95b207792190932d1047",
+    "display_size": [
+      265,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017705303__copy.jpg",
+    "experiment_file_sha256": "ee3dca15da8a48de16fbb700feeb442575327a008b9c4bc4bc9d4c160dbf246c",
+    "thumbnail_sha256": "f313fefcd3b678f2ef76a6b0104b87d7c8cfe0cfb9eb95b207792190932d1047",
+    "display_size": [
+      265,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017705303__resize.jpg",
+    "experiment_file_sha256": "0c3640e0b492f8a9201cb195dd344dccd3c69216fa4f94aeef733173e45e2521",
+    "thumbnail_sha256": "864c9c178e6d59f2229112c00b83659bf5b38955c3669957d9381c6c4e8543ed",
+    "display_size": [
+      265,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017705303__compressed.jpg",
+    "experiment_file_sha256": "04b17e6036e590531f898a2435b225a48fa310aae23403495fe407e635dfe101",
+    "thumbnail_sha256": "44366b0d9942dbc31611da84479d8f4b2a4c6ba89a349191a3190386231d79e4",
+    "display_size": [
+      265,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017705303__crop.jpg",
+    "experiment_file_sha256": "9c9273d82bfab78373c9e419ab22dcc4c77dc71982dc02342d11e79dbe464631",
+    "thumbnail_sha256": "59f65fdf88430b570a6cec38508e00ebe267c7f4450b5e31c593872bcf78cd6f",
+    "display_size": [
+      265,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017705303__crop_upscale.jpg",
+    "experiment_file_sha256": "b24105803151e00ca48b94ee7c601ba74e234175018d0f00c2186200d7601ae8",
+    "thumbnail_sha256": "04a620e4bd80219d8b7de47c25ebde13cef4c5647addf4fa2894e4e64fb36a63",
+    "display_size": [
+      265,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017811986__original.jpg",
+    "experiment_file_sha256": "cf8215c8b782cb41666b621072a1feb02d12f30fa2150cd89ad6d8e117b8e1bc",
+    "thumbnail_sha256": "83a37e5ce6cd5fc750624ea63e4f2f3d52878cdfe38feb0c31d3b7f7585c1f8d",
+    "display_size": [
+      498,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017811986__copy.jpg",
+    "experiment_file_sha256": "cf8215c8b782cb41666b621072a1feb02d12f30fa2150cd89ad6d8e117b8e1bc",
+    "thumbnail_sha256": "83a37e5ce6cd5fc750624ea63e4f2f3d52878cdfe38feb0c31d3b7f7585c1f8d",
+    "display_size": [
+      498,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017811986__resize.jpg",
+    "experiment_file_sha256": "fb98eec85b3c01c97b1d47f4b0a880affd9a773f46b27beb1fcbb2a7c4ea58c1",
+    "thumbnail_sha256": "5c92f420910ed2a97e4e7d4182034428ba352150dcc2a110da2b5f03f8fc0656",
+    "display_size": [
+      410,
+      312
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017811986__compressed.jpg",
+    "experiment_file_sha256": "11548b6e14f0b90077bae6959b88b91d72b92266ef9924d9e4ba52066cb9f7cc",
+    "thumbnail_sha256": "1907e5bf13a59ca4984a850f8d31a13718d52ba95cd92098e12e2b9cd9ac077f",
+    "display_size": [
+      498,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017811986__crop.jpg",
+    "experiment_file_sha256": "aed43ce7081240a998d47a816cc8ce7b8751198739eb15478c8c04fd7a9d0df6",
+    "thumbnail_sha256": "524b75a7fd193d5d7836e3009095459020fe60f8614eb49bc53d953df57e5d15",
+    "display_size": [
+      499,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017811986__crop_upscale.jpg",
+    "experiment_file_sha256": "769df85d5d7155e16962cff8448b002a2d2455a9057b44fec7bd72924b9a3fb5",
+    "thumbnail_sha256": "acb2f59131e12afa0349075a203983d3ba52866a085d874e61675ff7932ce488",
+    "display_size": [
+      498,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2016804519__original.jpg",
+    "experiment_file_sha256": "7fc9243359d3ead5babc55e12ebe8796e11981bb3ea03b86e324b50244998516",
+    "thumbnail_sha256": "83645e0e46e9ebf162b241dc781a74ac16d69ccc82e2c8d19a14cc5cac941bdf",
+    "display_size": [
+      307,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2016804519__copy.jpg",
+    "experiment_file_sha256": "7fc9243359d3ead5babc55e12ebe8796e11981bb3ea03b86e324b50244998516",
+    "thumbnail_sha256": "83645e0e46e9ebf162b241dc781a74ac16d69ccc82e2c8d19a14cc5cac941bdf",
+    "display_size": [
+      307,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2016804519__resize.jpg",
+    "experiment_file_sha256": "3b2bf4dd68f578fbbdabf7b70cedfdbffb8b56ca004207dee97064e95edfa0d8",
+    "thumbnail_sha256": "1e27cda126ff1dc6658038530e8bf5d753e81c79cfe201b733879b5ea80b2f48",
+    "display_size": [
+      307,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2016804519__compressed.jpg",
+    "experiment_file_sha256": "0ad6b1c227fe77f857ab747f3bc4b802c0f6618fcfa0a87c0d3044c9c28e3cc6",
+    "thumbnail_sha256": "51cc02ac97f65673a9056c5a9ec0ea153b0e8bae96c006a4492121557b6d72bd",
+    "display_size": [
+      307,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2016804519__crop.jpg",
+    "experiment_file_sha256": "a7f6552574557fc6ec35ea42250e20e78f96d39ec406690c6b4bfdb5c9eb3777",
+    "thumbnail_sha256": "0a23bf35072a7d5532859a78fadef8c2a1afc9a70bc2e0473683ffe73bd615ab",
+    "display_size": [
+      307,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2016804519__crop_upscale.jpg",
+    "experiment_file_sha256": "ca975553c80fd3a259e95e7d966cdbc402f2296bfdeae753bca0d8e7d3a598af",
+    "thumbnail_sha256": "7a5a41ef71a75b7d7b13c69d4d72a264bbb251069e7862e889ebbac1c3135329",
+    "display_size": [
+      307,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2003656135__original.jpg",
+    "experiment_file_sha256": "54e522c970d69c3dabf57771197d232332a632041841777c1d6f32fde31f2e8d",
+    "thumbnail_sha256": "85d2d2e88dcbd74d55e50a800948ba17f370ef1303c43c5f2b0c5d7948c1a778",
+    "display_size": [
+      482,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2003656135__copy.jpg",
+    "experiment_file_sha256": "54e522c970d69c3dabf57771197d232332a632041841777c1d6f32fde31f2e8d",
+    "thumbnail_sha256": "85d2d2e88dcbd74d55e50a800948ba17f370ef1303c43c5f2b0c5d7948c1a778",
+    "display_size": [
+      482,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2003656135__resize.jpg",
+    "experiment_file_sha256": "3965bec5c3b1691069d27ec49304d8fa5736f02bf1ebcc0b62a3cbefba9e41a5",
+    "thumbnail_sha256": "5b9dcf1725ab1df74f2aebeb1f6a28f285d6d00bed74939cfeab6f174206bf94",
+    "display_size": [
+      256,
+      202
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2003656135__compressed.jpg",
+    "experiment_file_sha256": "a1929f19dc0204b744c198fbaa7e3c251dd6b3f7eed7b1e161d07bd46a66b1ce",
+    "thumbnail_sha256": "d669479853212152d28a41e0518a7d736b4ac00a7283a0b3f2502a1816d1715c",
+    "display_size": [
+      482,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2003656135__crop.jpg",
+    "experiment_file_sha256": "b371a9304995b44de56dfd9968851b00ba9adf09979b8f73aba2dcbe25d18e9c",
+    "thumbnail_sha256": "49abb137b1dd1d50d57fa0fdd66a8ef31fb3c66add9c795273d0fdff163e6d0d",
+    "display_size": [
+      482,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2003656135__crop_upscale.jpg",
+    "experiment_file_sha256": "3885d42d0f51535ea7a8e945ce979e7b56724310dd70e9b4e5a45c44d99ec86c",
+    "thumbnail_sha256": "18da3ba10cb1d9958a1ef0faa093d9ef5000f5c54901adc1db2e3c563529f2c5",
+    "display_size": [
+      482,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2003656135__added_copy.jpg",
+    "experiment_file_sha256": "54e522c970d69c3dabf57771197d232332a632041841777c1d6f32fde31f2e8d",
+    "thumbnail_sha256": "85d2d2e88dcbd74d55e50a800948ba17f370ef1303c43c5f2b0c5d7948c1a778",
+    "display_size": [
+      482,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630616__added_resize.jpg",
+    "experiment_file_sha256": "f5f416a8c6706d9bf2dbe7fede82386009abf29e4cfcb6f0eb28538d2a1e90c4",
+    "thumbnail_sha256": "3f793dcee1eeb8032ba42c60a0f6cb5c5cde432c7908ebc62eb739af13d32a45",
+    "display_size": [
+      520,
+      347
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2010630765__added_crop.jpg",
+    "experiment_file_sha256": "bb96fd30a3067c0423b3d7ca08d24babf6aab1e930e2ea93fbb52d4a30af7c37",
+    "thumbnail_sha256": "e113b5854bf534b5b55dd8dced5b80f45e56de26b9a6a11ea0a8d64afbbbedcd",
+    "display_size": [
+      513,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2016816959__new_original.jpg",
+    "experiment_file_sha256": "952120c7ed0319d5444e2b5ca74892c183dd222f5c28c0ac3dcd09aa6e77e103",
+    "thumbnail_sha256": "8575bb28898d41595dde0ad46e7ff492b2af69b1584384a0b78b91b158f76496",
+    "display_size": [
+      516,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  },
+  {
+    "id": "2017778455__new_original.jpg",
+    "experiment_file_sha256": "48381b6773908c6ee1f8bcb0a3bf6a62e00410bd7e91c023c6241e1a15ee28c2",
+    "thumbnail_sha256": "5767ac83b3bd96d4666368dab6232c72ad4615cb4dd6006d878522e717da81e3",
+    "display_size": [
+      503,
+      380
+    ],
+    "operation": "EXIF transpose/RGB; thumbnail bound 520x380 LANCZOS; JPEG quality82 subsampling0"
+  }
+]

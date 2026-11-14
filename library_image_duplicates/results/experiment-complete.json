@@ -1,0 +1,9 @@
+{
+  "thresholds_sha256": "898e96646845647fe9aa66791c2517b1a14bdb5eb9aa486a224c93aaa5e661c2",
+  "test_pairs": 5778,
+  "test_files": 108,
+  "added_files": 5,
+  "incremental_equal": true,
+  "first_warm_equal": true,
+  "repeated_predictions_equal": true
+}

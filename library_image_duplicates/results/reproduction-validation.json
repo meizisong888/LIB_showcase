@@ -1,0 +1,13 @@
+{
+  "clean_virtual_environment": true,
+  "python": "3.13.11",
+  "torch_runtime": "2.10.0+cpu",
+  "numpy": "2.2.6",
+  "requirements_install_succeeded": true,
+  "pip_check": "No broken requirements found.",
+  "prepared_file_checksums_reproduced": 185,
+  "calibration_thresholds_reconfirmed_without_change": true,
+  "full_experiment_repeated": 3,
+  "preserved_initial_thresholds_sha256": "898e96646845647fe9aa66791c2517b1a14bdb5eb9aa486a224c93aaa5e661c2",
+  "note": "Final published runs use the clean CPU environment. The initial host NumPy 2.0.2 lacked a Python 3.13 PyPI wheel, so the final fixed install uses 2.2.6. No test-based threshold change was made."
+}

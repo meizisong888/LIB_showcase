@@ -1,0 +1,108 @@
+{
+  "call_number": "LC-USF35-107 [P&P]",
+  "contributors": [
+    "Wolcott, Marion Post, 1910-1990, photographer"
+  ],
+  "control_number": "2017877478",
+  "created": "2023-02-14T05:44:55Z",
+  "created_published": "1939 Oct.",
+  "created_published_date": "1939 Oct.",
+  "creators": [
+    {
+      "link": "https://www.loc.gov/pictures/related/?fi=name&q=Wolcott%2C%20Marion%20Post%2C%201910-1990&co=fsac",
+      "role": "photographer",
+      "title": "Wolcott, Marion Post, 1910-1990"
+    }
+  ],
+  "date": "1939 Oct.",
+  "digital_id": [
+    "fsac 1a34332 https://hdl.loc.gov/loc.pnp/fsac.1a34332"
+  ],
+  "display_offsite": true,
+  "format": [
+    "still image"
+  ],
+  "formats": [
+    {
+      "link": "https://www.loc.gov/pictures/related/?fi=format&q=Slides--Color.&co=fsac",
+      "title": "Slides--Color."
+    }
+  ],
+  "genre": [
+    "Slides--Color"
+  ],
+  "id": "2017877478",
+  "language": [
+    "eng"
+  ],
+  "link": "https://www.loc.gov/pictures/item/2017877478/",
+  "marc": "https://www.loc.gov/pictures/item/2017877478/marc/",
+  "medium": [
+    "1 slide : color."
+  ],
+  "medium_brief": "1 slide :",
+  "mediums": [
+    "1 slide : color."
+  ],
+  "modified": "2023-02-14T05:44:55Z",
+  "notes": [
+    "11671-8.",
+    "Transfer from U.S. Office of War Information, 1944.",
+    "General information about the FSA/OWI Color Photographs is available at http://hdl.loc.gov/loc.pnp/pp.fsac",
+    "Title from FSA or OWI agency caption.",
+    "Additional information about this photograph might be available through the Flickr Commons project at http://www.flickr.com/photos/library_of_congress/2179061002"
+  ],
+  "number_former_id": [
+    "https://www.loc.gov/item/2017877478",
+    "https://www.loc.gov/item/fsa1992000139/PP"
+  ],
+  "other_control_numbers": [
+    "19979396",
+    "fsa1992000139/PP"
+  ],
+  "part_of": "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)",
+  "place": [
+    {
+      "latitude": "",
+      "link": "https://www.loc.gov/pictures/related/?fi=place&q=Mississippi--Belzoni&co=fsac",
+      "longitude": "",
+      "title": "Mississippi--Belzoni"
+    }
+  ],
+  "raw_collections": [
+    "ammem",
+    "diof",
+    "flickrppoc",
+    "fsac",
+    "pp",
+    "srtg"
+  ],
+  "repository": "Library of Congress Prints and Photographs Division Washington, D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print",
+  "reproduction_number": "LC-DIG-fsac-1a34332 (digital file from original slide)\nLC-USF351-107 (color film copy slide)",
+  "resource_links": [
+    "https://hdl.loc.gov/loc.pnp/fsac.1a34332"
+  ],
+  "rights_advisory": "No known restrictions on publication.",
+  "rights_information": "No known restrictions on publication.",
+  "service_low": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34332_150px.jpg",
+  "service_medium": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34332r.jpg",
+  "sort_date": "1939",
+  "source_collection": [
+    "Farm Security Administration - Office of War Information color slides and transparencies collection (Library of Congress)"
+  ],
+  "source_created": "1985-01-01T00:00:00Z",
+  "source_modified": "2023-02-13T15:22:19Z",
+  "subject_headings": [
+    "fishing",
+    "African Americans",
+    "United States--Mississippi--Belzoni",
+    "Mississippi--Belzoni"
+  ],
+  "subjects": [
+    "Fishing",
+    "African Americans",
+    "United States--Mississippi--Belzoni"
+  ],
+  "thumb_gallery": "https://tile.loc.gov/storage-services/service/pnp/fsac/1a34000/1a34300/1a34332_150px.jpg",
+  "title": "Negroes fishing in creek near cotton plantations outside Belzoni, Miss. Delta"
+}
