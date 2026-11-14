@@ -64,14 +64,14 @@ async function start() {
       const card = node('article', undefined, 'pair-card')
       const images = node('div', undefined, 'pair-images')
       images.append(imageFigure(p.a), imageFigure(p.b))
-      const scoreName = method === 'A' ? 'Verified identical bytes' : method === 'B' ? 'pHash distance (lower is closer)' : 'Cosine (higher is closer)'
-      const outcome = p.truth ? (p.selected[method] ? 'True positive' : 'False negative') : (p.selected[method] ? 'False positive' : 'True negative')
-      card.append(images, node('p', `${scoreName}: ${p.scores[method]}`, 'score'), node('span', outcome, `tag ${outcome.startsWith('False') ? 'miss' : 'neutral'}`), node('p', `${p.a} ↔ ${p.b}`))
+      const scoreName = method === 'A' ? 'Verified identical bytes' : method === 'B' ? 'pHash distance (lower is closer)' : 'AI similarity (higher is closer)'
+      const outcome = p.truth ? (p.selected[method] ? 'Correctly found' : 'Missed duplicate') : (p.selected[method] ? 'False match' : 'Correctly left out')
+      card.append(images, node('p', `${scoreName}: ${p.scores[method]}`, 'score'), node('span', outcome, `tag ${(!p.selected[method] && p.truth) || (p.selected[method] && !p.truth) ? 'miss' : 'neutral'}`), node('p', `${p.a} ↔ ${p.b}`))
       return card
     })
-    if (!cards.length) cards.push(node('p', `No ${mode === 'fp' ? 'false positives' : 'pairs'} observed for this filter. No examples have been invented.`))
+    if (!cards.length) cards.push(node('p', `No ${mode === 'fp' ? 'false matches' : 'pairs'} observed for this filter. No examples have been invented.`))
     list.replaceChildren(...cards)
-    document.querySelector('#pair-count').textContent = `${filtered.length.toLocaleString('en-US')} pairs · showing ${Math.min(limit, filtered.length)} · method ${method} · known-answer evaluation`
+    document.querySelector('#pair-count').textContent = `${filtered.length.toLocaleString('en-US')} pairs · showing ${Math.min(limit, filtered.length)} · method ${method} · answers known for this experiment`
     more.hidden = filtered.length <= limit
   }
   methodSelect.addEventListener('change', () => renderPairs(true))

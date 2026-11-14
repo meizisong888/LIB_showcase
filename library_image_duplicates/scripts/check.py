@@ -59,10 +59,12 @@ def main():
         p=example['pair'];actual=pair_map[example['method']][tuple(sorted((p['a'],p['b'])))];assert p==actual
     checks['page_scores_and_examples_match_experiment']=True
     # Rebuild deterministically and verify checked-in generated content was already current.
-    generated=['index.html','sources.html','README.md','results/report.json'];before={f:digest((ROOT/f).read_bytes()) for f in generated}
+    generated=['index.html','sources.html','README.md','results/report.json']+[str(p.relative_to(ROOT)) for p in sorted((ROOT/'docs').glob('*.md'))];before={f:digest((ROOT/f).read_bytes()) for f in generated}
     subprocess.run([sys.executable,str(ROOT/'scripts/build.py')],check=True)
     assert before=={f:digest((ROOT/f).read_bytes()) for f in generated}
     checks['generated_page_and_readme_current']=True
+    from check_presentation import check_presentation
+    checks['staff_presentation_matches_saved_evidence']=check_presentation()
     # This output is linked on the page; allow it to be created after validating all other targets.
     for filename in ['index.html','sources.html']:
         parser=Links();parser.feed((ROOT/filename).read_text())

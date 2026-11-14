@@ -1,6 +1,6 @@
 # Library AI Showcases
 
-## Finding Duplicate Collection Images with Less Computation
+## Finding Duplicate Images in Library Collections
 
 **The problem:** a collection may contain identical files, compressed copies and crops of one photograph. Similar views of a building are different photographs and need careful review.
 

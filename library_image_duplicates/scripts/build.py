@@ -4,6 +4,7 @@ Default publication is standard-library only; --thumbnails requires Pillow + pre
 import argparse, html, shutil, statistics
 from pathlib import Path
 from common import ROOT, read, write, digest
+from presentation import staff_content, build_documents
 NAMES={'A':'File hash','B':'Perceptual hash','C':'AI features','D':'Reuse + AI'}
 VARIANTS={'original':'Original','copy':'Exact copy','resize':'Smaller (40%)','compressed':'JPEG quality 18','crop':'Crop (~25% removed)','crop_upscale':'Crop, enlarged again'}
 e=html.escape
@@ -85,7 +86,9 @@ def main():
     error_html+='<p class="small">No false positives were observed for A, C or D on this test set. This does not guarantee zero false positives in other collections.</p>'
     hard={'a':'2017877477__original.jpg','b':'2017877478__original.jpg'}
     hard_scores=' · '.join(f'{m}: {lookup(m,hard["a"],hard["b"])["score"]} ({"selected" if lookup(m,hard["a"],hard["b"])["candidate"] else "not selected"})' for m in 'ABCD')
-    replacements={'HERO':photo(f'{example}__original.jpg','The original')+photo(f'{example}__crop.jpg','The crop: same photograph, fewer pixels'),'PHOTO_OPTIONS':''.join(f'<option value="{pid}" {"selected" if pid==example else ""}>{pid} · {e(source[pid]["title"][:100])}</option>' for pid in manifest['test_identities']),'INITIAL_GALLERY':gallery(example),'INITIAL_SOURCE':source_line(example),'ACCURACY_TABLE':table('Held-out pair-level accuracy',accuracy_heads,accuracy),'RECALL_CHART':''.join(f'<div class="bar-row"><span>{m} · {NAMES[m]}</span><div class="bar-track"><span style="width:{metrics[m]["recall"]*100:.3f}%"></span></div><strong>{pct(metrics[m]["recall"])}</strong></div>' for m in 'ABCD'),'THRESHOLD_TEXT':f'pHash distance ≤ {thresholds["phash_max_distance"]}; AI cosine ≥ {thresholds["ai_min_cosine"]:.2f}','VARIANT_TABLE':table('Original-to-variant recovery', ['Method']+list(VARIANTS.values())[1:],vr),'COST_TABLE':table('Same machine, two CPU threads; median [min–max]',costs_heads,costs),'COST_FINDING':cost_finding,'STAGE_TABLE':table('Stage wall seconds; median [min–max]',['Method / cache','Stage','Seconds'],stages),'INCREMENTAL_TABLE':table('113 files, same configuration; median [min–max]',costs_heads,incr),'INCREMENTAL_FINDING':increment_finding,'MEASURED_FINDING':measured,'ERROR_EXAMPLES':error_html,'HARD_NEGATIVE':'<div class="hard-negative">'+pair_images(hard)+'<p class="small">'+e(hard_scores)+'</p></div>','RUN_DATE':env['run_utc']}
+    replacements={'HERO':photo(f'{example}__original.jpg','The original photograph')+photo(f'{example}__crop.jpg','A cropped version'),'PHOTO_OPTIONS':''.join(f'<option value="{pid}" {"selected" if pid==example else ""}>{pid} · {e(source[pid]["title"][:100])}</option>' for pid in manifest['test_identities']),'INITIAL_GALLERY':gallery(example),'INITIAL_SOURCE':source_line(example),'ACCURACY_TABLE':table('Held-out pair-level accuracy',accuracy_heads,accuracy),'RECALL_CHART':''.join(f'<div class="bar-row"><span>{m} · {NAMES[m]}</span><div class="bar-track"><span style="width:{metrics[m]["recall"]*100:.3f}%"></span></div><strong>{pct(metrics[m]["recall"])}</strong></div>' for m in 'ABCD'),'THRESHOLD_TEXT':f'pHash distance ≤ {thresholds["phash_max_distance"]}; AI cosine ≥ {thresholds["ai_min_cosine"]:.2f}','VARIANT_TABLE':table('Original-to-variant recovery', ['Method']+list(VARIANTS.values())[1:],vr),'COST_TABLE':table('Same machine, two CPU threads; median [min–max]',costs_heads,costs),'COST_FINDING':cost_finding,'STAGE_TABLE':table('Stage wall seconds; median [min–max]',['Method / cache','Stage','Seconds'],stages),'INCREMENTAL_TABLE':table('113 files, same configuration; median [min–max]',costs_heads,incr),'INCREMENTAL_FINDING':increment_finding,'MEASURED_FINDING':measured,'ERROR_EXAMPLES':error_html,'HARD_NEGATIVE':'<div class="hard-negative">'+pair_images(hard)+'<p class="small">'+e(hard_scores)+'</p></div>','RUN_DATE':env['run_utc']}
+    staff=staff_content(files,source,pairs,metrics,runs,inc,env,example,markdown_table,table)
+    replacements.update(staff)
     template=(ROOT/'site/index.template.html').read_text()
     for key,val in replacements.items():template=template.replace('{{'+key+'}}',val)
     assert '{{' not in template
@@ -106,11 +109,13 @@ def main():
     # README is regenerated from actual metrics and run records, never hand-entered result claims.
     readme=(ROOT/'site/readme.template.md').read_text()
     rm={'ACCURACY':markdown_table(accuracy_heads,accuracy),'COSTS':markdown_table(costs_heads,costs),'INCREMENTAL':markdown_table(costs_heads,incr),'VARIANTS':markdown_table(['Method']+list(VARIANTS.values())[1:],vr),'MEASURED_FINDING':measured,'COST_FINDING':cost_finding,'INCREMENTAL_FINDING':increment_finding,'MODEL_SHA':model['sha256'],'THRESHOLDS':replacements['THRESHOLD_TEXT'],'RUN_DATE':env['run_utc']}
+    rm.update(staff)
+    build_documents(ROOT,rm,markdown_table,env)
     for key,val in rm.items():readme=readme.replace('{{'+key+'}}',val)
     assert '{{' not in readme;(ROOT/'README.md').write_text(readme)
     if args.publish_dir:
         target=args.publish_dir.resolve()/'library_image_duplicates';target.mkdir(parents=True,exist_ok=True)
         for name in ['index.html','sources.html','showcase.css','showcase.js','README.md']:shutil.copy2(ROOT/name,target/name)
-        for name in ['images','data','results']:shutil.copytree(ROOT/name,target/name,dirs_exist_ok=True)
+        for name in ['images','data','results','docs']:shutil.copytree(ROOT/name,target/name,dirs_exist_ok=True)
     print('Built static page, source page, README and saved-pair explorer from evidence.')
 if __name__=='__main__':main()
