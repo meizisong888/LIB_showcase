@@ -12,6 +12,8 @@ A library collection may contain the same photograph under different filenames, 
 
 This project compares simple methods and AI for finding these versions. It also measures whether reusing earlier calculations saves time. The tool suggests pairs for staff to review; it does not automatically delete files.
 
+Duplicate and near-duplicate detection is an established task in digital collections. Previous studies have examined its use in reducing repeated annotation work in scanned photo archives ([Net et al., 2023](https://arxiv.org/abs/2410.19437)) and supporting quality assurance in digitized document collections ([Huber-Mörk et al., 2012](https://publications.ait.ac.at/en/publications/duplicate-detection-for-quality-assurance-of-document-image-colle/)). Our showcase explores a practical question: how well do simple methods and a pretrained AI model find edited photograph copies, and how much processing time can be saved by reusing existing features?
+
 ## What the tool does
 
 - Finds identical files and edited copies of the same photograph.
@@ -84,3 +86,8 @@ Open `/path/to/review/index.html`. Choose an output folder outside the images fo
 - [Full experimental results](docs/full-results.md)
 - [Data sources](docs/data-sources.md)
 - [Model and environment details](docs/model-and-environment.md)
+
+## References
+
+- Net, F., Folia, M., Casals, P., & Gomez, L. (2023). [Transductive Learning for Near-Duplicate Image Detection in Scanned Photo Collections](https://arxiv.org/abs/2410.19437). ICDAR 2023.
+- Huber-Mörk, R., Schindler, A., & Schlarb, S. (2012). [Duplicate Detection for Quality Assurance of Document Image Collections](https://publications.ait.ac.at/en/publications/duplicate-detection-for-quality-assurance-of-document-image-colle/). iPRES 2012.

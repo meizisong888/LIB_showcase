@@ -18,6 +18,7 @@
 <h2>Overview</h2>
 <p>A library collection may contain the same photograph under different filenames, at different sizes, or saved with lower image quality. A cropped version may show only part of the original picture.</p>
 <p>This project compares simple methods and AI for finding these versions. It also measures whether reusing earlier calculations saves time. The tool suggests pairs for staff to review; it does not automatically delete files.</p>
+<p>Duplicate and near-duplicate detection is an established task in digital collections. Previous studies have examined its use in reducing repeated annotation work in scanned photo archives (<a href="https://arxiv.org/abs/2410.19437">Net et al., 2023</a>) and supporting quality assurance in digitized document collections (<a href="https://publications.ait.ac.at/en/publications/duplicate-detection-for-quality-assurance-of-document-image-colle/">Huber-Mörk et al., 2012</a>). Our showcase explores a practical question: how well do simple methods and a pretrained AI model find edited photograph copies, and how much processing time can be saved by reusing existing features?</p>
 </section>
 <section id="features">
 <h2>What the tool does</h2>
@@ -100,6 +101,13 @@ python scripts/scan.py /path/to/images --method D --output /path/to/review</code
 <p><a href="results/predictions/test-A.json">File-hash predictions</a> · <a href="results/predictions/test-B.json">pHash predictions</a> · <a href="results/predictions/test-C.json">SSCD predictions</a> · <a href="results/predictions/test-D.json">Reuse + SSCD predictions</a> · <a href="results/predictions/incremental-reuse.json">Incremental predictions</a>.</p>
 <p><a href="data/manifest.json">Transformation ledger</a> · <a href="data/sources.json">Source records</a> · <a href="data/model.json">Model identity</a> · <a href="results/metrics.json">Full metrics</a> · <a href="results/packages.txt">Dependencies</a> · <a href="results/validation.json">Original implementation checks</a>.</p>
 </details>
+</section>
+<section id="references">
+<h2>References</h2>
+<ul>
+<li>Net, F., Folia, M., Casals, P., &amp; Gomez, L. (2023). <a href="https://arxiv.org/abs/2410.19437">Transductive Learning for Near-Duplicate Image Detection in Scanned Photo Collections</a>. ICDAR 2023.</li>
+<li>Huber-Mörk, R., Schindler, A., &amp; Schlarb, S. (2012). <a href="https://publications.ait.ac.at/en/publications/duplicate-detection-for-quality-assurance-of-document-image-colle/">Duplicate Detection for Quality Assurance of Document Image Collections</a>. iPRES 2012.</li>
+</ul>
 </section>
 </main>
 <footer>Library AI Showcases · Precomputed results recorded 2026-11-14T20:18:42Z · <a href="https://github.com/meizisong888/LIB_showcase/tree/main/library_image_duplicates">Code and README</a></footer>
