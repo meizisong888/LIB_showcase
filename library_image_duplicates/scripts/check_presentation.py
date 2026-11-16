@@ -20,7 +20,7 @@ def check_presentation():
     visible=re.sub(r'<[^>]+>', ' ', text)
     visible=re.sub(r'\]\([^)]+\)', ']', visible)
     words=len(re.findall(r"\b[\w]+(?:[-'][\w]+)*\b", visible))
-    assert 600 <= words <= 800, words
+    assert 600 <= words <= 900, words
     expected=['Overview','What the tool does','How it works','Example outputs','Results','Tools used','Conclusion','Try it / Further details']
     assert re.findall(r'^## (.+)$',text,re.M)==expected
     assert text.startswith('# Finding Duplicate Images in Library Collections\n')

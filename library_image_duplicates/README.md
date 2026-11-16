@@ -33,6 +33,10 @@ An edited copy comes from one original photograph. Another photograph of the sam
 
 pHash is not AI. The reuse method checks identical files first; other files still receive AI comparison, even when pHash misses them.
 
+pHash converts an image to grayscale and resizes it to 32 × 32 pixels. It then uses a discrete cosine transform (DCT) to summarize broad patterns of light and dark, keeping 64 low-frequency coefficients. Each coefficient becomes 1 if it is above their median, or 0 otherwise, producing a 64-bit fingerprint. Two fingerprints are compared by counting how many bits differ: fewer differences suggest more similar images. This is a fixed mathematical algorithm, not an AI model.
+
+Resizing or mild compression often preserves these broad patterns, while cropping can change the overall layout and cause a match to be missed.
+
 ## Example outputs
 
 These examples use actual files and saved predictions. “Found” means selected for review. The original photograph is known here, so we can check the answers.

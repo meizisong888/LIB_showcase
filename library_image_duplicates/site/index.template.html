@@ -33,6 +33,8 @@
 <tr><th scope="row">Exact-copy reuse + SSCD</th><td>Computes AI features once for identical files and reuses saved features when processing new files.</td></tr>
 </tbody></table></div>
 <p>pHash is not AI. The reuse method checks identical files first; other files still receive AI comparison, even when pHash misses them.</p>
+<p>pHash converts an image to grayscale and resizes it to 32 × 32 pixels. It then uses a discrete cosine transform (DCT) to summarize broad patterns of light and dark, keeping 64 low-frequency coefficients. Each coefficient becomes 1 if it is above their median, or 0 otherwise, producing a 64-bit fingerprint. Two fingerprints are compared by counting how many bits differ: fewer differences suggest more similar images. This is a fixed mathematical algorithm, not an AI model.</p>
+<p>Resizing or mild compression often preserves these broad patterns, while cropping can change the overall layout and cause a match to be missed.</p>
 </section>
 <section id="examples">
 <h2>Example outputs</h2>
